@@ -16,9 +16,10 @@ public class InputManager : MonoBehaviour
     [SerializeField] private bool _doDebugLog = false; // Gate for spammy logs
 
     /* ---------- Input-updated fields ---------- */
-    [HideInInspector] public Vector2 movementInput;    // Left-stick / WASD
-    [HideInInspector] public bool jumpHeldDownInput; // True while jump button held
-    [HideInInspector] public bool jumpPressedThisFrame; // True only on the frame pressed
+    public Vector2 movementInput { get; private set; } // Left-stick / WASD
+    public bool jumpHeldDownInput { get; private set; }  // True while jump button held
+    public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
+    public bool pullHeldDownInput { get; private set; } 
 
     /* ---------- Private vars ---------- */
     private PlayerControls _playerControls;
@@ -65,7 +66,8 @@ public class InputManager : MonoBehaviour
     {
         // Poll button states every frame – cheapest way to expose booleans
         jumpPressedThisFrame = _playerControls.Movement.Jump.WasPerformedThisFrame();
-        jumpHeldDownInput    = _playerControls.Movement.Jump.IsPressed();
+        jumpHeldDownInput = _playerControls.Movement.Jump.IsPressed();
+        pullHeldDownInput = _playerControls.GravityGun.Pull.IsPressed();
     }
 
     private void OnDestroy()

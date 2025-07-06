@@ -2311,22 +2311,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate Grabbable
       objectReference: {fileID: 0}
-    - target: {fileID: 6031796409860459003, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
-      propertyPath: _offsetUp
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6031796409860459003, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
-      propertyPath: _offsetDown
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6031796409860459003, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
-      propertyPath: _offsetLeft
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6031796409860459003, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
-      propertyPath: _offsetRight
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

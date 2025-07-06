@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /* -----------------------------------------------------------
  * Author:
@@ -23,14 +24,23 @@ public abstract class PhysicsObject : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] protected Outline2D _outline;
-    [SerializeField] protected Collider2D _collider;
-    [SerializeField] protected Rigidbody2D _rigidbody;
+    public Collider2D collider;
+    public Rigidbody2D rb;
     
     [Header("Settings")]
     public PhysicsObjectType physicsObjectType;
     
+    [FormerlySerializedAs("isTargeted")]
     [Header("Readouts")]
-    [InspectorReadOnly] public bool isTargeted;
+    [SerializeField, InspectorReadOnly] private bool _isTargeted;
+    [SerializeField, InspectorReadOnly] private Vector2 _currVelocityVector;
+    [SerializeField, InspectorReadOnly] private float _currVelocityMagnitude;
+
+    private void FixedUpdate()
+    {
+        _currVelocityVector = rb.linearVelocity;
+        _currVelocityMagnitude = rb.linearVelocity.magnitude;
+    }
     
     public virtual void ChangeOutlineColor(Color color)
     {
@@ -39,13 +49,13 @@ public abstract class PhysicsObject : MonoBehaviour
 
     public virtual void EnableTarget()
     {
-        isTargeted = true;
+        _isTargeted = true;
         _outline.SetOutline(true);
     }
 
     public virtual void DisableTarget()
     {
-        isTargeted = false;
+        _isTargeted = false;
         _outline.SetOutline(false);
     }
 }

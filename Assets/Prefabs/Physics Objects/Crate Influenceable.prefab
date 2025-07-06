@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _outline: {fileID: 5481456306849783322}
-  _collider: {fileID: 2427697903197361229}
-  _rigidbody: {fileID: 6638872844243149890}
+  collider: {fileID: 2427697903197361229}
+  rb: {fileID: 6638872844243149890}
   physicsObjectType: 1
   isTargeted: 0
   _doDebugLog: 0
@@ -68,10 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 6943223690200813014}
   _outlineMaterial: {fileID: 2100000, guid: 822499ebff28b3747932ce77f3533beb, type: 2}
-  _offsetLeft: -2
-  _offsetRight: 2
-  _offsetUp: 2
-  _offsetDown: -2
+  _OutlineSizePx: 5
   _outlineColor: {r: 0.99607843, g: 0.5529412, b: 0.09411765, a: 1}
   _applySettings: 0
   _enableOutline: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -25,6 +26,7 @@ public class GravityGunController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform _gravigunPivot;
+    [SerializeField] private Transform _gravigunHoldPos;
     [SerializeField] private SpriteRenderer _helperTargetCircleSprite;
     [SerializeField] private LineRenderer _lineOfSightRenderer;
     [SerializeField] private LineRenderer _holdingLineRenderer;
@@ -35,6 +37,9 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private Color _validTargetLineColor; // The color of the line when its pointing to a valid target
     [SerializeField, Range(0f,100f)] private float _maxRaycastDistance;
     [SerializeField] private LayerMask _lineRaycastMask;
+    [SerializeField, Range(0f, 100f)] private float _pullForce;
+    [SerializeField, Range(0f, 100f)] private float _maxPullVelocity;
+    [SerializeField, Range(0f, 100f)] private float _pushForce;
     
     [Header("Debugging")]
     [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
@@ -42,7 +47,7 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private bool doDebugLog;
     
     // Local variables
-    
+    private Vector2 _currentLookDir;
 
     private void Update()
     {
@@ -51,16 +56,16 @@ public class GravityGunController : MonoBehaviour
         mouseWorld.z = transform.position.z;          // flatten to sprite’s plane
 
         // Direction from sprite to mouse
-        Vector2 dir = mouseWorld - _gravigunPivot.position;
+        _currentLookDir = (mouseWorld - _gravigunPivot.position).normalized;
 
         // Compute angle (0° = +X). Convert to degrees.
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(_currentLookDir.y, _currentLookDir.x) * Mathf.Rad2Deg;
         
         // 4. Rotate around Z so +Y faces the cursor
         _gravigunPivot.rotation = Quaternion.AngleAxis(angle + _gravigunAngleOffset, Vector3.forward);
         
         // Fire a raycast in the direction of the mouse
-        RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, dir, _maxRaycastDistance, _lineRaycastMask);
+        RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, _currentLookDir, _maxRaycastDistance, _lineRaycastMask);
 
         if (!hit)
         {
@@ -68,7 +73,7 @@ public class GravityGunController : MonoBehaviour
             _lineOfSightRenderer.gameObject.SetActive(false);
             ChangeTargetCircleColor(_defaultLineOfSightColor);
             ChangeLineRendererColor(_defaultLineOfSightColor);
-            UpdateLineRendererPos(_gravigunPivot.position, dir, Vector2.zero, _maxRaycastDistance);
+            UpdateLineRendererPos(_gravigunPivot.position, _currentLookDir, Vector2.zero, _maxRaycastDistance);
             
             // Disable outline on the previous focused object
             if (_focusedObject)
@@ -104,11 +109,7 @@ public class GravityGunController : MonoBehaviour
 
             return;
         }
-
         // Was of type Physics Object
-
-        // TODO: GRAVIGUN LOGIC AND DIFFERENTIATING FROM INFLUENCEABLE AND GRABBABLE
-
         // Enable outline
         grabbableObject.EnableTarget();
         grabbableObject.ChangeOutlineColor(_validTargetLineColor);
@@ -118,8 +119,59 @@ public class GravityGunController : MonoBehaviour
         ChangeTargetCircleColor(_validTargetLineColor);
         ChangeLineRendererColor(_validTargetLineColor);
     }
-    
-    //private void Comp
+
+    // Physics computation
+    private void FixedUpdate()
+    {
+        // Dont do anything if no focused object available
+        if (!_focusedObject) return;
+        
+        // check if ignoring
+        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
+        
+        // Pull object
+        if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
+        {
+            PerformPull();
+            return;
+        }
+        
+        
+        switch (_focusedObject.physicsObjectType)
+        {
+            case PhysicsObjectType.Influenceable:
+                //_focusedObject.rb.AddForce(pullForce, ForceMode2D.Force);
+                break;
+            case PhysicsObjectType.Grabbable:
+                //
+                break;
+        }
+
+        // TODO: GRAVIGUN LOGIC AND DIFFERENTIATING FROM INFLUENCEABLE AND GRABBABLE
+    }
+
+    private void PerformPull()
+    {
+        // it was a influenceable object, compute force towards pivot force without going over max velocity
+        Vector2 dir = (_gravigunHoldPos.position - _focusedObject.transform.position).normalized;
+        Vector2 v = _focusedObject.rb.linearVelocity;
+        float along = Vector2.Dot(v, dir);
+        // case 1: we’re still under the cap, keep adding force
+        if (along < _maxPullVelocity)
+        {
+            Vector2 pull = dir * _pullForce; // N = kg·m/s²
+            _focusedObject.rb.AddForce(pull, ForceMode2D.Force);
+        }
+
+        // Case 2: we’ve reached / exceeded the cap → clamp the velocity
+        if (along > _maxPullVelocity)
+        {
+            // keep the sideways component unchanged, but set the along-component
+            // to exactly the cap (so we don’t jitter back and forth)
+            Vector2 sideways = v - dir * along; // remove along-component
+            _focusedObject.rb.linearVelocity = sideways + dir * _maxPullVelocity;
+        }
+    }
     
     // REMEMBER TO DISABLE LINE RENDERER WHEN HOLDING SOMETHING
 
