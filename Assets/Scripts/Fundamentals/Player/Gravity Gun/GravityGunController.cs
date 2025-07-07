@@ -94,7 +94,7 @@ public class GravityGunController : MonoBehaviour
         GameObject go1 = hit.collider.gameObject;
 
         // is it a valid target?
-        if (!go1.TryGetComponent(out PhysicsObject grabbableObject))
+        if (!go1.TryGetComponent(out PhysicsObject physicsObject))
         {
             // We hit a non physics object
             ChangeTargetCircleColor(_defaultLineOfSightColor);
@@ -110,14 +110,7 @@ public class GravityGunController : MonoBehaviour
             return;
         }
         // Was of type Physics Object
-        // Enable outline
-        grabbableObject.EnableTarget();
-        grabbableObject.ChangeOutlineColor(_validTargetLineColor);
-        _focusedObject = grabbableObject;
-
-        // Update Line Renderer
-        ChangeTargetCircleColor(_validTargetLineColor);
-        ChangeLineRendererColor(_validTargetLineColor);
+        _focusedObject = physicsObject;
     }
 
     // Physics computation
@@ -129,23 +122,35 @@ public class GravityGunController : MonoBehaviour
         // check if ignoring
         if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
         
-        // Pull object
+        // Was an infuelceable object, Enable outline and set line renderer
+        // TODO: Would setting the shader property every fixed update affect performance too much?
+        _focusedObject.EnableTarget();
+        _focusedObject.ChangeOutlineColor(_validTargetLineColor);
+        ChangeTargetCircleColor(_validTargetLineColor);
+        ChangeLineRendererColor(_validTargetLineColor);
+        
+        // Perform Pull on non grabbed object if set to do so
         if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
         {
             PerformPull();
+            // Null any push input while pulling as to not queue it
+            InputManager.Instance.pushInputRecieved = false;
             return;
         }
         
-        
-        switch (_focusedObject.physicsObjectType)
+        // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
+        if (!InputManager.Instance.pullHeldDownInput && !_isHoldingObject && InputManager.Instance.pushInputRecieved)
         {
-            case PhysicsObjectType.Influenceable:
-                //_focusedObject.rb.AddForce(pullForce, ForceMode2D.Force);
-                break;
-            case PhysicsObjectType.Grabbable:
-                //
-                break;
+            PerformPush();
+            InputManager.Instance.pushInputRecieved = false;
+            return;
         }
+        
+        // Dont attempt to grab object if not of type grabbable
+        if (_focusedObject.physicsObjectType != PhysicsObjectType.Grabbable) return;
+        
+        
+        
 
         // TODO: GRAVIGUN LOGIC AND DIFFERENTIATING FROM INFLUENCEABLE AND GRABBABLE
     }
@@ -163,7 +168,7 @@ public class GravityGunController : MonoBehaviour
             _focusedObject.rb.AddForce(pull, ForceMode2D.Force);
         }
 
-        // Case 2: we’ve reached / exceeded the cap → clamp the velocity
+        // Case 2: we’ve reached / exceeded the cap, so clamp the velocity
         if (along > _maxPullVelocity)
         {
             // keep the sideways component unchanged, but set the along-component
@@ -171,6 +176,11 @@ public class GravityGunController : MonoBehaviour
             Vector2 sideways = v - dir * along; // remove along-component
             _focusedObject.rb.linearVelocity = sideways + dir * _maxPullVelocity;
         }
+    }
+
+    private void PerformPush()
+    {
+        _focusedObject.rb.AddForce(_pushForce * _currentLookDir, ForceMode2D.Impulse);
     }
     
     // REMEMBER TO DISABLE LINE RENDERER WHEN HOLDING SOMETHING

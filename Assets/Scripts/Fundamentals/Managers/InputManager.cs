@@ -19,7 +19,8 @@ public class InputManager : MonoBehaviour
     public Vector2 movementInput { get; private set; } // Left-stick / WASD
     public bool jumpHeldDownInput { get; private set; }  // True while jump button held
     public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
-    public bool pullHeldDownInput { get; private set; } 
+    public bool pullHeldDownInput { get; private set; }
+    public bool pushInputRecieved; // Controlled by the gravigun
 
     /* ---------- Private vars ---------- */
     private PlayerControls _playerControls;
@@ -68,6 +69,12 @@ public class InputManager : MonoBehaviour
         jumpPressedThisFrame = _playerControls.Movement.Jump.WasPerformedThisFrame();
         jumpHeldDownInput = _playerControls.Movement.Jump.IsPressed();
         pullHeldDownInput = _playerControls.GravityGun.Pull.IsPressed();
+        if (_playerControls.GravityGun.Push.WasPerformedThisFrame())
+        {
+            // This one requires special attention due to the gravity gun using fixedUpdate
+            pushInputRecieved = true;
+        }
+        
     }
 
     private void OnDestroy()

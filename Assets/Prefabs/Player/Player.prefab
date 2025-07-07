@@ -20885,7 +20885,7 @@ MonoBehaviour:
     m_Bits: 640
   _pullForce: 10
   _maxPullVelocity: 4
-  _pushForce: 0.1
+  _pushForce: 5
   _focusedObject: {fileID: 0}
   _isHoldingObject: 0
   doDebugLog: 0
