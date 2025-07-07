@@ -38,8 +38,9 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, Range(0f,100f)] private float _maxRaycastDistance;
     [SerializeField] private LayerMask _lineRaycastMask;
     [SerializeField, Range(0f, 100f)] private float _pullForce;
-    [SerializeField, Range(0f, 100f)] private float _maxPullVelocity;
+    [SerializeField, Range(0f, 100f)] private float _maxVelocity;
     [SerializeField, Range(0f, 100f)] private float _pushForce;
+    [SerializeField, Range(0f, 100f)] private float _pushRange;
     
     [Header("Debugging")]
     [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
@@ -48,6 +49,7 @@ public class GravityGunController : MonoBehaviour
     
     // Local variables
     private Vector2 _currentLookDir;
+    private RaycastHit2D _currentHit;
 
     private void Update()
     {
@@ -66,6 +68,7 @@ public class GravityGunController : MonoBehaviour
         
         // Fire a raycast in the direction of the mouse
         RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, _currentLookDir, _maxRaycastDistance, _lineRaycastMask);
+        _currentHit = hit;
 
         if (!hit)
         {
@@ -141,47 +144,61 @@ public class GravityGunController : MonoBehaviour
         // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
         if (!InputManager.Instance.pullHeldDownInput && !_isHoldingObject && InputManager.Instance.pushInputRecieved)
         {
-            PerformPush();
+            // Null the input field
             InputManager.Instance.pushInputRecieved = false;
-            return;
+            
+            // Check if in range
+            if (Vector2.Distance(_currentHit.point, _gravigunPivot.position) > _pushRange) return; // not in range
+            
+            // Was within range
+            PerformPush();
         }
         
         // Dont attempt to grab object if not of type grabbable
         if (_focusedObject.physicsObjectType != PhysicsObjectType.Grabbable) return;
-        
-        
-        
 
-        // TODO: GRAVIGUN LOGIC AND DIFFERENTIATING FROM INFLUENCEABLE AND GRABBABLE
+        // TODO: GRAVIGUN LOGIC FOR GRABBING
     }
 
     private void PerformPull()
     {
-        // it was a influenceable object, compute force towards pivot force without going over max velocity
-        Vector2 dir = (_gravigunHoldPos.position - _focusedObject.transform.position).normalized;
-        Vector2 v = _focusedObject.rb.linearVelocity;
-        float along = Vector2.Dot(v, dir);
-        // case 1: we’re still under the cap, keep adding force
-        if (along < _maxPullVelocity)
-        {
-            Vector2 pull = dir * _pullForce; // N = kg·m/s²
-            _focusedObject.rb.AddForce(pull, ForceMode2D.Force);
-        }
-
-        // Case 2: we’ve reached / exceeded the cap, so clamp the velocity
-        if (along > _maxPullVelocity)
-        {
-            // keep the sideways component unchanged, but set the along-component
-            // to exactly the cap (so we don’t jitter back and forth)
-            Vector2 sideways = v - dir * along; // remove along-component
-            _focusedObject.rb.linearVelocity = sideways + dir * _maxPullVelocity;
-        }
+        Vector2 dir = (_gravigunHoldPos.position - _focusedObject.transform.position);
+        ApplyCappedForce(_focusedObject.rb,
+            dir,
+            _pullForce,
+            ForceMode2D.Force,
+            _maxVelocity);
     }
 
     private void PerformPush()
     {
-        _focusedObject.rb.AddForce(_pushForce * _currentLookDir, ForceMode2D.Impulse);
+        ApplyCappedForce(_focusedObject.rb,
+            _currentLookDir,
+            _pushForce,
+            ForceMode2D.Impulse,
+            _maxVelocity);
     }
+    
+    /// <summary>
+    /// Adds force towards target without going over the velocity cap
+    /// </summary>
+    private void ApplyCappedForce(Rigidbody2D rb, Vector2 dir, float force, ForceMode2D mode, float maxVel)
+    {
+        dir = dir.normalized;
+        Vector2 v = rb.linearVelocity;               // or rb.linearVelocity if using DOTS
+        float along = Vector2.Dot(v, dir);       // signed speed toward dir
+
+        // accelerate while below the cap
+        if (along < maxVel) rb.AddForce(dir * force, mode);
+        
+        // clamp if we overshoot
+        if (along > maxVel)
+        {
+            Vector2 sideways = v - dir * along;     // flush along-component
+            rb.linearVelocity = sideways + dir * maxVel;
+        }
+    }
+    
     
     // REMEMBER TO DISABLE LINE RENDERER WHEN HOLDING SOMETHING
 

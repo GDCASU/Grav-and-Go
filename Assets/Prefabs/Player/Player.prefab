@@ -20884,8 +20884,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 640
   _pullForce: 10
-  _maxPullVelocity: 4
-  _pushForce: 5
+  _maxVelocity: 4
+  _pushForce: 10
+  _pushRange: 2
   _focusedObject: {fileID: 0}
   _isHoldingObject: 0
   doDebugLog: 0
