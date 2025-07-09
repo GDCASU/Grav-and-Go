@@ -14,7 +14,9 @@ Video Game Development Club: Repository for the year 2025-2026
 
 ## Socials: 
 **Instagram:** [heatwavestudioaz](https://www.instagram.com/heatwavestudioaz/?hl=en)
+
 **YouTube:** [heatwavestudioaz](https://www.youtube.com/@heatwavestudioaz)
+
 **ASU SunDevilCentral:** VGDC@ASU
 
 ## Game Summary:
