@@ -3,18 +3,19 @@ Video Game Development Club: Repository for the year 2025-2026
 
 ## Officers: 
 - President [FalconKiaT](https://github.com/FalconKiaT)
-- Vice President
-- Secretary
+- Vice President [Daniaurena](https://github.com/Daniaurena)
+- Secretary ---
 - Systems Officer [camilee03](https://github.com/camilee03) 
 - Vice Systems Officer [CQVan](https://github.com/CQVan) 
-- Design Officer
-- Sound Officer
-- Narrative Officer
-- Art Officer
+- Design Officer [VanLathanWinn](https://github.com/VanLathanWinn)
+- Sound Officer [ShoTheFlow](https://github.com/ShoTheFlow)
+- Narrative Officer [jarauj10](https://github.com/jarauj10)
+- Art Officer [Imhaber2](https://github.com/Imhaber2)
 
 ## Socials: 
-**Instagram:** heatwavestudioaz
-**ASU DevilSync:**
+**Instagram:** [heatwavestudioaz](https://www.instagram.com/heatwavestudioaz/?hl=en)
+**YouTube:** [heatwavestudioaz](https://www.youtube.com/@heatwavestudioaz)
+**ASU SunDevilCentral:** VGDC@ASU
 
 ## Game Summary:
 TBD
