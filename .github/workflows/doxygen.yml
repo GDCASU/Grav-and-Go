@@ -58,7 +58,7 @@ jobs:
 
       - name: Replace docs content
         run: |
-          rm -rf docs-branch/*
+          find docs-branch -mindepth 1 -delete
           ls docs-branch/*
           cp -r html/* docs-branch/
 
