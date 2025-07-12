@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: generated-docs
-          path: Assets/html/
+          path: Assets/html
 
   commit-docs:
     runs-on: ubuntu-latest
