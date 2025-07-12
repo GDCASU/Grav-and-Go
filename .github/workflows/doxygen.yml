@@ -20,7 +20,7 @@ jobs:
           
       - name: Generate New Documentation
         run: |
-          cd ${{ github.workspace }}/Assets
+          cd Assets
           doxygen -g
           doxygen Doxyfile
           
