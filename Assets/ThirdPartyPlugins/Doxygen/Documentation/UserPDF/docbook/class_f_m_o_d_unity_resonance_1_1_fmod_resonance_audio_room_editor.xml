@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_editor" xml:lang="en-US">
+<title>FMODUnityResonance.FmodResonanceAudioRoomEditor Class Reference</title>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoomEditor</primary></indexterm>
+<para>
+
+<para>A custom editor for properties on the <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room">FmodResonanceAudioRoom</link> script. </para>
+ 
+</para>
+<para>Inheritance diagram for FMODUnityResonance.FmodResonanceAudioRoomEditor:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_editor.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>A custom editor for properties on the <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room">FmodResonanceAudioRoom</link> script. </para>
+
+
+
+<para>This appears in the Inspector window of a <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room">FmodResonanceAudioRoom</link> object. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor/<link linkend="__fmod_resonance_audio_room_editor_8cs">FmodResonanceAudioRoomEditor.cs</link></section>
+</section>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.ObjectToSearchListDrawer Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.ObjectToSearchListDrawer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a904bbee82857d1844d5bafc8611a9551">ObjectToSearchListDrawer</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g">AssetUsageDetectorNamespace.ListDrawer&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a1066fbb5bb643cdfc2479f9f316c6d8f">Draw</link> (List&lt; T &gt; list)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1aede5da1b855c8eb2346c275e44d5684c">CreateElement</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> source)</para>
+</listitem>
+            <listitem><para>override <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a3d9a1a02050e998d8a170f6964ef7b99">GetObjectFromElement</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1ad9f09ef3385462e203d315fd8d6ba952">SetObjectOfElement</link> (List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; list, int index, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> value)</para>
+</listitem>
+            <listitem><para>override bool <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1ab877320c5d903c1616e88b3805f93611">IsElementNull</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a3864b41f6519a23a2ff76de3b95a6cff">PostElementDrawer</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g">AssetUsageDetectorNamespace.ListDrawer&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a136109a093936c2063353ef644da2ad8">ListDrawer</link> (string label, bool acceptSceneObjects)</para>
+</listitem>
+            <listitem><para>T <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a57e7e2c35089c60a2fc5c4d20eadf652">CreateElement</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> source)</para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a1fa9c414bcfd49b0182430815022953d">GetObjectFromElement</link> (T element)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1adc768bf16b467561e64d2c377f81e7ec">SetObjectOfElement</link> (List&lt; T &gt; list, int index, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> value)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a2a46bb287581ec36b6a1131877984781">IsElementNull</link> (T element)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g_1a29dda36ec351d57993a6b88f1a87567d">PostElementDrawer</link> (T element)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a904bbee82857d1844d5bafc8611a9551"/><section>
+    <title>ObjectToSearchListDrawer()</title>
+<indexterm><primary>ObjectToSearchListDrawer</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>ObjectToSearchListDrawer</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.ObjectToSearchListDrawer.ObjectToSearchListDrawer ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1aede5da1b855c8eb2346c275e44d5684c"/><section>
+    <title>CreateElement()</title>
+<indexterm><primary>CreateElement</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>CreateElement</secondary></indexterm>
+<para><computeroutput>override <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> AssetUsageDetectorNamespace.ObjectToSearchListDrawer.CreateElement (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> source)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a3d9a1a02050e998d8a170f6964ef7b99"/><section>
+    <title>GetObjectFromElement()</title>
+<indexterm><primary>GetObjectFromElement</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>GetObjectFromElement</secondary></indexterm>
+<para><computeroutput>override <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> AssetUsageDetectorNamespace.ObjectToSearchListDrawer.GetObjectFromElement (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1ab877320c5d903c1616e88b3805f93611"/><section>
+    <title>IsElementNull()</title>
+<indexterm><primary>IsElementNull</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>IsElementNull</secondary></indexterm>
+<para><computeroutput>override bool AssetUsageDetectorNamespace.ObjectToSearchListDrawer.IsElementNull (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1a3864b41f6519a23a2ff76de3b95a6cff"/><section>
+    <title>PostElementDrawer()</title>
+<indexterm><primary>PostElementDrawer</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>PostElementDrawer</secondary></indexterm>
+<para><computeroutput>override void AssetUsageDetectorNamespace.ObjectToSearchListDrawer.PostElementDrawer (<link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> element)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer_1ad9f09ef3385462e203d315fd8d6ba952"/><section>
+    <title>SetObjectOfElement()</title>
+<indexterm><primary>SetObjectOfElement</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchListDrawer</primary><secondary>SetObjectOfElement</secondary></indexterm>
+<para><computeroutput>override void AssetUsageDetectorNamespace.ObjectToSearchListDrawer.SetObjectOfElement (List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; list, int index, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> value)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__list_drawer_8cs">ListDrawer.cs</link></section>
+</section>

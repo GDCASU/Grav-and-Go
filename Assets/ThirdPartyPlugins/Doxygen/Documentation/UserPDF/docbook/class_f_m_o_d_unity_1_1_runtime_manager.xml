@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_runtime_manager" xml:lang="en-US">
+<title>FMODUnity.RuntimeManager Class Reference</title>
+<indexterm><primary>FMODUnity.RuntimeManager</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.RuntimeManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_runtime_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1afee8a0062b287ac49a42fa0e580eae14">AttachInstanceToGameObject</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance, GameObject gameObject, bool nonRigidbodyVelocity=false)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a3bbc200cbae00f9a4af599191c8d388e">AttachInstanceToGameObject</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance, Transform transform, bool nonRigidbodyVelocity=false)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a0d115631a7fe0768ec839854b4c6f3a7">DetachInstanceFromGameObject</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1aaf3a7111e087e29e2f764911e4813803">LoadBank</link> (string bankName, bool loadSamples=false)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ae930edf28f345ea8289fb48fbb91971e">LoadBank</link> (TextAsset asset, bool loadSamples=false)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1abf07eca2550699b650f87c628d5d7246">UnloadBank</link> (string bankName)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1abd4abe5083ebafa7a7e63f506c17d50a">UnloadBank</link> (TextAsset asset)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a86617f060e0023abfbfc5f459a116914">AnyBankLoading</link> ()</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a37dd74505d7af621527a3de408c86aa3">AnySampleDataLoading</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1acb37a966dfa71f1471681b33ecd2cb8b">WaitForAllLoads</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1aff6c0cc6a5f994a603d2b5c104c8c723">WaitForAllSampleLoading</link> ()</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ad63a13545b739e8cea586d8f9fe7c149">PathToGUID</link> (string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a68c1294e40c0322b50760359fbbcbc31">PathToEventReference</link> (string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a3e5d2f5a4452c630056c7cecbc6a6c3b">CreateInstance</link> (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ae93464303611de65fdd321bbe3aab2e4">CreateInstance</link> (string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a6f9afe415be755da1f341f8480b20a27">CreateInstance</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a19f26b1e65ffa76d20d1b89df30534a1">PlayOneShot</link> (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference, Vector3 position=new Vector3())</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a0e84010eeb5b462cbb2068eba678e746">PlayOneShot</link> (string path, Vector3 position=new Vector3())</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a737af64afb5c74200bc13b46fbf60d13">PlayOneShot</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, Vector3 position=new Vector3())</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a5f8c05e433c842db85f119fe8177a653">PlayOneShotAttached</link> (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference, GameObject gameObject)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a96c09f88ab0c4963631d1e69a18b2015">PlayOneShotAttached</link> (string path, GameObject gameObject)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ade0a9997eebfac34156666d7a04858ad">PlayOneShotAttached</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, GameObject gameObject)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a56796e3b8cf923a08deb130bb5a8a2fa">GetEventDescription</link> (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a0679ea447c1f50935677b7b06c5fdf82">GetEventDescription</link> (string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1acd7dc1cda9245e5cb058bcb6310a768c">GetEventDescription</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a9aa8aaa500f8748defc05b370f5f56d2">SetListenerLocation</link> (int listenerIndex, GameObject gameObject, GameObject attenuationObject=null, Vector3 velocity=new Vector3())</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ae5908500c41af74729cb23192ef0d5ea">SetListenerLocation</link> (GameObject gameObject, GameObject attenuationObject=null)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a1b9f533546a9bc238739ee6e410f27d6">SetListenerLocation</link> (int listenerIndex, GameObject gameObject, GameObject attenuationObject=null)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">FMOD.Studio.Bus</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a91f2a4f2d16fcd3d62383468a48bc70c">GetBus</link> (string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">FMOD.Studio.VCA</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ae25d0112478c5eee0b635abd1190fef8">GetVCA</link> (string path)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a8897e900c6cc208ee404a4362fcbb43b">PauseAllEvents</link> (bool paused)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a71634f83527b86a463775a2c806e1f27">MuteAllEvents</link> (bool muted)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ac643febdf2a471fcc3a4d70b2719c499">HasBankLoaded</link> (string loadedBank)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const string <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a5128bd7350996a4e077d17aaf611111b">BankStubPrefix</link> = &quot;bank stub:&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ab5bdee1972e9397e1ea77d299308eaf2">isOverlayEnabled</link> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a41f75d81c843bd82de29a94670840c97">IsMuted</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a241733fdd3e2c20fa924bce01d12b206">StudioSystem</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_system">FMOD.System</link> <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ad4b6aed3093a17c893d373b2de4c24c1">CoreSystem</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a75c40638ef5339211f80aab5873a292d">IsInitialized</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1a1281d27780c564f934fd337ca811c618">HaveAllBanksLoaded</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager_1ae826ca3bfb358480b1926c9245125389">HaveMasterBanksLoaded</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a86617f060e0023abfbfc5f459a116914"/><section>
+    <title>AnyBankLoading()</title>
+<indexterm><primary>AnyBankLoading</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>AnyBankLoading</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.AnyBankLoading ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a37dd74505d7af621527a3de408c86aa3"/><section>
+    <title>AnySampleDataLoading()</title>
+<indexterm><primary>AnySampleDataLoading</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>AnySampleDataLoading</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.AnySampleDataLoading ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1afee8a0062b287ac49a42fa0e580eae14"/><section>
+    <title>AttachInstanceToGameObject()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>AttachInstanceToGameObject</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>AttachInstanceToGameObject</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.AttachInstanceToGameObject (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance, GameObject gameObject, bool nonRigidbodyVelocity = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a3bbc200cbae00f9a4af599191c8d388e"/><section>
+    <title>AttachInstanceToGameObject()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>AttachInstanceToGameObject</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>AttachInstanceToGameObject</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.AttachInstanceToGameObject (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance, Transform transform, bool nonRigidbodyVelocity = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a3e5d2f5a4452c630056c7cecbc6a6c3b"/><section>
+    <title>CreateInstance()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>CreateInstance</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>CreateInstance</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.RuntimeManager.CreateInstance (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a6f9afe415be755da1f341f8480b20a27"/><section>
+    <title>CreateInstance()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>CreateInstance</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>CreateInstance</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.RuntimeManager.CreateInstance (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ae93464303611de65fdd321bbe3aab2e4"/><section>
+    <title>CreateInstance()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>CreateInstance</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>CreateInstance</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.RuntimeManager.CreateInstance (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a0d115631a7fe0768ec839854b4c6f3a7"/><section>
+    <title>DetachInstanceFromGameObject()</title>
+<indexterm><primary>DetachInstanceFromGameObject</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>DetachInstanceFromGameObject</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.DetachInstanceFromGameObject (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> instance)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a91f2a4f2d16fcd3d62383468a48bc70c"/><section>
+    <title>GetBus()</title>
+<indexterm><primary>GetBus</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>GetBus</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">FMOD.Studio.Bus</link> FMODUnity.RuntimeManager.GetBus (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a56796e3b8cf923a08deb130bb5a8a2fa"/><section>
+    <title>GetEventDescription()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>GetEventDescription</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>GetEventDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> FMODUnity.RuntimeManager.GetEventDescription (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1acd7dc1cda9245e5cb058bcb6310a768c"/><section>
+    <title>GetEventDescription()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>GetEventDescription</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>GetEventDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> FMODUnity.RuntimeManager.GetEventDescription (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a0679ea447c1f50935677b7b06c5fdf82"/><section>
+    <title>GetEventDescription()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>GetEventDescription</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>GetEventDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> FMODUnity.RuntimeManager.GetEventDescription (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ae25d0112478c5eee0b635abd1190fef8"/><section>
+    <title>GetVCA()</title>
+<indexterm><primary>GetVCA</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>GetVCA</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">FMOD.Studio.VCA</link> FMODUnity.RuntimeManager.GetVCA (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ac643febdf2a471fcc3a4d70b2719c499"/><section>
+    <title>HasBankLoaded()</title>
+<indexterm><primary>HasBankLoaded</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>HasBankLoaded</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.HasBankLoaded (string loadedBank)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1aaf3a7111e087e29e2f764911e4813803"/><section>
+    <title>LoadBank()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>LoadBank</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>LoadBank</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.LoadBank (string bankName, bool loadSamples = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ae930edf28f345ea8289fb48fbb91971e"/><section>
+    <title>LoadBank()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>LoadBank</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>LoadBank</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.LoadBank (TextAsset asset, bool loadSamples = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a71634f83527b86a463775a2c806e1f27"/><section>
+    <title>MuteAllEvents()</title>
+<indexterm><primary>MuteAllEvents</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>MuteAllEvents</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.MuteAllEvents (bool muted)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a68c1294e40c0322b50760359fbbcbc31"/><section>
+    <title>PathToEventReference()</title>
+<indexterm><primary>PathToEventReference</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PathToEventReference</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> FMODUnity.RuntimeManager.PathToEventReference (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ad63a13545b739e8cea586d8f9fe7c149"/><section>
+    <title>PathToGUID()</title>
+<indexterm><primary>PathToGUID</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PathToGUID</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> FMODUnity.RuntimeManager.PathToGUID (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a8897e900c6cc208ee404a4362fcbb43b"/><section>
+    <title>PauseAllEvents()</title>
+<indexterm><primary>PauseAllEvents</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PauseAllEvents</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PauseAllEvents (bool paused)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a19f26b1e65ffa76d20d1b89df30534a1"/><section>
+    <title>PlayOneShot()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>PlayOneShot</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShot</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShot (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference, Vector3 position = <computeroutput>new&#160;Vector3()</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a737af64afb5c74200bc13b46fbf60d13"/><section>
+    <title>PlayOneShot()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>PlayOneShot</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShot</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShot (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, Vector3 position = <computeroutput>new&#160;Vector3()</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a0e84010eeb5b462cbb2068eba678e746"/><section>
+    <title>PlayOneShot()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>PlayOneShot</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShot</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShot (string path, Vector3 position = <computeroutput>new&#160;Vector3()</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a5f8c05e433c842db85f119fe8177a653"/><section>
+    <title>PlayOneShotAttached()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>PlayOneShotAttached</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShotAttached</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShotAttached (<link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> eventReference, GameObject gameObject)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ade0a9997eebfac34156666d7a04858ad"/><section>
+    <title>PlayOneShotAttached()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>PlayOneShotAttached</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShotAttached</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShotAttached (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, GameObject gameObject)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a96c09f88ab0c4963631d1e69a18b2015"/><section>
+    <title>PlayOneShotAttached()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>PlayOneShotAttached</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>PlayOneShotAttached</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.PlayOneShotAttached (string path, GameObject gameObject)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ae5908500c41af74729cb23192ef0d5ea"/><section>
+    <title>SetListenerLocation()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>SetListenerLocation</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>SetListenerLocation</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.SetListenerLocation (GameObject gameObject, GameObject attenuationObject = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a1b9f533546a9bc238739ee6e410f27d6"/><section>
+    <title>SetListenerLocation()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>SetListenerLocation</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>SetListenerLocation</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.SetListenerLocation (int listenerIndex, GameObject gameObject, GameObject attenuationObject = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a9aa8aaa500f8748defc05b370f5f56d2"/><section>
+    <title>SetListenerLocation()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>SetListenerLocation</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>SetListenerLocation</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.SetListenerLocation (int listenerIndex, GameObject gameObject, GameObject attenuationObject = <computeroutput>null</computeroutput>
+, Vector3 velocity = <computeroutput>new&#160;Vector3()</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1abf07eca2550699b650f87c628d5d7246"/><section>
+    <title>UnloadBank()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>UnloadBank</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>UnloadBank</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.UnloadBank (string bankName)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1abd4abe5083ebafa7a7e63f506c17d50a"/><section>
+    <title>UnloadBank()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>UnloadBank</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>UnloadBank</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.UnloadBank (TextAsset asset)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1acb37a966dfa71f1471681b33ecd2cb8b"/><section>
+    <title>WaitForAllLoads()</title>
+<indexterm><primary>WaitForAllLoads</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>WaitForAllLoads</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.WaitForAllLoads ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1aff6c0cc6a5f994a603d2b5c104c8c723"/><section>
+    <title>WaitForAllSampleLoading()</title>
+<indexterm><primary>WaitForAllSampleLoading</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>WaitForAllSampleLoading</secondary></indexterm>
+<para><computeroutput>void FMODUnity.RuntimeManager.WaitForAllSampleLoading ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a5128bd7350996a4e077d17aaf611111b"/><section>
+    <title>BankStubPrefix</title>
+<indexterm><primary>BankStubPrefix</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>BankStubPrefix</secondary></indexterm>
+<para><computeroutput>const string FMODUnity.RuntimeManager.BankStubPrefix = &quot;bank stub:&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ab5bdee1972e9397e1ea77d299308eaf2"/><section>
+    <title>isOverlayEnabled</title>
+<indexterm><primary>isOverlayEnabled</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>isOverlayEnabled</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.isOverlayEnabled = false<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ad4b6aed3093a17c893d373b2de4c24c1"/><section>
+    <title>CoreSystem</title>
+<indexterm><primary>CoreSystem</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>CoreSystem</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_system">FMOD.System</link> FMODUnity.RuntimeManager.CoreSystem<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a1281d27780c564f934fd337ca811c618"/><section>
+    <title>HaveAllBanksLoaded</title>
+<indexterm><primary>HaveAllBanksLoaded</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>HaveAllBanksLoaded</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.HaveAllBanksLoaded<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1ae826ca3bfb358480b1926c9245125389"/><section>
+    <title>HaveMasterBanksLoaded</title>
+<indexterm><primary>HaveMasterBanksLoaded</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>HaveMasterBanksLoaded</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.HaveMasterBanksLoaded<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a75c40638ef5339211f80aab5873a292d"/><section>
+    <title>IsInitialized</title>
+<indexterm><primary>IsInitialized</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>IsInitialized</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.IsInitialized<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a41f75d81c843bd82de29a94670840c97"/><section>
+    <title>IsMuted</title>
+<indexterm><primary>IsMuted</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>IsMuted</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.RuntimeManager.IsMuted<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_runtime_manager_1a241733fdd3e2c20fa924bce01d12b206"/><section>
+    <title>StudioSystem</title>
+<indexterm><primary>StudioSystem</primary><secondary>FMODUnity.RuntimeManager</secondary></indexterm>
+<indexterm><primary>FMODUnity.RuntimeManager</primary><secondary>StudioSystem</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> FMODUnity.RuntimeManager.StudioSystem<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__runtime_manager_8cs">RuntimeManager.cs</link></section>
+</section>

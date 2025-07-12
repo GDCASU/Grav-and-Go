@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_project_null_1_1_doc_tools" xml:lang="en-US">
+<title>ProjectNull.DocTools Namespace Reference</title>
+<indexterm><primary>ProjectNull.DocTools</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_project_null_1_1_doc_tools_1_1_doxy_file">DoxyFile</link></para>
+
+<para>The base doxy file class used to make new doxyfiles form a base doxyfile. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_project_null_1_1_doc_tools_1_1_doxy_settings">DoxySettings</link></para>
+
+<para>This is the settings of the. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_project_null_1_1_doc_tools_1_1_doxy_window">DoxyWindow</link></para>
+
+<para>The doxygen window in the editor to access doxygen and the documentation. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_project_null_1_1_doc_tools_1_1_process_runner">ProcessRunner</link></para>
+
+<para>Contains a process and this is the interface point. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83">DoxyType</link> { <link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83a8f9bfe9d1345237cb3b2b205864da075">User</link>
+, <link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83a672caf27f5363dc833bda5099775e891">Developer</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83"/><section>
+    <title>DoxyType</title>
+<indexterm><primary>DoxyType</primary><secondary>ProjectNull.DocTools</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools</primary><secondary>DoxyType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83">ProjectNull.DocTools.DoxyType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>User</primary><secondary>ProjectNull.DocTools</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools</primary><secondary>User</secondary></indexterm>
+<anchor xml:id="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83a8f9bfe9d1345237cb3b2b205864da075"/>User</entry><entry></entry></row><row><entry><indexterm><primary>Developer</primary><secondary>ProjectNull.DocTools</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools</primary><secondary>Developer</secondary></indexterm>
+<anchor xml:id="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83a672caf27f5363dc833bda5099775e891"/>Developer</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

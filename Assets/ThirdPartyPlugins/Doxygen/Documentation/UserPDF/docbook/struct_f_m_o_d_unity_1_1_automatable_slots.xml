@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots" xml:lang="en-US">
+<title>FMODUnity.AutomatableSlots Struct Reference</title>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1ada5b22e907b7918f6ecb80cf4ff1a06e">GetValue</link> (int index)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a65d65d8ad457a51cfc8c26aa1690a4fe">Slot00</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1aa718c64838e00bc383da9ab60639c207">Slot01</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a21ec9d078adff2be9419a1d207878793">Slot02</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a7496675c0af91c66f65e6b057ac86237">Slot03</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a19b2eaf878f2f2f2efcbf293c09d4d41">Slot04</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1ae0acfb3dc31fcc024d3455436eb3d9cb">Slot05</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a8df27fa9eeb558a3b0a588072bd38f35">Slot06</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a6622ef16006ecbd69a8eefbbbbd85509">Slot07</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1ab3d3a25b536f0ac3c2630117900bec50">Slot08</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a243b0b68da2dd65d9d1c01978d1f0734">Slot09</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a039e9a051746b48419ca40a1ad967a9c">Slot10</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a466ccf040968c03f4efcd947d19efd24">Slot11</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1aeae495b2cb03a2180c2ffe6514c60277">Slot12</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1ac6c174efdcf81a7e67c93b7eb8a6702a">Slot13</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a377e80b79e056f817e0147724bb776b6">Slot14</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a12690dde818e953c9f390e3e5114aae9">Slot15</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const int <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots_1a2659d3e6a54e3a039bd956f32ed3690b">Count</link> = 16</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1ada5b22e907b7918f6ecb80cf4ff1a06e"/><section>
+    <title>GetValue()</title>
+<indexterm><primary>GetValue</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>GetValue</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.GetValue (int index)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a2659d3e6a54e3a039bd956f32ed3690b"/><section>
+    <title>Count</title>
+<indexterm><primary>Count</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Count</secondary></indexterm>
+<para><computeroutput>const int FMODUnity.AutomatableSlots.Count = 16<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a65d65d8ad457a51cfc8c26aa1690a4fe"/><section>
+    <title>Slot00</title>
+<indexterm><primary>Slot00</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot00</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot00</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1aa718c64838e00bc383da9ab60639c207"/><section>
+    <title>Slot01</title>
+<indexterm><primary>Slot01</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot01</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot01</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a21ec9d078adff2be9419a1d207878793"/><section>
+    <title>Slot02</title>
+<indexterm><primary>Slot02</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot02</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot02</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a7496675c0af91c66f65e6b057ac86237"/><section>
+    <title>Slot03</title>
+<indexterm><primary>Slot03</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot03</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot03</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a19b2eaf878f2f2f2efcbf293c09d4d41"/><section>
+    <title>Slot04</title>
+<indexterm><primary>Slot04</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot04</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot04</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1ae0acfb3dc31fcc024d3455436eb3d9cb"/><section>
+    <title>Slot05</title>
+<indexterm><primary>Slot05</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot05</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot05</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a8df27fa9eeb558a3b0a588072bd38f35"/><section>
+    <title>Slot06</title>
+<indexterm><primary>Slot06</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot06</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot06</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a6622ef16006ecbd69a8eefbbbbd85509"/><section>
+    <title>Slot07</title>
+<indexterm><primary>Slot07</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot07</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot07</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1ab3d3a25b536f0ac3c2630117900bec50"/><section>
+    <title>Slot08</title>
+<indexterm><primary>Slot08</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot08</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot08</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a243b0b68da2dd65d9d1c01978d1f0734"/><section>
+    <title>Slot09</title>
+<indexterm><primary>Slot09</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot09</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot09</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a039e9a051746b48419ca40a1ad967a9c"/><section>
+    <title>Slot10</title>
+<indexterm><primary>Slot10</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot10</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot10</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a466ccf040968c03f4efcd947d19efd24"/><section>
+    <title>Slot11</title>
+<indexterm><primary>Slot11</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot11</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot11</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1aeae495b2cb03a2180c2ffe6514c60277"/><section>
+    <title>Slot12</title>
+<indexterm><primary>Slot12</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot12</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot12</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1ac6c174efdcf81a7e67c93b7eb8a6702a"/><section>
+    <title>Slot13</title>
+<indexterm><primary>Slot13</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot13</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot13</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a377e80b79e056f817e0147724bb776b6"/><section>
+    <title>Slot14</title>
+<indexterm><primary>Slot14</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot14</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot14</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_unity_1_1_automatable_slots_1a12690dde818e953c9f390e3e5114aae9"/><section>
+    <title>Slot15</title>
+<indexterm><primary>Slot15</primary><secondary>FMODUnity.AutomatableSlots</secondary></indexterm>
+<indexterm><primary>FMODUnity.AutomatableSlots</primary><secondary>Slot15</secondary></indexterm>
+<para><computeroutput>float FMODUnity.AutomatableSlots.Slot15</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__automatable_slots_8cs">AutomatableSlots.cs</link></section>
+</section>

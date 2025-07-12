@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions" xml:lang="en-US">
+<title>FMODUnity.SerializedPropertyExtensions Class Reference</title>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1ab0cef4746e859b10df5e7437e7488685">ArrayContains</link> (this SerializedProperty array, Func&lt; SerializedProperty, bool &gt; predicate)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1af8970079069052702fe83a6e366b32e8">ArrayContains</link> (this SerializedProperty array, string subPropertyName, Func&lt; SerializedProperty, bool &gt; predicate)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aa758567b8c560b0e26b7039a503dc5e3">FindArrayIndex</link> (this SerializedProperty array, Func&lt; SerializedProperty, bool &gt; predicate)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a9f707b7c70a0446a33a72d5ba5ab4997">FindArrayIndex</link> (this SerializedProperty array, string subPropertyName, Func&lt; SerializedProperty, bool &gt; predicate)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a69db40ce4871956d30027cec23ebe830">ArrayAdd</link> (this SerializedProperty array, Action&lt; SerializedProperty &gt; initialize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aa610ed65bafc5f06e9f95e9a668a677f">ArrayClear</link> (this SerializedProperty array)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aee8985c58f4b82bfd23e8dcd4177169d">SetGuid</link> (this SerializedProperty property, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aee0117ca54e686fec799d0c1a05e7b9b">SetEventReference</link> (this SerializedProperty property, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, string path)</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a04fa7886ee379c87b352234201de336a">GetEventReference</link> (this SerializedProperty property)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a69db40ce4871956d30027cec23ebe830"/><section>
+    <title>ArrayAdd()</title>
+<indexterm><primary>ArrayAdd</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>ArrayAdd</secondary></indexterm>
+<para><computeroutput>void FMODUnity.SerializedPropertyExtensions.ArrayAdd (this SerializedProperty array, Action&lt; SerializedProperty &gt; initialize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aa610ed65bafc5f06e9f95e9a668a677f"/><section>
+    <title>ArrayClear()</title>
+<indexterm><primary>ArrayClear</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>ArrayClear</secondary></indexterm>
+<para><computeroutput>void FMODUnity.SerializedPropertyExtensions.ArrayClear (this SerializedProperty array)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1ab0cef4746e859b10df5e7437e7488685"/><section>
+    <title>ArrayContains()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ArrayContains</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>ArrayContains</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.SerializedPropertyExtensions.ArrayContains (this SerializedProperty array, Func&lt; SerializedProperty, bool &gt; predicate)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1af8970079069052702fe83a6e366b32e8"/><section>
+    <title>ArrayContains()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ArrayContains</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>ArrayContains</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.SerializedPropertyExtensions.ArrayContains (this SerializedProperty array, string subPropertyName, Func&lt; SerializedProperty, bool &gt; predicate)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aa758567b8c560b0e26b7039a503dc5e3"/><section>
+    <title>FindArrayIndex()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>FindArrayIndex</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>FindArrayIndex</secondary></indexterm>
+<para><computeroutput>int FMODUnity.SerializedPropertyExtensions.FindArrayIndex (this SerializedProperty array, Func&lt; SerializedProperty, bool &gt; predicate)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a9f707b7c70a0446a33a72d5ba5ab4997"/><section>
+    <title>FindArrayIndex()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>FindArrayIndex</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>FindArrayIndex</secondary></indexterm>
+<para><computeroutput>int FMODUnity.SerializedPropertyExtensions.FindArrayIndex (this SerializedProperty array, string subPropertyName, Func&lt; SerializedProperty, bool &gt; predicate)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1a04fa7886ee379c87b352234201de336a"/><section>
+    <title>GetEventReference()</title>
+<indexterm><primary>GetEventReference</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>GetEventReference</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> FMODUnity.SerializedPropertyExtensions.GetEventReference (this SerializedProperty property)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aee0117ca54e686fec799d0c1a05e7b9b"/><section>
+    <title>SetEventReference()</title>
+<indexterm><primary>SetEventReference</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>SetEventReference</secondary></indexterm>
+<para><computeroutput>void FMODUnity.SerializedPropertyExtensions.SetEventReference (this SerializedProperty property, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid, string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_serialized_property_extensions_1aee8985c58f4b82bfd23e8dcd4177169d"/><section>
+    <title>SetGuid()</title>
+<indexterm><primary>SetGuid</primary><secondary>FMODUnity.SerializedPropertyExtensions</secondary></indexterm>
+<indexterm><primary>FMODUnity.SerializedPropertyExtensions</primary><secondary>SetGuid</secondary></indexterm>
+<para><computeroutput>void FMODUnity.SerializedPropertyExtensions.SetGuid (this SerializedProperty property, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> guid)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_utils_8cs">EditorUtils.cs</link></section>
+</section>

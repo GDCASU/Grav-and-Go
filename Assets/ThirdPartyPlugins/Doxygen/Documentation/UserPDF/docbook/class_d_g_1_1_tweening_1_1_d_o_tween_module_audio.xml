@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio" xml:lang="en-US">
+<title>DG.Tweening.DOTweenModuleAudio Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static TweenerCore&lt; float, float, FloatOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a6b8452bedf6d6fcea3834449d28a199a">DOFade</link> (this AudioSource target, float endValue, float duration)</para>
+
+<para>Tweens an AudioSource&apos;s volume to the given value. </para>
+</listitem>
+            <listitem><para>static TweenerCore&lt; float, float, FloatOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a09381bdaeb7d39b978b8be8c368151ca">DOPitch</link> (this AudioSource target, float endValue, float duration)</para>
+
+<para>Tweens an AudioSource&apos;s pitch to the given value. </para>
+</listitem>
+            <listitem><para>static TweenerCore&lt; float, float, FloatOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1af57aa063a22dab2d543331dd09fc3b71">DOSetFloat</link> (this AudioMixer target, string floatName, float endValue, float duration)</para>
+
+<para>Tweens an AudioMixer&apos;s exposed float to the given value. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a32671396a496c7a937603a2b02f44a15">DOComplete</link> (this AudioMixer target, bool withCallbacks=false)</para>
+
+<para>Completes all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens completed (meaning the tweens that don&apos;t have infinite loops and were not already complete) </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1aa7a3d5ab6e117182b8b439ccd9d02640">DOKill</link> (this AudioMixer target, bool complete=false)</para>
+
+<para>Kills all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens killed. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1acb48b4fb973c97e97089694fdb3a1bd2">DOFlip</link> (this AudioMixer target)</para>
+
+<para>Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens flipped. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae663a5b056d4a0a1f53a8669dc3f66f7">DOGoto</link> (this AudioMixer target, float to, bool andPlay=false)</para>
+
+<para>Sends to the given position all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens involved. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae2f344f469d6eabb16c8da32e8fb829e">DOPause</link> (this AudioMixer target)</para>
+
+<para>Pauses all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens paused. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a8ec002dcd7d373b85afbd411f743a4de">DOPlay</link> (this AudioMixer target)</para>
+
+<para>Plays all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1abd55ef531a264b1c8106537017ca9e84">DOPlayBackwards</link> (this AudioMixer target)</para>
+
+<para>Plays backwards all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ac12997fb2dd7f6f95ecfd997399f74a1">DOPlayForward</link> (this AudioMixer target)</para>
+
+<para>Plays forward all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a4002dda18e507e3a3cda23ade47f7d21">DORestart</link> (this AudioMixer target)</para>
+
+<para>Restarts all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens restarted. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae7c7b48e67c3ff704efdb46f95bbdf0d">DORewind</link> (this AudioMixer target)</para>
+
+<para>Rewinds all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens rewinded. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a360d2659873c2708520a0cbf67cb0e9b">DOSmoothRewind</link> (this AudioMixer target)</para>
+
+<para>Smoothly rewinds all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens rewinded. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1adee92d3de9199e2916542260581dbdcc">DOTogglePause</link> (this AudioMixer target)</para>
+
+<para>Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens involved. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a32671396a496c7a937603a2b02f44a15"/><section>
+    <title>DOComplete()</title>
+<indexterm><primary>DOComplete</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOComplete</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOComplete (this AudioMixer target, bool withCallbacks = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Completes all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens completed (meaning the tweens that don&apos;t have infinite loops and were not already complete) </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>withCallbacks</entry><entry>
+<para>For Sequences only: if TRUE also internal Sequence callbacks will be fired, otherwise they will be ignored</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a6b8452bedf6d6fcea3834449d28a199a"/><section>
+    <title>DOFade()</title>
+<indexterm><primary>DOFade</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOFade</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; float, float, FloatOptions &gt; DG.Tweening.DOTweenModuleAudio.DOFade (this AudioSource target, float endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens an AudioSource&apos;s volume to the given value. </para>
+</para>
+
+<para>Also stores the AudioSource as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The end value to reach (0 to 1)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1acb48b4fb973c97e97089694fdb3a1bd2"/><section>
+    <title>DOFlip()</title>
+<indexterm><primary>DOFlip</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOFlip</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOFlip (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Flips the direction (backwards if it was going forward or viceversa) of all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens flipped. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae663a5b056d4a0a1f53a8669dc3f66f7"/><section>
+    <title>DOGoto()</title>
+<indexterm><primary>DOGoto</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOGoto</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOGoto (this AudioMixer target, float to, bool andPlay = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Sends to the given position all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens involved. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>to</entry><entry>
+<para>Time position to reach (if higher than the whole tween duration the tween will simply reach its end)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>andPlay</entry><entry>
+<para>If TRUE will play the tween after reaching the given position, otherwise it will pause it</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1aa7a3d5ab6e117182b8b439ccd9d02640"/><section>
+    <title>DOKill()</title>
+<indexterm><primary>DOKill</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOKill</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOKill (this AudioMixer target, bool complete = <computeroutput>false</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Kills all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens killed. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>complete</entry><entry>
+<para>If TRUE completes the tween before killing it</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae2f344f469d6eabb16c8da32e8fb829e"/><section>
+    <title>DOPause()</title>
+<indexterm><primary>DOPause</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOPause</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOPause (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Pauses all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens paused. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a09381bdaeb7d39b978b8be8c368151ca"/><section>
+    <title>DOPitch()</title>
+<indexterm><primary>DOPitch</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOPitch</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; float, float, FloatOptions &gt; DG.Tweening.DOTweenModuleAudio.DOPitch (this AudioSource target, float endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens an AudioSource&apos;s pitch to the given value. </para>
+</para>
+
+<para>Also stores the AudioSource as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The end value to reach</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a8ec002dcd7d373b85afbd411f743a4de"/><section>
+    <title>DOPlay()</title>
+<indexterm><primary>DOPlay</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOPlay</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOPlay (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Plays all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1abd55ef531a264b1c8106537017ca9e84"/><section>
+    <title>DOPlayBackwards()</title>
+<indexterm><primary>DOPlayBackwards</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOPlayBackwards</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOPlayBackwards (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Plays backwards all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ac12997fb2dd7f6f95ecfd997399f74a1"/><section>
+    <title>DOPlayForward()</title>
+<indexterm><primary>DOPlayForward</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOPlayForward</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOPlayForward (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Plays forward all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens played. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a4002dda18e507e3a3cda23ade47f7d21"/><section>
+    <title>DORestart()</title>
+<indexterm><primary>DORestart</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DORestart</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DORestart (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Restarts all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens restarted. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1ae7c7b48e67c3ff704efdb46f95bbdf0d"/><section>
+    <title>DORewind()</title>
+<indexterm><primary>DORewind</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DORewind</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DORewind (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Rewinds all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens rewinded. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1af57aa063a22dab2d543331dd09fc3b71"/><section>
+    <title>DOSetFloat()</title>
+<indexterm><primary>DOSetFloat</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOSetFloat</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; float, float, FloatOptions &gt; DG.Tweening.DOTweenModuleAudio.DOSetFloat (this AudioMixer target, string floatName, float endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens an AudioMixer&apos;s exposed float to the given value. </para>
+</para>
+
+<para>Also stores the AudioMixer as the tween&apos;s target so it can be used for filtered operations. Note that you need to manually expose a float in an AudioMixerGroup in order to be able to tween it from an AudioMixer. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>floatName</entry><entry>
+<para>Name given to the exposed float to set</para>
+</entry>
+                            </row>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The end value to reach</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1a360d2659873c2708520a0cbf67cb0e9b"/><section>
+    <title>DOSmoothRewind()</title>
+<indexterm><primary>DOSmoothRewind</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOSmoothRewind</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOSmoothRewind (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Smoothly rewinds all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens rewinded. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio_1adee92d3de9199e2916542260581dbdcc"/><section>
+    <title>DOTogglePause()</title>
+<indexterm><primary>DOTogglePause</primary><secondary>DG.Tweening.DOTweenModuleAudio</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleAudio</primary><secondary>DOTogglePause</secondary></indexterm>
+<para><computeroutput>int DG.Tweening.DOTweenModuleAudio.DOTogglePause (this AudioMixer target)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Toggles the paused state (plays if it was paused, pauses if it was playing) of all tweens that have this target as a reference (meaning tweens that were started from this target, or that had this target added as an Id) and returns the total number of tweens involved. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_audio_8cs">DOTweenModuleAudio.cs</link></section>
+</section>

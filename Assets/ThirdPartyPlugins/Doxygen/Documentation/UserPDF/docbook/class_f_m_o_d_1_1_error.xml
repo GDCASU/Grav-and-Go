@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_1_1_error" xml:lang="en-US">
+<title>FMOD.Error Class Reference</title>
+<indexterm><primary>FMOD.Error</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_1_1_error_1aaf08aed6f877103189fe20a60dcc87ce">String</link> (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> errcode)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_1_1_error_1aaf08aed6f877103189fe20a60dcc87ce"/><section>
+    <title>String()</title>
+<indexterm><primary>String</primary><secondary>FMOD.Error</secondary></indexterm>
+<indexterm><primary>FMOD.Error</primary><secondary>String</secondary></indexterm>
+<para><computeroutput>string FMOD.Error.String (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> errcode)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__errors_8cs">fmod_errors.cs</link></section>
+</section>

@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_settings" xml:lang="en-US">
+<title>FMODUnity.Settings Class Reference</title>
+<indexterm><primary>FMODUnity.Settings</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.Settings:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_settings.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <emphasis role="strong">PlatformTemplate</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_settings_1a64e39f66c8f0c42671a0970102fbbd52">SetPlatformParent</link> (<link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> platform, <link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> newParent)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a10ece606053aae105227a74b6ef9f947">HasSourceProject</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a44d4072eb18d9c03f520be42f02c08af">HasPlatforms</link> = true</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_settings_1aacffafbb5a2ff068078a8e0fabf79835">BankRefreshCooldown</link> = 5</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1ac30ba33e19972e3ef7ac07b12c16abd0">ShowBankRefreshWindow</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a2dd4383484b53abed4f564d233865997">AutomaticEventLoading</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3">BankLoadType</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1af61e911d616c010efe4780473addf918">BankLoadType</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1ac1e667c118a9053f446b5e076af0c65d">AutomaticSampleLoading</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a88bc2cd3c9354bbba6496d7c42a9de89">EncryptionKey</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960">ImportType</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1a0930be2f9d542fcf457b6f3a7e6f6430">ImportType</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a99557c8168a946048e0c8ef9590dbf9a">TargetAssetPath</link> = &quot;FMODBanks&quot;</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a9796c990e3f99c5ba3bdbaa4241c452d">TargetBankFolder</link> = &quot;&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0">EventLinkage</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1a40e441aecdc928ba182a757a00025172">EventLinkage</link> = <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0aac70412e939d72a9234cdebb1af5867b">EventLinkage.Path</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ae26c0e42bca4d9ba2b529ed29cf35b33">FMOD.DEBUG_FLAGS</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1aeab1ee95b721bfcbd2d2787ee2a38319">LoggingLevel</link> = <link linkend="_namespace_f_m_o_d_1ae26c0e42bca4d9ba2b529ed29cf35b33a059e9861e0400dfbe05c98a841f3f96b">FMOD.DEBUG_FLAGS.WARNING</link></para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_f_m_o_d_unity_1_1_settings_1a0c3defac46bfed2322972c07e723f79e">MasterBanks</link></para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_f_m_o_d_unity_1_1_settings_1af4e70499313d6882e2977a0a15080768">Banks</link></para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_f_m_o_d_unity_1_1_settings_1a68f750bf78f71faa5e6d71f228504e53">BanksToLoad</link></para>
+</listitem>
+            <listitem><para>ushort <link linkend="_class_f_m_o_d_unity_1_1_settings_1ad38f8a15531ec78cb5eb03c4c6a26866">LiveUpdatePort</link> = 9264</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1aafd8e7826179516d9060cab76446d810">EnableMemoryTracking</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a1f2b52c4fc8b53db5ae5faa079192932">AndroidUseOBB</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1af6208941c0751bfcbcece459557a157e">AndroidPatchBuild</link> = false</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70">MeterChannelOrderingType</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1aa536278189e66868cf8a5931b3f91346">MeterChannelOrdering</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a456a4363ff65652507ae4ab5c1bc8f56">StopEventsOutsideMaxDistance</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1a103c15a0a84c443df6d96363c28dcd34">EnableErrorCallback</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_settings_1afa32257de6f479c8db948427d2e59d38">HideSetupWizard</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_settings_1ad6a55049e516b5a76cc7d3bb365cedf9">Platforms</link> = new List&lt;<link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link>&gt;()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1a17796f616141880ffca4439cdb8939f4">DefaultPlatform</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1a8c0edb8963a044a234bd5008ccdbd24a">PlayInEditorPlatform</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_f_m_o_d_unity_1_1_settings">Settings</link> <link linkend="_class_f_m_o_d_unity_1_1_settings_1a640d4a3317c4e9a1235a31385a845e0b">Instance</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a4394186ebec78756bc05cda19d9dd4d5">SourceProjectPath</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a217841d083ef6d58b4cafeb597151aff">SourceBankPath</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_settings_1a64f8115a3472e2fe8c0c84d328840931">TargetSubFolder</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a64e39f66c8f0c42671a0970102fbbd52"/><section>
+    <title>SetPlatformParent()</title>
+<indexterm><primary>SetPlatformParent</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>SetPlatformParent</secondary></indexterm>
+<para><computeroutput>void FMODUnity.Settings.SetPlatformParent (<link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> platform, <link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> newParent)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1af6208941c0751bfcbcece459557a157e"/><section>
+    <title>AndroidPatchBuild</title>
+<indexterm><primary>AndroidPatchBuild</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>AndroidPatchBuild</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.AndroidPatchBuild = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a1f2b52c4fc8b53db5ae5faa079192932"/><section>
+    <title>AndroidUseOBB</title>
+<indexterm><primary>AndroidUseOBB</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>AndroidUseOBB</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.AndroidUseOBB = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a2dd4383484b53abed4f564d233865997"/><section>
+    <title>AutomaticEventLoading</title>
+<indexterm><primary>AutomaticEventLoading</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>AutomaticEventLoading</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.AutomaticEventLoading</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1ac1e667c118a9053f446b5e076af0c65d"/><section>
+    <title>AutomaticSampleLoading</title>
+<indexterm><primary>AutomaticSampleLoading</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>AutomaticSampleLoading</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.AutomaticSampleLoading</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1af61e911d616c010efe4780473addf918"/><section>
+    <title>BankLoadType</title>
+<indexterm><primary>BankLoadType</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>BankLoadType</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3">BankLoadType</link> FMODUnity.Settings.BankLoadType</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1aacffafbb5a2ff068078a8e0fabf79835"/><section>
+    <title>BankRefreshCooldown</title>
+<indexterm><primary>BankRefreshCooldown</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>BankRefreshCooldown</secondary></indexterm>
+<para><computeroutput>int FMODUnity.Settings.BankRefreshCooldown = 5</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1af4e70499313d6882e2977a0a15080768"/><section>
+    <title>Banks</title>
+<indexterm><primary>Banks</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>Banks</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; FMODUnity.Settings.Banks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a68f750bf78f71faa5e6d71f228504e53"/><section>
+    <title>BanksToLoad</title>
+<indexterm><primary>BanksToLoad</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>BanksToLoad</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; FMODUnity.Settings.BanksToLoad</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a17796f616141880ffca4439cdb8939f4"/><section>
+    <title>DefaultPlatform</title>
+<indexterm><primary>DefaultPlatform</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>DefaultPlatform</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> FMODUnity.Settings.DefaultPlatform</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a103c15a0a84c443df6d96363c28dcd34"/><section>
+    <title>EnableErrorCallback</title>
+<indexterm><primary>EnableErrorCallback</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>EnableErrorCallback</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.EnableErrorCallback = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1aafd8e7826179516d9060cab76446d810"/><section>
+    <title>EnableMemoryTracking</title>
+<indexterm><primary>EnableMemoryTracking</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>EnableMemoryTracking</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.EnableMemoryTracking</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a88bc2cd3c9354bbba6496d7c42a9de89"/><section>
+    <title>EncryptionKey</title>
+<indexterm><primary>EncryptionKey</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>EncryptionKey</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.EncryptionKey</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a40e441aecdc928ba182a757a00025172"/><section>
+    <title>EventLinkage</title>
+<indexterm><primary>EventLinkage</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>EventLinkage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0">EventLinkage</link> FMODUnity.Settings.EventLinkage = <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0aac70412e939d72a9234cdebb1af5867b">EventLinkage.Path</link></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a44d4072eb18d9c03f520be42f02c08af"/><section>
+    <title>HasPlatforms</title>
+<indexterm><primary>HasPlatforms</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>HasPlatforms</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.HasPlatforms = true</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a10ece606053aae105227a74b6ef9f947"/><section>
+    <title>HasSourceProject</title>
+<indexterm><primary>HasSourceProject</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>HasSourceProject</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.HasSourceProject = true</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1afa32257de6f479c8db948427d2e59d38"/><section>
+    <title>HideSetupWizard</title>
+<indexterm><primary>HideSetupWizard</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>HideSetupWizard</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.HideSetupWizard</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a0930be2f9d542fcf457b6f3a7e6f6430"/><section>
+    <title>ImportType</title>
+<indexterm><primary>ImportType</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>ImportType</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960">ImportType</link> FMODUnity.Settings.ImportType</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1ad38f8a15531ec78cb5eb03c4c6a26866"/><section>
+    <title>LiveUpdatePort</title>
+<indexterm><primary>LiveUpdatePort</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>LiveUpdatePort</secondary></indexterm>
+<para><computeroutput>ushort FMODUnity.Settings.LiveUpdatePort = 9264</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1aeab1ee95b721bfcbd2d2787ee2a38319"/><section>
+    <title>LoggingLevel</title>
+<indexterm><primary>LoggingLevel</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>LoggingLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ae26c0e42bca4d9ba2b529ed29cf35b33">FMOD.DEBUG_FLAGS</link> FMODUnity.Settings.LoggingLevel = <link linkend="_namespace_f_m_o_d_1ae26c0e42bca4d9ba2b529ed29cf35b33a059e9861e0400dfbe05c98a841f3f96b">FMOD.DEBUG_FLAGS.WARNING</link></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a0c3defac46bfed2322972c07e723f79e"/><section>
+    <title>MasterBanks</title>
+<indexterm><primary>MasterBanks</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>MasterBanks</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; FMODUnity.Settings.MasterBanks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1aa536278189e66868cf8a5931b3f91346"/><section>
+    <title>MeterChannelOrdering</title>
+<indexterm><primary>MeterChannelOrdering</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>MeterChannelOrdering</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70">MeterChannelOrderingType</link> FMODUnity.Settings.MeterChannelOrdering</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1ad6a55049e516b5a76cc7d3bb365cedf9"/><section>
+    <title>Platforms</title>
+<indexterm><primary>Platforms</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>Platforms</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link>&gt; FMODUnity.Settings.Platforms = new List&lt;<link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link>&gt;()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a8c0edb8963a044a234bd5008ccdbd24a"/><section>
+    <title>PlayInEditorPlatform</title>
+<indexterm><primary>PlayInEditorPlatform</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>PlayInEditorPlatform</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link> FMODUnity.Settings.PlayInEditorPlatform</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1ac30ba33e19972e3ef7ac07b12c16abd0"/><section>
+    <title>ShowBankRefreshWindow</title>
+<indexterm><primary>ShowBankRefreshWindow</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>ShowBankRefreshWindow</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.ShowBankRefreshWindow = true</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a456a4363ff65652507ae4ab5c1bc8f56"/><section>
+    <title>StopEventsOutsideMaxDistance</title>
+<indexterm><primary>StopEventsOutsideMaxDistance</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>StopEventsOutsideMaxDistance</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.Settings.StopEventsOutsideMaxDistance = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a99557c8168a946048e0c8ef9590dbf9a"/><section>
+    <title>TargetAssetPath</title>
+<indexterm><primary>TargetAssetPath</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>TargetAssetPath</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.TargetAssetPath = &quot;FMODBanks&quot;</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a9796c990e3f99c5ba3bdbaa4241c452d"/><section>
+    <title>TargetBankFolder</title>
+<indexterm><primary>TargetBankFolder</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>TargetBankFolder</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.TargetBankFolder = &quot;&quot;</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a640d4a3317c4e9a1235a31385a845e0b"/><section>
+    <title>Instance</title>
+<indexterm><primary>Instance</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>Instance</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_settings">Settings</link> FMODUnity.Settings.Instance<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a217841d083ef6d58b4cafeb597151aff"/><section>
+    <title>SourceBankPath</title>
+<indexterm><primary>SourceBankPath</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>SourceBankPath</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.SourceBankPath<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a4394186ebec78756bc05cda19d9dd4d5"/><section>
+    <title>SourceProjectPath</title>
+<indexterm><primary>SourceProjectPath</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>SourceProjectPath</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.SourceProjectPath<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_settings_1a64f8115a3472e2fe8c0c84d328840931"/><section>
+    <title>TargetSubFolder</title>
+<indexterm><primary>TargetSubFolder</primary><secondary>FMODUnity.Settings</secondary></indexterm>
+<indexterm><primary>FMODUnity.Settings</primary><secondary>TargetSubFolder</secondary></indexterm>
+<para><computeroutput>string FMODUnity.Settings.TargetSubFolder<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__settings_8cs">Settings.cs</link></section>
+</section>

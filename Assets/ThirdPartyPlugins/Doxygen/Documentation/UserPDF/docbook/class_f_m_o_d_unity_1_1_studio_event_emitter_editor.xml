@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor" xml:lang="en-US">
+<title>FMODUnity.StudioEventEmitterEditor Class Reference</title>
+<indexterm><primary>FMODUnity.StudioEventEmitterEditor</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.StudioEventEmitterEditor:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_studio_event_emitter_editor.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1a44924d9896a0d8f42f7ec1f94be269af">OnEnable</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1abacc82ad4564e0c6ea9ccf85d186878f">OnSceneGUI</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1af0d497ce6f482a59eb66bc0141e07195">OnInspectorGUI</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1a44924d9896a0d8f42f7ec1f94be269af"/><section>
+    <title>OnEnable()</title>
+<indexterm><primary>OnEnable</primary><secondary>FMODUnity.StudioEventEmitterEditor</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitterEditor</primary><secondary>OnEnable</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitterEditor.OnEnable ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1af0d497ce6f482a59eb66bc0141e07195"/><section>
+    <title>OnInspectorGUI()</title>
+<indexterm><primary>OnInspectorGUI</primary><secondary>FMODUnity.StudioEventEmitterEditor</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitterEditor</primary><secondary>OnInspectorGUI</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.StudioEventEmitterEditor.OnInspectorGUI ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor_1abacc82ad4564e0c6ea9ccf85d186878f"/><section>
+    <title>OnSceneGUI()</title>
+<indexterm><primary>OnSceneGUI</primary><secondary>FMODUnity.StudioEventEmitterEditor</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitterEditor</primary><secondary>OnSceneGUI</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitterEditor.OnSceneGUI ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__studio_event_emitter_editor_8cs">StudioEventEmitterEditor.cs</link></section>
+</section>

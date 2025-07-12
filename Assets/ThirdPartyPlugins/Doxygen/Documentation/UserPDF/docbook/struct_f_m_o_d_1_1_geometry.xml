@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_geometry" xml:lang="en-US">
+<title>FMOD.Geometry Struct Reference</title>
+<indexterm><primary>FMOD.Geometry</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a55059fcb7fce590d4135cb84404d7cbb">release</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1ae46964f58a37da3881e74857cfedce73">addPolygon</link> (float directocclusion, float reverbocclusion, bool doublesided, int numvertices, <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link>[] vertices, out int polygonindex)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a71e2d84a9cd5e4fff67cf8a25b92c471">getNumPolygons</link> (out int numpolygons)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a19177e49f9de1cd6d5c0ae50ae147da8">getMaxPolygons</link> (out int maxpolygons, out int maxvertices)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1afd25eca4187834a8b3466345852ce2d2">getPolygonNumVertices</link> (int index, out int numvertices)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1aaaafc144eb110ffd6f0c251d54057782">setPolygonVertex</link> (int index, int vertexindex, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vertex)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a9cf35f206581bd84eb6d1c04d499cbf7">getPolygonVertex</link> (int index, int vertexindex, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vertex)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a3dea6ebfee0b6c91237b7136c3cf0b78">setPolygonAttributes</link> (int index, float directocclusion, float reverbocclusion, bool doublesided)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a5993fb0a4a428a9de5262a6254daeeef">getPolygonAttributes</link> (int index, out float directocclusion, out float reverbocclusion, out bool doublesided)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a1d58b449d41ca263631a1789f037d6ea">setActive</link> (bool active)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1ad588549fa909fcdcc695c7396d553f68">getActive</link> (out bool active)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1aa1b290acb751d1464c1cb2c5ff85bf22">setRotation</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> forward, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> up)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a4404e35a5d036794d04a090be76d56df">getRotation</link> (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> forward, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> up)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a6a9ffd3421759d70a2b406e3982eaad1">setPosition</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1abc470dd5be42ffb0007b2046f1195d2b">getPosition</link> (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a44a7ca44b0fd116a3091f0e8ff1ef5db">setScale</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> scale)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1aae31972e889008ca660f0458c7a13459">getScale</link> (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> scale)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1ab1c1659f4c3183ec0238ad2ce1bdcc12">save</link> (IntPtr data, out int datasize)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1ad8119f19c0d90e9b18685881b9362585">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_geometry_1a988a68c2633336b5ee8a6654e11a1c8e">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_geometry_1a82a1a84cde7cb4c5459bab410e70bc70">Geometry</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_geometry_1a6d3538d41c01f47bd4007176ccea4694">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_geometry_1a1edebcd7281cba32a9099e22d567f5c7">clearHandle</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_geometry_1a302ff2dd6ea4363cf84f13c793b68803">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a82a1a84cde7cb4c5459bab410e70bc70"/><section>
+    <title>Geometry()</title>
+<indexterm><primary>Geometry</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>Geometry</secondary></indexterm>
+<para><computeroutput>FMOD.Geometry.Geometry (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1ae46964f58a37da3881e74857cfedce73"/><section>
+    <title>addPolygon()</title>
+<indexterm><primary>addPolygon</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>addPolygon</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.addPolygon (float directocclusion, float reverbocclusion, bool doublesided, int numvertices, <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link>[] vertices, out int polygonindex)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a1edebcd7281cba32a9099e22d567f5c7"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Geometry.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1ad588549fa909fcdcc695c7396d553f68"/><section>
+    <title>getActive()</title>
+<indexterm><primary>getActive</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getActive</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getActive (out bool active)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a19177e49f9de1cd6d5c0ae50ae147da8"/><section>
+    <title>getMaxPolygons()</title>
+<indexterm><primary>getMaxPolygons</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getMaxPolygons</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getMaxPolygons (out int maxpolygons, out int maxvertices)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a71e2d84a9cd5e4fff67cf8a25b92c471"/><section>
+    <title>getNumPolygons()</title>
+<indexterm><primary>getNumPolygons</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getNumPolygons</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getNumPolygons (out int numpolygons)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a5993fb0a4a428a9de5262a6254daeeef"/><section>
+    <title>getPolygonAttributes()</title>
+<indexterm><primary>getPolygonAttributes</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getPolygonAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getPolygonAttributes (int index, out float directocclusion, out float reverbocclusion, out bool doublesided)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1afd25eca4187834a8b3466345852ce2d2"/><section>
+    <title>getPolygonNumVertices()</title>
+<indexterm><primary>getPolygonNumVertices</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getPolygonNumVertices</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getPolygonNumVertices (int index, out int numvertices)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a9cf35f206581bd84eb6d1c04d499cbf7"/><section>
+    <title>getPolygonVertex()</title>
+<indexterm><primary>getPolygonVertex</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getPolygonVertex</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getPolygonVertex (int index, int vertexindex, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vertex)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1abc470dd5be42ffb0007b2046f1195d2b"/><section>
+    <title>getPosition()</title>
+<indexterm><primary>getPosition</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getPosition (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a4404e35a5d036794d04a090be76d56df"/><section>
+    <title>getRotation()</title>
+<indexterm><primary>getRotation</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getRotation</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getRotation (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> forward, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> up)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1aae31972e889008ca660f0458c7a13459"/><section>
+    <title>getScale()</title>
+<indexterm><primary>getScale</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getScale</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getScale (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> scale)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a988a68c2633336b5ee8a6654e11a1c8e"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a6d3538d41c01f47bd4007176ccea4694"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Geometry.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a55059fcb7fce590d4135cb84404d7cbb"/><section>
+    <title>release()</title>
+<indexterm><primary>release</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>release</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.release ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1ab1c1659f4c3183ec0238ad2ce1bdcc12"/><section>
+    <title>save()</title>
+<indexterm><primary>save</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>save</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.save (IntPtr data, out int datasize)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a1d58b449d41ca263631a1789f037d6ea"/><section>
+    <title>setActive()</title>
+<indexterm><primary>setActive</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setActive</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setActive (bool active)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a3dea6ebfee0b6c91237b7136c3cf0b78"/><section>
+    <title>setPolygonAttributes()</title>
+<indexterm><primary>setPolygonAttributes</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setPolygonAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setPolygonAttributes (int index, float directocclusion, float reverbocclusion, bool doublesided)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1aaaafc144eb110ffd6f0c251d54057782"/><section>
+    <title>setPolygonVertex()</title>
+<indexterm><primary>setPolygonVertex</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setPolygonVertex</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setPolygonVertex (int index, int vertexindex, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vertex)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a6a9ffd3421759d70a2b406e3982eaad1"/><section>
+    <title>setPosition()</title>
+<indexterm><primary>setPosition</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setPosition (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1aa1b290acb751d1464c1cb2c5ff85bf22"/><section>
+    <title>setRotation()</title>
+<indexterm><primary>setRotation</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setRotation</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setRotation (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> forward, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> up)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a44a7ca44b0fd116a3091f0e8ff1ef5db"/><section>
+    <title>setScale()</title>
+<indexterm><primary>setScale</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setScale</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setScale (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> scale)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1ad8119f19c0d90e9b18685881b9362585"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Geometry.setUserData (IntPtr userdata)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_geometry_1a302ff2dd6ea4363cf84f13c793b68803"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Geometry</secondary></indexterm>
+<indexterm><primary>FMOD.Geometry</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Geometry.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

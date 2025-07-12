@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_t_a_g" xml:lang="en-US">
+<title>FMOD.TAG Struct Reference</title>
+<indexterm><primary>FMOD.TAG</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1aa71e6eb8a2ac0e0d2c3ccb99298381bc">TAGTYPE</link> <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a3d73454dc0c085db653d88b5ec0e78ce">type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a6268b7db79f2e91c554f4ef43aa2d62a">TAGDATATYPE</link> <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a47a2cda512a3ad09f430bb47cdf6f2b9">datatype</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_string_wrapper">StringWrapper</link> <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a03f5c554b090d3593415f5beadd310d9">name</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a15133012c6fb1b9920ac0cbf5b29e0ae">data</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a643ecb3cad6fa57ea0bd979d43a3ef4c">datalen</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_t_a_g_1a100d6ea833e20d543c9176a19f435a98">updated</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a15133012c6fb1b9920ac0cbf5b29e0ae"/><section>
+    <title>data</title>
+<indexterm><primary>data</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>data</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.TAG.data</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a643ecb3cad6fa57ea0bd979d43a3ef4c"/><section>
+    <title>datalen</title>
+<indexterm><primary>datalen</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>datalen</secondary></indexterm>
+<para><computeroutput>uint FMOD.TAG.datalen</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a47a2cda512a3ad09f430bb47cdf6f2b9"/><section>
+    <title>datatype</title>
+<indexterm><primary>datatype</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>datatype</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a6268b7db79f2e91c554f4ef43aa2d62a">TAGDATATYPE</link> FMOD.TAG.datatype</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a03f5c554b090d3593415f5beadd310d9"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>name</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_string_wrapper">StringWrapper</link> FMOD.TAG.name</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a3d73454dc0c085db653d88b5ec0e78ce"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>type</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1aa71e6eb8a2ac0e0d2c3ccb99298381bc">TAGTYPE</link> FMOD.TAG.type</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_t_a_g_1a100d6ea833e20d543c9176a19f435a98"/><section>
+    <title>updated</title>
+<indexterm><primary>updated</primary><secondary>FMOD.TAG</secondary></indexterm>
+<indexterm><primary>FMOD.TAG</primary><secondary>updated</secondary></indexterm>
+<para><computeroutput>bool FMOD.TAG.updated</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

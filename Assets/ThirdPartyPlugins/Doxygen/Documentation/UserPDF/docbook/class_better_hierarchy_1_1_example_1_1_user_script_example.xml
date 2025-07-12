@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_better_hierarchy_1_1_example_1_1_user_script_example" xml:lang="en-US">
+<title>BetterHierarchy.Example.UserScriptExample Class Reference</title>
+<indexterm><primary>BetterHierarchy.Example.UserScriptExample</primary></indexterm>
+<para>Inheritance diagram for BetterHierarchy.Example.UserScriptExample:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_better_hierarchy_1_1_example_1_1_user_script_example.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Demo Scene/Scripts/<link linkend="__user_script_example_8cs">UserScriptExample.cs</link></section>

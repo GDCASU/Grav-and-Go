@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_thread" xml:lang="en-US">
+<title>FMOD.Thread Struct Reference</title>
+<indexterm><primary>FMOD.Thread</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_thread_1a7173bfdc0f01ee21bdbe5edf9f037d85">SetAttributes</link> (<link linkend="_namespace_f_m_o_d_1a0b7941251dee019d2109ffd1ff79016f">THREAD_TYPE</link> type, <link linkend="_namespace_f_m_o_d_1abe505fb113d9e481bccf967f266c2152">THREAD_AFFINITY</link> affinity=<link linkend="_namespace_f_m_o_d_1abe505fb113d9e481bccf967f266c2152a358cd37c5e637b167d3a59edbaaf9967">THREAD_AFFINITY.GROUP_DEFAULT</link>, <link linkend="_namespace_f_m_o_d_1a652f4f4545bb85b8f403628575b6f87b">THREAD_PRIORITY</link> priority=<link linkend="_namespace_f_m_o_d_1a652f4f4545bb85b8f403628575b6f87ba5b39c8b553c821e7cddc6da64b5bd2ee">THREAD_PRIORITY.DEFAULT</link>, <link linkend="_namespace_f_m_o_d_1af431c644270b0d5df397f383c00c2b31">THREAD_STACK_SIZE</link> stacksize=<link linkend="_namespace_f_m_o_d_1af431c644270b0d5df397f383c00c2b31a5b39c8b553c821e7cddc6da64b5bd2ee">THREAD_STACK_SIZE.DEFAULT</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_thread_1a7173bfdc0f01ee21bdbe5edf9f037d85"/><section>
+    <title>SetAttributes()</title>
+<indexterm><primary>SetAttributes</primary><secondary>FMOD.Thread</secondary></indexterm>
+<indexterm><primary>FMOD.Thread</primary><secondary>SetAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Thread.SetAttributes (<link linkend="_namespace_f_m_o_d_1a0b7941251dee019d2109ffd1ff79016f">THREAD_TYPE</link> type, <link linkend="_namespace_f_m_o_d_1abe505fb113d9e481bccf967f266c2152">THREAD_AFFINITY</link> affinity = <computeroutput><link linkend="_namespace_f_m_o_d_1abe505fb113d9e481bccf967f266c2152a358cd37c5e637b167d3a59edbaaf9967">THREAD_AFFINITY::GROUP_DEFAULT</link></computeroutput>
+, <link linkend="_namespace_f_m_o_d_1a652f4f4545bb85b8f403628575b6f87b">THREAD_PRIORITY</link> priority = <computeroutput><link linkend="_namespace_f_m_o_d_1a652f4f4545bb85b8f403628575b6f87ba5b39c8b553c821e7cddc6da64b5bd2ee">THREAD_PRIORITY::DEFAULT</link></computeroutput>
+, <link linkend="_namespace_f_m_o_d_1af431c644270b0d5df397f383c00c2b31">THREAD_STACK_SIZE</link> stacksize = <computeroutput><link linkend="_namespace_f_m_o_d_1af431c644270b0d5df397f383c00c2b31a5b39c8b553c821e7cddc6da64b5bd2ee">THREAD_STACK_SIZE::DEFAULT</link></computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

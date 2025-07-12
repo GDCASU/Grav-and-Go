@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_editor_utils" xml:lang="en-US">
+<title>FMODUnity.EditorUtils Class Reference</title>
+<indexterm><primary>FMODUnity.EditorUtils</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EditorUtils:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_editor_utils.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1af9aad6a3e5c920a17a645cc9c9457191">CheckResult</link> (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> result)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a9688586546c3d4c3b1dd534b76217d14">ValidateSource</link> (out bool valid, out string reason)</para>
+</listitem>
+            <listitem><para>static string[] <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a843ae64d91ff47df9f10a2f2436acfd8">GetBankPlatforms</link> ()</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ad4c7bf8afb4b51317518dacf1ebc8b95">VersionString</link> (uint version)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a802f29870762f2a5351029eb918ab4df">DurationString</link> (float seconds)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a5aa922b811d13d3f79d81f1bc3cf38fd">SeriesString</link> (string separator, string finalSeparator, IEnumerable&lt; string &gt; elements)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a0df5919d342f48287c941ef344881663">Pluralize</link> (int count, string singular, string plural)</para>
+</listitem>
+            <listitem><para>static Texture2D <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1abe5dd0f73cc20828acd8f604112e824e">LoadImage</link> (string filename)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ac5565382ef4dab74a63a0a2879787407">GameObjectPath</link> (Component component, GameObject root=null)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a912ea6d653c2bdb76aa907cfad07f459">HasAttribute&lt; T &gt;</link> (MemberInfo member)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a58e5b35ac45aa3e8c58c0d887a60b7f8">AssetExists</link> (string path)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a8927c00f8fc209a1575f77a7b1b7e6d2">EnsureFolderExists</link> (string folderPath)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ae67f82589830167e96786c87919d9486">GetParentFolder</link> (string assetPath)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ada92fd3f396382e05914402b7ce25ed4">DrawLegacyEvent</link> (SerializedProperty property, string migrationTarget)</para>
+</listitem>
+            <listitem><para>static Rect <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a27d347d616f44d29c6367fb845c988b5">DrawHelpButtonLayout</link> (Func&lt; PopupWindowContent &gt; createContent)</para>
+</listitem>
+            <listitem><para>static Rect <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a8ed4ee7c3a587d20a4251a1093eb0e5c">DrawHelpButton</link> (Rect rect, Func&lt; PopupWindowContent &gt; createContent)</para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a0c749782ca5b8bc5c23c434e4950a22e">DrawParameterValueLayout</link> (float value, <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> paramRef)</para>
+</listitem>
+            <listitem><para>static Vector2 <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a77c761ea71caf171708f78c7ba5c9fd7">GetHelpButtonSize</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a04a39c26c59b846696b7508bd45cb727">UpdateParamsOnEmitter</link> (SerializedObject serializedObject, string path)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a0f835d0740a97ecc0c0cfdd7a750448d">OnlineManual</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1af545ef155cd850f707275b002b584a15">OpenOnlineDocumentation</link> (string section, string page=null, string anchor=null)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a64b8b976a8c0a4aa63342e302e25a8c0">About</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a3ed1703fcfca094a71ebcfb6b1dc5739">LoadPreviewBanks</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1af30967e74a1c68b3a7712a39968185c5">UnloadPreviewBanks</link> ()</para>
+</listitem>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a931a8d344452c06f244615f135631674">PreviewEvent</link> (<link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref">EditorEventRef</link> eventRef, Dictionary&lt; string, float &gt; previewParamValues, float volume=1, float startTime=0.0f)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ad33f4c813c7e8c3ed620d5ea51bccdba">PreviewPause</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> eventInstance)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a3039e93ff541f8f4c2b84474df8316db">PreviewStop</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> eventInstance, <link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</link> stopMode=<link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881ae35884a2445bc4ae2df52f188763273c">FMOD.Studio.STOP_MODE.IMMEDIATE</link>)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a4f7620c6bf49d1f93c1cc7132f94b2f0">StopAllPreviews</link> ()</para>
+</listitem>
+            <listitem><para>static float[] <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1af4f204b52a055a54b800a3adfcfdfcdf">GetMetering</link> ()</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a613b6b0353fb5ffb09a1ff5a992ad0ee">IsConnectedToStudio</link> ()</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a62dceeb9ab0f5c983ab8908860930028">SendScriptCommand</link> (string command)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1ae637bc7ad25fa72b4c7123d8d9878840">GetScriptOutput</link> (string command)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a39d3ee5d092de40a58fee1fbc128b9d7">CreateStudioEvent</link> (string eventPath, string eventName)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a8788e2e3f603dfcf5263c8f432f8c9eb">WritableAssetPath</link> (string cacheAssetName)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const string <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a9644d7bba2bbdc41f67e01ec647dde4e">BuildFolder</link> = &quot;Build&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a29c21bd160550a6241d75ac48c2b86e2">System</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_f_m_o_d_unity_1_1_editor_utils_1a1db5acee0336cea96adf19f87343fcb6">PreviewBanksLoaded</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a64b8b976a8c0a4aa63342e302e25a8c0"/><section>
+    <title>About()</title>
+<indexterm><primary>About</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>About</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.About ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a58e5b35ac45aa3e8c58c0d887a60b7f8"/><section>
+    <title>AssetExists()</title>
+<indexterm><primary>AssetExists</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>AssetExists</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorUtils.AssetExists (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1af9aad6a3e5c920a17a645cc9c9457191"/><section>
+    <title>CheckResult()</title>
+<indexterm><primary>CheckResult</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>CheckResult</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.CheckResult (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> result)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a39d3ee5d092de40a58fee1fbc128b9d7"/><section>
+    <title>CreateStudioEvent()</title>
+<indexterm><primary>CreateStudioEvent</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>CreateStudioEvent</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.CreateStudioEvent (string eventPath, string eventName)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a8ed4ee7c3a587d20a4251a1093eb0e5c"/><section>
+    <title>DrawHelpButton()</title>
+<indexterm><primary>DrawHelpButton</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>DrawHelpButton</secondary></indexterm>
+<para><computeroutput>Rect FMODUnity.EditorUtils.DrawHelpButton (Rect rect, Func&lt; PopupWindowContent &gt; createContent)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a27d347d616f44d29c6367fb845c988b5"/><section>
+    <title>DrawHelpButtonLayout()</title>
+<indexterm><primary>DrawHelpButtonLayout</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>DrawHelpButtonLayout</secondary></indexterm>
+<para><computeroutput>Rect FMODUnity.EditorUtils.DrawHelpButtonLayout (Func&lt; PopupWindowContent &gt; createContent)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ada92fd3f396382e05914402b7ce25ed4"/><section>
+    <title>DrawLegacyEvent()</title>
+<indexterm><primary>DrawLegacyEvent</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>DrawLegacyEvent</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.DrawLegacyEvent (SerializedProperty property, string migrationTarget)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a0c749782ca5b8bc5c23c434e4950a22e"/><section>
+    <title>DrawParameterValueLayout()</title>
+<indexterm><primary>DrawParameterValueLayout</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>DrawParameterValueLayout</secondary></indexterm>
+<para><computeroutput>float FMODUnity.EditorUtils.DrawParameterValueLayout (float value, <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> paramRef)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a802f29870762f2a5351029eb918ab4df"/><section>
+    <title>DurationString()</title>
+<indexterm><primary>DurationString</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>DurationString</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.DurationString (float seconds)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a8927c00f8fc209a1575f77a7b1b7e6d2"/><section>
+    <title>EnsureFolderExists()</title>
+<indexterm><primary>EnsureFolderExists</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>EnsureFolderExists</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.EnsureFolderExists (string folderPath)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ac5565382ef4dab74a63a0a2879787407"/><section>
+    <title>GameObjectPath()</title>
+<indexterm><primary>GameObjectPath</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GameObjectPath</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.GameObjectPath (Component component, GameObject root = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a843ae64d91ff47df9f10a2f2436acfd8"/><section>
+    <title>GetBankPlatforms()</title>
+<indexterm><primary>GetBankPlatforms</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GetBankPlatforms</secondary></indexterm>
+<para><computeroutput>string[] FMODUnity.EditorUtils.GetBankPlatforms ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a77c761ea71caf171708f78c7ba5c9fd7"/><section>
+    <title>GetHelpButtonSize()</title>
+<indexterm><primary>GetHelpButtonSize</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GetHelpButtonSize</secondary></indexterm>
+<para><computeroutput>Vector2 FMODUnity.EditorUtils.GetHelpButtonSize ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1af4f204b52a055a54b800a3adfcfdfcdf"/><section>
+    <title>GetMetering()</title>
+<indexterm><primary>GetMetering</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GetMetering</secondary></indexterm>
+<para><computeroutput>float[] FMODUnity.EditorUtils.GetMetering ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ae67f82589830167e96786c87919d9486"/><section>
+    <title>GetParentFolder()</title>
+<indexterm><primary>GetParentFolder</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GetParentFolder</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.GetParentFolder (string assetPath)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ae637bc7ad25fa72b4c7123d8d9878840"/><section>
+    <title>GetScriptOutput()</title>
+<indexterm><primary>GetScriptOutput</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>GetScriptOutput</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.GetScriptOutput (string command)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a912ea6d653c2bdb76aa907cfad07f459"/><section>
+    <title>HasAttribute&lt; T &gt;()</title>
+<indexterm><primary>HasAttribute&lt; T &gt;</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>HasAttribute&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorUtils.HasAttribute&lt; T &gt; (MemberInfo member)<computeroutput>[static]</computeroutput></computeroutput></para><simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:Attribute</emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a613b6b0353fb5ffb09a1ff5a992ad0ee"/><section>
+    <title>IsConnectedToStudio()</title>
+<indexterm><primary>IsConnectedToStudio</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>IsConnectedToStudio</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorUtils.IsConnectedToStudio ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1abe5dd0f73cc20828acd8f604112e824e"/><section>
+    <title>LoadImage()</title>
+<indexterm><primary>LoadImage</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>LoadImage</secondary></indexterm>
+<para><computeroutput>Texture2D FMODUnity.EditorUtils.LoadImage (string filename)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a3ed1703fcfca094a71ebcfb6b1dc5739"/><section>
+    <title>LoadPreviewBanks()</title>
+<indexterm><primary>LoadPreviewBanks</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>LoadPreviewBanks</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.LoadPreviewBanks ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a0f835d0740a97ecc0c0cfdd7a750448d"/><section>
+    <title>OnlineManual()</title>
+<indexterm><primary>OnlineManual</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>OnlineManual</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.OnlineManual ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1af545ef155cd850f707275b002b584a15"/><section>
+    <title>OpenOnlineDocumentation()</title>
+<indexterm><primary>OpenOnlineDocumentation</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>OpenOnlineDocumentation</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.OpenOnlineDocumentation (string section, string page = <computeroutput>null</computeroutput>
+, string anchor = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a0df5919d342f48287c941ef344881663"/><section>
+    <title>Pluralize()</title>
+<indexterm><primary>Pluralize</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>Pluralize</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.Pluralize (int count, string singular, string plural)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a931a8d344452c06f244615f135631674"/><section>
+    <title>PreviewEvent()</title>
+<indexterm><primary>PreviewEvent</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>PreviewEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.EditorUtils.PreviewEvent (<link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref">EditorEventRef</link> eventRef, Dictionary&lt; string, float &gt; previewParamValues, float volume = <computeroutput>1</computeroutput>
+, float startTime = <computeroutput>0::0f</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ad33f4c813c7e8c3ed620d5ea51bccdba"/><section>
+    <title>PreviewPause()</title>
+<indexterm><primary>PreviewPause</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>PreviewPause</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.PreviewPause (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> eventInstance)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a3039e93ff541f8f4c2b84474df8316db"/><section>
+    <title>PreviewStop()</title>
+<indexterm><primary>PreviewStop</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>PreviewStop</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.PreviewStop (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> eventInstance, <link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</link> stopMode = <computeroutput><link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881ae35884a2445bc4ae2df52f188763273c">FMOD::Studio::STOP_MODE::IMMEDIATE</link></computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a62dceeb9ab0f5c983ab8908860930028"/><section>
+    <title>SendScriptCommand()</title>
+<indexterm><primary>SendScriptCommand</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>SendScriptCommand</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorUtils.SendScriptCommand (string command)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a5aa922b811d13d3f79d81f1bc3cf38fd"/><section>
+    <title>SeriesString()</title>
+<indexterm><primary>SeriesString</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>SeriesString</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.SeriesString (string separator, string finalSeparator, IEnumerable&lt; string &gt; elements)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a4f7620c6bf49d1f93c1cc7132f94b2f0"/><section>
+    <title>StopAllPreviews()</title>
+<indexterm><primary>StopAllPreviews</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>StopAllPreviews</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.StopAllPreviews ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1af30967e74a1c68b3a7712a39968185c5"/><section>
+    <title>UnloadPreviewBanks()</title>
+<indexterm><primary>UnloadPreviewBanks</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>UnloadPreviewBanks</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.UnloadPreviewBanks ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a04a39c26c59b846696b7508bd45cb727"/><section>
+    <title>UpdateParamsOnEmitter()</title>
+<indexterm><primary>UpdateParamsOnEmitter</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>UpdateParamsOnEmitter</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.UpdateParamsOnEmitter (SerializedObject serializedObject, string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a9688586546c3d4c3b1dd534b76217d14"/><section>
+    <title>ValidateSource()</title>
+<indexterm><primary>ValidateSource</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>ValidateSource</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EditorUtils.ValidateSource (out bool valid, out string reason)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1ad4c7bf8afb4b51317518dacf1ebc8b95"/><section>
+    <title>VersionString()</title>
+<indexterm><primary>VersionString</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>VersionString</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.VersionString (uint version)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a8788e2e3f603dfcf5263c8f432f8c9eb"/><section>
+    <title>WritableAssetPath()</title>
+<indexterm><primary>WritableAssetPath</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>WritableAssetPath</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorUtils.WritableAssetPath (string cacheAssetName)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a9644d7bba2bbdc41f67e01ec647dde4e"/><section>
+    <title>BuildFolder</title>
+<indexterm><primary>BuildFolder</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>BuildFolder</secondary></indexterm>
+<para><computeroutput>const string FMODUnity.EditorUtils.BuildFolder = &quot;Build&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a1db5acee0336cea96adf19f87343fcb6"/><section>
+    <title>PreviewBanksLoaded</title>
+<indexterm><primary>PreviewBanksLoaded</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>PreviewBanksLoaded</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorUtils.PreviewBanksLoaded<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_utils_1a29c21bd160550a6241d75ac48c2b86e2"/><section>
+    <title>System</title>
+<indexterm><primary>System</primary><secondary>FMODUnity.EditorUtils</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorUtils</primary><secondary>System</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> FMODUnity.EditorUtils.System<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_utils_8cs">EditorUtils.cs</link></section>
+</section>

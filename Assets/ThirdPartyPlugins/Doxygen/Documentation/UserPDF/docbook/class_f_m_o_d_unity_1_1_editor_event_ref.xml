@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref" xml:lang="en-US">
+<title>FMODUnity.EditorEventRef Class Reference</title>
+<indexterm><primary>FMODUnity.EditorEventRef</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EditorEventRef:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_editor_event_ref.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1ae9b198d618d5c43ab922eb6f85ba1ccb">Path</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a1ef37690970785ee8d95427e9c642ad7">Guid</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a7b69b211a01c934da1bca8c26418e5b0">Banks</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a15eb784896a733597a027b2265d1043d">IsStream</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a87c43bc58a50fa5082ad7f732798ff78">Is3D</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a68722b53e41bcc5ac66c2504436c9243">IsOneShot</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1ac7965c8d3efd9cdd1311154f0b4c2bd8">Parameters</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a623304e06f5d3dc0918e6a1bb3acc925">MinDistance</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a0dd3f66432474a5eb670a27c4e884fed">MaxDistance</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a1c0c542b801d90faffe756d7a479d10f">Length</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1abad0060ed7c875a09edb4bc00aec6d04">LocalParameters</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref_1a5dd5a0d74549f0821647f0e6ecf7bfe2">GlobalParameters</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a7b69b211a01c934da1bca8c26418e5b0"/><section>
+    <title>Banks</title>
+<indexterm><primary>Banks</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Banks</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link>&gt; FMODUnity.EditorEventRef.Banks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a1ef37690970785ee8d95427e9c642ad7"/><section>
+    <title>Guid</title>
+<indexterm><primary>Guid</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Guid</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_g_u_i_d">FMOD.GUID</link> FMODUnity.EditorEventRef.Guid</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a87c43bc58a50fa5082ad7f732798ff78"/><section>
+    <title>Is3D</title>
+<indexterm><primary>Is3D</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Is3D</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorEventRef.Is3D</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a68722b53e41bcc5ac66c2504436c9243"/><section>
+    <title>IsOneShot</title>
+<indexterm><primary>IsOneShot</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>IsOneShot</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorEventRef.IsOneShot</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a15eb784896a733597a027b2265d1043d"/><section>
+    <title>IsStream</title>
+<indexterm><primary>IsStream</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>IsStream</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EditorEventRef.IsStream</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a1c0c542b801d90faffe756d7a479d10f"/><section>
+    <title>Length</title>
+<indexterm><primary>Length</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Length</secondary></indexterm>
+<para><computeroutput>int FMODUnity.EditorEventRef.Length</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a0dd3f66432474a5eb670a27c4e884fed"/><section>
+    <title>MaxDistance</title>
+<indexterm><primary>MaxDistance</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>MaxDistance</secondary></indexterm>
+<para><computeroutput>float FMODUnity.EditorEventRef.MaxDistance</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a623304e06f5d3dc0918e6a1bb3acc925"/><section>
+    <title>MinDistance</title>
+<indexterm><primary>MinDistance</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>MinDistance</secondary></indexterm>
+<para><computeroutput>float FMODUnity.EditorEventRef.MinDistance</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1ac7965c8d3efd9cdd1311154f0b4c2bd8"/><section>
+    <title>Parameters</title>
+<indexterm><primary>Parameters</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Parameters</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link>&gt; FMODUnity.EditorEventRef.Parameters</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1ae9b198d618d5c43ab922eb6f85ba1ccb"/><section>
+    <title>Path</title>
+<indexterm><primary>Path</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>Path</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorEventRef.Path</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1a5dd5a0d74549f0821647f0e6ecf7bfe2"/><section>
+    <title>GlobalParameters</title>
+<indexterm><primary>GlobalParameters</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>GlobalParameters</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link>&gt; FMODUnity.EditorEventRef.GlobalParameters<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_event_ref_1abad0060ed7c875a09edb4bc00aec6d04"/><section>
+    <title>LocalParameters</title>
+<indexterm><primary>LocalParameters</primary><secondary>FMODUnity.EditorEventRef</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorEventRef</primary><secondary>LocalParameters</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link>&gt; FMODUnity.EditorEventRef.LocalParameters<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_event_ref_8cs">EditorEventRef.cs</link></section>
+</section>

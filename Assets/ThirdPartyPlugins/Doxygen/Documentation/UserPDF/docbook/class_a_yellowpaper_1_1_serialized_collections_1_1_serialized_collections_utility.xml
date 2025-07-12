@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_collections_utility" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.SerializedCollectionsUtility Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedCollectionsUtility</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_collections_utility_1afc3117b2bcf1ae367a6f26a83aae40ae">IsValidKey</link> (object obj)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_collections_utility_1a04e9b3313d4806f42b86e17aecc9600f">KeysAreEqual&lt; T &gt;</link> (T key, object otherKey)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_collections_utility_1afc3117b2bcf1ae367a6f26a83aae40ae"/><section>
+    <title>IsValidKey()</title>
+<indexterm><primary>IsValidKey</primary><secondary>AYellowpaper.SerializedCollections.SerializedCollectionsUtility</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedCollectionsUtility</primary><secondary>IsValidKey</secondary></indexterm>
+<para><computeroutput>bool AYellowpaper.SerializedCollections.SerializedCollectionsUtility.IsValidKey (object obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_collections_utility_1a04e9b3313d4806f42b86e17aecc9600f"/><section>
+    <title>KeysAreEqual&lt; T &gt;()</title>
+<indexterm><primary>KeysAreEqual&lt; T &gt;</primary><secondary>AYellowpaper.SerializedCollections.SerializedCollectionsUtility</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedCollectionsUtility</primary><secondary>KeysAreEqual&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>bool AYellowpaper.SerializedCollections.SerializedCollectionsUtility.KeysAreEqual&lt; T &gt; (T key, object otherKey)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Runtime/Scripts/<link linkend="__serialized_collections_utility_8cs">SerializedCollectionsUtility.cs</link></section>
+</section>

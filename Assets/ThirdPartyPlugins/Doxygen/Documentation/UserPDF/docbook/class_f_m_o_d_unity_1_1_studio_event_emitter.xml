@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter" xml:lang="en-US">
+<title>FMODUnity.StudioEventEmitter Class Reference</title>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.StudioEventEmitter:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_studio_event_emitter.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a85d6f21422bd3c4bf29f448ec0f4a1df">Play</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a2663bd2f2e9443dcdf49b1c1486bf71b">Stop</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a492170728df8303788abe46571ae2f19">SetParameter</link> (string name, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa87a1dd5c8f082766e1281ecb60b81a6">SetParameter</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">FMOD.Studio.PARAMETER_ID</link> id, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a5112fd41add0114f12151e37cb4f6f63">IsPlaying</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_f_m_o_d_unity_1_1_event_handler">FMODUnity.EventHandler</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a2b494f2516e1d8da5d36c0e4d85171cc">OnPointerEnter</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a656836176e38800053dcf1372d68fc7c">OnPointerExit</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a5393a809148dc1eab7ed7f9e40d72ef2">OnPointerDown</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a4bbc9bf174a9cf007c1f0b01049fba09">OnPointerUp</link> (PointerEventData eventData)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1acf709e0fa249caaf0962fb95b3439878">UpdateActiveEmitters</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa9e4dd10b0d1da6ce54d853a5e2ef308">EventReference</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a90439faf3c0c0ce0cf9b5e7742ecd01b">Event</link> = &quot;&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a06f8ce92e1f545fc05e572e4f230ee43">EventPlayTrigger</link> = <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754">EmitterGameEvent.None</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a438ceec7d6088ff41fded7eb08840072">EventStopTrigger</link> = <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754">EmitterGameEvent.None</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a6e43ccce33f756834dd9816cd30526fd">AllowFadeout</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a750cd4714dc9ad6dfb951c572d82f383">TriggerOnce</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a2138395b8b76e1aebb26136e645adc1e">Preload</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ab1c20d971eb8beab8794e80fb30d7517">NonRigidbodyVelocity</link> = false</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_param_ref">ParamRef</link>[] <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a136dfd8f29e1016fd8c03e700d50fe09">Params</link> = new <link linkend="_class_f_m_o_d_unity_1_1_param_ref">ParamRef</link>[0]</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a9066b86be72bf972386ec07474d221ef">OverrideAttenuation</link> = false</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a049038c2dd77b2ad54da0e14a1b03d19">OverrideMinDistance</link> = -1.0f</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a9a39986aa804e1c0d11cf627aea86ebc">OverrideMaxDistance</link> = -1.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_class_f_m_o_d_unity_1_1_event_handler">FMODUnity.EventHandler</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a111bb91dcf4d78ed90b6b099268c6fa3">CollisionTag</link> = &quot;&quot;</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ad3b8f2c1eb01d002897bb3c8b762241a">Start</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aec3d9c72321943a2b5fb8f3f0faec7e0">OnDestroy</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a450f7969f649a748ab064bbbf0f9ddbd">HandleGameEvent</link> (<link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> gameEvent)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_class_f_m_o_d_unity_1_1_event_handler">FMODUnity.EventHandler</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1acc254061d9bab3e46f9ff42cde5eb54a">HandleGameEvent</link> (<link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> gameEvent)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ac16db73d7edb456318e34767b76e6f94">eventDescription</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1af8fda20eb8f79e8f5be9ad0e5f964e8f">instance</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a3009052e43b8b976876f203723399da2">PlayEvent</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a1972a527ebc1587ed36673919179508d">StopEvent</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa397e9b422868e327997fb731efec516">EventDescription</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1af45845967bab70dc2249626ce714e660">EventInstance</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a0e08951e473a54c054683c35ad2dc530">IsActive</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a450f7969f649a748ab064bbbf0f9ddbd"/><section>
+    <title>HandleGameEvent()</title>
+<indexterm><primary>HandleGameEvent</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>HandleGameEvent</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.StudioEventEmitter.HandleGameEvent (<link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> gameEvent)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a5112fd41add0114f12151e37cb4f6f63"/><section>
+    <title>IsPlaying()</title>
+<indexterm><primary>IsPlaying</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>IsPlaying</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.IsPlaying ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aec3d9c72321943a2b5fb8f3f0faec7e0"/><section>
+    <title>OnDestroy()</title>
+<indexterm><primary>OnDestroy</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>OnDestroy</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.StudioEventEmitter.OnDestroy ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a17e5ec02fdd65807fb14f3e473ef091b">FMODUnity.EventHandler</link>.</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a85d6f21422bd3c4bf29f448ec0f4a1df"/><section>
+    <title>Play()</title>
+<indexterm><primary>Play</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Play</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitter.Play ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa87a1dd5c8f082766e1281ecb60b81a6"/><section>
+    <title>SetParameter()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SetParameter</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>SetParameter</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitter.SetParameter (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">FMOD.Studio.PARAMETER_ID</link> id, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a492170728df8303788abe46571ae2f19"/><section>
+    <title>SetParameter()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SetParameter</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>SetParameter</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitter.SetParameter (string name, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ad3b8f2c1eb01d002897bb3c8b762241a"/><section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.StudioEventEmitter.Start ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1ab2c1f0548da3b521f2ca742081c672c7">FMODUnity.EventHandler</link>.</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a2663bd2f2e9443dcdf49b1c1486bf71b"/><section>
+    <title>Stop()</title>
+<indexterm><primary>Stop</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Stop</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitter.Stop ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1acf709e0fa249caaf0962fb95b3439878"/><section>
+    <title>UpdateActiveEmitters()</title>
+<indexterm><primary>UpdateActiveEmitters</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>UpdateActiveEmitters</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioEventEmitter.UpdateActiveEmitters ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a6e43ccce33f756834dd9816cd30526fd"/><section>
+    <title>AllowFadeout</title>
+<indexterm><primary>AllowFadeout</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>AllowFadeout</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.AllowFadeout = true</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a90439faf3c0c0ce0cf9b5e7742ecd01b"/><section>
+    <title>Event</title>
+<indexterm><primary>Event</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Event</secondary></indexterm>
+<para><computeroutput>string FMODUnity.StudioEventEmitter.Event = &quot;&quot;</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ac16db73d7edb456318e34767b76e6f94"/><section>
+    <title>eventDescription</title>
+<indexterm><primary>eventDescription</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>eventDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> FMODUnity.StudioEventEmitter.eventDescription<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a06f8ce92e1f545fc05e572e4f230ee43"/><section>
+    <title>EventPlayTrigger</title>
+<indexterm><primary>EventPlayTrigger</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>EventPlayTrigger</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> FMODUnity.StudioEventEmitter.EventPlayTrigger = <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754">EmitterGameEvent.None</link></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa9e4dd10b0d1da6ce54d853a5e2ef308"/><section>
+    <title>EventReference</title>
+<indexterm><primary>EventReference</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>EventReference</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link> FMODUnity.StudioEventEmitter.EventReference</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a438ceec7d6088ff41fded7eb08840072"/><section>
+    <title>EventStopTrigger</title>
+<indexterm><primary>EventStopTrigger</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>EventStopTrigger</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> FMODUnity.StudioEventEmitter.EventStopTrigger = <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754">EmitterGameEvent.None</link></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1af8fda20eb8f79e8f5be9ad0e5f964e8f"/><section>
+    <title>instance</title>
+<indexterm><primary>instance</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>instance</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.StudioEventEmitter.instance<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ab1c20d971eb8beab8794e80fb30d7517"/><section>
+    <title>NonRigidbodyVelocity</title>
+<indexterm><primary>NonRigidbodyVelocity</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>NonRigidbodyVelocity</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.NonRigidbodyVelocity = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a9066b86be72bf972386ec07474d221ef"/><section>
+    <title>OverrideAttenuation</title>
+<indexterm><primary>OverrideAttenuation</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>OverrideAttenuation</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.OverrideAttenuation = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a9a39986aa804e1c0d11cf627aea86ebc"/><section>
+    <title>OverrideMaxDistance</title>
+<indexterm><primary>OverrideMaxDistance</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>OverrideMaxDistance</secondary></indexterm>
+<para><computeroutput>float FMODUnity.StudioEventEmitter.OverrideMaxDistance = -1.0f</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a049038c2dd77b2ad54da0e14a1b03d19"/><section>
+    <title>OverrideMinDistance</title>
+<indexterm><primary>OverrideMinDistance</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>OverrideMinDistance</secondary></indexterm>
+<para><computeroutput>float FMODUnity.StudioEventEmitter.OverrideMinDistance = -1.0f</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a136dfd8f29e1016fd8c03e700d50fe09"/><section>
+    <title>Params</title>
+<indexterm><primary>Params</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Params</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_param_ref">ParamRef</link> [] FMODUnity.StudioEventEmitter.Params = new <link linkend="_class_f_m_o_d_unity_1_1_param_ref">ParamRef</link>[0]</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a2138395b8b76e1aebb26136e645adc1e"/><section>
+    <title>Preload</title>
+<indexterm><primary>Preload</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>Preload</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.Preload = false</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a750cd4714dc9ad6dfb951c572d82f383"/><section>
+    <title>TriggerOnce</title>
+<indexterm><primary>TriggerOnce</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>TriggerOnce</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.TriggerOnce = false</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aa397e9b422868e327997fb731efec516"/><section>
+    <title>EventDescription</title>
+<indexterm><primary>EventDescription</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>EventDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link> FMODUnity.StudioEventEmitter.EventDescription<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1af45845967bab70dc2249626ce714e660"/><section>
+    <title>EventInstance</title>
+<indexterm><primary>EventInstance</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>EventInstance</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link> FMODUnity.StudioEventEmitter.EventInstance<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a0e08951e473a54c054683c35ad2dc530"/><section>
+    <title>IsActive</title>
+<indexterm><primary>IsActive</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>IsActive</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioEventEmitter.IsActive<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a3009052e43b8b976876f203723399da2"/><section>
+    <title>PlayEvent</title>
+<indexterm><primary>PlayEvent</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>PlayEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> FMODUnity.StudioEventEmitter.PlayEvent<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_event_emitter_1a1972a527ebc1587ed36673919179508d"/><section>
+    <title>StopEvent</title>
+<indexterm><primary>StopEvent</primary><secondary>FMODUnity.StudioEventEmitter</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioEventEmitter</primary><secondary>StopEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> FMODUnity.StudioEventEmitter.StopEvent<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__studio_event_emitter_8cs">StudioEventEmitter.cs</link></section>
+</section>

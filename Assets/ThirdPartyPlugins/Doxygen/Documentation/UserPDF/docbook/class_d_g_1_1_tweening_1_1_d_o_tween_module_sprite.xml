@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite" xml:lang="en-US">
+<title>DG.Tweening.DOTweenModuleSprite Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenModuleSprite</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static TweenerCore&lt; Color, Color, ColorOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a655aa3dfd42a34faa3e3d94b8c65ae64">DOColor</link> (this SpriteRenderer target, Color endValue, float duration)</para>
+
+<para>Tweens a SpriteRenderer&apos;s color to the given value. </para>
+</listitem>
+            <listitem><para>static TweenerCore&lt; Color, Color, ColorOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a2959a1d63040cd2d7ae499a6102c7e35">DOFade</link> (this SpriteRenderer target, float endValue, float duration)</para>
+
+<para>Tweens a Material&apos;s alpha color to the given value. </para>
+</listitem>
+            <listitem><para>static Sequence <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a56081f0c15a578ab68bd514b3dcef8b5">DOGradientColor</link> (this SpriteRenderer target, Gradient gradient, float duration)</para>
+
+<para>Tweens a SpriteRenderer&apos;s color using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</listitem>
+            <listitem><para>static Tweener <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a09ab8b151dacb465edc5222135c98cef">DOBlendableColor</link> (this SpriteRenderer target, Color endValue, float duration)</para>
+
+<para>Tweens a SpriteRenderer&apos;s color to the given value, in a way that allows other DOBlendableColor tweens to work together on the same target, instead than fight each other as multiple DOColor would do. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a09ab8b151dacb465edc5222135c98cef"/><section>
+    <title>DOBlendableColor()</title>
+<indexterm><primary>DOBlendableColor</primary><secondary>DG.Tweening.DOTweenModuleSprite</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleSprite</primary><secondary>DOBlendableColor</secondary></indexterm>
+<para><computeroutput>Tweener DG.Tweening.DOTweenModuleSprite.DOBlendableColor (this SpriteRenderer target, Color endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a SpriteRenderer&apos;s color to the given value, in a way that allows other DOBlendableColor tweens to work together on the same target, instead than fight each other as multiple DOColor would do. </para>
+</para>
+
+<para>Also stores the SpriteRenderer as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The value to tween to</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a655aa3dfd42a34faa3e3d94b8c65ae64"/><section>
+    <title>DOColor()</title>
+<indexterm><primary>DOColor</primary><secondary>DG.Tweening.DOTweenModuleSprite</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleSprite</primary><secondary>DOColor</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; Color, Color, ColorOptions &gt; DG.Tweening.DOTweenModuleSprite.DOColor (this SpriteRenderer target, Color endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a SpriteRenderer&apos;s color to the given value. </para>
+</para>
+
+<para>Also stores the spriteRenderer as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The end value to reach</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a2959a1d63040cd2d7ae499a6102c7e35"/><section>
+    <title>DOFade()</title>
+<indexterm><primary>DOFade</primary><secondary>DG.Tweening.DOTweenModuleSprite</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleSprite</primary><secondary>DOFade</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; Color, Color, ColorOptions &gt; DG.Tweening.DOTweenModuleSprite.DOFade (this SpriteRenderer target, float endValue, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a Material&apos;s alpha color to the given value. </para>
+</para>
+
+<para>Also stores the spriteRenderer as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>endValue</entry><entry>
+<para>The end value to reach</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite_1a56081f0c15a578ab68bd514b3dcef8b5"/><section>
+    <title>DOGradientColor()</title>
+<indexterm><primary>DOGradientColor</primary><secondary>DG.Tweening.DOTweenModuleSprite</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleSprite</primary><secondary>DOGradientColor</secondary></indexterm>
+<para><computeroutput>Sequence DG.Tweening.DOTweenModuleSprite.DOGradientColor (this SpriteRenderer target, Gradient gradient, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a SpriteRenderer&apos;s color using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</para>
+
+<para>Also stores the image as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gradient</entry><entry>
+<para>The gradient to use</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_sprite_8cs">DOTweenModuleSprite.cs</link></section>
+</section>

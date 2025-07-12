@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tooltip" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.SearchResultTooltip Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTooltip</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.SearchResultTooltip:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_search_result_tooltip.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tooltip_1a0542d852fc67a07b0161edac5fdd138d">Show</link> (Rect sourcePosition, string tooltip)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tooltip_1ac16078c77bce719b12dd17c2468c399e">Hide</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tooltip_1ac16078c77bce719b12dd17c2468c399e"/><section>
+    <title>Hide()</title>
+<indexterm><primary>Hide</primary><secondary>AssetUsageDetectorNamespace.SearchResultTooltip</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTooltip</primary><secondary>Hide</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.SearchResultTooltip.Hide ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tooltip_1a0542d852fc67a07b0161edac5fdd138d"/><section>
+    <title>Show()</title>
+<indexterm><primary>Show</primary><secondary>AssetUsageDetectorNamespace.SearchResultTooltip</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTooltip</primary><secondary>Show</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.SearchResultTooltip.Show (Rect sourcePosition, string tooltip)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_tooltip_8cs">SearchResultTooltip.cs</link></section>
+</section>

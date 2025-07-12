@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_studio_listener" xml:lang="en-US">
+<title>FMODUnity.StudioListener Class Reference</title>
+<indexterm><primary>FMODUnity.StudioListener</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.StudioListener:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_studio_listener.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static float <link linkend="_class_f_m_o_d_unity_1_1_studio_listener_1a059359336738d3ea391bdbb4d9a0d6e7">DistanceToNearestListener</link> (Vector3 position)</para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_f_m_o_d_unity_1_1_studio_listener_1a3e8314c98a17c9aae05af09f6a0cad11">DistanceSquaredToNearestListener</link> (Vector3 position)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_f_m_o_d_unity_1_1_studio_listener_1abeb86a7391b47610d2833375ccf14be1">ListenerCount</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_studio_listener_1a7f429efc09c733bb09aa7088e3cb7acb">ListenerNumber</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_listener_1a3e8314c98a17c9aae05af09f6a0cad11"/><section>
+    <title>DistanceSquaredToNearestListener()</title>
+<indexterm><primary>DistanceSquaredToNearestListener</primary><secondary>FMODUnity.StudioListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioListener</primary><secondary>DistanceSquaredToNearestListener</secondary></indexterm>
+<para><computeroutput>float FMODUnity.StudioListener.DistanceSquaredToNearestListener (Vector3 position)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_listener_1a059359336738d3ea391bdbb4d9a0d6e7"/><section>
+    <title>DistanceToNearestListener()</title>
+<indexterm><primary>DistanceToNearestListener</primary><secondary>FMODUnity.StudioListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioListener</primary><secondary>DistanceToNearestListener</secondary></indexterm>
+<para><computeroutput>float FMODUnity.StudioListener.DistanceToNearestListener (Vector3 position)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_listener_1abeb86a7391b47610d2833375ccf14be1"/><section>
+    <title>ListenerCount</title>
+<indexterm><primary>ListenerCount</primary><secondary>FMODUnity.StudioListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioListener</primary><secondary>ListenerCount</secondary></indexterm>
+<para><computeroutput>int FMODUnity.StudioListener.ListenerCount<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_listener_1a7f429efc09c733bb09aa7088e3cb7acb"/><section>
+    <title>ListenerNumber</title>
+<indexterm><primary>ListenerNumber</primary><secondary>FMODUnity.StudioListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioListener</primary><secondary>ListenerNumber</secondary></indexterm>
+<para><computeroutput>int FMODUnity.StudioListener.ListenerNumber<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__studio_listener_8cs">StudioListener.cs</link></section>
+</section>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___b_o_o_l" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_DESC_BOOL Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_DESC_BOOL</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___b_o_o_l_1aaf737963329528a29ccb235e384d3fee">defaultval</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___b_o_o_l_1af828e7060cb8ee4908f672cd06aaa95e">valuenames</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___b_o_o_l_1aaf737963329528a29ccb235e384d3fee"/><section>
+    <title>defaultval</title>
+<indexterm><primary>defaultval</primary><secondary>FMOD.DSP_PARAMETER_DESC_BOOL</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_DESC_BOOL</primary><secondary>defaultval</secondary></indexterm>
+<para><computeroutput>bool FMOD.DSP_PARAMETER_DESC_BOOL.defaultval</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___b_o_o_l_1af828e7060cb8ee4908f672cd06aaa95e"/><section>
+    <title>valuenames</title>
+<indexterm><primary>valuenames</primary><secondary>FMOD.DSP_PARAMETER_DESC_BOOL</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_DESC_BOOL</primary><secondary>valuenames</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_PARAMETER_DESC_BOOL.valuenames</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

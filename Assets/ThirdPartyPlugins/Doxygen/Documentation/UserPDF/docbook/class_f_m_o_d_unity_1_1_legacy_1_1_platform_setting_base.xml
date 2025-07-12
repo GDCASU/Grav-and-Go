@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base" xml:lang="en-US">
+<title>FMODUnity.Legacy.PlatformSettingBase Class Reference</title>
+<indexterm><primary>FMODUnity.Legacy.PlatformSettingBase</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.Legacy.PlatformSettingBase:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Platform <link linkend="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base_1a5cd07a078de066d5c1cd7d63f7a3d350">Platform</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base_1a5cd07a078de066d5c1cd7d63f7a3d350"/><section>
+    <title>Platform</title>
+<indexterm><primary>Platform</primary><secondary>FMODUnity.Legacy.PlatformSettingBase</secondary></indexterm>
+<indexterm><primary>FMODUnity.Legacy.PlatformSettingBase</primary><secondary>Platform</secondary></indexterm>
+<para><computeroutput>Platform FMODUnity.Legacy.PlatformSettingBase.Platform</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__settings_8cs">Settings.cs</link></section>
+</section>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_help_content" xml:lang="en-US">
+<title>FMODUnity.HelpContent Class Reference</title>
+<indexterm><primary>FMODUnity.HelpContent</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.HelpContent:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_help_content.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_help_content_1aed5dc1bc1bcc648e86b011343a94d57e">OnOpen</link> ()</para>
+</listitem>
+            <listitem><para>override Vector2 <link linkend="_class_f_m_o_d_unity_1_1_help_content_1a1a1df9fccfefba7c1de627cb9740ccbb">GetWindowSize</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_f_m_o_d_unity_1_1_help_content_1aaa02fe80dbd734b9ec4c9229b437a67c">OnGUI</link> (Rect rect)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_help_content_1ae9bcdc1fc16e3f5014242236d374e30c">Prepare</link> ()</para>
+</listitem>
+            <listitem><para>Vector2 <link linkend="_class_f_m_o_d_unity_1_1_help_content_1ae34afff0545c025396b9e140864e673e">GetContentSize</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_help_content_1aefe8344145146a2f5e1f22b998187715">DrawContent</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1aefe8344145146a2f5e1f22b998187715"/><section>
+    <title>DrawContent()</title>
+<indexterm><primary>DrawContent</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>DrawContent</secondary></indexterm>
+<para><computeroutput>void FMODUnity.HelpContent.DrawContent ( )<computeroutput>[abstract]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1ae34afff0545c025396b9e140864e673e"/><section>
+    <title>GetContentSize()</title>
+<indexterm><primary>GetContentSize</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>GetContentSize</secondary></indexterm>
+<para><computeroutput>Vector2 FMODUnity.HelpContent.GetContentSize ( )<computeroutput>[abstract]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1a1a1df9fccfefba7c1de627cb9740ccbb"/><section>
+    <title>GetWindowSize()</title>
+<indexterm><primary>GetWindowSize</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>GetWindowSize</secondary></indexterm>
+<para><computeroutput>override Vector2 FMODUnity.HelpContent.GetWindowSize ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1aaa02fe80dbd734b9ec4c9229b437a67c"/><section>
+    <title>OnGUI()</title>
+<indexterm><primary>OnGUI</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>OnGUI</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.HelpContent.OnGUI (Rect rect)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1aed5dc1bc1bcc648e86b011343a94d57e"/><section>
+    <title>OnOpen()</title>
+<indexterm><primary>OnOpen</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>OnOpen</secondary></indexterm>
+<para><computeroutput>override void FMODUnity.HelpContent.OnOpen ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_help_content_1ae9bcdc1fc16e3f5014242236d374e30c"/><section>
+    <title>Prepare()</title>
+<indexterm><primary>Prepare</primary><secondary>FMODUnity.HelpContent</secondary></indexterm>
+<indexterm><primary>FMODUnity.HelpContent</primary><secondary>Prepare</secondary></indexterm>
+<para><computeroutput>void FMODUnity.HelpContent.Prepare ( )<computeroutput>[abstract]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_utils_8cs">EditorUtils.cs</link></section>
+</section>

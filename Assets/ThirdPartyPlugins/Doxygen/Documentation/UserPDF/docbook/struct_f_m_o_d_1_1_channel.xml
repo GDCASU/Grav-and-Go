@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_channel" xml:lang="en-US">
+<title>FMOD.Channel Struct Reference</title>
+<indexterm><primary>FMOD.Channel</primary></indexterm>
+<para>Inheritance diagram for FMOD.Channel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_f_m_o_d_1_1_channel.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a769a955cce0dd3335d46a201878eec0a">setFrequency</link> (float frequency)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a69cfa0718c64b66ef8d9ff31259f8a99">getFrequency</link> (out float frequency)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a0351346750ba8b05f5d4a4707bbf5222">setPriority</link> (int priority)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a6f71b3cb883ef8e0415a081e61cc08c1">getPriority</link> (out int priority)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a9d61bc77c395603baae27de1f2292f07">setPosition</link> (uint position, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> postype)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ae636f6655910d216554bf87d51a2fad9">getPosition</link> (out uint position, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> postype)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8b4b96034d9deed870f8c7e0ef6b363c">setChannelGroup</link> (<link linkend="_struct_f_m_o_d_1_1_channel_group">ChannelGroup</link> channelgroup)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a6090d298a16a30059959c2e62939ba25">getChannelGroup</link> (out <link linkend="_struct_f_m_o_d_1_1_channel_group">ChannelGroup</link> channelgroup)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a413cad870e8cee17375773a9b364290b">setLoopCount</link> (int loopcount)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a1425a8a1ebcb30e16247b1bb3f52817f">getLoopCount</link> (out int loopcount)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1af10289a5935c20e113db049b714965d0">setLoopPoints</link> (uint loopstart, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopstarttype, uint loopend, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopendtype)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a837e94996edef239d52962943e65cecf">getLoopPoints</link> (out uint loopstart, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopstarttype, out uint loopend, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopendtype)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1af4006487a422ae9f7ee211c417879ed8">isVirtual</link> (out bool isvirtual)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a27a165d8a508e68191a8a544bb310aba">getCurrentSound</link> (out <link linkend="_struct_f_m_o_d_1_1_sound">Sound</link> sound)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1af87fdd737e5b5fe294660a892d33d232">getIndex</link> (out int index)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1adcf6f7691432253ac16082c3fcea98d3">getSystemObject</link> (out <link linkend="_struct_f_m_o_d_1_1_system">System</link> system)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1afcde838a2b6221855e68f10e3ff19fb7">stop</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ae9918ad8c41f7ff23bbdffcb71037a53">setPaused</link> (bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aed851b77d886585c9a5e7ab8567166e4">getPaused</link> (out bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ac2c3f7a74eaea78337d80f856c631d60">setVolume</link> (float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aef4e5b4115d0010097b0616e36ec3f82">getVolume</link> (out float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a482e3dc7fcd1daef0439caf7f7f5a9a6">setVolumeRamp</link> (bool ramp)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a2b0b6e388f111918b9d7cf3e3d5c21e2">getVolumeRamp</link> (out bool ramp)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a0c07f8f4e97e265e64c09e590caeee9a">getAudibility</link> (out float audibility)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1acf2535480bc0258ef5329dfa49d1a14a">setPitch</link> (float pitch)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1afb2f962023b2a5608bc0edc73ac7bf23">getPitch</link> (out float pitch)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a4dbf706e86dcc7c607d71b24a2337564">setMute</link> (bool mute)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a1595f28ce6c30d79cf88d6389bae2988">getMute</link> (out bool mute)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8cbe4a1769ebc268a7cd18c5860bf3cf">setReverbProperties</link> (int instance, float wet)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a5bb542905365e8200458feb3d2c41dbe">getReverbProperties</link> (int instance, out float wet)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ab563f7163008c54fe64bde83e164c019">setLowPassGain</link> (float gain)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a981ca1234defec2ea7303ff2c5acb457">getLowPassGain</link> (out float gain)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8a03cde6ac6d1a44b28dd103bd1335ac">setMode</link> (<link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> mode)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aba64253a705e8e568c9f20fd45240e86">getMode</link> (out <link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> mode)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ac198ae42daa41b8edcbea9b9c810e2fe">setCallback</link> (<link linkend="_namespace_f_m_o_d_1a41a3211b463eb30c35e9dfec4bddad28">CHANNELCONTROL_CALLBACK</link> callback)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8e4b7ad64cf94daf0775bb906399b6c7">isPlaying</link> (out bool isplaying)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ae8b81b8c8bfe544f13a5aa1475d5cf0d">setPan</link> (float pan)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ad56584d01effd70b777998d966577a19">setMixLevelsOutput</link> (float frontleft, float frontright, float center, float lfe, float surroundleft, float surroundright, float backleft, float backright)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ac038d4e526801c60c9dd31d91d0fac87">setMixLevelsInput</link> (float[] levels, int numlevels)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1af0d9a3daa1a58f599a352dea7e658022">setMixMatrix</link> (float[] matrix, int outchannels, int inchannels, int inchannel_hop=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a24fbd99f17437c7fed82c0382a2139fd">getMixMatrix</link> (float[] matrix, out int outchannels, out int inchannels, int inchannel_hop=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aa90f9bdcfffc669c164d3538b1fb11a1">getDSPClock</link> (out ulong dspclock, out ulong parentclock)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aa8230a9f8e2b071a38e33ae48c46494a">setDelay</link> (ulong dspclock_start, ulong dspclock_end, bool stopchannels=true)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a4794224c22c115ca59318162ca36e10a">getDelay</link> (out ulong dspclock_start, out ulong dspclock_end)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a3b765b2fd6ada18917084b4908be634c">getDelay</link> (out ulong dspclock_start, out ulong dspclock_end, out bool stopchannels)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aa76bb4f7e718d628a4c6f8842e964142">addFadePoint</link> (ulong dspclock, float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ac3195331e37ceb2f1075d32335ac7f3e">setFadePointRamp</link> (ulong dspclock, float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a2b571221731cc90ea8718e1207b81609">removeFadePoints</link> (ulong dspclock_start, ulong dspclock_end)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a7bc16bf3bf19bbb828648d9e151bc623">getFadePoints</link> (ref uint numpoints, ulong[] point_dspclock, float[] point_volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a3fffc9d2f342c7a9817b66f3c9ca107f">getDSP</link> (int index, out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ac9529bf194e0b7fd534d52a2b5dba0e2">addDSP</link> (int index, <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a9251c9b51ac1c41c940ff8fcc0cec7ef">removeDSP</link> (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a0877bd2daca4bb982198a4d469c617ec">getNumDSPs</link> (out int numdsps)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a672665632d9c9adfc6bb68102e154c38">setDSPIndex</link> (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp, int index)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a0df4e205ea13aa280650c690c5f5b418">getDSPIndex</link> (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp, out int index)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a285e8562393eb107f146f2831788531a">set3DAttributes</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> pos, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vel)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a2ad4a159dff9446343b4428615bd2fc7">get3DAttributes</link> (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> pos, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vel)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8a00e21e167c5bc6c645883c831bbdd6">set3DMinMaxDistance</link> (float mindistance, float maxdistance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ab19481f73ecd1b8550c839c47f22fa13">get3DMinMaxDistance</link> (out float mindistance, out float maxdistance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a7cd48b898c60c29d938ad923e4be5917">set3DConeSettings</link> (float insideconeangle, float outsideconeangle, float outsidevolume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a77982a86cd6d4192666138f0e9601ef1">get3DConeSettings</link> (out float insideconeangle, out float outsideconeangle, out float outsidevolume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a5c1e12bcc374720c3a4c4a2607e1bfa0">set3DConeOrientation</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> orientation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a715afaa0a317d8ceb444233d91875159">get3DConeOrientation</link> (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> orientation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1addfb72491d75776c6448e711a4cd7f1a">set3DCustomRolloff</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> points, int numpoints)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1aa063880210498132e19294310ae7f7c3">get3DCustomRolloff</link> (out IntPtr points, out int numpoints)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a6d6aa77865b1d7aed00ef3849a6c883c">set3DOcclusion</link> (float directocclusion, float reverbocclusion)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a582aa4b4a9c5e79d232a7901259cedf4">get3DOcclusion</link> (out float directocclusion, out float reverbocclusion)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a3d805b519f5314ba6498efeefdaebe07">set3DSpread</link> (float angle)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ad15a83c41d0b120c82fc35835c18b99f">get3DSpread</link> (out float angle)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a88c13eeda162b7e39bfe3e1f096a4d3c">set3DLevel</link> (float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ace0f744f7e715ef2e22cbe9d8f3edd8e">get3DLevel</link> (out float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a618cef0dbf362da088523681adbe96d9">set3DDopplerLevel</link> (float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1ae3b4eb06fa13c4811b047d9acaef3c3f">get3DDopplerLevel</link> (out float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a79e3e8bc0b4ad3afc922452f629f0081">set3DDistanceFilter</link> (bool custom, float customLevel, float centerFreq)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a8c0d36d98da5d609638bc244b7c4da5e">get3DDistanceFilter</link> (out bool custom, out float customLevel, out float centerFreq)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a230915adb6b5bba88d15095052ca383b">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_channel_1a65ceaabdce4c415870e6da7874fb5de9">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_channel_1a762f0e1477aae933a9bb803c05db4439">Channel</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_channel_1ad33cfe0805e4e80a691519181a3a227b">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_channel_1aac12f1e731384cfc9e514a64c360b1d5">clearHandle</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_channel_1ad9cf1985785ae1110faff68ef6b1e422">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a762f0e1477aae933a9bb803c05db4439"/><section>
+    <title>Channel()</title>
+<indexterm><primary>Channel</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>Channel</secondary></indexterm>
+<para><computeroutput>FMOD.Channel.Channel (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ac9529bf194e0b7fd534d52a2b5dba0e2"/><section>
+    <title>addDSP()</title>
+<indexterm><primary>addDSP</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>addDSP</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.addDSP (int index, <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a9d59ca999205b53ea7b8f9f57c8cf73e">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aa76bb4f7e718d628a4c6f8842e964142"/><section>
+    <title>addFadePoint()</title>
+<indexterm><primary>addFadePoint</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>addFadePoint</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.addFadePoint (ulong dspclock, float volume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a7d7e4c86929814a089b56c112092e65c">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aac12f1e731384cfc9e514a64c360b1d5"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Channel.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a2ad4a159dff9446343b4428615bd2fc7"/><section>
+    <title>get3DAttributes()</title>
+<indexterm><primary>get3DAttributes</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DAttributes (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> pos, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vel)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac15c44bedc31a6c6f5fc1ea8e8a5d394">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a715afaa0a317d8ceb444233d91875159"/><section>
+    <title>get3DConeOrientation()</title>
+<indexterm><primary>get3DConeOrientation</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DConeOrientation</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DConeOrientation (out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> orientation)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a196ae69800d0d3fb1c80e3890df8f3b3">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a77982a86cd6d4192666138f0e9601ef1"/><section>
+    <title>get3DConeSettings()</title>
+<indexterm><primary>get3DConeSettings</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DConeSettings</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DConeSettings (out float insideconeangle, out float outsideconeangle, out float outsidevolume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ae0f2442e9ba5a93379aaaa6bb9e04139">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aa063880210498132e19294310ae7f7c3"/><section>
+    <title>get3DCustomRolloff()</title>
+<indexterm><primary>get3DCustomRolloff</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DCustomRolloff</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DCustomRolloff (out IntPtr points, out int numpoints)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac16d77d37e8778bbe4723889c6d5fad0">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8c0d36d98da5d609638bc244b7c4da5e"/><section>
+    <title>get3DDistanceFilter()</title>
+<indexterm><primary>get3DDistanceFilter</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DDistanceFilter</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DDistanceFilter (out bool custom, out float customLevel, out float centerFreq)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a849a9dd8ff5513ce775cd4a325134360">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ae3b4eb06fa13c4811b047d9acaef3c3f"/><section>
+    <title>get3DDopplerLevel()</title>
+<indexterm><primary>get3DDopplerLevel</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DDopplerLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DDopplerLevel (out float level)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a50001c67c53b8fca78fe800a2aee9286">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ace0f744f7e715ef2e22cbe9d8f3edd8e"/><section>
+    <title>get3DLevel()</title>
+<indexterm><primary>get3DLevel</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DLevel (out float level)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1abce385b08247758b0099adcf27a17e9d">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ab19481f73ecd1b8550c839c47f22fa13"/><section>
+    <title>get3DMinMaxDistance()</title>
+<indexterm><primary>get3DMinMaxDistance</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DMinMaxDistance</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DMinMaxDistance (out float mindistance, out float maxdistance)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aefd6fe62b7239d20a1d9801e1d143131">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a582aa4b4a9c5e79d232a7901259cedf4"/><section>
+    <title>get3DOcclusion()</title>
+<indexterm><primary>get3DOcclusion</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DOcclusion</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DOcclusion (out float directocclusion, out float reverbocclusion)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ad6d568f6b8ba7ddac4a7a5487cb4a13d">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ad15a83c41d0b120c82fc35835c18b99f"/><section>
+    <title>get3DSpread()</title>
+<indexterm><primary>get3DSpread</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>get3DSpread</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.get3DSpread (out float angle)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac85f2cb08e368b91cd6f3f2a72ce71d9">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a0c07f8f4e97e265e64c09e590caeee9a"/><section>
+    <title>getAudibility()</title>
+<indexterm><primary>getAudibility</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getAudibility</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getAudibility (out float audibility)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a6f70f4dbd3e9364e6f7ffb085e68ec61">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a6090d298a16a30059959c2e62939ba25"/><section>
+    <title>getChannelGroup()</title>
+<indexterm><primary>getChannelGroup</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getChannelGroup</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getChannelGroup (out <link linkend="_struct_f_m_o_d_1_1_channel_group">ChannelGroup</link> channelgroup)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a27a165d8a508e68191a8a544bb310aba"/><section>
+    <title>getCurrentSound()</title>
+<indexterm><primary>getCurrentSound</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getCurrentSound</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getCurrentSound (out <link linkend="_struct_f_m_o_d_1_1_sound">Sound</link> sound)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a4794224c22c115ca59318162ca36e10a"/><section>
+    <title>getDelay()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getDelay</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getDelay</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getDelay (out ulong dspclock_start, out ulong dspclock_end)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac09b1e7d94ca4f8c2da8682243d24d2f">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a3b765b2fd6ada18917084b4908be634c"/><section>
+    <title>getDelay()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getDelay</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getDelay</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getDelay (out ulong dspclock_start, out ulong dspclock_end, out bool stopchannels)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a483727479a2e0a37696022edf624a4e4">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a3fffc9d2f342c7a9817b66f3c9ca107f"/><section>
+    <title>getDSP()</title>
+<indexterm><primary>getDSP</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getDSP</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getDSP (int index, out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ad19250eff8be48576bae4ab83e548600">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aa90f9bdcfffc669c164d3538b1fb11a1"/><section>
+    <title>getDSPClock()</title>
+<indexterm><primary>getDSPClock</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getDSPClock</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getDSPClock (out ulong dspclock, out ulong parentclock)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a192aff70d0daf7a0173b4f7d9fcbc1f0">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a0df4e205ea13aa280650c690c5f5b418"/><section>
+    <title>getDSPIndex()</title>
+<indexterm><primary>getDSPIndex</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getDSPIndex</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getDSPIndex (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp, out int index)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a7d3ff975305886a1288677ee88dd1e5d">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a7bc16bf3bf19bbb828648d9e151bc623"/><section>
+    <title>getFadePoints()</title>
+<indexterm><primary>getFadePoints</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getFadePoints</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getFadePoints (ref uint numpoints, ulong[] point_dspclock, float[] point_volume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a003b6b2451d3d8b5fd74ddab8e5e218b">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a69cfa0718c64b66ef8d9ff31259f8a99"/><section>
+    <title>getFrequency()</title>
+<indexterm><primary>getFrequency</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getFrequency</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getFrequency (out float frequency)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1af87fdd737e5b5fe294660a892d33d232"/><section>
+    <title>getIndex()</title>
+<indexterm><primary>getIndex</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getIndex</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getIndex (out int index)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a1425a8a1ebcb30e16247b1bb3f52817f"/><section>
+    <title>getLoopCount()</title>
+<indexterm><primary>getLoopCount</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getLoopCount</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getLoopCount (out int loopcount)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a837e94996edef239d52962943e65cecf"/><section>
+    <title>getLoopPoints()</title>
+<indexterm><primary>getLoopPoints</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getLoopPoints</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getLoopPoints (out uint loopstart, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopstarttype, out uint loopend, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopendtype)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a981ca1234defec2ea7303ff2c5acb457"/><section>
+    <title>getLowPassGain()</title>
+<indexterm><primary>getLowPassGain</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getLowPassGain</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getLowPassGain (out float gain)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a24d899d16ba867e7c0af886ce7788db0">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a24fbd99f17437c7fed82c0382a2139fd"/><section>
+    <title>getMixMatrix()</title>
+<indexterm><primary>getMixMatrix</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getMixMatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getMixMatrix (float[] matrix, out int outchannels, out int inchannels, int inchannel_hop = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1abc4936588bbe34555b958d7ca4089f8d">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aba64253a705e8e568c9f20fd45240e86"/><section>
+    <title>getMode()</title>
+<indexterm><primary>getMode</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getMode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getMode (out <link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> mode)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1af5ae2bc92d6eb3f49d8bf13a32a96430">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a1595f28ce6c30d79cf88d6389bae2988"/><section>
+    <title>getMute()</title>
+<indexterm><primary>getMute</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getMute</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getMute (out bool mute)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1af273d023b2f770a20d576fbe1350e323">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a0877bd2daca4bb982198a4d469c617ec"/><section>
+    <title>getNumDSPs()</title>
+<indexterm><primary>getNumDSPs</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getNumDSPs</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getNumDSPs (out int numdsps)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a057e71ad9db1bbca7c32bd7a1aebb8df">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aed851b77d886585c9a5e7ab8567166e4"/><section>
+    <title>getPaused()</title>
+<indexterm><primary>getPaused</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getPaused (out bool paused)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ab6dc6ab845213b826c8242079ae0f8a6">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1afb2f962023b2a5608bc0edc73ac7bf23"/><section>
+    <title>getPitch()</title>
+<indexterm><primary>getPitch</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getPitch</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getPitch (out float pitch)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac0bcb2602577678c697079eba6956590">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ae636f6655910d216554bf87d51a2fad9"/><section>
+    <title>getPosition()</title>
+<indexterm><primary>getPosition</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getPosition (out uint position, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> postype)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a6f71b3cb883ef8e0415a081e61cc08c1"/><section>
+    <title>getPriority()</title>
+<indexterm><primary>getPriority</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getPriority</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getPriority (out int priority)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a5bb542905365e8200458feb3d2c41dbe"/><section>
+    <title>getReverbProperties()</title>
+<indexterm><primary>getReverbProperties</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getReverbProperties</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getReverbProperties (int instance, out float wet)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a8574f7edbc61ef51ff98bdafbdcb0369">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1adcf6f7691432253ac16082c3fcea98d3"/><section>
+    <title>getSystemObject()</title>
+<indexterm><primary>getSystemObject</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getSystemObject</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getSystemObject (out <link linkend="_struct_f_m_o_d_1_1_system">System</link> system)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a77f922d9d258e31660fa3f15e92975f2">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a65ceaabdce4c415870e6da7874fb5de9"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getUserData (out IntPtr userdata)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a8049beec12b0ed4dbe80029a47998497">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aef4e5b4115d0010097b0616e36ec3f82"/><section>
+    <title>getVolume()</title>
+<indexterm><primary>getVolume</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getVolume</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getVolume (out float volume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a24f351c3be1bade833c5a62512eb50a7">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a2b0b6e388f111918b9d7cf3e3d5c21e2"/><section>
+    <title>getVolumeRamp()</title>
+<indexterm><primary>getVolumeRamp</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>getVolumeRamp</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.getVolumeRamp (out bool ramp)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a335779551eea6bc0bc98a49a2a4d0b6c">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ad33cfe0805e4e80a691519181a3a227b"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Channel.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8e4b7ad64cf94daf0775bb906399b6c7"/><section>
+    <title>isPlaying()</title>
+<indexterm><primary>isPlaying</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>isPlaying</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.isPlaying (out bool isplaying)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ae8c9e783bb0cfb7c96fe3c6071789471">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1af4006487a422ae9f7ee211c417879ed8"/><section>
+    <title>isVirtual()</title>
+<indexterm><primary>isVirtual</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>isVirtual</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.isVirtual (out bool isvirtual)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a9251c9b51ac1c41c940ff8fcc0cec7ef"/><section>
+    <title>removeDSP()</title>
+<indexterm><primary>removeDSP</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>removeDSP</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.removeDSP (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a96796e1d2472d4f2bd37786852465308">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a2b571221731cc90ea8718e1207b81609"/><section>
+    <title>removeFadePoints()</title>
+<indexterm><primary>removeFadePoints</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>removeFadePoints</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.removeFadePoints (ulong dspclock_start, ulong dspclock_end)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a370223900b2255523c568608b1ab67d5">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a285e8562393eb107f146f2831788531a"/><section>
+    <title>set3DAttributes()</title>
+<indexterm><primary>set3DAttributes</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DAttributes (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> pos, ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> vel)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1af39cf606d6841c314c5a457c4237fb53">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a5c1e12bcc374720c3a4c4a2607e1bfa0"/><section>
+    <title>set3DConeOrientation()</title>
+<indexterm><primary>set3DConeOrientation</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DConeOrientation</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DConeOrientation (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> orientation)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a274d63b773e8c95d4f7e912510772e69">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a7cd48b898c60c29d938ad923e4be5917"/><section>
+    <title>set3DConeSettings()</title>
+<indexterm><primary>set3DConeSettings</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DConeSettings</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DConeSettings (float insideconeangle, float outsideconeangle, float outsidevolume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a3f7e8064b83c0f4463950a1ec158ab95">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1addfb72491d75776c6448e711a4cd7f1a"/><section>
+    <title>set3DCustomRolloff()</title>
+<indexterm><primary>set3DCustomRolloff</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DCustomRolloff</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DCustomRolloff (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> points, int numpoints)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ad12a7057f14fc5d975a36957673519b8">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a79e3e8bc0b4ad3afc922452f629f0081"/><section>
+    <title>set3DDistanceFilter()</title>
+<indexterm><primary>set3DDistanceFilter</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DDistanceFilter</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DDistanceFilter (bool custom, float customLevel, float centerFreq)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a5616fcd6824ccbbf1f133f19d2697ef8">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a618cef0dbf362da088523681adbe96d9"/><section>
+    <title>set3DDopplerLevel()</title>
+<indexterm><primary>set3DDopplerLevel</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DDopplerLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DDopplerLevel (float level)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ae8e330786b7c134a73782278517ab60e">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a88c13eeda162b7e39bfe3e1f096a4d3c"/><section>
+    <title>set3DLevel()</title>
+<indexterm><primary>set3DLevel</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DLevel (float level)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a824cfeefa364dfc220222f1aaee355b0">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8a00e21e167c5bc6c645883c831bbdd6"/><section>
+    <title>set3DMinMaxDistance()</title>
+<indexterm><primary>set3DMinMaxDistance</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DMinMaxDistance</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DMinMaxDistance (float mindistance, float maxdistance)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1af6849b2b59af0269af1696b6e8caec24">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a6d6aa77865b1d7aed00ef3849a6c883c"/><section>
+    <title>set3DOcclusion()</title>
+<indexterm><primary>set3DOcclusion</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DOcclusion</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DOcclusion (float directocclusion, float reverbocclusion)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aa9dc799dadbc5924ccef27753530d779">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a3d805b519f5314ba6498efeefdaebe07"/><section>
+    <title>set3DSpread()</title>
+<indexterm><primary>set3DSpread</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>set3DSpread</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.set3DSpread (float angle)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ae6b190fe155f7f6d2e1d9d0daa283809">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ac198ae42daa41b8edcbea9b9c810e2fe"/><section>
+    <title>setCallback()</title>
+<indexterm><primary>setCallback</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setCallback (<link linkend="_namespace_f_m_o_d_1a41a3211b463eb30c35e9dfec4bddad28">CHANNELCONTROL_CALLBACK</link> callback)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aa00349c38a2d5e2ab202a582681c75f3">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8b4b96034d9deed870f8c7e0ef6b363c"/><section>
+    <title>setChannelGroup()</title>
+<indexterm><primary>setChannelGroup</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setChannelGroup</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setChannelGroup (<link linkend="_struct_f_m_o_d_1_1_channel_group">ChannelGroup</link> channelgroup)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1aa8230a9f8e2b071a38e33ae48c46494a"/><section>
+    <title>setDelay()</title>
+<indexterm><primary>setDelay</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setDelay</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setDelay (ulong dspclock_start, ulong dspclock_end, bool stopchannels = <computeroutput>true</computeroutput>
+)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a42ae3ef7144b08a830171f242359db2e">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a672665632d9c9adfc6bb68102e154c38"/><section>
+    <title>setDSPIndex()</title>
+<indexterm><primary>setDSPIndex</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setDSPIndex</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setDSPIndex (<link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> dsp, int index)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a090c3c56964489884efc2cd8087d1ff4">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ac3195331e37ceb2f1075d32335ac7f3e"/><section>
+    <title>setFadePointRamp()</title>
+<indexterm><primary>setFadePointRamp</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setFadePointRamp</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setFadePointRamp (ulong dspclock, float volume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a0606b9ee33cb9c74e6ef55ffaa16af9f">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a769a955cce0dd3335d46a201878eec0a"/><section>
+    <title>setFrequency()</title>
+<indexterm><primary>setFrequency</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setFrequency</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setFrequency (float frequency)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a413cad870e8cee17375773a9b364290b"/><section>
+    <title>setLoopCount()</title>
+<indexterm><primary>setLoopCount</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setLoopCount</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setLoopCount (int loopcount)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1af10289a5935c20e113db049b714965d0"/><section>
+    <title>setLoopPoints()</title>
+<indexterm><primary>setLoopPoints</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setLoopPoints</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setLoopPoints (uint loopstart, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopstarttype, uint loopend, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> loopendtype)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ab563f7163008c54fe64bde83e164c019"/><section>
+    <title>setLowPassGain()</title>
+<indexterm><primary>setLowPassGain</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setLowPassGain</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setLowPassGain (float gain)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1ac6f26326ef778a86a77e8f097cfedc86">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ac038d4e526801c60c9dd31d91d0fac87"/><section>
+    <title>setMixLevelsInput()</title>
+<indexterm><primary>setMixLevelsInput</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setMixLevelsInput</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setMixLevelsInput (float[] levels, int numlevels)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a6fc99b8c4ad785515a688519f3894df8">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ad56584d01effd70b777998d966577a19"/><section>
+    <title>setMixLevelsOutput()</title>
+<indexterm><primary>setMixLevelsOutput</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setMixLevelsOutput</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setMixLevelsOutput (float frontleft, float frontright, float center, float lfe, float surroundleft, float surroundright, float backleft, float backright)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a2af004ed28b87582326c72b9c8fbf9aa">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1af0d9a3daa1a58f599a352dea7e658022"/><section>
+    <title>setMixMatrix()</title>
+<indexterm><primary>setMixMatrix</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setMixMatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setMixMatrix (float[] matrix, int outchannels, int inchannels, int inchannel_hop = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a3cc55d85673ef0144d42719a1aedf424">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8a03cde6ac6d1a44b28dd103bd1335ac"/><section>
+    <title>setMode()</title>
+<indexterm><primary>setMode</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setMode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setMode (<link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> mode)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a0c75601ef62bbeb75cd0042436888722">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a4dbf706e86dcc7c607d71b24a2337564"/><section>
+    <title>setMute()</title>
+<indexterm><primary>setMute</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setMute</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setMute (bool mute)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a5254ef282df98cac652b073c203890c2">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ae8b81b8c8bfe544f13a5aa1475d5cf0d"/><section>
+    <title>setPan()</title>
+<indexterm><primary>setPan</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setPan</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setPan (float pan)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a84d107f5638a27aac5894ade089f53d1">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ae9918ad8c41f7ff23bbdffcb71037a53"/><section>
+    <title>setPaused()</title>
+<indexterm><primary>setPaused</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setPaused (bool paused)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a43383cf23d7ebe6173043b9868488b55">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1acf2535480bc0258ef5329dfa49d1a14a"/><section>
+    <title>setPitch()</title>
+<indexterm><primary>setPitch</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setPitch</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setPitch (float pitch)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aadb45c6bf8d281ef1256e5bed4cd2e1f">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a9d61bc77c395603baae27de1f2292f07"/><section>
+    <title>setPosition()</title>
+<indexterm><primary>setPosition</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setPosition (uint position, <link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> postype)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a0351346750ba8b05f5d4a4707bbf5222"/><section>
+    <title>setPriority()</title>
+<indexterm><primary>setPriority</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setPriority</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setPriority (int priority)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a8cbe4a1769ebc268a7cd18c5860bf3cf"/><section>
+    <title>setReverbProperties()</title>
+<indexterm><primary>setReverbProperties</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setReverbProperties</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setReverbProperties (int instance, float wet)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a4c006f8b020255eb4ace34abf6126288">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a230915adb6b5bba88d15095052ca383b"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setUserData (IntPtr userdata)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aee8716ae2a18c6614c90ebacb3f1094d">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ac2c3f7a74eaea78337d80f856c631d60"/><section>
+    <title>setVolume()</title>
+<indexterm><primary>setVolume</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setVolume</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setVolume (float volume)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1aa79342cdb831d3892bd649c44acffca3">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1a482e3dc7fcd1daef0439caf7f7f5a9a6"/><section>
+    <title>setVolumeRamp()</title>
+<indexterm><primary>setVolumeRamp</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>setVolumeRamp</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.setVolumeRamp (bool ramp)</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a7a75fae708d33c9ab0a61ad01720c844">FMOD.IChannelControl</link>.</para>
+</section>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1afcde838a2b6221855e68f10e3ff19fb7"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Channel.stop ( )</computeroutput></para><para>
+Implements <link linkend="_interface_f_m_o_d_1_1_i_channel_control_1a5e1ad2ec0756311a4bd69ee12c2a8f8e">FMOD.IChannelControl</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_channel_1ad9cf1985785ae1110faff68ef6b1e422"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Channel</secondary></indexterm>
+<indexterm><primary>FMOD.Channel</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Channel.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

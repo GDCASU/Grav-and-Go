@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___a_t_t_e_n_u_a_t_i_o_n___r_a_n_g_e" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_ATTENUATION_RANGE Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_ATTENUATION_RANGE</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___a_t_t_e_n_u_a_t_i_o_n___r_a_n_g_e_1a13f75467c593deae1689ce1b83faff20">min</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___a_t_t_e_n_u_a_t_i_o_n___r_a_n_g_e_1a990c767b5fcd06dc2e115359d5645657">max</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___a_t_t_e_n_u_a_t_i_o_n___r_a_n_g_e_1a990c767b5fcd06dc2e115359d5645657"/><section>
+    <title>max</title>
+<indexterm><primary>max</primary><secondary>FMOD.DSP_PARAMETER_ATTENUATION_RANGE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_ATTENUATION_RANGE</primary><secondary>max</secondary></indexterm>
+<para><computeroutput>float FMOD.DSP_PARAMETER_ATTENUATION_RANGE.max</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___a_t_t_e_n_u_a_t_i_o_n___r_a_n_g_e_1a13f75467c593deae1689ce1b83faff20"/><section>
+    <title>min</title>
+<indexterm><primary>min</primary><secondary>FMOD.DSP_PARAMETER_ATTENUATION_RANGE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_ATTENUATION_RANGE</primary><secondary>min</secondary></indexterm>
+<para><computeroutput>float FMOD.DSP_PARAMETER_ATTENUATION_RANGE.min</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetectorSettings Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static SettingsProvider <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a6c82cbf60aef9e02e989013e42d7c66a">CreatePreferencesGUI</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a67575c5d58b39ba89c5d9ac8c2b7b0c2">PreferencesGUI</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a8ed98adc7b7bfd790e40d23525c66680">SettingsHeaderColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a33376cb9acda338bf7e387286b758580">SearchResultGroupHeaderColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a87341ca21b46703800b9803e9a319c6c">RootRowsBackgroundColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1afcafdeedbda3a6fb5bdb6fef4a216745">RootRowsBorderColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a281aa743705fc91bba7872dc1c0980c7">MainReferencesBackgroundColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a9f1bff527d3b46e536e47d685288b18f">SelectedRowParentsTint</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1ad245dc3ba4c010629a7afaae180ac2ac">SelectedRowOccurrencesColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a435cfbd59192fa94e730475bc9d47f2e">TreeLinesColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aff8fbf31d03f53a17f6d8627e59949ab">HighlightedTreeLinesColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aefb58e482299eeb1c4af82c6d3ddf8ba">SearchMatchingTextColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static Color <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a809e1e26097e41d168330f2a247704cb">TooltipDescriptionTextColor</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a90c15adbd3634483376cf0f67cb61bd4">ExtraRowHeight</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1ab310beb4c40bfafb3140b249cf0b3007">ShowRootAssetName</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a99c231735d8757f6abfae03aa3fad936">PingClickedObjects</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1abd30fe928fd03bea0fb1bf1a41668d18">SelectClickedObjects</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a98544a776a7ef47f85a2f69fa3d2aea9">SelectDoubleClickedObjects</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a5beb2b8f6775e50b7ce73eb70acac974">MarkUsedAssetsSubAssetsAsUsed</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a82dbc41515e46e216bed31ea875a4f74">ShowUnityTooltip</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a11f7bb78c62bb1a1f43dbf0db60e728c">ShowCustomTooltip</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1abbfae09e24742fbd1e9e59167f4b8987">CustomTooltipDelay</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1afec29fa213c73f083a8cc143bd3a3355">ShowTreeLines</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aeae3b7839bf20290283aef3c2714e113">ApplySelectedRowParentsTintToRootRows</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a6c82cbf60aef9e02e989013e42d7c66a"/><section>
+    <title>CreatePreferencesGUI()</title>
+<indexterm><primary>CreatePreferencesGUI</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>CreatePreferencesGUI</secondary></indexterm>
+<para><computeroutput>SettingsProvider AssetUsageDetectorNamespace.AssetUsageDetectorSettings.CreatePreferencesGUI ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a67575c5d58b39ba89c5d9ac8c2b7b0c2"/><section>
+    <title>PreferencesGUI()</title>
+<indexterm><primary>PreferencesGUI</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>PreferencesGUI</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.AssetUsageDetectorSettings.PreferencesGUI ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aeae3b7839bf20290283aef3c2714e113"/><section>
+    <title>ApplySelectedRowParentsTintToRootRows</title>
+<indexterm><primary>ApplySelectedRowParentsTintToRootRows</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ApplySelectedRowParentsTintToRootRows</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ApplySelectedRowParentsTintToRootRows<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1abbfae09e24742fbd1e9e59167f4b8987"/><section>
+    <title>CustomTooltipDelay</title>
+<indexterm><primary>CustomTooltipDelay</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>CustomTooltipDelay</secondary></indexterm>
+<para><computeroutput>float AssetUsageDetectorNamespace.AssetUsageDetectorSettings.CustomTooltipDelay<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a90c15adbd3634483376cf0f67cb61bd4"/><section>
+    <title>ExtraRowHeight</title>
+<indexterm><primary>ExtraRowHeight</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ExtraRowHeight</secondary></indexterm>
+<para><computeroutput>float AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ExtraRowHeight<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aff8fbf31d03f53a17f6d8627e59949ab"/><section>
+    <title>HighlightedTreeLinesColor</title>
+<indexterm><primary>HighlightedTreeLinesColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>HighlightedTreeLinesColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.HighlightedTreeLinesColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a281aa743705fc91bba7872dc1c0980c7"/><section>
+    <title>MainReferencesBackgroundColor</title>
+<indexterm><primary>MainReferencesBackgroundColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>MainReferencesBackgroundColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.MainReferencesBackgroundColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a5beb2b8f6775e50b7ce73eb70acac974"/><section>
+    <title>MarkUsedAssetsSubAssetsAsUsed</title>
+<indexterm><primary>MarkUsedAssetsSubAssetsAsUsed</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>MarkUsedAssetsSubAssetsAsUsed</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.MarkUsedAssetsSubAssetsAsUsed<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a99c231735d8757f6abfae03aa3fad936"/><section>
+    <title>PingClickedObjects</title>
+<indexterm><primary>PingClickedObjects</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>PingClickedObjects</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.PingClickedObjects<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a87341ca21b46703800b9803e9a319c6c"/><section>
+    <title>RootRowsBackgroundColor</title>
+<indexterm><primary>RootRowsBackgroundColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>RootRowsBackgroundColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.RootRowsBackgroundColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1afcafdeedbda3a6fb5bdb6fef4a216745"/><section>
+    <title>RootRowsBorderColor</title>
+<indexterm><primary>RootRowsBorderColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>RootRowsBorderColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.RootRowsBorderColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1aefb58e482299eeb1c4af82c6d3ddf8ba"/><section>
+    <title>SearchMatchingTextColor</title>
+<indexterm><primary>SearchMatchingTextColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SearchMatchingTextColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SearchMatchingTextColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a33376cb9acda338bf7e387286b758580"/><section>
+    <title>SearchResultGroupHeaderColor</title>
+<indexterm><primary>SearchResultGroupHeaderColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SearchResultGroupHeaderColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SearchResultGroupHeaderColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1abd30fe928fd03bea0fb1bf1a41668d18"/><section>
+    <title>SelectClickedObjects</title>
+<indexterm><primary>SelectClickedObjects</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SelectClickedObjects</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SelectClickedObjects<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a98544a776a7ef47f85a2f69fa3d2aea9"/><section>
+    <title>SelectDoubleClickedObjects</title>
+<indexterm><primary>SelectDoubleClickedObjects</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SelectDoubleClickedObjects</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SelectDoubleClickedObjects<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1ad245dc3ba4c010629a7afaae180ac2ac"/><section>
+    <title>SelectedRowOccurrencesColor</title>
+<indexterm><primary>SelectedRowOccurrencesColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SelectedRowOccurrencesColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SelectedRowOccurrencesColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a9f1bff527d3b46e536e47d685288b18f"/><section>
+    <title>SelectedRowParentsTint</title>
+<indexterm><primary>SelectedRowParentsTint</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SelectedRowParentsTint</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SelectedRowParentsTint<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a8ed98adc7b7bfd790e40d23525c66680"/><section>
+    <title>SettingsHeaderColor</title>
+<indexterm><primary>SettingsHeaderColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>SettingsHeaderColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.SettingsHeaderColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a11f7bb78c62bb1a1f43dbf0db60e728c"/><section>
+    <title>ShowCustomTooltip</title>
+<indexterm><primary>ShowCustomTooltip</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ShowCustomTooltip</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ShowCustomTooltip<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1ab310beb4c40bfafb3140b249cf0b3007"/><section>
+    <title>ShowRootAssetName</title>
+<indexterm><primary>ShowRootAssetName</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ShowRootAssetName</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ShowRootAssetName<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1afec29fa213c73f083a8cc143bd3a3355"/><section>
+    <title>ShowTreeLines</title>
+<indexterm><primary>ShowTreeLines</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ShowTreeLines</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ShowTreeLines<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a82dbc41515e46e216bed31ea875a4f74"/><section>
+    <title>ShowUnityTooltip</title>
+<indexterm><primary>ShowUnityTooltip</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>ShowUnityTooltip</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorSettings.ShowUnityTooltip<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a809e1e26097e41d168330f2a247704cb"/><section>
+    <title>TooltipDescriptionTextColor</title>
+<indexterm><primary>TooltipDescriptionTextColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>TooltipDescriptionTextColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.TooltipDescriptionTextColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings_1a435cfbd59192fa94e730475bc9d47f2e"/><section>
+    <title>TreeLinesColor</title>
+<indexterm><primary>TreeLinesColor</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorSettings</primary><secondary>TreeLinesColor</secondary></indexterm>
+<para><computeroutput>Color AssetUsageDetectorNamespace.AssetUsageDetectorSettings.TreeLinesColor<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_settings_8cs">AssetUsageDetectorSettings.cs</link></section>
+</section>

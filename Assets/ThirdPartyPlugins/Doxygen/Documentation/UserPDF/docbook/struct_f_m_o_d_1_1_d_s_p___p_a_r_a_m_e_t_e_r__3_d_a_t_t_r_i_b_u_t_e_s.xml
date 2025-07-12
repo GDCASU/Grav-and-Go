@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_3DATTRIBUTES Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s_1a8c1aab3156d4c58dd65ac8c0049b6bc9">relative</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s_1ad274b84f44bcada113fc5593f94f6c54">absolute</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s_1ad274b84f44bcada113fc5593f94f6c54"/><section>
+    <title>absolute</title>
+<indexterm><primary>absolute</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> FMOD.DSP_PARAMETER_3DATTRIBUTES.absolute</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s_1a8c1aab3156d4c58dd65ac8c0049b6bc9"/><section>
+    <title>relative</title>
+<indexterm><primary>relative</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES</primary><secondary>relative</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> FMOD.DSP_PARAMETER_3DATTRIBUTES.relative</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

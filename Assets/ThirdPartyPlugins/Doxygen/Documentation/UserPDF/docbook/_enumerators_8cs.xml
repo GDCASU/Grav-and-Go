@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enumerators_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/Enumerators.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/Enumerators.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_empty_enumerator-1-g">AssetUsageDetectorNamespace.EmptyEnumerator&lt; T &gt;</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator">AssetUsageDetectorNamespace.ObjectToSearchEnumerator</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator">AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_asset_usage_detector_namespace">AssetUsageDetectorNamespace</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

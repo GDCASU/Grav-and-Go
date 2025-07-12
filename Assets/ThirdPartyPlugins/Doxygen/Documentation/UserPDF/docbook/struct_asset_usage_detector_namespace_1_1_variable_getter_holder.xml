@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.VariableGetterHolder Struct Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a044995f6abc49c08da86ea14ebdd7cc7">VariableGetterHolder</link> (FieldInfo fieldInfo, <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> getter, bool <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1adeb964017db4e294fee1a65f12d9774a">isSerializable</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1ac554e766fc755644dec30197e4bc5f2d">VariableGetterHolder</link> (PropertyInfo propertyInfo, <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> getter, bool <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1adeb964017db4e294fee1a65f12d9774a">isSerializable</link>)</para>
+</listitem>
+            <listitem><para>object <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1aec02d80c07e5ae93492037d116b28f77">Get</link> (object obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>readonly MemberInfo <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a5d320b122f366582eb61612177521054">variable</link></para>
+</listitem>
+            <listitem><para>readonly bool <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1adeb964017db4e294fee1a65f12d9774a">isSerializable</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a28c02f8d4cbef00777f68c374b18d9f7">Name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1ae9bc63b1a2664d99bb5787490eb09b87">IsProperty</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a044995f6abc49c08da86ea14ebdd7cc7"/><section>
+    <title>VariableGetterHolder()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>VariableGetterHolder</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>VariableGetterHolder</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.VariableGetterHolder.VariableGetterHolder (FieldInfo fieldInfo, <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> getter, bool isSerializable)</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1ac554e766fc755644dec30197e4bc5f2d"/><section>
+    <title>VariableGetterHolder()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>VariableGetterHolder</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>VariableGetterHolder</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.VariableGetterHolder.VariableGetterHolder (PropertyInfo propertyInfo, <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> getter, bool isSerializable)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1aec02d80c07e5ae93492037d116b28f77"/><section>
+    <title>Get()</title>
+<indexterm><primary>Get</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>Get</secondary></indexterm>
+<para><computeroutput>object AssetUsageDetectorNamespace.VariableGetterHolder.Get (object obj)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1adeb964017db4e294fee1a65f12d9774a"/><section>
+    <title>isSerializable</title>
+<indexterm><primary>isSerializable</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>isSerializable</secondary></indexterm>
+<para><computeroutput>readonly bool AssetUsageDetectorNamespace.VariableGetterHolder.isSerializable</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a5d320b122f366582eb61612177521054"/><section>
+    <title>variable</title>
+<indexterm><primary>variable</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>variable</secondary></indexterm>
+<para><computeroutput>readonly MemberInfo AssetUsageDetectorNamespace.VariableGetterHolder.variable</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1ae9bc63b1a2664d99bb5787490eb09b87"/><section>
+    <title>IsProperty</title>
+<indexterm><primary>IsProperty</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>IsProperty</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.VariableGetterHolder.IsProperty<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder_1a28c02f8d4cbef00777f68c374b18d9f7"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>AssetUsageDetectorNamespace.VariableGetterHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.VariableGetterHolder</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.VariableGetterHolder.Name<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__variable_getter_8cs">VariableGetter.cs</link></section>
+</section>

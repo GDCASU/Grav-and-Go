@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_event_handler" xml:lang="en-US">
+<title>FMODUnity.EventHandler Class Reference</title>
+<indexterm><primary>FMODUnity.EventHandler</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EventHandler:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_event_handler.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a2b494f2516e1d8da5d36c0e4d85171cc">OnPointerEnter</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a656836176e38800053dcf1372d68fc7c">OnPointerExit</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a5393a809148dc1eab7ed7f9e40d72ef2">OnPointerDown</link> (PointerEventData eventData)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a4bbc9bf174a9cf007c1f0b01049fba09">OnPointerUp</link> (PointerEventData eventData)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a111bb91dcf4d78ed90b6b099268c6fa3">CollisionTag</link> = &quot;&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1ab2c1f0548da3b521f2ca742081c672c7">Start</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1a17e5ec02fdd65807fb14f3e473ef091b">OnDestroy</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_handler_1acc254061d9bab3e46f9ff42cde5eb54a">HandleGameEvent</link> (<link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> gameEvent)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1acc254061d9bab3e46f9ff42cde5eb54a"/><section>
+    <title>HandleGameEvent()</title>
+<indexterm><primary>HandleGameEvent</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>HandleGameEvent</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventHandler.HandleGameEvent (<link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> gameEvent)<computeroutput>[abstract]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a17e5ec02fdd65807fb14f3e473ef091b"/><section>
+    <title>OnDestroy()</title>
+<indexterm><primary>OnDestroy</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>OnDestroy</secondary></indexterm>
+<para><computeroutput>virtual void FMODUnity.EventHandler.OnDestroy ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1aec3d9c72321943a2b5fb8f3f0faec7e0">FMODUnity.StudioEventEmitter</link>.</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a5393a809148dc1eab7ed7f9e40d72ef2"/><section>
+    <title>OnPointerDown()</title>
+<indexterm><primary>OnPointerDown</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>OnPointerDown</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventHandler.OnPointerDown (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a2b494f2516e1d8da5d36c0e4d85171cc"/><section>
+    <title>OnPointerEnter()</title>
+<indexterm><primary>OnPointerEnter</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>OnPointerEnter</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventHandler.OnPointerEnter (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a656836176e38800053dcf1372d68fc7c"/><section>
+    <title>OnPointerExit()</title>
+<indexterm><primary>OnPointerExit</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>OnPointerExit</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventHandler.OnPointerExit (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a4bbc9bf174a9cf007c1f0b01049fba09"/><section>
+    <title>OnPointerUp()</title>
+<indexterm><primary>OnPointerUp</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>OnPointerUp</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventHandler.OnPointerUp (PointerEventData eventData)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1ab2c1f0548da3b521f2ca742081c672c7"/><section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>virtual void FMODUnity.EventHandler.Start ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_1ad3b8f2c1eb01d002897bb3c8b762241a">FMODUnity.StudioEventEmitter</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_handler_1a111bb91dcf4d78ed90b6b099268c6fa3"/><section>
+    <title>CollisionTag</title>
+<indexterm><primary>CollisionTag</primary><secondary>FMODUnity.EventHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventHandler</primary><secondary>CollisionTag</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EventHandler.CollisionTag = &quot;&quot;</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__event_handler_8cs">EventHandler.cs</link></section>
+</section>

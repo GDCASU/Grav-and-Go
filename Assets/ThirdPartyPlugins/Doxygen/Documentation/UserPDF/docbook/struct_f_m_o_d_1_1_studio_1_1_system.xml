@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_system" xml:lang="en-US">
+<title>FMOD.Studio.System Struct Reference</title>
+<indexterm><primary>FMOD.Studio.System</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1addaf4027bca47e8f8b7f61990c6c7424">setAdvancedSettings</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a010adb4a9ee376c3a0f47b60e83259ad">setAdvancedSettings</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings, string encryptionKey)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a6e1cee79f8fb98b7187b610461b886c3">getAdvancedSettings</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a49e2e96bc14a40f2c111db77f1a50952">initialize</link> (int maxchannels, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4">INITFLAGS</link> studioflags, <link linkend="_namespace_f_m_o_d_1a1eb59ee0c14b7edd1c75e577ecdca8d3">FMOD.INITFLAGS</link> flags, IntPtr extradriverdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1af26c773b241454255776b8b5bb2c1802">release</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a16375faa67a0906d3b2f7a4e3db18fdd">update</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad2136567ebb24d535b6470b1e69dc00a">getCoreSystem</link> (out <link linkend="_struct_f_m_o_d_1_1_system">FMOD.System</link> coresystem)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a7f84df3429ebc5c4f5b3b7936a6e23aa">getEvent</link> (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> _event)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a88721afe24bbba9a498dbbb69d1c8d7f">getBus</link> (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">Bus</link> bus)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1af20b73707be730b67cb7c4dcdb658422">getVCA</link> (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">VCA</link> vca)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a8257a13815ab2ee835737a22b93fddbf">getBank</link> (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad313a4f07a86ef4b09dd8565b78c7230">getEventByID</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> _event)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a1c7539339989e83aa2156ba200837aa9">getBusByID</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">Bus</link> bus)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a511481b6128cd21a779f84f044b10bf7">getVCAByID</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">VCA</link> vca)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad4343c96d6d4d78135de5f07688fe046">getBankByID</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a57fb752e43fe0df1f71e807ccff87a28">getSoundInfo</link> (string key, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o">SOUND_INFO</link> info)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aeebcce3683e677803af5c7fb111e6b2a">getParameterDescriptionByName</link> (string name, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link> parameter)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a3ffba814f6302bd293acc94b1b67426c">getParameterDescriptionByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link> parameter)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a8a954225fa4cf50aed59ba06b24c0acb">getParameterLabelByName</link> (string name, int labelindex, out string label)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1adb5c9c2f6bdd1675f3d47971167896c1">getParameterLabelByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, int labelindex, out string label)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a281b2702f74372521bb76f3abf85b94b">getParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a2c5c01682d49995e55b26c02bb76c292">getParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value, out float finalvalue)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a6cd6da7626420bc1ad1914a506a9b282">setParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a7bc8ec32c28704016eefb125afa819fa">setParameterByIDWithLabel</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, string label, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a340baf40525264700a19517786035c01">setParametersByIDs</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link>[] ids, float[] values, int count, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a3a70e3fde395ece9f5bb1a3b7daff9e2">getParameterByName</link> (string name, out float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a521d94ad3371787e9c044fbd880ba5eb">getParameterByName</link> (string name, out float value, out float finalvalue)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a242135f7c9bab917fb3501b76362960b">setParameterByName</link> (string name, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a51071f0da6131f519d69f8c143bb3516">setParameterByNameWithLabel</link> (string name, string label, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a2d8b7fbcef9f93721c318d6ca61d6f53">lookupID</link> (string path, out <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ae56ee56fa5f2eae287b1236c464b43bd">lookupPath</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out string path)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a72f7670918d19c3e32c919a718158502">getNumListeners</link> (out int numlisteners)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a8efca0fe9e33d58174c2a9e033f28177">setNumListeners</link> (int numlisteners)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad8e148a9d1f64c66932c218f37a72ce6">getListenerAttributes</link> (int listener, out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aae33a31e9f8e6bcd408fbd6a9a5a4056">getListenerAttributes</link> (int listener, out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> attenuationposition)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a433e8790afd9cdba1e52488e9d1c304d">setListenerAttributes</link> (int listener, <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad63ea55677fc01a66dc6cb262bf2b21f">setListenerAttributes</link> (int listener, <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes, <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> attenuationposition)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ab46a85fb65e0d0d6b232c5356850cf25">getListenerWeight</link> (int listener, out float weight)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a33e957e983a2ae28d2f0aab89081685b">setListenerWeight</link> (int listener, float weight)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a1b92dbb28e51b36a3c95050347dec9d7">loadBankFile</link> (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aae25a1b65d72261673daec20983e0f36">loadBankMemory</link> (byte[] buffer, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a5f531d9a709dba351fb51616a9bc2cbe">loadBankCustom</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_a_n_k___i_n_f_o">BANK_INFO</link> info, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a4f7e3d8461dc253afbd363aa56faa849">unloadAll</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aaea4d367ad6c44baddbaa5877c397e90">flushCommands</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aa431dfc38b513b8214df93d551f3b1e4">flushSampleLoading</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aff3a906898686a0ef39308a132a5c8b7">startCommandCapture</link> (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35">COMMANDCAPTURE_FLAGS</link> flags)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ac4efcb8465d79a0aebae31e1c4589a5c">stopCommandCapture</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a5a2de3cc20e81467818ea4e145fe5a30">loadCommandReplay</link> (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7">COMMANDREPLAY_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay">CommandReplay</link> replay)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a97cf60f839d83b8da7150878516da878">getBankCount</link> (out int count)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1af4936e866f009ec4f25a7d07e248ca98">getBankList</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link>[] array)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a8930ced5b8234c4714726900d3bafd2f">getParameterDescriptionCount</link> (out int count)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a8faf7c33df8d5b469aeaa24c6ed01106">getParameterDescriptionList</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link>[] array)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a26572185c8bf7e23cd655a4341a62034">getCPUUsage</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_p_u___u_s_a_g_e">CPU_USAGE</link> usage, out <link linkend="_struct_f_m_o_d_1_1_c_p_u___u_s_a_g_e">FMOD.CPU_USAGE</link> usage_core)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a47284e7900ec44eca7e2deb080da09bd">getBufferUsage</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___u_s_a_g_e">BUFFER_USAGE</link> usage)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad308c4aba9fdfff211d9cb1ef8f0ec8c">resetBufferUsage</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ae71d007e5957403b46a8129634677dff">setCallback</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1a578aeda8b7f6905827a524b77f480d36">SYSTEM_CALLBACK</link> callback, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6f">SYSTEM_CALLBACK_TYPE</link> callbackmask=<link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa5fb1f955b45e38e31789286a1790398d">SYSTEM_CALLBACK_TYPE.ALL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1aadf5e7a67ae17ebe1ff2d2a178e0249f">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a0d02650ceeb6554f8d2a1c2b20d6b52d">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a7f32876fe92c158b32a0d5d8088866d1">getMemoryUsage</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_m_e_m_o_r_y___u_s_a_g_e">MEMORY_USAGE</link> memoryusage)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ab1e642f638fc4e5c95636197ec8f1f5e">System</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ac32653f952cca9ad5acde73dfc5f0036">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ae07c13573c232765ed82831dabdcd88a">clearHandle</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1ad549de68ab738fe9476fd03b0c6d3985">isValid</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1af7b5290f87e00379be83eb8f66f49cc9">create</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">System</link> system)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system_1a94bafa7f760c64b0b927e47ecc7c5fbd">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ab1e642f638fc4e5c95636197ec8f1f5e"/><section>
+    <title>System()</title>
+<indexterm><primary>System</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>System</secondary></indexterm>
+<para><computeroutput>FMOD.Studio.System.System (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ae07c13573c232765ed82831dabdcd88a"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Studio.System.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1af7b5290f87e00379be83eb8f66f49cc9"/><section>
+    <title>create()</title>
+<indexterm><primary>create</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>create</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.create (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">System</link> system)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aaea4d367ad6c44baddbaa5877c397e90"/><section>
+    <title>flushCommands()</title>
+<indexterm><primary>flushCommands</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>flushCommands</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.flushCommands ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aa431dfc38b513b8214df93d551f3b1e4"/><section>
+    <title>flushSampleLoading()</title>
+<indexterm><primary>flushSampleLoading</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>flushSampleLoading</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.flushSampleLoading ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a6e1cee79f8fb98b7187b610461b886c3"/><section>
+    <title>getAdvancedSettings()</title>
+<indexterm><primary>getAdvancedSettings</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getAdvancedSettings</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getAdvancedSettings (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a8257a13815ab2ee835737a22b93fddbf"/><section>
+    <title>getBank()</title>
+<indexterm><primary>getBank</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBank</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBank (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad4343c96d6d4d78135de5f07688fe046"/><section>
+    <title>getBankByID()</title>
+<indexterm><primary>getBankByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBankByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBankByID (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a97cf60f839d83b8da7150878516da878"/><section>
+    <title>getBankCount()</title>
+<indexterm><primary>getBankCount</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBankCount</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBankCount (out int count)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1af4936e866f009ec4f25a7d07e248ca98"/><section>
+    <title>getBankList()</title>
+<indexterm><primary>getBankList</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBankList</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBankList (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link>[] array)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a47284e7900ec44eca7e2deb080da09bd"/><section>
+    <title>getBufferUsage()</title>
+<indexterm><primary>getBufferUsage</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBufferUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBufferUsage (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___u_s_a_g_e">BUFFER_USAGE</link> usage)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a88721afe24bbba9a498dbbb69d1c8d7f"/><section>
+    <title>getBus()</title>
+<indexterm><primary>getBus</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBus</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBus (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">Bus</link> bus)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a1c7539339989e83aa2156ba200837aa9"/><section>
+    <title>getBusByID()</title>
+<indexterm><primary>getBusByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getBusByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getBusByID (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">Bus</link> bus)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad2136567ebb24d535b6470b1e69dc00a"/><section>
+    <title>getCoreSystem()</title>
+<indexterm><primary>getCoreSystem</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getCoreSystem</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getCoreSystem (out <link linkend="_struct_f_m_o_d_1_1_system">FMOD.System</link> coresystem)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a26572185c8bf7e23cd655a4341a62034"/><section>
+    <title>getCPUUsage()</title>
+<indexterm><primary>getCPUUsage</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getCPUUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getCPUUsage (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_p_u___u_s_a_g_e">CPU_USAGE</link> usage, out <link linkend="_struct_f_m_o_d_1_1_c_p_u___u_s_a_g_e">FMOD.CPU_USAGE</link> usage_core)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a7f84df3429ebc5c4f5b3b7936a6e23aa"/><section>
+    <title>getEvent()</title>
+<indexterm><primary>getEvent</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getEvent (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> _event)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad313a4f07a86ef4b09dd8565b78c7230"/><section>
+    <title>getEventByID()</title>
+<indexterm><primary>getEventByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getEventByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getEventByID (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> _event)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad8e148a9d1f64c66932c218f37a72ce6"/><section>
+    <title>getListenerAttributes()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getListenerAttributes</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getListenerAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getListenerAttributes (int listener, out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aae33a31e9f8e6bcd408fbd6a9a5a4056"/><section>
+    <title>getListenerAttributes()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getListenerAttributes</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getListenerAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getListenerAttributes (int listener, out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes, out <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> attenuationposition)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ab46a85fb65e0d0d6b232c5356850cf25"/><section>
+    <title>getListenerWeight()</title>
+<indexterm><primary>getListenerWeight</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getListenerWeight</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getListenerWeight (int listener, out float weight)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a7f32876fe92c158b32a0d5d8088866d1"/><section>
+    <title>getMemoryUsage()</title>
+<indexterm><primary>getMemoryUsage</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getMemoryUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getMemoryUsage (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_m_e_m_o_r_y___u_s_a_g_e">MEMORY_USAGE</link> memoryusage)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a72f7670918d19c3e32c919a718158502"/><section>
+    <title>getNumListeners()</title>
+<indexterm><primary>getNumListeners</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getNumListeners</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getNumListeners (out int numlisteners)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a281b2702f74372521bb76f3abf85b94b"/><section>
+    <title>getParameterByID()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getParameterByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a2c5c01682d49995e55b26c02bb76c292"/><section>
+    <title>getParameterByID()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getParameterByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value, out float finalvalue)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a3a70e3fde395ece9f5bb1a3b7daff9e2"/><section>
+    <title>getParameterByName()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getParameterByName</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterByName (string name, out float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a521d94ad3371787e9c044fbd880ba5eb"/><section>
+    <title>getParameterByName()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getParameterByName</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterByName (string name, out float value, out float finalvalue)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a3ffba814f6302bd293acc94b1b67426c"/><section>
+    <title>getParameterDescriptionByID()</title>
+<indexterm><primary>getParameterDescriptionByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterDescriptionByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterDescriptionByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link> parameter)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aeebcce3683e677803af5c7fb111e6b2a"/><section>
+    <title>getParameterDescriptionByName()</title>
+<indexterm><primary>getParameterDescriptionByName</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterDescriptionByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterDescriptionByName (string name, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link> parameter)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a8930ced5b8234c4714726900d3bafd2f"/><section>
+    <title>getParameterDescriptionCount()</title>
+<indexterm><primary>getParameterDescriptionCount</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterDescriptionCount</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterDescriptionCount (out int count)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a8faf7c33df8d5b469aeaa24c6ed01106"/><section>
+    <title>getParameterDescriptionList()</title>
+<indexterm><primary>getParameterDescriptionList</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterDescriptionList</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterDescriptionList (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">PARAMETER_DESCRIPTION</link>[] array)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1adb5c9c2f6bdd1675f3d47971167896c1"/><section>
+    <title>getParameterLabelByID()</title>
+<indexterm><primary>getParameterLabelByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterLabelByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterLabelByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, int labelindex, out string label)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a8a954225fa4cf50aed59ba06b24c0acb"/><section>
+    <title>getParameterLabelByName()</title>
+<indexterm><primary>getParameterLabelByName</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getParameterLabelByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getParameterLabelByName (string name, int labelindex, out string label)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a57fb752e43fe0df1f71e807ccff87a28"/><section>
+    <title>getSoundInfo()</title>
+<indexterm><primary>getSoundInfo</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getSoundInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getSoundInfo (string key, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o">SOUND_INFO</link> info)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aadf5e7a67ae17ebe1ff2d2a178e0249f"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1af20b73707be730b67cb7c4dcdb658422"/><section>
+    <title>getVCA()</title>
+<indexterm><primary>getVCA</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getVCA</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getVCA (string path, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">VCA</link> vca)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a511481b6128cd21a779f84f044b10bf7"/><section>
+    <title>getVCAByID()</title>
+<indexterm><primary>getVCAByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>getVCAByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.getVCAByID (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">VCA</link> vca)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ac32653f952cca9ad5acde73dfc5f0036"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.System.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a49e2e96bc14a40f2c111db77f1a50952"/><section>
+    <title>initialize()</title>
+<indexterm><primary>initialize</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>initialize</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.initialize (int maxchannels, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4">INITFLAGS</link> studioflags, <link linkend="_namespace_f_m_o_d_1a1eb59ee0c14b7edd1c75e577ecdca8d3">FMOD.INITFLAGS</link> flags, IntPtr extradriverdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad549de68ab738fe9476fd03b0c6d3985"/><section>
+    <title>isValid()</title>
+<indexterm><primary>isValid</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>isValid</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.System.isValid ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a5f531d9a709dba351fb51616a9bc2cbe"/><section>
+    <title>loadBankCustom()</title>
+<indexterm><primary>loadBankCustom</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>loadBankCustom</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.loadBankCustom (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_a_n_k___i_n_f_o">BANK_INFO</link> info, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a1b92dbb28e51b36a3c95050347dec9d7"/><section>
+    <title>loadBankFile()</title>
+<indexterm><primary>loadBankFile</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>loadBankFile</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.loadBankFile (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aae25a1b65d72261673daec20983e0f36"/><section>
+    <title>loadBankMemory()</title>
+<indexterm><primary>loadBankMemory</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>loadBankMemory</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.loadBankMemory (byte[] buffer, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">Bank</link> bank)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a5a2de3cc20e81467818ea4e145fe5a30"/><section>
+    <title>loadCommandReplay()</title>
+<indexterm><primary>loadCommandReplay</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>loadCommandReplay</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.loadCommandReplay (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7">COMMANDREPLAY_FLAGS</link> flags, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay">CommandReplay</link> replay)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a2d8b7fbcef9f93721c318d6ca61d6f53"/><section>
+    <title>lookupID()</title>
+<indexterm><primary>lookupID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>lookupID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.lookupID (string path, out <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ae56ee56fa5f2eae287b1236c464b43bd"/><section>
+    <title>lookupPath()</title>
+<indexterm><primary>lookupPath</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>lookupPath</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.lookupPath (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> id, out string path)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1af26c773b241454255776b8b5bb2c1802"/><section>
+    <title>release()</title>
+<indexterm><primary>release</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>release</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.release ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad308c4aba9fdfff211d9cb1ef8f0ec8c"/><section>
+    <title>resetBufferUsage()</title>
+<indexterm><primary>resetBufferUsage</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>resetBufferUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.resetBufferUsage ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1addaf4027bca47e8f8b7f61990c6c7424"/><section>
+    <title>setAdvancedSettings()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setAdvancedSettings</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setAdvancedSettings</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setAdvancedSettings (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a010adb4a9ee376c3a0f47b60e83259ad"/><section>
+    <title>setAdvancedSettings()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setAdvancedSettings</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setAdvancedSettings</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setAdvancedSettings (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">ADVANCEDSETTINGS</link> settings, string encryptionKey)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ae71d007e5957403b46a8129634677dff"/><section>
+    <title>setCallback()</title>
+<indexterm><primary>setCallback</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setCallback (<link linkend="_namespace_f_m_o_d_1_1_studio_1a578aeda8b7f6905827a524b77f480d36">SYSTEM_CALLBACK</link> callback, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6f">SYSTEM_CALLBACK_TYPE</link> callbackmask = <computeroutput><link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa5fb1f955b45e38e31789286a1790398d">SYSTEM_CALLBACK_TYPE::ALL</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a433e8790afd9cdba1e52488e9d1c304d"/><section>
+    <title>setListenerAttributes()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setListenerAttributes</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setListenerAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setListenerAttributes (int listener, <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ad63ea55677fc01a66dc6cb262bf2b21f"/><section>
+    <title>setListenerAttributes()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setListenerAttributes</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setListenerAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setListenerAttributes (int listener, <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes, <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> attenuationposition)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a33e957e983a2ae28d2f0aab89081685b"/><section>
+    <title>setListenerWeight()</title>
+<indexterm><primary>setListenerWeight</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setListenerWeight</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setListenerWeight (int listener, float weight)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a8efca0fe9e33d58174c2a9e033f28177"/><section>
+    <title>setNumListeners()</title>
+<indexterm><primary>setNumListeners</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setNumListeners</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setNumListeners (int numlisteners)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a6cd6da7626420bc1ad1914a506a9b282"/><section>
+    <title>setParameterByID()</title>
+<indexterm><primary>setParameterByID</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a7bc8ec32c28704016eefb125afa819fa"/><section>
+    <title>setParameterByIDWithLabel()</title>
+<indexterm><primary>setParameterByIDWithLabel</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setParameterByIDWithLabel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setParameterByIDWithLabel (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, string label, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a242135f7c9bab917fb3501b76362960b"/><section>
+    <title>setParameterByName()</title>
+<indexterm><primary>setParameterByName</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setParameterByName (string name, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a51071f0da6131f519d69f8c143bb3516"/><section>
+    <title>setParameterByNameWithLabel()</title>
+<indexterm><primary>setParameterByNameWithLabel</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setParameterByNameWithLabel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setParameterByNameWithLabel (string name, string label, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a340baf40525264700a19517786035c01"/><section>
+    <title>setParametersByIDs()</title>
+<indexterm><primary>setParametersByIDs</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setParametersByIDs</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setParametersByIDs (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link>[] ids, float[] values, int count, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a0d02650ceeb6554f8d2a1c2b20d6b52d"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.setUserData (IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1aff3a906898686a0ef39308a132a5c8b7"/><section>
+    <title>startCommandCapture()</title>
+<indexterm><primary>startCommandCapture</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>startCommandCapture</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.startCommandCapture (string filename, <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35">COMMANDCAPTURE_FLAGS</link> flags)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1ac4efcb8465d79a0aebae31e1c4589a5c"/><section>
+    <title>stopCommandCapture()</title>
+<indexterm><primary>stopCommandCapture</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>stopCommandCapture</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.stopCommandCapture ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a4f7e3d8461dc253afbd363aa56faa849"/><section>
+    <title>unloadAll()</title>
+<indexterm><primary>unloadAll</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>unloadAll</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.unloadAll ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a16375faa67a0906d3b2f7a4e3db18fdd"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>update</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.System.update ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_system_1a94bafa7f760c64b0b927e47ecc7c5fbd"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Studio.System</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.System</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Studio.System.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

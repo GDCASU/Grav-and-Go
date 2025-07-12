@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s" xml:lang="en-US">
+<title>FMOD.DSP_STATE_PAN_FUNCTIONS Struct Reference</title>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1abc7150f34bf36e62a73dbd13d2e70171">DSP_PAN_SUMMONOMATRIX_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1ac6acd69efdc48bab2011e4d3b5df5ad4">summonomatrix</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ab94ffef640bf8add4cd65d4b3f8a97f9">DSP_PAN_SUMSTEREOMATRIX_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a36d2995befd3cefae156452ac510b6f9">sumstereomatrix</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a17d27d5d2250d8f8022dcd0e0c4d943c">DSP_PAN_SUMSURROUNDMATRIX_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a5fb7cada714a91990f5c7dee663a535a">sumsurroundmatrix</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a56e68a4a7f330e0d39e48e3c3e7549c9">DSP_PAN_SUMMONOTOSURROUNDMATRIX_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a846edbb39dd722b3815799a6d8009ca0">summonotosurroundmatrix</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a98d4e73dcf3a72f814835e1550798bf5">DSP_PAN_SUMSTEREOTOSURROUNDMATRIX_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a4b1f1c37889c618d9e1b3978ad34a2e5">sumstereotosurroundmatrix</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a8fcd80df727d6e72f96d440ff7e90c65">DSP_PAN_GETROLLOFFGAIN_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a36668d3cfd473a74efd4686fb9c1f2cb">getrolloffgain</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a36668d3cfd473a74efd4686fb9c1f2cb"/><section>
+    <title>getrolloffgain</title>
+<indexterm><primary>getrolloffgain</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>getrolloffgain</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a8fcd80df727d6e72f96d440ff7e90c65">DSP_PAN_GETROLLOFFGAIN_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.getrolloffgain</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1ac6acd69efdc48bab2011e4d3b5df5ad4"/><section>
+    <title>summonomatrix</title>
+<indexterm><primary>summonomatrix</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>summonomatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1abc7150f34bf36e62a73dbd13d2e70171">DSP_PAN_SUMMONOMATRIX_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.summonomatrix</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a846edbb39dd722b3815799a6d8009ca0"/><section>
+    <title>summonotosurroundmatrix</title>
+<indexterm><primary>summonotosurroundmatrix</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>summonotosurroundmatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a56e68a4a7f330e0d39e48e3c3e7549c9">DSP_PAN_SUMMONOTOSURROUNDMATRIX_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.summonotosurroundmatrix</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a36d2995befd3cefae156452ac510b6f9"/><section>
+    <title>sumstereomatrix</title>
+<indexterm><primary>sumstereomatrix</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>sumstereomatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ab94ffef640bf8add4cd65d4b3f8a97f9">DSP_PAN_SUMSTEREOMATRIX_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.sumstereomatrix</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a4b1f1c37889c618d9e1b3978ad34a2e5"/><section>
+    <title>sumstereotosurroundmatrix</title>
+<indexterm><primary>sumstereotosurroundmatrix</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>sumstereotosurroundmatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a98d4e73dcf3a72f814835e1550798bf5">DSP_PAN_SUMSTEREOTOSURROUNDMATRIX_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.sumstereotosurroundmatrix</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___p_a_n___f_u_n_c_t_i_o_n_s_1a5fb7cada714a91990f5c7dee663a535a"/><section>
+    <title>sumsurroundmatrix</title>
+<indexterm><primary>sumsurroundmatrix</primary><secondary>FMOD.DSP_STATE_PAN_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_PAN_FUNCTIONS</primary><secondary>sumsurroundmatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a17d27d5d2250d8f8022dcd0e0c4d943c">DSP_PAN_SUMSURROUNDMATRIX_FUNC</link> FMOD.DSP_STATE_PAN_FUNCTIONS.sumsurroundmatrix</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

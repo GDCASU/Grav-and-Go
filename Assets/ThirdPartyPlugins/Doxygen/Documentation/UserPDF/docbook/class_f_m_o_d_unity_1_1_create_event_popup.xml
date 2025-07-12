@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_create_event_popup" xml:lang="en-US">
+<title>FMODUnity.CreateEventPopup Class Reference</title>
+<indexterm><primary>FMODUnity.CreateEventPopup</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.CreateEventPopup:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_create_event_popup.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_create_event_popup_1ae5f66b8ea0f5d926b3e8753f51b24f47">CreateEventPopup</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_create_event_popup_1a5ad22bb0a73482048a04ddefaa399722">OnGUI</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_create_event_popup_1ae5f66b8ea0f5d926b3e8753f51b24f47"/><section>
+    <title>CreateEventPopup()</title>
+<indexterm><primary>CreateEventPopup</primary><secondary>FMODUnity.CreateEventPopup</secondary></indexterm>
+<indexterm><primary>FMODUnity.CreateEventPopup</primary><secondary>CreateEventPopup</secondary></indexterm>
+<para><computeroutput>FMODUnity.CreateEventPopup.CreateEventPopup ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_create_event_popup_1a5ad22bb0a73482048a04ddefaa399722"/><section>
+    <title>OnGUI()</title>
+<indexterm><primary>OnGUI</primary><secondary>FMODUnity.CreateEventPopup</secondary></indexterm>
+<indexterm><primary>FMODUnity.CreateEventPopup</primary><secondary>OnGUI</secondary></indexterm>
+<para><computeroutput>void FMODUnity.CreateEventPopup.OnGUI ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__create_event_popup_8cs">CreateEventPopup.cs</link></section>
+</section>

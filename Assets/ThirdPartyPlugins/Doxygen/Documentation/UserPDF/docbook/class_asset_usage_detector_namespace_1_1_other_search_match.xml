@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_other_search_match" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.OtherSearchMatch Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.OtherSearchMatch</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.OtherSearchMatch:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_other_search_match.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match">AssetUsageDetectorNamespace.GenericSearchMatch</link>        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match_1aa769cea47e3d818436a3762ccbe132e2">SetterFunction</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> newValue)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_search_match">AssetUsageDetectorNamespace.SearchMatch</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a847bf5f65b2d7167749f8b62b4041f93">ChangeValue</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> newValue)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a52cbbfcc26c7dfbae47ab0c8311913d5">OnValueChanged</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> newValue, bool setContextDirty=true)</para>
+</listitem>
+        </itemizedlist>
+Public Attributes inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match">AssetUsageDetectorNamespace.GenericSearchMatch</link>        <itemizedlist>
+            <listitem><para>readonly <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match_1aa769cea47e3d818436a3762ccbe132e2">SetterFunction</link> <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match_1abe5e35021dc89d7393ea8ea7a2ad78ef">Setter</link></para>
+</listitem>
+        </itemizedlist>
+Public Attributes inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_search_match">AssetUsageDetectorNamespace.SearchMatch</link>        <itemizedlist>
+            <listitem><para>readonly object <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a3675a8b1b15a3ac95b5ce7792faa7030">Source</link></para>
+</listitem>
+            <listitem><para>readonly <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a39753d71a5e6e603e8c28a5d08306271">Context</link></para>
+</listitem>
+        </itemizedlist>
+Protected Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match">AssetUsageDetectorNamespace.GenericSearchMatch</link>        <itemizedlist>
+            <listitem><para>override bool <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match_1aad36da2d333510a8a201dd29726e3a21">ChangeValue</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> newValue, out bool setContextDirty)</para>
+</listitem>
+        </itemizedlist>
+Protected Member Functions inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_search_match">AssetUsageDetectorNamespace.SearchMatch</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a1da710fbb26c17793e83816b75a0e0f5">SearchMatch</link> (object source, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> value)</para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1ac6acc1ff3e1a5d88e5d05273d5bdeb8d">SearchMatch</link> (object source, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> value, <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> context)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1ae21cccb7b2ac866a92e523dff8de6a1d">ChangeValue</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> newValue, out bool setContextDirty)</para>
+</listitem>
+        </itemizedlist>
+Properties inherited from <link linkend="_class_asset_usage_detector_namespace_1_1_search_match">AssetUsageDetectorNamespace.SearchMatch</link>        <itemizedlist>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_search_match_1a29c8e75b68fa55d79d36e8e612453e2b">Value</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><itemizedlist>
+<listitem>
+<para>Source: <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> that references Value</para>
+</listitem><listitem>
+<para>Value: Matched object </para>
+</listitem></itemizedlist>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_refactoring_8cs">SearchRefactoring.cs</link></section>
+</section>

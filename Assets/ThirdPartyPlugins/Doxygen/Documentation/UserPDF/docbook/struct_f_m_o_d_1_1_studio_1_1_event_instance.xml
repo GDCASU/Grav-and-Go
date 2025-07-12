@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance" xml:lang="en-US">
+<title>FMOD.Studio.EventInstance Struct Reference</title>
+<indexterm><primary>FMOD.Studio.EventInstance</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5d72ef8cad6fc2211e8ecae3f951ff2a">getDescription</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> description)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa4752b94458f666db697a1307fcb6f66">getVolume</link> (out float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a6a5a3e80654dcf657060f10b5bf34e0f">getVolume</link> (out float volume, out float finalvolume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ad614b492f352f7ccdf2d0601911c4602">setVolume</link> (float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa80fa17b88a56a0944875adc5fe7beb7">getPitch</link> (out float pitch)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1adfc99239e0cbd3eb0ddde30956992182">getPitch</link> (out float pitch, out float finalpitch)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a2867c4be9acc5b9fa2a5c02b5822a197">setPitch</link> (float pitch)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a20f9572bc1a4a6f4ad195636e5fd2d99">get3DAttributes</link> (out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9ddc8dd0f262b92e879ae37221fa4737">set3DAttributes</link> (<link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a53ce0248bc3c9a85a79af83600eda823">getListenerMask</link> (out uint mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa28c5a4ae56841c6bb5a285938d42aa5">setListenerMask</link> (uint mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9e32159e64afd57b0c5bc54e947f1179">getProperty</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14a">EVENT_PROPERTY</link> index, out float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5a9926a2653bf2cca6b48f602d1a82be">setProperty</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14a">EVENT_PROPERTY</link> index, float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1adf5dc5874f437fc8617f3c5b41a62cfd">getReverbLevel</link> (int index, out float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a138d3dbc5043fba55de8748d7c3c19b1">setReverbLevel</link> (int index, float level)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a99de5b181d683ac99fbe9425484339da">getPaused</link> (out bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ae8cad8bc9b3050f5019607b9ad1c35e6">setPaused</link> (bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a85e8bd074e09c26f247f565dfbdfd55c">start</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5ea04d86644f82f541c476a688d7ada7">stop</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881">STOP_MODE</link> mode)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aff7dbbf2710ce328c4345517a4507663">getTimelinePosition</link> (out int position)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9d02e462c4dea9d92e9c6b20c0818b14">setTimelinePosition</link> (int position)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ad721076b17ec508dad41de230cc92951">getPlaybackState</link> (out <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602d">PLAYBACK_STATE</link> state)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a3e4eb4686159c05e615c0e090c1cf2ca">getChannelGroup</link> (out <link linkend="_struct_f_m_o_d_1_1_channel_group">FMOD.ChannelGroup</link> group)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1af07b83dd290e5cb7442ecf650639b4d0">getMinMaxDistance</link> (out float min, out float max)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a7f63a7b3a8d89d50e5b5fdcfc5d76f08">release</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8dc3e1d2ddcb98b18866341b3f78387f">isVirtual</link> (out bool virtualstate)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abdf26580ae71c8a37573dd176c0de7d6">getParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abb4736b1a5f462140249e18f21e9fd02">getParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value, out float finalvalue)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a0c571031e067174eca653e2bf1a88316">setParameterByID</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a740b011f0bcf2e12f6c0a60c428f5f08">setParameterByIDWithLabel</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, string label, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aaa9b2417cfbc4129dec7fa265066d080">setParametersByIDs</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link>[] ids, float[] values, int count, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a7b211889bc59fa4fb64c516612d33074">getParameterByName</link> (string name, out float value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a2c34f8bb6d2e917bcfa69b61aa7e38b8">getParameterByName</link> (string name, out float value, out float finalvalue)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a66336f4895ad01067bd5e34cb8e69d91">setParameterByName</link> (string name, float value, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8b360e705c594a16c24086535a6e3b6d">setParameterByNameWithLabel</link> (string name, string label, bool ignoreseekspeed=false)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a207cc7b65417e1320d67f894d6b8aef9">keyOff</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a750977bbb913dffc824ca72755e57a61">setCallback</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1a5dbcaa08826b04164cc1456c31e87b85">EVENT_CALLBACK</link> callback, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777">EVENT_CALLBACK_TYPE</link> callbackmask=<link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a5fb1f955b45e38e31789286a1790398d">EVENT_CALLBACK_TYPE.ALL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a194b428ac89730fbee744c0234b7d4bc">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a1458db79261f0578048783015466ba85">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8cc5e58d64d9f939c6b3bbe2ecb7dcc7">getCPUUsage</link> (out uint exclusive, out uint inclusive)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a09ebb6fc8d8fa25ebef99b69d1a479bf">getMemoryUsage</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_m_e_m_o_r_y___u_s_a_g_e">MEMORY_USAGE</link> memoryusage)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a1cc72c3dcebaf7c1a4089a76529026c8">EventInstance</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aea8b05f9d7a476c95e50fd97f71a3e2c">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a65014580b269309c2fcbcddfbefe871e">clearHandle</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a6febd3da4b1769417c122cc686703a20">isValid</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abf9422490655b99f4be395a68f236033">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a1cc72c3dcebaf7c1a4089a76529026c8"/><section>
+    <title>EventInstance()</title>
+<indexterm><primary>EventInstance</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>EventInstance</secondary></indexterm>
+<para><computeroutput>FMOD.Studio.EventInstance.EventInstance (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a65014580b269309c2fcbcddfbefe871e"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Studio.EventInstance.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a20f9572bc1a4a6f4ad195636e5fd2d99"/><section>
+    <title>get3DAttributes()</title>
+<indexterm><primary>get3DAttributes</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>get3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.get3DAttributes (out <link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a3e4eb4686159c05e615c0e090c1cf2ca"/><section>
+    <title>getChannelGroup()</title>
+<indexterm><primary>getChannelGroup</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getChannelGroup</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getChannelGroup (out <link linkend="_struct_f_m_o_d_1_1_channel_group">FMOD.ChannelGroup</link> group)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8cc5e58d64d9f939c6b3bbe2ecb7dcc7"/><section>
+    <title>getCPUUsage()</title>
+<indexterm><primary>getCPUUsage</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getCPUUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getCPUUsage (out uint exclusive, out uint inclusive)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5d72ef8cad6fc2211e8ecae3f951ff2a"/><section>
+    <title>getDescription()</title>
+<indexterm><primary>getDescription</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getDescription</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getDescription (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">EventDescription</link> description)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a53ce0248bc3c9a85a79af83600eda823"/><section>
+    <title>getListenerMask()</title>
+<indexterm><primary>getListenerMask</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getListenerMask</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getListenerMask (out uint mask)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a09ebb6fc8d8fa25ebef99b69d1a479bf"/><section>
+    <title>getMemoryUsage()</title>
+<indexterm><primary>getMemoryUsage</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getMemoryUsage</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getMemoryUsage (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_m_e_m_o_r_y___u_s_a_g_e">MEMORY_USAGE</link> memoryusage)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1af07b83dd290e5cb7442ecf650639b4d0"/><section>
+    <title>getMinMaxDistance()</title>
+<indexterm><primary>getMinMaxDistance</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getMinMaxDistance</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getMinMaxDistance (out float min, out float max)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abdf26580ae71c8a37573dd176c0de7d6"/><section>
+    <title>getParameterByID()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getParameterByID</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abb4736b1a5f462140249e18f21e9fd02"/><section>
+    <title>getParameterByID()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getParameterByID</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, out float value, out float finalvalue)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a7b211889bc59fa4fb64c516612d33074"/><section>
+    <title>getParameterByName()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getParameterByName</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getParameterByName (string name, out float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a2c34f8bb6d2e917bcfa69b61aa7e38b8"/><section>
+    <title>getParameterByName()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getParameterByName</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getParameterByName (string name, out float value, out float finalvalue)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a99de5b181d683ac99fbe9425484339da"/><section>
+    <title>getPaused()</title>
+<indexterm><primary>getPaused</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getPaused (out bool paused)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa80fa17b88a56a0944875adc5fe7beb7"/><section>
+    <title>getPitch()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getPitch</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getPitch</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getPitch (out float pitch)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1adfc99239e0cbd3eb0ddde30956992182"/><section>
+    <title>getPitch()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getPitch</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getPitch</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getPitch (out float pitch, out float finalpitch)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ad721076b17ec508dad41de230cc92951"/><section>
+    <title>getPlaybackState()</title>
+<indexterm><primary>getPlaybackState</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getPlaybackState</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getPlaybackState (out <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602d">PLAYBACK_STATE</link> state)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9e32159e64afd57b0c5bc54e947f1179"/><section>
+    <title>getProperty()</title>
+<indexterm><primary>getProperty</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getProperty</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getProperty (<link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14a">EVENT_PROPERTY</link> index, out float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1adf5dc5874f437fc8617f3c5b41a62cfd"/><section>
+    <title>getReverbLevel()</title>
+<indexterm><primary>getReverbLevel</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getReverbLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getReverbLevel (int index, out float level)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aff7dbbf2710ce328c4345517a4507663"/><section>
+    <title>getTimelinePosition()</title>
+<indexterm><primary>getTimelinePosition</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getTimelinePosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getTimelinePosition (out int position)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a194b428ac89730fbee744c0234b7d4bc"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa4752b94458f666db697a1307fcb6f66"/><section>
+    <title>getVolume()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>getVolume</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getVolume</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getVolume (out float volume)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a6a5a3e80654dcf657060f10b5bf34e0f"/><section>
+    <title>getVolume()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>getVolume</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>getVolume</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.getVolume (out float volume, out float finalvolume)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aea8b05f9d7a476c95e50fd97f71a3e2c"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.EventInstance.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a6febd3da4b1769417c122cc686703a20"/><section>
+    <title>isValid()</title>
+<indexterm><primary>isValid</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>isValid</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.EventInstance.isValid ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8dc3e1d2ddcb98b18866341b3f78387f"/><section>
+    <title>isVirtual()</title>
+<indexterm><primary>isVirtual</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>isVirtual</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.isVirtual (out bool virtualstate)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a207cc7b65417e1320d67f894d6b8aef9"/><section>
+    <title>keyOff()</title>
+<indexterm><primary>keyOff</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>keyOff</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.keyOff ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a7f63a7b3a8d89d50e5b5fdcfc5d76f08"/><section>
+    <title>release()</title>
+<indexterm><primary>release</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>release</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.release ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9ddc8dd0f262b92e879ae37221fa4737"/><section>
+    <title>set3DAttributes()</title>
+<indexterm><primary>set3DAttributes</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>set3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.set3DAttributes (<link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> attributes)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a750977bbb913dffc824ca72755e57a61"/><section>
+    <title>setCallback()</title>
+<indexterm><primary>setCallback</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setCallback (<link linkend="_namespace_f_m_o_d_1_1_studio_1a5dbcaa08826b04164cc1456c31e87b85">EVENT_CALLBACK</link> callback, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777">EVENT_CALLBACK_TYPE</link> callbackmask = <computeroutput><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a5fb1f955b45e38e31789286a1790398d">EVENT_CALLBACK_TYPE::ALL</link></computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aa28c5a4ae56841c6bb5a285938d42aa5"/><section>
+    <title>setListenerMask()</title>
+<indexterm><primary>setListenerMask</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setListenerMask</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setListenerMask (uint mask)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a0c571031e067174eca653e2bf1a88316"/><section>
+    <title>setParameterByID()</title>
+<indexterm><primary>setParameterByID</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setParameterByID</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setParameterByID (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a740b011f0bcf2e12f6c0a60c428f5f08"/><section>
+    <title>setParameterByIDWithLabel()</title>
+<indexterm><primary>setParameterByIDWithLabel</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setParameterByIDWithLabel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setParameterByIDWithLabel (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link> id, string label, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a66336f4895ad01067bd5e34cb8e69d91"/><section>
+    <title>setParameterByName()</title>
+<indexterm><primary>setParameterByName</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setParameterByName</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setParameterByName (string name, float value, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a8b360e705c594a16c24086535a6e3b6d"/><section>
+    <title>setParameterByNameWithLabel()</title>
+<indexterm><primary>setParameterByNameWithLabel</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setParameterByNameWithLabel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setParameterByNameWithLabel (string name, string label, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1aaa9b2417cfbc4129dec7fa265066d080"/><section>
+    <title>setParametersByIDs()</title>
+<indexterm><primary>setParametersByIDs</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setParametersByIDs</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setParametersByIDs (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">PARAMETER_ID</link>[] ids, float[] values, int count, bool ignoreseekspeed = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ae8cad8bc9b3050f5019607b9ad1c35e6"/><section>
+    <title>setPaused()</title>
+<indexterm><primary>setPaused</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setPaused (bool paused)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a2867c4be9acc5b9fa2a5c02b5822a197"/><section>
+    <title>setPitch()</title>
+<indexterm><primary>setPitch</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setPitch</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setPitch (float pitch)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5a9926a2653bf2cca6b48f602d1a82be"/><section>
+    <title>setProperty()</title>
+<indexterm><primary>setProperty</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setProperty</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setProperty (<link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14a">EVENT_PROPERTY</link> index, float value)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a138d3dbc5043fba55de8748d7c3c19b1"/><section>
+    <title>setReverbLevel()</title>
+<indexterm><primary>setReverbLevel</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setReverbLevel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setReverbLevel (int index, float level)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a9d02e462c4dea9d92e9c6b20c0818b14"/><section>
+    <title>setTimelinePosition()</title>
+<indexterm><primary>setTimelinePosition</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setTimelinePosition</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setTimelinePosition (int position)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a1458db79261f0578048783015466ba85"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setUserData (IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1ad614b492f352f7ccdf2d0601911c4602"/><section>
+    <title>setVolume()</title>
+<indexterm><primary>setVolume</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>setVolume</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.setVolume (float volume)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a85e8bd074e09c26f247f565dfbdfd55c"/><section>
+    <title>start()</title>
+<indexterm><primary>start</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>start</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.start ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1a5ea04d86644f82f541c476a688d7ada7"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.EventInstance.stop (<link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881">STOP_MODE</link> mode)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_event_instance_1abf9422490655b99f4be395a68f236033"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Studio.EventInstance</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.EventInstance</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Studio.EventInstance.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

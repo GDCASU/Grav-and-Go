@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1ab314a8fcc7151697df4e7768c7ffb06f">KeyListGeneratorData</link> (string name, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> targetType, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> populatorType, bool needsWindow)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a75affd28d5017a2f3233361777cba289">Name</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a87330338c0f1a3f25ff728ee4c8b0ae7">TargetType</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a66158bc804524f0d53b33f8091d70b7f">GeneratorType</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a6e3a308cc3b4597c782ea7fe2e9da374">NeedsWindow</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1ab314a8fcc7151697df4e7768c7ffb06f"/><section>
+    <title>KeyListGeneratorData()</title>
+<indexterm><primary>KeyListGeneratorData</primary><secondary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary><secondary>KeyListGeneratorData</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData.KeyListGeneratorData (string name, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> targetType, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> populatorType, bool needsWindow)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a66158bc804524f0d53b33f8091d70b7f"/><section>
+    <title>GeneratorType</title>
+<indexterm><primary>GeneratorType</primary><secondary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary><secondary>GeneratorType</secondary></indexterm>
+<para><computeroutput><link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData.GeneratorType<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a75affd28d5017a2f3233361777cba289"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData.Name<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a6e3a308cc3b4597c782ea7fe2e9da374"/><section>
+    <title>NeedsWindow</title>
+<indexterm><primary>NeedsWindow</primary><secondary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary><secondary>NeedsWindow</secondary></indexterm>
+<para><computeroutput>bool AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData.NeedsWindow<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_keys_generators_1_1_key_list_generator_data_1a87330338c0f1a3f25ff728ee4c8b0ae7"/><section>
+    <title>TargetType</title>
+<indexterm><primary>TargetType</primary><secondary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData</primary><secondary>TargetType</secondary></indexterm>
+<para><computeroutput><link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> AYellowpaper.SerializedCollections.KeysGenerators.KeyListGeneratorData.TargetType<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/KeyListGenerators/<link linkend="__key_list_generator_data_8cs">KeyListGeneratorData.cs</link></section>
+</section>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s" xml:lang="en-US">
+<title>FMOD.ADVANCEDSETTINGS Struct Reference</title>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a806a7ba729aaa41e926e7272eabe3d18">cbSize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a478a2c58c0e3eb72d0a551bac6a85165">maxMPEGCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aff15035cadb6d2b52f9e97bc7e24e977">maxADPCMCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a560c781141528c62d86adf857f1c6d5e">maxXMACodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1adb2535af2d16952bbbe4bf750e6377ee">maxVorbisCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aa256d4f87b7e8a31ddcce934c6d198ca">maxAT9Codecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a839fd9084454db6b45a52c585e3e4c36">maxFADPCMCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a3439447a1350ca4ca445d9f77f09e7f1">maxPCMCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a715fc87e893af78177f38a0b9d3296a3">ASIONumChannels</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a6a1178a0a59a4b6d0ecd0e55641f36aa">ASIOChannelList</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1dcb0803c1df6bcc926e1c3c56911486">ASIOSpeakerList</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ace01c3fa9a58fedc999889e1f961000e">vol0virtualvol</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a998bcb06309ebf4cc89dd235433f8e12">defaultDecodeBufferSize</link></para>
+</listitem>
+            <listitem><para>ushort <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1e5f0787e0fa1d9638b60e5b1d254591">profilePort</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a45c71ffe14927bcb7904812081d18b31">geometryMaxFadeTime</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab23def9cd9737d4034839f95e44629c3">distanceFilterCenterFreq</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a6f123226c85fa1a013b44a868be7c3e7">reverb3Dinstance</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a43710c4e497a437ae3fcb51fa3a8e4bb">DSPBufferPoolSize</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ad6489eb6f4c11ade07297e8939d96ac9">DSP_RESAMPLER</link> <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a20ecdcd14ce0d4e0a20445a3c1c2a244">resamplerMethod</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a4dd94c767903047df1c632cd0863f55c">randomSeed</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aa63133ace9e855c1862f9817a00e79cf">maxConvolutionThreads</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aed5e84d7cc13647a59b5de42abb74a2e">maxOpusCodecs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aff9cdaf9d18879f0eee6b5d34e364eee">maxSpatialObjects</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a6a1178a0a59a4b6d0ecd0e55641f36aa"/><section>
+    <title>ASIOChannelList</title>
+<indexterm><primary>ASIOChannelList</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>ASIOChannelList</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.ADVANCEDSETTINGS.ASIOChannelList</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a715fc87e893af78177f38a0b9d3296a3"/><section>
+    <title>ASIONumChannels</title>
+<indexterm><primary>ASIONumChannels</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>ASIONumChannels</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.ASIONumChannels</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1dcb0803c1df6bcc926e1c3c56911486"/><section>
+    <title>ASIOSpeakerList</title>
+<indexterm><primary>ASIOSpeakerList</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>ASIOSpeakerList</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.ADVANCEDSETTINGS.ASIOSpeakerList</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a806a7ba729aaa41e926e7272eabe3d18"/><section>
+    <title>cbSize</title>
+<indexterm><primary>cbSize</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>cbSize</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.cbSize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a998bcb06309ebf4cc89dd235433f8e12"/><section>
+    <title>defaultDecodeBufferSize</title>
+<indexterm><primary>defaultDecodeBufferSize</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>defaultDecodeBufferSize</secondary></indexterm>
+<para><computeroutput>uint FMOD.ADVANCEDSETTINGS.defaultDecodeBufferSize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab23def9cd9737d4034839f95e44629c3"/><section>
+    <title>distanceFilterCenterFreq</title>
+<indexterm><primary>distanceFilterCenterFreq</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>distanceFilterCenterFreq</secondary></indexterm>
+<para><computeroutput>float FMOD.ADVANCEDSETTINGS.distanceFilterCenterFreq</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a43710c4e497a437ae3fcb51fa3a8e4bb"/><section>
+    <title>DSPBufferPoolSize</title>
+<indexterm><primary>DSPBufferPoolSize</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>DSPBufferPoolSize</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.DSPBufferPoolSize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a45c71ffe14927bcb7904812081d18b31"/><section>
+    <title>geometryMaxFadeTime</title>
+<indexterm><primary>geometryMaxFadeTime</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>geometryMaxFadeTime</secondary></indexterm>
+<para><computeroutput>uint FMOD.ADVANCEDSETTINGS.geometryMaxFadeTime</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aff15035cadb6d2b52f9e97bc7e24e977"/><section>
+    <title>maxADPCMCodecs</title>
+<indexterm><primary>maxADPCMCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxADPCMCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxADPCMCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aa256d4f87b7e8a31ddcce934c6d198ca"/><section>
+    <title>maxAT9Codecs</title>
+<indexterm><primary>maxAT9Codecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxAT9Codecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxAT9Codecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aa63133ace9e855c1862f9817a00e79cf"/><section>
+    <title>maxConvolutionThreads</title>
+<indexterm><primary>maxConvolutionThreads</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxConvolutionThreads</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxConvolutionThreads</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a839fd9084454db6b45a52c585e3e4c36"/><section>
+    <title>maxFADPCMCodecs</title>
+<indexterm><primary>maxFADPCMCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxFADPCMCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxFADPCMCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a478a2c58c0e3eb72d0a551bac6a85165"/><section>
+    <title>maxMPEGCodecs</title>
+<indexterm><primary>maxMPEGCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxMPEGCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxMPEGCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aed5e84d7cc13647a59b5de42abb74a2e"/><section>
+    <title>maxOpusCodecs</title>
+<indexterm><primary>maxOpusCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxOpusCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxOpusCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a3439447a1350ca4ca445d9f77f09e7f1"/><section>
+    <title>maxPCMCodecs</title>
+<indexterm><primary>maxPCMCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxPCMCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxPCMCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aff9cdaf9d18879f0eee6b5d34e364eee"/><section>
+    <title>maxSpatialObjects</title>
+<indexterm><primary>maxSpatialObjects</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxSpatialObjects</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxSpatialObjects</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1adb2535af2d16952bbbe4bf750e6377ee"/><section>
+    <title>maxVorbisCodecs</title>
+<indexterm><primary>maxVorbisCodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxVorbisCodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxVorbisCodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a560c781141528c62d86adf857f1c6d5e"/><section>
+    <title>maxXMACodecs</title>
+<indexterm><primary>maxXMACodecs</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>maxXMACodecs</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.maxXMACodecs</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1e5f0787e0fa1d9638b60e5b1d254591"/><section>
+    <title>profilePort</title>
+<indexterm><primary>profilePort</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>profilePort</secondary></indexterm>
+<para><computeroutput>ushort FMOD.ADVANCEDSETTINGS.profilePort</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a4dd94c767903047df1c632cd0863f55c"/><section>
+    <title>randomSeed</title>
+<indexterm><primary>randomSeed</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>randomSeed</secondary></indexterm>
+<para><computeroutput>uint FMOD.ADVANCEDSETTINGS.randomSeed</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a20ecdcd14ce0d4e0a20445a3c1c2a244"/><section>
+    <title>resamplerMethod</title>
+<indexterm><primary>resamplerMethod</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>resamplerMethod</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ad6489eb6f4c11ade07297e8939d96ac9">DSP_RESAMPLER</link> FMOD.ADVANCEDSETTINGS.resamplerMethod</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a6f123226c85fa1a013b44a868be7c3e7"/><section>
+    <title>reverb3Dinstance</title>
+<indexterm><primary>reverb3Dinstance</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>reverb3Dinstance</secondary></indexterm>
+<para><computeroutput>int FMOD.ADVANCEDSETTINGS.reverb3Dinstance</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ace01c3fa9a58fedc999889e1f961000e"/><section>
+    <title>vol0virtualvol</title>
+<indexterm><primary>vol0virtualvol</primary><secondary>FMOD.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.ADVANCEDSETTINGS</primary><secondary>vol0virtualvol</secondary></indexterm>
+<para><computeroutput>float FMOD.ADVANCEDSETTINGS.vol0virtualvol</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

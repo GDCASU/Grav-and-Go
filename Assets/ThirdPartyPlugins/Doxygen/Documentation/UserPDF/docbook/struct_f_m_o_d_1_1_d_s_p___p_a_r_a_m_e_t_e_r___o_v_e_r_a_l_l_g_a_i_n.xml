@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___o_v_e_r_a_l_l_g_a_i_n" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_OVERALLGAIN Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_OVERALLGAIN</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___o_v_e_r_a_l_l_g_a_i_n_1af7474d2ca5eb908020c3b1b3ebb5b931">linear_gain</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___o_v_e_r_a_l_l_g_a_i_n_1a49f0014438b4c4a9f33d063dd326782e">linear_gain_additive</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___o_v_e_r_a_l_l_g_a_i_n_1af7474d2ca5eb908020c3b1b3ebb5b931"/><section>
+    <title>linear_gain</title>
+<indexterm><primary>linear_gain</primary><secondary>FMOD.DSP_PARAMETER_OVERALLGAIN</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_OVERALLGAIN</primary><secondary>linear_gain</secondary></indexterm>
+<para><computeroutput>float FMOD.DSP_PARAMETER_OVERALLGAIN.linear_gain</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___o_v_e_r_a_l_l_g_a_i_n_1a49f0014438b4c4a9f33d063dd326782e"/><section>
+    <title>linear_gain_additive</title>
+<indexterm><primary>linear_gain_additive</primary><secondary>FMOD.DSP_PARAMETER_OVERALLGAIN</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_OVERALLGAIN</primary><secondary>linear_gain_additive</secondary></indexterm>
+<para><computeroutput>float FMOD.DSP_PARAMETER_OVERALLGAIN.linear_gain_additive</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

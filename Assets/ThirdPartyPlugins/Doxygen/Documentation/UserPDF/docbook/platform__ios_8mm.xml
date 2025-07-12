@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_platform__ios_8mm" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/platform_ios.mm File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/platform_ios.mm</primary></indexterm>
+<programlisting linenumbering="unnumbered">import &lt;Foundation/Foundation.h&gt;<?linebreak?>import &lt;AVFoundation/AVFoundation.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_platform__ios_8mm_1a786babcb3187ea442d127725f7e4bd24">RegisterSuspendCallback</link> (void(*callback)(bool))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>static void(* <link linkend="_platform__ios_8mm_1acbe78cdb539641e41287ae1b9e72e971">gSuspendCallback</link> )(bool suspend) = nullptr</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_platform__ios_8mm_1a4ff85faa182c4801d1b684746778d9f6">gIsSuspended</link> = false</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_platform__ios_8mm_1a147bd1642a0e73514388a3d9c21d8b3d">gNeedsReset</link> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_platform__ios_8mm_1a786babcb3187ea442d127725f7e4bd24"/><section>
+    <title>RegisterSuspendCallback()</title>
+<indexterm><primary>RegisterSuspendCallback</primary><secondary>platform_ios.mm</secondary></indexterm>
+<indexterm><primary>platform_ios.mm</primary><secondary>RegisterSuspendCallback</secondary></indexterm>
+<para><computeroutput>void RegisterSuspendCallback (void(* callback&#160;)(bool))</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_platform__ios_8mm_1a4ff85faa182c4801d1b684746778d9f6"/><section>
+    <title>gIsSuspended</title>
+<indexterm><primary>gIsSuspended</primary><secondary>platform_ios.mm</secondary></indexterm>
+<indexterm><primary>platform_ios.mm</primary><secondary>gIsSuspended</secondary></indexterm>
+<para><computeroutput>bool gIsSuspended = false<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_platform__ios_8mm_1a147bd1642a0e73514388a3d9c21d8b3d"/><section>
+    <title>gNeedsReset</title>
+<indexterm><primary>gNeedsReset</primary><secondary>platform_ios.mm</secondary></indexterm>
+<indexterm><primary>platform_ios.mm</primary><secondary>gNeedsReset</secondary></indexterm>
+<para><computeroutput>bool gNeedsReset = false<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_platform__ios_8mm_1acbe78cdb539641e41287ae1b9e72e971"/><section>
+    <title>gSuspendCallback</title>
+<indexterm><primary>gSuspendCallback</primary><secondary>platform_ios.mm</secondary></indexterm>
+<indexterm><primary>platform_ios.mm</primary><secondary>gSuspendCallback</secondary></indexterm>
+<para><computeroutput>void(* gSuspendCallback) (bool suspend) (bool suspend) = nullptr<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+</section>

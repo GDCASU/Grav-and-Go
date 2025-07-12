@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_project_null_1_1_doc_tools_1_1_process_runner" xml:lang="en-US">
+<title>ProjectNull.DocTools.ProcessRunner Class Reference</title>
+<indexterm><primary>ProjectNull.DocTools.ProcessRunner</primary></indexterm>
+<para>
+
+<para>Contains a process and this is the interface point. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_project_null_1_1_doc_tools_1_1_process_runner_1a4733147363bc3017cc2456a02215f783">ProcessIsActive</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_project_null_1_1_doc_tools_1_1_process_runner_1a736b99b9f4cb80e2202284a0ebdcc0b2">StartInWorkingFolder</link> (string runFile, string[] arguments)</para>
+
+<para>Creat a temp working folder and start a process in it. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_project_null_1_1_doc_tools_1_1_process_runner_1a498fd980105ddf10a5ef62988c087d17">StartWitoutWorkingFolder</link> (string runFile, string[] arguments)</para>
+
+<para>Start a process without creating a temp working folder. </para>
+</listitem>
+            <listitem><para>System.IO.StreamReader <link linkend="_class_project_null_1_1_doc_tools_1_1_process_runner_1aad7fbe2b350c69552c946dc4f4ea1a09">GetOutStream</link> ()</para>
+
+<para>Get the stream out from the process. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains a process and this is the interface point. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_process_runner_1aad7fbe2b350c69552c946dc4f4ea1a09"/><section>
+    <title>GetOutStream()</title>
+<indexterm><primary>GetOutStream</primary><secondary>ProjectNull.DocTools.ProcessRunner</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.ProcessRunner</primary><secondary>GetOutStream</secondary></indexterm>
+<para><computeroutput>System.IO.StreamReader ProjectNull.DocTools.ProcessRunner.GetOutStream ( )</computeroutput></para><para>
+
+<para>Get the stream out from the process. </para>
+</para>
+</section>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_process_runner_1a4733147363bc3017cc2456a02215f783"/><section>
+    <title>ProcessIsActive()</title>
+<indexterm><primary>ProcessIsActive</primary><secondary>ProjectNull.DocTools.ProcessRunner</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.ProcessRunner</primary><secondary>ProcessIsActive</secondary></indexterm>
+<para><computeroutput>bool ProjectNull.DocTools.ProcessRunner.ProcessIsActive ( )</computeroutput></para></section>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_process_runner_1a736b99b9f4cb80e2202284a0ebdcc0b2"/><section>
+    <title>StartInWorkingFolder()</title>
+<indexterm><primary>StartInWorkingFolder</primary><secondary>ProjectNull.DocTools.ProcessRunner</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.ProcessRunner</primary><secondary>StartInWorkingFolder</secondary></indexterm>
+<para><computeroutput>void ProjectNull.DocTools.ProcessRunner.StartInWorkingFolder (string runFile, string[] arguments)</computeroutput></para><para>
+
+<para>Creat a temp working folder and start a process in it. </para>
+</para>
+</section>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_process_runner_1a498fd980105ddf10a5ef62988c087d17"/><section>
+    <title>StartWitoutWorkingFolder()</title>
+<indexterm><primary>StartWitoutWorkingFolder</primary><secondary>ProjectNull.DocTools.ProcessRunner</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.ProcessRunner</primary><secondary>StartWitoutWorkingFolder</secondary></indexterm>
+<para><computeroutput>void ProjectNull.DocTools.ProcessRunner.StartWitoutWorkingFolder (string runFile, string[] arguments)</computeroutput></para><para>
+
+<para>Start a process without creating a temp working folder. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/ThirdPartyPlugins/Doxygen/Editor/<link linkend="__process_runner_8cs">ProcessRunner.cs</link></section>
+</section>

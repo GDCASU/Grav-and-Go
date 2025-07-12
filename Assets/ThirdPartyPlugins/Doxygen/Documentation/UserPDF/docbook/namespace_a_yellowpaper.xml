@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_a_yellowpaper" xml:lang="en-US">
+<title>AYellowpaper Namespace Reference</title>
+<indexterm><primary>AYellowpaper</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections">SerializedCollections</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

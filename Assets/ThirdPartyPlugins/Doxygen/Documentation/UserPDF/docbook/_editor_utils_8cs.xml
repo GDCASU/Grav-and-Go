@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__editor_utils_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_utils">FMODUnity.EditorUtils</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_staging_system">FMODUnity.StagingSystem</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_staging_system_1_1_update_step">FMODUnity.StagingSystem.UpdateStep</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_help_content">FMODUnity.HelpContent</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_simple_help">FMODUnity.SimpleHelp</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_build_status_watcher">FMODUnity.BuildStatusWatcher</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions">FMODUnity.SerializedPropertyExtensions</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_no_indent_scope">FMODUnity.NoIndentScope</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_natural_comparer">FMODUnity.NaturalComparer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d_unity">FMODUnity</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

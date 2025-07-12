@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene" xml:lang="en-US">
+<title>FMODUnity.EventManager.PreprocessScene Class Reference</title>
+<indexterm><primary>FMODUnity.EventManager.PreprocessScene</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EventManager.PreprocessScene:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene_1a900e18fc7f95ed1e4cea4c1657650a48">OnProcessScene</link> (Scene scene, BuildReport report)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene_1a1149301cfb971d3d00d1ca26f3716cba">callbackOrder</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene_1a900e18fc7f95ed1e4cea4c1657650a48"/><section>
+    <title>OnProcessScene()</title>
+<indexterm><primary>OnProcessScene</primary><secondary>FMODUnity.EventManager.PreprocessScene</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventManager.PreprocessScene</primary><secondary>OnProcessScene</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventManager.PreprocessScene.OnProcessScene (Scene scene, BuildReport report)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_preprocess_scene_1a1149301cfb971d3d00d1ca26f3716cba"/><section>
+    <title>callbackOrder</title>
+<indexterm><primary>callbackOrder</primary><secondary>FMODUnity.EventManager.PreprocessScene</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventManager.PreprocessScene</primary><secondary>callbackOrder</secondary></indexterm>
+<para><computeroutput>int FMODUnity.EventManager.PreprocessScene.callbackOrder<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__event_manager_8cs">EventManager.cs</link></section>
+</section>

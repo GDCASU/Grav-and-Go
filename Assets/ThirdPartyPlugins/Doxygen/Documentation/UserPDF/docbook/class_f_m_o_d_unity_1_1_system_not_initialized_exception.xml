@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_system_not_initialized_exception" xml:lang="en-US">
+<title>FMODUnity.SystemNotInitializedException Class Reference</title>
+<indexterm><primary>FMODUnity.SystemNotInitializedException</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.SystemNotInitializedException:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_system_not_initialized_exception.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1a92afe5ba8210b6867a836d7080ba071b">SystemNotInitializedException</link> (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> result, string location)</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1a3880392cf3800ce730dba67e220b1227">SystemNotInitializedException</link> (Exception inner)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> <link linkend="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1aa44a0826bae53e30ec530fa1e7bebc0d">Result</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1ab88847acbdcabe7e1296de1740e9e61e">Location</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1a92afe5ba8210b6867a836d7080ba071b"/><section>
+    <title>SystemNotInitializedException()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SystemNotInitializedException</primary><secondary>FMODUnity.SystemNotInitializedException</secondary></indexterm>
+<indexterm><primary>FMODUnity.SystemNotInitializedException</primary><secondary>SystemNotInitializedException</secondary></indexterm>
+<para><computeroutput>FMODUnity.SystemNotInitializedException.SystemNotInitializedException (<link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> result, string location)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1a3880392cf3800ce730dba67e220b1227"/><section>
+    <title>SystemNotInitializedException()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SystemNotInitializedException</primary><secondary>FMODUnity.SystemNotInitializedException</secondary></indexterm>
+<indexterm><primary>FMODUnity.SystemNotInitializedException</primary><secondary>SystemNotInitializedException</secondary></indexterm>
+<para><computeroutput>FMODUnity.SystemNotInitializedException.SystemNotInitializedException (Exception inner)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1ab88847acbdcabe7e1296de1740e9e61e"/><section>
+    <title>Location</title>
+<indexterm><primary>Location</primary><secondary>FMODUnity.SystemNotInitializedException</secondary></indexterm>
+<indexterm><primary>FMODUnity.SystemNotInitializedException</primary><secondary>Location</secondary></indexterm>
+<para><computeroutput>string FMODUnity.SystemNotInitializedException.Location</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_system_not_initialized_exception_1aa44a0826bae53e30ec530fa1e7bebc0d"/><section>
+    <title>Result</title>
+<indexterm><primary>Result</primary><secondary>FMODUnity.SystemNotInitializedException</secondary></indexterm>
+<indexterm><primary>FMODUnity.SystemNotInitializedException</primary><secondary>Result</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link> FMODUnity.SystemNotInitializedException.Result</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__runtime_utils_8cs">RuntimeUtils.cs</link></section>
+</section>

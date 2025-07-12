@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__asset_usage_detector_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetector.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetector.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector">AssetUsageDetectorNamespace.AssetUsageDetector</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters">AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_asset_usage_detector_namespace">AssetUsageDetectorNamespace</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> = UnityEngine.Object</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85">AssetUsageDetectorNamespace.SceneSearchMode</link> { <?linebreak?><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a6adf97f83acf6453d4a6a4b1070f3754">AssetUsageDetectorNamespace.None</link> = 0
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a4e1fc86cb84cbd24626e8c8ce5586f8a">AssetUsageDetectorNamespace.OpenScenes</link> = 1
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a3314e3c65111e055b66fe5de893b4a17">AssetUsageDetectorNamespace.ScenesInBuildSettingsAll</link> = 2
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a009d26e7431cb775dd2a9bae8b5e9867">AssetUsageDetectorNamespace.ScenesInBuildSettingsTickedOnly</link> = 4
+, <?linebreak?><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7">AssetUsageDetectorNamespace.AllScenes</link> = 8
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc"/><section>
+    <title>Object</title>
+<indexterm><primary>Object</primary><secondary>AssetUsageDetector.cs</secondary></indexterm>
+<indexterm><primary>AssetUsageDetector.cs</primary><secondary>Object</secondary></indexterm>
+<para><computeroutput>using <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> = UnityEngine.Object</computeroutput></para></section>
+</section>
+</section>

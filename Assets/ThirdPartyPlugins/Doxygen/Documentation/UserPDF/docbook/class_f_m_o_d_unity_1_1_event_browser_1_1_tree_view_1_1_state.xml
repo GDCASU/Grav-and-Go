@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state" xml:lang="en-US">
+<title>FMODUnity.EventBrowser.TreeView.State Class Reference</title>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ab23662e120324891d7cbffbe6417b763">State</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a0fd1ba080c4e7932d2543ebfc78acf64">State</link> (TreeViewState <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a31fe4337b73b55e020585fad2dfd55f2">baseState</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>TreeViewState <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a31fe4337b73b55e020585fad2dfd55f2">baseState</link></para>
+</listitem>
+            <listitem><para>List&lt; int &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ad6cb14980cbab6ec493e4067d8f4517d">noSearchExpandState</link></para>
+</listitem>
+            <listitem><para>ScriptableObject <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a84d06d53e9c762779bf205d9ec28512e">selectedObject</link></para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1acbb95db1532834ae9fbd3faa68907fcf">itemPaths</link> = new List&lt;string&gt;()</para>
+</listitem>
+            <listitem><para>List&lt; int &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a10c156c9cf144c8932a6a588ddd34b57">itemIDs</link> = new List&lt;int&gt;()</para>
+</listitem>
+            <listitem><para>TypeFilter <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a95bb2f0d239368ef95d0eb50de44a107">typeFilter</link> = TypeFilter.All</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ac606f4ccbed1f04a4c201b36b1fcba7f">dragEnabled</link> = true</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ab23662e120324891d7cbffbe6417b763"/><section>
+    <title>State()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>State</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>State</secondary></indexterm>
+<para><computeroutput>FMODUnity.EventBrowser.TreeView.State.State ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a0fd1ba080c4e7932d2543ebfc78acf64"/><section>
+    <title>State()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>State</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>State</secondary></indexterm>
+<para><computeroutput>FMODUnity.EventBrowser.TreeView.State.State (TreeViewState baseState)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a31fe4337b73b55e020585fad2dfd55f2"/><section>
+    <title>baseState</title>
+<indexterm><primary>baseState</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>baseState</secondary></indexterm>
+<para><computeroutput>TreeViewState FMODUnity.EventBrowser.TreeView.State.baseState</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ac606f4ccbed1f04a4c201b36b1fcba7f"/><section>
+    <title>dragEnabled</title>
+<indexterm><primary>dragEnabled</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>dragEnabled</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.EventBrowser.TreeView.State.dragEnabled = true</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a10c156c9cf144c8932a6a588ddd34b57"/><section>
+    <title>itemIDs</title>
+<indexterm><primary>itemIDs</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>itemIDs</secondary></indexterm>
+<para><computeroutput>List&lt;int&gt; FMODUnity.EventBrowser.TreeView.State.itemIDs = new List&lt;int&gt;()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1acbb95db1532834ae9fbd3faa68907fcf"/><section>
+    <title>itemPaths</title>
+<indexterm><primary>itemPaths</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>itemPaths</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; FMODUnity.EventBrowser.TreeView.State.itemPaths = new List&lt;string&gt;()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1ad6cb14980cbab6ec493e4067d8f4517d"/><section>
+    <title>noSearchExpandState</title>
+<indexterm><primary>noSearchExpandState</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>noSearchExpandState</secondary></indexterm>
+<para><computeroutput>List&lt;int&gt; FMODUnity.EventBrowser.TreeView.State.noSearchExpandState</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a84d06d53e9c762779bf205d9ec28512e"/><section>
+    <title>selectedObject</title>
+<indexterm><primary>selectedObject</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>selectedObject</secondary></indexterm>
+<para><computeroutput>ScriptableObject FMODUnity.EventBrowser.TreeView.State.selectedObject</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state_1a95bb2f0d239368ef95d0eb50de44a107"/><section>
+    <title>typeFilter</title>
+<indexterm><primary>typeFilter</primary><secondary>FMODUnity.EventBrowser.TreeView.State</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventBrowser.TreeView.State</primary><secondary>typeFilter</secondary></indexterm>
+<para><computeroutput>TypeFilter FMODUnity.EventBrowser.TreeView.State.typeFilter = TypeFilter.All</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__event_browser_8cs">EventBrowser.cs</link></section>
+</section>

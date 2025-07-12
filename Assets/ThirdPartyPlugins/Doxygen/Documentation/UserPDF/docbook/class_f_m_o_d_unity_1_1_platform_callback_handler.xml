@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_platform_callback_handler" xml:lang="en-US">
+<title>FMODUnity.PlatformCallbackHandler Class Reference</title>
+<indexterm><primary>FMODUnity.PlatformCallbackHandler</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.PlatformCallbackHandler:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_platform_callback_handler.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual void <link linkend="_class_f_m_o_d_unity_1_1_platform_callback_handler_1aafc61e9e4c4d6740eb7d1d3f1b2f1daa">PreInitialize</link> (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> system, Action&lt; <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link>, string &gt; reportResult)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_callback_handler_1aafc61e9e4c4d6740eb7d1d3f1b2f1daa"/><section>
+    <title>PreInitialize()</title>
+<indexterm><primary>PreInitialize</primary><secondary>FMODUnity.PlatformCallbackHandler</secondary></indexterm>
+<indexterm><primary>FMODUnity.PlatformCallbackHandler</primary><secondary>PreInitialize</secondary></indexterm>
+<para><computeroutput>virtual void FMODUnity.PlatformCallbackHandler.PreInitialize (<link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link> system, Action&lt; <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">FMOD.RESULT</link>, string &gt; reportResult)<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__platform_8cs">Platform.cs</link></section>
+</section>
