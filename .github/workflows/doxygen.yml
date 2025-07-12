@@ -11,19 +11,17 @@ permissions:
 jobs:
   init_doxygen:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/doxygen/doxygen:release_1_14_0
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        
-      - name: Install Doxygen
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y doxygen graphviz
           
       - name: Generate New Documentation
         run: |
-          cd ${{ github.workspace }}
+          cd ${{ github.workspace }}/Assets
+          doxygen -g
           doxygen Doxyfile
           
       - name: Move Docs to Docs Branch
