@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['helpcontent_0',['HelpContent',['../class_f_m_o_d_unity_1_1_help_content.html',1,'FMODUnity']]],
-  ['hierarchyobjectstatus_1',['HierarchyObjectStatus',['../struct_utilities_1_1_better_hierarchy_1_1_hierarchy_object_status.html',1,'Utilities::BetterHierarchy']]]
+  ['persistentobjectsmanager_0',['PersistentObjectsManager',['../class_persistent_objects_manager.html',1,'']]],
+  ['physicsobject_1',['PhysicsObject',['../class_physics_object.html',1,'']]],
+  ['playeranimator_2',['PlayerAnimator',['../class_player_animator.html',1,'']]],
+  ['playermovementcontroller_3',['PlayerMovementController',['../class_player_movement_controller.html',1,'']]]
 ];
