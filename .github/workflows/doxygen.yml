@@ -23,6 +23,7 @@ jobs:
           cd Assets
           doxygen -g
           doxygen Doxyfile
+          ls
 
       - name: Upload generated docs as artifact
         uses: actions/upload-artifact@v4
