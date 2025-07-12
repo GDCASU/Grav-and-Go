@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils" xml:lang="en-US">
+<title>DG.Tweening.DOTweenModuleUtils Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils</primary></indexterm>
+<para>
+
+<para>Utility functions that deal with available Modules. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics">Physics</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1a64e00b2b0481a9df619bf7591d3edbf9">Init</link> ()</para>
+
+<para>Called via Reflection by DOTweenComponent on Awake. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Utility functions that deal with available Modules. </para>
+
+
+
+<para>Modules defines:<itemizedlist>
+<listitem>
+<para>DOTAUDIO</para>
+</listitem><listitem>
+<para>DOTPHYSICS</para>
+</listitem><listitem>
+<para>DOTPHYSICS2D</para>
+</listitem><listitem>
+<para>DOTSPRITE</para>
+</listitem><listitem>
+<para>DOTUI Extra defines set and used for implementation of external assets:</para>
+</listitem><listitem>
+<para>DOTWEEN_TMP ► TextMesh Pro</para>
+</listitem><listitem>
+<para>DOTWEEN_TK2D ► 2D Toolkit </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1a64e00b2b0481a9df619bf7591d3edbf9"/><section>
+    <title>Init()</title>
+<indexterm><primary>Init</primary><secondary>DG.Tweening.DOTweenModuleUtils</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils</primary><secondary>Init</secondary></indexterm>
+<para><computeroutput>void DG.Tweening.DOTweenModuleUtils.Init ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Called via Reflection by DOTweenComponent on Awake. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_utils_8cs">DOTweenModuleUtils.cs</link></section>
+</section>

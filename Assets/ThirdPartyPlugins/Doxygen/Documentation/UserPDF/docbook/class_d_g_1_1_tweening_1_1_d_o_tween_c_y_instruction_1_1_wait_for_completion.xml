@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion" xml:lang="en-US">
+<title>DG.Tweening.DOTweenCYInstruction.WaitForCompletion Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenCYInstruction.WaitForCompletion</primary></indexterm>
+<para>Inheritance diagram for DG.Tweening.DOTweenCYInstruction.WaitForCompletion:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion_1afab40f90e6659090a2a311d7db87cd55">WaitForCompletion</link> (Tween tween)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>override bool <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion_1acb3cb0dae8629e52abda7d1784b0f06c">keepWaiting</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion_1afab40f90e6659090a2a311d7db87cd55"/><section>
+    <title>WaitForCompletion()</title>
+<indexterm><primary>WaitForCompletion</primary><secondary>DG.Tweening.DOTweenCYInstruction.WaitForCompletion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenCYInstruction.WaitForCompletion</primary><secondary>WaitForCompletion</secondary></indexterm>
+<para><computeroutput>DG.Tweening.DOTweenCYInstruction.WaitForCompletion.WaitForCompletion (Tween tween)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction_1_1_wait_for_completion_1acb3cb0dae8629e52abda7d1784b0f06c"/><section>
+    <title>keepWaiting</title>
+<indexterm><primary>keepWaiting</primary><secondary>DG.Tweening.DOTweenCYInstruction.WaitForCompletion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenCYInstruction.WaitForCompletion</primary><secondary>keepWaiting</secondary></indexterm>
+<para><computeroutput>override bool DG.Tweening.DOTweenCYInstruction.WaitForCompletion.keepWaiting<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_unity_version_8cs">DOTweenModuleUnityVersion.cs</link></section>
+</section>

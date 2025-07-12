@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_g_u_i_d" xml:lang="en-US">
+<title>FMOD.GUID Struct Reference</title>
+<indexterm><primary>FMOD.GUID</primary></indexterm>
+<para>Inheritance diagram for FMOD.GUID:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_f_m_o_d_1_1_g_u_i_d.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a8c202b0c93fbe84844587e29b923bccd">GUID</link> (Guid guid)</para>
+</listitem>
+            <listitem><para>override bool <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a6063434cac81da81c78d18ba6ac6ff8e">Equals</link> (object other)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a3eceb758538b05c650c0ed5b9f76f0d5">Equals</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> other)</para>
+</listitem>
+            <listitem><para>override int <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a0ad24b3c7105ad31373c92c91ee07e24">GetHashCode</link> ()</para>
+</listitem>
+            <listitem><para>override string <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a7f2120b7cf39a980a2f2f9be03cf52ad">ToString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a79eb0b8943c008d6df72d590c9e36096">Parse</link> (string s)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1ae45db81bae4759ba60885ba671c6b7f0">operator==</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> a, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> b)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a90593b56a913684cf6e4e7db428c6943">operator!=</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> a, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> b)</para>
+</listitem>
+            <listitem><para>static implicit <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a662ad7f8dfc490ff1ea0e9943f863481">operator Guid</link> (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> guid)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1abfadd6bebe7f53741756f268364feb0c">Data1</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a339ab7e76eb547f35de5c42436f8c95a">Data2</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a48aca187dfe6cae5e69b30fc16d51748">Data3</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a3c6d3f9308eea9d244598f82b92e3e02">Data4</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_g_u_i_d_1a6de7235634513447d53b8ac898a65de9">IsNull</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a8c202b0c93fbe84844587e29b923bccd"/><section>
+    <title>GUID()</title>
+<indexterm><primary>GUID</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>GUID</secondary></indexterm>
+<para><computeroutput>FMOD.GUID.GUID (Guid guid)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a3eceb758538b05c650c0ed5b9f76f0d5"/><section>
+    <title>Equals()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>bool FMOD.GUID.Equals (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> other)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a6063434cac81da81c78d18ba6ac6ff8e"/><section>
+    <title>Equals()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Equals</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Equals</secondary></indexterm>
+<para><computeroutput>override bool FMOD.GUID.Equals (object other)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a0ad24b3c7105ad31373c92c91ee07e24"/><section>
+    <title>GetHashCode()</title>
+<indexterm><primary>GetHashCode</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>GetHashCode</secondary></indexterm>
+<para><computeroutput>override int FMOD.GUID.GetHashCode ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a662ad7f8dfc490ff1ea0e9943f863481"/><section>
+    <title>operator Guid()</title>
+<indexterm><primary>operator Guid</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>operator Guid</secondary></indexterm>
+<para><computeroutput>implicit FMOD.GUID.operator Guid (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> guid)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a90593b56a913684cf6e4e7db428c6943"/><section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool FMOD.GUID.operator!= (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> a, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> b)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1ae45db81bae4759ba60885ba671c6b7f0"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool FMOD.GUID.operator== (<link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> a, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> b)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a79eb0b8943c008d6df72d590c9e36096"/><section>
+    <title>Parse()</title>
+<indexterm><primary>Parse</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Parse</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> FMOD.GUID.Parse (string s)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a7f2120b7cf39a980a2f2f9be03cf52ad"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string FMOD.GUID.ToString ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1abfadd6bebe7f53741756f268364feb0c"/><section>
+    <title>Data1</title>
+<indexterm><primary>Data1</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Data1</secondary></indexterm>
+<para><computeroutput>int FMOD.GUID.Data1</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a339ab7e76eb547f35de5c42436f8c95a"/><section>
+    <title>Data2</title>
+<indexterm><primary>Data2</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Data2</secondary></indexterm>
+<para><computeroutput>int FMOD.GUID.Data2</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a48aca187dfe6cae5e69b30fc16d51748"/><section>
+    <title>Data3</title>
+<indexterm><primary>Data3</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Data3</secondary></indexterm>
+<para><computeroutput>int FMOD.GUID.Data3</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a3c6d3f9308eea9d244598f82b92e3e02"/><section>
+    <title>Data4</title>
+<indexterm><primary>Data4</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>Data4</secondary></indexterm>
+<para><computeroutput>int FMOD.GUID.Data4</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_g_u_i_d_1a6de7235634513447d53b8ac898a65de9"/><section>
+    <title>IsNull</title>
+<indexterm><primary>IsNull</primary><secondary>FMOD.GUID</secondary></indexterm>
+<indexterm><primary>FMOD.GUID</primary><secondary>IsNull</secondary></indexterm>
+<para><computeroutput>bool FMOD.GUID.IsNull<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following files:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__runtime_utils_8cs">RuntimeUtils.cs</link></section>
+</section>

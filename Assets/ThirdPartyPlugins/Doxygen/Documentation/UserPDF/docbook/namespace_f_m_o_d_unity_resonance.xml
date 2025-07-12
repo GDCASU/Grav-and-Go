@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_f_m_o_d_unity_resonance" xml:lang="en-US">
+<title>FMODUnityResonance Namespace Reference</title>
+<indexterm><primary>FMODUnityResonance</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio">FmodResonanceAudio</link></para>
+
+<para>This is the main Resonance Audio class that communicates with the <link linkend="_namespace_f_m_o_d">FMOD</link> Unity integration. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room">FmodResonanceAudioRoom</link></para>
+
+<para>Resonance Audio room component that simulates environmental effects of a room with respect to the properties of the attached game object. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_editor">FmodResonanceAudioRoomEditor</link></para>
+
+<para>A custom editor for properties on the <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room">FmodResonanceAudioRoom</link> script. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

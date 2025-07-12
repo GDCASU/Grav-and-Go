@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_project_null_1_1_doc_tools_1_1_doxy_file" xml:lang="en-US">
+<title>ProjectNull.DocTools.DoxyFile Class Reference</title>
+<indexterm><primary>ProjectNull.DocTools.DoxyFile</primary></indexterm>
+<para>
+
+<para>The base doxy file class used to make new doxyfiles form a base doxyfile. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_project_null_1_1_doc_tools_1_1_doxy_file_1ae19801335392ac5d3dbb6cb6a216f060">MakeTheDoxyFiles</link> (<link linkend="_struct_project_null_1_1_doc_tools_1_1_doxy_settings">DoxySettings</link> doxySettings)</para>
+
+<para>Make the doxyfiles in the new folder. </para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_project_null_1_1_doc_tools_1_1_doxy_file_1a41bbd6a52436636c6e710e82113972b6">DoxygenFileExist</link> (<link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83">DoxyType</link> doxyType, <link linkend="_struct_project_null_1_1_doc_tools_1_1_doxy_settings">DoxySettings</link> doxySettings)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The base doxy file class used to make new doxyfiles form a base doxyfile. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_doxy_file_1a41bbd6a52436636c6e710e82113972b6"/><section>
+    <title>DoxygenFileExist()</title>
+<indexterm><primary>DoxygenFileExist</primary><secondary>ProjectNull.DocTools.DoxyFile</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.DoxyFile</primary><secondary>DoxygenFileExist</secondary></indexterm>
+<para><computeroutput>bool ProjectNull.DocTools.DoxyFile.DoxygenFileExist (<link linkend="_namespace_project_null_1_1_doc_tools_1a7a3b68717b5a28b022ef4e25e36f9d83">DoxyType</link> doxyType, <link linkend="_struct_project_null_1_1_doc_tools_1_1_doxy_settings">DoxySettings</link> doxySettings)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>\breif Test if dxygen file exist </para>
+</section>
+<anchor xml:id="_class_project_null_1_1_doc_tools_1_1_doxy_file_1ae19801335392ac5d3dbb6cb6a216f060"/><section>
+    <title>MakeTheDoxyFiles()</title>
+<indexterm><primary>MakeTheDoxyFiles</primary><secondary>ProjectNull.DocTools.DoxyFile</secondary></indexterm>
+<indexterm><primary>ProjectNull.DocTools.DoxyFile</primary><secondary>MakeTheDoxyFiles</secondary></indexterm>
+<para><computeroutput>int ProjectNull.DocTools.DoxyFile.MakeTheDoxyFiles (<link linkend="_struct_project_null_1_1_doc_tools_1_1_doxy_settings">DoxySettings</link> doxySettings)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Make the doxyfiles in the new folder. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/ThirdPartyPlugins/Doxygen/Editor/<link linkend="__doxy_file_8cs">DoxyFile.cs</link></section>
+</section>

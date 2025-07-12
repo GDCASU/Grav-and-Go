@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__element_settings_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Data/ElementSettings.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Data/ElementSettings.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_data_1_1_element_settings">AYellowpaper.SerializedCollections.Editor.Data.ElementSettings</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_a_yellowpaper">AYellowpaper</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections">AYellowpaper.SerializedCollections</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor">AYellowpaper.SerializedCollections.Editor</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_data">AYellowpaper.SerializedCollections.Editor.Data</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

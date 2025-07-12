@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData Struct Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1af2ddbcea9a312cb963f8f69043c1bf2f">GetSubGraphPath</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1a5928920d0a4226699df1db30d4074570">m_Name</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1a3fd888cc400effa23da263a1df510aa2">m_FunctionSource</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1af66978d770da8b77eff650fe1d7f9257">m_SerializedSubGraph</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_j_s_o_n_holder">JSONHolder</link> &gt; <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1ac642db94670d5aaaa3de1559e5224860">m_SerializableSlots</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1af2ddbcea9a312cb963f8f69043c1bf2f"/><section>
+    <title>GetSubGraphPath()</title>
+<indexterm><primary>GetSubGraphPath</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary><secondary>GetSubGraphPath</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData.GetSubGraphPath ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1a3fd888cc400effa23da263a1df510aa2"/><section>
+    <title>m_FunctionSource</title>
+<indexterm><primary>m_FunctionSource</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary><secondary>m_FunctionSource</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData.m_FunctionSource</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1a5928920d0a4226699df1db30d4074570"/><section>
+    <title>m_Name</title>
+<indexterm><primary>m_Name</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary><secondary>m_Name</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData.m_Name</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1ac642db94670d5aaaa3de1559e5224860"/><section>
+    <title>m_SerializableSlots</title>
+<indexterm><primary>m_SerializableSlots</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary><secondary>m_SerializableSlots</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_j_s_o_n_holder">JSONHolder</link>&gt; AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData.m_SerializableSlots</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_data_1af66978d770da8b77eff650fe1d7f9257"/><section>
+    <title>m_SerializedSubGraph</title>
+<indexterm><primary>m_SerializedSubGraph</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData</primary><secondary>m_SerializedSubGraph</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeData.m_SerializedSubGraph</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_search_functions_8cs">AssetUsageDetectorSearchFunctions.cs</link></section>
+</section>

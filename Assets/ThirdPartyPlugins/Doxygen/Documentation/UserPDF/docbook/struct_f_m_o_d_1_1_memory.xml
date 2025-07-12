@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_memory" xml:lang="en-US">
+<title>FMOD.Memory Struct Reference</title>
+<indexterm><primary>FMOD.Memory</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_memory_1a95bb279275f87e1551010b7e703e2072">Initialize</link> (IntPtr poolmem, int poollen, <link linkend="_namespace_f_m_o_d_1ab91aed675795daa32b652cebfd9acd29">MEMORY_ALLOC_CALLBACK</link> useralloc, <link linkend="_namespace_f_m_o_d_1ae9fe624a910b7277d58ef16313267604">MEMORY_REALLOC_CALLBACK</link> userrealloc, <link linkend="_namespace_f_m_o_d_1a9c5bdca8a4c659cc4b08eda5f4d16f28">MEMORY_FREE_CALLBACK</link> userfree, <link linkend="_namespace_f_m_o_d_1a3eb4c9654cbf371b668f8eb46358e931">MEMORY_TYPE</link> memtypeflags=<link linkend="_namespace_f_m_o_d_1a3eb4c9654cbf371b668f8eb46358e931a5fb1f955b45e38e31789286a1790398d">MEMORY_TYPE.ALL</link>)</para>
+</listitem>
+            <listitem><para>static <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_memory_1a50c812b626cad4e1c42d334266749769">GetStats</link> (out int currentalloced, out int maxalloced, bool blocking=true)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_memory_1a50c812b626cad4e1c42d334266749769"/><section>
+    <title>GetStats()</title>
+<indexterm><primary>GetStats</primary><secondary>FMOD.Memory</secondary></indexterm>
+<indexterm><primary>FMOD.Memory</primary><secondary>GetStats</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Memory.GetStats (out int currentalloced, out int maxalloced, bool blocking = <computeroutput>true</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_memory_1a95bb279275f87e1551010b7e703e2072"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>FMOD.Memory</secondary></indexterm>
+<indexterm><primary>FMOD.Memory</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Memory.Initialize (IntPtr poolmem, int poollen, <link linkend="_namespace_f_m_o_d_1ab91aed675795daa32b652cebfd9acd29">MEMORY_ALLOC_CALLBACK</link> useralloc, <link linkend="_namespace_f_m_o_d_1ae9fe624a910b7277d58ef16313267604">MEMORY_REALLOC_CALLBACK</link> userrealloc, <link linkend="_namespace_f_m_o_d_1a9c5bdca8a4c659cc4b08eda5f4d16f28">MEMORY_FREE_CALLBACK</link> userfree, <link linkend="_namespace_f_m_o_d_1a3eb4c9654cbf371b668f8eb46358e931">MEMORY_TYPE</link> memtypeflags = <computeroutput><link linkend="_namespace_f_m_o_d_1a3eb4c9654cbf371b668f8eb46358e931a5fb1f955b45e38e31789286a1790398d">MEMORY_TYPE::ALL</link></computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

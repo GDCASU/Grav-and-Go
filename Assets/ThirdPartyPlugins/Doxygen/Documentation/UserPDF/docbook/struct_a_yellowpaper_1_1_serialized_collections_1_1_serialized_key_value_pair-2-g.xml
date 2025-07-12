@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt; Struct Template Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1a4acac1cadb983416c32616dcfdcd285f">SerializedKeyValuePair</link> (TKey key, TValue value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>TKey <link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1ad4ecbbcf84392aea96f35bf3a6ad8b51">Key</link></para>
+</listitem>
+            <listitem><para>TValue <link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1a116eace094324755cdb0526c54243df1">Value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1a4acac1cadb983416c32616dcfdcd285f"/><section>
+    <title>SerializedKeyValuePair()</title>
+<indexterm><primary>SerializedKeyValuePair</primary><secondary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</primary><secondary>SerializedKeyValuePair</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;.SerializedKeyValuePair (TKey key, TValue value)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1ad4ecbbcf84392aea96f35bf3a6ad8b51"/><section>
+    <title>Key</title>
+<indexterm><primary>Key</primary><secondary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</primary><secondary>Key</secondary></indexterm>
+<para><computeroutput>TKey AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;.Key</computeroutput></para></section>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_serialized_key_value_pair-2-g_1a116eace094324755cdb0526c54243df1"/><section>
+    <title>Value</title>
+<indexterm><primary>Value</primary><secondary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;</primary><secondary>Value</secondary></indexterm>
+<para><computeroutput>TValue AYellowpaper.SerializedCollections.SerializedKeyValuePair&lt; TKey, TValue &gt;.Value</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Runtime/Scripts/<link linkend="__serialized_key_value_pair_8cs">SerializedKeyValuePair.cs</link></section>
+</section>

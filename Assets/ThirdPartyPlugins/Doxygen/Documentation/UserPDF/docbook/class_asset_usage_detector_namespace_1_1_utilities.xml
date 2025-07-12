@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_utilities" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.Utilities Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a2f68e403108d237ddfdbe69fb72dcd6a">IsAsset</link> (this object obj)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a7632918b47adca006e12b2805e7da48b">IsAsset</link> (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1af58f9f55944b1d53ecc7180a4d26ad1d">IsFolder</link> (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)</para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a5623a334210c0aeeccada18b5963ab3c">GetPrefabParent&lt; T &gt;</link> (this T obj)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1afce61dd9cc1686e272b7beedaaa62b7a">HasAnyPrefabOverrides</link> (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1aee53c9504b01ff9ed62cd5be3c0e4b6d">HasAnyPrefabOverrides</link> (this GameObject gameObject)</para>
+</listitem>
+            <listitem><para>static IEnumerable&lt; string &gt; <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a5684d0de9272548828eb16ab36837f9c">EnumerateFolderContents</link> (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> folderAsset)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a1d6bcd0e9a64403daea6c47e70cbcad8">GetObjectsToSelectAndPing</link> (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj, out <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> selection, out <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> pingTarget)</para>
+</listitem>
+            <listitem><para>static GameObject <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a2f07e530ff33e38031e90b4411109533">FollowSymmetricHierarchy</link> (this GameObject go, GameObject thisRoot, GameObject symmetricRoot)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a3d6e6d5e644d87a1f525ffbd9f4b23f8">CompareHierarchySiblingIndices</link> (Transform t1, Transform t2)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ac3e630d35963c6517490f5e9564c2af6">IsSerializable</link> (this FieldInfo fieldInfo)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a27ab5540ae0b66e79a19458c3e24b565">IsSerializable</link> (this PropertyInfo propertyInfo)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ac53b346508ece99e025bad40e0f19c59">IsIgnoredUnityType</link> (this <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> type)</para>
+</listitem>
+            <listitem><para>static <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ace3b40f467b4b228393119e934ba385a">CreateGetter</link> (this FieldInfo fieldInfo, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> type)</para>
+</listitem>
+            <listitem><para>static <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a421ca13933966a9c95cc63e9a98c86b5">CreateGetter</link> (this PropertyInfo propertyInfo)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ad921d3474af1f5654cbd609b07eda0b5">AreScenesSaved</link> ()</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a6441353e07389b7c317907808998a046">GetFileExtension</link> (string path)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a019db3b0683386f2021c43cc3455aa7f">DrawHeader</link> (string label)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1aa3c943d513027d27d290e4b687a1cfb1">DrawSeparatorLine</link> ()</para>
+</listitem>
+            <listitem><para>static Rect <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a7044c9c62876869a0631166f7708f9f5">GetScreenFittedRect</link> (Rect originalRect)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a158201c208cf4c5660e06c7cc74510cc">IsEmpty</link> (this List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; objectsToSearch)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a054a29faf2be0348f7914c98d521c347">IsEmpty&lt; T &gt;</link> (this List&lt; T &gt; objects)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ad56f9ca8cf9aaec8d9e036a4093614ca">StartsWithFast</link> (this string str, string prefix)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a788dc28317e28001b577c85c32441a41">EndsWithFast</link> (this string str, string postfix)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a3d2f637cbb72031e434f415d937aa26a">ContainsFast&lt; T &gt;</link> (this List&lt; T &gt; list, T element)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1aefb81a57812489e1ca55fcd24cdf0904">GL_EXPAND_WIDTH</link> = GUILayout.ExpandWidth( true )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a7ed0422581ded73b8bc46f6db19cfef3">GL_EXPAND_HEIGHT</link> = GUILayout.ExpandHeight( true )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1aa18f3118f11f2cf063ad3c4273685a99">GL_WIDTH_25</link> = GUILayout.Width( 25 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ace533fcded3ffbc295b39987cb6a15a7">GL_WIDTH_100</link> = GUILayout.Width( 100 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a4839c8c141bc0c63cb238eb04cbf79f3">GL_WIDTH_250</link> = GUILayout.Width( 250 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ad413ff6618515bee176b13877160966c">GL_HEIGHT_0</link> = GUILayout.Height( 0 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ae797bfd5b75682ddfcbb55bdc61dcc63">GL_HEIGHT_2</link> = GUILayout.Height( 2 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a4129948a3821d3ddf9123ff59b42e19f">GL_HEIGHT_30</link> = GUILayout.Height( 30 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a1adcaecc941bc076a1b19306cc829b5f">GL_HEIGHT_35</link> = GUILayout.Height( 35 )</para>
+</listitem>
+            <listitem><para>static readonly GUILayoutOption <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ad1f4c9bb90f79c65482b8237f8d317ca">GL_HEIGHT_40</link> = GUILayout.Height( 40 )</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static GUIStyle <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1ac787e78e545a08321d19e1b24e129897">BoxGUIStyle</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ad921d3474af1f5654cbd609b07eda0b5"/><section>
+    <title>AreScenesSaved()</title>
+<indexterm><primary>AreScenesSaved</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>AreScenesSaved</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.AreScenesSaved ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a3d6e6d5e644d87a1f525ffbd9f4b23f8"/><section>
+    <title>CompareHierarchySiblingIndices()</title>
+<indexterm><primary>CompareHierarchySiblingIndices</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>CompareHierarchySiblingIndices</secondary></indexterm>
+<para><computeroutput>int AssetUsageDetectorNamespace.Utilities.CompareHierarchySiblingIndices (Transform t1, Transform t2)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a3d2f637cbb72031e434f415d937aa26a"/><section>
+    <title>ContainsFast&lt; T &gt;()</title>
+<indexterm><primary>ContainsFast&lt; T &gt;</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>ContainsFast&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.ContainsFast&lt; T &gt; (this List&lt; T &gt; list, T element)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ace3b40f467b4b228393119e934ba385a"/><section>
+    <title>CreateGetter()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>CreateGetter</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>CreateGetter</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> AssetUsageDetectorNamespace.Utilities.CreateGetter (this FieldInfo fieldInfo, <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> type)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a421ca13933966a9c95cc63e9a98c86b5"/><section>
+    <title>CreateGetter()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>CreateGetter</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>CreateGetter</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> AssetUsageDetectorNamespace.Utilities.CreateGetter (this PropertyInfo propertyInfo)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a019db3b0683386f2021c43cc3455aa7f"/><section>
+    <title>DrawHeader()</title>
+<indexterm><primary>DrawHeader</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>DrawHeader</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.Utilities.DrawHeader (string label)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1aa3c943d513027d27d290e4b687a1cfb1"/><section>
+    <title>DrawSeparatorLine()</title>
+<indexterm><primary>DrawSeparatorLine</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>DrawSeparatorLine</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.Utilities.DrawSeparatorLine ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a788dc28317e28001b577c85c32441a41"/><section>
+    <title>EndsWithFast()</title>
+<indexterm><primary>EndsWithFast</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>EndsWithFast</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.EndsWithFast (this string str, string postfix)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a5684d0de9272548828eb16ab36837f9c"/><section>
+    <title>EnumerateFolderContents()</title>
+<indexterm><primary>EnumerateFolderContents</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>EnumerateFolderContents</secondary></indexterm>
+<para><computeroutput>IEnumerable&lt; string &gt; AssetUsageDetectorNamespace.Utilities.EnumerateFolderContents (<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> folderAsset)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a2f07e530ff33e38031e90b4411109533"/><section>
+    <title>FollowSymmetricHierarchy()</title>
+<indexterm><primary>FollowSymmetricHierarchy</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>FollowSymmetricHierarchy</secondary></indexterm>
+<para><computeroutput>GameObject AssetUsageDetectorNamespace.Utilities.FollowSymmetricHierarchy (this GameObject go, GameObject thisRoot, GameObject symmetricRoot)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a6441353e07389b7c317907808998a046"/><section>
+    <title>GetFileExtension()</title>
+<indexterm><primary>GetFileExtension</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GetFileExtension</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.Utilities.GetFileExtension (string path)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a1d6bcd0e9a64403daea6c47e70cbcad8"/><section>
+    <title>GetObjectsToSelectAndPing()</title>
+<indexterm><primary>GetObjectsToSelectAndPing</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GetObjectsToSelectAndPing</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.Utilities.GetObjectsToSelectAndPing (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj, out <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> selection, out <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> pingTarget)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a5623a334210c0aeeccada18b5963ab3c"/><section>
+    <title>GetPrefabParent&lt; T &gt;()</title>
+<indexterm><primary>GetPrefabParent&lt; T &gt;</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GetPrefabParent&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>T AssetUsageDetectorNamespace.Utilities.GetPrefabParent&lt; T &gt; (this T obj)<computeroutput>[static]</computeroutput></computeroutput></para><simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link></emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a7044c9c62876869a0631166f7708f9f5"/><section>
+    <title>GetScreenFittedRect()</title>
+<indexterm><primary>GetScreenFittedRect</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GetScreenFittedRect</secondary></indexterm>
+<para><computeroutput>Rect AssetUsageDetectorNamespace.Utilities.GetScreenFittedRect (Rect originalRect)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1aee53c9504b01ff9ed62cd5be3c0e4b6d"/><section>
+    <title>HasAnyPrefabOverrides()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>HasAnyPrefabOverrides</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>HasAnyPrefabOverrides</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.HasAnyPrefabOverrides (this GameObject gameObject)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1afce61dd9cc1686e272b7beedaaa62b7a"/><section>
+    <title>HasAnyPrefabOverrides()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>HasAnyPrefabOverrides</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>HasAnyPrefabOverrides</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.HasAnyPrefabOverrides (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a7632918b47adca006e12b2805e7da48b"/><section>
+    <title>IsAsset()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>IsAsset</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsAsset</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsAsset (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a2f68e403108d237ddfdbe69fb72dcd6a"/><section>
+    <title>IsAsset()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>IsAsset</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsAsset</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsAsset (this object obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a158201c208cf4c5660e06c7cc74510cc"/><section>
+    <title>IsEmpty()</title>
+<indexterm><primary>IsEmpty</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsEmpty</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsEmpty (this List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; objectsToSearch)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a054a29faf2be0348f7914c98d521c347"/><section>
+    <title>IsEmpty&lt; T &gt;()</title>
+<indexterm><primary>IsEmpty&lt; T &gt;</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsEmpty&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_asset_usage_detector_namespace_1_1_utilities_1a158201c208cf4c5660e06c7cc74510cc">AssetUsageDetectorNamespace.Utilities.IsEmpty</link>&lt; T &gt; (this List&lt; T &gt; objects)<computeroutput>[static]</computeroutput></computeroutput></para><simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:<link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link></emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1af58f9f55944b1d53ecc7180a4d26ad1d"/><section>
+    <title>IsFolder()</title>
+<indexterm><primary>IsFolder</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsFolder</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsFolder (this <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> obj)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ac53b346508ece99e025bad40e0f19c59"/><section>
+    <title>IsIgnoredUnityType()</title>
+<indexterm><primary>IsIgnoredUnityType</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsIgnoredUnityType</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsIgnoredUnityType (this <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> type)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ac3e630d35963c6517490f5e9564c2af6"/><section>
+    <title>IsSerializable()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>IsSerializable</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsSerializable</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsSerializable (this FieldInfo fieldInfo)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a27ab5540ae0b66e79a19458c3e24b565"/><section>
+    <title>IsSerializable()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>IsSerializable</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>IsSerializable</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.IsSerializable (this PropertyInfo propertyInfo)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ad56f9ca8cf9aaec8d9e036a4093614ca"/><section>
+    <title>StartsWithFast()</title>
+<indexterm><primary>StartsWithFast</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>StartsWithFast</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.Utilities.StartsWithFast (this string str, string prefix)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a7ed0422581ded73b8bc46f6db19cfef3"/><section>
+    <title>GL_EXPAND_HEIGHT</title>
+<indexterm><primary>GL_EXPAND_HEIGHT</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_EXPAND_HEIGHT</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_EXPAND_HEIGHT = GUILayout.ExpandHeight( true )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1aefb81a57812489e1ca55fcd24cdf0904"/><section>
+    <title>GL_EXPAND_WIDTH</title>
+<indexterm><primary>GL_EXPAND_WIDTH</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_EXPAND_WIDTH</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_EXPAND_WIDTH = GUILayout.ExpandWidth( true )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ad413ff6618515bee176b13877160966c"/><section>
+    <title>GL_HEIGHT_0</title>
+<indexterm><primary>GL_HEIGHT_0</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_HEIGHT_0</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_HEIGHT_0 = GUILayout.Height( 0 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ae797bfd5b75682ddfcbb55bdc61dcc63"/><section>
+    <title>GL_HEIGHT_2</title>
+<indexterm><primary>GL_HEIGHT_2</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_HEIGHT_2</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_HEIGHT_2 = GUILayout.Height( 2 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a4129948a3821d3ddf9123ff59b42e19f"/><section>
+    <title>GL_HEIGHT_30</title>
+<indexterm><primary>GL_HEIGHT_30</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_HEIGHT_30</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_HEIGHT_30 = GUILayout.Height( 30 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a1adcaecc941bc076a1b19306cc829b5f"/><section>
+    <title>GL_HEIGHT_35</title>
+<indexterm><primary>GL_HEIGHT_35</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_HEIGHT_35</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_HEIGHT_35 = GUILayout.Height( 35 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ad1f4c9bb90f79c65482b8237f8d317ca"/><section>
+    <title>GL_HEIGHT_40</title>
+<indexterm><primary>GL_HEIGHT_40</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_HEIGHT_40</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_HEIGHT_40 = GUILayout.Height( 40 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ace533fcded3ffbc295b39987cb6a15a7"/><section>
+    <title>GL_WIDTH_100</title>
+<indexterm><primary>GL_WIDTH_100</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_WIDTH_100</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_WIDTH_100 = GUILayout.Width( 100 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1aa18f3118f11f2cf063ad3c4273685a99"/><section>
+    <title>GL_WIDTH_25</title>
+<indexterm><primary>GL_WIDTH_25</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_WIDTH_25</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_WIDTH_25 = GUILayout.Width( 25 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1a4839c8c141bc0c63cb238eb04cbf79f3"/><section>
+    <title>GL_WIDTH_250</title>
+<indexterm><primary>GL_WIDTH_250</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>GL_WIDTH_250</secondary></indexterm>
+<para><computeroutput>readonly GUILayoutOption AssetUsageDetectorNamespace.Utilities.GL_WIDTH_250 = GUILayout.Width( 250 )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_utilities_1ac787e78e545a08321d19e1b24e129897"/><section>
+    <title>BoxGUIStyle</title>
+<indexterm><primary>BoxGUIStyle</primary><secondary>AssetUsageDetectorNamespace.Utilities</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.Utilities</primary><secondary>BoxGUIStyle</secondary></indexterm>
+<para><computeroutput>GUIStyle AssetUsageDetectorNamespace.Utilities.BoxGUIStyle<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__utilities_8cs">Utilities.cs</link></section>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData Struct Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1a54378eb8b70a2eb028d036c220dcdaf7">GetTexturePath</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1ad94b277cedd733ddae7ed723017f58c3">m_Texture</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1ababa90eaa12c507e0b0d711e7d2b032b">m_TextureArray</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1a87cb1b0076eecf76614bc5d050d7ce34">m_Cubemap</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1a54378eb8b70a2eb028d036c220dcdaf7"/><section>
+    <title>GetTexturePath()</title>
+<indexterm><primary>GetTexturePath</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</primary><secondary>GetTexturePath</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData.GetTexturePath ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1a87cb1b0076eecf76614bc5d050d7ce34"/><section>
+    <title>m_Cubemap</title>
+<indexterm><primary>m_Cubemap</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</primary><secondary>m_Cubemap</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData.m_Cubemap</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1ad94b277cedd733ddae7ed723017f58c3"/><section>
+    <title>m_Texture</title>
+<indexterm><primary>m_Texture</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</primary><secondary>m_Texture</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData.m_Texture</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_node_slot_data_1ababa90eaa12c507e0b0d711e7d2b032b"/><section>
+    <title>m_TextureArray</title>
+<indexterm><primary>m_TextureArray</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData</primary><secondary>m_TextureArray</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.NodeSlotData.m_TextureArray</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_search_functions_8cs">AssetUsageDetectorSearchFunctions.cs</link></section>
+</section>

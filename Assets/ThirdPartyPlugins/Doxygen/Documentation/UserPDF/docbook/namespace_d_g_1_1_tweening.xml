@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_d_g_1_1_tweening" xml:lang="en-US">
+<title>DG.Tweening Namespace Reference</title>
+<indexterm><primary>DG.Tweening</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_c_y_instruction">DOTweenCYInstruction</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_audio">DOTweenModuleAudio</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_physics">DOTweenModulePhysics</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_physics2_d">DOTweenModulePhysics2D</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_sprite">DOTweenModuleSprite</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_u_i">DOTweenModuleUI</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version">DOTweenModuleUnityVersion</link></para>
+
+<para>Shortcuts/functions that are not strictly related to specific Modules but are available only on some Unity versions. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils">DOTweenModuleUtils</link></para>
+
+<para>Utility functions that deal with available Modules. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

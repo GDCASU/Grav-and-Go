@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a22eef13969f470e09412c05f144db36e">GetTexturePath</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a591912d24ab941bdb40b68bed2a73242">m_SerializedTexture</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a6c4aa0bb0b21b4f63cf17e4f6971f372">m_SerializedCubemap</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1adcb323a8b9cae974bea1c51e8666e93e">m_Guid</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a22eef13969f470e09412c05f144db36e"/><section>
+    <title>GetTexturePath()</title>
+<indexterm><primary>GetTexturePath</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</primary><secondary>GetTexturePath</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder.GetTexturePath ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1adcb323a8b9cae974bea1c51e8666e93e"/><section>
+    <title>m_Guid</title>
+<indexterm><primary>m_Guid</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</primary><secondary>m_Guid</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder.m_Guid</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a6c4aa0bb0b21b4f63cf17e4f6971f372"/><section>
+    <title>m_SerializedCubemap</title>
+<indexterm><primary>m_SerializedCubemap</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</primary><secondary>m_SerializedCubemap</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder.m_SerializedCubemap</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder_1a591912d24ab941bdb40b68bed2a73242"/><section>
+    <title>m_SerializedTexture</title>
+<indexterm><primary>m_SerializedTexture</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder</primary><secondary>m_SerializedTexture</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.TextureHolder.m_SerializedTexture</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_search_functions_8cs">AssetUsageDetectorSearchFunctions.cs</link></section>
+</section>

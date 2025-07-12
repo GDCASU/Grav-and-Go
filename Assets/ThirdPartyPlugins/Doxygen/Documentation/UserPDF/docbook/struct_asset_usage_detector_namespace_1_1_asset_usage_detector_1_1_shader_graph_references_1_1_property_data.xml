@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData Struct Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a70eee3991a6ab239759785c506c493ab">GetName</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1ac56471a6b7cf8ac6c4628f0e545220b4">m_Name</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a22702f6ce96310f1824c83a35659e9c3">m_DefaultReferenceName</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1abfde11554a0b7f92f9586184cab60c08">m_OverrideReferenceName</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> <link linkend="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a754989f3df3d6a1592d6690446471dea">m_Value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a70eee3991a6ab239759785c506c493ab"/><section>
+    <title>GetName()</title>
+<indexterm><primary>GetName</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary><secondary>GetName</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData.GetName ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a22702f6ce96310f1824c83a35659e9c3"/><section>
+    <title>m_DefaultReferenceName</title>
+<indexterm><primary>m_DefaultReferenceName</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary><secondary>m_DefaultReferenceName</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData.m_DefaultReferenceName</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1ac56471a6b7cf8ac6c4628f0e545220b4"/><section>
+    <title>m_Name</title>
+<indexterm><primary>m_Name</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary><secondary>m_Name</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData.m_Name</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1abfde11554a0b7f92f9586184cab60c08"/><section>
+    <title>m_OverrideReferenceName</title>
+<indexterm><primary>m_OverrideReferenceName</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary><secondary>m_OverrideReferenceName</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData.m_OverrideReferenceName</computeroutput></para></section>
+<anchor xml:id="_struct_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_property_data_1a754989f3df3d6a1592d6690446471dea"/><section>
+    <title>m_Value</title>
+<indexterm><primary>m_Value</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData</primary><secondary>m_Value</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_shader_graph_references_1_1_texture_holder">TextureHolder</link> AssetUsageDetectorNamespace.AssetUsageDetector.ShaderGraphReferences.PropertyData.m_Value</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_search_functions_8cs">AssetUsageDetectorSearchFunctions.cs</link></section>
+</section>

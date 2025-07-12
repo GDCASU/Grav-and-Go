@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_f_m_o_d_unity" xml:lang="en-US">
+<title>FMODUnity Namespace Reference</title>
+<indexterm><primary>FMODUnity</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_unity_1_1_automatable_slots">AutomatableSlots</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bank_load_exception">BankLoadException</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bank_ref_attribute">BankRefAttribute</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bank_ref_drawer">BankRefDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bank_refresher">BankRefresher</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bank_refresh_window">BankRefreshWindow</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bolt_integration">BoltIntegration</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_build_status_watcher">BuildStatusWatcher</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_bus_not_found_exception">BusNotFoundException</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_codec_channel_count">CodecChannelCount</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_create_event_popup">CreateEventPopup</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref">EditorEventRef</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_settings">EditorSettings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_editor_utils">EditorUtils</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_emitter_ref">EmitterRef</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_browser">EventBrowser</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_cache">EventCache</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_handler">EventHandler</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_manager">EventManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_not_found_exception">EventNotFoundException</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_ref_attribute">EventRefAttribute</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_unity_1_1_event_reference">EventReference</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_reference_drawer">EventReferenceDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_event_reference_updater">EventReferenceUpdater</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_file_reorganizer">FileReorganizer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_find_and_replace">FindAndReplace</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_f_m_o_d_runtime_manager_on_g_u_i_helper">FMODRuntimeManagerOnGUIHelper</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_help_content">HelpContent</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_f_m_o_d_unity_1_1_i_editor_settings">IEditorSettings</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Legacy</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_legacy_event_ref_drawer">LegacyEventRefDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_list_view">ListView</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_natural_comparer">NaturalComparer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_no_indent_scope">NoIndentScope</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_param_ref">ParamRef</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_param_ref_attribute">ParamRefAttribute</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_param_ref_drawer">ParamRefDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform">Platform</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_android">PlatformAndroid</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_apple_t_v">PlatformAppleTV</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_callback_handler">PlatformCallbackHandler</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_default">PlatformDefault</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_group">PlatformGroup</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_i_o_s">PlatformIOS</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_linux">PlatformLinux</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_mac">PlatformMac</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_mobile_high">PlatformMobileHigh</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_mobile_low">PlatformMobileLow</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_play_in_editor">PlatformPlayInEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_vision_o_s">PlatformVisionOS</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_web_g_l">PlatformWebGL</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_windows">PlatformWindows</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_runtime_manager">RuntimeManager</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_runtime_utils">RuntimeUtils</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_serialized_property_extensions">SerializedPropertyExtensions</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_settings">Settings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_settings_editor">SettingsEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_setup_wizard_window">SetupWizardWindow</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_simple_help">SimpleHelp</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_simple_tree_view">SimpleTreeView</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_staging_system">StagingSystem</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader">StudioBankLoader</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_editor">StudioBankLoaderEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter">StudioEventEmitter</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_editor">StudioEventEmitterEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_event_emitter_gizo_drawer">StudioEventEmitterGizoDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_global_parameter_trigger">StudioGlobalParameterTrigger</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_global_parameter_trigger_editor">StudioGlobalParameterTriggerEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_listener">StudioListener</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_listener_editor">StudioListenerEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_parameter_trigger">StudioParameterTrigger</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_studio_parameter_trigger_editor">StudioParameterTriggerEditor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_system_not_initialized_exception">SystemNotInitializedException</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_thread_affinity_group">ThreadAffinityGroup</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception">VCANotFoundException</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3">ParameterType</link> { <link linkend="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3a535863a82f163709557e59e2eb8139a7">Continuous</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3a4984667940802dedc139aa7a430a6553">Discrete</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3aee4716f32c4b0bc2fd8298e2ab7649d2">Labeled</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">EmitterGameEvent</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754">None</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a1b8c043fb4e9955580a04d1a3bc3b97d">ObjectStart</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afd0455f8a7c3426d8eb874c47ed4fad9">ObjectDestroy</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4ad95fa58fd30b69fc99170e4c71a0ec64">TriggerEnter</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a8bd2e4fec6440f3a72ac13c7032c408f">TriggerExit</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aeae607fb282fcd155ada5a865b4b045f">TriggerEnter2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aba0d1c073338376be998fbe4a38186d8">TriggerExit2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a96fdfb9b0b0ab443362f0b7fb270d9eb">CollisionEnter</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a2dc3f8e0ee01ce9b59e699dc3257b4b6">CollisionExit</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a1be7f5e1b4f2fc908db9f64a3538d6c8">CollisionEnter2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6eef7680545302fde8893837f527f250">CollisionExit2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afebfee87f77716c3f69334c9b73afd67">ObjectEnable</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a615abc2484b7713cc1b6f4d6e219e653">ObjectDisable</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aec05d22e4710c52ad38faf5e9bf6750f">ObjectMouseEnter</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6dd9120d5a99480deffc024e43fbb54e">ObjectMouseExit</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afbe8c41ef686887e7ff157a4c0e9e506">ObjectMouseDown</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a0d53f85d3f2490993ccaee9b9a1a9358">ObjectMouseUp</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4ac27d1089fea7128f125ea324152c7f83">UIMouseEnter</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aa99a171960b1cbe49e298b054351ed32">UIMouseExit</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a17da858fbc8ecd657596e6d490a773d6">UIMouseDown</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a2c7e6ad6542f14198add658f85b4bb01">UIMouseUp</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">LoaderGameEvent</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a6adf97f83acf6453d4a6a4b1070f3754">None</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a1b8c043fb4e9955580a04d1a3bc3b97d">ObjectStart</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6afd0455f8a7c3426d8eb874c47ed4fad9">ObjectDestroy</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6ad95fa58fd30b69fc99170e4c71a0ec64">TriggerEnter</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a8bd2e4fec6440f3a72ac13c7032c408f">TriggerExit</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6aeae607fb282fcd155ada5a865b4b045f">TriggerEnter2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6aba0d1c073338376be998fbe4a38186d8">TriggerExit2D</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6afebfee87f77716c3f69334c9b73afd67">ObjectEnable</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a615abc2484b7713cc1b6f4d6e219e653">ObjectDisable</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266">ThreadType</link> { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a709f0e10529e0ed7b4840b3bfeb5b58e">Mixer</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a457b5a070a29fb7d7d2ad37e8737ff3e">Feeder</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266aeae835e83c0494a376229f254f7d3392">Stream</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a0b27918290ff5323bea1e3b78a9cf04e">File</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a57302c22b53d144668f6c2639f4de8fd">Nonblocking</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a6a0d9eaee314c567fd72fb97ee707a36">Record</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266ad9c6333623e6357515fcbf17be806273">Geometry</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a65b4c7424dd695c30efa73da8396c90c">Profiler</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266aa3e702bb0b2246415d8d3600caf4de0f">Studio_Update</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a5eb15b3766a3e79ca3412f9ee3c1e84f">Studio_Load_Bank</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a99ce3e211962fa4ae3313797fd7159e6">Studio_Load_Sample</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a75001e45b4689f2f6f19e14b66cc8f93">Convolution_1</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a2fe40fa8f3946aa9de7a035a2bacdf9f">Convolution_2</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042">ThreadAffinity</link> : uint { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aed36a1ef76a59ee3f15180e0441188ad">Any</link> = 0
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a229467a38c06aeae612c7f20e0bb251a">Core0</link> = 1 &lt;&lt; 0
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a0d484baac0fe3183f5130e839d508944">Core1</link> = 1 &lt;&lt; 1
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042adf87bdcfd219fc7a8a9ba1a44da1b132">Core2</link> = 1 &lt;&lt; 2
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a154738fc044d1327aeb2190b737fa4de">Core3</link> = 1 &lt;&lt; 3
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a32cfaac6593182d55f309d549a408e7a">Core4</link> = 1 &lt;&lt; 4
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a1d5c01275ba62bf337db43c200a79995">Core5</link> = 1 &lt;&lt; 5
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a627e2a40811341d5cc18255534c9333e">Core6</link> = 1 &lt;&lt; 6
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a175668c9f5f86c3736fb99257b811df7">Core7</link> = 1 &lt;&lt; 7
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aedac01193becb59a50ba4e64eb4015da">Core8</link> = 1 &lt;&lt; 8
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042ae2211b13037e201342cc907b4a941be3">Core9</link> = 1 &lt;&lt; 9
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a49e306cbbbdf8684ad8899be8e4ddfeb">Core10</link> = 1 &lt;&lt; 10
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aa48e2e7e78eba6bd5f8a4e131a17a9de">Core11</link> = 1 &lt;&lt; 11
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aa0172e5fd2e6ba220e05db888875c5e2">Core12</link> = 1 &lt;&lt; 12
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042acd9152aa112c37b5829c01be31aee4b2">Core13</link> = 1 &lt;&lt; 13
+, <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a58ccfda996e81082775a1d79df6e72dd">Core14</link> = 1 &lt;&lt; 14
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a987099697d82f0b624caec5e58505533">Core15</link> = 1 &lt;&lt; 15
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fd">CodecType</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda18d7e0a00393806b5e4c563618b32c91">FADPCM</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda193f52b6a96ab8ea777d9613884cea04">Vorbis</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fdadf71e9af8355538c48c35441bdcc24dd">AT9</link>
+, <link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda3e24993aabf593921c91ea986dd951e8">XMA</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fdaf132f54e911e7ae32712890f4e448030">Opus</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960">ImportType</link> { <link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960a0b38d14680695e16fe6e41b1959921d0">StreamingAssets</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960ae8cbe8f681e78018c49cfb82158030d8">AssetBundle</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3">BankLoadType</link> { <link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3ab1c94ca2fbc3e78fc30069c8d0f01680">All</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3ab4b379bf7ded74c07595ccb85bc6fdc3">Specified</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3a6adf97f83acf6453d4a6a4b1070f3754">None</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70">MeterChannelOrderingType</link> { <link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70aeb6d8ae6f20283755b339c0dc273988b">Standard</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70a06b71b0d63ea97a82d934dd4514633f4">SeparateLFE</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70ac2c87a0ee60e297b8b4eb1fb26b47bea">Positional</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0">EventLinkage</link> { <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0aac70412e939d72a9234cdebb1af5867b">Path</link>
+, <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0a7b1419a14dcdd33f81732a4710376cd1">GUID</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74">TriStateBool</link> { <link linkend="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74ab9f5c797ebbf55adccdd8539a65a0241">Disabled</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74a00d23a76e43b46dae9ec7aa9dcbebb32">Enabled</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74a330f49df8243756a8a4dc7f7f7ee6dfe">Development</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cb">ScreenPosition</link> { <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbab32beb056fbfe36afbabc6c88c81ab36">TopLeft</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba91b8ede24b7f93a98ae4dcaade15d468">TopCenter</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba1d85a557894c340c318493f33bfa8efb">TopRight</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba98e5a1c44509157ebcaf46c515c78875">BottomLeft</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbabf7d9c8ad2f89a37cf5378b5fec0b420">BottomCenter</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba9146bfc669fddc88db2c4d89297d0e9a">BottomRight</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba4f1f6016fc9f3f2353c0cc7c67b292bd">Center</link>
+, <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbaef8a9f751393cecaf3e811c30ee3e756">VR</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3"/><section>
+    <title>BankLoadType</title>
+<indexterm><primary>BankLoadType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>BankLoadType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3">FMODUnity.BankLoadType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>All</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>All</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3ab1c94ca2fbc3e78fc30069c8d0f01680"/>All</entry><entry></entry></row><row><entry><indexterm><primary>Specified</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Specified</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3ab4b379bf7ded74c07595ccb85bc6fdc3"/>Specified</entry><entry></entry></row><row><entry><indexterm><primary>None</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ab5e4bfcf1a5294eaebc1ea28d421cfb3a6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fd"/><section>
+    <title>CodecType</title>
+<indexterm><primary>CodecType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>CodecType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fd">FMODUnity.CodecType</link> : int</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>FADPCM</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>FADPCM</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda18d7e0a00393806b5e4c563618b32c91"/>FADPCM</entry><entry></entry></row><row><entry><indexterm><primary>Vorbis</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Vorbis</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda193f52b6a96ab8ea777d9613884cea04"/>Vorbis</entry><entry></entry></row><row><entry><indexterm><primary>AT9</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>AT9</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fdadf71e9af8355538c48c35441bdcc24dd"/>AT9</entry><entry></entry></row><row><entry><indexterm><primary>XMA</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>XMA</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fda3e24993aabf593921c91ea986dd951e8"/>XMA</entry><entry></entry></row><row><entry><indexterm><primary>Opus</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Opus</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af30ea004185662ad5c3c679cdc4419fdaf132f54e911e7ae32712890f4e448030"/>Opus</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4"/><section>
+    <title>EmitterGameEvent</title>
+<indexterm><primary>EmitterGameEvent</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>EmitterGameEvent</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4">FMODUnity.EmitterGameEvent</link> : int</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>None</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry></entry></row><row><entry><indexterm><primary>ObjectStart</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectStart</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a1b8c043fb4e9955580a04d1a3bc3b97d"/>ObjectStart</entry><entry></entry></row><row><entry><indexterm><primary>ObjectDestroy</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectDestroy</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afd0455f8a7c3426d8eb874c47ed4fad9"/>ObjectDestroy</entry><entry></entry></row><row><entry><indexterm><primary>TriggerEnter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerEnter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4ad95fa58fd30b69fc99170e4c71a0ec64"/>TriggerEnter</entry><entry></entry></row><row><entry><indexterm><primary>TriggerExit</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerExit</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a8bd2e4fec6440f3a72ac13c7032c408f"/>TriggerExit</entry><entry></entry></row><row><entry><indexterm><primary>TriggerEnter2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerEnter2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aeae607fb282fcd155ada5a865b4b045f"/>TriggerEnter2D</entry><entry></entry></row><row><entry><indexterm><primary>TriggerExit2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerExit2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aba0d1c073338376be998fbe4a38186d8"/>TriggerExit2D</entry><entry></entry></row><row><entry><indexterm><primary>CollisionEnter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>CollisionEnter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a96fdfb9b0b0ab443362f0b7fb270d9eb"/>CollisionEnter</entry><entry></entry></row><row><entry><indexterm><primary>CollisionExit</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>CollisionExit</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a2dc3f8e0ee01ce9b59e699dc3257b4b6"/>CollisionExit</entry><entry></entry></row><row><entry><indexterm><primary>CollisionEnter2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>CollisionEnter2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a1be7f5e1b4f2fc908db9f64a3538d6c8"/>CollisionEnter2D</entry><entry></entry></row><row><entry><indexterm><primary>CollisionExit2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>CollisionExit2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6eef7680545302fde8893837f527f250"/>CollisionExit2D</entry><entry></entry></row><row><entry><indexterm><primary>ObjectEnable</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectEnable</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afebfee87f77716c3f69334c9b73afd67"/>ObjectEnable</entry><entry></entry></row><row><entry><indexterm><primary>ObjectDisable</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectDisable</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a615abc2484b7713cc1b6f4d6e219e653"/>ObjectDisable</entry><entry></entry></row><row><entry><indexterm><primary>ObjectMouseEnter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectMouseEnter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aec05d22e4710c52ad38faf5e9bf6750f"/>ObjectMouseEnter</entry><entry></entry></row><row><entry><indexterm><primary>ObjectMouseExit</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectMouseExit</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a6dd9120d5a99480deffc024e43fbb54e"/>ObjectMouseExit</entry><entry></entry></row><row><entry><indexterm><primary>ObjectMouseDown</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectMouseDown</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4afbe8c41ef686887e7ff157a4c0e9e506"/>ObjectMouseDown</entry><entry></entry></row><row><entry><indexterm><primary>ObjectMouseUp</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectMouseUp</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a0d53f85d3f2490993ccaee9b9a1a9358"/>ObjectMouseUp</entry><entry></entry></row><row><entry><indexterm><primary>UIMouseEnter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>UIMouseEnter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4ac27d1089fea7128f125ea324152c7f83"/>UIMouseEnter</entry><entry></entry></row><row><entry><indexterm><primary>UIMouseExit</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>UIMouseExit</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4aa99a171960b1cbe49e298b054351ed32"/>UIMouseExit</entry><entry></entry></row><row><entry><indexterm><primary>UIMouseDown</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>UIMouseDown</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a17da858fbc8ecd657596e6d490a773d6"/>UIMouseDown</entry><entry></entry></row><row><entry><indexterm><primary>UIMouseUp</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>UIMouseUp</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1af5bcab54435cf76c79c62c6379965cc4a2c7e6ad6542f14198add658f85b4bb01"/>UIMouseUp</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0"/><section>
+    <title>EventLinkage</title>
+<indexterm><primary>EventLinkage</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>EventLinkage</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0">FMODUnity.EventLinkage</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Path</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Path</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0aac70412e939d72a9234cdebb1af5867b"/>Path</entry><entry></entry></row><row><entry><indexterm><primary>GUID</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>GUID</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a160fcdf756b41e64c1b5dfa80220b2c0a7b1419a14dcdd33f81732a4710376cd1"/>GUID</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960"/><section>
+    <title>ImportType</title>
+<indexterm><primary>ImportType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ImportType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960">FMODUnity.ImportType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>StreamingAssets</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>StreamingAssets</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960a0b38d14680695e16fe6e41b1959921d0"/>StreamingAssets</entry><entry></entry></row><row><entry><indexterm><primary>AssetBundle</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>AssetBundle</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a9edfbf0a348cc29d7a6c5121404ab960ae8cbe8f681e78018c49cfb82158030d8"/>AssetBundle</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6"/><section>
+    <title>LoaderGameEvent</title>
+<indexterm><primary>LoaderGameEvent</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>LoaderGameEvent</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">FMODUnity.LoaderGameEvent</link> : int</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>None</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry></entry></row><row><entry><indexterm><primary>ObjectStart</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectStart</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a1b8c043fb4e9955580a04d1a3bc3b97d"/>ObjectStart</entry><entry></entry></row><row><entry><indexterm><primary>ObjectDestroy</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectDestroy</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6afd0455f8a7c3426d8eb874c47ed4fad9"/>ObjectDestroy</entry><entry></entry></row><row><entry><indexterm><primary>TriggerEnter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerEnter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6ad95fa58fd30b69fc99170e4c71a0ec64"/>TriggerEnter</entry><entry></entry></row><row><entry><indexterm><primary>TriggerExit</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerExit</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a8bd2e4fec6440f3a72ac13c7032c408f"/>TriggerExit</entry><entry></entry></row><row><entry><indexterm><primary>TriggerEnter2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerEnter2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6aeae607fb282fcd155ada5a865b4b045f"/>TriggerEnter2D</entry><entry></entry></row><row><entry><indexterm><primary>TriggerExit2D</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriggerExit2D</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6aba0d1c073338376be998fbe4a38186d8"/>TriggerExit2D</entry><entry></entry></row><row><entry><indexterm><primary>ObjectEnable</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectEnable</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6afebfee87f77716c3f69334c9b73afd67"/>ObjectEnable</entry><entry></entry></row><row><entry><indexterm><primary>ObjectDisable</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ObjectDisable</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6a615abc2484b7713cc1b6f4d6e219e653"/>ObjectDisable</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70"/><section>
+    <title>MeterChannelOrderingType</title>
+<indexterm><primary>MeterChannelOrderingType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>MeterChannelOrderingType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70">FMODUnity.MeterChannelOrderingType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Standard</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Standard</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70aeb6d8ae6f20283755b339c0dc273988b"/>Standard</entry><entry></entry></row><row><entry><indexterm><primary>SeparateLFE</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>SeparateLFE</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70a06b71b0d63ea97a82d934dd4514633f4"/>SeparateLFE</entry><entry></entry></row><row><entry><indexterm><primary>Positional</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Positional</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a41eeb478c74ddf2caf688bea06204b70ac2c87a0ee60e297b8b4eb1fb26b47bea"/>Positional</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3"/><section>
+    <title>ParameterType</title>
+<indexterm><primary>ParameterType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ParameterType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3">FMODUnity.ParameterType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Continuous</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Continuous</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3a535863a82f163709557e59e2eb8139a7"/>Continuous</entry><entry></entry></row><row><entry><indexterm><primary>Discrete</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Discrete</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3a4984667940802dedc139aa7a430a6553"/>Discrete</entry><entry></entry></row><row><entry><indexterm><primary>Labeled</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Labeled</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1a25d0a839041d7a7c3fcbab0daa0211a3aee4716f32c4b0bc2fd8298e2ab7649d2"/>Labeled</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cb"/><section>
+    <title>ScreenPosition</title>
+<indexterm><primary>ScreenPosition</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ScreenPosition</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cb">FMODUnity.ScreenPosition</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>TopLeft</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TopLeft</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbab32beb056fbfe36afbabc6c88c81ab36"/>TopLeft</entry><entry></entry></row><row><entry><indexterm><primary>TopCenter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TopCenter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba91b8ede24b7f93a98ae4dcaade15d468"/>TopCenter</entry><entry></entry></row><row><entry><indexterm><primary>TopRight</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TopRight</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba1d85a557894c340c318493f33bfa8efb"/>TopRight</entry><entry></entry></row><row><entry><indexterm><primary>BottomLeft</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>BottomLeft</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba98e5a1c44509157ebcaf46c515c78875"/>BottomLeft</entry><entry></entry></row><row><entry><indexterm><primary>BottomCenter</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>BottomCenter</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbabf7d9c8ad2f89a37cf5378b5fec0b420"/>BottomCenter</entry><entry></entry></row><row><entry><indexterm><primary>BottomRight</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>BottomRight</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba9146bfc669fddc88db2c4d89297d0e9a"/>BottomRight</entry><entry></entry></row><row><entry><indexterm><primary>Center</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Center</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cba4f1f6016fc9f3f2353c0cc7c67b292bd"/>Center</entry><entry></entry></row><row><entry><indexterm><primary>VR</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>VR</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad13bd7f8d1dc7a882df44dcf9875c1cbaef8a9f751393cecaf3e811c30ee3e756"/>VR</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042"/><section>
+    <title>ThreadAffinity</title>
+<indexterm><primary>ThreadAffinity</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ThreadAffinity</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042">FMODUnity.ThreadAffinity</link> : uint</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Any</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Any</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aed36a1ef76a59ee3f15180e0441188ad"/>Any</entry><entry></entry></row><row><entry><indexterm><primary>Core0</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core0</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a229467a38c06aeae612c7f20e0bb251a"/>Core0</entry><entry></entry></row><row><entry><indexterm><primary>Core1</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core1</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a0d484baac0fe3183f5130e839d508944"/>Core1</entry><entry></entry></row><row><entry><indexterm><primary>Core2</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core2</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042adf87bdcfd219fc7a8a9ba1a44da1b132"/>Core2</entry><entry></entry></row><row><entry><indexterm><primary>Core3</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core3</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a154738fc044d1327aeb2190b737fa4de"/>Core3</entry><entry></entry></row><row><entry><indexterm><primary>Core4</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core4</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a32cfaac6593182d55f309d549a408e7a"/>Core4</entry><entry></entry></row><row><entry><indexterm><primary>Core5</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core5</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a1d5c01275ba62bf337db43c200a79995"/>Core5</entry><entry></entry></row><row><entry><indexterm><primary>Core6</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core6</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a627e2a40811341d5cc18255534c9333e"/>Core6</entry><entry></entry></row><row><entry><indexterm><primary>Core7</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core7</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a175668c9f5f86c3736fb99257b811df7"/>Core7</entry><entry></entry></row><row><entry><indexterm><primary>Core8</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core8</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aedac01193becb59a50ba4e64eb4015da"/>Core8</entry><entry></entry></row><row><entry><indexterm><primary>Core9</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core9</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042ae2211b13037e201342cc907b4a941be3"/>Core9</entry><entry></entry></row><row><entry><indexterm><primary>Core10</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core10</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a49e306cbbbdf8684ad8899be8e4ddfeb"/>Core10</entry><entry></entry></row><row><entry><indexterm><primary>Core11</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core11</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aa48e2e7e78eba6bd5f8a4e131a17a9de"/>Core11</entry><entry></entry></row><row><entry><indexterm><primary>Core12</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core12</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042aa0172e5fd2e6ba220e05db888875c5e2"/>Core12</entry><entry></entry></row><row><entry><indexterm><primary>Core13</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core13</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042acd9152aa112c37b5829c01be31aee4b2"/>Core13</entry><entry></entry></row><row><entry><indexterm><primary>Core14</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core14</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a58ccfda996e81082775a1d79df6e72dd"/>Core14</entry><entry></entry></row><row><entry><indexterm><primary>Core15</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Core15</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ad7390dda29e4e2cc21af5b958871d042a987099697d82f0b624caec5e58505533"/>Core15</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266"/><section>
+    <title>ThreadType</title>
+<indexterm><primary>ThreadType</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>ThreadType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266">FMODUnity.ThreadType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Mixer</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Mixer</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a709f0e10529e0ed7b4840b3bfeb5b58e"/>Mixer</entry><entry></entry></row><row><entry><indexterm><primary>Feeder</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Feeder</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a457b5a070a29fb7d7d2ad37e8737ff3e"/>Feeder</entry><entry></entry></row><row><entry><indexterm><primary>Stream</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Stream</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266aeae835e83c0494a376229f254f7d3392"/>Stream</entry><entry></entry></row><row><entry><indexterm><primary>File</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>File</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a0b27918290ff5323bea1e3b78a9cf04e"/>File</entry><entry></entry></row><row><entry><indexterm><primary>Nonblocking</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Nonblocking</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a57302c22b53d144668f6c2639f4de8fd"/>Nonblocking</entry><entry></entry></row><row><entry><indexterm><primary>Record</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Record</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a6a0d9eaee314c567fd72fb97ee707a36"/>Record</entry><entry></entry></row><row><entry><indexterm><primary>Geometry</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Geometry</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266ad9c6333623e6357515fcbf17be806273"/>Geometry</entry><entry></entry></row><row><entry><indexterm><primary>Profiler</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Profiler</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a65b4c7424dd695c30efa73da8396c90c"/>Profiler</entry><entry></entry></row><row><entry><indexterm><primary>Studio_Update</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Studio_Update</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266aa3e702bb0b2246415d8d3600caf4de0f"/>Studio_Update</entry><entry></entry></row><row><entry><indexterm><primary>Studio_Load_Bank</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Studio_Load_Bank</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a5eb15b3766a3e79ca3412f9ee3c1e84f"/>Studio_Load_Bank</entry><entry></entry></row><row><entry><indexterm><primary>Studio_Load_Sample</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Studio_Load_Sample</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a99ce3e211962fa4ae3313797fd7159e6"/>Studio_Load_Sample</entry><entry></entry></row><row><entry><indexterm><primary>Convolution_1</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Convolution_1</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a75001e45b4689f2f6f19e14b66cc8f93"/>Convolution_1</entry><entry></entry></row><row><entry><indexterm><primary>Convolution_2</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Convolution_2</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac5c53297bab6d5178806199d10eb0266a2fe40fa8f3946aa9de7a035a2bacdf9f"/>Convolution_2</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74"/><section>
+    <title>TriStateBool</title>
+<indexterm><primary>TriStateBool</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>TriStateBool</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74">FMODUnity.TriStateBool</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Disabled</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Disabled</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74ab9f5c797ebbf55adccdd8539a65a0241"/>Disabled</entry><entry></entry></row><row><entry><indexterm><primary>Enabled</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Enabled</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74a00d23a76e43b46dae9ec7aa9dcbebb32"/>Enabled</entry><entry></entry></row><row><entry><indexterm><primary>Development</primary><secondary>FMODUnity</secondary></indexterm>
+<indexterm><primary>FMODUnity</primary><secondary>Development</secondary></indexterm>
+<anchor xml:id="_namespace_f_m_o_d_unity_1ac6a4e78cc0d5a4b9356f9a54ab58ad74a330f49df8243756a8a4dc7f7f7ee6dfe"/>Development</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

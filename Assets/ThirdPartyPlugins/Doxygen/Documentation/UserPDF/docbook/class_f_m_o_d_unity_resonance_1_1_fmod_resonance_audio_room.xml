@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room" xml:lang="en-US">
+<title>FMODUnityResonance.FmodResonanceAudioRoom Class Reference</title>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary></indexterm>
+<para>
+
+<para>Resonance Audio room component that simulates environmental effects of a room with respect to the properties of the attached game object. </para>
+ 
+</para>
+<para>Inheritance diagram for FMODUnityResonance.FmodResonanceAudioRoom:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> { <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a3d971943089a3388c01fb297a32d9ba7">Transparent</link> = 0
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ab0be3625f54933315a2abb60aafe4e42">AcousticCeilingTiles</link> = 1
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ab126b0b3cb0b87abfa871ead634db525">BrickBare</link> = 2
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a2f2c67192a1e7588bb49ee47792454e0">BrickPainted</link> = 3
+, <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">ConcreteBlockCoarse</link> = 4
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aa6128f48e7d80790085c6c4cabf1305e">ConcreteBlockPainted</link> = 5
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a193c00c05db45e4543e9290b191fa206">CurtainHeavy</link> = 6
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a9325d32e22aa28c684fa7e102477aef0">FiberglassInsulation</link> = 7
+, <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a7757597b5a92f9413562d684c971a1d9">GlassThin</link> = 8
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a57d9c9de29aea5b1f6e5a52e44085314">GlassThick</link> = 9
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aaac9a63596f76a62bb9f61a5dd7c0d25">Grass</link> = 10
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a000d234b7a916a3a1c22d8ad7ee7314a">LinoleumOnConcrete</link> = 11
+, <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a7fb26875c639817a59912a87be6f7386">Marble</link> = 12
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aeaa57a9b4248ce3968e718895e1c2f04">Metal</link> = 13
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ae1624da1c4144b606373a7495c804a44">ParquetOnConcrete</link> = 14
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a4aebac55a367c11621083cabcc68a4c2">PlasterRough</link> = 15
+, <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1af4c40b23a6c7a77fa84748c0bad45d9f">PlasterSmooth</link> = 16
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a8b8483c28e86d1446c44b91e49f57c0c">PlywoodPanel</link> = 17
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a42b8db95599e1f3374b37860e7793521">PolishedConcreteOrTile</link> = 18
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1acc4bb5a66cff1d8feb4e5cccba74c4bd">Sheetrock</link> = 19
+, <?linebreak?><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a63c5238abaa6c713ee41b96cb4afe73b">WaterOrIceSurface</link> = 20
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ac906895b1f5e07dcdd293cbadc841f96">WoodCeiling</link> = 21
+, <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a2668dd10c264300dcded38167599ceb8">WoodPanel</link> = 22
+ }</para>
+
+<para>Material type that determines the acoustic properties of a room surface. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a6d0e4d1caacd38711b24f85a7ce237eb">LeftWall</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></para>
+
+<para>Room surface material in negative x direction. </para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1aa214e383249f473117960c3fa46715d9">RightWall</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></para>
+
+<para>Room surface material in positive x direction. </para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a59d54d3b3b666226ff87082374b3d712">Floor</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ae1624da1c4144b606373a7495c804a44">SurfaceMaterial.ParquetOnConcrete</link></para>
+
+<para>Room surface material in negative y direction. </para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ab9318d7b29ce7e4d5d71751f320eefa0">Ceiling</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a4aebac55a367c11621083cabcc68a4c2">SurfaceMaterial.PlasterRough</link></para>
+
+<para>Room surface material in positive y direction. </para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1adb0a2657ed96734e32d5bc5ef3798fe3">BackWall</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></para>
+
+<para>Room surface material in negative z direction. </para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a66c6aa56d2dfd3549d4c6305e9fec7c9">FrontWall</link> = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></para>
+
+<para>Room surface material in positive z direction. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a4572e2bf895dd3af34122e2e63e03025">Reflectivity</link> = 1.0f</para>
+
+<para>Reflectivity scalar for each surface of the room. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a97b3818d8ebddb1d256e54e70944b9f1">ReverbGainDb</link> = 0.0f</para>
+
+<para>Reverb gain modifier in decibels. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a8eebac9da9306b831316a84f5d7c28ac">ReverbBrightness</link> = 0.0f</para>
+
+<para>Reverb brightness modifier. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a310cfd5650e4e7be5fb2979d563d7c1a">ReverbTime</link> = 1.0f</para>
+
+<para>Reverb time modifier. </para>
+</listitem>
+            <listitem><para>Vector3 <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a5ddc77ef63352c5fce4dc4c7404bdb40">Size</link> = Vector3.one</para>
+
+<para>Size of the room (normalized with respect to scale of the game object). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Resonance Audio room component that simulates environmental effects of a room with respect to the properties of the attached game object. </para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1"/><section>
+    <title>SurfaceMaterial</title>
+<indexterm><primary>SurfaceMaterial</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>SurfaceMaterial</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">FMODUnityResonance.FmodResonanceAudioRoom.SurfaceMaterial</link></computeroutput></para><para>
+
+<para>Material type that determines the acoustic properties of a room surface. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Transparent</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Transparent</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a3d971943089a3388c01fb297a32d9ba7"/>Transparent</entry><entry>
+<para>Transparent. </para>
+</entry></row><row><entry><indexterm><primary>AcousticCeilingTiles</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>AcousticCeilingTiles</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ab0be3625f54933315a2abb60aafe4e42"/>AcousticCeilingTiles</entry><entry>
+<para>Acoustic ceiling tiles. </para>
+</entry></row><row><entry><indexterm><primary>BrickBare</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>BrickBare</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ab126b0b3cb0b87abfa871ead634db525"/>BrickBare</entry><entry>
+<para>Brick, bare. </para>
+</entry></row><row><entry><indexterm><primary>BrickPainted</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>BrickPainted</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a2f2c67192a1e7588bb49ee47792454e0"/>BrickPainted</entry><entry>
+<para>Brick, painted. </para>
+</entry></row><row><entry><indexterm><primary>ConcreteBlockCoarse</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ConcreteBlockCoarse</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408"/>ConcreteBlockCoarse</entry><entry>
+<para>Concrete block, coarse. </para>
+</entry></row><row><entry><indexterm><primary>ConcreteBlockPainted</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ConcreteBlockPainted</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aa6128f48e7d80790085c6c4cabf1305e"/>ConcreteBlockPainted</entry><entry>
+<para>Concrete block, painted. </para>
+</entry></row><row><entry><indexterm><primary>CurtainHeavy</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>CurtainHeavy</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a193c00c05db45e4543e9290b191fa206"/>CurtainHeavy</entry><entry>
+<para>Curtain, heavy. </para>
+</entry></row><row><entry><indexterm><primary>FiberglassInsulation</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>FiberglassInsulation</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a9325d32e22aa28c684fa7e102477aef0"/>FiberglassInsulation</entry><entry>
+<para>Fiberglass insulation. </para>
+</entry></row><row><entry><indexterm><primary>GlassThin</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>GlassThin</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a7757597b5a92f9413562d684c971a1d9"/>GlassThin</entry><entry>
+<para>Glass, thin. </para>
+</entry></row><row><entry><indexterm><primary>GlassThick</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>GlassThick</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a57d9c9de29aea5b1f6e5a52e44085314"/>GlassThick</entry><entry>
+<para>Glass, thick. </para>
+</entry></row><row><entry><indexterm><primary>Grass</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Grass</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aaac9a63596f76a62bb9f61a5dd7c0d25"/>Grass</entry><entry>
+<para>Grass. </para>
+</entry></row><row><entry><indexterm><primary>LinoleumOnConcrete</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>LinoleumOnConcrete</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a000d234b7a916a3a1c22d8ad7ee7314a"/>LinoleumOnConcrete</entry><entry>
+<para>Linoleum on concrete. </para>
+</entry></row><row><entry><indexterm><primary>Marble</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Marble</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a7fb26875c639817a59912a87be6f7386"/>Marble</entry><entry>
+<para>Marble. </para>
+</entry></row><row><entry><indexterm><primary>Metal</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Metal</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1aeaa57a9b4248ce3968e718895e1c2f04"/>Metal</entry><entry>
+<para>Galvanized sheet metal. </para>
+</entry></row><row><entry><indexterm><primary>ParquetOnConcrete</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ParquetOnConcrete</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ae1624da1c4144b606373a7495c804a44"/>ParquetOnConcrete</entry><entry>
+<para>Parquet on concrete. </para>
+</entry></row><row><entry><indexterm><primary>PlasterRough</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>PlasterRough</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a4aebac55a367c11621083cabcc68a4c2"/>PlasterRough</entry><entry>
+<para>Plaster, rough. </para>
+</entry></row><row><entry><indexterm><primary>PlasterSmooth</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>PlasterSmooth</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1af4c40b23a6c7a77fa84748c0bad45d9f"/>PlasterSmooth</entry><entry>
+<para>Plaster, smooth. </para>
+</entry></row><row><entry><indexterm><primary>PlywoodPanel</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>PlywoodPanel</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a8b8483c28e86d1446c44b91e49f57c0c"/>PlywoodPanel</entry><entry>
+<para>Plywood panel. </para>
+</entry></row><row><entry><indexterm><primary>PolishedConcreteOrTile</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>PolishedConcreteOrTile</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a42b8db95599e1f3374b37860e7793521"/>PolishedConcreteOrTile</entry><entry>
+<para>Polished concrete or tile. </para>
+</entry></row><row><entry><indexterm><primary>Sheetrock</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Sheetrock</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1acc4bb5a66cff1d8feb4e5cccba74c4bd"/>Sheetrock</entry><entry>
+<para>Sheetrock. </para>
+</entry></row><row><entry><indexterm><primary>WaterOrIceSurface</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>WaterOrIceSurface</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a63c5238abaa6c713ee41b96cb4afe73b"/>WaterOrIceSurface</entry><entry>
+<para>Water or ice surface. </para>
+</entry></row><row><entry><indexterm><primary>WoodCeiling</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>WoodCeiling</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ac906895b1f5e07dcdd293cbadc841f96"/>WoodCeiling</entry><entry>
+<para>Wood ceiling. </para>
+</entry></row><row><entry><indexterm><primary>WoodPanel</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>WoodPanel</secondary></indexterm>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a2668dd10c264300dcded38167599ceb8"/>WoodPanel</entry><entry>
+<para>Wood panel. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1adb0a2657ed96734e32d5bc5ef3798fe3"/><section>
+    <title>BackWall</title>
+<indexterm><primary>BackWall</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>BackWall</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.BackWall = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></computeroutput></para><para>
+
+<para>Room surface material in negative z direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ab9318d7b29ce7e4d5d71751f320eefa0"/><section>
+    <title>Ceiling</title>
+<indexterm><primary>Ceiling</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Ceiling</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.Ceiling = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a4aebac55a367c11621083cabcc68a4c2">SurfaceMaterial.PlasterRough</link></computeroutput></para><para>
+
+<para>Room surface material in positive y direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a59d54d3b3b666226ff87082374b3d712"/><section>
+    <title>Floor</title>
+<indexterm><primary>Floor</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Floor</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.Floor = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1ae1624da1c4144b606373a7495c804a44">SurfaceMaterial.ParquetOnConcrete</link></computeroutput></para><para>
+
+<para>Room surface material in negative y direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a66c6aa56d2dfd3549d4c6305e9fec7c9"/><section>
+    <title>FrontWall</title>
+<indexterm><primary>FrontWall</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>FrontWall</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.FrontWall = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></computeroutput></para><para>
+
+<para>Room surface material in positive z direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a6d0e4d1caacd38711b24f85a7ce237eb"/><section>
+    <title>LeftWall</title>
+<indexterm><primary>LeftWall</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>LeftWall</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.LeftWall = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></computeroutput></para><para>
+
+<para>Room surface material in negative x direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a4572e2bf895dd3af34122e2e63e03025"/><section>
+    <title>Reflectivity</title>
+<indexterm><primary>Reflectivity</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Reflectivity</secondary></indexterm>
+<para><computeroutput>float FMODUnityResonance.FmodResonanceAudioRoom.Reflectivity = 1.0f</computeroutput></para><para>
+
+<para>Reflectivity scalar for each surface of the room. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a8eebac9da9306b831316a84f5d7c28ac"/><section>
+    <title>ReverbBrightness</title>
+<indexterm><primary>ReverbBrightness</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ReverbBrightness</secondary></indexterm>
+<para><computeroutput>float FMODUnityResonance.FmodResonanceAudioRoom.ReverbBrightness = 0.0f</computeroutput></para><para>
+
+<para>Reverb brightness modifier. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a97b3818d8ebddb1d256e54e70944b9f1"/><section>
+    <title>ReverbGainDb</title>
+<indexterm><primary>ReverbGainDb</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ReverbGainDb</secondary></indexterm>
+<para><computeroutput>float FMODUnityResonance.FmodResonanceAudioRoom.ReverbGainDb = 0.0f</computeroutput></para><para>
+
+<para>Reverb gain modifier in decibels. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a310cfd5650e4e7be5fb2979d563d7c1a"/><section>
+    <title>ReverbTime</title>
+<indexterm><primary>ReverbTime</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>ReverbTime</secondary></indexterm>
+<para><computeroutput>float FMODUnityResonance.FmodResonanceAudioRoom.ReverbTime = 1.0f</computeroutput></para><para>
+
+<para>Reverb time modifier. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1aa214e383249f473117960c3fa46715d9"/><section>
+    <title>RightWall</title>
+<indexterm><primary>RightWall</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>RightWall</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1">SurfaceMaterial</link> FMODUnityResonance.FmodResonanceAudioRoom.RightWall = <link linkend="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1ae3d521b65d4759d63265510b50be88b1a45523ce642c052463d8ba1fd1db40408">SurfaceMaterial.ConcreteBlockCoarse</link></computeroutput></para><para>
+
+<para>Room surface material in positive x direction. </para>
+</para>
+</section>
+<anchor xml:id="_class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room_1a5ddc77ef63352c5fce4dc4c7404bdb40"/><section>
+    <title>Size</title>
+<indexterm><primary>Size</primary><secondary>FMODUnityResonance.FmodResonanceAudioRoom</secondary></indexterm>
+<indexterm><primary>FMODUnityResonance.FmodResonanceAudioRoom</primary><secondary>Size</secondary></indexterm>
+<para><computeroutput>Vector3 FMODUnityResonance.FmodResonanceAudioRoom.Size = Vector3.one</computeroutput></para><para>
+
+<para>Size of the room (normalized with respect to scale of the game object). </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/<link linkend="__fmod_resonance_audio_room_8cs">FmodResonanceAudioRoom.cs</link></section>
+</section>

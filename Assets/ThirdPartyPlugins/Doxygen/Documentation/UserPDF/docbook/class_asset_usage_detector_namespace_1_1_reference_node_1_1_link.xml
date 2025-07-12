@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.ReferenceNode.Link Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a1f6b1466f6d28b95cdaea9812d2ef313">Link</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1ab68fdac45f52dfb725462876a7cd0561">targetNode</link>, string description, bool <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a3981737307a11c0e553cea471752a704">isWeakLink</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a485e6814bf0d52ec7565922d90d76c38">Link</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1ab68fdac45f52dfb725462876a7cd0561">targetNode</link>, List&lt; string &gt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a12aef33546399c226643e291679d1b72">descriptions</link>, bool <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a3981737307a11c0e553cea471752a704">isWeakLink</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>readonly <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1ab68fdac45f52dfb725462876a7cd0561">targetNode</link></para>
+</listitem>
+            <listitem><para>readonly List&lt; string &gt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a12aef33546399c226643e291679d1b72">descriptions</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a3981737307a11c0e553cea471752a704">isWeakLink</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a1f6b1466f6d28b95cdaea9812d2ef313"/><section>
+    <title>Link()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Link</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode.Link</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary><secondary>Link</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.ReferenceNode.Link.Link (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> targetNode, string description, bool isWeakLink)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a485e6814bf0d52ec7565922d90d76c38"/><section>
+    <title>Link()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Link</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode.Link</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary><secondary>Link</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.ReferenceNode.Link.Link (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> targetNode, List&lt; string &gt; descriptions, bool isWeakLink)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a12aef33546399c226643e291679d1b72"/><section>
+    <title>descriptions</title>
+<indexterm><primary>descriptions</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode.Link</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary><secondary>descriptions</secondary></indexterm>
+<para><computeroutput>readonly List&lt;string&gt; AssetUsageDetectorNamespace.ReferenceNode.Link.descriptions</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1a3981737307a11c0e553cea471752a704"/><section>
+    <title>isWeakLink</title>
+<indexterm><primary>isWeakLink</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode.Link</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary><secondary>isWeakLink</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.ReferenceNode.Link.isWeakLink</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link_1ab68fdac45f52dfb725462876a7cd0561"/><section>
+    <title>targetNode</title>
+<indexterm><primary>targetNode</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode.Link</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode.Link</primary><secondary>targetNode</secondary></indexterm>
+<para><computeroutput>readonly <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> AssetUsageDetectorNamespace.ReferenceNode.Link.targetNode</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_8cs">SearchResult.cs</link></section>
+</section>

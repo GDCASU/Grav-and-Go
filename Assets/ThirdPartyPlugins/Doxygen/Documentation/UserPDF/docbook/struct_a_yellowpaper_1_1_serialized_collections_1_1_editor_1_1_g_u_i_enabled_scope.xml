@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope Struct Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</primary></indexterm>
+<para>Inheritance diagram for AYellowpaper.SerializedCollections.Editor.GUIEnabledScope:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1a09d9c6054fb168213a343d22d0d226d4">GUIEnabledScope</link> (bool enabled)</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1ac33a265bff8d1933bb5836c8ac440432">Dispose</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>readonly bool <link linkend="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1a601b857950d4e0e604d5825c33716be4">PreviouslyEnabled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1a09d9c6054fb168213a343d22d0d226d4"/><section>
+    <title>GUIEnabledScope()</title>
+<indexterm><primary>GUIEnabledScope</primary><secondary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</primary><secondary>GUIEnabledScope</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope.GUIEnabledScope (bool enabled)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1ac33a265bff8d1933bb5836c8ac440432"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>void AYellowpaper.SerializedCollections.Editor.GUIEnabledScope.Dispose ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_g_u_i_enabled_scope_1a601b857950d4e0e604d5825c33716be4"/><section>
+    <title>PreviouslyEnabled</title>
+<indexterm><primary>PreviouslyEnabled</primary><secondary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.GUIEnabledScope</primary><secondary>PreviouslyEnabled</secondary></indexterm>
+<para><computeroutput>readonly bool AYellowpaper.SerializedCollections.Editor.GUIEnabledScope.PreviouslyEnabled</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Utility/<link linkend="__g_u_i_enabled_scope_8cs">GUIEnabledScope.cs</link></section>
+</section>

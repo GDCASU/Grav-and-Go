@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_asset_usage_detector_namespace" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace Namespace Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_animation_system_match">AnimationSystemMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_importer_default_value_match">AssetImporterDefaultValueMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector">AssetUsageDetector</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings">AssetUsageDetectorSettings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window">AssetUsageDetectorWindow</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_behaviour_usage_match">BehaviourUsageMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_empty_enumerator-1-g">EmptyEnumerator&lt; T &gt;</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_generic_search_match">GenericSearchMatch</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_asset_usage_detector_namespace_1_1_i_property_accessor">IPropertyAccessor</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_list_drawer-1-g">ListDrawer&lt; T &gt;</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_list_drawer">ObjectListDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator">ObjectToSearchEnumerator</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer">ObjectToSearchListDrawer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_other_search_match">OtherSearchMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_prefab_match">PrefabMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g">PropertyWrapper&lt; TObject, TValue &gt;</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_read_only_search_match">ReadOnlySearchMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_reflection_match">ReflectionMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_match">SearchMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result">SearchResult</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_group">SearchResultGroup</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tooltip">SearchResultTooltip</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view">SearchResultTreeView</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view">SearchResultTreeViewIsolatedView</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state">SearchResultTreeViewState</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_serialized_property_match">SerializedPropertyMatch</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_utilities">Utilities</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_asset_usage_detector_namespace_1_1_variable_getter_holder">VariableGetterHolder</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85">SceneSearchMode</link> { <?linebreak?><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a6adf97f83acf6453d4a6a4b1070f3754">None</link> = 0
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a4e1fc86cb84cbd24626e8c8ce5586f8a">OpenScenes</link> = 1
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a3314e3c65111e055b66fe5de893b4a17">ScenesInBuildSettingsAll</link> = 2
+, <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a009d26e7431cb775dd2a9bae8b5e9867">ScenesInBuildSettingsTickedOnly</link> = 4
+, <?linebreak?><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7">AllScenes</link> = 8
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7e">Phase</link> { <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaad2376beebecdcf7846ba973fa1a005b">Setup</link>
+, <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7ea643562a9ae7099c8aabfdc93478db117">Processing</link>
+, <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaae94f80b3ce82062a5dd7815daa04f9d">Complete</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_asset_usage_detector_namespace_1a71ed09980589ebf5fb7f156ae069c544">SearchRefactoring</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_search_match">SearchMatch</link> match)</para>
+</listitem>
+            <listitem><para>delegate object <link linkend="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9">VariableGetVal</link> (object obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7e"/><section>
+    <title>Phase</title>
+<indexterm><primary>Phase</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>Phase</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7e">AssetUsageDetectorNamespace.Phase</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Setup</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>Setup</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaad2376beebecdcf7846ba973fa1a005b"/>Setup</entry><entry></entry></row><row><entry><indexterm><primary>Processing</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>Processing</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7ea643562a9ae7099c8aabfdc93478db117"/>Processing</entry><entry></entry></row><row><entry><indexterm><primary>Complete</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>Complete</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaae94f80b3ce82062a5dd7815daa04f9d"/>Complete</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85"/><section>
+    <title>SceneSearchMode</title>
+<indexterm><primary>SceneSearchMode</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>SceneSearchMode</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85">AssetUsageDetectorNamespace.SceneSearchMode</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>None</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry></entry></row><row><entry><indexterm><primary>OpenScenes</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>OpenScenes</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a4e1fc86cb84cbd24626e8c8ce5586f8a"/>OpenScenes</entry><entry></entry></row><row><entry><indexterm><primary>ScenesInBuildSettingsAll</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>ScenesInBuildSettingsAll</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a3314e3c65111e055b66fe5de893b4a17"/>ScenesInBuildSettingsAll</entry><entry></entry></row><row><entry><indexterm><primary>ScenesInBuildSettingsTickedOnly</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>ScenesInBuildSettingsTickedOnly</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85a009d26e7431cb775dd2a9bae8b5e9867"/>ScenesInBuildSettingsTickedOnly</entry><entry></entry></row><row><entry><indexterm><primary>AllScenes</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>AllScenes</secondary></indexterm>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7"/>AllScenes</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1a71ed09980589ebf5fb7f156ae069c544"/><section>
+    <title>SearchRefactoring()</title>
+<indexterm><primary>SearchRefactoring</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>SearchRefactoring</secondary></indexterm>
+<para><computeroutput>delegate void AssetUsageDetectorNamespace.SearchRefactoring (<link linkend="_class_asset_usage_detector_namespace_1_1_search_match">SearchMatch</link> match)</computeroutput></para></section>
+<anchor xml:id="_namespace_asset_usage_detector_namespace_1ab0df194f02dc0349fa59df0e4435a7f9"/><section>
+    <title>VariableGetVal()</title>
+<indexterm><primary>VariableGetVal</primary><secondary>AssetUsageDetectorNamespace</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace</primary><secondary>VariableGetVal</secondary></indexterm>
+<para><computeroutput>delegate object AssetUsageDetectorNamespace.VariableGetVal (object obj)</computeroutput></para></section>
+</section>
+</section>

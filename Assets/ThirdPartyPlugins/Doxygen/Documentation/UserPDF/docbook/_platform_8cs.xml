@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__platform_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Platform.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Platform.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_f_m_o_d_1_1_v_e_r_s_i_o_n">FMOD.VERSION</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_1_1_studio_1_1_s_t_u_d_i_o___v_e_r_s_i_o_n">FMOD.Studio.STUDIO_VERSION</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_callback_handler">FMODUnity.PlatformCallbackHandler</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform">FMODUnity.Platform</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property-1-g">FMODUnity.Platform.Property&lt; T &gt;</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">FMODUnity.Platform.PropertyBool</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_screen_position">FMODUnity.Platform.PropertyScreenPosition</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">FMODUnity.Platform.PropertyInt</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_speaker_mode">FMODUnity.Platform.PropertySpeakerMode</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string">FMODUnity.Platform.PropertyString</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">FMODUnity.Platform.PropertyStringList</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_callback_handler">FMODUnity.Platform.PropertyCallbackHandler</link></para>
+</listitem>
+            <listitem><para>interface <emphasis role="strong">FMODUnity.Platform.PropertyOverrideControl</emphasis></para>
+</listitem>
+            <listitem><para>struct <emphasis role="strong">FMODUnity.Platform.PropertyAccessor&lt; T &gt;</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage">FMODUnity.Platform.PropertyStorage</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">FMODUnity.Platform.PropertyAccessors</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_thread_affinity_list">FMODUnity.Platform.PropertyThreadAffinityList</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">FMODUnity.Platform.PropertyCodecChannels</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d">FMOD</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d_1_1_studio">FMOD.Studio</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d_unity">FMODUnity</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

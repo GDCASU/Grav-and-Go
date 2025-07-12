@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage" xml:lang="en-US">
+<title>FMODUnity.Platform.PropertyStorage Class Reference</title>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a95c6c7366212a043279505ea574e25ff">LiveUpdate</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a475e85a753d9ac47b5b099c273115961">LiveUpdatePort</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1aae5e7638000b3c592736eb8818538e45">Overlay</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_screen_position">PropertyScreenPosition</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a8ba596c36f034c9c2ea07b040c8b3389">OverlayPosition</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_screen_position">PropertyScreenPosition</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a6749deb888d44a4a5f65417600f84146">OverlayFontSize</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a0f36f2a42d244f73437d26110661a543">Logging</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a591808fd272a07d8e46b798d65b3493b">SampleRate</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string">PropertyString</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a99a9f8b7df430ac7f40166010bc6a70d">BuildDirectory</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string">PropertyString</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_speaker_mode">PropertySpeakerMode</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a0d6fde5f51c2cdca17f96c5b7ebc97a5">SpeakerMode</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_speaker_mode">PropertySpeakerMode</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a69b7b7dc85413f1459ffe39c872a56eb">VirtualChannelCount</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1ab27266ff5f725ff56bfde9203a7a350e">RealChannelCount</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1ae2286e62e25c63000ea85859d64fa38c">DSPBufferLength</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1aab1b439a618c5e2074fc699864186c8b">DSPBufferCount</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a7efbe722d046053b636151531e1fbe37">Plugins</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a888ad894e2d51351c4cc18471073444e">StaticPlugins</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_callback_handler">PropertyCallbackHandler</link> <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1afd05b1b5d02c4fffd2ae5a5baef25aa9">CallbackHandler</link> = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_callback_handler">PropertyCallbackHandler</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a99a9f8b7df430ac7f40166010bc6a70d"/><section>
+    <title>BuildDirectory</title>
+<indexterm><primary>BuildDirectory</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>BuildDirectory</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string">PropertyString</link> FMODUnity.Platform.PropertyStorage.BuildDirectory = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string">PropertyString</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1afd05b1b5d02c4fffd2ae5a5baef25aa9"/><section>
+    <title>CallbackHandler</title>
+<indexterm><primary>CallbackHandler</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>CallbackHandler</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_callback_handler">PropertyCallbackHandler</link> FMODUnity.Platform.PropertyStorage.CallbackHandler = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_callback_handler">PropertyCallbackHandler</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1aab1b439a618c5e2074fc699864186c8b"/><section>
+    <title>DSPBufferCount</title>
+<indexterm><primary>DSPBufferCount</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>DSPBufferCount</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.DSPBufferCount = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1ae2286e62e25c63000ea85859d64fa38c"/><section>
+    <title>DSPBufferLength</title>
+<indexterm><primary>DSPBufferLength</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>DSPBufferLength</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.DSPBufferLength = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a95c6c7366212a043279505ea574e25ff"/><section>
+    <title>LiveUpdate</title>
+<indexterm><primary>LiveUpdate</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>LiveUpdate</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> FMODUnity.Platform.PropertyStorage.LiveUpdate = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a475e85a753d9ac47b5b099c273115961"/><section>
+    <title>LiveUpdatePort</title>
+<indexterm><primary>LiveUpdatePort</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>LiveUpdatePort</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.LiveUpdatePort = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a0f36f2a42d244f73437d26110661a543"/><section>
+    <title>Logging</title>
+<indexterm><primary>Logging</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>Logging</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> FMODUnity.Platform.PropertyStorage.Logging = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1aae5e7638000b3c592736eb8818538e45"/><section>
+    <title>Overlay</title>
+<indexterm><primary>Overlay</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>Overlay</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link> FMODUnity.Platform.PropertyStorage.Overlay = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_bool">PropertyBool</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a6749deb888d44a4a5f65417600f84146"/><section>
+    <title>OverlayFontSize</title>
+<indexterm><primary>OverlayFontSize</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>OverlayFontSize</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.OverlayFontSize = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a8ba596c36f034c9c2ea07b040c8b3389"/><section>
+    <title>OverlayPosition</title>
+<indexterm><primary>OverlayPosition</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>OverlayPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_screen_position">PropertyScreenPosition</link> FMODUnity.Platform.PropertyStorage.OverlayPosition = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_screen_position">PropertyScreenPosition</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a7efbe722d046053b636151531e1fbe37"/><section>
+    <title>Plugins</title>
+<indexterm><primary>Plugins</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>Plugins</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link> FMODUnity.Platform.PropertyStorage.Plugins = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1ab27266ff5f725ff56bfde9203a7a350e"/><section>
+    <title>RealChannelCount</title>
+<indexterm><primary>RealChannelCount</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>RealChannelCount</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.RealChannelCount = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a591808fd272a07d8e46b798d65b3493b"/><section>
+    <title>SampleRate</title>
+<indexterm><primary>SampleRate</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>SampleRate</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.SampleRate = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a0d6fde5f51c2cdca17f96c5b7ebc97a5"/><section>
+    <title>SpeakerMode</title>
+<indexterm><primary>SpeakerMode</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>SpeakerMode</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_speaker_mode">PropertySpeakerMode</link> FMODUnity.Platform.PropertyStorage.SpeakerMode = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_speaker_mode">PropertySpeakerMode</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a888ad894e2d51351c4cc18471073444e"/><section>
+    <title>StaticPlugins</title>
+<indexterm><primary>StaticPlugins</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>StaticPlugins</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link> FMODUnity.Platform.PropertyStorage.StaticPlugins = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_string_list">PropertyStringList</link>()</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_platform_1_1_property_storage_1a69b7b7dc85413f1459ffe39c872a56eb"/><section>
+    <title>VirtualChannelCount</title>
+<indexterm><primary>VirtualChannelCount</primary><secondary>FMODUnity.Platform.PropertyStorage</secondary></indexterm>
+<indexterm><primary>FMODUnity.Platform.PropertyStorage</primary><secondary>VirtualChannelCount</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link> FMODUnity.Platform.PropertyStorage.VirtualChannelCount = new <link linkend="_class_f_m_o_d_unity_1_1_platform_1_1_property_int">PropertyInt</link>()</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__platform_8cs">Platform.cs</link></section>
+</section>

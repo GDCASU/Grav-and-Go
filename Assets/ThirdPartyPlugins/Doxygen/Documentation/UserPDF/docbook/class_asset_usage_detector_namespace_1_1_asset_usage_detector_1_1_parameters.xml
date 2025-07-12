@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link>[] <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a49461d418d5b27f106bff50ac1b3a37f">objectsToSearch</link> = null</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85">SceneSearchMode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a571cfebf9f2a83312b40e55cf2b2386d">searchInScenes</link> = <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7">SceneSearchMode.AllScenes</link></para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link>[] <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1aa897898f94aee1a53a76ee26958a1c94">searchInScenesSubset</link> = null</para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link>[] <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a0c23facfac0ed09c9903b4aa707053f3">excludedScenesFromSearch</link> = null</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a37d209621ab832a70a7208b65fff22ae">searchInSceneLightingSettings</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a9a6784cf20bf8f885dc5e421d029899f">searchInAssetsFolder</link> = true</para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link>[] <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1adefa94744fbaf1d7f122b505df329344">searchInAssetsSubset</link> = null</para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link>[] <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a11e4679ce0dfafda77842ec6b7fe5603">excludedAssetsFromSearch</link> = null</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a5c8c4f08a98abfd9447c852ca29d6b91">dontSearchInSourceAssets</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a5865cdafa54e1d44e8825241a08f02cb">searchInProjectSettings</link> = true</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8ea485b5cc69aa44a1db988d941149f">searchDepthLimit</link> = 4</para>
+</listitem>
+            <listitem><para>BindingFlags <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a7934c0dfc028eca368f5206d4468ca0b">fieldModifiers</link> = BindingFlags.Public | BindingFlags.NonPublic</para>
+</listitem>
+            <listitem><para>BindingFlags <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8e931118db064b3d27c5e0e4cc58228">propertyModifiers</link> = BindingFlags.Public | BindingFlags.NonPublic</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1afd9257055787145b0b961e517c992096">searchNonSerializableVariables</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1aec90eb388cdfd17949c1193870def970">searchUnusedMaterialProperties</link> = true</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_asset_usage_detector_namespace_1a71ed09980589ebf5fb7f156ae069c544">SearchRefactoring</link> <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a7faa866d8c0f2942e2916cb21ef333ce">searchRefactoring</link> = null</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a1ae81aa7b9aeedb8008a731409e71c60">lazySceneSearch</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a448e2e5c03b09344c12dacb6c0df137b">calculateUnusedObjects</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a60b5b74a55457e40f391852e4145342a">hideDuplicateRows</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a3d1951132a1d4310ca090ee7fdfbd68d">hideRedundantPrefabReferencesInAssets</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8e5e65b62f435043497f8d14609b168">hideRedundantPrefabReferencesInScenes</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1adf906a98e52c152d9f7b3f8c4891f4a0">noAssetDatabaseChanges</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a2c13ec91cd70c83e9feb3429073911b8">showDetailedProgressBar</link> = true</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a448e2e5c03b09344c12dacb6c0df137b"/><section>
+    <title>calculateUnusedObjects</title>
+<indexterm><primary>calculateUnusedObjects</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>calculateUnusedObjects</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.calculateUnusedObjects = false</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a5c8c4f08a98abfd9447c852ca29d6b91"/><section>
+    <title>dontSearchInSourceAssets</title>
+<indexterm><primary>dontSearchInSourceAssets</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>dontSearchInSourceAssets</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.dontSearchInSourceAssets = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a11e4679ce0dfafda77842ec6b7fe5603"/><section>
+    <title>excludedAssetsFromSearch</title>
+<indexterm><primary>excludedAssetsFromSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>excludedAssetsFromSearch</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> [] AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.excludedAssetsFromSearch = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a0c23facfac0ed09c9903b4aa707053f3"/><section>
+    <title>excludedScenesFromSearch</title>
+<indexterm><primary>excludedScenesFromSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>excludedScenesFromSearch</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> [] AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.excludedScenesFromSearch = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a7934c0dfc028eca368f5206d4468ca0b"/><section>
+    <title>fieldModifiers</title>
+<indexterm><primary>fieldModifiers</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>fieldModifiers</secondary></indexterm>
+<para><computeroutput>BindingFlags AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.fieldModifiers = BindingFlags.Public | BindingFlags.NonPublic</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a60b5b74a55457e40f391852e4145342a"/><section>
+    <title>hideDuplicateRows</title>
+<indexterm><primary>hideDuplicateRows</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>hideDuplicateRows</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.hideDuplicateRows = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a3d1951132a1d4310ca090ee7fdfbd68d"/><section>
+    <title>hideRedundantPrefabReferencesInAssets</title>
+<indexterm><primary>hideRedundantPrefabReferencesInAssets</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>hideRedundantPrefabReferencesInAssets</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.hideRedundantPrefabReferencesInAssets = false</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8e5e65b62f435043497f8d14609b168"/><section>
+    <title>hideRedundantPrefabReferencesInScenes</title>
+<indexterm><primary>hideRedundantPrefabReferencesInScenes</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>hideRedundantPrefabReferencesInScenes</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.hideRedundantPrefabReferencesInScenes = false</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a1ae81aa7b9aeedb8008a731409e71c60"/><section>
+    <title>lazySceneSearch</title>
+<indexterm><primary>lazySceneSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>lazySceneSearch</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.lazySceneSearch = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1adf906a98e52c152d9f7b3f8c4891f4a0"/><section>
+    <title>noAssetDatabaseChanges</title>
+<indexterm><primary>noAssetDatabaseChanges</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>noAssetDatabaseChanges</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.noAssetDatabaseChanges = false</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a49461d418d5b27f106bff50ac1b3a37f"/><section>
+    <title>objectsToSearch</title>
+<indexterm><primary>objectsToSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>objectsToSearch</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> [] AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.objectsToSearch = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8e931118db064b3d27c5e0e4cc58228"/><section>
+    <title>propertyModifiers</title>
+<indexterm><primary>propertyModifiers</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>propertyModifiers</secondary></indexterm>
+<para><computeroutput>BindingFlags AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.propertyModifiers = BindingFlags.Public | BindingFlags.NonPublic</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1ad8ea485b5cc69aa44a1db988d941149f"/><section>
+    <title>searchDepthLimit</title>
+<indexterm><primary>searchDepthLimit</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchDepthLimit</secondary></indexterm>
+<para><computeroutput>int AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchDepthLimit = 4</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a9a6784cf20bf8f885dc5e421d029899f"/><section>
+    <title>searchInAssetsFolder</title>
+<indexterm><primary>searchInAssetsFolder</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInAssetsFolder</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInAssetsFolder = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1adefa94744fbaf1d7f122b505df329344"/><section>
+    <title>searchInAssetsSubset</title>
+<indexterm><primary>searchInAssetsSubset</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInAssetsSubset</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> [] AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInAssetsSubset = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a5865cdafa54e1d44e8825241a08f02cb"/><section>
+    <title>searchInProjectSettings</title>
+<indexterm><primary>searchInProjectSettings</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInProjectSettings</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInProjectSettings = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a37d209621ab832a70a7208b65fff22ae"/><section>
+    <title>searchInSceneLightingSettings</title>
+<indexterm><primary>searchInSceneLightingSettings</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInSceneLightingSettings</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInSceneLightingSettings = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a571cfebf9f2a83312b40e55cf2b2386d"/><section>
+    <title>searchInScenes</title>
+<indexterm><primary>searchInScenes</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInScenes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85">SceneSearchMode</link> AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInScenes = <link linkend="_namespace_asset_usage_detector_namespace_1a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7">SceneSearchMode.AllScenes</link></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1aa897898f94aee1a53a76ee26958a1c94"/><section>
+    <title>searchInScenesSubset</title>
+<indexterm><primary>searchInScenesSubset</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchInScenesSubset</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> [] AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchInScenesSubset = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1afd9257055787145b0b961e517c992096"/><section>
+    <title>searchNonSerializableVariables</title>
+<indexterm><primary>searchNonSerializableVariables</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchNonSerializableVariables</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchNonSerializableVariables = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a7faa866d8c0f2942e2916cb21ef333ce"/><section>
+    <title>searchRefactoring</title>
+<indexterm><primary>searchRefactoring</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchRefactoring</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_asset_usage_detector_namespace_1a71ed09980589ebf5fb7f156ae069c544">SearchRefactoring</link> AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchRefactoring = null</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1aec90eb388cdfd17949c1193870def970"/><section>
+    <title>searchUnusedMaterialProperties</title>
+<indexterm><primary>searchUnusedMaterialProperties</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>searchUnusedMaterialProperties</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.searchUnusedMaterialProperties = true</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters_1a2c13ec91cd70c83e9feb3429073911b8"/><section>
+    <title>showDetailedProgressBar</title>
+<indexterm><primary>showDetailedProgressBar</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetector.Parameters</primary><secondary>showDetailedProgressBar</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetector.Parameters.showDetailedProgressBar = true</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_8cs">AssetUsageDetector.cs</link></section>
+</section>

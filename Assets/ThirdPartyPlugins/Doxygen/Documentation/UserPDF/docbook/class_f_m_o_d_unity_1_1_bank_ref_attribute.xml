@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_bank_ref_attribute" xml:lang="en-US">
+<title>FMODUnity.BankRefAttribute Class Reference</title>
+<indexterm><primary>FMODUnity.BankRefAttribute</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.BankRefAttribute:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_bank_ref_attribute.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__bank_ref_attribute_8cs">BankRefAttribute.cs</link></section>

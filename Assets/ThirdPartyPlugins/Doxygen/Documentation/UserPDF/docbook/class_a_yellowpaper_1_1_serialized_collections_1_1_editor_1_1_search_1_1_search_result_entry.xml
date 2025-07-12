@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1ab5883d8dcd1c3080ec963dedc2171f48">SearchResultEntry</link> (int index, SerializedProperty property, IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link> &gt; matchingResults)</para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1a4d10d23b353d96881c731edcb38a2174">ToString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>readonly int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1aaa545cc982cce0cca8818015b5634ab4">Index</link></para>
+</listitem>
+            <listitem><para>readonly SerializedProperty <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1a1c5d84ecf3430253f8552c15f3673773">Property</link></para>
+</listitem>
+            <listitem><para>readonly IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link> &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1aa25b7ae59fcafed0536ff2f6d6763bfb">MatchingResults</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1ab5883d8dcd1c3080ec963dedc2171f48"/><section>
+    <title>SearchResultEntry()</title>
+<indexterm><primary>SearchResultEntry</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary><secondary>SearchResultEntry</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry.SearchResultEntry (int index, SerializedProperty property, IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link> &gt; matchingResults)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1a4d10d23b353d96881c731edcb38a2174"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry.ToString ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1aaa545cc982cce0cca8818015b5634ab4"/><section>
+    <title>Index</title>
+<indexterm><primary>Index</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary><secondary>Index</secondary></indexterm>
+<para><computeroutput>readonly int AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry.Index</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1aa25b7ae59fcafed0536ff2f6d6763bfb"/><section>
+    <title>MatchingResults</title>
+<indexterm><primary>MatchingResults</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary><secondary>MatchingResults</secondary></indexterm>
+<para><computeroutput>readonly IEnumerable&lt;<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link>&gt; AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry.MatchingResults</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry_1a1c5d84ecf3430253f8552c15f3673773"/><section>
+    <title>Property</title>
+<indexterm><primary>Property</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry</primary><secondary>Property</secondary></indexterm>
+<para><computeroutput>readonly SerializedProperty AYellowpaper.SerializedCollections.Editor.Search.SearchResultEntry.Property</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Search/<link linkend="__search_result_entry_8cs">SearchResultEntry.cs</link></section>
+</section>

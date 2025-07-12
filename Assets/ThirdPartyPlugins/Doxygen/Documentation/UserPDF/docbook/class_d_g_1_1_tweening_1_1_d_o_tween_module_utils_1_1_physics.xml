@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics" xml:lang="en-US">
+<title>DG.Tweening.DOTweenModuleUtils.Physics Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils.Physics</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a912e1d2e53dce3aaffb50c006887adbd">SetOrientationOnPath</link> (PathOptions options, Tween t, Quaternion newRot, Transform trans)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1ab0b92fe6954a68419bde9553cae0d03f">HasRigidbody2D</link> (Component target)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a580f14850e54387226e4667286ecfe8f">HasRigidbody</link> (Component target)</para>
+</listitem>
+            <listitem><para>static TweenerCore&lt; Vector3, Path, PathOptions &gt; <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a22de43e125b9ece454ba594d454353ab">CreateDOTweenPathTween</link> (MonoBehaviour target, bool tweenRigidbody, bool isLocal, Path path, float duration, PathMode pathMode)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a22de43e125b9ece454ba594d454353ab"/><section>
+    <title>CreateDOTweenPathTween()</title>
+<indexterm><primary>CreateDOTweenPathTween</primary><secondary>DG.Tweening.DOTweenModuleUtils.Physics</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils.Physics</primary><secondary>CreateDOTweenPathTween</secondary></indexterm>
+<para><computeroutput>TweenerCore&lt; Vector3, Path, PathOptions &gt; DG.Tweening.DOTweenModuleUtils.Physics.CreateDOTweenPathTween (MonoBehaviour target, bool tweenRigidbody, bool isLocal, Path path, float duration, PathMode pathMode)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a580f14850e54387226e4667286ecfe8f"/><section>
+    <title>HasRigidbody()</title>
+<indexterm><primary>HasRigidbody</primary><secondary>DG.Tweening.DOTweenModuleUtils.Physics</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils.Physics</primary><secondary>HasRigidbody</secondary></indexterm>
+<para><computeroutput>bool DG.Tweening.DOTweenModuleUtils.Physics.HasRigidbody (Component target)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1ab0b92fe6954a68419bde9553cae0d03f"/><section>
+    <title>HasRigidbody2D()</title>
+<indexterm><primary>HasRigidbody2D</primary><secondary>DG.Tweening.DOTweenModuleUtils.Physics</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils.Physics</primary><secondary>HasRigidbody2D</secondary></indexterm>
+<para><computeroutput>bool DG.Tweening.DOTweenModuleUtils.Physics.HasRigidbody2D (Component target)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_utils_1_1_physics_1a912e1d2e53dce3aaffb50c006887adbd"/><section>
+    <title>SetOrientationOnPath()</title>
+<indexterm><primary>SetOrientationOnPath</primary><secondary>DG.Tweening.DOTweenModuleUtils.Physics</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUtils.Physics</primary><secondary>SetOrientationOnPath</secondary></indexterm>
+<para><computeroutput>void DG.Tweening.DOTweenModuleUtils.Physics.SetOrientationOnPath (PathOptions options, Tween t, Quaternion newRot, Transform trans)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_utils_8cs">DOTweenModuleUtils.cs</link></section>
+</section>

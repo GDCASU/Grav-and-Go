@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary></indexterm>
+<para>Inheritance diagram for AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a18bf12dc28f2a12c9757a0ab300cd7e7">OnGUI</link> (Rect position, SerializedProperty property, GUIContent label)</para>
+</listitem>
+            <listitem><para>override float <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a2c9dd3f5e07ec45471850fb64d8d8f19">GetPropertyHeight</link> (SerializedProperty property, GUIContent label)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1acace72883727ab0d3074f0e400fb006d">KeyName</link> = nameof(SerializedKeyValuePair&lt;int, int&gt;.Key)</para>
+</listitem>
+            <listitem><para>const string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a133360ee778119b23b302376a17999d0">ValueName</link> = nameof(SerializedKeyValuePair&lt;int, int&gt;.Value)</para>
+</listitem>
+            <listitem><para>const string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1abdaca6afcc50334527289b9b27c827ec">SerializedListName</link> = nameof(SerializedDictionary&lt;int, int&gt;._serializedList)</para>
+</listitem>
+            <listitem><para>const string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a1835fee7dfcfda87792112bbe2931e33">LookupTableName</link> = nameof(SerializedDictionary&lt;int, int&gt;.LookupTable)</para>
+</listitem>
+            <listitem><para>const int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a209213ed17d552777b69aa3bb08b98f5">TopHeaderClipHeight</link> = 20</para>
+</listitem>
+            <listitem><para>const int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1ac8bc9f5b7a4a76118e1813f12053c775">TopHeaderHeight</link> = 19</para>
+</listitem>
+            <listitem><para>const int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1ad293ed44c9f742e3bca20011204a26a5">SearchHeaderHeight</link> = 20</para>
+</listitem>
+            <listitem><para>const int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a0d445338e0fd08667eff4626206f9165">KeyValueHeaderHeight</link> = 18</para>
+</listitem>
+            <listitem><para>const bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a236dfd347a71243469ca748f1aca34d5">KeyFlag</link> = true</para>
+</listitem>
+            <listitem><para>const bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a2d07026f142e8b42016f4791bf072799">ValueFlag</link> = false</para>
+</listitem>
+            <listitem><para>static readonly Color <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1aa4b7530c79837f4bdef30fae383053dd">BorderColor</link> = new Color(36 / 255f, 36 / 255f, 36 / 255f)</para>
+</listitem>
+            <listitem><para>static readonly <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt; int &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a68283f6bd564788d9384c2dfa6603fb4">NoEntriesList</link> = new <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt;int&gt;()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a2c9dd3f5e07ec45471850fb64d8d8f19"/><section>
+    <title>GetPropertyHeight()</title>
+<indexterm><primary>GetPropertyHeight</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>GetPropertyHeight</secondary></indexterm>
+<para><computeroutput>override float AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.GetPropertyHeight (SerializedProperty property, GUIContent label)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a18bf12dc28f2a12c9757a0ab300cd7e7"/><section>
+    <title>OnGUI()</title>
+<indexterm><primary>OnGUI</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>OnGUI</secondary></indexterm>
+<para><computeroutput>override void AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.OnGUI (Rect position, SerializedProperty property, GUIContent label)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1aa4b7530c79837f4bdef30fae383053dd"/><section>
+    <title>BorderColor</title>
+<indexterm><primary>BorderColor</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>BorderColor</secondary></indexterm>
+<para><computeroutput>readonly Color AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.BorderColor = new Color(36 / 255f, 36 / 255f, 36 / 255f)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a236dfd347a71243469ca748f1aca34d5"/><section>
+    <title>KeyFlag</title>
+<indexterm><primary>KeyFlag</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>KeyFlag</secondary></indexterm>
+<para><computeroutput>const bool AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.KeyFlag = true<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1acace72883727ab0d3074f0e400fb006d"/><section>
+    <title>KeyName</title>
+<indexterm><primary>KeyName</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>KeyName</secondary></indexterm>
+<para><computeroutput>const string AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.KeyName = nameof(SerializedKeyValuePair&lt;int, int&gt;.Key)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a0d445338e0fd08667eff4626206f9165"/><section>
+    <title>KeyValueHeaderHeight</title>
+<indexterm><primary>KeyValueHeaderHeight</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>KeyValueHeaderHeight</secondary></indexterm>
+<para><computeroutput>const int AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.KeyValueHeaderHeight = 18<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a1835fee7dfcfda87792112bbe2931e33"/><section>
+    <title>LookupTableName</title>
+<indexterm><primary>LookupTableName</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>LookupTableName</secondary></indexterm>
+<para><computeroutput>const string AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.LookupTableName = nameof(SerializedDictionary&lt;int, int&gt;.LookupTable)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a68283f6bd564788d9384c2dfa6603fb4"/><section>
+    <title>NoEntriesList</title>
+<indexterm><primary>NoEntriesList</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>NoEntriesList</secondary></indexterm>
+<para><computeroutput>readonly <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt;int&gt; AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.NoEntriesList = new <link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt;int&gt;()<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1ad293ed44c9f742e3bca20011204a26a5"/><section>
+    <title>SearchHeaderHeight</title>
+<indexterm><primary>SearchHeaderHeight</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>SearchHeaderHeight</secondary></indexterm>
+<para><computeroutput>const int AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.SearchHeaderHeight = 20<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1abdaca6afcc50334527289b9b27c827ec"/><section>
+    <title>SerializedListName</title>
+<indexterm><primary>SerializedListName</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>SerializedListName</secondary></indexterm>
+<para><computeroutput>const string AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.SerializedListName = nameof(SerializedDictionary&lt;int, int&gt;._serializedList)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a209213ed17d552777b69aa3bb08b98f5"/><section>
+    <title>TopHeaderClipHeight</title>
+<indexterm><primary>TopHeaderClipHeight</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>TopHeaderClipHeight</secondary></indexterm>
+<para><computeroutput>const int AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.TopHeaderClipHeight = 20<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1ac8bc9f5b7a4a76118e1813f12053c775"/><section>
+    <title>TopHeaderHeight</title>
+<indexterm><primary>TopHeaderHeight</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>TopHeaderHeight</secondary></indexterm>
+<para><computeroutput>const int AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.TopHeaderHeight = 19<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a2d07026f142e8b42016f4791bf072799"/><section>
+    <title>ValueFlag</title>
+<indexterm><primary>ValueFlag</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>ValueFlag</secondary></indexterm>
+<para><computeroutput>const bool AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.ValueFlag = false<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer_1a133360ee778119b23b302376a17999d0"/><section>
+    <title>ValueName</title>
+<indexterm><primary>ValueName</primary><secondary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer</primary><secondary>ValueName</secondary></indexterm>
+<para><computeroutput>const string AYellowpaper.SerializedCollections.Editor.SerializedDictionaryDrawer.ValueName = nameof(SerializedKeyValuePair&lt;int, int&gt;.Value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/<link linkend="__serialized_dictionary_drawer_8cs">SerializedDictionaryDrawer.cs</link></section>
+</section>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_build_status_watcher" xml:lang="en-US">
+<title>FMODUnity.BuildStatusWatcher Class Reference</title>
+<indexterm><primary>FMODUnity.BuildStatusWatcher</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_f_m_o_d_unity_1_1_build_status_watcher_1a5e6bbe6e4b3856f27dff6d85800a3ff3">Startup</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static Action <link linkend="_class_f_m_o_d_unity_1_1_build_status_watcher_1a9225eb505e4c338a64c3190cce93e9aa">OnBuildStarted</link></para>
+</listitem>
+            <listitem><para>static Action <link linkend="_class_f_m_o_d_unity_1_1_build_status_watcher_1a6a184685d8c28fb7aa63574f4ae382d3">OnBuildEnded</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_build_status_watcher_1a5e6bbe6e4b3856f27dff6d85800a3ff3"/><section>
+    <title>Startup()</title>
+<indexterm><primary>Startup</primary><secondary>FMODUnity.BuildStatusWatcher</secondary></indexterm>
+<indexterm><primary>FMODUnity.BuildStatusWatcher</primary><secondary>Startup</secondary></indexterm>
+<para><computeroutput>void FMODUnity.BuildStatusWatcher.Startup ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_build_status_watcher_1a6a184685d8c28fb7aa63574f4ae382d3"/><section>
+    <title>OnBuildEnded</title>
+<indexterm><primary>OnBuildEnded</primary><secondary>FMODUnity.BuildStatusWatcher</secondary></indexterm>
+<indexterm><primary>FMODUnity.BuildStatusWatcher</primary><secondary>OnBuildEnded</secondary></indexterm>
+<para><computeroutput>Action FMODUnity.BuildStatusWatcher.OnBuildEnded<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_build_status_watcher_1a9225eb505e4c338a64c3190cce93e9aa"/><section>
+    <title>OnBuildStarted</title>
+<indexterm><primary>OnBuildStarted</primary><secondary>FMODUnity.BuildStatusWatcher</secondary></indexterm>
+<indexterm><primary>FMODUnity.BuildStatusWatcher</primary><secondary>OnBuildStarted</secondary></indexterm>
+<para><computeroutput>Action FMODUnity.BuildStatusWatcher.OnBuildStarted<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_utils_8cs">EditorUtils.cs</link></section>
+</section>

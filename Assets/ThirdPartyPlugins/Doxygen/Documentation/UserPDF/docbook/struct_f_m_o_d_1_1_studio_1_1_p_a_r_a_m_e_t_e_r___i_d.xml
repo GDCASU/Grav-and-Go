@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d" xml:lang="en-US">
+<title>FMOD.Studio.PARAMETER_ID Struct Reference</title>
+<indexterm><primary>FMOD.Studio.PARAMETER_ID</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d_1ab598b13ce9c3e4e82db01bf09e39685b">data1</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d_1a7465b8bfa693e3c8c0c8a5b1d62b6fad">data2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d_1ab598b13ce9c3e4e82db01bf09e39685b"/><section>
+    <title>data1</title>
+<indexterm><primary>data1</primary><secondary>FMOD.Studio.PARAMETER_ID</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.PARAMETER_ID</primary><secondary>data1</secondary></indexterm>
+<para><computeroutput>uint FMOD.Studio.PARAMETER_ID.data1</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d_1a7465b8bfa693e3c8c0c8a5b1d62b6fad"/><section>
+    <title>data2</title>
+<indexterm><primary>data2</primary><secondary>FMOD.Studio.PARAMETER_ID</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.PARAMETER_ID</primary><secondary>data2</secondary></indexterm>
+<para><computeroutput>uint FMOD.Studio.PARAMETER_ID.data2</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

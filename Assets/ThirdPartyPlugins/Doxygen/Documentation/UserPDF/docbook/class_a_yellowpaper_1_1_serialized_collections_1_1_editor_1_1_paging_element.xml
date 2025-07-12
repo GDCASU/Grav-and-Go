@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.PagingElement Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1a53a70ac132f332b199bacec5fd9234d1">PagingElement</link> (int pageCount=1)</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1a21b201be64f805b3ce10c6b520d65a0a">GetDesiredWidth</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1adb1b2b2f02374a22b52f86ce37954677">OnGUI</link> (Rect rect)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1ad28524585140f95031a5fc9b237407a5">Page</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1ac2b1b9b522ecc3b2e9f05f283180e127">PageCount</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1a53a70ac132f332b199bacec5fd9234d1"/><section>
+    <title>PagingElement()</title>
+<indexterm><primary>PagingElement</primary><secondary>AYellowpaper.SerializedCollections.Editor.PagingElement</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary><secondary>PagingElement</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.Editor.PagingElement.PagingElement (int pageCount = <computeroutput>1</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1a21b201be64f805b3ce10c6b520d65a0a"/><section>
+    <title>GetDesiredWidth()</title>
+<indexterm><primary>GetDesiredWidth</primary><secondary>AYellowpaper.SerializedCollections.Editor.PagingElement</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary><secondary>GetDesiredWidth</secondary></indexterm>
+<para><computeroutput>float AYellowpaper.SerializedCollections.Editor.PagingElement.GetDesiredWidth ( )</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1adb1b2b2f02374a22b52f86ce37954677"/><section>
+    <title>OnGUI()</title>
+<indexterm><primary>OnGUI</primary><secondary>AYellowpaper.SerializedCollections.Editor.PagingElement</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary><secondary>OnGUI</secondary></indexterm>
+<para><computeroutput>void AYellowpaper.SerializedCollections.Editor.PagingElement.OnGUI (Rect rect)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1ad28524585140f95031a5fc9b237407a5"/><section>
+    <title>Page</title>
+<indexterm><primary>Page</primary><secondary>AYellowpaper.SerializedCollections.Editor.PagingElement</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary><secondary>Page</secondary></indexterm>
+<para><computeroutput>int AYellowpaper.SerializedCollections.Editor.PagingElement.Page<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_paging_element_1ac2b1b9b522ecc3b2e9f05f283180e127"/><section>
+    <title>PageCount</title>
+<indexterm><primary>PageCount</primary><secondary>AYellowpaper.SerializedCollections.Editor.PagingElement</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.PagingElement</primary><secondary>PageCount</secondary></indexterm>
+<para><computeroutput>int AYellowpaper.SerializedCollections.Editor.PagingElement.PageCount<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/<link linkend="__paging_element_8cs">PagingElement.cs</link></section>
+</section>

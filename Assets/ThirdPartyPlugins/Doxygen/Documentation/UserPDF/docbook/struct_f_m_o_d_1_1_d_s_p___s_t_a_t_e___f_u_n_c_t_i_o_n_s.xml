@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s" xml:lang="en-US">
+<title>FMOD.DSP_STATE_FUNCTIONS Struct Reference</title>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a3e36cd160e883f03283f6d8a77810509">DSP_ALLOC_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a3278aae6fc6232dbcef2d0918d1a9a83">alloc</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1af385a5fbca776f7b3bc8f910c2540b9c">DSP_REALLOC_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1af43e4542db14ce36e0e6ac7feae9e387">realloc</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a5426909f615105d46bcbaf33e41cca8f">DSP_FREE_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a3245df9c1084e5e8a9c71c9880b1d08f">free</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1aee834eef0180b265899ffdce61299a62">DSP_GETSAMPLERATE_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a11b803614b093663adf01f80cc08762d">getsamplerate</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a4518c719922df6e2af2ff5a0c0041753">DSP_GETBLOCKSIZE_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a18b1fbc6581e5b0f799fc14a6cf84901">getblocksize</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1ac50be80ae85d9ec947d8c1dd12cdc320">dft</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a677cac5df4dae541ebc3e94efd5dea99">pan</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a34ff86426cce2e41b0d000dfcbb72c7c">DSP_GETSPEAKERMODE_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1af2e943435783887b53ed71222b1200a2">getspeakermode</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a61a04766ee603ec5a85c16f3f00c7bbc">DSP_GETCLOCK_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a4d73c0741eb8e00e0799c906e3f23f88">getclock</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ad346d3495c9f543248f32b1539d1bb12">DSP_GETLISTENERATTRIBUTES_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a9db715971d8e9db278bb85e502d638b7">getlistenerattributes</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a609f03aa39926583355f0fc88dc78bae">DSP_LOG_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a9db491ac7446ea6c8c1d89cffc4859b7">log</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a7b878ea696d9ceffd89c39d8a4a81246">DSP_GETUSERDATA_FUNC</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a5736eec902dc1e50e7abaee2bc2c19cb">getuserdata</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a3278aae6fc6232dbcef2d0918d1a9a83"/><section>
+    <title>alloc</title>
+<indexterm><primary>alloc</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>alloc</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a3e36cd160e883f03283f6d8a77810509">DSP_ALLOC_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.alloc</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1ac50be80ae85d9ec947d8c1dd12cdc320"/><section>
+    <title>dft</title>
+<indexterm><primary>dft</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>dft</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE_FUNCTIONS.dft</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a3245df9c1084e5e8a9c71c9880b1d08f"/><section>
+    <title>free</title>
+<indexterm><primary>free</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>free</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a5426909f615105d46bcbaf33e41cca8f">DSP_FREE_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.free</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a18b1fbc6581e5b0f799fc14a6cf84901"/><section>
+    <title>getblocksize</title>
+<indexterm><primary>getblocksize</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getblocksize</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a4518c719922df6e2af2ff5a0c0041753">DSP_GETBLOCKSIZE_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getblocksize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a4d73c0741eb8e00e0799c906e3f23f88"/><section>
+    <title>getclock</title>
+<indexterm><primary>getclock</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getclock</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a61a04766ee603ec5a85c16f3f00c7bbc">DSP_GETCLOCK_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getclock</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a9db715971d8e9db278bb85e502d638b7"/><section>
+    <title>getlistenerattributes</title>
+<indexterm><primary>getlistenerattributes</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getlistenerattributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ad346d3495c9f543248f32b1539d1bb12">DSP_GETLISTENERATTRIBUTES_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getlistenerattributes</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a11b803614b093663adf01f80cc08762d"/><section>
+    <title>getsamplerate</title>
+<indexterm><primary>getsamplerate</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getsamplerate</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1aee834eef0180b265899ffdce61299a62">DSP_GETSAMPLERATE_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getsamplerate</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1af2e943435783887b53ed71222b1200a2"/><section>
+    <title>getspeakermode</title>
+<indexterm><primary>getspeakermode</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getspeakermode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a34ff86426cce2e41b0d000dfcbb72c7c">DSP_GETSPEAKERMODE_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getspeakermode</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a5736eec902dc1e50e7abaee2bc2c19cb"/><section>
+    <title>getuserdata</title>
+<indexterm><primary>getuserdata</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>getuserdata</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a7b878ea696d9ceffd89c39d8a4a81246">DSP_GETUSERDATA_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.getuserdata</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a9db491ac7446ea6c8c1d89cffc4859b7"/><section>
+    <title>log</title>
+<indexterm><primary>log</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>log</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a609f03aa39926583355f0fc88dc78bae">DSP_LOG_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.log</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1a677cac5df4dae541ebc3e94efd5dea99"/><section>
+    <title>pan</title>
+<indexterm><primary>pan</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>pan</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE_FUNCTIONS.pan</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e___f_u_n_c_t_i_o_n_s_1af43e4542db14ce36e0e6ac7feae9e387"/><section>
+    <title>realloc</title>
+<indexterm><primary>realloc</primary><secondary>FMOD.DSP_STATE_FUNCTIONS</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE_FUNCTIONS</primary><secondary>realloc</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1af385a5fbca776f7b3bc8f910c2540b9c">DSP_REALLOC_FUNC</link> FMOD.DSP_STATE_FUNCTIONS.realloc</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>
