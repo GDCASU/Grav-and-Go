@@ -58,6 +58,7 @@ jobs:
 
       - name: Replace docs content
         run: |
+          ls docs-branch/*
           rm -rf docs-branch/*
           cp -r html/* docs-branch/
 
