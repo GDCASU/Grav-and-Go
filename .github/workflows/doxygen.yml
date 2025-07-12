@@ -59,7 +59,7 @@ jobs:
       - name: Replace docs content
         run: |
           rm -rf docs-branch/*
-          ls docs-branch/*
+          ls
           cp -r html/* docs-branch/
 
       - name: Commit and push docs
