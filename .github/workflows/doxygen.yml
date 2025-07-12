@@ -1,41 +1,68 @@
-name: Update Documentation
+name: update-documentation
 
 on:
   push:
     branches:
-    - main
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  init_doxygen:
+  generate-docs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/doxygen/doxygen:release_1_14_0
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-          
-      - name: Generate New Documentation
+
+      - name: Generate Documentation
         run: |
           cd Assets
           doxygen -g
           doxygen Doxyfile
-          
-      - name: Move Docs to Docs Branch
+
+      - name: Upload generated docs as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-docs
+          path: Assets/html/
+
+  commit-docs:
+    runs-on: ubuntu-latest
+    needs: generate-docs
+    if: success() && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download generated docs
+        uses: actions/download-artifact@v3
+        with:
+          name: generated-docs
+
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-  
-          # create a worktree for the docs branch
+
+      - name: Prepare docs branch
+        run: |
+          git fetch origin docs || echo "docs branch does not exist yet"
           git worktree add -B docs docs-branch origin/docs
-  
-          # replace contents
+
+      - name: Replace docs content
+        run: |
           rm -rf docs-branch/*
           cp -r html/* docs-branch/
-  
+
+      - name: Commit and push docs
+        run: |
           cd docs-branch
           git add --all
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
