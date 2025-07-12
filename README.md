@@ -22,4 +22,6 @@ Video Game Development Club: Repository for the year 2025-2026
 ## Game Summary:
 TBD
 
-// link to documentation to be included here
+## Documentation: 
+[doxygen docs](https://gdcasu.github.io/VGDC-Game-2025-26/index.html)
+
