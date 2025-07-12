@@ -1,0 +1,45 @@
+name: Update Documentation
+
+on:
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+
+jobs:
+  init_doxygen:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+          
+      - name: Generate New Documentation
+        run: |
+          cd ${{ github.workspace }}
+          doxygen Doxyfile
+          
+      - name: Move Docs to Docs Branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  
+          # create a worktree for the docs branch
+          git worktree add -B docs docs-branch origin/docs
+  
+          # replace contents
+          rm -rf docs-branch/*
+          cp -r html/* docs-branch/
+  
+          cd docs-branch
+          git add --all
+          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+          git commit -m "Update Doxygen docs for commit ${SHORT_SHA}" || echo "No changes to commit"
+          git push origin HEAD:docs
