@@ -25,11 +25,15 @@ jobs:
           doxygen Doxyfile
           ls
 
-      - name: Upload generated docs as artifact
+      - name: Compress generated docs
+        run: |
+          tar -czf html.tar.gz -C Assets html
+
+      - name: Upload compressed docs as artifact
         uses: actions/upload-artifact@v4
         with:
           name: generated-docs
-          path: Assets/html
+          path: html.tar.gz
 
   commit-docs:
     runs-on: ubuntu-latest
@@ -42,10 +46,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download generated docs
+      - name: Download and extract html directory
         uses: actions/download-artifact@v4
         with:
           name: generated-docs
+
+
 
       - name: Configure Git
         run: |
@@ -57,11 +63,13 @@ jobs:
           git fetch origin docs || echo "docs branch does not exist yet"
           git worktree add -B docs docs-branch origin/docs
 
-      - name: Replace docs content
+      - name: Remove old docs content
         run: |
           rm -rf docs-branch/*
-          ls
-          cp -r html/* docs-branch/
+
+      - name: Extract html directory
+        run: |
+          tar -xzf generated-docs/html.tar.gz -C docs-branch
 
       - name: Commit and push docs
         run: |
