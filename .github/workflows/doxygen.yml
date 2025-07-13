@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate Documentation
         run: |
-          doxygen Doxyfile
+          doxygen doxygen_config
           ls -a
 
       - name: Compress generated docs
