@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['cacheassetfullname_0',['CacheAssetFullName',['../class_f_m_o_d_unity_1_1_event_manager.html#a4bddd56d65dfd19b93e1521dda90df15',1,'FMODUnity::EventManager']]],
+  ['cacheversion_1',['cacheVersion',['../class_f_m_o_d_unity_1_1_event_cache.html#a5a5b9f23930400bf3a1bd82c5d1e2b14',1,'FMODUnity::EventCache']]],
+  ['calculateunusedobjects_2',['calculateUnusedObjects',['../class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a448e2e5c03b09344c12dacb6c0df137b',1,'AssetUsageDetectorNamespace::AssetUsageDetector::Parameters']]],
+  ['callbackhandler_3',['CallbackHandler',['../class_f_m_o_d_unity_1_1_platform_1_1_property_storage.html#afd05b1b5d02c4fffd2ae5a5baef25aa9',1,'FMODUnity::Platform::PropertyStorage']]],
+  ['capacity_4',['capacity',['../struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___i_n_f_o.html#a09323b73df0321f8ec2f84e909182adf',1,'FMOD::Studio::BUFFER_INFO']]],
+  ['cbsize_5',['cbSize',['../struct_f_m_o_d_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s.html#a806a7ba729aaa41e926e7272eabe3d18',1,'FMOD::ADVANCEDSETTINGS']]],
+  ['cbsize_6',['cbsize',['../struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o.html#a52769cc631d94c7a14fd0c96ff2c815e',1,'FMOD.CREATESOUNDEXINFO.cbsize'],['../struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s.html#a2f4b8381be5bd5f1775cc175eb051466',1,'FMOD.Studio.ADVANCEDSETTINGS.cbsize']]],
+  ['ceiling_7',['Ceiling',['../class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room.html#ab9318d7b29ce7e4d5d71751f320eefa0',1,'FMODUnityResonance::FmodResonanceAudioRoom']]],
+  ['channelmask_8',['channelmask',['../struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e.html#a57c8297a3cd0e280a0bdfc5de15dfa59',1,'FMOD::DSP_STATE']]],
+  ['channelorder_9',['channelorder',['../struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o.html#a358b213a5929e7cfaf269bb00c1e52b7',1,'FMOD::CREATESOUNDEXINFO']]],
+  ['channels_10',['channels',['../class_f_m_o_d_unity_1_1_codec_channel_count.html#a12f8177b30e1278479485b19f60467f5',1,'FMODUnity::CodecChannelCount']]],
+  ['channelweight_11',['channelweight',['../struct_f_m_o_d_1_1_d_s_p___l_o_u_d_n_e_s_s___m_e_t_e_r___w_e_i_g_h_t_i_n_g___t_y_p_e.html#ad19c34f66d4a5a562649ab11f775c871',1,'FMOD::DSP_LOUDNESS_METER_WEIGHTING_TYPE']]],
+  ['closecallback_12',['closecallback',['../struct_f_m_o_d_1_1_studio_1_1_b_a_n_k___i_n_f_o.html#a1a42470924dc02dce9889213ddc1e6e2',1,'FMOD::Studio::BANK_INFO']]],
+  ['collider_13',['collider',['../class_physics_object.html#ab3b0ecffda0df63f042bc33b915a0b74',1,'PhysicsObject']]],
+  ['collisiontag_14',['CollisionTag',['../class_f_m_o_d_unity_1_1_event_handler.html#a111bb91dcf4d78ed90b6b099268c6fa3',1,'FMODUnity.EventHandler.CollisionTag'],['../class_f_m_o_d_unity_1_1_studio_bank_loader.html#a6b85d7346c5bb754c84821170bd69217',1,'FMODUnity.StudioBankLoader.CollisionTag']]],
+  ['commandname_15',['commandname',['../struct_f_m_o_d_1_1_studio_1_1_c_o_m_m_a_n_d___i_n_f_o.html#aae6adb47494fef8cc61d4f838bdb1b0a',1,'FMOD::Studio::COMMAND_INFO']]],
+  ['commandqueuesize_16',['commandqueuesize',['../struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s.html#a1d08b4045cf2f041a19c9a47a3868a64',1,'FMOD::Studio::ADVANCEDSETTINGS']]],
+  ['constidentifier_17',['ConstIdentifier',['../class_f_m_o_d_unity_1_1_platform_default.html#ab8dcaa067e64c3e66b140310b35491d2',1,'FMODUnity::PlatformDefault']]],
+  ['context_18',['Context',['../class_asset_usage_detector_namespace_1_1_search_match.html#a39753d71a5e6e603e8c28a5d08306271',1,'AssetUsageDetectorNamespace::SearchMatch']]],
+  ['convolution1_19',['convolution1',['../struct_f_m_o_d_1_1_c_p_u___u_s_a_g_e.html#a520beeca37a892762e931219d5fdd49a',1,'FMOD::CPU_USAGE']]],
+  ['convolution2_20',['convolution2',['../struct_f_m_o_d_1_1_c_p_u___u_s_a_g_e.html#a34d0f8312ac964e00ae5cd957f040fcc',1,'FMOD::CPU_USAGE']]],
+  ['count_21',['Count',['../struct_f_m_o_d_unity_1_1_automatable_slots.html#a2659d3e6a54e3a039bd956f32ed3690b',1,'FMODUnity::AutomatableSlots']]],
+  ['coyotetime_22',['CoyoteTime',['../class_scriptable_stats.html#a20c5882cfca0bdf9d6adc677d7184275',1,'ScriptableStats']]],
+  ['create_23',['create',['../struct_f_m_o_d_1_1_d_s_p___d_e_s_c_r_i_p_t_i_o_n.html#a2a0d8719d6a38b4b827bf250f12cdb9a',1,'FMOD::DSP_DESCRIPTION']]],
+  ['currentusage_24',['currentusage',['../struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___i_n_f_o.html#a18bc4dc02e338680d1d2274ece76d8d6',1,'FMOD::Studio::BUFFER_INFO']]]
+];
