@@ -20,8 +20,6 @@ jobs:
 
       - name: Generate Documentation
         run: |
-          cd Assets
-          doxygen -g
           doxygen Doxyfile
           ls -a
 
