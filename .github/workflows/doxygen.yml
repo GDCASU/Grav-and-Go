@@ -68,7 +68,7 @@ jobs:
 
       - name: Extract html directory
         run: |
-          tar -xzf generated-docs/html.tar.gz -C docs-branch
+          tar -xzf html.tar.gz -C docs-branch
 
       - name: Commit and push docs
         run: |
