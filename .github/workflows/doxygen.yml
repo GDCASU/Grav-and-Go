@@ -27,7 +27,7 @@ jobs:
 
       - name: Compress generated docs
         run: |
-          tar -czf html.tar.gz -C Assets html
+          tar -czf html.tar.gz -C Assets/html .
 
       - name: Upload compressed docs as artifact
         uses: actions/upload-artifact@v4
