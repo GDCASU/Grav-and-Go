@@ -23,7 +23,7 @@ jobs:
           cd Assets
           doxygen -g
           doxygen Doxyfile
-          ls ./html
+          ls -a
 
       - name: Compress generated docs
         run: |
