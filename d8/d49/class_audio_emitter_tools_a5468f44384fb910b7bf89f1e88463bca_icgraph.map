@@ -1,0 +1,6 @@
+<map id="AudioEmitterTools.StringToInteger" name="AudioEmitterTools.StringToInteger">
+<area shape="rect" id="Node000001" title="Function that returns the integer hash equivalent of the string passed to it." alt="" coords="264,22,447,62"/>
+<area shape="rect" id="Node000002" href="$d9/d11/class_multi_audio_emitter.html#ac5a1ed6b0846d06832492493dff1c31a" title=" " alt="" coords="5,29,216,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,45,216,45,216,39,250,39"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="154,20,151,15,144,12,111,8,85,10,71,15,68,20,75,27,71,31,63,21,67,11,84,5,111,3,145,7,155,11,158,17"/>
+</map>

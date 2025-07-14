@@ -1,0 +1,5 @@
+<map id="InspectorReadOnly" name="InspectorReadOnly">
+<area shape="rect" id="Node000001" title="Creates a [InspectorReadOnly] Attribute so we can expose values to the inspector while not allowing i..." alt="" coords="5,79,151,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,145,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,44,81,79,75,79,75,44"/>
+</map>

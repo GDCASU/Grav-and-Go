@@ -1,0 +1,5 @@
+<map id="InteractionManager2D" name="InteractionManager2D">
+<area shape="rect" id="Node000001" title="2&#45;D interaction manager that looks for the nearest Interactable inside an OverlapCircle each frame (w..." alt="" coords="5,79,172,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,151,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
+</map>

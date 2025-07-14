@@ -1,0 +1,9 @@
+<map id="PhysicsObject" name="PhysicsObject">
+<area shape="rect" id="Node000001" title="Abstract class that governs all physics objects." alt="" coords="97,79,210,104"/>
+<area shape="rect" id="Node000003" href="$de/df2/class_grabbable_object.html" title="Class that governs all physics objects that can be grabbed." alt="" coords="5,152,136,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,115,86,154,82,150,128,111"/>
+<area shape="rect" id="Node000004" href="$d7/dce/classinfluenceable_object.html" title=" " alt="" coords="161,152,311,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,111,224,150,221,154,175,115"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="91,5,215,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,44,156,79,151,79,151,44"/>
+</map>
