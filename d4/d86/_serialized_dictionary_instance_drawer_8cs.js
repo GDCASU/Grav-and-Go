@@ -1,4 +1,0 @@
-var _serialized_dictionary_instance_drawer_8cs =
-[
-    [ "AYellowpaper.SerializedCollections.Editor.SerializedDictionaryInstanceDrawer", "d0/dab/class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_instance_drawer.html", "d0/dab/class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_instance_drawer" ]
-];

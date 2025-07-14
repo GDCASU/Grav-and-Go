@@ -119,13 +119,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53cae3504dfeef5bf6b651fb10c26e51" id="r_a53cae3504dfeef5bf6b651fb10c26e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53cae3504dfeef5bf6b651fb10c26e51">SetVolume</a> (<a class="el" href="../../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290">SoundControllers</a> targetVCA, float volume, float maxSliderVal)</td></tr>
-<tr class="memitem:a905a97a244795293bcee61eff3be7708" id="r_a905a97a244795293bcee61eff3be7708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a905a97a244795293bcee61eff3be7708">StopAllSounds</a> (<a class="el" href="../../de/db0/namespace_f_m_o_d_1_1_studio.html#acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</a> mode)</td></tr>
+<tr class="memitem:a905a97a244795293bcee61eff3be7708" id="r_a905a97a244795293bcee61eff3be7708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a905a97a244795293bcee61eff3be7708">StopAllSounds</a> (FMOD.Studio.STOP_MODE mode)</td></tr>
 <tr class="memdesc:a905a97a244795293bcee61eff3be7708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop all sounds playing.  <br /></td></tr>
 <tr class="memitem:aca7433eef1205212fb50ca369b10722c" id="r_aca7433eef1205212fb50ca369b10722c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7433eef1205212fb50ca369b10722c">PauseAllSounds</a> ()</td></tr>
 <tr class="memdesc:aca7433eef1205212fb50ca369b10722c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses ALL sounds in the game, use carefully and sparingly.  <br /></td></tr>
 <tr class="memitem:adafecddf771fa842c3b6f391014809c3" id="r_adafecddf771fa842c3b6f391014809c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adafecddf771fa842c3b6f391014809c3">ResumeAllSounds</a> ()</td></tr>
 <tr class="memdesc:adafecddf771fa842c3b6f391014809c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume's all events that are paused.  <br /></td></tr>
-<tr class="memitem:a0c2fd8e9afde5e4d5f5dc9f86e823e10" id="r_a0c2fd8e9afde5e4d5f5dc9f86e823e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c2fd8e9afde5e4d5f5dc9f86e823e10">StopSoundGroup</a> (<a class="el" href="../../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8">SoundGroups</a> targetGroup, <a class="el" href="../../de/db0/namespace_f_m_o_d_1_1_studio.html#acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</a> mode)</td></tr>
+<tr class="memitem:a0c2fd8e9afde5e4d5f5dc9f86e823e10" id="r_a0c2fd8e9afde5e4d5f5dc9f86e823e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c2fd8e9afde5e4d5f5dc9f86e823e10">StopSoundGroup</a> (<a class="el" href="../../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8">SoundGroups</a> targetGroup, FMOD.Studio.STOP_MODE mode)</td></tr>
 <tr class="memdesc:a0c2fd8e9afde5e4d5f5dc9f86e823e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all sounds under the specified category.  <br /></td></tr>
 <tr class="memitem:ace5bbbf7646375bc8bba9221d7fefad7" id="r_ace5bbbf7646375bc8bba9221d7fefad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace5bbbf7646375bc8bba9221d7fefad7">PauseSoundGroup</a> (<a class="el" href="../../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8">SoundGroups</a> targetGroup)</td></tr>
 <tr class="memdesc:ace5bbbf7646375bc8bba9221d7fefad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses all sounds under the specified category.  <br /></td></tr>
@@ -307,7 +307,7 @@ Events</h2></td></tr>
         <tr>
           <td class="memname">void SoundManager.StopAllSounds </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/db0/namespace_f_m_o_d_1_1_studio.html#acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td class="paramtype">FMOD.Studio.STOP_MODE</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -334,7 +334,7 @@ Events</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/db0/namespace_f_m_o_d_1_1_studio.html#acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+          <td class="paramtype">FMOD.Studio.STOP_MODE</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
