@@ -1,0 +1,26 @@
+var class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters =
+[
+    [ "calculateUnusedObjects", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a448e2e5c03b09344c12dacb6c0df137b", null ],
+    [ "dontSearchInSourceAssets", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a5c8c4f08a98abfd9447c852ca29d6b91", null ],
+    [ "excludedAssetsFromSearch", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a11e4679ce0dfafda77842ec6b7fe5603", null ],
+    [ "excludedScenesFromSearch", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a0c23facfac0ed09c9903b4aa707053f3", null ],
+    [ "fieldModifiers", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a7934c0dfc028eca368f5206d4468ca0b", null ],
+    [ "hideDuplicateRows", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a60b5b74a55457e40f391852e4145342a", null ],
+    [ "hideRedundantPrefabReferencesInAssets", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a3d1951132a1d4310ca090ee7fdfbd68d", null ],
+    [ "hideRedundantPrefabReferencesInScenes", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#ad8e5e65b62f435043497f8d14609b168", null ],
+    [ "lazySceneSearch", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a1ae81aa7b9aeedb8008a731409e71c60", null ],
+    [ "noAssetDatabaseChanges", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#adf906a98e52c152d9f7b3f8c4891f4a0", null ],
+    [ "objectsToSearch", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a49461d418d5b27f106bff50ac1b3a37f", null ],
+    [ "propertyModifiers", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#ad8e931118db064b3d27c5e0e4cc58228", null ],
+    [ "searchDepthLimit", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#ad8ea485b5cc69aa44a1db988d941149f", null ],
+    [ "searchInAssetsFolder", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a9a6784cf20bf8f885dc5e421d029899f", null ],
+    [ "searchInAssetsSubset", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#adefa94744fbaf1d7f122b505df329344", null ],
+    [ "searchInProjectSettings", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a5865cdafa54e1d44e8825241a08f02cb", null ],
+    [ "searchInSceneLightingSettings", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a37d209621ab832a70a7208b65fff22ae", null ],
+    [ "searchInScenes", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a571cfebf9f2a83312b40e55cf2b2386d", null ],
+    [ "searchInScenesSubset", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#aa897898f94aee1a53a76ee26958a1c94", null ],
+    [ "searchNonSerializableVariables", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#afd9257055787145b0b961e517c992096", null ],
+    [ "searchRefactoring", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a7faa866d8c0f2942e2916cb21ef333ce", null ],
+    [ "searchUnusedMaterialProperties", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#aec90eb388cdfd17949c1193870def970", null ],
+    [ "showDetailedProgressBar", "d7/df8/class_asset_usage_detector_namespace_1_1_asset_usage_detector_1_1_parameters.html#a2c13ec91cd70c83e9feb3429073911b8", null ]
+];

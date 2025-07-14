@@ -1,0 +1,27 @@
+var class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings =
+[
+    [ "CreatePreferencesGUI", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a6c82cbf60aef9e02e989013e42d7c66a", null ],
+    [ "PreferencesGUI", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a67575c5d58b39ba89c5d9ac8c2b7b0c2", null ],
+    [ "ApplySelectedRowParentsTintToRootRows", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#aeae3b7839bf20290283aef3c2714e113", null ],
+    [ "CustomTooltipDelay", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#abbfae09e24742fbd1e9e59167f4b8987", null ],
+    [ "ExtraRowHeight", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a90c15adbd3634483376cf0f67cb61bd4", null ],
+    [ "HighlightedTreeLinesColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#aff8fbf31d03f53a17f6d8627e59949ab", null ],
+    [ "MainReferencesBackgroundColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a281aa743705fc91bba7872dc1c0980c7", null ],
+    [ "MarkUsedAssetsSubAssetsAsUsed", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a5beb2b8f6775e50b7ce73eb70acac974", null ],
+    [ "PingClickedObjects", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a99c231735d8757f6abfae03aa3fad936", null ],
+    [ "RootRowsBackgroundColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a87341ca21b46703800b9803e9a319c6c", null ],
+    [ "RootRowsBorderColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#afcafdeedbda3a6fb5bdb6fef4a216745", null ],
+    [ "SearchMatchingTextColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#aefb58e482299eeb1c4af82c6d3ddf8ba", null ],
+    [ "SearchResultGroupHeaderColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a33376cb9acda338bf7e387286b758580", null ],
+    [ "SelectClickedObjects", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#abd30fe928fd03bea0fb1bf1a41668d18", null ],
+    [ "SelectDoubleClickedObjects", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a98544a776a7ef47f85a2f69fa3d2aea9", null ],
+    [ "SelectedRowOccurrencesColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#ad245dc3ba4c010629a7afaae180ac2ac", null ],
+    [ "SelectedRowParentsTint", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a9f1bff527d3b46e536e47d685288b18f", null ],
+    [ "SettingsHeaderColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a8ed98adc7b7bfd790e40d23525c66680", null ],
+    [ "ShowCustomTooltip", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a11f7bb78c62bb1a1f43dbf0db60e728c", null ],
+    [ "ShowRootAssetName", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#ab310beb4c40bfafb3140b249cf0b3007", null ],
+    [ "ShowTreeLines", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#afec29fa213c73f083a8cc143bd3a3355", null ],
+    [ "ShowUnityTooltip", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a82dbc41515e46e216bed31ea875a4f74", null ],
+    [ "TooltipDescriptionTextColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a809e1e26097e41d168330f2a247704cb", null ],
+    [ "TreeLinesColor", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html#a435cfbd59192fa94e730475bc9d47f2e", null ]
+];

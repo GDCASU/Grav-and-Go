@@ -1,0 +1,47 @@
+var namespace_asset_usage_detector_namespace =
+[
+    [ "AnimationSystemMatch", "d8/df1/class_asset_usage_detector_namespace_1_1_animation_system_match.html", null ],
+    [ "AssetImporterDefaultValueMatch", "de/ded/class_asset_usage_detector_namespace_1_1_asset_importer_default_value_match.html", "de/ded/class_asset_usage_detector_namespace_1_1_asset_importer_default_value_match" ],
+    [ "AssetUsageDetector", "d3/dcf/class_asset_usage_detector_namespace_1_1_asset_usage_detector.html", "d3/dcf/class_asset_usage_detector_namespace_1_1_asset_usage_detector" ],
+    [ "AssetUsageDetectorSettings", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings.html", "df/ddc/class_asset_usage_detector_namespace_1_1_asset_usage_detector_settings" ],
+    [ "AssetUsageDetectorWindow", "d6/d09/class_asset_usage_detector_namespace_1_1_asset_usage_detector_window.html", "d6/d09/class_asset_usage_detector_namespace_1_1_asset_usage_detector_window" ],
+    [ "BehaviourUsageMatch", "dd/d5a/class_asset_usage_detector_namespace_1_1_behaviour_usage_match.html", "dd/d5a/class_asset_usage_detector_namespace_1_1_behaviour_usage_match" ],
+    [ "EmptyEnumerator< T >", "d5/d27/class_asset_usage_detector_namespace_1_1_empty_enumerator-1-g.html", "d5/d27/class_asset_usage_detector_namespace_1_1_empty_enumerator-1-g" ],
+    [ "GenericSearchMatch", "da/d2f/class_asset_usage_detector_namespace_1_1_generic_search_match.html", "da/d2f/class_asset_usage_detector_namespace_1_1_generic_search_match" ],
+    [ "IPropertyAccessor", "dc/d68/interface_asset_usage_detector_namespace_1_1_i_property_accessor.html", "dc/d68/interface_asset_usage_detector_namespace_1_1_i_property_accessor" ],
+    [ "ListDrawer< T >", "d3/dca/class_asset_usage_detector_namespace_1_1_list_drawer-1-g.html", "d3/dca/class_asset_usage_detector_namespace_1_1_list_drawer-1-g" ],
+    [ "ObjectListDrawer", "d9/daa/class_asset_usage_detector_namespace_1_1_object_list_drawer.html", "d9/daa/class_asset_usage_detector_namespace_1_1_object_list_drawer" ],
+    [ "ObjectToSearch", "d6/d75/class_asset_usage_detector_namespace_1_1_object_to_search.html", "d6/d75/class_asset_usage_detector_namespace_1_1_object_to_search" ],
+    [ "ObjectToSearchEnumerator", "d2/df5/class_asset_usage_detector_namespace_1_1_object_to_search_enumerator.html", "d2/df5/class_asset_usage_detector_namespace_1_1_object_to_search_enumerator" ],
+    [ "ObjectToSearchListDrawer", "da/db8/class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer.html", "da/db8/class_asset_usage_detector_namespace_1_1_object_to_search_list_drawer" ],
+    [ "OtherSearchMatch", "d4/da8/class_asset_usage_detector_namespace_1_1_other_search_match.html", null ],
+    [ "PrefabMatch", "db/dc7/class_asset_usage_detector_namespace_1_1_prefab_match.html", null ],
+    [ "PropertyWrapper< TObject, TValue >", "dd/d96/class_asset_usage_detector_namespace_1_1_property_wrapper-2-g.html", "dd/d96/class_asset_usage_detector_namespace_1_1_property_wrapper-2-g" ],
+    [ "ReadOnlySearchMatch", "d5/d7e/class_asset_usage_detector_namespace_1_1_read_only_search_match.html", "d5/d7e/class_asset_usage_detector_namespace_1_1_read_only_search_match" ],
+    [ "ReferenceNode", "d9/d78/class_asset_usage_detector_namespace_1_1_reference_node.html", "d9/d78/class_asset_usage_detector_namespace_1_1_reference_node" ],
+    [ "ReflectionMatch", "d3/dd9/class_asset_usage_detector_namespace_1_1_reflection_match.html", "d3/dd9/class_asset_usage_detector_namespace_1_1_reflection_match" ],
+    [ "SearchMatch", "db/d5f/class_asset_usage_detector_namespace_1_1_search_match.html", "db/d5f/class_asset_usage_detector_namespace_1_1_search_match" ],
+    [ "SearchResult", "da/d05/class_asset_usage_detector_namespace_1_1_search_result.html", "da/d05/class_asset_usage_detector_namespace_1_1_search_result" ],
+    [ "SearchResultGroup", "d8/d0f/class_asset_usage_detector_namespace_1_1_search_result_group.html", "d8/d0f/class_asset_usage_detector_namespace_1_1_search_result_group" ],
+    [ "SearchResultTooltip", "db/d1e/class_asset_usage_detector_namespace_1_1_search_result_tooltip.html", "db/d1e/class_asset_usage_detector_namespace_1_1_search_result_tooltip" ],
+    [ "SearchResultTreeView", "d3/d53/class_asset_usage_detector_namespace_1_1_search_result_tree_view.html", "d3/d53/class_asset_usage_detector_namespace_1_1_search_result_tree_view" ],
+    [ "SearchResultTreeViewIsolatedView", "dd/dcd/class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view.html", "dd/dcd/class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view" ],
+    [ "SearchResultTreeViewState", "d5/d94/class_asset_usage_detector_namespace_1_1_search_result_tree_view_state.html", "d5/d94/class_asset_usage_detector_namespace_1_1_search_result_tree_view_state" ],
+    [ "SerializedPropertyMatch", "da/dd7/class_asset_usage_detector_namespace_1_1_serialized_property_match.html", "da/dd7/class_asset_usage_detector_namespace_1_1_serialized_property_match" ],
+    [ "Utilities", "d0/d3e/class_asset_usage_detector_namespace_1_1_utilities.html", "d0/d3e/class_asset_usage_detector_namespace_1_1_utilities" ],
+    [ "VariableGetterHolder", "d9/da8/struct_asset_usage_detector_namespace_1_1_variable_getter_holder.html", "d9/da8/struct_asset_usage_detector_namespace_1_1_variable_getter_holder" ],
+    [ "Phase", "d2/d96/namespace_asset_usage_detector_namespace.html#af0514c3c3af133724db9c3b4e9afea7e", [
+      [ "Setup", "d2/d96/namespace_asset_usage_detector_namespace.html#af0514c3c3af133724db9c3b4e9afea7eaad2376beebecdcf7846ba973fa1a005b", null ],
+      [ "Processing", "d2/d96/namespace_asset_usage_detector_namespace.html#af0514c3c3af133724db9c3b4e9afea7ea643562a9ae7099c8aabfdc93478db117", null ],
+      [ "Complete", "d2/d96/namespace_asset_usage_detector_namespace.html#af0514c3c3af133724db9c3b4e9afea7eaae94f80b3ce82062a5dd7815daa04f9d", null ]
+    ] ],
+    [ "SceneSearchMode", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85", [
+      [ "None", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "OpenScenes", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85a4e1fc86cb84cbd24626e8c8ce5586f8a", null ],
+      [ "ScenesInBuildSettingsAll", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85a3314e3c65111e055b66fe5de893b4a17", null ],
+      [ "ScenesInBuildSettingsTickedOnly", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85a009d26e7431cb775dd2a9bae8b5e9867", null ],
+      [ "AllScenes", "d2/d96/namespace_asset_usage_detector_namespace.html#a4e87bc48b4ba7dd721706183c15c2f85abf5a8137bfac351c02ae82bb21a8dbc7", null ]
+    ] ],
+    [ "SearchRefactoring", "d2/d96/namespace_asset_usage_detector_namespace.html#a71ed09980589ebf5fb7f156ae069c544", null ],
+    [ "VariableGetVal", "d2/d96/namespace_asset_usage_detector_namespace.html#ab0df194f02dc0349fa59df0e4435a7f9", null ]
+];
