@@ -26,7 +26,7 @@ public class PlayerMovementController : MonoBehaviour
     private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
     private bool _cachedQueryStartInColliders;
 
-    #region Interface  --------------------------------------------------------
+    #region Interface
 
     /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
     public Vector2 FrameInput => _frameInput.Move;
@@ -57,6 +57,9 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Update()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         _time += Time.deltaTime;
         GatherInput();        // Poll Input System each render-frame
     }
@@ -93,6 +96,9 @@ public class PlayerMovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         CheckCollisions();  // Ground / ceiling detection first — movement depends on result
 
         HandleJump();

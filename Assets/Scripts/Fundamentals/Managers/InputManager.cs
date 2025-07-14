@@ -35,6 +35,8 @@ public class InputManager : MonoBehaviour
     
     /// <summary> Raised when the player clicks the interact key </summary>
     public static event Action OnInteract;
+    
+    public static event Action OnPause;
 
     #endregion
 
@@ -144,5 +146,9 @@ public class InputManager : MonoBehaviour
 
     /* ---------------- Level / UI -------------- */
     private void HandleLevelRetry(InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandlePause     (InputAction.CallbackContext ctx) { /* TODO */ }
+
+    private void HandlePause(InputAction.CallbackContext ctx)
+    {
+        OnPause?.Invoke();
+    }
 }

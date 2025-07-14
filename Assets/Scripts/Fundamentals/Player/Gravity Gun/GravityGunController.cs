@@ -53,6 +53,9 @@ public class GravityGunController : MonoBehaviour
 
     private void Update()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         // 1. Convert mouse position to world space
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorld.z = transform.position.z;          // flatten to sprite’s plane
@@ -119,6 +122,9 @@ public class GravityGunController : MonoBehaviour
     // Physics computation
     private void FixedUpdate()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         // Dont do anything if no focused object available
         if (!_focusedObject) return;
         
