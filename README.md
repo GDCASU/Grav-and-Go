@@ -23,5 +23,6 @@ Video Game Development Club: Repository for the year 2025-2026
 TBD
 
 ## Documentation: 
-[doxygen docs](https://gdcasu.github.io/VGDC-Game-2025-26/index.html)
+Our current codebase documentation is here: [doxygen docs](https://gdcasu.github.io/VGDC-Game-2025-26/index.html)
+(for members) to properly document your code, use the tips detailed [here](https://www.doxygen.nl/manual/docblocks.html)
 
