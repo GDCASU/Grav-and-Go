@@ -1197,7 +1197,7 @@ HTML_DYNAMIC_MENUS     = YES
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_DYNAMIC_SECTIONS  = YES
+HTML_DYNAMIC_SECTIONS  = NO
 
 # If the HTML_CODE_FOLDING tag is set to YES then classes and functions can be
 # dynamically folded and expanded in the generated HTML source code.
@@ -2399,7 +2399,7 @@ DOT_IMAGE_FORMAT       = png
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-INTERACTIVE_SVG        = NO
+INTERACTIVE_SVG        = YES
 
 # The DOT_PATH tag can be used to specify the path where the dot tool can be
 # found. If left blank, it is assumed the dot tool can be found in the path.
