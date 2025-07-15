@@ -5425,8 +5425,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2969068311871471201}
-  - {fileID: 2969068313154050965}
   - {fileID: 4706435015038256351}
+  - {fileID: 2969068313154050965}
   - {fileID: 7325782539537236310}
   m_Father: {fileID: 1544650614272011795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20495,7 +20495,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1334624170247368886, guid: 81cc6e573f07b264d9b4943b62124fc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20887,6 +20887,9 @@ MonoBehaviour:
   _maxVelocity: 4
   _pushForce: 10
   _pushRange: 2
+  _grabRange: 0.2
+  _rotateSpeed: 300
+  _grabDistanceBreak: 0
   _focusedObject: {fileID: 0}
   _isHoldingObject: 0
   doDebugLog: 0
