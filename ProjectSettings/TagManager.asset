@@ -17,7 +17,7 @@ TagManager:
   - Terrain
   - Interactable
   - Physics Objects
-  - 
+  - Ignore Player and Physics Object
   - 
   - 
   - 
