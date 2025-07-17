@@ -314,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 1607290443805032806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.75, y: 0.0000004806827, z: 0}
+  m_LocalPosition: {x: 7.77, y: 0.0000004806827, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5425,8 +5425,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2969068311871471201}
-  - {fileID: 2969068313154050965}
   - {fileID: 4706435015038256351}
+  - {fileID: 2969068313154050965}
   - {fileID: 7325782539537236310}
   m_Father: {fileID: 1544650614272011795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20495,7 +20495,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1334624170247368886, guid: 81cc6e573f07b264d9b4943b62124fc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20876,7 +20876,6 @@ MonoBehaviour:
   _helperTargetCircleSprite: {fileID: 9139349563892912873}
   _lineOfSightRenderer: {fileID: 7254014000091901524}
   _holdingLineRenderer: {fileID: 4411340333644592379}
-  _gravigunAngleOffset: 0
   _defaultLineOfSightColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
   _validTargetLineColor: {r: 0.9960785, g: 0.5529412, b: 0.09411766, a: 1}
   _maxRaycastDistance: 100
@@ -20884,12 +20883,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 640
   _pullForce: 10
-  _maxVelocity: 4
-  _pushForce: 10
+  _maxVelocity: 5
+  _pushForce: 20
   _pushRange: 2
-  _focusedObject: {fileID: 0}
-  _isHoldingObject: 0
+  _grabRange: 0.2
+  _rotateSpeed: 300
+  _grabDistanceBreak: 0
+  _pullPushCooldown: 0.2
   doDebugLog: 0
+  _focusedObject: {fileID: 0}
+  _currentLookDir: {x: 0, y: 0}
+  _isHoldingObject: 0
+  _pullExecutedThisFrame: 0
+  _isPlayerHoldingPullAfterGrab: 0
+  _isPushPullLocked: 0
 --- !u!1 &9025625058083382112
 GameObject:
   m_ObjectHideFlags: 0

@@ -114,3 +114,9 @@ Assets/Plugins/Editor/JetBrains*
 /[Aa]ssets/VGDC2025-26 SaveData/
 /[Aa]ssets/VGDC2025-26 SaveData.meta
 
+# Ignore Discord Rich Prescence Plugin
+/[Aa]ssets/ERP
+/[Aa]ssets/ERP.meta
+.erp
+
+

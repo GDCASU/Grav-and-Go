@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Debug = UnityEngine.Debug;
 
 /* -----------------------------------------------------------
  * Author:
@@ -32,27 +33,38 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private LineRenderer _holdingLineRenderer;
     
     [Header("Settings")]
-    [SerializeField] private float _gravigunAngleOffset;
     [SerializeField] private Color _defaultLineOfSightColor; // The color of the line when not pointing towards something influenceable
     [SerializeField] private Color _validTargetLineColor; // The color of the line when its pointing to a valid target
     [SerializeField, Range(0f,100f)] private float _maxRaycastDistance;
     [SerializeField] private LayerMask _lineRaycastMask;
     [SerializeField, Range(0f, 100f)] private float _pullForce;
-    [SerializeField, Range(0f, 100f)] private float _maxVelocity;
-    [SerializeField, Range(0f, 100f)] private float _pushForce;
-    [SerializeField, Range(0f, 100f)] private float _pushRange;
+    [SerializeField, Range(0f, 100f)] private float _maxVelocity; //
+    [SerializeField, Range(0f, 100f)] private float _pushForce; 
+    [SerializeField, Range(0f, 100f)] private float _pushRange; // Range in which the push works
+    [SerializeField, Range(0f, 10f)] private float _grabRange; // Range where the pull grabs the object
+    [SerializeField, Range(0f, 360f)] private float _rotateSpeed; // Speed at which the mousewheel rotates the object
+    [SerializeField, Range(0f, 100f)] private float _grabDistanceBreak; // The distance where the grab breaks from the object
+    [SerializeField, Range(0f, 2f)] private float _pullPushCooldown;
     
     [Header("Debugging")]
-    [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
-    [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
     [SerializeField] private bool doDebugLog;
     
+    [Header("Readouts")]
+    [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _currentLookDir;
+    [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
+    [SerializeField, InspectorReadOnly] private bool _pullExecutedThisFrame;
+    [SerializeField, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
+    [SerializeField, InspectorReadOnly] private bool _isPushPullLocked;
+    
     // Local variables
-    private Vector2 _currentLookDir;
     private RaycastHit2D _currentHit;
 
     private void Update()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+
         // 1. Convert mouse position to world space
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorld.z = transform.position.z;          // flatten to sprite’s plane
@@ -64,8 +76,19 @@ public class GravityGunController : MonoBehaviour
         float angle = Mathf.Atan2(_currentLookDir.y, _currentLookDir.x) * Mathf.Rad2Deg;
         
         // 4. Rotate around Z so +Y faces the cursor
-        _gravigunPivot.rotation = Quaternion.AngleAxis(angle + _gravigunAngleOffset, Vector3.forward);
+        _gravigunPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
+        // Dont do anything if holding an object
+        if (_isHoldingObject)
+        {
+            // Disable the direction line renderer
+            UpdateWhenGrabbingObject();
+            _lineOfSightRenderer.gameObject.SetActive(false);
+            _helperTargetCircleSprite.transform.position = _gravigunPivot.position;
+            return;
+        }
+        
+        // Wasn't holding, perform as usual
         // Fire a raycast in the direction of the mouse
         RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, _currentLookDir, _maxRaycastDistance, _lineRaycastMask);
         _currentHit = hit;
@@ -115,53 +138,163 @@ public class GravityGunController : MonoBehaviour
         // Was of type Physics Object
         _focusedObject = physicsObject;
     }
-
+    
+    
     // Physics computation
     private void FixedUpdate()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         // Dont do anything if no focused object available
         if (!_focusedObject) return;
+        
+        // Reset check bool
+        _pullExecutedThisFrame = false;
         
         // check if ignoring
         if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
         
-        // Was an infuelceable object, Enable outline and set line renderer
+        // Was an influenceable object, Enable outline and set line renderer
         // TODO: Would setting the shader property every fixed update affect performance too much?
         _focusedObject.EnableTarget();
         _focusedObject.ChangeOutlineColor(_validTargetLineColor);
         ChangeTargetCircleColor(_validTargetLineColor);
         ChangeLineRendererColor(_validTargetLineColor);
         
+        // Move focused object if grabbing
+        if (_isHoldingObject)
+        {
+            // Move object to destination
+            _focusedObject.rb.MovePosition(_gravigunHoldPos.position);
+        }
+        
+        // Dont do anything if on cooldown
+        if (_isPushPullLocked) return;
+        
+        // Check if we are grabbing
+        if (_isHoldingObject)
+        {
+            // Dont accept input until the player releases pull at least once
+            if (_isPlayerHoldingPullAfterGrab) return;
+            
+            // Check if player pressed pull as to drop the object
+            if (InputManager.Instance.pullHeldDownInput)
+            {
+                // Stop holding object
+                _isHoldingObject = false;
+                _focusedObject.rb.freezeRotation = false;
+            
+                // Trigger Cooldown
+                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                return;
+            }
+        
+            // Check if the player clicked push as to launch the object
+            if (InputManager.Instance.PopPushInputRecieved())
+            {
+                // Stop holding object
+                _isHoldingObject = false;
+                _focusedObject.rb.freezeRotation = false;
+            
+                // Perform push
+                PerformPush();
+            
+                // Trigger cooldown
+                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                return;
+            }
+            return;
+        }
+        
         // Perform Pull on non grabbed object if set to do so
         if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
         {
             PerformPull();
-            // Null any push input while pulling as to not queue it
-            InputManager.Instance.pushInputRecieved = false;
-            return;
+            _pullExecutedThisFrame = true;
         }
         
         // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
-        if (!InputManager.Instance.pullHeldDownInput && !_isHoldingObject && InputManager.Instance.pushInputRecieved)
+        if (!InputManager.Instance.pullHeldDownInput && !_isHoldingObject && InputManager.Instance.PopPushInputRecieved() && !_pullExecutedThisFrame)
         {
-            // Null the input field
-            InputManager.Instance.pushInputRecieved = false;
-            
             // Check if in range
             if (Vector2.Distance(_currentHit.point, _gravigunPivot.position) > _pushRange) return; // not in range
             
             // Was within range
             PerformPush();
+            
+            // Cooldown
+            StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
         }
+        
+        // passed both pull and push, reset bool
+        _pullExecutedThisFrame = false;
         
         // Dont attempt to grab object if not of type grabbable
         if (_focusedObject.physicsObjectType != PhysicsObjectType.Grabbable) return;
-
-        // TODO: GRAVIGUN LOGIC FOR GRABBING
+        
+        // Dont grab object if not in range
+        if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPos.position) >
+            _grabRange) return;
+        
+        // Dont grab if not pulling
+        if (!InputManager.Instance.pullHeldDownInput) return;
+        
+        // Grab object
+        _isHoldingObject = true;
+        _isPlayerHoldingPullAfterGrab = true;
+        _focusedObject.rb.freezeRotation = true;
+        
+        // Wait for the player to release pull before doing anything
+        StartCoroutine(WaitForPullReleaseRoutine());
     }
 
+    /// <summary>
+    /// Lock the grab for a bit to avoid input overlap
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator LockPullPushRoutine(float time)
+    {
+        _isPushPullLocked = true;
+        yield return new WaitForSeconds(time);
+        _isPushPullLocked = false;
+    }
+
+    /// <summary>
+    /// Coroutine that waits until the player lets go of pull to execute more actions
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator WaitForPullReleaseRoutine()
+    {
+        while (_isPlayerHoldingPullAfterGrab)
+        {
+            _isPlayerHoldingPullAfterGrab = InputManager.Instance.pullHeldDownInput;
+            yield return null;
+        }
+    }
+
+    /// <summary>
+    /// Function executed whenever the player is grabbing an object inside Update
+    /// </summary>
+    private void UpdateWhenGrabbingObject()
+    {
+        // Check for mouse up and down for rotation
+        if (InputManager.Instance.didPlayerRotateFoward)
+        {
+            _focusedObject.transform.Rotate(Vector3.forward, _rotateSpeed * Time.deltaTime, Space.Self);
+        }
+        else if (InputManager.Instance.didPlayerRotateBackwards)
+        {
+            _focusedObject.transform.Rotate(Vector3.forward, -1 * _rotateSpeed * Time.deltaTime, Space.Self);
+        }
+    }
+    
+    /// <summary>
+    /// Performs a pull on the currently focused object
+    /// </summary>
     private void PerformPull()
     {
+        // Apply force
         Vector2 dir = (_gravigunHoldPos.position - _focusedObject.transform.position);
         ApplyCappedForce(_focusedObject.rb,
             dir,
@@ -169,14 +302,13 @@ public class GravityGunController : MonoBehaviour
             ForceMode2D.Force,
             _maxVelocity);
     }
-
+    
+    /// <summary>
+    /// Performs a push on the currently focused object
+    /// </summary>
     private void PerformPush()
     {
-        ApplyCappedForce(_focusedObject.rb,
-            _currentLookDir,
-            _pushForce,
-            ForceMode2D.Impulse,
-            _maxVelocity);
+        _focusedObject.rb.AddForce(_currentLookDir * _pushForce, ForceMode2D.Impulse);
     }
     
     /// <summary>
@@ -185,18 +317,11 @@ public class GravityGunController : MonoBehaviour
     private void ApplyCappedForce(Rigidbody2D rb, Vector2 dir, float force, ForceMode2D mode, float maxVel)
     {
         dir = dir.normalized;
-        Vector2 v = rb.linearVelocity;               // or rb.linearVelocity if using DOTS
-        float along = Vector2.Dot(v, dir);       // signed speed toward dir
+        Vector2 v = rb.linearVelocity;
+        float along = Vector2.Dot(v, dir); // signed speed toward dir
 
-        // accelerate while below the cap
+        // accelerate only while below the cap
         if (along < maxVel) rb.AddForce(dir * force, mode);
-        
-        // clamp if we overshoot
-        if (along > maxVel)
-        {
-            Vector2 sideways = v - dir * along;     // flush along-component
-            rb.linearVelocity = sideways + dir * maxVel;
-        }
     }
     
     
@@ -234,9 +359,6 @@ public class GravityGunController : MonoBehaviour
     {
         _helperTargetCircleSprite.color = color;
     }
-    
-    // 
-    
     
     #if UNITY_EDITOR
 

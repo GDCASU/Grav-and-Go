@@ -23,3 +23,11 @@ public class InspectorReadOnly : PropertyAttribute
 {
 
 }
+
+/// <summary>
+/// Creates a [Vector2Compass] Attribute to draw vector2s on the gui
+/// </summary>
+public class Vector2CompassAttribute : PropertyAttribute
+{
+ 
+}

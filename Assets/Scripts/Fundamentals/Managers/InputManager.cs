@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Singleton that owns the <c>PlayerControls</c> asset and surfaces the
@@ -20,7 +21,9 @@ public class InputManager : MonoBehaviour
     public bool jumpHeldDownInput { get; private set; }  // True while jump button held
     public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
     public bool pullHeldDownInput { get; private set; }
-    public bool pushInputRecieved; // Controlled by the gravigun
+    private bool _pushInputRecieved;
+    public bool didPlayerRotateFoward { get; private set; }
+    public bool didPlayerRotateBackwards { get; private set; }
 
     /* ---------- Private vars ---------- */
     private PlayerControls _playerControls;
@@ -35,6 +38,8 @@ public class InputManager : MonoBehaviour
     
     /// <summary> Raised when the player clicks the interact key </summary>
     public static event Action OnInteract;
+    
+    public static event Action OnPause;
 
     #endregion
 
@@ -51,7 +56,6 @@ public class InputManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
         /* -------- Input System mapping -------- */
         if (_playerControls == null)
@@ -72,7 +76,7 @@ public class InputManager : MonoBehaviour
         if (_playerControls.GravityGun.Push.WasPerformedThisFrame())
         {
             // This one requires special attention due to the gravity gun using fixedUpdate
-            pushInputRecieved = true;
+            _pushInputRecieved = true;
         }
         
     }
@@ -100,21 +104,23 @@ public class InputManager : MonoBehaviour
     {
         /* -------- Movement Axis -------- */
         _playerControls.Movement.Move.performed += HandleMovementInput;
-        _playerControls.Movement.Move.canceled  += HandleMovementInput;
+        _playerControls.Movement.Move.canceled += HandleMovementInput;
 
         /* -------- Gravity Gun Actions -------- */
-        _playerControls.GravityGun.Push.performed   += HandlePush;
-        _playerControls.GravityGun.Pull.performed  += HandlePull;
-        _playerControls.GravityGun.Special.performed+= HandleSpecial;
+        _playerControls.GravityGun.Push.performed += HandlePush;
+        _playerControls.GravityGun.Pull.performed += HandlePull;
+        _playerControls.GravityGun.Special.performed += HandleSpecial;
         _playerControls.GravityGun.RotateObjectBackwards.performed += HandleRotateBackwards;
-        _playerControls.GravityGun.RotateObjectFoward.performed   += HandleRotateFoward;
+        _playerControls.GravityGun.RotateObjectBackwards.canceled += HandleRotateBackwards;
+        _playerControls.GravityGun.RotateObjectFoward.performed += HandleRotateFoward;
+        _playerControls.GravityGun.RotateObjectFoward.canceled += HandleRotateFoward;
         
         /* -------- Interactions -------- */
         _playerControls.Interactions.Interact.performed += HandleInteraction;
 
         /* -------- Level / UI Actions -------- */
         _playerControls.Level.Retry.performed += HandleLevelRetry;
-        _playerControls.UI.Pause.performed    += HandlePause;
+        _playerControls.UI.Pause.performed += HandlePause;
     }
 
     /* ---------------- Movement ---------------- */
@@ -132,8 +138,16 @@ public class InputManager : MonoBehaviour
     private void HandlePush   (InputAction.CallbackContext ctx) { /* TODO */ }
     private void HandlePull  (InputAction.CallbackContext ctx) { /* TODO */ }
     private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandleRotateFoward   (InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandleRotateBackwards (InputAction.CallbackContext ctx) { /* TODO */ }
+
+    private void HandleRotateFoward(InputAction.CallbackContext ctx)
+    {
+        didPlayerRotateFoward = ctx.performed;
+    }
+
+    private void HandleRotateBackwards(InputAction.CallbackContext ctx)
+    {
+        didPlayerRotateBackwards = ctx.performed;
+    }
     
     /* -------- Interactions -------- */
 
@@ -144,5 +158,17 @@ public class InputManager : MonoBehaviour
 
     /* ---------------- Level / UI -------------- */
     private void HandleLevelRetry(InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandlePause     (InputAction.CallbackContext ctx) { /* TODO */ }
+
+    private void HandlePause(InputAction.CallbackContext ctx)
+    {
+        OnPause?.Invoke();
+    }
+    
+    // Getters
+    public bool PopPushInputRecieved()
+    {
+        bool value = _pushInputRecieved;
+        _pushInputRecieved = false;
+        return value;
+    }
 }
