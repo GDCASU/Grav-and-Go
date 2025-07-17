@@ -45,6 +45,7 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, Range(0f, 10f)] private float _grabRange; // Range where the pull grabs the object
     [SerializeField, Range(0f, 360f)] private float _rotateSpeed; // Speed at which the mousewheel rotates the object
     [SerializeField, Range(0f, 100f)] private float _grabDistanceBreak; // The distance where the grab breaks from the object
+    [SerializeField, Range(0f, 2f)] private float _pullPushCooldown;
     
     [Header("Debugging")]
     [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
@@ -55,6 +56,8 @@ public class GravityGunController : MonoBehaviour
     private Vector2 _currentLookDir;
     private RaycastHit2D _currentHit;
     private bool _pullExecutedThisFrame;
+    private bool _isPlayerHoldingPullAfterGrab;
+    private bool _isPushPullLocked;
 
     private void Update()
     {
@@ -144,26 +147,64 @@ public class GravityGunController : MonoBehaviour
         
         // Dont do anything if no focused object available
         if (!_focusedObject) return;
-
-        _pullExecutedThisFrame = false;
         
-        // Check if we are grabbing
-        if (_isHoldingObject)
-        {
-            // Call Function
-            FixedUpdateWhenGrabbingObject();
-            return;
-        }
+        // Reset check bool
+        _pullExecutedThisFrame = false;
         
         // check if ignoring
         if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
         
-        // Was an infuelceable object, Enable outline and set line renderer
+        // Was an influenceable object, Enable outline and set line renderer
         // TODO: Would setting the shader property every fixed update affect performance too much?
         _focusedObject.EnableTarget();
         _focusedObject.ChangeOutlineColor(_validTargetLineColor);
         ChangeTargetCircleColor(_validTargetLineColor);
         ChangeLineRendererColor(_validTargetLineColor);
+        
+        // Move focused object if grabbing
+        if (_isHoldingObject)
+        {
+            // Move object to destination
+            _focusedObject.rb.MovePosition(_gravigunHoldPos.position);
+        }
+        
+        // Dont do anything if on cooldown
+        if (_isPushPullLocked) return;
+        
+        // Check if we are grabbing
+        if (_isHoldingObject)
+        {
+            // Dont accept input until the player releases pull at least once
+            if (_isPlayerHoldingPullAfterGrab) return;
+            
+            // Check if player pressed pull as to drop the object
+            if (InputManager.Instance.pullHeldDownInput)
+            {
+                // Stop holding object
+                _isHoldingObject = false;
+                _focusedObject.rb.freezeRotation = false;
+            
+                // Trigger Cooldown
+                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                return;
+            }
+        
+            // Check if the player clicked push as to launch the object
+            if (InputManager.Instance.PopPushInputRecieved())
+            {
+                // Stop holding object
+                _isHoldingObject = false;
+                _focusedObject.rb.freezeRotation = false;
+            
+                // Perform push
+                PerformPush();
+            
+                // Trigger cooldown
+                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                return;
+            }
+            return;
+        }
         
         // Perform Pull on non grabbed object if set to do so
         if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
@@ -180,6 +221,9 @@ public class GravityGunController : MonoBehaviour
             
             // Was within range
             PerformPush();
+            
+            // Cooldown
+            StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
         }
         
         // passed both pull and push, reset bool
@@ -197,17 +241,35 @@ public class GravityGunController : MonoBehaviour
         
         // Grab object
         _isHoldingObject = true;
+        _isPlayerHoldingPullAfterGrab = true;
         _focusedObject.rb.freezeRotation = true;
+        
+        // Wait for the player to release pull before doing anything
+        StartCoroutine(WaitForPullReleaseRoutine());
     }
 
     /// <summary>
     /// Lock the grab for a bit to avoid input overlap
     /// </summary>
     /// <returns></returns>
-    private IEnumerator LockGrabRoutine()
+    private IEnumerator LockPullPushRoutine(float time)
     {
-        float timer = 0.2f;
-        yield return new WaitForSeconds(timer);
+        _isPushPullLocked = true;
+        yield return new WaitForSeconds(time);
+        _isPushPullLocked = false;
+    }
+
+    /// <summary>
+    /// Coroutine that waits until the player lets go of pull to execute more actions
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator WaitForPullReleaseRoutine()
+    {
+        while (_isPlayerHoldingPullAfterGrab)
+        {
+            _isPlayerHoldingPullAfterGrab = InputManager.Instance.pullHeldDownInput;
+            yield return null;
+        }
     }
 
     /// <summary>
@@ -223,30 +285,6 @@ public class GravityGunController : MonoBehaviour
         else if (InputManager.Instance.didPlayerRotateBackwards)
         {
             _focusedObject.transform.Rotate(Vector3.forward, -1 * _rotateSpeed * Time.deltaTime, Space.Self);
-        }
-    }
-    
-    
-    /// <summary>
-    /// Function executed whenever the player is grabbing an object inside FixedUpdate
-    /// </summary>
-    private void FixedUpdateWhenGrabbingObject()
-    {
-        // Move object to destination
-        _focusedObject.rb.MovePosition(_gravigunHoldPos.position);
-        
-        // Check if player pressed pull as to drop the object
-        if (InputManager.Instance.pullHeldDownInput)
-        {
-            _isHoldingObject = false;
-            // TODO: TRIGGER A COOLDOWN ON PULL-GRAB
-            return;
-        }
-        
-        // Check if the player clicked push as to launch the object
-        if (InputManager.Instance.PopPushInputRecieved())
-        {
-            
         }
     }
 
