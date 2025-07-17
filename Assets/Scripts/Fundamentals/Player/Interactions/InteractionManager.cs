@@ -1,36 +1,44 @@
 using UnityEngine;
 
+/* -----------------------------------------------------------
+ * Author:
+ * Ian Fletcher
+ *
+ * Modified By:
+ *
+ */// --------------------------------------------------------
+
 /// <summary>
 /// 2-D interaction manager that looks for the nearest Interactable inside
 /// an OverlapCircle each frame (with Scene-view gizmos for tuning).
 /// </summary>
 public class InteractionManager2D : MonoBehaviour
 {
-    /* ────────── Inspector ────────── */
     [Header("Detection Settings")]
     [Tooltip("World-space offset added to the player position before casting")]
-    [SerializeField] private Vector2   originOffset    = Vector2.zero;
+    [SerializeField] private Vector2 originOffset = Vector2.zero;
     [Tooltip("Detection radius in world units")]
-    [SerializeField] private float     detectRadius    = 1.5f;
+    [SerializeField] private float detectRadius = 1.5f;
     [Tooltip("Layers that count as interactables")]
     [SerializeField] private LayerMask interactableMask = -1;
 
     [Header("Debugging")]
     [SerializeField] private bool doDebugLog = false;
-    [SerializeField, InspectorReadOnly] private Interactable _focused;
-
-    /* ────────── Internals ────────── */
     
-    private bool         _focusEntered;
-    private Transform    _player;
+    [Header("Readouts")]
+    [SerializeField, InspectorReadOnly] private Interactable _focused;
+    [SerializeField, InspectorReadOnly] private bool _focusEntered;
 
-    /* ====================================================================== */
-    /*                               Unity                                    */
-    /* ====================================================================== */
+    // Local variable
+    private Transform _player;
+    Collider2D[] hits = new Collider2D[50];
+
+    #region Unity Callbacks
 
     private void Start()
     {
         _player = transform;
+        
         InputManager.OnInteract += OnInteractPressed;
     }
 
@@ -39,12 +47,18 @@ public class InteractionManager2D : MonoBehaviour
         InputManager.OnInteract -= OnInteractPressed;
     }
 
-    private void Update() => DetectInteractable();
-
-    /* ====================================================================== */
-    /*                            Core Logic                                  */
-    /* ====================================================================== */
-
+    private void Update()
+    {
+        DetectInteractable();
+    }
+    
+    #endregion
+    
+    #region Core Logic
+    
+    /// <summary>
+    /// Function that detects if we are near an interactable
+    /// </summary>
     private void DetectInteractable()
     {
         Vector2 origin = (Vector2)_player.position + originOffset;
@@ -68,7 +82,7 @@ public class InteractionManager2D : MonoBehaviour
             }
         }
 
-        /* ---------- Focus change handling ---------- */
+        // Focus change handling
         if (nearest != _focused)
         {
             _focused?.OnFocusExit?.Invoke();
@@ -76,8 +90,8 @@ public class InteractionManager2D : MonoBehaviour
             _focusEntered = false;
         }
 
-        /* ---------- Focus life-cycle ---------- */
-        if (_focused == null) return;
+        // Focus life-cycle
+        if (!_focused) return;
 
         if (!_focusEntered)
         {
@@ -99,11 +113,11 @@ public class InteractionManager2D : MonoBehaviour
         if (doDebugLog) Debug.Log($"Interact: {_focused.name}", _focused);
     }
     
+    #endregion
+    
     #if UNITY_EDITOR
-
-    /* ====================================================================== */
-    /*                                Gizmos                                  */
-    /* ====================================================================== */
+    
+    #region Gizmos
 
     /// <summary>
     /// Draws the detection circle (cyan) and highlights the current focus
@@ -129,6 +143,8 @@ public class InteractionManager2D : MonoBehaviour
                                 : origin + Vector2.up * detectRadius;
         Gizmos.DrawSphere(end, 0.08f);
     }
+    
+    #endregion
     
     #endif
 }

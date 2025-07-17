@@ -11,12 +11,6 @@ using UnityEngine.Serialization;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * Provide a class for all physics objects on the game
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Abstract class that governs all physics objects
 /// </summary>
@@ -30,10 +24,9 @@ public abstract class PhysicsObject : MonoBehaviour
     [Header("Settings")]
     public PhysicsObjectType physicsObjectType;
     
-    [FormerlySerializedAs("isTargeted")]
     [Header("Readouts")]
     [SerializeField, InspectorReadOnly] private bool _isTargeted;
-    [SerializeField, InspectorReadOnly] private Vector2 _currVelocityVector;
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _currVelocityVector;
     [SerializeField, InspectorReadOnly] private float _currVelocityMagnitude;
 
     private void FixedUpdate()
@@ -42,17 +35,30 @@ public abstract class PhysicsObject : MonoBehaviour
         _currVelocityMagnitude = rb.linearVelocity.magnitude;
     }
     
+    /// <summary>
+    /// Changes the color of the outline, but doesnt enable it.
+    /// Mind you, the sprite needs to have padding for the outline to work
+    /// </summary>
+    /// <param name="color"> The target color to set </param>
     public virtual void ChangeOutlineColor(Color color)
     {
         _outline.ChangeColor(color);
     }
-
+    
+    /// <summary>
+    /// Enables the outline of the object.
+    /// Mind you, the sprite needs to have padding for the outline to work
+    /// </summary>
     public virtual void EnableTarget()
     {
         _isTargeted = true;
         _outline.SetOutline(true);
     }
-
+    
+    /// <summary>
+    /// Disables the outline of the object.
+    /// Mind you, the sprite needs to have padding for the outline to work
+    /// </summary>
     public virtual void DisableTarget()
     {
         _isTargeted = false;
@@ -60,6 +66,9 @@ public abstract class PhysicsObject : MonoBehaviour
     }
 }
 
+/// <summary>
+/// Enum that defines physic objects in the game
+/// </summary>
 public enum PhysicsObjectType
 {
     Grabbable,

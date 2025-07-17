@@ -224,6 +224,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 05e6a06c5af93134ab98ff12e2c27265, type: 2}
+  _rb: {fileID: 1544650614272011793}
+  _col: {fileID: 1544650614272011794}
+  _frameVelocity: {x: 0, y: 0}
+  _cachedQueryStartInColliders: 0
+  _frameLeftGrounded: -3.4028235e+38
+  _grounded: 0
+  _jumpToConsume: 0
+  _bufferedJumpUsable: 0
+  _endedJumpEarly: 0
+  _coyoteUsable: 0
+  _timeJumpWasPressed: 0
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -5446,17 +5457,12 @@ MonoBehaviour:
   playerMovement: {fileID: 1544650614272011792}
   _sprite: {fileID: 2969068313154050967}
   _rb: {fileID: 1544650614272011793}
-  _maxIdleSpeed: 2
-  _maxTilt: 5
-  _tiltSpeed: 20
   _jumpParticles: {fileID: 2969068312619346371}
   _launchParticles: {fileID: 2969068312669941334}
   _moveParticles: {fileID: 2969068311631949152}
   _landParticles: {fileID: 2969068312368229178}
-  _footsteps:
-  - {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
-  - {fileID: 8300000, guid: b5803c17557c59c40bf3a6d69cb46cb3, type: 3}
-  - {fileID: 8300000, guid: 1876767bf7cbf284394dc3817af9593c, type: 3}
+  _walkSound: {fileID: 5564989338252753536}
+  _grounded: 0
 --- !u!1 &2969068312368229159
 GameObject:
   m_ObjectHideFlags: 0
@@ -20398,6 +20404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6716302220424381474}
+  - component: {fileID: 5564989338252753536}
   m_Layer: 6
   m_Name: Walking
   m_TagString: Untagged
@@ -20420,6 +20427,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6299346398174948054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5564989338252753536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243005675636719454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    eventReference:
+      Guid:
+        Data1: -711460654
+        Data2: 1292522943
+        Data3: 891116935
+        Data4: 298122770
+      Path: event:/SFX/Test Event
+    eventPlayTrigger: 0
+    eventStopTrigger: 2
+    playConditions: 0
+    playCooldown: 0.2
+  doDebugLog: 0
 --- !u!1 &3431449371583304790
 GameObject:
   m_ObjectHideFlags: 0
@@ -20558,6 +20590,7 @@ MonoBehaviour:
     m_Bits: 256
   doDebugLog: 0
   _focused: {fileID: 0}
+  _focusEntered: 0
 --- !u!1 &4448637085190083350
 GameObject:
   m_ObjectHideFlags: 0
@@ -20882,13 +20915,14 @@ MonoBehaviour:
   _lineRaycastMask:
     serializedVersion: 2
     m_Bits: 640
+  _maxMass: 100
   _pullForce: 10
   _maxVelocity: 5
   _pushForce: 20
   _pushRange: 2
-  _grabRange: 0.2
-  _rotateSpeed: 300
-  _grabDistanceBreak: 0
+  _grabRange: 0.25
+  _rotateSpeed: 600
+  _grabDistanceBreak: 1.5
   _pullPushCooldown: 0.2
   doDebugLog: 0
   _focusedObject: {fileID: 0}
@@ -20897,6 +20931,8 @@ MonoBehaviour:
   _pullExecutedThisFrame: 0
   _isPlayerHoldingPullAfterGrab: 0
   _isPushPullLocked: 0
+  isInBetweenHoldAndCenter: 0
+  isNearHoldPos: 0
 --- !u!1 &9025625058083382112
 GameObject:
   m_ObjectHideFlags: 0

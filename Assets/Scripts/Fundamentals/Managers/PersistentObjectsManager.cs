@@ -10,13 +10,6 @@ using UnityEngine;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Pupose:
- * Stop Unity from deleting the persistent objects on change 
- * of scene.
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that will protect all objects that are meant to be present on all scenes
 /// </summary>

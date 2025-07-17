@@ -8,20 +8,14 @@ using Debug = UnityEngine.Debug;
 
 /* -----------------------------------------------------------
  * Author:
- * 
+ * Ian Fletcher
  * 
  * Modified By:
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * 
- */// --------------------------------------------------------
-
-
 /// <summary>
-/// 
+/// Class that manages the player's gravity gun
 /// </summary>
 public class GravityGunController : MonoBehaviour
 {
@@ -37,14 +31,15 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private Color _validTargetLineColor; // The color of the line when its pointing to a valid target
     [SerializeField, Range(0f,100f)] private float _maxRaycastDistance;
     [SerializeField] private LayerMask _lineRaycastMask;
+    [SerializeField, Range(0f, 100f)] private float _maxMass; // The max amount of mass the gravigun can influence
     [SerializeField, Range(0f, 100f)] private float _pullForce;
-    [SerializeField, Range(0f, 100f)] private float _maxVelocity; //
+    [SerializeField, Range(0f, 100f)] private float _maxVelocity; // Cap the velocity at which we pull an object
     [SerializeField, Range(0f, 100f)] private float _pushForce; 
     [SerializeField, Range(0f, 100f)] private float _pushRange; // Range in which the push works
     [SerializeField, Range(0f, 10f)] private float _grabRange; // Range where the pull grabs the object
-    [SerializeField, Range(0f, 360f)] private float _rotateSpeed; // Speed at which the mousewheel rotates the object
+    [SerializeField, Range(0f, 720f)] private float _rotateSpeed; // Speed at which the mousewheel rotates the object
     [SerializeField, Range(0f, 100f)] private float _grabDistanceBreak; // The distance where the grab breaks from the object
-    [SerializeField, Range(0f, 2f)] private float _pullPushCooldown;
+    [SerializeField, Range(0f, 2f)] private float _pullPushCooldown; // Small input cooldown so player doesnt immediatly drop the object after grabbing it
     
     [Header("Debugging")]
     [SerializeField] private bool doDebugLog;
@@ -52,10 +47,12 @@ public class GravityGunController : MonoBehaviour
     [Header("Readouts")]
     [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
     [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _currentLookDir;
-    [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
-    [SerializeField, InspectorReadOnly] private bool _pullExecutedThisFrame;
-    [SerializeField, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
-    [SerializeField, InspectorReadOnly] private bool _isPushPullLocked;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isHoldingObject;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _pullExecutedThisFrame;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPushPullLocked;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool isInBetweenHoldAndCenter;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool isNearHoldPos;
     
     // Local variables
     private RaycastHit2D _currentHit;
@@ -149,6 +146,9 @@ public class GravityGunController : MonoBehaviour
         // Dont do anything if no focused object available
         if (!_focusedObject) return;
         
+        // Dont do anything if object is over the mass limit
+        if (_focusedObject.rb.mass > _maxMass) return;
+        
         // Reset check bool
         _pullExecutedThisFrame = false;
         
@@ -175,6 +175,19 @@ public class GravityGunController : MonoBehaviour
         // Check if we are grabbing
         if (_isHoldingObject)
         {
+            // Break if the object goes too far from hold pos
+            if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPos.position) > _grabDistanceBreak)
+            {
+                // Stop holding object
+                _isHoldingObject = false;
+                _focusedObject.rb.freezeRotation = false;
+                _focusedObject.rb.linearVelocity = Vector2.zero;
+            
+                // Trigger Cooldown
+                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                return;
+            }
+            
             // Dont accept input until the player releases pull at least once
             if (_isPlayerHoldingPullAfterGrab) return;
             
@@ -232,10 +245,14 @@ public class GravityGunController : MonoBehaviour
         
         // Dont attempt to grab object if not of type grabbable
         if (_focusedObject.physicsObjectType != PhysicsObjectType.Grabbable) return;
+
+        isNearHoldPos = Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPos.position) <
+                             _grabRange;
         
-        // Dont grab object if not in range
-        if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPos.position) >
-            _grabRange) return;
+        isInBetweenHoldAndCenter = InBetweenXAxis(_focusedObject.transform.position, _gravigunPivot.position, _gravigunHoldPos.position);
+        
+        // Dont grab object if not in range or if not in between the hold pos and the player
+        if (!isNearHoldPos && !isInBetweenHoldAndCenter) return;
         
         // Dont grab if not pulling
         if (!InputManager.Instance.pullHeldDownInput) return;
@@ -323,9 +340,6 @@ public class GravityGunController : MonoBehaviour
         // accelerate only while below the cap
         if (along < maxVel) rb.AddForce(dir * force, mode);
     }
-    
-    
-    // REMEMBER TO DISABLE LINE RENDERER WHEN HOLDING SOMETHING
 
     private void UpdateLineRendererPos(Vector2 origin, Vector2 dir, Vector2 target, float distance)
     {
@@ -354,10 +368,21 @@ public class GravityGunController : MonoBehaviour
         _lineOfSightRenderer.startColor = color;
         _lineOfSightRenderer.endColor = color;
     }
-
+    
     private void ChangeTargetCircleColor(Color color)
     {
         _helperTargetCircleSprite.color = color;
+    }
+
+    /// <summary>
+    /// Returns true when target.x lies between point1.x and point2.x (inclusive).
+    /// Works no matter which point is left or right.
+    /// </summary>
+    private bool InBetweenXAxis(Vector2 target, Vector2 point1, Vector2 point2)
+    {
+        float minX = Mathf.Min(point1.x, point2.x);
+        float maxX = Mathf.Max(point1.x, point2.x);
+        return target.x >= minX && target.x <= maxX;
     }
     
     #if UNITY_EDITOR

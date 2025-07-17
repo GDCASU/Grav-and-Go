@@ -12,12 +12,6 @@ using TMPro;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * Handles the Gameplay Menu options in the main screen and on the pause menu
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that handles a Gameplay menu
 /// </summary>

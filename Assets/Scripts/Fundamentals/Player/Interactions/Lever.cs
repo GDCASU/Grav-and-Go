@@ -5,20 +5,14 @@ using UnityEngine.Events;
 
 /* -----------------------------------------------------------
  * Author:
- * 
+ * Ian Flethcer
  * 
  * Modified By:
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * 
- */// --------------------------------------------------------
-
-
 /// <summary>
-/// 
+/// Class that handles an interactable lever
 /// </summary>
 public class Lever : Interactable 
 {
@@ -40,7 +34,6 @@ public class Lever : Interactable
     // Local variables
     private static readonly int _isOnID = Animator.StringToHash("isOn");
     
-    // Start is called before the first frame update
     void Start()
     {
         if (_startOn)

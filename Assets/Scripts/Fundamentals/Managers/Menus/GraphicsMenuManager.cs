@@ -14,12 +14,6 @@ using UnityEngine.Rendering.Universal;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * Handles the graphic menu on the pause and main menu
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that handles a graphics menu
 /// </summary>

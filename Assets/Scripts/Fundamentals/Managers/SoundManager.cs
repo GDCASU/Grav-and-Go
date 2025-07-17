@@ -8,12 +8,7 @@ using UnityEngine;
  * Ian Fletcher
  * 
  * Modified By:
- * Sameer Reza
- */// --------------------------------------------------------
-
-/* -----------------------------------------------------------
- * Pupose:
- * Manage everything related to sound in the game
+ * 
  */// --------------------------------------------------------
 
 // VCA Enums, necessary if we want outsider scripts modifying the VCA volumes

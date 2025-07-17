@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 /// <summary>
 /// Singleton that owns the <c>PlayerControls</c> asset and surfaces the
@@ -9,24 +8,23 @@ using UnityEngine.Serialization;
 /// </summary>
 public class InputManager : MonoBehaviour
 {
-    /* ---------- Singleton Boilerplate ---------- */
+    // Singleton
     public static InputManager Instance;
-
-    /* ---------- Inspector Flags ---------- */
+    
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog = false; // Gate for spammy logs
 
-    /* ---------- Input-updated fields ---------- */
+    // Input-updated fields
     public Vector2 movementInput { get; private set; } // Left-stick / WASD
     public bool jumpHeldDownInput { get; private set; }  // True while jump button held
     public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
-    public bool pullHeldDownInput { get; private set; }
-    private bool _pushInputRecieved;
-    public bool didPlayerRotateFoward { get; private set; }
-    public bool didPlayerRotateBackwards { get; private set; }
+    public bool pullHeldDownInput { get; private set; } // True while pull button held
+    public bool didPlayerRotateFoward { get; private set; } // True while the player spins the mousewheel up
+    public bool didPlayerRotateBackwards { get; private set; } // True while the player spins the mousewheel down
 
-    /* ---------- Private vars ---------- */
+    // Local Variables
     private PlayerControls _playerControls;
+    private bool _pushInputRecieved; 
 
     #region Public Events
     
@@ -43,9 +41,7 @@ public class InputManager : MonoBehaviour
 
     #endregion
 
-    /* ====================================================================== */
-    /*                          Unity Lifecycle                               */
-    /* ====================================================================== */
+    #region Unity Lifecycle
 
     private void Awake()
     {
@@ -91,10 +87,10 @@ public class InputManager : MonoBehaviour
         }
         StopAllCoroutines();
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                         Binding & Callbacks                            */
-    /* ====================================================================== */
+    #region Binding & Callbacks  
 
     /// <summary>
     /// Subscribes C# methods to each InputAction. This keeps logic decoupled
@@ -107,8 +103,6 @@ public class InputManager : MonoBehaviour
         _playerControls.Movement.Move.canceled += HandleMovementInput;
 
         /* -------- Gravity Gun Actions -------- */
-        _playerControls.GravityGun.Push.performed += HandlePush;
-        _playerControls.GravityGun.Pull.performed += HandlePull;
         _playerControls.GravityGun.Special.performed += HandleSpecial;
         _playerControls.GravityGun.RotateObjectBackwards.performed += HandleRotateBackwards;
         _playerControls.GravityGun.RotateObjectBackwards.canceled += HandleRotateBackwards;
@@ -122,8 +116,10 @@ public class InputManager : MonoBehaviour
         _playerControls.Level.Retry.performed += HandleLevelRetry;
         _playerControls.UI.Pause.performed += HandlePause;
     }
-
-    /* ---------------- Movement ---------------- */
+    
+    #endregion
+    
+    #region Movement
 
     private void HandleMovementInput(InputAction.CallbackContext context)
     {
@@ -132,13 +128,14 @@ public class InputManager : MonoBehaviour
         if (_doDebugLog) Debug.Log($"Movement Input = {movementInput}");
         OnMove?.Invoke();
     }
+    
+    #endregion
+    
+    #region Gravity Gun
 
-    /* --------------- Gravity Gun -------------- */
     // NOTE: Gameplay not implemented yet; methods are placeholders
-    private void HandlePush   (InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandlePull  (InputAction.CallbackContext ctx) { /* TODO */ }
     private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
-
+    
     private void HandleRotateFoward(InputAction.CallbackContext ctx)
     {
         didPlayerRotateFoward = ctx.performed;
@@ -149,14 +146,19 @@ public class InputManager : MonoBehaviour
         didPlayerRotateBackwards = ctx.performed;
     }
     
-    /* -------- Interactions -------- */
+    #endregion
+
+    #region Interactions
 
     private void HandleInteraction(InputAction.CallbackContext ctx)
     {
         if (ctx.performed) OnInteract?.Invoke();
     }
 
-    /* ---------------- Level / UI -------------- */
+    #endregion
+
+    #region Level / UI
+    
     private void HandleLevelRetry(InputAction.CallbackContext ctx) { /* TODO */ }
 
     private void HandlePause(InputAction.CallbackContext ctx)
@@ -164,11 +166,17 @@ public class InputManager : MonoBehaviour
         OnPause?.Invoke();
     }
     
-    // Getters
+    #endregion
+
+    #region Getters and Setters
+
     public bool PopPushInputRecieved()
     {
         bool value = _pushInputRecieved;
         _pushInputRecieved = false;
         return value;
     }
+
+    #endregion
+    
 }

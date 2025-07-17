@@ -15,7 +15,7 @@ using UnityEngine;
  * Create an interface all scripts can use for linking with the
  * interaction system (Lore Notes, Switches, Etc.)
  * The item must have a non-trigger collider with a rigidbody
- * and have the interactable script be on  the base object.
+ * and have the interactable script be on the base object.
  * I suggest making the rigidbody kinematic if the object doesnt move
  */// --------------------------------------------------------
 

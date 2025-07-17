@@ -12,12 +12,6 @@ using TMPro;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * Handle the Audio menu both in the main screen and on the pause menu
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that handles an audio menu
 /// </summary>
