@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.SerializedDictionarySample Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary></indexterm>
+<para>Inheritance diagram for AYellowpaper.SerializedCollections.SerializedDictionarySample:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419">ElementType</link> { <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419abd2b7e5f85a6ea65065c4ebc6d7c95bb">Fire</link>
+, <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a71c546fa61f3964d72bdf25223b78669">Air</link>
+, <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a5cdd21c97f86686cc505e02fd32a7523">Earth</link>
+, <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a27634ff8002b12e75d98e07ccd005d18">Water</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>SerializedDictionary&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419">ElementType</link>, string &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a73a66015f874caa58099d59a8ac2ec68">ElementDescriptions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419"/><section>
+    <title>ElementType</title>
+<indexterm><primary>ElementType</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>ElementType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419">AYellowpaper.SerializedCollections.SerializedDictionarySample.ElementType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Fire</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>Fire</secondary></indexterm>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419abd2b7e5f85a6ea65065c4ebc6d7c95bb"/>Fire</entry><entry></entry></row><row><entry><indexterm><primary>Air</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>Air</secondary></indexterm>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a71c546fa61f3964d72bdf25223b78669"/>Air</entry><entry></entry></row><row><entry><indexterm><primary>Earth</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>Earth</secondary></indexterm>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a5cdd21c97f86686cc505e02fd32a7523"/>Earth</entry><entry></entry></row><row><entry><indexterm><primary>Water</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>Water</secondary></indexterm>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419a27634ff8002b12e75d98e07ccd005d18"/>Water</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a73a66015f874caa58099d59a8ac2ec68"/><section>
+    <title>ElementDescriptions</title>
+<indexterm><primary>ElementDescriptions</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionarySample</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionarySample</primary><secondary>ElementDescriptions</secondary></indexterm>
+<para><computeroutput>SerializedDictionary&lt;<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary_sample_1a227635adacadab3c0b3cae44d21da419">ElementType</link>, string&gt; AYellowpaper.SerializedCollections.SerializedDictionarySample.ElementDescriptions</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Sample/<link linkend="__serialized_dictionary_sample_8cs">SerializedDictionarySample.cs</link></section>
+</section>

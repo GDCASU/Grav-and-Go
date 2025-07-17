@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__asset_usage_detector_window_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorWindow.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/AssetUsageDetectorWindow.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window">AssetUsageDetectorNamespace.AssetUsageDetectorWindow</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_asset_usage_detector_namespace">AssetUsageDetectorNamespace</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7e">AssetUsageDetectorNamespace.Phase</link> { <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaad2376beebecdcf7846ba973fa1a005b">AssetUsageDetectorNamespace.Setup</link>
+, <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7ea643562a9ae7099c8aabfdc93478db117">AssetUsageDetectorNamespace.Processing</link>
+, <link linkend="_namespace_asset_usage_detector_namespace_1af0514c3c3af133724db9c3b4e9afea7eaae94f80b3ce82062a5dd7815daa04f9d">AssetUsageDetectorNamespace.Complete</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

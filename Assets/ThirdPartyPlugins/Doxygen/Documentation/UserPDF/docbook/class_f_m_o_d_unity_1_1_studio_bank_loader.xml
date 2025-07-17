@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader" xml:lang="en-US">
+<title>FMODUnity.StudioBankLoader Class Reference</title>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.StudioBankLoader:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_studio_bank_loader.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a1c6ab69f73ed2b8aaea71e51bbf179f8">Load</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a7bad8cc786172c4ae9b41b66c56023e3">Unload</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">LoaderGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ad6edce3238a6ce995b43dfcb54ad84ae">LoadEvent</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">LoaderGameEvent</link> <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ae44f56b6f4a871fb8cf63c68ffb5b251">UnloadEvent</link></para>
+</listitem>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1aedce2a82100883b19f304f0e112eaced">Banks</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a6b85d7346c5bb754c84821170bd69217">CollisionTag</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ac4c3fe271e6995624c030bb193470d7a">PreloadSamples</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a1c6ab69f73ed2b8aaea71e51bbf179f8"/><section>
+    <title>Load()</title>
+<indexterm><primary>Load</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>Load</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioBankLoader.Load ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a7bad8cc786172c4ae9b41b66c56023e3"/><section>
+    <title>Unload()</title>
+<indexterm><primary>Unload</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>Unload</secondary></indexterm>
+<para><computeroutput>void FMODUnity.StudioBankLoader.Unload ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1aedce2a82100883b19f304f0e112eaced"/><section>
+    <title>Banks</title>
+<indexterm><primary>Banks</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>Banks</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; FMODUnity.StudioBankLoader.Banks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1a6b85d7346c5bb754c84821170bd69217"/><section>
+    <title>CollisionTag</title>
+<indexterm><primary>CollisionTag</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>CollisionTag</secondary></indexterm>
+<para><computeroutput>string FMODUnity.StudioBankLoader.CollisionTag</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ad6edce3238a6ce995b43dfcb54ad84ae"/><section>
+    <title>LoadEvent</title>
+<indexterm><primary>LoadEvent</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>LoadEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">LoaderGameEvent</link> FMODUnity.StudioBankLoader.LoadEvent</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ac4c3fe271e6995624c030bb193470d7a"/><section>
+    <title>PreloadSamples</title>
+<indexterm><primary>PreloadSamples</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>PreloadSamples</secondary></indexterm>
+<para><computeroutput>bool FMODUnity.StudioBankLoader.PreloadSamples</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_studio_bank_loader_1ae44f56b6f4a871fb8cf63c68ffb5b251"/><section>
+    <title>UnloadEvent</title>
+<indexterm><primary>UnloadEvent</primary><secondary>FMODUnity.StudioBankLoader</secondary></indexterm>
+<indexterm><primary>FMODUnity.StudioBankLoader</primary><secondary>UnloadEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_unity_1ae941ddae0b9bf78378ee3be39a3ec4c6">LoaderGameEvent</link> FMODUnity.StudioBankLoader.UnloadEvent</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__studio_bank_loader_8cs">StudioBankLoader.cs</link></section>
+</section>

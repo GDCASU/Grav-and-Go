@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception" xml:lang="en-US">
+<title>FMODUnity.VCANotFoundException Class Reference</title>
+<indexterm><primary>FMODUnity.VCANotFoundException</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.VCANotFoundException:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_v_c_a_not_found_exception.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception_1ae1b4e9a60aaf1105292fe20da017e90c">VCANotFoundException</link> (string path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception_1adaf24ba2ec42817e78643665a49f4e65">Path</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception_1ae1b4e9a60aaf1105292fe20da017e90c"/><section>
+    <title>VCANotFoundException()</title>
+<indexterm><primary>VCANotFoundException</primary><secondary>FMODUnity.VCANotFoundException</secondary></indexterm>
+<indexterm><primary>FMODUnity.VCANotFoundException</primary><secondary>VCANotFoundException</secondary></indexterm>
+<para><computeroutput>FMODUnity.VCANotFoundException.VCANotFoundException (string path)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_v_c_a_not_found_exception_1adaf24ba2ec42817e78643665a49f4e65"/><section>
+    <title>Path</title>
+<indexterm><primary>Path</primary><secondary>FMODUnity.VCANotFoundException</secondary></indexterm>
+<indexterm><primary>FMODUnity.VCANotFoundException</primary><secondary>Path</secondary></indexterm>
+<para><computeroutput>string FMODUnity.VCANotFoundException.Path</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__runtime_utils_8cs">RuntimeUtils.cs</link></section>
+</section>

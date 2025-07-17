@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__unity_namespace_script_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Demo Scene/Scripts/UnityNamespaceScript.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Demo Scene/Scripts/UnityNamespaceScript.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_better_hierarchy_1_1_unity_namespace_example_1_1_unity_namespace_script">BetterHierarchy.UnityNamespaceExample.UnityNamespaceScript</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_better_hierarchy">BetterHierarchy</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_better_hierarchy_1_1_unity_namespace_example">BetterHierarchy.UnityNamespaceExample</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version" xml:lang="en-US">
+<title>DG.Tweening.DOTweenModuleUnityVersion Class Reference</title>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary></indexterm>
+<para>
+
+<para>Shortcuts/functions that are not strictly related to specific Modules but are available only on some Unity versions. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static Sequence <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1ad2076be3f23329210fc50835febe98e9">DOGradientColor</link> (this Material target, Gradient gradient, float duration)</para>
+
+<para>Tweens a Material&apos;s color using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</listitem>
+            <listitem><para>static Sequence <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a37104f970d897d367ac4347577f6dc38">DOGradientColor</link> (this Material target, Gradient gradient, string property, float duration)</para>
+
+<para>Tweens a Material&apos;s named color property using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a2628736cd961ebeaa8c4d8e1cae8effd">WaitForCompletion</link> (this Tween t, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or complete. </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a315adfbc4310d6df7820c5c164d41e22">WaitForRewind</link> (this Tween t, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or rewinded. </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a624b1ccb2526c17c0ee063d1441585db">WaitForKill</link> (this Tween t, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed. </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aed7764f555039946a98e463eb2551ae0">WaitForElapsedLoops</link> (this Tween t, int elapsedLoops, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or has gone through the given amount of loops. </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aa53f3414b479e75ba60ccfb94aaf8db1">WaitForPosition</link> (this Tween t, float position, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or has reached the given time position (loops included, delays excluded). </para>
+</listitem>
+            <listitem><para>static CustomYieldInstruction <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aa5689dc7fdbc316bfff8f636b1fdca43">WaitForStart</link> (this Tween t, bool returnCustomYieldInstruction)</para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or started (meaning when the tween is set in a playing state the first time, after any eventual delay). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Shortcuts/functions that are not strictly related to specific Modules but are available only on some Unity versions. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1ad2076be3f23329210fc50835febe98e9"/><section>
+    <title>DOGradientColor()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>DOGradientColor</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>DOGradientColor</secondary></indexterm>
+<para><computeroutput>Sequence DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor (this Material target, Gradient gradient, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a Material&apos;s color using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</para>
+
+<para>Also stores the image as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gradient</entry><entry>
+<para>The gradient to use</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a37104f970d897d367ac4347577f6dc38"/><section>
+    <title>DOGradientColor()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>DOGradientColor</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>DOGradientColor</secondary></indexterm>
+<para><computeroutput>Sequence DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor (this Material target, Gradient gradient, string property, float duration)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Tweens a Material&apos;s named color property using the given gradient (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener). </para>
+</para>
+
+<para>Also stores the image as the tween&apos;s target so it can be used for filtered operations 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gradient</entry><entry>
+<para>The gradient to use</para>
+</entry>
+                            </row>
+                            <row>
+<entry>property</entry><entry>
+<para>The name of the material property to tween (like _Tint or _SpecColor)</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>The duration of the tween</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a2628736cd961ebeaa8c4d8e1cae8effd"/><section>
+    <title>WaitForCompletion()</title>
+<indexterm><primary>WaitForCompletion</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForCompletion</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForCompletion (this Tween t, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or complete. </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForCompletion(<emphasis role="keyword">true</emphasis>);
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aed7764f555039946a98e463eb2551ae0"/><section>
+    <title>WaitForElapsedLoops()</title>
+<indexterm><primary>WaitForElapsedLoops</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForElapsedLoops</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForElapsedLoops (this Tween t, int elapsedLoops, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or has gone through the given amount of loops. </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForElapsedLoops(2);
+</computeroutput></literallayout></para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>elapsedLoops</entry><entry>
+<para>Elapsed loops to wait for</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a624b1ccb2526c17c0ee063d1441585db"/><section>
+    <title>WaitForKill()</title>
+<indexterm><primary>WaitForKill</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForKill</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForKill (this Tween t, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed. </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForKill();
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aa53f3414b479e75ba60ccfb94aaf8db1"/><section>
+    <title>WaitForPosition()</title>
+<indexterm><primary>WaitForPosition</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForPosition</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForPosition (this Tween t, float position, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or has reached the given time position (loops included, delays excluded). </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForPosition(2.5f);
+</computeroutput></literallayout></para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>position</entry><entry>
+<para>Position (loops included, delays excluded) to wait for</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1a315adfbc4310d6df7820c5c164d41e22"/><section>
+    <title>WaitForRewind()</title>
+<indexterm><primary>WaitForRewind</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForRewind</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForRewind (this Tween t, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or rewinded. </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForRewind();
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_class_d_g_1_1_tweening_1_1_d_o_tween_module_unity_version_1aa5689dc7fdbc316bfff8f636b1fdca43"/><section>
+    <title>WaitForStart()</title>
+<indexterm><primary>WaitForStart</primary><secondary>DG.Tweening.DOTweenModuleUnityVersion</secondary></indexterm>
+<indexterm><primary>DG.Tweening.DOTweenModuleUnityVersion</primary><secondary>WaitForStart</secondary></indexterm>
+<para><computeroutput>CustomYieldInstruction DG.Tweening.DOTweenModuleUnityVersion.WaitForStart (this Tween t, bool returnCustomYieldInstruction)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a CustomYieldInstruction that waits until the tween is killed or started (meaning when the tween is set in a playing state the first time, after any eventual delay). </para>
+</para>
+
+<para>It can be used inside a coroutine as a yield. </para>
+
+<para>Example usage:</para>
+
+<para><literallayout><computeroutput>yield&#32;<emphasis role="keywordflow">return</emphasis>&#32;myTween.WaitForStart();
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/<link linkend="__d_o_tween_module_unity_version_8cs">DOTweenModuleUnityVersion.cs</link></section>
+</section>

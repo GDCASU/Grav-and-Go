@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_reference_node" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.ReferenceNode Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link">Link</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a2a0db3a8e3e84128740dec1418b404ab">ReferenceNode</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a500f5dc9502da8156e4bb6b1fd69889d">AddLinkTo</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> nextNode, string description=null, bool isWeakLink=false)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a76bc8914d64e4d1dafedae5c2c21c06b">RemoveLink</link> (int index)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a1866dff7ca6bb7070ca517f17087b412">RemoveLink</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> nextNode)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1aee5d687e325496d5d2b4da5a67e273ce">SortLinks</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1adb192552ca6da1d3bc506be8feb7dbb3">CopyReferencesTo</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> other)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1af56e2c926d2cd70b590c65a83c45c3f9">Clear</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1ae4286624c05cea99a32432908496a45c">InitializeRecursively</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1ad352f521548dd853bc64600c8a0094c4">CreateReverseGraphRecursively</link> (<link linkend="_class_asset_usage_detector_namespace_1_1_search_result_group">SearchResultGroup</link> searchResultGroup, List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; reverseGraphRoots, Dictionary&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link>, <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; reverseGraphNodes, HashSet&lt; <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> &gt; objectsToSearchSet)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a1f96112489e3f100e503bf21ffc99819">RemoveRedundantLinksRecursively</link> (HashSet&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; visitedNodes)</para>
+</listitem>
+            <listitem><para>override int <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a6a04b793805575404e9f6506eff70933">GetHashCode</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a8ae383fd15af67c6eb04b0a24c9a2ad9">Label</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a53760e7c204dd10ad4c3c8003fa1cf08">IsMainReference</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a1451b4b78f79901362cce55cf8e6df61">UnityObject</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1ae0a1913c11f17b32f4e1b5ecf48196ab">NumberOfOutgoingLinks</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link">Link</link> <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1a89cf95af37f9b87a9cbc89dc32f5f3d3">this[int index]</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a2a0db3a8e3e84128740dec1418b404ab"/><section>
+    <title>ReferenceNode()</title>
+<indexterm><primary>ReferenceNode</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>ReferenceNode</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.ReferenceNode.ReferenceNode ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a500f5dc9502da8156e4bb6b1fd69889d"/><section>
+    <title>AddLinkTo()</title>
+<indexterm><primary>AddLinkTo</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>AddLinkTo</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.AddLinkTo (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> nextNode, string description = <computeroutput>null</computeroutput>
+, bool isWeakLink = <computeroutput>false</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1af56e2c926d2cd70b590c65a83c45c3f9"/><section>
+    <title>Clear()</title>
+<indexterm><primary>Clear</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>Clear</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.Clear ( )</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1adb192552ca6da1d3bc506be8feb7dbb3"/><section>
+    <title>CopyReferencesTo()</title>
+<indexterm><primary>CopyReferencesTo</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>CopyReferencesTo</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.CopyReferencesTo (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> other)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1ad352f521548dd853bc64600c8a0094c4"/><section>
+    <title>CreateReverseGraphRecursively()</title>
+<indexterm><primary>CreateReverseGraphRecursively</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>CreateReverseGraphRecursively</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> AssetUsageDetectorNamespace.ReferenceNode.CreateReverseGraphRecursively (<link linkend="_class_asset_usage_detector_namespace_1_1_search_result_group">SearchResultGroup</link> searchResultGroup, List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; reverseGraphRoots, Dictionary&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link>, <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; reverseGraphNodes, HashSet&lt; <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> &gt; objectsToSearchSet)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a6a04b793805575404e9f6506eff70933"/><section>
+    <title>GetHashCode()</title>
+<indexterm><primary>GetHashCode</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>GetHashCode</secondary></indexterm>
+<para><computeroutput>override int AssetUsageDetectorNamespace.ReferenceNode.GetHashCode ( )</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1ae4286624c05cea99a32432908496a45c"/><section>
+    <title>InitializeRecursively()</title>
+<indexterm><primary>InitializeRecursively</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>InitializeRecursively</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.InitializeRecursively ( )</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a76bc8914d64e4d1dafedae5c2c21c06b"/><section>
+    <title>RemoveLink()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>RemoveLink</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>RemoveLink</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.RemoveLink (int index)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a1866dff7ca6bb7070ca517f17087b412"/><section>
+    <title>RemoveLink()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>RemoveLink</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>RemoveLink</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.ReferenceNode.RemoveLink (<link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> nextNode)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a1f96112489e3f100e503bf21ffc99819"/><section>
+    <title>RemoveRedundantLinksRecursively()</title>
+<indexterm><primary>RemoveRedundantLinksRecursively</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>RemoveRedundantLinksRecursively</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.RemoveRedundantLinksRecursively (HashSet&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">ReferenceNode</link> &gt; visitedNodes)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1aee5d687e325496d5d2b4da5a67e273ce"/><section>
+    <title>SortLinks()</title>
+<indexterm><primary>SortLinks</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>SortLinks</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ReferenceNode.SortLinks ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a53760e7c204dd10ad4c3c8003fa1cf08"/><section>
+    <title>IsMainReference</title>
+<indexterm><primary>IsMainReference</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>IsMainReference</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.ReferenceNode.IsMainReference<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a8ae383fd15af67c6eb04b0a24c9a2ad9"/><section>
+    <title>Label</title>
+<indexterm><primary>Label</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>Label</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.ReferenceNode.Label<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1ae0a1913c11f17b32f4e1b5ecf48196ab"/><section>
+    <title>NumberOfOutgoingLinks</title>
+<indexterm><primary>NumberOfOutgoingLinks</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>NumberOfOutgoingLinks</secondary></indexterm>
+<para><computeroutput>int AssetUsageDetectorNamespace.ReferenceNode.NumberOfOutgoingLinks<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a89cf95af37f9b87a9cbc89dc32f5f3d3"/><section>
+    <title>this[int index]</title>
+<indexterm><primary>this[int index]</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>this[int index]</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link">Link</link> AssetUsageDetectorNamespace.ReferenceNode.this[int index]<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_reference_node_1a1451b4b78f79901362cce55cf8e6df61"/><section>
+    <title>UnityObject</title>
+<indexterm><primary>UnityObject</primary><secondary>AssetUsageDetectorNamespace.ReferenceNode</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ReferenceNode</primary><secondary>UnityObject</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> AssetUsageDetectorNamespace.ReferenceNode.UnityObject<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_8cs">SearchResult.cs</link></section>
+</section>

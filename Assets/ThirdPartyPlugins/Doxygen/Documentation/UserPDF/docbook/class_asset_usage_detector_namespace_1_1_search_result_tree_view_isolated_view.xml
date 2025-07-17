@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view_1a4347eab14002f90403f4e2faf54d8a11">Show</link> (Vector2 preferredSize, <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view">SearchResultTreeView</link> treeView, GUIContent title)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_isolated_view_1a4347eab14002f90403f4e2faf54d8a11"/><section>
+    <title>Show()</title>
+<indexterm><primary>Show</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView</primary><secondary>Show</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.SearchResultTreeViewIsolatedView.Show (Vector2 preferredSize, <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view">SearchResultTreeView</link> treeView, GUIContent title)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_tree_view_8cs">SearchResultTreeView.cs</link></section>
+</section>

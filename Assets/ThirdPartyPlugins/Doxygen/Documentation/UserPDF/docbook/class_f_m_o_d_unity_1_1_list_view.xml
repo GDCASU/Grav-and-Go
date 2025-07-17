@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_list_view" xml:lang="en-US">
+<title>FMODUnity.ListView Class Reference</title>
+<indexterm><primary>FMODUnity.ListView</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.ListView:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_list_view.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_class_f_m_o_d_unity_1_1_list_view_1a0d6dc1f91e9390dee7c322071dc8c329">DrawElementWithLabelDelegate</link> (Rect rect, float labelRight, int index, bool active, bool focused)</para>
+</listitem>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_list_view_1a921a50d9f1526dc9c979edb587aef89f">ListView</link> (SerializedProperty property)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_list_view_1a7ca1a3ba871314a9932298dbbb00bd2b">DrawLayout</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_list_view_1a0d6dc1f91e9390dee7c322071dc8c329">DrawElementWithLabelDelegate</link> <link linkend="_class_f_m_o_d_unity_1_1_list_view_1abec518458284b806bbe5d53c04a317fc">drawElementWithLabelCallback</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_list_view_1a921a50d9f1526dc9c979edb587aef89f"/><section>
+    <title>ListView()</title>
+<indexterm><primary>ListView</primary><secondary>FMODUnity.ListView</secondary></indexterm>
+<indexterm><primary>FMODUnity.ListView</primary><secondary>ListView</secondary></indexterm>
+<para><computeroutput>FMODUnity.ListView.ListView (SerializedProperty property)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_list_view_1a0d6dc1f91e9390dee7c322071dc8c329"/><section>
+    <title>DrawElementWithLabelDelegate()</title>
+<indexterm><primary>DrawElementWithLabelDelegate</primary><secondary>FMODUnity.ListView</secondary></indexterm>
+<indexterm><primary>FMODUnity.ListView</primary><secondary>DrawElementWithLabelDelegate</secondary></indexterm>
+<para><computeroutput>delegate void FMODUnity.ListView.DrawElementWithLabelDelegate (Rect rect, float labelRight, int index, bool active, bool focused)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_list_view_1a7ca1a3ba871314a9932298dbbb00bd2b"/><section>
+    <title>DrawLayout()</title>
+<indexterm><primary>DrawLayout</primary><secondary>FMODUnity.ListView</secondary></indexterm>
+<indexterm><primary>FMODUnity.ListView</primary><secondary>DrawLayout</secondary></indexterm>
+<para><computeroutput>void FMODUnity.ListView.DrawLayout ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_list_view_1abec518458284b806bbe5d53c04a317fc"/><section>
+    <title>drawElementWithLabelCallback</title>
+<indexterm><primary>drawElementWithLabelCallback</primary><secondary>FMODUnity.ListView</secondary></indexterm>
+<indexterm><primary>FMODUnity.ListView</primary><secondary>drawElementWithLabelCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_class_f_m_o_d_unity_1_1_list_view_1a0d6dc1f91e9390dee7c322071dc8c329">DrawElementWithLabelDelegate</link> FMODUnity.ListView.drawElementWithLabelCallback</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__list_view_8cs">ListView.cs</link></section>
+</section>

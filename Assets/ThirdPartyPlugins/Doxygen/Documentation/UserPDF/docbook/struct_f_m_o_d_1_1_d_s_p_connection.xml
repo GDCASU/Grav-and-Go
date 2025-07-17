@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p_connection" xml:lang="en-US">
+<title>FMOD.DSPConnection Struct Reference</title>
+<indexterm><primary>FMOD.DSPConnection</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a8c5c863bba5e01ca67f5269b2d97c3a9">getInput</link> (out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> input)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1ae9ffe554de56860006e2f8e16f101de9">getOutput</link> (out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> output)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1af469a51fa09fad3cf0e76c4cbca74445">setMix</link> (float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a4eca6c02444348f52dde8838376a2ee3">getMix</link> (out float volume)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a3ddcd64f658b2a6881078343640a725d">setMixMatrix</link> (float[] matrix, int outchannels, int inchannels, int inchannel_hop=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a64bb02f2c91d312447dc36c4b8361f66">getMixMatrix</link> (float[] matrix, out int outchannels, out int inchannels, int inchannel_hop=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1ae144df4faa02c93a08ac36f34e569581">getType</link> (out <link linkend="_namespace_f_m_o_d_1abd730a6ff8b969c2f90d4123deb42aca">DSPCONNECTION_TYPE</link> type)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a84925b868070185a7f996fb8950c38f9">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a0ba899f70bf4b962cf3f5fb0d63c6dac">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a71221a132649103f01420874b31ac35a">DSPConnection</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1abba647fac6736a6df985518548af4537">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1ae83c245124c2b570941678e122be089b">clearHandle</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p_connection_1a3a6ae7d68ed9cb889e3b93573a04ba14">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a71221a132649103f01420874b31ac35a"/><section>
+    <title>DSPConnection()</title>
+<indexterm><primary>DSPConnection</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>DSPConnection</secondary></indexterm>
+<para><computeroutput>FMOD.DSPConnection.DSPConnection (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1ae83c245124c2b570941678e122be089b"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.DSPConnection.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a8c5c863bba5e01ca67f5269b2d97c3a9"/><section>
+    <title>getInput()</title>
+<indexterm><primary>getInput</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getInput</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getInput (out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> input)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a4eca6c02444348f52dde8838376a2ee3"/><section>
+    <title>getMix()</title>
+<indexterm><primary>getMix</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getMix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getMix (out float volume)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a64bb02f2c91d312447dc36c4b8361f66"/><section>
+    <title>getMixMatrix()</title>
+<indexterm><primary>getMixMatrix</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getMixMatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getMixMatrix (float[] matrix, out int outchannels, out int inchannels, int inchannel_hop = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1ae9ffe554de56860006e2f8e16f101de9"/><section>
+    <title>getOutput()</title>
+<indexterm><primary>getOutput</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getOutput</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getOutput (out <link linkend="_struct_f_m_o_d_1_1_d_s_p">DSP</link> output)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1ae144df4faa02c93a08ac36f34e569581"/><section>
+    <title>getType()</title>
+<indexterm><primary>getType</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getType</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getType (out <link linkend="_namespace_f_m_o_d_1abd730a6ff8b969c2f90d4123deb42aca">DSPCONNECTION_TYPE</link> type)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a0ba899f70bf4b962cf3f5fb0d63c6dac"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1abba647fac6736a6df985518548af4537"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.DSPConnection.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1af469a51fa09fad3cf0e76c4cbca74445"/><section>
+    <title>setMix()</title>
+<indexterm><primary>setMix</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>setMix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.setMix (float volume)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a3ddcd64f658b2a6881078343640a725d"/><section>
+    <title>setMixMatrix()</title>
+<indexterm><primary>setMixMatrix</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>setMixMatrix</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.setMixMatrix (float[] matrix, int outchannels, int inchannels, int inchannel_hop = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a84925b868070185a7f996fb8950c38f9"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.DSPConnection.setUserData (IntPtr userdata)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p_connection_1a3a6ae7d68ed9cb889e3b93573a04ba14"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.DSPConnection</secondary></indexterm>
+<indexterm><primary>FMOD.DSPConnection</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSPConnection.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

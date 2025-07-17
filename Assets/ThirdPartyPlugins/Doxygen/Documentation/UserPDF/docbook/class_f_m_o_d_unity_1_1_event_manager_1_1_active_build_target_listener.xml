@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener" xml:lang="en-US">
+<title>FMODUnity.EventManager.ActiveBuildTargetListener Class Reference</title>
+<indexterm><primary>FMODUnity.EventManager.ActiveBuildTargetListener</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EventManager.ActiveBuildTargetListener:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener_1a93dc4eb59e17159fda92ca17bcd99ff5">OnActiveBuildTargetChanged</link> (BuildTarget previousTarget, BuildTarget newTarget)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener_1ab52167f469244a1bdad781bee27bc9ef">callbackOrder</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener_1a93dc4eb59e17159fda92ca17bcd99ff5"/><section>
+    <title>OnActiveBuildTargetChanged()</title>
+<indexterm><primary>OnActiveBuildTargetChanged</primary><secondary>FMODUnity.EventManager.ActiveBuildTargetListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventManager.ActiveBuildTargetListener</primary><secondary>OnActiveBuildTargetChanged</secondary></indexterm>
+<para><computeroutput>void FMODUnity.EventManager.ActiveBuildTargetListener.OnActiveBuildTargetChanged (BuildTarget previousTarget, BuildTarget newTarget)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_manager_1_1_active_build_target_listener_1ab52167f469244a1bdad781bee27bc9ef"/><section>
+    <title>callbackOrder</title>
+<indexterm><primary>callbackOrder</primary><secondary>FMODUnity.EventManager.ActiveBuildTargetListener</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventManager.ActiveBuildTargetListener</primary><secondary>callbackOrder</secondary></indexterm>
+<para><computeroutput>int FMODUnity.EventManager.ActiveBuildTargetListener.callbackOrder<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__event_manager_8cs">EventManager.cs</link></section>
+</section>

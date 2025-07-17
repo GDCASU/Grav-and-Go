@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__better_hierarchy_icon_displayer_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Editor/BetterHierarchyIconDisplayer.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Editor/BetterHierarchyIconDisplayer.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_utilities_1_1_better_hierarchy_1_1_better_hierarchy_icon_displayer">Utilities.BetterHierarchy.BetterHierarchyIconDisplayer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_utilities">Utilities</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_utilities_1_1_better_hierarchy">Utilities.BetterHierarchy</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> = System.Type</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac"/><section>
+    <title>Type</title>
+<indexterm><primary>Type</primary><secondary>BetterHierarchyIconDisplayer.cs</secondary></indexterm>
+<indexterm><primary>BetterHierarchyIconDisplayer.cs</primary><secondary>Type</secondary></indexterm>
+<para><computeroutput>using <link linkend="__better_hierarchy_icon_displayer_8cs_1aaebbef038ee6fd9cb7bc8b592f5adaac">Type</link> = System.Type</computeroutput></para></section>
+</section>
+</section>

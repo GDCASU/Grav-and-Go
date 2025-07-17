@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_bool_setting" xml:lang="en-US">
+<title>FMODUnity.Legacy.PlatformBoolSetting Class Reference</title>
+<indexterm><primary>FMODUnity.Legacy.PlatformBoolSetting</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.Legacy.PlatformBoolSetting:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_legacy_1_1_platform_bool_setting.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting-1-g">FMODUnity.Legacy.PlatformSetting&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para>T <link linkend="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting-1-g_1a3b6ec9bbf1fb27129dcc38927e1916a3">Value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base">FMODUnity.Legacy.PlatformSettingBase</link>        <itemizedlist>
+            <listitem><para>Platform <link linkend="_class_f_m_o_d_unity_1_1_legacy_1_1_platform_setting_base_1a5cd07a078de066d5c1cd7d63f7a3d350">Platform</link></para>
+</listitem>
+        </itemizedlist>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="__settings_8cs">Settings.cs</link></section>

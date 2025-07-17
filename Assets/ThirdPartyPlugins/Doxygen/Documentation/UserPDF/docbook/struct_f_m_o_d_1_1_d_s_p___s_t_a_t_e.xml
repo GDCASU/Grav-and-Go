@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e" xml:lang="en-US">
+<title>FMOD.DSP_STATE Struct Reference</title>
+<indexterm><primary>FMOD.DSP_STATE</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a9d09cb20a4e1923b7326cb8a60fcc728">instance</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a2436ffc8084a3ebc4a4ae4361e21acc7">plugindata</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a57c8297a3cd0e280a0bdfc5de15dfa59">channelmask</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a85f78f26d34af49ebee04d51fdc1b086">source_speakermode</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1ad3c15a24d714e1cb55d46af2d8d5f40f">sidechaindata</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a3cd296e44bbced45a4eeb508552e0902">sidechainchannels</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1aa0074695790208913c30503ee7b3e015">functions</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1aee50aacad7a3c70da70092ddec594e3a">systemobject</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a57c8297a3cd0e280a0bdfc5de15dfa59"/><section>
+    <title>channelmask</title>
+<indexterm><primary>channelmask</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>channelmask</secondary></indexterm>
+<para><computeroutput>uint FMOD.DSP_STATE.channelmask</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1aa0074695790208913c30503ee7b3e015"/><section>
+    <title>functions</title>
+<indexterm><primary>functions</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>functions</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE.functions</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a9d09cb20a4e1923b7326cb8a60fcc728"/><section>
+    <title>instance</title>
+<indexterm><primary>instance</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>instance</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE.instance</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a2436ffc8084a3ebc4a4ae4361e21acc7"/><section>
+    <title>plugindata</title>
+<indexterm><primary>plugindata</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>plugindata</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE.plugindata</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a3cd296e44bbced45a4eeb508552e0902"/><section>
+    <title>sidechainchannels</title>
+<indexterm><primary>sidechainchannels</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>sidechainchannels</secondary></indexterm>
+<para><computeroutput>int FMOD.DSP_STATE.sidechainchannels</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1ad3c15a24d714e1cb55d46af2d8d5f40f"/><section>
+    <title>sidechaindata</title>
+<indexterm><primary>sidechaindata</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>sidechaindata</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_STATE.sidechaindata</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1a85f78f26d34af49ebee04d51fdc1b086"/><section>
+    <title>source_speakermode</title>
+<indexterm><primary>source_speakermode</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>source_speakermode</secondary></indexterm>
+<para><computeroutput>int FMOD.DSP_STATE.source_speakermode</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___s_t_a_t_e_1aee50aacad7a3c70da70092ddec594e3a"/><section>
+    <title>systemobject</title>
+<indexterm><primary>systemobject</primary><secondary>FMOD.DSP_STATE</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_STATE</primary><secondary>systemobject</secondary></indexterm>
+<para><computeroutput>int FMOD.DSP_STATE.systemobject</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

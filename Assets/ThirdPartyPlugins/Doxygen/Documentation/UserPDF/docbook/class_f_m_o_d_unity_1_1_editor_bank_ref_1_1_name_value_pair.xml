@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair" xml:lang="en-US">
+<title>FMODUnity.EditorBankRef.NameValuePair Class Reference</title>
+<indexterm><primary>FMODUnity.EditorBankRef.NameValuePair</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a20006606a8d7960d4b4ecc90a024a789">NameValuePair</link> (string name, long value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a7879353bff1735812cc1529ebf2d2e18">Name</link></para>
+</listitem>
+            <listitem><para>long <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a184d6d61f1b58095e854397abaa6a9a3">Value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a20006606a8d7960d4b4ecc90a024a789"/><section>
+    <title>NameValuePair()</title>
+<indexterm><primary>NameValuePair</primary><secondary>FMODUnity.EditorBankRef.NameValuePair</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorBankRef.NameValuePair</primary><secondary>NameValuePair</secondary></indexterm>
+<para><computeroutput>FMODUnity.EditorBankRef.NameValuePair.NameValuePair (string name, long value)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a7879353bff1735812cc1529ebf2d2e18"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>FMODUnity.EditorBankRef.NameValuePair</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorBankRef.NameValuePair</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string FMODUnity.EditorBankRef.NameValuePair.Name</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_editor_bank_ref_1_1_name_value_pair_1a184d6d61f1b58095e854397abaa6a9a3"/><section>
+    <title>Value</title>
+<indexterm><primary>Value</primary><secondary>FMODUnity.EditorBankRef.NameValuePair</secondary></indexterm>
+<indexterm><primary>FMODUnity.EditorBankRef.NameValuePair</primary><secondary>Value</secondary></indexterm>
+<para><computeroutput>long FMODUnity.EditorBankRef.NameValuePair.Value</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__editor_bank_ref_8cs">EditorBankRef.cs</link></section>
+</section>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a004801802907d5760757e80fb0cc64e8">numpoints</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a9491f5eb024387d14c970b279fabc7c7">pointparamvalues</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a242660833d9883f786deaf6b0bb01b4f">pointpositions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a004801802907d5760757e80fb0cc64e8"/><section>
+    <title>numpoints</title>
+<indexterm><primary>numpoints</primary><secondary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</primary><secondary>numpoints</secondary></indexterm>
+<para><computeroutput>int FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR.numpoints</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a9491f5eb024387d14c970b279fabc7c7"/><section>
+    <title>pointparamvalues</title>
+<indexterm><primary>pointparamvalues</primary><secondary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</primary><secondary>pointparamvalues</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR.pointparamvalues</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___f_l_o_a_t___m_a_p_p_i_n_g___p_i_e_c_e_w_i_s_e___l_i_n_e_a_r_1a242660833d9883f786deaf6b0bb01b4f"/><section>
+    <title>pointpositions</title>
+<indexterm><primary>pointpositions</primary><secondary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR</primary><secondary>pointpositions</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.DSP_PARAMETER_FLOAT_MAPPING_PIECEWISE_LINEAR.pointpositions</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

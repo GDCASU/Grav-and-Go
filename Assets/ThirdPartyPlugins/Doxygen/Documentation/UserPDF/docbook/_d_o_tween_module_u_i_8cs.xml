@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__d_o_tween_module_u_i_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_u_i">DG.Tweening.DOTweenModuleUI</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_d_g_1_1_tweening_1_1_d_o_tween_module_u_i_1_1_utils">DG.Tweening.DOTweenModuleUI.Utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_d_g">DG</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_d_g_1_1_tweening">DG.Tweening</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__d_o_tween_module_u_i_8cs_1ad111d1f64b621da3af7b9e9de4ce74ef">Outline</link> = UnityEngine.UI.Outline</para>
+</listitem>
+            <listitem><para>using <link linkend="__d_o_tween_module_u_i_8cs_1ac19eea1123d7970b5d245ea7f910cfdd">Text</link> = UnityEngine.UI.Text</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__d_o_tween_module_u_i_8cs_1ad111d1f64b621da3af7b9e9de4ce74ef"/><section>
+    <title>Outline</title>
+<indexterm><primary>Outline</primary><secondary>DOTweenModuleUI.cs</secondary></indexterm>
+<indexterm><primary>DOTweenModuleUI.cs</primary><secondary>Outline</secondary></indexterm>
+<para><computeroutput>using <link linkend="__d_o_tween_module_u_i_8cs_1ad111d1f64b621da3af7b9e9de4ce74ef">Outline</link> = UnityEngine.UI.Outline</computeroutput></para></section>
+<anchor xml:id="__d_o_tween_module_u_i_8cs_1ac19eea1123d7970b5d245ea7f910cfdd"/><section>
+    <title>Text</title>
+<indexterm><primary>Text</primary><secondary>DOTweenModuleUI.cs</secondary></indexterm>
+<indexterm><primary>DOTweenModuleUI.cs</primary><secondary>Text</secondary></indexterm>
+<para><computeroutput>using <link linkend="__d_o_tween_module_u_i_8cs_1ac19eea1123d7970b5d245ea7f910cfdd">Text</link> = UnityEngine.UI.Text</computeroutput></para></section>
+</section>
+</section>

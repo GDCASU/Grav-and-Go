@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_utilities_1_1_better_hierarchy_1_1_mouse_status" xml:lang="en-US">
+<title>Utilities.BetterHierarchy.MouseStatus Class Reference</title>
+<indexterm><primary>Utilities.BetterHierarchy.MouseStatus</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a472cef547cca5826cd134f03421f9429">UpdateMouseEventState</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a9427f53dad8f7fd06e51f6ae24a121ee">IsMouseDown</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a9fa03dd88f16d907e0323babc37c50dd">IsMouseDragged</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a472cef547cca5826cd134f03421f9429"/><section>
+    <title>UpdateMouseEventState()</title>
+<indexterm><primary>UpdateMouseEventState</primary><secondary>Utilities.BetterHierarchy.MouseStatus</secondary></indexterm>
+<indexterm><primary>Utilities.BetterHierarchy.MouseStatus</primary><secondary>UpdateMouseEventState</secondary></indexterm>
+<para><computeroutput>void Utilities.BetterHierarchy.MouseStatus.UpdateMouseEventState ( )<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a9427f53dad8f7fd06e51f6ae24a121ee"/><section>
+    <title>IsMouseDown</title>
+<indexterm><primary>IsMouseDown</primary><secondary>Utilities.BetterHierarchy.MouseStatus</secondary></indexterm>
+<indexterm><primary>Utilities.BetterHierarchy.MouseStatus</primary><secondary>IsMouseDown</secondary></indexterm>
+<para><computeroutput>bool Utilities.BetterHierarchy.MouseStatus.IsMouseDown<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_utilities_1_1_better_hierarchy_1_1_mouse_status_1a9fa03dd88f16d907e0323babc37c50dd"/><section>
+    <title>IsMouseDragged</title>
+<indexterm><primary>IsMouseDragged</primary><secondary>Utilities.BetterHierarchy.MouseStatus</secondary></indexterm>
+<indexterm><primary>Utilities.BetterHierarchy.MouseStatus</primary><secondary>IsMouseDragged</secondary></indexterm>
+<para><computeroutput>bool Utilities.BetterHierarchy.MouseStatus.IsMouseDragged<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/Better Hierarchy/Editor/<link linkend="__mouse_status_8cs">MouseStatus.cs</link></section>
+</section>

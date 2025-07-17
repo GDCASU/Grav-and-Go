@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_unity_1_1_event_cache" xml:lang="en-US">
+<title>FMODUnity.EventCache Class Reference</title>
+<indexterm><primary>FMODUnity.EventCache</primary></indexterm>
+<para>Inheritance diagram for FMODUnity.EventCache:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_unity_1_1_event_cache.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_f_m_o_d_unity_1_1_event_cache_1ac4833c2713ca45c8a1369f0a49cfa886">EventCache</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1aebf11b493020d6cad6d6361ab008fbe5">EditorBanks</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref">EditorEventRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1af4d115f7bd116541e4ed59e3985a809a">EditorEvents</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1aa156f4f224dd5f49f823a7eaaeb119bb">EditorParameters</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1a8c1f16312f9ca0a1f27f7009af69ddb6">MasterBanks</link></para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link> &gt; <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1a7705014218ed1f04e5c37de8d8996199">StringsBanks</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1a5a5b9f23930400bf3a1bd82c5d1e2b14">cacheVersion</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>DateTime <link linkend="_class_f_m_o_d_unity_1_1_event_cache_1a829c3415e2a0bd0592900469f0d34a51">CacheTime</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1ac4833c2713ca45c8a1369f0a49cfa886"/><section>
+    <title>EventCache()</title>
+<indexterm><primary>EventCache</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>EventCache</secondary></indexterm>
+<para><computeroutput>FMODUnity.EventCache.EventCache ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1a5a5b9f23930400bf3a1bd82c5d1e2b14"/><section>
+    <title>cacheVersion</title>
+<indexterm><primary>cacheVersion</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>cacheVersion</secondary></indexterm>
+<para><computeroutput>int FMODUnity.EventCache.cacheVersion</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1aebf11b493020d6cad6d6361ab008fbe5"/><section>
+    <title>EditorBanks</title>
+<indexterm><primary>EditorBanks</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>EditorBanks</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link>&gt; FMODUnity.EventCache.EditorBanks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1af4d115f7bd116541e4ed59e3985a809a"/><section>
+    <title>EditorEvents</title>
+<indexterm><primary>EditorEvents</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>EditorEvents</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_event_ref">EditorEventRef</link>&gt; FMODUnity.EventCache.EditorEvents</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1aa156f4f224dd5f49f823a7eaaeb119bb"/><section>
+    <title>EditorParameters</title>
+<indexterm><primary>EditorParameters</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>EditorParameters</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_param_ref">EditorParamRef</link>&gt; FMODUnity.EventCache.EditorParameters</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1a8c1f16312f9ca0a1f27f7009af69ddb6"/><section>
+    <title>MasterBanks</title>
+<indexterm><primary>MasterBanks</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>MasterBanks</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link>&gt; FMODUnity.EventCache.MasterBanks</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1a7705014218ed1f04e5c37de8d8996199"/><section>
+    <title>StringsBanks</title>
+<indexterm><primary>StringsBanks</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>StringsBanks</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_f_m_o_d_unity_1_1_editor_bank_ref">EditorBankRef</link>&gt; FMODUnity.EventCache.StringsBanks</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_f_m_o_d_unity_1_1_event_cache_1a829c3415e2a0bd0592900469f0d34a51"/><section>
+    <title>CacheTime</title>
+<indexterm><primary>CacheTime</primary><secondary>FMODUnity.EventCache</secondary></indexterm>
+<indexterm><primary>FMODUnity.EventCache</primary><secondary>CacheTime</secondary></indexterm>
+<para><computeroutput>DateTime FMODUnity.EventCache.CacheTime<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/Editor/<link linkend="__event_cache_8cs">EventCache.cs</link></section>
+</section>

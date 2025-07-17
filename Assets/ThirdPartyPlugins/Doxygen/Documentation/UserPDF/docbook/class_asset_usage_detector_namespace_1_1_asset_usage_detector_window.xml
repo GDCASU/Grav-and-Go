@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.AssetUsageDetectorWindow Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.AssetUsageDetectorWindow:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_asset_usage_detector_window.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1aaa0d379c3eec9bf9ef0a9a8615ccf298">ReplacePrefabStageObjectsWithAssets</link> (PrefabStage prefabStage)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a559486fa1e99dcc0c8c2d9c678e18ccf">ShowAndSearch</link> (IEnumerable&lt; <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> &gt; searchObjects, bool? shouldSearchChildren=null)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a4be1800dc5e656b0b77f048fa2231d6d">ShowAndSearch</link> (AssetUsageDetector.Parameters searchParameters, bool? shouldSearchChildren=null)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a668693e6ee84519e8e0c9f445bc60c0b">WordWrappingToggleLeft</link> (string label, bool value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1ae964f65464af9d0aaeec7df3a2b6bc64">WordWrappingToggleLeft</link> (GUIContent label, bool value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1aaa0d379c3eec9bf9ef0a9a8615ccf298"/><section>
+    <title>ReplacePrefabStageObjectsWithAssets()</title>
+<indexterm><primary>ReplacePrefabStageObjectsWithAssets</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary><secondary>ReplacePrefabStageObjectsWithAssets</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.AssetUsageDetectorWindow.ReplacePrefabStageObjectsWithAssets (PrefabStage prefabStage)</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a4be1800dc5e656b0b77f048fa2231d6d"/><section>
+    <title>ShowAndSearch()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ShowAndSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary><secondary>ShowAndSearch</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.AssetUsageDetectorWindow.ShowAndSearch (AssetUsageDetector.Parameters searchParameters, bool? shouldSearchChildren = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a559486fa1e99dcc0c8c2d9c678e18ccf"/><section>
+    <title>ShowAndSearch()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ShowAndSearch</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary><secondary>ShowAndSearch</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.AssetUsageDetectorWindow.ShowAndSearch (IEnumerable&lt; <link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> &gt; searchObjects, bool? shouldSearchChildren = <computeroutput>null</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1ae964f65464af9d0aaeec7df3a2b6bc64"/><section>
+    <title>WordWrappingToggleLeft()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>WordWrappingToggleLeft</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary><secondary>WordWrappingToggleLeft</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorWindow.WordWrappingToggleLeft (GUIContent label, bool value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_asset_usage_detector_window_1a668693e6ee84519e8e0c9f445bc60c0b"/><section>
+    <title>WordWrappingToggleLeft()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>WordWrappingToggleLeft</primary><secondary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.AssetUsageDetectorWindow</primary><secondary>WordWrappingToggleLeft</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.AssetUsageDetectorWindow.WordWrappingToggleLeft (string label, bool value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__asset_usage_detector_window_8cs">AssetUsageDetectorWindow.cs</link></section>
+</section>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a4738e1d29b3ded7d303dff7fe8697b8a">SearchQuery</link> (IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> &gt; matchers)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link> &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a98715dff3a0dc183157ac10c5e190cc5">ApplyToProperty</link> (SerializedProperty property)</para>
+</listitem>
+            <listitem><para>IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry">SearchResultEntry</link> &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1ae2abd1beb7d52bdfdaedc18da87cfe53">ApplyToArrayProperty</link> (SerializedProperty property)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a9cba28ee7650cb3ebedf14d64ed02c9f">SearchString</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a4738e1d29b3ded7d303dff7fe8697b8a"/><section>
+    <title>SearchQuery()</title>
+<indexterm><primary>SearchQuery</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</primary><secondary>SearchQuery</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery.SearchQuery (IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> &gt; matchers)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1ae2abd1beb7d52bdfdaedc18da87cfe53"/><section>
+    <title>ApplyToArrayProperty()</title>
+<indexterm><primary>ApplyToArrayProperty</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</primary><secondary>ApplyToArrayProperty</secondary></indexterm>
+<para><computeroutput>IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_result_entry">SearchResultEntry</link> &gt; AYellowpaper.SerializedCollections.Editor.Search.SearchQuery.ApplyToArrayProperty (SerializedProperty property)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a98715dff3a0dc183157ac10c5e190cc5"/><section>
+    <title>ApplyToProperty()</title>
+<indexterm><primary>ApplyToProperty</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</primary><secondary>ApplyToProperty</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_a_yellowpaper_1_1_serialized_collections_1_1_editor_1a1eea16edc87e6f285d40c08391d5c951a4ee29ca12c7d126654bd0e5275de6135">List</link>&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_property_search_result">PropertySearchResult</link> &gt; AYellowpaper.SerializedCollections.Editor.Search.SearchQuery.ApplyToProperty (SerializedProperty property)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_search_query_1a9cba28ee7650cb3ebedf14d64ed02c9f"/><section>
+    <title>SearchString</title>
+<indexterm><primary>SearchString</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.SearchQuery</primary><secondary>SearchString</secondary></indexterm>
+<para><computeroutput>string AYellowpaper.SerializedCollections.Editor.Search.SearchQuery.SearchString<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Search/<link linkend="__search_query_8cs">SearchQuery.cs</link></section>
+</section>

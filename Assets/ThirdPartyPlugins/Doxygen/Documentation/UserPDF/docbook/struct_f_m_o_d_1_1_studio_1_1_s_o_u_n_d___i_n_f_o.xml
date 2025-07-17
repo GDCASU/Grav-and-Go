@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o" xml:lang="en-US">
+<title>FMOD.Studio.SOUND_INFO Struct Reference</title>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a6993260c8f3200e1479510dfde8ce15d">name_or_data</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a132ae837e6263170b0494daf4705ea12">mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o">CREATESOUNDEXINFO</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a2f668438f80305fb50f33828201f8829">exinfo</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a0c09ecfa0e18b991e3d96d7c5e7a8afc">subsoundindex</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1aed5f6e3fc0b520a6422bf558cfed124b">name</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a2f668438f80305fb50f33828201f8829"/><section>
+    <title>exinfo</title>
+<indexterm><primary>exinfo</primary><secondary>FMOD.Studio.SOUND_INFO</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary><secondary>exinfo</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o">CREATESOUNDEXINFO</link> FMOD.Studio.SOUND_INFO.exinfo</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a132ae837e6263170b0494daf4705ea12"/><section>
+    <title>mode</title>
+<indexterm><primary>mode</primary><secondary>FMOD.Studio.SOUND_INFO</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary><secondary>mode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a94ab158a8314f5f4248f1aea55dbefa3">MODE</link> FMOD.Studio.SOUND_INFO.mode</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a6993260c8f3200e1479510dfde8ce15d"/><section>
+    <title>name_or_data</title>
+<indexterm><primary>name_or_data</primary><secondary>FMOD.Studio.SOUND_INFO</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary><secondary>name_or_data</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Studio.SOUND_INFO.name_or_data</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1a0c09ecfa0e18b991e3d96d7c5e7a8afc"/><section>
+    <title>subsoundindex</title>
+<indexterm><primary>subsoundindex</primary><secondary>FMOD.Studio.SOUND_INFO</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary><secondary>subsoundindex</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.SOUND_INFO.subsoundindex</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o_1aed5f6e3fc0b520a6422bf558cfed124b"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>FMOD.Studio.SOUND_INFO</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.SOUND_INFO</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string FMOD.Studio.SOUND_INFO.name<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

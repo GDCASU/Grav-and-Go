@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.Editor.Search.Matchers Class Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a199b83ee31a01e47eb79eb8b30e73253">AddMatcher</link> (<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> matcher)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a778fd8278ed39f93fce9a60074b95a6b">RemoveMatcher</link> (<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> matcher)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static IEnumerable&lt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> &gt; <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a54e754233bf2a2121c577f38d762a704">RegisteredMatchers</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a199b83ee31a01e47eb79eb8b30e73253"/><section>
+    <title>AddMatcher()</title>
+<indexterm><primary>AddMatcher</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</primary><secondary>AddMatcher</secondary></indexterm>
+<para><computeroutput>void AYellowpaper.SerializedCollections.Editor.Search.Matchers.AddMatcher (<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> matcher)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a778fd8278ed39f93fce9a60074b95a6b"/><section>
+    <title>RemoveMatcher()</title>
+<indexterm><primary>RemoveMatcher</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</primary><secondary>RemoveMatcher</secondary></indexterm>
+<para><computeroutput>bool AYellowpaper.SerializedCollections.Editor.Search.Matchers.RemoveMatcher (<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link> matcher)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matchers_1a54e754233bf2a2121c577f38d762a704"/><section>
+    <title>RegisteredMatchers</title>
+<indexterm><primary>RegisteredMatchers</primary><secondary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.Editor.Search.Matchers</primary><secondary>RegisteredMatchers</secondary></indexterm>
+<para><computeroutput>IEnumerable&lt;<link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_search_1_1_matcher">Matcher</link>&gt; AYellowpaper.SerializedCollections.Editor.Search.Matchers.RegisteredMatchers<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Editor/Scripts/Search/Matchers/<link linkend="__matchers_8cs">Matchers.cs</link></section>
+</section>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_reverb3_d" xml:lang="en-US">
+<title>FMOD.Reverb3D Struct Reference</title>
+<indexterm><primary>FMOD.Reverb3D</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a7f8fc7adb28c09c2d36cfc725c9f3110">release</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1adaf18959a4a422eaa5fb73bd9b0a895e">set3DAttributes</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position, float mindistance, float maxdistance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a6d8250616062ae21af248c92eece725b">get3DAttributes</link> (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position, ref float mindistance, ref float maxdistance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1af16e44ba6013b50085dcf63a6a879d60">setProperties</link> (ref <link linkend="_struct_f_m_o_d_1_1_r_e_v_e_r_b___p_r_o_p_e_r_t_i_e_s">REVERB_PROPERTIES</link> properties)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a9ed77465cb5c92a1f06ad874eccf85db">getProperties</link> (ref <link linkend="_struct_f_m_o_d_1_1_r_e_v_e_r_b___p_r_o_p_e_r_t_i_e_s">REVERB_PROPERTIES</link> properties)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a4d528c30020c3426e65dac1f5427e878">setActive</link> (bool active)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a3a0591025bc4ba9c5be4eee2e1cdbd62">getActive</link> (out bool active)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a3300368e83bffa3e4b753f520e335952">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a0193d3e1ffd3f9a38afaf122a7b7b095">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a5fd480116d1ffaa01cf0775d4d9cae7e">Reverb3D</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1aca2036d048bcb04265cf3a422595da74">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1a8d7d113be2cbaec88701777b6ac948b8">clearHandle</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_reverb3_d_1ac91ce2464898c358b9e0ee28f00ee31f">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a5fd480116d1ffaa01cf0775d4d9cae7e"/><section>
+    <title>Reverb3D()</title>
+<indexterm><primary>Reverb3D</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>Reverb3D</secondary></indexterm>
+<para><computeroutput>FMOD.Reverb3D.Reverb3D (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a8d7d113be2cbaec88701777b6ac948b8"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Reverb3D.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a6d8250616062ae21af248c92eece725b"/><section>
+    <title>get3DAttributes()</title>
+<indexterm><primary>get3DAttributes</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>get3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.get3DAttributes (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position, ref float mindistance, ref float maxdistance)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a3a0591025bc4ba9c5be4eee2e1cdbd62"/><section>
+    <title>getActive()</title>
+<indexterm><primary>getActive</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>getActive</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.getActive (out bool active)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a9ed77465cb5c92a1f06ad874eccf85db"/><section>
+    <title>getProperties()</title>
+<indexterm><primary>getProperties</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>getProperties</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.getProperties (ref <link linkend="_struct_f_m_o_d_1_1_r_e_v_e_r_b___p_r_o_p_e_r_t_i_e_s">REVERB_PROPERTIES</link> properties)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a0193d3e1ffd3f9a38afaf122a7b7b095"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1aca2036d048bcb04265cf3a422595da74"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Reverb3D.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a7f8fc7adb28c09c2d36cfc725c9f3110"/><section>
+    <title>release()</title>
+<indexterm><primary>release</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>release</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.release ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1adaf18959a4a422eaa5fb73bd9b0a895e"/><section>
+    <title>set3DAttributes()</title>
+<indexterm><primary>set3DAttributes</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>set3DAttributes</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.set3DAttributes (ref <link linkend="_struct_f_m_o_d_1_1_v_e_c_t_o_r">VECTOR</link> position, float mindistance, float maxdistance)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a4d528c30020c3426e65dac1f5427e878"/><section>
+    <title>setActive()</title>
+<indexterm><primary>setActive</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>setActive</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.setActive (bool active)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1af16e44ba6013b50085dcf63a6a879d60"/><section>
+    <title>setProperties()</title>
+<indexterm><primary>setProperties</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>setProperties</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.setProperties (ref <link linkend="_struct_f_m_o_d_1_1_r_e_v_e_r_b___p_r_o_p_e_r_t_i_e_s">REVERB_PROPERTIES</link> properties)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1a3300368e83bffa3e4b753f520e335952"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Reverb3D.setUserData (IntPtr userdata)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_reverb3_d_1ac91ce2464898c358b9e0ee28f00ee31f"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Reverb3D</secondary></indexterm>
+<indexterm><primary>FMOD.Reverb3D</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Reverb3D.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

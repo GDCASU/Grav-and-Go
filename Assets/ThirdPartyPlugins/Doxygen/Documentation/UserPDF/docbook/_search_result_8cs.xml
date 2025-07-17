@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__search_result_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/SearchResult.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/SearchResult.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result">AssetUsageDetectorNamespace.SearchResult</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">AssetUsageDetectorNamespace.SearchResult.SerializableResultGroup</emphasis></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">AssetUsageDetectorNamespace.SearchResult.SerializableNode</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_1_1_serializable_node_1_1_serializable_link_descriptions">AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">AssetUsageDetectorNamespace.SearchResult.SortedEntry</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_group">AssetUsageDetectorNamespace.SearchResultGroup</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node">AssetUsageDetectorNamespace.ReferenceNode</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_asset_usage_detector_namespace_1_1_reference_node_1_1_link">AssetUsageDetectorNamespace.ReferenceNode.Link</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_asset_usage_detector_namespace">AssetUsageDetectorNamespace</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

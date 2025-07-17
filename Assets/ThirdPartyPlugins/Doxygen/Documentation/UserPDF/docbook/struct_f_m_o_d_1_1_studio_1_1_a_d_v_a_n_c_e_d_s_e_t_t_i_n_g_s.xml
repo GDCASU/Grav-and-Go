@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s" xml:lang="en-US">
+<title>FMOD.Studio.ADVANCEDSETTINGS Struct Reference</title>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a2f4b8381be5bd5f1775cc175eb051466">cbsize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1d08b4045cf2f041a19c9a47a3868a64">commandqueuesize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a9493db0aa2b569aa03e542ad270a2bfb">handleinitialsize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab2c4d14bbc3fee349e4302283e393e8d">studioupdateperiod</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aac3d88c8d36ecf437c1994cdccbe7387">idlesampledatapoolsize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1af8d8150c4a4ae04bbfd8563b6a7f1556">streamingscheduledelay</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab055f010d93e5839966a725d290e1640">encryptionkey</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a2f4b8381be5bd5f1775cc175eb051466"/><section>
+    <title>cbsize</title>
+<indexterm><primary>cbsize</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>cbsize</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.cbsize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a1d08b4045cf2f041a19c9a47a3868a64"/><section>
+    <title>commandqueuesize</title>
+<indexterm><primary>commandqueuesize</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>commandqueuesize</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.commandqueuesize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab055f010d93e5839966a725d290e1640"/><section>
+    <title>encryptionkey</title>
+<indexterm><primary>encryptionkey</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>encryptionkey</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Studio.ADVANCEDSETTINGS.encryptionkey</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1a9493db0aa2b569aa03e542ad270a2bfb"/><section>
+    <title>handleinitialsize</title>
+<indexterm><primary>handleinitialsize</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>handleinitialsize</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.handleinitialsize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1aac3d88c8d36ecf437c1994cdccbe7387"/><section>
+    <title>idlesampledatapoolsize</title>
+<indexterm><primary>idlesampledatapoolsize</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>idlesampledatapoolsize</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.idlesampledatapoolsize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1af8d8150c4a4ae04bbfd8563b6a7f1556"/><section>
+    <title>streamingscheduledelay</title>
+<indexterm><primary>streamingscheduledelay</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>streamingscheduledelay</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.streamingscheduledelay</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s_1ab2c4d14bbc3fee349e4302283e393e8d"/><section>
+    <title>studioupdateperiod</title>
+<indexterm><primary>studioupdateperiod</primary><secondary>FMOD.Studio.ADVANCEDSETTINGS</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.ADVANCEDSETTINGS</primary><secondary>studioupdateperiod</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.ADVANCEDSETTINGS.studioupdateperiod</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

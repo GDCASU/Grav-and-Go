@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding" xml:lang="en-US">
+<title>FMOD.StringHelper.ThreadSafeEncoding Class Reference</title>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary></indexterm>
+<para>Inheritance diagram for FMOD.StringHelper.ThreadSafeEncoding:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ac0cd22a12953d1b3846c115201847110">InUse</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1a1f8a8af1da0acd7601b4348db9088c4f">SetInUse</link> ()</para>
+</listitem>
+            <listitem><para>byte[] <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ab70a9e17e9e5d8cb538d2f5ccb8ce5cc">byteFromStringUTF8</link> (string s)</para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1affa8c179548c9c5ea290366b83de7212">intptrFromStringUTF8</link> (string s)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1a41e4b376e550dda55bac868b6f39a5bd">stringFromNative</link> (IntPtr nativePtr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ab668ed7e258d2b0c7875f25fb9b8de68">Dispose</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ab70a9e17e9e5d8cb538d2f5ccb8ce5cc"/><section>
+    <title>byteFromStringUTF8()</title>
+<indexterm><primary>byteFromStringUTF8</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>byteFromStringUTF8</secondary></indexterm>
+<para><computeroutput>byte[] FMOD.StringHelper.ThreadSafeEncoding.byteFromStringUTF8 (string s)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ab668ed7e258d2b0c7875f25fb9b8de68"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>void FMOD.StringHelper.ThreadSafeEncoding.Dispose ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1affa8c179548c9c5ea290366b83de7212"/><section>
+    <title>intptrFromStringUTF8()</title>
+<indexterm><primary>intptrFromStringUTF8</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>intptrFromStringUTF8</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.StringHelper.ThreadSafeEncoding.intptrFromStringUTF8 (string s)</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1ac0cd22a12953d1b3846c115201847110"/><section>
+    <title>InUse()</title>
+<indexterm><primary>InUse</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>InUse</secondary></indexterm>
+<para><computeroutput>bool FMOD.StringHelper.ThreadSafeEncoding.InUse ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1a1f8a8af1da0acd7601b4348db9088c4f"/><section>
+    <title>SetInUse()</title>
+<indexterm><primary>SetInUse</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>SetInUse</secondary></indexterm>
+<para><computeroutput>void FMOD.StringHelper.ThreadSafeEncoding.SetInUse ( )</computeroutput></para></section>
+<anchor xml:id="_class_f_m_o_d_1_1_string_helper_1_1_thread_safe_encoding_1a41e4b376e550dda55bac868b6f39a5bd"/><section>
+    <title>stringFromNative()</title>
+<indexterm><primary>stringFromNative</primary><secondary>FMOD.StringHelper.ThreadSafeEncoding</secondary></indexterm>
+<indexterm><primary>FMOD.StringHelper.ThreadSafeEncoding</primary><secondary>stringFromNative</secondary></indexterm>
+<para><computeroutput>string FMOD.StringHelper.ThreadSafeEncoding.stringFromNative (IntPtr nativePtr)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>

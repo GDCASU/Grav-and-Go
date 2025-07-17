@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_2257e360ec0a08644f63ec9b982d3d16" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor Directory Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__asset_usage_detector_8cs">AssetUsageDetector.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__asset_usage_detector_cache_8cs">AssetUsageDetectorCache.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__asset_usage_detector_search_functions_8cs">AssetUsageDetectorSearchFunctions.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__asset_usage_detector_settings_8cs">AssetUsageDetectorSettings.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__asset_usage_detector_window_8cs">AssetUsageDetectorWindow.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enumerators_8cs">Enumerators.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__list_drawer_8cs">ListDrawer.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__object_to_search_8cs">ObjectToSearch.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__search_refactoring_8cs">SearchRefactoring.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__search_result_8cs">SearchResult.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__search_result_tooltip_8cs">SearchResultTooltip.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__search_result_tree_view_8cs">SearchResultTreeView.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__utilities_8cs">Utilities.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__variable_getter_8cs">VariableGetter.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

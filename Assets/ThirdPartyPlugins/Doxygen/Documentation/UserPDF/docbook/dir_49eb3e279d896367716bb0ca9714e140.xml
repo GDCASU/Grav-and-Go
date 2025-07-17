@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_49eb3e279d896367716bb0ca9714e140" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/ThirdPartyPlugins/Doxygen/Editor Directory Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/ThirdPartyPlugins/Doxygen/Editor Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__doxy_file_8cs">DoxyFile.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__doxy_settings_8cs">DoxySettings.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__doxy_window_8cs">DoxyWindow.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__process_runner_8cs">ProcessRunner.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

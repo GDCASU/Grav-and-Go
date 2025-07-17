@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay" xml:lang="en-US">
+<title>FMOD.Studio.CommandReplay Struct Reference</title>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae9ea37bd6a9507bb05044321688d947d">getSystem</link> (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">System</link> system)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac3dccf2d74e1b5bd4c07c5bb10d5b73f">getLength</link> (out float length)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1aab480198224f4bf8a01a9329a1d4ee7d">getCommandCount</link> (out int count)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac0c493eb989cee4282d20764fe0a5988">getCommandInfo</link> (int commandIndex, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_o_m_m_a_n_d___i_n_f_o">COMMAND_INFO</link> info)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a905455914b841f59180c057fd3633a09">getCommandString</link> (int commandIndex, out string buffer)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae8cbc4a2383d92742c353c093c14c34e">getCommandAtTime</link> (float time, out int commandIndex)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a71e4256df794266954913d3ef2ce1061">setBankPath</link> (string bankPath)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ab1a366a534a17e0e49ed468b7f87c81a">start</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a2d263d7d9f7d0545b94b1f9b801b930a">stop</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a5d3375a26afa306bf21d2f1b8f178d7a">seekToTime</link> (float time)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a4903873641391d5b40470df7fb73837b">seekToCommand</link> (int commandIndex)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a6462b8103f5af4f5164c2e5a233220e7">getPaused</link> (out bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1afbfda1ea2c64b526ff805c26664a94df">setPaused</link> (bool paused)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a28783ebbe46a7a95755d0776bb121ec2">getPlaybackState</link> (out <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602d">PLAYBACK_STATE</link> state)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ab068b4e74ebc02c24076ca0c75bb4205">getCurrentCommand</link> (out int commandIndex, out float currentTime)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a12f81d9adcc8b7ab231ac691c15725de">release</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac1003b0c2206c7c21af4eefd268bab2a">setFrameCallback</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1aca1b4ec5deb7a4d672b7578965fc8fb1">COMMANDREPLAY_FRAME_CALLBACK</link> callback)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a3031c9af6190423aab9252c521f24b31">setLoadBankCallback</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1a112087d93f4f8841d9d9b220b7de7e59">COMMANDREPLAY_LOAD_BANK_CALLBACK</link> callback)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a376a6788b39c202ccba9e2b9234435c9">setCreateInstanceCallback</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1a2688de77492e02fcb560e273db986d6e">COMMANDREPLAY_CREATE_INSTANCE_CALLBACK</link> callback)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a03d3c9e9d4d79c46a9dc38e5793c328b">getUserData</link> (out IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a761792fe8adabf96e33cd9cd07924d9f">setUserData</link> (IntPtr userdata)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a79c3fd3d133e1faa35944250ab75ec4c">CommandReplay</link> (IntPtr ptr)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac48fbb66ff2ded53475eba52c0a4bce4">hasHandle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a46b341b7e65758a4e03e2848047e4e33">clearHandle</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a123623a6b5e195bbd09a4e451d6a357a">isValid</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae447a2276fd9ecee1583d42094e48a69">handle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a79c3fd3d133e1faa35944250ab75ec4c"/><section>
+    <title>CommandReplay()</title>
+<indexterm><primary>CommandReplay</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>CommandReplay</secondary></indexterm>
+<para><computeroutput>FMOD.Studio.CommandReplay.CommandReplay (IntPtr ptr)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a46b341b7e65758a4e03e2848047e4e33"/><section>
+    <title>clearHandle()</title>
+<indexterm><primary>clearHandle</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>clearHandle</secondary></indexterm>
+<para><computeroutput>void FMOD.Studio.CommandReplay.clearHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae8cbc4a2383d92742c353c093c14c34e"/><section>
+    <title>getCommandAtTime()</title>
+<indexterm><primary>getCommandAtTime</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getCommandAtTime</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getCommandAtTime (float time, out int commandIndex)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1aab480198224f4bf8a01a9329a1d4ee7d"/><section>
+    <title>getCommandCount()</title>
+<indexterm><primary>getCommandCount</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getCommandCount</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getCommandCount (out int count)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac0c493eb989cee4282d20764fe0a5988"/><section>
+    <title>getCommandInfo()</title>
+<indexterm><primary>getCommandInfo</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getCommandInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getCommandInfo (int commandIndex, out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_o_m_m_a_n_d___i_n_f_o">COMMAND_INFO</link> info)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a905455914b841f59180c057fd3633a09"/><section>
+    <title>getCommandString()</title>
+<indexterm><primary>getCommandString</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getCommandString</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getCommandString (int commandIndex, out string buffer)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ab068b4e74ebc02c24076ca0c75bb4205"/><section>
+    <title>getCurrentCommand()</title>
+<indexterm><primary>getCurrentCommand</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getCurrentCommand</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getCurrentCommand (out int commandIndex, out float currentTime)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac3dccf2d74e1b5bd4c07c5bb10d5b73f"/><section>
+    <title>getLength()</title>
+<indexterm><primary>getLength</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getLength</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getLength (out float length)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a6462b8103f5af4f5164c2e5a233220e7"/><section>
+    <title>getPaused()</title>
+<indexterm><primary>getPaused</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getPaused (out bool paused)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a28783ebbe46a7a95755d0776bb121ec2"/><section>
+    <title>getPlaybackState()</title>
+<indexterm><primary>getPlaybackState</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getPlaybackState</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getPlaybackState (out <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602d">PLAYBACK_STATE</link> state)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae9ea37bd6a9507bb05044321688d947d"/><section>
+    <title>getSystem()</title>
+<indexterm><primary>getSystem</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getSystem</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getSystem (out <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">System</link> system)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a03d3c9e9d4d79c46a9dc38e5793c328b"/><section>
+    <title>getUserData()</title>
+<indexterm><primary>getUserData</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>getUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.getUserData (out IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac48fbb66ff2ded53475eba52c0a4bce4"/><section>
+    <title>hasHandle()</title>
+<indexterm><primary>hasHandle</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>hasHandle</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.CommandReplay.hasHandle ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a123623a6b5e195bbd09a4e451d6a357a"/><section>
+    <title>isValid()</title>
+<indexterm><primary>isValid</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>isValid</secondary></indexterm>
+<para><computeroutput>bool FMOD.Studio.CommandReplay.isValid ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a12f81d9adcc8b7ab231ac691c15725de"/><section>
+    <title>release()</title>
+<indexterm><primary>release</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>release</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.release ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a4903873641391d5b40470df7fb73837b"/><section>
+    <title>seekToCommand()</title>
+<indexterm><primary>seekToCommand</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>seekToCommand</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.seekToCommand (int commandIndex)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a5d3375a26afa306bf21d2f1b8f178d7a"/><section>
+    <title>seekToTime()</title>
+<indexterm><primary>seekToTime</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>seekToTime</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.seekToTime (float time)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a71e4256df794266954913d3ef2ce1061"/><section>
+    <title>setBankPath()</title>
+<indexterm><primary>setBankPath</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setBankPath</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setBankPath (string bankPath)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a376a6788b39c202ccba9e2b9234435c9"/><section>
+    <title>setCreateInstanceCallback()</title>
+<indexterm><primary>setCreateInstanceCallback</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setCreateInstanceCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setCreateInstanceCallback (<link linkend="_namespace_f_m_o_d_1_1_studio_1a2688de77492e02fcb560e273db986d6e">COMMANDREPLAY_CREATE_INSTANCE_CALLBACK</link> callback)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ac1003b0c2206c7c21af4eefd268bab2a"/><section>
+    <title>setFrameCallback()</title>
+<indexterm><primary>setFrameCallback</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setFrameCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setFrameCallback (<link linkend="_namespace_f_m_o_d_1_1_studio_1aca1b4ec5deb7a4d672b7578965fc8fb1">COMMANDREPLAY_FRAME_CALLBACK</link> callback)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a3031c9af6190423aab9252c521f24b31"/><section>
+    <title>setLoadBankCallback()</title>
+<indexterm><primary>setLoadBankCallback</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setLoadBankCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setLoadBankCallback (<link linkend="_namespace_f_m_o_d_1_1_studio_1a112087d93f4f8841d9d9b220b7de7e59">COMMANDREPLAY_LOAD_BANK_CALLBACK</link> callback)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1afbfda1ea2c64b526ff805c26664a94df"/><section>
+    <title>setPaused()</title>
+<indexterm><primary>setPaused</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setPaused</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setPaused (bool paused)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a761792fe8adabf96e33cd9cd07924d9f"/><section>
+    <title>setUserData()</title>
+<indexterm><primary>setUserData</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>setUserData</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.setUserData (IntPtr userdata)</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ab1a366a534a17e0e49ed468b7f87c81a"/><section>
+    <title>start()</title>
+<indexterm><primary>start</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>start</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.start ( )</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1a2d263d7d9f7d0545b94b1f9b801b930a"/><section>
+    <title>stop()</title>
+<indexterm><primary>stop</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>stop</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> FMOD.Studio.CommandReplay.stop ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_command_replay_1ae447a2276fd9ecee1583d42094e48a69"/><section>
+    <title>handle</title>
+<indexterm><primary>handle</primary><secondary>FMOD.Studio.CommandReplay</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.CommandReplay</primary><secondary>handle</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.Studio.CommandReplay.handle</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

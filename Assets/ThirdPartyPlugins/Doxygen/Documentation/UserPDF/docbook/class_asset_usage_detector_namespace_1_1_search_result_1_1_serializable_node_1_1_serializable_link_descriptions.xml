@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_search_result_1_1_serializable_node_1_1_serializable_link_descriptions" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; string &gt; <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_1_1_serializable_node_1_1_serializable_link_descriptions_1a4f5539af66764194d15812899358feac">value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_1_1_serializable_node_1_1_serializable_link_descriptions_1a4f5539af66764194d15812899358feac"/><section>
+    <title>value</title>
+<indexterm><primary>value</primary><secondary>AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions</primary><secondary>value</secondary></indexterm>
+<para><computeroutput>List&lt;string&gt; AssetUsageDetectorNamespace.SearchResult.SerializableNode.SerializableLinkDescriptions.value</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_8cs">SearchResult.cs</link></section>
+</section>

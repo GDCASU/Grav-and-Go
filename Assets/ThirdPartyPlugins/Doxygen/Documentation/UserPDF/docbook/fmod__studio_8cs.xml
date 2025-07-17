@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fmod__studio_8cs" xml:lang="en-US">
+<title>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/fmod_studio.cs File Reference</title>
+<indexterm><primary>C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/fmod_studio.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_f_m_o_d_1_1_studio_1_1_s_t_u_d_i_o___v_e_r_s_i_o_n">FMOD.Studio.STUDIO_VERSION</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_r_o_g_r_a_m_m_e_r___s_o_u_n_d___p_r_o_p_e_r_t_i_e_s">FMOD.Studio.PROGRAMMER_SOUND_PROPERTIES</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___m_a_r_k_e_r___p_r_o_p_e_r_t_i_e_s">FMOD.Studio.TIMELINE_MARKER_PROPERTIES</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s">FMOD.Studio.TIMELINE_BEAT_PROPERTIES</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___n_e_s_t_e_d___b_e_a_t___p_r_o_p_e_r_t_i_e_s">FMOD.Studio.TIMELINE_NESTED_BEAT_PROPERTIES</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_a_d_v_a_n_c_e_d_s_e_t_t_i_n_g_s">FMOD.Studio.ADVANCEDSETTINGS</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_p_u___u_s_a_g_e">FMOD.Studio.CPU_USAGE</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___i_n_f_o">FMOD.Studio.BUFFER_INFO</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___u_s_a_g_e">FMOD.Studio.BUFFER_USAGE</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_b_a_n_k___i_n_f_o">FMOD.Studio.BANK_INFO</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___i_d">FMOD.Studio.PARAMETER_ID</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_a_r_a_m_e_t_e_r___d_e_s_c_r_i_p_t_i_o_n">FMOD.Studio.PARAMETER_DESCRIPTION</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_s_o_u_n_d___i_n_f_o">FMOD.Studio.SOUND_INFO</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_u_s_e_r___p_r_o_p_e_r_t_y">FMOD.Studio.USER_PROPERTY</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_union___int_bool_float_string">FMOD.Studio.Union_IntBoolFloatString</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_p_l_u_g_i_n___i_n_s_t_a_n_c_e___p_r_o_p_e_r_t_i_e_s">FMOD.Studio.PLUGIN_INSTANCE_PROPERTIES</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_c_o_m_m_a_n_d___i_n_f_o">FMOD.Studio.COMMAND_INFO</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_m_e_m_o_r_y___u_s_a_g_e">FMOD.Studio.MEMORY_USAGE</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_util">FMOD.Studio.Util</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_system">FMOD.Studio.System</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_description">FMOD.Studio.EventDescription</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_event_instance">FMOD.Studio.EventInstance</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bus">FMOD.Studio.Bus</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_v_c_a">FMOD.Studio.VCA</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_bank">FMOD.Studio.Bank</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_f_m_o_d_1_1_studio_1_1_command_replay">FMOD.Studio.CommandReplay</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d">FMOD</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_f_m_o_d_1_1_studio">FMOD.Studio</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881">FMOD.Studio.STOP_MODE</link> : int { <link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881a80a19d2b7749d5463061a12f0b2f8856">FMOD.Studio.ALLOWFADEOUT</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acbb216a5cf3382209d27e7a0ea3be881ae35884a2445bc4ae2df52f188763273c">FMOD.Studio.IMMEDIATE</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548">FMOD.Studio.LOADING_STATE</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548a47a9a5e95b0b32bb9f2c74187c02bddd">FMOD.Studio.UNLOADING</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548a795b8a51556d0b2cf4fbc11a896f6269">FMOD.Studio.UNLOADED</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548af9f6955ebca09a484157c05f80acd65e">FMOD.Studio.LOADING</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548ab638272ceeff54912f043465e9a28c9b">FMOD.Studio.LOADED</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a0f792101100d817f51aa4dea577f1548abb1ca97ec761fc37101737ba0aa2e7c5">FMOD.Studio.ERROR</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6f">FMOD.Studio.SYSTEM_CALLBACK_TYPE</link> : uint { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa5e198d4962feb620429e828b414c186e">FMOD.Studio.PREUPDATE</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6face43c5f18cef5c0b87a1a5be406e8d07">FMOD.Studio.POSTUPDATE</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6faa292cabdc61699588a8bc04d3eca906f">FMOD.Studio.BANK_UNLOAD</link> = 0x00000004
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa09e7baaa3a5e22c2f9b26e06dbd1d92f">FMOD.Studio.LIVEUPDATE_CONNECTED</link> = 0x00000008
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa8bf454dfdcd09220e0dddefaad69d2f8">FMOD.Studio.LIVEUPDATE_DISCONNECTED</link> = 0x00000010
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6fa5fb1f955b45e38e31789286a1790398d">FMOD.Studio.ALL</link> = 0xFFFFFFFF
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0">FMOD.Studio.PARAMETER_TYPE</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0ae7f71f36c2c31b0383c415f52c25f77c">FMOD.Studio.GAME_CONTROLLED</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0ad77e5187c79133140a05462194c162fd">FMOD.Studio.AUTOMATIC_DISTANCE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a30a9157443fd8f4742ad560faa99bba2">FMOD.Studio.AUTOMATIC_EVENT_CONE_ANGLE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a57830cded7a83f3e71aa70dce7802423">FMOD.Studio.AUTOMATIC_EVENT_ORIENTATION</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a1b6a095d04db43b86cb81faf64ceb769">FMOD.Studio.AUTOMATIC_DIRECTION</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a5506409bd83b9efd6eedb2880ab82ff4">FMOD.Studio.AUTOMATIC_ELEVATION</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a9b88d69702ba279319ed43bb2ba06e71">FMOD.Studio.AUTOMATIC_LISTENER_ORIENTATION</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a05781853a9c8cf8308f72c35580e67f8">FMOD.Studio.AUTOMATIC_SPEED</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a9c77b3794c250b1ae499af776db56138">FMOD.Studio.AUTOMATIC_SPEED_ABSOLUTE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0af13fd332465c7855a8735e2a0b96627d">FMOD.Studio.AUTOMATIC_DISTANCE_NORMALIZED</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a46f93d1455a727436c7aabac3d9025f0a26a4b44a837bf97b972628509912b4a5">FMOD.Studio.MAX</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700">FMOD.Studio.PARAMETER_FLAGS</link> : uint { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700a34db6698cff32ac89724758fdaa5512e">FMOD.Studio.READONLY</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700a008f6cdd0c190839e9885cf9f9e2a652">FMOD.Studio.AUTOMATIC</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700a6eecfba72d12922ee1dead07a0ef3334">FMOD.Studio.GLOBAL</link> = 0x00000004
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700a947436f2927405d3b5997a9ffbaee5c1">FMOD.Studio.DISCRETE</link> = 0x00000008
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1a84afb7e9b74f1900b34d5905747d7700a1c2d70e0ceafa9931cbe5ff7841a1771">FMOD.Studio.LABELED</link> = 0x00000010
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a489db0ea3d521b9ce73e5192a6af8e7e">FMOD.Studio.LOAD_MEMORY_MODE</link> : int { <link linkend="_namespace_f_m_o_d_1_1_studio_1a489db0ea3d521b9ce73e5192a6af8e7ea344204ed311b807e5da88bff1949337a">FMOD.Studio.LOAD_MEMORY</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a489db0ea3d521b9ce73e5192a6af8e7eae021074a370e54425899846c453012f3">FMOD.Studio.LOAD_MEMORY_POINT</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1aaa65be2e48f7abe3cc80113f9eebd5b9">FMOD.Studio.LOAD_MEMORY_ALIGNMENT</link> : int { <link linkend="_namespace_f_m_o_d_1_1_studio_1aaa65be2e48f7abe3cc80113f9eebd5b9aecc2e9c313faddb07e7da223c1dc5c3f">FMOD.Studio.VALUE</link> = 32
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a37689fe0c4dd85c937af497acba74628">FMOD.Studio.USER_PROPERTY_TYPE</link> : int { <link linkend="_namespace_f_m_o_d_1_1_studio_1a37689fe0c4dd85c937af497acba74628a5d5cd46919fa987731fb2edefe0f2a0c">FMOD.Studio.INTEGER</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a37689fe0c4dd85c937af497acba74628ac48d5da12d702e73d6966069f2687376">FMOD.Studio.BOOLEAN</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a37689fe0c4dd85c937af497acba74628ae738c26bf4ce1037fa81b039a915cbf6">FMOD.Studio.FLOAT</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a37689fe0c4dd85c937af497acba74628a63b588d5559f64f89a416e656880b949">FMOD.Studio.STRING</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4">FMOD.Studio.INITFLAGS</link> : uint { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4a1e23852820b9154316c7c06e2b7ba051">FMOD.Studio.NORMAL</link> = 0x00000000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4ab2fa9091a19340a9c6adc9bffb07efa1">FMOD.Studio.LIVEUPDATE</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4ac216527fd81d69d1fc93a9253b2068af">FMOD.Studio.ALLOW_MISSING_PLUGINS</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4a64447d218885a8ed2d9ea0b6e4fafbc6">FMOD.Studio.SYNCHRONOUS_UPDATE</link> = 0x00000004
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4a0449f8de02c563036aff7f1a58ee97d7">FMOD.Studio.DEFERRED_CALLBACKS</link> = 0x00000008
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4a106da88ea6094967c21f051793be8d8a">FMOD.Studio.LOAD_FROM_UPDATE</link> = 0x00000010
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1ae0223424b474925a5e1dab2f93027af4a8bb987dfaadc6fba56b83e53cb0faee8">FMOD.Studio.MEMORY_TRACKING</link> = 0x00000020
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">FMOD.Studio.LOAD_BANK_FLAGS</link> : uint { <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220a1e23852820b9154316c7c06e2b7ba051">FMOD.Studio.NORMAL</link> = 0x00000000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220a96aa07a625aac998fe9bd5cfd36a6880">FMOD.Studio.NONBLOCKING</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220a0d41f3de8174cbece55d755b91f1fc0f">FMOD.Studio.DECOMPRESS_SAMPLES</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220ae2af6a8986d58569b67859426d6760d8">FMOD.Studio.UNENCRYPTED</link> = 0x00000004
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35">FMOD.Studio.COMMANDCAPTURE_FLAGS</link> : uint { <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35a1e23852820b9154316c7c06e2b7ba051">FMOD.Studio.NORMAL</link> = 0x00000000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35a6d11021c9bb0bf4ec8f590a0d57c29ea">FMOD.Studio.FILEFLUSH</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a351bea8424b177847afa3ffbd5813c35aee18c2ae989196c9ff50b6ab09065c0a">FMOD.Studio.SKIP_INITIAL_STATE</link> = 0x00000002
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7">FMOD.Studio.COMMANDREPLAY_FLAGS</link> : uint { <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7a1e23852820b9154316c7c06e2b7ba051">FMOD.Studio.NORMAL</link> = 0x00000000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7a2ef28541f67a758ec0f9dde56b9852b4">FMOD.Studio.SKIP_CLEANUP</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7afe48dc1aa055edc05bb3f1db44bf9e3f">FMOD.Studio.FAST_FORWARD</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1a365d8a6db1e09996560430dce15d00d7aa2c53397a35e4b6c520e91c8bd83a5de">FMOD.Studio.SKIP_BANK_LOAD</link> = 0x00000004
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602d">FMOD.Studio.PLAYBACK_STATE</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602da50366a49630a416ab3ccaa004196027e">FMOD.Studio.PLAYING</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602daed529a6cf37d8f4f6ddd4effc11b160d">FMOD.Studio.SUSTAINING</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602da09d4d696b4e935115b9313e3c412509a">FMOD.Studio.STOPPED</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602da034312d8adc8099c1c6f53aaff745e26">FMOD.Studio.STARTING</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1aa05fde4e413991a91165c01e9d85602daf6cdb3c6710b50ec65ee07f740847e10">FMOD.Studio.STOPPING</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14a">FMOD.Studio.EVENT_PROPERTY</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aa9d21c7131dd9020302d1c447a3bb548a">FMOD.Studio.CHANNELPRIORITY</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aa88518eafd54d418437e06aba2a4345ba">FMOD.Studio.SCHEDULE_DELAY</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aad7b3afbda21769256fdfdcdf3020da05">FMOD.Studio.SCHEDULE_LOOKAHEAD</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aabdec46833daefcf93a0b233a97c20a02">FMOD.Studio.MINIMUM_DISTANCE</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aa2bb63d1c896be8e18bb20174c3516550">FMOD.Studio.MAXIMUM_DISTANCE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aa6397c936615b97b70adb188970dfc31b">FMOD.Studio.COOLDOWN</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1adbf26768a650be8dc6dfd5e3aa02b14aa26a4b44a837bf97b972628509912b4a5">FMOD.Studio.MAX</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777">FMOD.Studio.EVENT_CALLBACK_TYPE</link> : uint { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a98690bf632c29c17c9e4c5a64069903c">FMOD.Studio.CREATED</link> = 0x00000001
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a5d7e41d3ac0abca5974598807df874ea">FMOD.Studio.DESTROYED</link> = 0x00000002
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a034312d8adc8099c1c6f53aaff745e26">FMOD.Studio.STARTING</link> = 0x00000004
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a17130e6c806885e23770df1519b18eb7">FMOD.Studio.STARTED</link> = 0x00000008
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777ab0490f2a6601806e683a220cbcff87bb">FMOD.Studio.RESTARTED</link> = 0x00000010
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a09d4d696b4e935115b9313e3c412509a">FMOD.Studio.STOPPED</link> = 0x00000020
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a65a8079dabea48dfdc47743a60eee6d2">FMOD.Studio.START_FAILED</link> = 0x00000040
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a1597f85b9d4b1ba9eef708891a190653">FMOD.Studio.CREATE_PROGRAMMER_SOUND</link> = 0x00000080
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a21b160f0065ab7914aad45b8c0aba9d5">FMOD.Studio.DESTROY_PROGRAMMER_SOUND</link> = 0x00000100
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a6abc39e37eaafcf279b04e73260eb35b">FMOD.Studio.PLUGIN_CREATED</link> = 0x00000200
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777ac2cde1d3eaa33e74caaeef0eb89fe41a">FMOD.Studio.PLUGIN_DESTROYED</link> = 0x00000400
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a02b269a28e5f2308d28cac244bc37313">FMOD.Studio.TIMELINE_MARKER</link> = 0x00000800
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777aca6656290a892f60bb940fc23edfb1ab">FMOD.Studio.TIMELINE_BEAT</link> = 0x00001000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a00153f9835d59a7d1602a6751b63290e">FMOD.Studio.SOUND_PLAYED</link> = 0x00002000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a522ebb54dc13638ed5779dd266ad5c85">FMOD.Studio.SOUND_STOPPED</link> = 0x00004000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777af7403ba99b3c385f739e40ba5ad231be">FMOD.Studio.REAL_TO_VIRTUAL</link> = 0x00008000
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a3c5d0a16175bea8854d944a826d55278">FMOD.Studio.VIRTUAL_TO_REAL</link> = 0x00010000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777aed549daeca25f887f734cbf5ca683c08">FMOD.Studio.START_EVENT_COMMAND</link> = 0x00020000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a037592df15354af9cfbb196e9b0a7ba5">FMOD.Studio.NESTED_TIMELINE_BEAT</link> = 0x00040000
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777a5fb1f955b45e38e31789286a1790398d">FMOD.Studio.ALL</link> = 0xFFFFFFFF
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7">FMOD.Studio.INSTANCETYPE</link> : int { <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7ab50339a10e1de285ac99d4c3990b8693">FMOD.Studio.NONE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7afa177138f94a7ea01f549b1aa7893d03">FMOD.Studio.SYSTEM</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7ae56bcb1c4080f66819f3cc88e20b88f5">FMOD.Studio.EVENTDESCRIPTION</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7ac14ef6923531270d4d0c0037b4cc3b5d">FMOD.Studio.EVENTINSTANCE</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7abc4ba951ded5e41b7a2a8c9c618d5ac1">FMOD.Studio.PARAMETERINSTANCE</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7a0e0c9d888d1093cb2dfa6b25cbce19d8">FMOD.Studio.BUS</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7ad3d85f072985af3dd2cc517706390cc1">FMOD.Studio.VCA</link>
+, <link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7a702ccd4c4de96dda2108bed873989158">FMOD.Studio.BANK</link>
+, <?linebreak?><link linkend="_namespace_f_m_o_d_1_1_studio_1aae7a505f1baa5b19c9ee0a5bb846c0d7aa9561a77cb2b83284619402c9d067556">FMOD.Studio.COMMANDREPLAY</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_namespace_f_m_o_d_1_1_studio_1a578aeda8b7f6905827a524b77f480d36">FMOD.Studio.SYSTEM_CALLBACK</link> (IntPtr system, <link linkend="_namespace_f_m_o_d_1_1_studio_1a14d264a109848b10c2111e1c3b61dd6f">SYSTEM_CALLBACK_TYPE</link> type, IntPtr commanddata, IntPtr userdata)</para>
+</listitem>
+            <listitem><para>delegate <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_namespace_f_m_o_d_1_1_studio_1a5dbcaa08826b04164cc1456c31e87b85">FMOD.Studio.EVENT_CALLBACK</link> (<link linkend="_namespace_f_m_o_d_1_1_studio_1acf844603065b7648d8d7913168192777">EVENT_CALLBACK_TYPE</link> type, IntPtr _event, IntPtr parameters)</para>
+</listitem>
+            <listitem><para>delegate <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_namespace_f_m_o_d_1_1_studio_1aca1b4ec5deb7a4d672b7578965fc8fb1">FMOD.Studio.COMMANDREPLAY_FRAME_CALLBACK</link> (IntPtr replay, int commandindex, float currenttime, IntPtr userdata)</para>
+</listitem>
+            <listitem><para>delegate <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_namespace_f_m_o_d_1_1_studio_1a112087d93f4f8841d9d9b220b7de7e59">FMOD.Studio.COMMANDREPLAY_LOAD_BANK_CALLBACK</link> (IntPtr replay, int commandindex, <link linkend="_struct_f_m_o_d_1_1_g_u_i_d">GUID</link> bankguid, IntPtr bankfilename, <link linkend="_namespace_f_m_o_d_1_1_studio_1adf49c83489b239b263992e7e0e634220">LOAD_BANK_FLAGS</link> flags, out IntPtr bank, IntPtr userdata)</para>
+</listitem>
+            <listitem><para>delegate <link linkend="_namespace_f_m_o_d_1a305d1176ef3f8c8815861a60407ac33d">RESULT</link> <link linkend="_namespace_f_m_o_d_1_1_studio_1a2688de77492e02fcb560e273db986d6e">FMOD.Studio.COMMANDREPLAY_CREATE_INSTANCE_CALLBACK</link> (IntPtr replay, int commandindex, IntPtr eventdescription, out IntPtr instance, IntPtr userdata)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

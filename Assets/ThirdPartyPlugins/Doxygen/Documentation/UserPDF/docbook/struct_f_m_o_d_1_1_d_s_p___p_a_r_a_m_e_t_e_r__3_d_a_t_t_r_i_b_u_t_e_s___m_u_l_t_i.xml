@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i" xml:lang="en-US">
+<title>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI Struct Reference</title>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a8735d737619d1ebde73643ae2eb30032">numlisteners</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link>[] <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a3717eb9787c1d1d85f2391fe2a09b869">relative</link></para>
+</listitem>
+            <listitem><para>float[] <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a46f2d3097d882b7115275e13a95e3cb9">weight</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> <link linkend="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a8ff1050b6adcccf2bdb6305d0e179575">absolute</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a8ff1050b6adcccf2bdb6305d0e179575"/><section>
+    <title>absolute</title>
+<indexterm><primary>absolute</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI.absolute</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a8735d737619d1ebde73643ae2eb30032"/><section>
+    <title>numlisteners</title>
+<indexterm><primary>numlisteners</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</primary><secondary>numlisteners</secondary></indexterm>
+<para><computeroutput>int FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI.numlisteners</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a3717eb9787c1d1d85f2391fe2a09b869"/><section>
+    <title>relative</title>
+<indexterm><primary>relative</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</primary><secondary>relative</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_f_m_o_d_1_1_a_t_t_r_i_b_u_t_e_s__3_d">ATTRIBUTES_3D</link> [] FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI.relative</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r__3_d_a_t_t_r_i_b_u_t_e_s___m_u_l_t_i_1a46f2d3097d882b7115275e13a95e3cb9"/><section>
+    <title>weight</title>
+<indexterm><primary>weight</primary><secondary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</secondary></indexterm>
+<indexterm><primary>FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI</primary><secondary>weight</secondary></indexterm>
+<para><computeroutput>float [] FMOD.DSP_PARAMETER_3DATTRIBUTES_MULTI.weight</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__dsp_8cs">fmod_dsp.cs</link></section>
+</section>

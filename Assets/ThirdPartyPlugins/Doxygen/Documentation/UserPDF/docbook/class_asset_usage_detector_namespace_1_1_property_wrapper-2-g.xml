@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt; Class Template Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_property_wrapper-2-g.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g_1ae921bcd7decaeb2b2d7c5382f4d5cab0">PropertyWrapper</link> (MethodInfo getterMethod)</para>
+</listitem>
+            <listitem><para>object <link linkend="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g_1a55447ab58c0dfbf02fa998fe378af2c6">GetValue</link> (object obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g_1a55447ab58c0dfbf02fa998fe378af2c6"/><section>
+    <title>GetValue()</title>
+<indexterm><primary>GetValue</primary><secondary>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;</primary><secondary>GetValue</secondary></indexterm>
+<para><computeroutput>object AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;.GetValue (object obj)</computeroutput></para><para>
+Implements <link linkend="_interface_asset_usage_detector_namespace_1_1_i_property_accessor_1a8ff54a6e77576a1af073c0d2fc49b507">AssetUsageDetectorNamespace.IPropertyAccessor</link>.</para>
+</section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_property_wrapper-2-g_1ae921bcd7decaeb2b2d7c5382f4d5cab0"/><section>
+    <title>PropertyWrapper()</title>
+<indexterm><primary>PropertyWrapper</primary><secondary>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;</primary><secondary>PropertyWrapper</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.PropertyWrapper&lt; TObject, TValue &gt;.PropertyWrapper (MethodInfo getterMethod)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__variable_getter_8cs">VariableGetter.cs</link></section>
+</section>

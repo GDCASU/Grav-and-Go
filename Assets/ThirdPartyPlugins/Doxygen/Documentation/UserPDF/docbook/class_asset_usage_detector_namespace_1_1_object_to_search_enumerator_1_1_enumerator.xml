@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a1e8078aecda3796194ead98a23573418">Enumerator</link> (List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; source)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1adc34a116b368c3955c9ec58f55cead67">Dispose</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a85eee206021d979804332f8da587fcac">MoveNext</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a85fc7bc3867fa57380cde12b5b255446">Reset</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1ab8c8f4c7f77de273e72046481e66cf22">Current</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a1e8078aecda3796194ead98a23573418"/><section>
+    <title>Enumerator()</title>
+<indexterm><primary>Enumerator</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary><secondary>Enumerator</secondary></indexterm>
+<para><computeroutput>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator.Enumerator (List&lt; <link linkend="_class_asset_usage_detector_namespace_1_1_object_to_search">ObjectToSearch</link> &gt; source)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1adc34a116b368c3955c9ec58f55cead67"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator.Dispose ( )</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a85eee206021d979804332f8da587fcac"/><section>
+    <title>MoveNext()</title>
+<indexterm><primary>MoveNext</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary><secondary>MoveNext</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator.MoveNext ( )</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1a85fc7bc3867fa57380cde12b5b255446"/><section>
+    <title>Reset()</title>
+<indexterm><primary>Reset</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary><secondary>Reset</secondary></indexterm>
+<para><computeroutput>void AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator.Reset ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_object_to_search_enumerator_1_1_enumerator_1ab8c8f4c7f77de273e72046481e66cf22"/><section>
+    <title>Current</title>
+<indexterm><primary>Current</primary><secondary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator</primary><secondary>Current</secondary></indexterm>
+<para><computeroutput><link linkend="__asset_usage_detector_8cs_1aef19bab18b9814edeef255c43e4f6bbc">Object</link> AssetUsageDetectorNamespace.ObjectToSearchEnumerator.Enumerator.Current<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__enumerators_8cs">Enumerators.cs</link></section>
+</section>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state" xml:lang="en-US">
+<title>AssetUsageDetectorNamespace.SearchResultTreeViewState Class Reference</title>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary></indexterm>
+<para>Inheritance diagram for AssetUsageDetectorNamespace.SearchResultTreeViewState:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_asset_usage_detector_namespace_1_1_search_result_tree_view_state.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1ac17985ce320d9466861ecb509a30f10e">initialNodeId</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a12c7808590cc2110c026f3ec9da20e51">finalNodeId</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a7c72ec563fc140c6726dd4c23a9a0084">searchTerm</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_1a5cb49ea0f2e4386b14436a512f880437">SearchResultTreeView.SearchMode</link> <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a8d3ebc1977a4c2d3b505853cab42cca9">searchMode</link> = <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_1a5cb49ea0f2e4386b14436a512f880437ab1c94ca2fbc3e78fc30069c8d0f01680">SearchResultTreeView.SearchMode.All</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1aa15ea9fe982e6ee5a9362304f306e38e">selectionChangedDuringSearch</link></para>
+</listitem>
+            <listitem><para>List&lt; int &gt; <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a1bdfb34ff5554a3c0c02b68daa955e39">preSearchExpandedIds</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a12c7808590cc2110c026f3ec9da20e51"/><section>
+    <title>finalNodeId</title>
+<indexterm><primary>finalNodeId</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>finalNodeId</secondary></indexterm>
+<para><computeroutput>int AssetUsageDetectorNamespace.SearchResultTreeViewState.finalNodeId</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1ac17985ce320d9466861ecb509a30f10e"/><section>
+    <title>initialNodeId</title>
+<indexterm><primary>initialNodeId</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>initialNodeId</secondary></indexterm>
+<para><computeroutput>int AssetUsageDetectorNamespace.SearchResultTreeViewState.initialNodeId</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a1bdfb34ff5554a3c0c02b68daa955e39"/><section>
+    <title>preSearchExpandedIds</title>
+<indexterm><primary>preSearchExpandedIds</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>preSearchExpandedIds</secondary></indexterm>
+<para><computeroutput>List&lt;int&gt; AssetUsageDetectorNamespace.SearchResultTreeViewState.preSearchExpandedIds</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a8d3ebc1977a4c2d3b505853cab42cca9"/><section>
+    <title>searchMode</title>
+<indexterm><primary>searchMode</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>searchMode</secondary></indexterm>
+<para><computeroutput><link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_1a5cb49ea0f2e4386b14436a512f880437">SearchResultTreeView.SearchMode</link> AssetUsageDetectorNamespace.SearchResultTreeViewState.searchMode = <link linkend="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_1a5cb49ea0f2e4386b14436a512f880437ab1c94ca2fbc3e78fc30069c8d0f01680">SearchResultTreeView.SearchMode.All</link></computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1a7c72ec563fc140c6726dd4c23a9a0084"/><section>
+    <title>searchTerm</title>
+<indexterm><primary>searchTerm</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>searchTerm</secondary></indexterm>
+<para><computeroutput>string AssetUsageDetectorNamespace.SearchResultTreeViewState.searchTerm</computeroutput></para></section>
+<anchor xml:id="_class_asset_usage_detector_namespace_1_1_search_result_tree_view_state_1aa15ea9fe982e6ee5a9362304f306e38e"/><section>
+    <title>selectionChangedDuringSearch</title>
+<indexterm><primary>selectionChangedDuringSearch</primary><secondary>AssetUsageDetectorNamespace.SearchResultTreeViewState</secondary></indexterm>
+<indexterm><primary>AssetUsageDetectorNamespace.SearchResultTreeViewState</primary><secondary>selectionChangedDuringSearch</secondary></indexterm>
+<para><computeroutput>bool AssetUsageDetectorNamespace.SearchResultTreeViewState.selectionChangedDuringSearch</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/AssetUsageDetector/Editor/<link linkend="__search_result_tree_view_8cs">SearchResultTreeView.cs</link></section>
+</section>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s" xml:lang="en-US">
+<title>FMOD.Studio.TIMELINE_BEAT_PROPERTIES Struct Reference</title>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1aad949fb694e4455db3925c47299e3959">bar</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1af714c313cd06cbc1af29c76d56973aea">beat</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a863d96ff5db3525ddc8f0a277c55ae19">position</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a29256e12788fabd1eeb3dfb3fc44896d">tempo</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a33227046c58c81690411a2d015ba78e4">timesignatureupper</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a25dc778493bd3a5f7b2c0e792c32ec36">timesignaturelower</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1aad949fb694e4455db3925c47299e3959"/><section>
+    <title>bar</title>
+<indexterm><primary>bar</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>bar</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.TIMELINE_BEAT_PROPERTIES.bar</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1af714c313cd06cbc1af29c76d56973aea"/><section>
+    <title>beat</title>
+<indexterm><primary>beat</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>beat</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.TIMELINE_BEAT_PROPERTIES.beat</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a863d96ff5db3525ddc8f0a277c55ae19"/><section>
+    <title>position</title>
+<indexterm><primary>position</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>position</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.TIMELINE_BEAT_PROPERTIES.position</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a29256e12788fabd1eeb3dfb3fc44896d"/><section>
+    <title>tempo</title>
+<indexterm><primary>tempo</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>tempo</secondary></indexterm>
+<para><computeroutput>float FMOD.Studio.TIMELINE_BEAT_PROPERTIES.tempo</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a25dc778493bd3a5f7b2c0e792c32ec36"/><section>
+    <title>timesignaturelower</title>
+<indexterm><primary>timesignaturelower</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>timesignaturelower</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.TIMELINE_BEAT_PROPERTIES.timesignaturelower</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s_1a33227046c58c81690411a2d015ba78e4"/><section>
+    <title>timesignatureupper</title>
+<indexterm><primary>timesignatureupper</primary><secondary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</secondary></indexterm>
+<indexterm><primary>FMOD.Studio.TIMELINE_BEAT_PROPERTIES</primary><secondary>timesignatureupper</secondary></indexterm>
+<para><computeroutput>int FMOD.Studio.TIMELINE_BEAT_PROPERTIES.timesignatureupper</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod__studio_8cs">fmod_studio.cs</link></section>
+</section>

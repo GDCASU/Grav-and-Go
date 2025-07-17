@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g" xml:lang="en-US">
+<title>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt; Class Template Reference</title>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary></indexterm>
+<para>Inheritance diagram for AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a53c5ca3dfe471db7ae8e4460f450983b">SerializedDictionary</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a070c9d92db55d6d3488f291844237cfa">SerializedDictionary</link> (SerializedDictionary&lt; TKey, TValue &gt; serializedDictionary)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1ae8c603a596c83c91d0299aac02ca8955">SerializedDictionary</link> (IDictionary&lt; TKey, TValue &gt; dictionary)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1aad8e09b50d41c1ee947d5de90cd705a6">SerializedDictionary</link> (IDictionary&lt; TKey, TValue &gt; dictionary, IEqualityComparer&lt; TKey &gt; comparer)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1aa16c34e39e2394a9a1def63a014e3943">SerializedDictionary</link> (IEnumerable&lt; KeyValuePair&lt; TKey, TValue &gt; &gt; collection)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a77df835dbd640704cf29869dd8d1971e">SerializedDictionary</link> (IEnumerable&lt; KeyValuePair&lt; TKey, TValue &gt; &gt; collection, IEqualityComparer&lt; TKey &gt; comparer)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a05f5d6b9315f7df74987aef65881d206">SerializedDictionary</link> (IEqualityComparer&lt; TKey &gt; comparer)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1add16b25472e960cf24935d89c6cfdea1">SerializedDictionary</link> (int capacity)</para>
+</listitem>
+            <listitem><para><link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1ac89529867f7bd01e4430be223572e706">SerializedDictionary</link> (int capacity, IEqualityComparer&lt; TKey &gt; comparer)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a45a11d993424dba266092c2b51baab2f">OnAfterDeserialize</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a0a4b707dfe5748c051e8f7022a0c4891">OnBeforeSerialize</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a45a11d993424dba266092c2b51baab2f"/><section>
+    <title>OnAfterDeserialize()</title>
+<indexterm><primary>OnAfterDeserialize</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>OnAfterDeserialize</secondary></indexterm>
+<para><computeroutput>void AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.OnAfterDeserialize ( )</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a0a4b707dfe5748c051e8f7022a0c4891"/><section>
+    <title>OnBeforeSerialize()</title>
+<indexterm><primary>OnBeforeSerialize</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>OnBeforeSerialize</secondary></indexterm>
+<para><computeroutput>void AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.OnBeforeSerialize ( )</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a53c5ca3dfe471db7ae8e4460f450983b"/><section>
+    <title>SerializedDictionary()<computeroutput>[1/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary ( )</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1ae8c603a596c83c91d0299aac02ca8955"/><section>
+    <title>SerializedDictionary()<computeroutput>[2/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (IDictionary&lt; TKey, TValue &gt; dictionary)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1aad8e09b50d41c1ee947d5de90cd705a6"/><section>
+    <title>SerializedDictionary()<computeroutput>[3/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (IDictionary&lt; TKey, TValue &gt; dictionary, IEqualityComparer&lt; TKey &gt; comparer)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1aa16c34e39e2394a9a1def63a014e3943"/><section>
+    <title>SerializedDictionary()<computeroutput>[4/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (IEnumerable&lt; KeyValuePair&lt; TKey, TValue &gt; &gt; collection)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a77df835dbd640704cf29869dd8d1971e"/><section>
+    <title>SerializedDictionary()<computeroutput>[5/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (IEnumerable&lt; KeyValuePair&lt; TKey, TValue &gt; &gt; collection, IEqualityComparer&lt; TKey &gt; comparer)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a05f5d6b9315f7df74987aef65881d206"/><section>
+    <title>SerializedDictionary()<computeroutput>[6/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (IEqualityComparer&lt; TKey &gt; comparer)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1add16b25472e960cf24935d89c6cfdea1"/><section>
+    <title>SerializedDictionary()<computeroutput>[7/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (int capacity)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1ac89529867f7bd01e4430be223572e706"/><section>
+    <title>SerializedDictionary()<computeroutput>[8/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (int capacity, IEqualityComparer&lt; TKey &gt; comparer)</computeroutput></para></section>
+<anchor xml:id="_class_a_yellowpaper_1_1_serialized_collections_1_1_serialized_dictionary-2-g_1a070c9d92db55d6d3488f291844237cfa"/><section>
+    <title>SerializedDictionary()<computeroutput>[9/9]</computeroutput></title>
+<indexterm><primary>SerializedDictionary</primary><secondary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</secondary></indexterm>
+<indexterm><primary>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;</primary><secondary>SerializedDictionary</secondary></indexterm>
+<para><computeroutput>AYellowpaper.SerializedCollections.SerializedDictionary&lt; TKey, TValue &gt;.SerializedDictionary (SerializedDictionary&lt; TKey, TValue &gt; serializedDictionary)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/SerializedCollections/Runtime/Scripts/<link linkend="__serialized_dictionary_8cs">SerializedDictionary.cs</link></section>
+</section>

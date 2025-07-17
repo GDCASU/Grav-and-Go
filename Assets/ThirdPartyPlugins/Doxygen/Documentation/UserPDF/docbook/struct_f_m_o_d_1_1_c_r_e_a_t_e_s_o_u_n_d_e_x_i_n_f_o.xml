@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o" xml:lang="en-US">
+<title>FMOD.CREATESOUNDEXINFO Struct Reference</title>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a52769cc631d94c7a14fd0c96ff2c815e">cbsize</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a21a732a80b7a30c976dc6c39b2f846fb">length</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0b5353e2ed844c81cb2f98f67c22195f">fileoffset</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aff5b47f1ad275f3cc2741709d0652cb2">numchannels</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ac35563c021e39fa432bef3fea876c78b">defaultfrequency</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a06713fa43379f081fa76373fa12b8d7d">SOUND_FORMAT</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aed73cd18b92220837c5cede7a930aace">format</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8eade5a1bbef91f174c1135e28abb427">decodebuffersize</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a37e6fdce431ddaf314daf094ec99e60a">initialsubsound</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a7af1dcab59b4926f75728bda906ac825">numsubsounds</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a840b6615bad14a52aad0514229112025">inclusionlist</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a99f3dd4562b9fdbdb767c3e99f628798">inclusionlistnum</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aafdddbc2f125ef121f7d4afb94643c6d">pcmreadcallback_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ab2290d106c0330b79fb8fb81b322bd93">pcmsetposcallback_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a42d7fa309204a6b57ed9b22be449ac94">nonblockcallback_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1afc1a8b2cc49b6fafa61b03ae9c3d2d80">dlsname</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ad688334838d57c1de8003757066ff6b0">encryptionkey</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8841363d865e5f6e53b32f179d12fc28">maxpolyphony</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a83788bafd6bae818692e619d5e6c2493">userdata</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ab60bbe20351166bf7a2fa83c47c60154">SOUND_TYPE</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a4099635b0725de9a7b1ea48997293199">suggestedsoundtype</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a3e52a5213122acc218cc31f4da2916c3">fileuseropen_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a910dc499ecf8698b29afa0925ea2f1cc">fileuserclose_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a5000c27ccf7c1930bc93264858d58a32">fileuserread_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0b6e2514c2abb75243e66647dd016447">fileuserseek_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a483726813b00dd328f1ad5442a01828e">fileuserasyncread_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a258360b690d7a738908cf86c5bb923ce">fileuserasynccancel_internal</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2912bdf09e52e87ce47a5ba91d55fc40">fileuserdata</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2aacb77750ed528f6b6ffaf9bbc31c38">filebuffersize</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1abedeb99eb6485be64623516ff974fa6f">CHANNELORDER</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a358b213a5929e7cfaf269bb00c1e52b7">channelorder</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a64207008b9fce0062af8f766050e5470">initialsoundgroup</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a7b6014d4a910ecd57245801d90412e59">initialseekposition</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a27f001d356a5ea6da6a21d943a378557">initialseekpostype</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2fb8b8798d61268af066674e37dc3608">ignoresetfilesystem</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8a4446c8826cde208648e2cbc49137fe">audioqueuepolicy</link></para>
+</listitem>
+            <listitem><para>uint <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aa9804bbb4953b40dbe7fb17fa7237da1">minmidigranularity</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1abaae5a027776f879775b89fc9824c7ac">nonblockthreadid</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ae005a9e14ba9ebd9798a7cde83257eca">fsbguid</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1af3fac124681eb99a340bf2cffa827c8b">SOUND_PCMREAD_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a1cac6ee97f8b00e51e6497145717a8a7">pcmreadcallback</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a5a701935e66b9658d96138147db2bd95">SOUND_PCMSETPOS_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a9237f74ed89b6cfa4a6b366ace472572">pcmsetposcallback</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a31a905d8e12c1cfddb2d9d42e0ec381e">SOUND_NONBLOCK_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aee11ea746315d32f19dc63524c569ff4">nonblockcallback</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1aad4f6192d6f4b8910bd8b84c02343253">FILE_OPEN_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a3b944197dc3a23219794ce3d5333ec0a">fileuseropen</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a02267ee0da4119ff7e2e2151e51e8764">FILE_CLOSE_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0efc2025b84ed8840c4361a687f317e0">fileuserclose</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a7be8a0afd9b800cbd9da6ee48858ce18">FILE_READ_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ada84435f292621fe3dcaf200f82591a7">fileuserread</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1af37df9631789054d5da35f2d94f6145b">FILE_SEEK_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a6629609c810a6886675be78bfd634c01">fileuserseek</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1a6cbb538cb1abaadba546df4dd1b1c745">FILE_ASYNCREAD_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a70dd932a3cfc2f63eff55532571781fb">fileuserasyncread</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_f_m_o_d_1ad0f6d4cee7c72ba3b32472c3e7ed9fc4">FILE_ASYNCCANCEL_CALLBACK</link> <link linkend="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a5e0c2e1a9ce54199c687c71eaf39b478">fileuserasynccancel</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8a4446c8826cde208648e2cbc49137fe"/><section>
+    <title>audioqueuepolicy</title>
+<indexterm><primary>audioqueuepolicy</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>audioqueuepolicy</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.audioqueuepolicy</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a52769cc631d94c7a14fd0c96ff2c815e"/><section>
+    <title>cbsize</title>
+<indexterm><primary>cbsize</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>cbsize</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.cbsize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a358b213a5929e7cfaf269bb00c1e52b7"/><section>
+    <title>channelorder</title>
+<indexterm><primary>channelorder</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>channelorder</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1abedeb99eb6485be64623516ff974fa6f">CHANNELORDER</link> FMOD.CREATESOUNDEXINFO.channelorder</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8eade5a1bbef91f174c1135e28abb427"/><section>
+    <title>decodebuffersize</title>
+<indexterm><primary>decodebuffersize</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>decodebuffersize</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.decodebuffersize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ac35563c021e39fa432bef3fea876c78b"/><section>
+    <title>defaultfrequency</title>
+<indexterm><primary>defaultfrequency</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>defaultfrequency</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.defaultfrequency</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1afc1a8b2cc49b6fafa61b03ae9c3d2d80"/><section>
+    <title>dlsname</title>
+<indexterm><primary>dlsname</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>dlsname</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.dlsname</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ad688334838d57c1de8003757066ff6b0"/><section>
+    <title>encryptionkey</title>
+<indexterm><primary>encryptionkey</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>encryptionkey</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.encryptionkey</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2aacb77750ed528f6b6ffaf9bbc31c38"/><section>
+    <title>filebuffersize</title>
+<indexterm><primary>filebuffersize</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>filebuffersize</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.filebuffersize</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0b5353e2ed844c81cb2f98f67c22195f"/><section>
+    <title>fileoffset</title>
+<indexterm><primary>fileoffset</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileoffset</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.fileoffset</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a258360b690d7a738908cf86c5bb923ce"/><section>
+    <title>fileuserasynccancel_internal</title>
+<indexterm><primary>fileuserasynccancel_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserasynccancel_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserasynccancel_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a483726813b00dd328f1ad5442a01828e"/><section>
+    <title>fileuserasyncread_internal</title>
+<indexterm><primary>fileuserasyncread_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserasyncread_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserasyncread_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a910dc499ecf8698b29afa0925ea2f1cc"/><section>
+    <title>fileuserclose_internal</title>
+<indexterm><primary>fileuserclose_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserclose_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserclose_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2912bdf09e52e87ce47a5ba91d55fc40"/><section>
+    <title>fileuserdata</title>
+<indexterm><primary>fileuserdata</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserdata</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserdata</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a3e52a5213122acc218cc31f4da2916c3"/><section>
+    <title>fileuseropen_internal</title>
+<indexterm><primary>fileuseropen_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuseropen_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuseropen_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a5000c27ccf7c1930bc93264858d58a32"/><section>
+    <title>fileuserread_internal</title>
+<indexterm><primary>fileuserread_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserread_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserread_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0b6e2514c2abb75243e66647dd016447"/><section>
+    <title>fileuserseek_internal</title>
+<indexterm><primary>fileuserseek_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserseek_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fileuserseek_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aed73cd18b92220837c5cede7a930aace"/><section>
+    <title>format</title>
+<indexterm><primary>format</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>format</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a06713fa43379f081fa76373fa12b8d7d">SOUND_FORMAT</link> FMOD.CREATESOUNDEXINFO.format</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ae005a9e14ba9ebd9798a7cde83257eca"/><section>
+    <title>fsbguid</title>
+<indexterm><primary>fsbguid</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fsbguid</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.fsbguid</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a2fb8b8798d61268af066674e37dc3608"/><section>
+    <title>ignoresetfilesystem</title>
+<indexterm><primary>ignoresetfilesystem</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>ignoresetfilesystem</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.ignoresetfilesystem</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a840b6615bad14a52aad0514229112025"/><section>
+    <title>inclusionlist</title>
+<indexterm><primary>inclusionlist</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>inclusionlist</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.inclusionlist</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a99f3dd4562b9fdbdb767c3e99f628798"/><section>
+    <title>inclusionlistnum</title>
+<indexterm><primary>inclusionlistnum</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>inclusionlistnum</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.inclusionlistnum</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a7b6014d4a910ecd57245801d90412e59"/><section>
+    <title>initialseekposition</title>
+<indexterm><primary>initialseekposition</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>initialseekposition</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.initialseekposition</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a27f001d356a5ea6da6a21d943a378557"/><section>
+    <title>initialseekpostype</title>
+<indexterm><primary>initialseekpostype</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>initialseekpostype</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1aff20975332f93ff2180d2681cb43929f">TIMEUNIT</link> FMOD.CREATESOUNDEXINFO.initialseekpostype</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a64207008b9fce0062af8f766050e5470"/><section>
+    <title>initialsoundgroup</title>
+<indexterm><primary>initialsoundgroup</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>initialsoundgroup</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.initialsoundgroup</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a37e6fdce431ddaf314daf094ec99e60a"/><section>
+    <title>initialsubsound</title>
+<indexterm><primary>initialsubsound</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>initialsubsound</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.initialsubsound</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a21a732a80b7a30c976dc6c39b2f846fb"/><section>
+    <title>length</title>
+<indexterm><primary>length</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>length</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.length</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a8841363d865e5f6e53b32f179d12fc28"/><section>
+    <title>maxpolyphony</title>
+<indexterm><primary>maxpolyphony</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>maxpolyphony</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.maxpolyphony</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aa9804bbb4953b40dbe7fb17fa7237da1"/><section>
+    <title>minmidigranularity</title>
+<indexterm><primary>minmidigranularity</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>minmidigranularity</secondary></indexterm>
+<para><computeroutput>uint FMOD.CREATESOUNDEXINFO.minmidigranularity</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a42d7fa309204a6b57ed9b22be449ac94"/><section>
+    <title>nonblockcallback_internal</title>
+<indexterm><primary>nonblockcallback_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>nonblockcallback_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.nonblockcallback_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1abaae5a027776f879775b89fc9824c7ac"/><section>
+    <title>nonblockthreadid</title>
+<indexterm><primary>nonblockthreadid</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>nonblockthreadid</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.nonblockthreadid</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aff5b47f1ad275f3cc2741709d0652cb2"/><section>
+    <title>numchannels</title>
+<indexterm><primary>numchannels</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>numchannels</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.numchannels</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a7af1dcab59b4926f75728bda906ac825"/><section>
+    <title>numsubsounds</title>
+<indexterm><primary>numsubsounds</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>numsubsounds</secondary></indexterm>
+<para><computeroutput>int FMOD.CREATESOUNDEXINFO.numsubsounds</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aafdddbc2f125ef121f7d4afb94643c6d"/><section>
+    <title>pcmreadcallback_internal</title>
+<indexterm><primary>pcmreadcallback_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>pcmreadcallback_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.pcmreadcallback_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ab2290d106c0330b79fb8fb81b322bd93"/><section>
+    <title>pcmsetposcallback_internal</title>
+<indexterm><primary>pcmsetposcallback_internal</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>pcmsetposcallback_internal</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.pcmsetposcallback_internal</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a4099635b0725de9a7b1ea48997293199"/><section>
+    <title>suggestedsoundtype</title>
+<indexterm><primary>suggestedsoundtype</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>suggestedsoundtype</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ab60bbe20351166bf7a2fa83c47c60154">SOUND_TYPE</link> FMOD.CREATESOUNDEXINFO.suggestedsoundtype</computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a83788bafd6bae818692e619d5e6c2493"/><section>
+    <title>userdata</title>
+<indexterm><primary>userdata</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>userdata</secondary></indexterm>
+<para><computeroutput>IntPtr FMOD.CREATESOUNDEXINFO.userdata</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a5e0c2e1a9ce54199c687c71eaf39b478"/><section>
+    <title>fileuserasynccancel</title>
+<indexterm><primary>fileuserasynccancel</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserasynccancel</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1ad0f6d4cee7c72ba3b32472c3e7ed9fc4">FILE_ASYNCCANCEL_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuserasynccancel<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a70dd932a3cfc2f63eff55532571781fb"/><section>
+    <title>fileuserasyncread</title>
+<indexterm><primary>fileuserasyncread</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserasyncread</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a6cbb538cb1abaadba546df4dd1b1c745">FILE_ASYNCREAD_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuserasyncread<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a0efc2025b84ed8840c4361a687f317e0"/><section>
+    <title>fileuserclose</title>
+<indexterm><primary>fileuserclose</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserclose</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a02267ee0da4119ff7e2e2151e51e8764">FILE_CLOSE_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuserclose<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a3b944197dc3a23219794ce3d5333ec0a"/><section>
+    <title>fileuseropen</title>
+<indexterm><primary>fileuseropen</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuseropen</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1aad4f6192d6f4b8910bd8b84c02343253">FILE_OPEN_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuseropen<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1ada84435f292621fe3dcaf200f82591a7"/><section>
+    <title>fileuserread</title>
+<indexterm><primary>fileuserread</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserread</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a7be8a0afd9b800cbd9da6ee48858ce18">FILE_READ_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuserread<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a6629609c810a6886675be78bfd634c01"/><section>
+    <title>fileuserseek</title>
+<indexterm><primary>fileuserseek</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>fileuserseek</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1af37df9631789054d5da35f2d94f6145b">FILE_SEEK_CALLBACK</link> FMOD.CREATESOUNDEXINFO.fileuserseek<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1aee11ea746315d32f19dc63524c569ff4"/><section>
+    <title>nonblockcallback</title>
+<indexterm><primary>nonblockcallback</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>nonblockcallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a31a905d8e12c1cfddb2d9d42e0ec381e">SOUND_NONBLOCK_CALLBACK</link> FMOD.CREATESOUNDEXINFO.nonblockcallback<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a1cac6ee97f8b00e51e6497145717a8a7"/><section>
+    <title>pcmreadcallback</title>
+<indexterm><primary>pcmreadcallback</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>pcmreadcallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1af3fac124681eb99a340bf2cffa827c8b">SOUND_PCMREAD_CALLBACK</link> FMOD.CREATESOUNDEXINFO.pcmreadcallback<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_struct_f_m_o_d_1_1_c_r_e_a_t_e_s_o_u_n_d_e_x_i_n_f_o_1a9237f74ed89b6cfa4a6b366ace472572"/><section>
+    <title>pcmsetposcallback</title>
+<indexterm><primary>pcmsetposcallback</primary><secondary>FMOD.CREATESOUNDEXINFO</secondary></indexterm>
+<indexterm><primary>FMOD.CREATESOUNDEXINFO</primary><secondary>pcmsetposcallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_f_m_o_d_1a5a701935e66b9658d96138147db2bd95">SOUND_PCMSETPOS_CALLBACK</link> FMOD.CREATESOUNDEXINFO.pcmsetposcallback<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/camil/OneDrive/Documents/GitHub/VGDC-Game-2025-26/Assets/Plugins/FMOD/src/<link linkend="_fmod_8cs">fmod.cs</link></section>
+</section>
