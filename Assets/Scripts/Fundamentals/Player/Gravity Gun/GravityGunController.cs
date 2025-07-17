@@ -33,7 +33,6 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private LineRenderer _holdingLineRenderer;
     
     [Header("Settings")]
-    [SerializeField] private float _gravigunAngleOffset;
     [SerializeField] private Color _defaultLineOfSightColor; // The color of the line when not pointing towards something influenceable
     [SerializeField] private Color _validTargetLineColor; // The color of the line when its pointing to a valid target
     [SerializeField, Range(0f,100f)] private float _maxRaycastDistance;
@@ -48,16 +47,18 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, Range(0f, 2f)] private float _pullPushCooldown;
     
     [Header("Debugging")]
-    [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
-    [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
     [SerializeField] private bool doDebugLog;
     
+    [Header("Readouts")]
+    [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
+    [SerializeField, Vector2Compass] private Vector2 _currentLookDir;
+    [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
+    [SerializeField, InspectorReadOnly] private bool _pullExecutedThisFrame;
+    [SerializeField, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
+    [SerializeField, InspectorReadOnly] private bool _isPushPullLocked;
+    
     // Local variables
-    private Vector2 _currentLookDir;
     private RaycastHit2D _currentHit;
-    private bool _pullExecutedThisFrame;
-    private bool _isPlayerHoldingPullAfterGrab;
-    private bool _isPushPullLocked;
 
     private void Update()
     {
@@ -75,7 +76,7 @@ public class GravityGunController : MonoBehaviour
         float angle = Mathf.Atan2(_currentLookDir.y, _currentLookDir.x) * Mathf.Rad2Deg;
         
         // 4. Rotate around Z so +Y faces the cursor
-        _gravigunPivot.rotation = Quaternion.AngleAxis(angle + _gravigunAngleOffset, Vector3.forward);
+        _gravigunPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
         // Dont do anything if holding an object
         if (_isHoldingObject)
@@ -287,9 +288,13 @@ public class GravityGunController : MonoBehaviour
             _focusedObject.transform.Rotate(Vector3.forward, -1 * _rotateSpeed * Time.deltaTime, Space.Self);
         }
     }
-
+    
+    /// <summary>
+    /// Performs a pull on the currently focused object
+    /// </summary>
     private void PerformPull()
     {
+        // Apply force
         Vector2 dir = (_gravigunHoldPos.position - _focusedObject.transform.position);
         ApplyCappedForce(_focusedObject.rb,
             dir,
@@ -297,14 +302,13 @@ public class GravityGunController : MonoBehaviour
             ForceMode2D.Force,
             _maxVelocity);
     }
-
+    
+    /// <summary>
+    /// Performs a push on the currently focused object
+    /// </summary>
     private void PerformPush()
     {
-        ApplyCappedForce(_focusedObject.rb,
-            _currentLookDir,
-            _pushForce,
-            ForceMode2D.Impulse,
-            _maxVelocity);
+        _focusedObject.rb.AddForce(_currentLookDir * _pushForce, ForceMode2D.Impulse);
     }
     
     /// <summary>
@@ -322,6 +326,7 @@ public class GravityGunController : MonoBehaviour
         // clamp if we overshoot
         if (along > maxVel)
         {
+            return;
             Vector2 sideways = v - dir * along;     // flush along-component
             rb.linearVelocity = sideways + dir * maxVel;
         }

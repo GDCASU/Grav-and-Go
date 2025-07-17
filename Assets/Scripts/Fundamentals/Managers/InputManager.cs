@@ -56,7 +56,6 @@ public class InputManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
         /* -------- Input System mapping -------- */
         if (_playerControls == null)
