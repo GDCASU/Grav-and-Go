@@ -51,7 +51,7 @@ public class GravityGunController : MonoBehaviour
     
     [Header("Readouts")]
     [SerializeField, InspectorReadOnly] private PhysicsObject _focusedObject;
-    [SerializeField, Vector2Compass] private Vector2 _currentLookDir;
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _currentLookDir;
     [SerializeField, InspectorReadOnly] private bool _isHoldingObject;
     [SerializeField, InspectorReadOnly] private bool _pullExecutedThisFrame;
     [SerializeField, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
@@ -317,19 +317,11 @@ public class GravityGunController : MonoBehaviour
     private void ApplyCappedForce(Rigidbody2D rb, Vector2 dir, float force, ForceMode2D mode, float maxVel)
     {
         dir = dir.normalized;
-        Vector2 v = rb.linearVelocity;               // or rb.linearVelocity if using DOTS
-        float along = Vector2.Dot(v, dir);       // signed speed toward dir
+        Vector2 v = rb.linearVelocity;
+        float along = Vector2.Dot(v, dir); // signed speed toward dir
 
-        // accelerate while below the cap
+        // accelerate only while below the cap
         if (along < maxVel) rb.AddForce(dir * force, mode);
-        
-        // clamp if we overshoot
-        if (along > maxVel)
-        {
-            return;
-            Vector2 sideways = v - dir * along;     // flush along-component
-            rb.linearVelocity = sideways + dir * maxVel;
-        }
     }
     
     
@@ -367,9 +359,6 @@ public class GravityGunController : MonoBehaviour
     {
         _helperTargetCircleSprite.color = color;
     }
-    
-    // 
-    
     
     #if UNITY_EDITOR
 
