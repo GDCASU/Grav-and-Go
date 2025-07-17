@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['resumeallsounds_0',['ResumeAllSounds',['../d5/dd9/class_sound_manager.html#adafecddf771fa842c3b6f391014809c3',1,'SoundManager']]],
-  ['resumesoundgroup_1',['ResumeSoundGroup',['../d5/dd9/class_sound_manager.html#abcaa236f79de80f25d1ddb8a40e3c5c9',1,'SoundManager']]]
+  ['quitgame_0',['QuitGame',['../d5/dd3/class_quit_menu_manager.html#acb0da645d4ccc0c5dbdc74fa6f573494',1,'QuitMenuManager']]],
+  ['quittomainmenu_1',['QuitToMainMenu',['../d5/dd3/class_quit_menu_manager.html#aeb7301e840b5675cad5926ae094f1141',1,'QuitMenuManager']]]
 ];

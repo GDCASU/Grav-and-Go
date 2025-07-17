@@ -130,9 +130,9 @@ Collaboration diagram for InputManager:</div>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:ab279a7784e20398039a8d49f1491ad2c" id="r_ab279a7784e20398039a8d49f1491ad2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab279a7784e20398039a8d49f1491ad2c">pushInputRecieved</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a32e99e9d867b8a5c919faa02799f30d6" id="r_a32e99e9d867b8a5c919faa02799f30d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32e99e9d867b8a5c919faa02799f30d6">PopPushInputRecieved</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -144,6 +144,8 @@ Properties</h2></td></tr>
 <tr class="memitem:a5a59157349cfefc5e2a0a0342b1de2c9" id="r_a5a59157349cfefc5e2a0a0342b1de2c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a59157349cfefc5e2a0a0342b1de2c9">jumpHeldDownInput</a><code> [get]</code></td></tr>
 <tr class="memitem:a89dea7c160d4e5935b5fbd56ec034a34" id="r_a89dea7c160d4e5935b5fbd56ec034a34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89dea7c160d4e5935b5fbd56ec034a34">jumpPressedThisFrame</a><code> [get]</code></td></tr>
 <tr class="memitem:af6a7b0fab3edf66f5e5cc94a5cfb85d7" id="r_af6a7b0fab3edf66f5e5cc94a5cfb85d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a7b0fab3edf66f5e5cc94a5cfb85d7">pullHeldDownInput</a><code> [get]</code></td></tr>
+<tr class="memitem:a8609fdaf88598ca9c5f5ca6b740307c9" id="r_a8609fdaf88598ca9c5f5ca6b740307c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8609fdaf88598ca9c5f5ca6b740307c9">didPlayerRotateFoward</a><code> [get]</code></td></tr>
+<tr class="memitem:ad4b9b6892e10a816e5f7aaaa06a3c407" id="r_ad4b9b6892e10a816e5f7aaaa06a3c407"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b9b6892e10a816e5f7aaaa06a3c407">didPlayerRotateBackwards</a><code> [get]</code></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
@@ -153,10 +155,37 @@ Events</h2></td></tr>
 <tr class="memdesc:ae8e933f9b0b3683f203b25568379c327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised on jump press (performed).  <br /></td></tr>
 <tr class="memitem:a0a6c34e5e874ebaa4636bbb2bc4966a7" id="r_a0a6c34e5e874ebaa4636bbb2bc4966a7"><td class="memItemLeft" align="right" valign="top">static Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6c34e5e874ebaa4636bbb2bc4966a7">OnInteract</a></td></tr>
 <tr class="memdesc:a0a6c34e5e874ebaa4636bbb2bc4966a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when the player clicks the interact key.  <br /></td></tr>
+<tr class="memitem:a55c6e57375b1a2fe78f0969a76d119f0" id="r_a55c6e57375b1a2fe78f0969a76d119f0"><td class="memItemLeft" align="right" valign="top">static Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55c6e57375b1a2fe78f0969a76d119f0">OnPause</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton that owns the <code>PlayerControls</code> asset and surfaces the current input state each frame. </p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a32e99e9d867b8a5c919faa02799f30d6" name="a32e99e9d867b8a5c919faa02799f30d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e99e9d867b8a5c919faa02799f30d6">&#9670;&#160;</a></span>PopPushInputRecieved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InputManager.PopPushInputRecieved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="afb55d4ebb7290ab0950c3fd7d3825729" name="afb55d4ebb7290ab0950c3fd7d3825729"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb55d4ebb7290ab0950c3fd7d3825729">&#9670;&#160;</a></span>Instance</h2>
 
@@ -179,21 +208,51 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="ab279a7784e20398039a8d49f1491ad2c" name="ab279a7784e20398039a8d49f1491ad2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab279a7784e20398039a8d49f1491ad2c">&#9670;&#160;</a></span>pushInputRecieved</h2>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="ad4b9b6892e10a816e5f7aaaa06a3c407" name="ad4b9b6892e10a816e5f7aaaa06a3c407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b9b6892e10a816e5f7aaaa06a3c407">&#9670;&#160;</a></span>didPlayerRotateBackwards</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool InputManager.pushInputRecieved</td>
+          <td class="memname">bool InputManager.didPlayerRotateBackwards</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="a8609fdaf88598ca9c5f5ca6b740307c9" name="a8609fdaf88598ca9c5f5ca6b740307c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8609fdaf88598ca9c5f5ca6b740307c9">&#9670;&#160;</a></span>didPlayerRotateFoward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InputManager.didPlayerRotateFoward</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5a59157349cfefc5e2a0a0342b1de2c9" name="a5a59157349cfefc5e2a0a0342b1de2c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a59157349cfefc5e2a0a0342b1de2c9">&#9670;&#160;</a></span>jumpHeldDownInput</h2>
 
@@ -352,6 +411,28 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Raised continuously while Move input is active. </p>
+
+</div>
+</div>
+<a id="a55c6e57375b1a2fe78f0969a76d119f0" name="a55c6e57375b1a2fe78f0969a76d119f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c6e57375b1a2fe78f0969a76d119f0">&#9670;&#160;</a></span>OnPause</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action InputManager.OnPause</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

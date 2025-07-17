@@ -1,0 +1,5 @@
+<map id="AudioMenuManager.ChangeSFXVolume" name="AudioMenuManager.ChangeSFXVolume">
+<area shape="rect" id="Node000001" title="Changes the value of the SFX volume to the slider val." alt="" coords="5,5,284,31"/>
+<area shape="rect" id="Node000002" href="$d5/dd9/class_sound_manager.html#a53cae3504dfeef5bf6b651fb10c26e51" title=" " alt="" coords="332,5,524,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,15,318,15,318,21,284,21"/>
+</map>
