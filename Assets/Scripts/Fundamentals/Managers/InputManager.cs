@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     // Singleton
-    public static InputManager Instance;
+    public static InputManager Instance { get; private set;}
     
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog = false; // Gate for spammy logs
@@ -45,7 +45,7 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
-        /* -------- Singleton enforcement -------- */
+        // Singleton enforcement
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -53,7 +53,7 @@ public class InputManager : MonoBehaviour
         }
         Instance = this;
 
-        /* -------- Input System mapping -------- */
+        // Input System mapping
         if (_playerControls == null)
         {
             _playerControls = new PlayerControls();
@@ -98,21 +98,21 @@ public class InputManager : MonoBehaviour
     /// </summary>
     private void BindPlayerEvents()
     {
-        /* -------- Movement Axis -------- */
+        // Movement Axis
         _playerControls.Movement.Move.performed += HandleMovementInput;
         _playerControls.Movement.Move.canceled += HandleMovementInput;
 
-        /* -------- Gravity Gun Actions -------- */
+        // Gravity Gun Actions 
         _playerControls.GravityGun.Special.performed += HandleSpecial;
         _playerControls.GravityGun.RotateObjectBackwards.performed += HandleRotateBackwards;
         _playerControls.GravityGun.RotateObjectBackwards.canceled += HandleRotateBackwards;
         _playerControls.GravityGun.RotateObjectFoward.performed += HandleRotateFoward;
         _playerControls.GravityGun.RotateObjectFoward.canceled += HandleRotateFoward;
         
-        /* -------- Interactions -------- */
+        // Interactions
         _playerControls.Interactions.Interact.performed += HandleInteraction;
 
-        /* -------- Level / UI Actions -------- */
+        // Level / UI Actions
         _playerControls.Level.Retry.performed += HandleLevelRetry;
         _playerControls.UI.Pause.performed += HandlePause;
     }
@@ -133,7 +133,7 @@ public class InputManager : MonoBehaviour
     
     #region Gravity Gun
 
-    // NOTE: Gameplay not implemented yet; methods are placeholders
+    // NOTE: Gameplay not implemented yet; some methods are placeholders
     private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
     
     private void HandleRotateFoward(InputAction.CallbackContext ctx)

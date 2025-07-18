@@ -36,7 +36,7 @@ public enum SoundGroups
 public class SoundManager : MonoBehaviour
 {
     // Singleton
-    public static SoundManager Instance;
+    public static SoundManager Instance { get; private set;}
 
     #region VCA
 
