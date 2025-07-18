@@ -31,7 +31,6 @@ public class InteractionManager2D : MonoBehaviour
 
     // Local variable
     private Transform _player;
-    Collider2D[] hits = new Collider2D[50];
 
     #region Unity Callbacks
 
