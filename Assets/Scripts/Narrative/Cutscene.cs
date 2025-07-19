@@ -1,19 +1,48 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cutscene : MonoBehaviour
 {
-    public Sprite[] images;
-    public Dialogue[] dialogues;
+    [SerializeField] Sprite[] backgroundImages;
+    [SerializeField] Scene[] scenes;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    Image currentImage;
+
+
+    Dialogue.Block currentBlock;
+    int sceneIndex = 0;
+
+    bool sceneTransitioning;
+
+    private void Start()
     {
-        
+        currentImage = GetComponent<Image>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void UpdateScene()
     {
-        
+        if (sceneTransitioning) return;
+
+        if (scenes[sceneIndex].UpdateDialogue())
+        {
+            // continue
+        }
+        else
+        {
+            StartCoroutine(SceneTransition());
+        }
+    }
+
+    IEnumerator SceneTransition()
+    {
+        sceneTransitioning = true;
+        sceneIndex++;
+        currentImage.sprite = backgroundImages[sceneIndex];
+        scenes[sceneIndex].UpdateDialogue();
+        sceneTransitioning = false;
+
+        yield return null;
     }
 }

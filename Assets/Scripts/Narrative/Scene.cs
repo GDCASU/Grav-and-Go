@@ -24,14 +24,13 @@ public class Scene : MonoBehaviour
         if (remakeScript) { ReadFile(); }
     }
 
-    Dialogue.Block UpdateDialogue()
+    public bool UpdateDialogue()
     {
         dialogueIndex++;
-        if (dialogueIndex > dialogue.blocks.Count) { return currentBlock; }
+        if (dialogueIndex > dialogue.blocks.Count) { return false; }
 
         currentBlock = dialogue.blocks[dialogueIndex];
-
-        return currentBlock;
+        return true;
     }
 
     /// <summary>  Takes information from text files and transfers into something the system can read </summary>
