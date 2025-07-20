@@ -19,6 +19,7 @@ public class GameplayMenuManager : MonoBehaviour
 {
     [Header("Gameplay")]
     [SerializeField] private Slider sensitivitySlider;
+    [SerializeField] private Toggle FPSToggle;
     [SerializeField] private TextMeshProUGUI DPIValue;
     
     [Header("Optional")]
@@ -27,12 +28,15 @@ public class GameplayMenuManager : MonoBehaviour
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool doDebugLog;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         // On load, set the loaded values into the fields
         // TODO: Get sensitivity value
+        
+        // Set fullscreen toggle
+        FPSToggle.isOn = FPSCounter.enable;
     }
     
     /// <summary>
@@ -53,6 +57,15 @@ public class GameplayMenuManager : MonoBehaviour
         if (DPIShadow != null) DPIShadow.text = sliderValStr;
         DPIValue.text = sliderValStr;
         // TODO: Change Sensitivity?
+    }
+    
+    /// <summary>
+    /// Toggles on and off the FPS Counter
+    /// </summary>
+    /// <param name="value"></param>
+    public void ToggleFPSCounter(bool value)
+    {
+        FPSCounter.enable = value;
     }
 
  

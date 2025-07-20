@@ -989,6 +989,7 @@ MonoBehaviour:
   DPIValue: {fileID: 381185746}
   DPIShadow: {fileID: 0}
   doDebugLog: 0
+  isFPSCounterOn: 0
 --- !u!114 &385536160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,8 +1419,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1626272977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0}
-  m_AnchorMax: {x: 0.1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3654,7 +3655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &867296137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3846,7 +3847,7 @@ RectTransform:
   m_Father: {fileID: 1298515244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4035,7 +4036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &924838754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7375,7 +7376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelButton: {fileID: 1649035423}
   _levelReference:
-    name: Level Select Work
+    name: Level Select
   _doDebugLog: 0
 --- !u!224 &1654263708 stripped
 RectTransform:

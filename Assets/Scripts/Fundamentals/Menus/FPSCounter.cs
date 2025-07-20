@@ -28,9 +28,10 @@ public class FPSCounter : MonoBehaviour
     [SerializeField] private bool _doDebugLog;
 
     [Header("Readouts")]
-    [SerializeField, InspectorReadOnly] private bool _enable; // Set on Game Settings
+    [SerializeField, InspectorReadOnly] private bool _enabledReadout;
     
     // Local Variables
+    public static bool enable = false;
     private float[] frameTimes;
     private int index;
 
@@ -43,7 +44,14 @@ public class FPSCounter : MonoBehaviour
     void Update()
     {
         // Dont do anything if not enabled
-        if (!_enable) return;
+        _enabledReadout = enable;
+        if (!enable) 
+        {
+            targetText.gameObject.SetActive(false);
+            return;
+        }
+        
+        targetText.gameObject.SetActive(true);
         
         // circular buffer of deltaTimes
         frameTimes[index] = Time.unscaledDeltaTime;

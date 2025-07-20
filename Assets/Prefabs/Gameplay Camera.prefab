@@ -934,7 +934,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -7709,6 +7709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8766260423249137976}
+  - component: {fileID: 5611777848472127868}
   - component: {fileID: 2044211619966694568}
   - component: {fileID: 350650999484735435}
   - component: {fileID: 549586497743261738}
@@ -7739,6 +7740,22 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: -110}
   m_SizeDelta: {x: 150, y: 53.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5611777848472127868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004982555649503472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0c05c453d0833448a82bd896a8a35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelButton: {fileID: 549586497743261738}
+  _levelReference:
+    name: Main Menu
+  _doDebugLog: 0
 --- !u!222 &2044211619966694568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7821,9 +7838,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2477533334171651322}
-        m_TargetAssemblyTypeName: QuitMenuManager, Assembly-CSharp
-        m_MethodName: QuitToMainMenu
+      - m_Target: {fileID: 5611777848472127868}
+        m_TargetAssemblyTypeName: LevelButton, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7831,7 +7848,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8224317543688009672
 GameObject:
