@@ -302,7 +302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0c05c453d0833448a82bd896a8a35f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelButton: {fileID: 348051633}
   _levelReference:
     name: Test Level 1
   _doDebugLog: 0
@@ -767,7 +766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 1
+  m_text: Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
