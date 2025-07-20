@@ -47,11 +47,11 @@ MonoBehaviour:
   _levelProgressDatabase:
     _serializedList:
     - Key:
-        name: Main Menu Work
+        name: Main Menu
       Value:
         isUnlocked: 1
     - Key:
-        name: Level Select Work
+        name: Level Select
       Value:
         isUnlocked: 1
     - Key:
@@ -61,5 +61,5 @@ MonoBehaviour:
     - Key:
         name: Chapter 1 Level 2
       Value:
-        isUnlocked: 1
+        isUnlocked: 0
   _doDebugLog: 0
