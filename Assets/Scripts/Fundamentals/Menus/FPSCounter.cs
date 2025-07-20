@@ -6,7 +6,7 @@ using UnityEngine;
 
 /* -----------------------------------------------------------
  * Author:
- * 
+ * Ian Fletcher
  * 
  * Modified By:
  * 
@@ -17,8 +17,6 @@ using UnityEngine;
 /// </summary>
 public class FPSCounter : MonoBehaviour
 {
-    [Header]
-    
     [Header("References")]
     [SerializeField] private TextMeshProUGUI targetText;
     
@@ -29,17 +27,24 @@ public class FPSCounter : MonoBehaviour
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
 
+    [Header("Readouts")]
+    [SerializeField, InspectorReadOnly] private bool _enable; // Set on Game Settings
+    
     // Local Variables
     private float[] frameTimes;
     private int index;
 
     private void Awake()
     {
+        // Initialize array
         frameTimes = new float[sampleSize];
     }
 
     void Update()
     {
+        // Dont do anything if not enabled
+        if (!_enable) return;
+        
         // circular buffer of deltaTimes
         frameTimes[index] = Time.unscaledDeltaTime;
         index = (index + 1) % sampleSize;

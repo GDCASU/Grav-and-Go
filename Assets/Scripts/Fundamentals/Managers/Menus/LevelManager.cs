@@ -17,11 +17,9 @@ using UnityEngine.Serialization;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Pupose:
- * Create a level manager to manage transitions between scenes
- */// --------------------------------------------------------
-
+/// <summary>
+/// Class that handles the level data of the game, and starting level changes
+/// </summary>
 public class LevelManager : MonoBehaviour
 {
     // Singleton
