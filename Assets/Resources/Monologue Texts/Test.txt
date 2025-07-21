@@ -1,4 +1,4 @@
 Hey!
 This is a test but maybe it will work
-There are currently ${level_count} levels planned
-Also here is something that happens right when this starts ${test_function}
+There are currently levels planned
+Also here is something that happens right when this starts
