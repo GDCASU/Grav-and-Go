@@ -153,7 +153,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Rotate Object Foward",
+                    "name": "Mouse Wheel Up",
                     "type": "Button",
                     "id": "cc67f370-c1fc-446b-9a8e-7fe6f994bd31",
                     "expectedControlType": "",
@@ -162,9 +162,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Rotate Object Backwards",
+                    "name": "Mouse Wheel Down",
                     "type": "Button",
                     "id": "55d03fde-9085-48fe-808e-c83e392eaed3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "3b94b6cf-4c75-4c7c-9b77-6675d43e08b1",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -212,7 +221,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -223,7 +232,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -234,7 +243,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -245,7 +254,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -256,7 +265,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -267,9 +276,20 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "163d2eeb-2734-4df6-8912-fa62804d4269",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

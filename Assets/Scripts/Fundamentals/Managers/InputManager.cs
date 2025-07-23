@@ -19,8 +19,12 @@ public class InputManager : MonoBehaviour
     public bool jumpHeldDownInput { get; private set; }  // True while jump button held
     public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
     public bool pullHeldDownInput { get; private set; } // True while pull button held
-    public bool didPlayerRotateFoward { get; private set; } // True while the player spins the mousewheel up
-    public bool didPlayerRotateBackwards { get; private set; } // True while the player spins the mousewheel down
+    public bool didPlayerWheelFoward { get; private set; } // True while the player spins the mousewheel up
+    public bool didPlayerWheelBackwards { get; private set; } // True while the player spins the mousewheel down
+    public bool didPlayerHoldDownRotate { get; private set; } // True while the player holds down R
+    public bool didPlayerClickMouseWheelThisFrame { get; private set; } // True if the player clicked the mouse wheel this frame
+    public bool pullPressedThisFrame { get; private set; }  // True only on the frame pressed
+    public bool pushPressedThisFrame { get; private set; }  // True only on the frame pressed
 
     // Local Variables
     private PlayerControls _playerControls;
@@ -69,12 +73,10 @@ public class InputManager : MonoBehaviour
         jumpPressedThisFrame = _playerControls.Movement.Jump.WasPerformedThisFrame();
         jumpHeldDownInput = _playerControls.Movement.Jump.IsPressed();
         pullHeldDownInput = _playerControls.GravityGun.Pull.IsPressed();
-        if (_playerControls.GravityGun.Push.WasPerformedThisFrame())
-        {
-            // This one requires special attention due to the gravity gun using fixedUpdate
-            _pushInputRecieved = true;
-        }
-        
+        didPlayerHoldDownRotate = _playerControls.GravityGun.Rotate.IsPressed();
+        didPlayerClickMouseWheelThisFrame = _playerControls.GravityGun.Special.WasPerformedThisFrame();
+        pullPressedThisFrame = _playerControls.GravityGun.Pull.WasPerformedThisFrame();
+        pushPressedThisFrame = _playerControls.GravityGun.Push.WasPerformedThisFrame();
     }
 
     private void OnDestroy()
@@ -104,10 +106,10 @@ public class InputManager : MonoBehaviour
 
         // Gravity Gun Actions 
         _playerControls.GravityGun.Special.performed += HandleSpecial;
-        _playerControls.GravityGun.RotateObjectBackwards.performed += HandleRotateBackwards;
-        _playerControls.GravityGun.RotateObjectBackwards.canceled += HandleRotateBackwards;
-        _playerControls.GravityGun.RotateObjectFoward.performed += HandleRotateFoward;
-        _playerControls.GravityGun.RotateObjectFoward.canceled += HandleRotateFoward;
+        _playerControls.GravityGun.MouseWheelDown.performed += HandleWheelBackwards;
+        _playerControls.GravityGun.MouseWheelDown.canceled += HandleWheelBackwards;
+        _playerControls.GravityGun.MouseWheelUp.performed += HandleWheelFoward;
+        _playerControls.GravityGun.MouseWheelUp.canceled += HandleWheelFoward;
         
         // Interactions
         _playerControls.Interactions.Interact.performed += HandleInteraction;
@@ -136,14 +138,14 @@ public class InputManager : MonoBehaviour
     // NOTE: Gameplay not implemented yet; some methods are placeholders
     private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
     
-    private void HandleRotateFoward(InputAction.CallbackContext ctx)
+    private void HandleWheelFoward(InputAction.CallbackContext ctx)
     {
-        didPlayerRotateFoward = ctx.performed;
+        didPlayerWheelFoward = ctx.performed;
     }
 
-    private void HandleRotateBackwards(InputAction.CallbackContext ctx)
+    private void HandleWheelBackwards(InputAction.CallbackContext ctx)
     {
-        didPlayerRotateBackwards = ctx.performed;
+        didPlayerWheelBackwards = ctx.performed;
     }
     
     #endregion
@@ -168,15 +170,5 @@ public class InputManager : MonoBehaviour
     
     #endregion
 
-    #region Getters and Setters
-
-    public bool PopPushInputRecieved()
-    {
-        bool value = _pushInputRecieved;
-        _pushInputRecieved = false;
-        return value;
-    }
-
-    #endregion
     
 }
