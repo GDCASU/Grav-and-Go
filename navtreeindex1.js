@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"de/dd1/class_serialized_data_manager.html#acc1c55a7b2f39eea36a622502f3ab3de":[0,0,46,2],
 "de/dd1/class_serialized_data_manager.html#afc9bf246e01976e077d018801e99b854":[0,0,46,6],
 "de/dde/_social_links_8cs.html":[1,0,0,0,2,3,3],
 "de/df2/class_grabbable_object.html":[0,0,15],

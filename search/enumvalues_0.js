@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['combat_0',['Combat',['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8a30ad1054cf7ad7636a26844a6f782e1f',1,'SoundManager.cs']]]
+  ['fadestop_0',['FadeStop',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22eda48275a98cf182f768df965670af5774c',1,'AudioEmitterSettings']]]
 ];
