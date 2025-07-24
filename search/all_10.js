@@ -1,23 +1,7 @@
 var searchData=
 [
-  ['scriptablestats_0',['ScriptableStats',['../da/dd5/class_scriptable_stats.html',1,'']]],
-  ['scriptablestats_2ecs_1',['ScriptableStats.cs',['../dd/d90/_scriptable_stats_8cs.html',1,'']]],
-  ['setdefaultoutlinecolor_2',['SetDefaultOutlineColor',['../d5/df2/class_outline2_d.html#a957a0e42b3bcd6f6a337db317fb0e87f',1,'Outline2D']]],
-  ['setfullscreen_3',['SetFullscreen',['../d5/dbd/class_graphics_menu_manager.html#a82b1e9862fd9cb6014a40ec365a58321',1,'GraphicsMenuManager']]],
-  ['setoutline_4',['SetOutline',['../d5/df2/class_outline2_d.html#a7899ef0b883950f2236fd74b56397718',1,'Outline2D']]],
-  ['settings_5',['settings',['../d1/da0/class_simple_audio_emitter.html#ab9df381716018adb9402ef304eaca96a',1,'SimpleAudioEmitter']]],
-  ['setvolume_6',['SetVolume',['../d5/dd9/class_sound_manager.html#a53cae3504dfeef5bf6b651fb10c26e51',1,'SoundManager']]],
-  ['sfx_7',['SFX',['../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290ada101052f6ba998ab41d571a6fff1708',1,'SFX:&#160;SoundManager.cs'],['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8ada101052f6ba998ab41d571a6fff1708',1,'SFX:&#160;SoundManager.cs']]],
-  ['simpleaudioemitter_8',['SimpleAudioEmitter',['../d1/da0/class_simple_audio_emitter.html',1,'']]],
-  ['simpleaudioemitter_2ecs_9',['SimpleAudioEmitter.cs',['../d5/de3/_simple_audio_emitter_8cs.html',1,'']]],
-  ['snapinput_10',['SnapInput',['../da/dd5/class_scriptable_stats.html#ab551948dc71fde9b1de17b818b2c83a2',1,'ScriptableStats']]],
-  ['soundcontrollers_11',['SoundControllers',['../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290',1,'SoundManager.cs']]],
-  ['soundgroups_12',['SoundGroups',['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8',1,'SoundManager.cs']]],
-  ['soundmanager_13',['SoundManager',['../d5/dd9/class_sound_manager.html',1,'']]],
-  ['soundmanager_2ecs_14',['SoundManager.cs',['../db/dc2/_sound_manager_8cs.html',1,'']]],
-  ['stopallsounds_15',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
-  ['stopsound_16',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
-  ['stopsoundgroup_17',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
-  ['stopstyle_18',['StopStyle',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22ed',1,'AudioEmitterSettings']]],
-  ['stringtointeger_19',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
+  ['quitgame_0',['QuitGame',['../d5/dd3/class_quit_menu_manager.html#acb0da645d4ccc0c5dbdc74fa6f573494',1,'QuitMenuManager']]],
+  ['quitmenumanager_1',['QuitMenuManager',['../d5/dd3/class_quit_menu_manager.html',1,'']]],
+  ['quitmenumanager_2ecs_2',['QuitMenuManager.cs',['../d8/d5d/_quit_menu_manager_8cs.html',1,'']]],
+  ['quittomainmenu_3',['QuitToMainMenu',['../d5/dd3/class_quit_menu_manager.html#aeb7301e840b5675cad5926ae094f1141',1,'QuitMenuManager']]]
 ];

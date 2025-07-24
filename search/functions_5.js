@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['quitgame_0',['QuitGame',['../d5/dd3/class_quit_menu_manager.html#acb0da645d4ccc0c5dbdc74fa6f573494',1,'QuitMenuManager']]],
-  ['quittomainmenu_1',['QuitToMainMenu',['../d5/dd3/class_quit_menu_manager.html#aeb7301e840b5675cad5926ae094f1141',1,'QuitMenuManager']]]
+  ['filedatahandler_0',['FileDataHandler',['../dd/d11/class_file_data_handler.html#a03e6fd9c03c9933df7b113ca0808d586',1,'FileDataHandler']]]
 ];

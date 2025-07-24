@@ -1,0 +1,11 @@
+<map id="GameSettings.LoadData" name="GameSettings.LoadData">
+<area shape="rect" id="Node000001" title="Load data from file." alt="" coords="5,80,185,105"/>
+<area shape="rect" id="Node000002" href="$d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec" title=" " alt="" coords="234,5,443,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,77,233,39,262,31,264,37,234,45,129,82"/>
+<area shape="rect" id="Node000003" href="$d5/d6e/class_game_settings.html#affb2212a3835eaa46c81635a65730617" title=" " alt="" coords="243,55,434,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,81,229,76,230,81,186,86"/>
+<area shape="rect" id="Node000004" href="$d5/d6e/class_game_settings.html#a8ee87d9fa252c1f47dccff4c5b8a2b05" title=" " alt="" coords="243,104,434,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,99,230,103,229,109,185,104"/>
+<area shape="rect" id="Node000005" href="$d5/d6e/class_game_settings.html#a7211eab84b1c4430df7e97ed6592bba2" title="Sets the target frame rate that the game will run at." alt="" coords="233,153,444,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="131,103,234,138,268,147,267,152,233,143,129,108"/>
+</map>

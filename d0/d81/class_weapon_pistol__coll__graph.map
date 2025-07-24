@@ -1,0 +1,14 @@
+<map id="WeaponPistol" name="WeaponPistol">
+<area shape="rect" id="Node000001" title="Class that handles the pistol weapon of the game." alt="" coords="113,347,224,372"/>
+<area shape="rect" id="Node000002" href="$db/d54/class_grav_special_object.html" title="Provide a parent class to all objects that have a special interaction with the gravity gun." alt="" coords="97,272,240,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,312,171,346,166,346,166,312"/>
+<area shape="rect" id="Node000003" href="$d6/db5/class_physics_object.html" title="Abstract class that governs all physics objects." alt="" coords="16,176,129,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,209,159,270,155,274,92,213"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,45,75,176,70,176,65,45"/>
+<area shape="rect" id="Node000005" href="$d5/df2/class_outline2_d.html" title=" " alt="" coords="89,80,176,105"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="89,40,124,78,120,81,85,43"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="120,118,82,177,78,174,116,116"/>
+<area shape="rect" id="Node000006" href="$d9/d82/class_grav_special_object_1_1_grav_events.html" title=" " alt="" coords="154,176,375,201"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="245,213,182,274,179,270,241,209"/>
+</map>

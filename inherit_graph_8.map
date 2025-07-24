@@ -1,0 +1,79 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$d3/d95/interface_i_data_persistance.html" title=" " alt="" coords="5,5,137,31"/>
+<area shape="rect" id="Node000001" href="$d5/d6e/class_game_settings.html" title="Class that holds the settings of the game." alt="" coords="235,5,349,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="151,15,235,15,235,21,151,21"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,769,133,795"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="70,755,74,608,90,394,104,283,124,181,150,97,165,65,183,40,207,24,233,16,235,21,209,29,187,44,170,68,155,99,129,182,109,284,95,394,80,609,76,756"/>
+<area shape="rect" id="Node000003" href="$df/d60/class_audio_menu_manager.html" title="Class that handles an audio menu." alt="" coords="216,55,368,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,756,76,618,93,418,107,315,126,220,151,143,167,112,183,89,198,78,215,70,217,75,201,83,187,93,171,115,156,145,132,222,112,315,98,418,81,618,76,756"/>
+<area shape="rect" id="Node000004" href="$d7/dc3/class_bezier_from_transforms.html" title="Feeds the current positions of a list of Transforms into a LineRendererSmoother each frame." alt="" coords="208,104,376,129"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="71,755,78,626,96,441,111,346,129,259,153,188,168,160,183,139,206,123,209,128,187,143,172,163,158,190,135,260,116,347,101,441,83,626,76,755"/>
+<area shape="rect" id="Node000005" href="$d1/d86/class_cheats_manager.html" title=" " alt="" coords="230,153,354,179"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="71,755,80,634,99,464,114,377,132,298,155,233,169,207,183,188,204,173,229,165,230,171,207,178,187,192,173,210,160,235,138,299,119,378,104,465,85,635,77,756"/>
+<area shape="rect" id="Node000006" href="$d4/de1/class_dancing_midpoint.html" title="Drifts inside a sphere of radius &#160;at a constant speed." alt="" coords="226,203,358,228"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="72,755,82,644,102,488,117,409,135,337,157,278,183,237,203,224,225,216,227,221,205,228,187,241,162,280,140,339,122,410,108,489,87,644,77,756"/>
+<area shape="rect" id="Node000007" href="$d1/dc9/class_dynamic_line_bezier.html" title="Creates bezier lines on runtime given a list of transforms." alt="" coords="218,252,366,277"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="72,755,84,653,106,512,121,441,138,376,159,323,183,287,199,275,217,268,219,273,202,280,187,291,164,326,143,378,126,442,111,513,89,654,78,756"/>
+<area shape="rect" id="Node000008" href="$d1/d96/class_equidistant_points_updater.html" title="Re‑positions a list of “mid” points so they stay perfectly equidistant along the line from start &#45;&gt; e..." alt="" coords="199,301,385,327"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="73,755,86,662,109,536,124,473,141,415,161,368,183,336,199,325,202,329,187,340,166,371,146,417,129,474,114,537,91,663,78,756"/>
+<area shape="rect" id="Node000009" href="$d8/d6a/class_f_p_s_counter.html" title=" " alt="" coords="243,351,341,376"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="69,756,71,682,85,582,99,529,120,477,147,428,184,385,211,369,243,361,244,366,213,374,187,389,152,431,125,479,105,531,91,584,77,683,74,756"/>
+<area shape="rect" id="Node000010" href="$df/d11/class_gameplay_menu_manager.html" title="Class that handles a Gameplay menu." alt="" coords="201,400,383,425"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="70,756,75,691,92,604,106,558,126,513,151,471,184,435,200,423,203,428,187,439,155,474,130,515,111,560,97,605,81,691,76,756"/>
+<area shape="rect" id="Node000011" href="$d5/dbd/class_graphics_menu_manager.html" title="Class that handles a graphics menu." alt="" coords="206,449,378,475"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="72,755,80,698,99,625,113,586,132,549,155,514,184,484,204,471,207,475,187,488,159,517,136,552,118,589,104,627,85,699,77,756"/>
+<area shape="rect" id="Node000012" href="$d6/dba/class_gravity_gun_controller.html" title="Class that manages the player&#39;s gravity gun." alt="" coords="212,499,372,524"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="74,755,85,707,106,647,138,585,159,557,184,533,210,519,213,523,187,537,163,561,142,588,111,649,90,709,79,756"/>
+<area shape="rect" id="Node000013" href="$d6/dfd/class_gun_projectile.html" title="Class that handles a projectile from a gun." alt="" coords="237,548,347,573"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="78,755,91,716,113,669,144,622,184,583,209,569,237,562,238,567,211,574,187,587,148,625,118,672,96,718,83,757"/>
+<area shape="rect" id="Node000014" href="$df/dd1/class_input_manager.html" title="Singleton that owns the PlayerControls asset and surfaces the current input state each frame." alt="" coords="236,597,348,623"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="82,756,121,693,150,660,184,632,209,620,235,613,237,618,211,625,187,636,154,663,126,696,87,758"/>
+<area shape="rect" id="Node000015" href="$dc/dc0/class_interactable.html" title="Abstract Class that defines functions for interactions." alt="" coords="242,647,342,672"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="91,757,131,718,157,698,184,681,212,670,241,663,242,668,214,675,187,686,160,702,134,722,94,761"/>
+<area shape="rect" id="Node000017" href="$d9/d70/class_interaction_manager2_d.html" title="2&#45;D interaction manager that looks for the nearest Interactable inside an OverlapCircle each frame (w..." alt="" coords="209,696,375,721"/>
+<area shape="poly" id="edge17_Node000002_Node000017" title=" " alt="" coords="110,761,184,730,225,719,227,724,186,735,112,766"/>
+<area shape="rect" id="Node000018" href="$dc/d72/class_level_button.html" title="Class that handles a button in the level select window." alt="" coords="242,745,342,771"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="147,771,242,761,242,766,147,776"/>
+<area shape="rect" id="Node000019" href="$d6/d06/class_level_manager.html" title="Class that handles the level data of the game, and starting level changes." alt="" coords="235,795,349,820"/>
+<area shape="poly" id="edge19_Node000002_Node000019" title=" " alt="" coords="147,788,235,798,234,803,146,793"/>
+<area shape="rect" id="Node000020" href="$d4/d0f/class_line_renderer_from_transforms.html" title="Copies the positions of a list of Transforms into a LineRenderer each Update." alt="" coords="185,844,399,869"/>
+<area shape="poly" id="edge20_Node000002_Node000020" title=" " alt="" coords="112,798,186,829,230,841,229,846,184,834,110,803"/>
+<area shape="rect" id="Node000021" href="$da/d25/class_line_renderer_smoother.html" title=" " alt="" coords="207,893,377,919"/>
+<area shape="poly" id="edge21_Node000002_Node000021" title=" " alt="" coords="94,803,135,842,160,862,187,878,219,891,217,896,184,883,157,866,131,846,91,807"/>
+<area shape="rect" id="Node000022" href="$d9/d11/class_multi_audio_emitter.html" title="An audio emitter capable of playing sounds from a library using only one script." alt="" coords="222,943,362,968"/>
+<area shape="poly" id="edge22_Node000002_Node000022" title=" " alt="" coords="87,806,126,868,154,901,187,928,223,943,220,948,184,932,150,904,122,871,83,809"/>
+<area shape="rect" id="Node000023" href="$d5/df2/class_outline2_d.html" title=" " alt="" coords="249,992,335,1017"/>
+<area shape="poly" id="edge23_Node000002_Node000023" title=" " alt="" coords="83,807,97,846,118,892,148,938,187,977,217,992,249,1000,248,1005,215,997,184,981,144,942,113,895,92,848,78,809"/>
+<area shape="rect" id="Node000024" href="$d7/d25/class_pause_resume_manager.html" title="Class that handles pausing and resuming the game from the pause menu." alt="" coords="207,1041,377,1067"/>
+<area shape="poly" id="edge24_Node000002_Node000024" title=" " alt="" coords="80,808,91,855,111,915,142,975,163,1003,187,1027,208,1039,205,1044,184,1031,159,1006,138,978,106,917,85,857,74,809"/>
+<area shape="rect" id="Node000025" href="$d5/d84/class_persistent_objects_manager.html" title="Class that will protect all objects that are meant to be present on all scenes." alt="" coords="195,1091,389,1116"/>
+<area shape="poly" id="edge25_Node000002_Node000025" title=" " alt="" coords="77,808,86,864,104,937,118,975,136,1012,159,1046,187,1076,206,1088,203,1093,184,1080,155,1050,132,1015,113,977,99,939,80,866,72,809"/>
+<area shape="rect" id="Node000026" href="$d6/db5/class_physics_object.html" title="Abstract class that governs all physics objects." alt="" coords="235,1140,349,1165"/>
+<area shape="poly" id="edge26_Node000002_Node000026" title=" " alt="" coords="76,808,81,873,97,959,111,1004,131,1049,156,1090,187,1125,210,1140,236,1147,235,1152,208,1144,184,1129,151,1093,126,1051,106,1006,92,960,76,874,70,809"/>
+<area shape="rect" id="Node000031" href="$d4/da1/class_player_animator.html" title="Pure presentation layer for the player: – Listens to events from PlayerMovementController to trigger ..." alt="" coords="231,1189,353,1215"/>
+<area shape="poly" id="edge31_Node000002_Node000031" title=" " alt="" coords="74,808,77,881,91,980,105,1033,125,1085,152,1133,187,1175,208,1188,231,1196,230,1201,205,1193,184,1179,148,1136,120,1087,100,1035,86,981,71,882,69,808"/>
+<area shape="rect" id="Node000032" href="$d2/dcb/class_player_movement_controller.html" title="Handles all core movement logic for the player:" alt="" coords="193,1239,391,1264"/>
+<area shape="poly" id="edge32_Node000002_Node000032" title=" " alt="" coords="78,808,91,902,114,1027,129,1091,146,1148,166,1194,187,1225,202,1236,199,1241,183,1229,161,1197,141,1150,124,1092,109,1028,86,902,73,809"/>
+<area shape="rect" id="Node000033" href="$d0/df0/class_pressure_plate2_d.html" title="2‑D pressure‑plate controller." alt="" coords="227,1288,357,1313"/>
+<area shape="poly" id="edge33_Node000002_Node000033" title=" " alt="" coords="78,808,89,911,111,1051,126,1123,143,1187,164,1240,187,1275,206,1288,228,1295,226,1300,203,1292,183,1279,159,1242,138,1189,120,1124,106,1052,84,911,72,809"/>
+<area shape="rect" id="Node000034" href="$d5/dd3/class_quit_menu_manager.html" title="Class that handles the quit of the game." alt="" coords="221,1337,363,1363"/>
+<area shape="poly" id="edge34_Node000002_Node000034" title=" " alt="" coords="77,808,87,920,107,1075,122,1154,140,1226,162,1285,187,1324,203,1336,221,1343,219,1348,200,1340,183,1328,157,1287,135,1228,117,1156,102,1076,82,920,72,809"/>
+<area shape="rect" id="Node000035" href="$de/dd1/class_serialized_data_manager.html" title="Singleton class to be called for saving and loading." alt="" coords="205,1387,379,1412"/>
+<area shape="poly" id="edge35_Node000002_Node000035" title=" " alt="" coords="77,809,85,929,104,1100,119,1187,137,1266,160,1330,173,1355,187,1373,206,1387,203,1391,183,1377,169,1358,155,1332,132,1267,114,1188,99,1100,80,930,71,809"/>
+<area shape="rect" id="Node000036" href="$d1/da0/class_simple_audio_emitter.html" title="An audio emitter with full customization options for behaviour." alt="" coords="216,1436,368,1461"/>
+<area shape="poly" id="edge36_Node000002_Node000036" title=" " alt="" coords="76,809,83,938,101,1123,116,1218,135,1305,158,1376,172,1403,187,1423,201,1433,217,1441,215,1446,198,1438,183,1427,168,1405,153,1378,129,1306,110,1219,96,1124,78,939,71,809"/>
+<area shape="rect" id="Node000037" href="$d3/dcd/class_social_links.html" title="Class that handles the social media icons on the main menu." alt="" coords="245,1485,339,1511"/>
+<area shape="poly" id="edge37_Node000002_Node000037" title=" " alt="" coords="76,808,81,946,98,1147,112,1249,132,1344,156,1421,171,1450,187,1472,199,1482,214,1489,245,1496,244,1501,212,1494,197,1487,183,1476,166,1453,151,1423,126,1345,107,1250,93,1147,76,947,70,808"/>
+<area shape="rect" id="Node000038" href="$d5/dd9/class_sound_manager.html" title="Manages the sound of the game." alt="" coords="233,1535,351,1560"/>
+<area shape="poly" id="edge38_Node000002_Node000038" title=" " alt="" coords="76,808,80,956,95,1171,109,1281,129,1383,155,1466,170,1498,187,1521,208,1536,233,1544,232,1549,206,1541,183,1525,165,1500,150,1468,123,1384,104,1282,90,1171,74,956,70,809"/>
+<area shape="rect" id="Node000016" href="$d6/d65/class_lever.html" title="Class that handles an interactable lever." alt="" coords="493,647,551,672"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="355,657,492,657,492,662,355,662"/>
+<area shape="rect" id="Node000027" href="$de/df2/class_grabbable_object.html" title="Class that governs all physics objects that can be grabbed." alt="" coords="457,1091,587,1116"/>
+<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="362,1135,461,1113,463,1119,363,1140"/>
+<area shape="rect" id="Node000028" href="$db/d54/class_grav_special_object.html" title="Provide a parent class to all objects that have a special interaction with the gravity gun." alt="" coords="451,1140,593,1165"/>
+<area shape="poly" id="edge28_Node000026_Node000028" title=" " alt="" coords="362,1150,451,1150,451,1155,362,1155"/>
+<area shape="rect" id="Node000030" href="$d7/dce/classinfluenceable_object.html" title="Class that defines an object that the gravigun cant grab, but can influence." alt="" coords="447,1189,597,1215"/>
+<area shape="poly" id="edge30_Node000026_Node000030" title=" " alt="" coords="363,1165,463,1187,461,1192,362,1170"/>
+<area shape="rect" id="Node000029" href="$d0/d76/class_weapon_pistol.html" title="Class that handles the pistol weapon of the game." alt="" coords="645,1140,756,1165"/>
+<area shape="poly" id="edge29_Node000028_Node000029" title=" " alt="" coords="607,1150,645,1150,645,1155,607,1155"/>
+</map>

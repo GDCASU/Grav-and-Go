@@ -1,5 +1,6 @@
 var dir_7a84c7aee3cffa9d5e21f8638d63dffb =
 [
+    [ "Special Objects", "dir_6ccf7435e79b5a495e676a6e568d8d07.html", "dir_6ccf7435e79b5a495e676a6e568d8d07" ],
     [ "GrabbableObject.cs", "df/d12/_grabbable_object_8cs.html", "df/d12/_grabbable_object_8cs" ],
     [ "GravityGunController.cs", "d7/de1/_gravity_gun_controller_8cs.html", "d7/de1/_gravity_gun_controller_8cs" ],
     [ "influenceableObject.cs", "d6/d20/influenceable_object_8cs.html", "d6/d20/influenceable_object_8cs" ],

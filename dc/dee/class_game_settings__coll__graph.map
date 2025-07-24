@@ -1,0 +1,8 @@
+<map id="GameSettings" name="GameSettings">
+<area shape="rect" id="Node000001" title="Class that holds the settings of the game." alt="" coords="86,80,201,105"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="216,85,227,93,219,100,201,102,200,97,217,95,222,93,213,89"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,38,133,78,129,81,88,42"/>
+<area shape="rect" id="Node000003" href="$d3/d95/interface_i_data_persistance.html" title=" " alt="" coords="153,5,285,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,42,158,81,154,78,195,38"/>
+</map>

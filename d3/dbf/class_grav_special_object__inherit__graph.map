@@ -1,0 +1,9 @@
+<map id="GravSpecialObject" name="GravSpecialObject">
+<area shape="rect" id="Node000001" title="Provide a parent class to all objects that have a special interaction with the gravity gun." alt="" coords="5,152,148,177"/>
+<area shape="rect" id="Node000004" href="$d0/d76/class_weapon_pistol.html" title="Class that handles the pistol weapon of the game." alt="" coords="21,225,132,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="79,191,79,225,74,225,74,191"/>
+<area shape="rect" id="Node000002" href="$d6/db5/class_physics_object.html" title="Abstract class that governs all physics objects." alt="" coords="20,79,133,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="15,5,139,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
+</map>

@@ -113,13 +113,17 @@ Inheritance diagram for PhysicsObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/db2/class_physics_object__inherit__graph.png" border="0" usemap="#a_physics_object_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_physics_object_inherit__map" id="a_physics_object_inherit__map">
-<area shape="rect" title="Abstract class that governs all physics objects." alt="" coords="97,79,210,104"/>
+<area shape="rect" title="Abstract class that governs all physics objects." alt="" coords="175,79,289,104"/>
 <area shape="rect" href="../../de/df2/class_grabbable_object.html" title="Class that governs all physics objects that can be grabbed." alt="" coords="5,152,136,177"/>
-<area shape="poly" title=" " alt="" coords="131,115,86,154,82,150,128,111"/>
-<area shape="rect" href="../../d7/dce/classinfluenceable_object.html" title=" " alt="" coords="161,152,311,177"/>
-<area shape="poly" title=" " alt="" coords="179,111,224,150,221,154,175,115"/>
-<area shape="rect" title=" " alt="" coords="91,5,215,31"/>
-<area shape="poly" title=" " alt="" coords="156,44,156,79,151,79,151,44"/>
+<area shape="poly" title=" " alt="" coords="195,112,98,154,96,149,193,107"/>
+<area shape="rect" href="../../db/d54/class_grav_special_object.html" title="Provide a parent class to all objects that have a special interaction with the gravity gun." alt="" coords="161,152,303,177"/>
+<area shape="poly" title=" " alt="" coords="235,118,235,152,229,152,229,118"/>
+<area shape="rect" href="../../d7/dce/classinfluenceable_object.html" title="Class that defines an object that the gravigun cant grab, but can influence." alt="" coords="327,152,478,177"/>
+<area shape="poly" title=" " alt="" coords="273,107,376,149,374,154,271,112"/>
+<area shape="rect" title=" " alt="" coords="170,5,294,31"/>
+<area shape="poly" title=" " alt="" coords="235,44,235,79,229,79,229,44"/>
+<area shape="rect" href="../../d0/d76/class_weapon_pistol.html" title="Class that handles the pistol weapon of the game." alt="" coords="177,225,287,251"/>
+<area shape="poly" title=" " alt="" coords="235,191,235,225,229,225,229,191"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -139,8 +143,11 @@ Collaboration diagram for PhysicsObject:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae158ccd14463b32ad28f73c80dbf6f0f" id="r_ae158ccd14463b32ad28f73c80dbf6f0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae158ccd14463b32ad28f73c80dbf6f0f">ChangeOutlineColor</a> (Color color)</td></tr>
+<tr class="memdesc:ae158ccd14463b32ad28f73c80dbf6f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the outline, but doesnt enable it.  <br /></td></tr>
 <tr class="memitem:ab342afdb3fcfc1d8799fcb4fc584d6a7" id="r_ab342afdb3fcfc1d8799fcb4fc584d6a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab342afdb3fcfc1d8799fcb4fc584d6a7">EnableTarget</a> ()</td></tr>
+<tr class="memdesc:ab342afdb3fcfc1d8799fcb4fc584d6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the outline of the object.  <br /></td></tr>
 <tr class="memitem:a551cc95c4ae240a49378143862497299" id="r_a551cc95c4ae240a49378143862497299"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551cc95c4ae240a49378143862497299">DisableTarget</a> ()</td></tr>
+<tr class="memdesc:a551cc95c4ae240a49378143862497299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the outline of the object.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -178,6 +185,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Changes the color of the outline, but doesnt enable it. </p>
+<p>Mind you, the sprite needs to have padding for the outline to work</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The target color to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a551cc95c4ae240a49378143862497299" name="a551cc95c4ae240a49378143862497299"></a>
@@ -203,6 +219,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Disables the outline of the object. </p>
+<p>Mind you, the sprite needs to have padding for the outline to work </p>
+
 </div>
 </div>
 <a id="ab342afdb3fcfc1d8799fcb4fc584d6a7" name="ab342afdb3fcfc1d8799fcb4fc584d6a7"></a>
@@ -227,6 +246,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enables the outline of the object. </p>
+<p>Mind you, the sprite needs to have padding for the outline to work </p>
 
 </div>
 </div>

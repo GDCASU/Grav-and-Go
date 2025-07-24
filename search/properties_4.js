@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pullhelddowninput_0',['pullHeldDownInput',['../df/dd1/class_input_manager.html#af6a7b0fab3edf66f5e5cc94a5cfb85d7',1,'InputManager']]]
+  ['gamedata_0',['gameData',['../de/dd1/class_serialized_data_manager.html#a2144c8914e10b9dd523598f56981ab9b',1,'SerializedDataManager']]]
 ];

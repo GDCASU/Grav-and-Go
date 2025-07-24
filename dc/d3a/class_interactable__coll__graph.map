@@ -1,5 +1,7 @@
 <map id="Interactable" name="Interactable">
-<area shape="rect" id="Node000001" title="Abstract Class that defines functions for interactions." alt="" coords="17,79,117,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,44,70,79,65,79,65,44"/>
+<area shape="rect" id="Node000001" title="Abstract Class that defines functions for interactions." alt="" coords="105,116,205,141"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,129,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,47,147,114,143,118,84,50"/>
+<area shape="rect" id="Node000003" href="$d8/d40/class_interactable_1_1_interactable_events.html" title=" " alt="" coords="153,5,336,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,58,167,118,163,114,217,54"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="LevelButton.LoadLevel" name="LevelButton.LoadLevel">
+<area shape="rect" id="Node000001" title="Function that the UI button uses to load the level." alt="" coords="5,13,176,38"/>
+<area shape="rect" id="Node000002" href="$d6/d06/class_level_manager.html#aa7e0471890ce3545e13394d4673aff89" title="Function that loads a level via LevelName only if unlocked." alt="" coords="224,5,428,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,23,211,23,211,28,177,28"/>
+<area shape="rect" id="Node000003" href="$d6/d06/class_level_manager.html#a203d55b0263d27aab3dc139d825984a1" title="Function that checks if a certain level is unlocked." alt="" coords="476,13,699,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,23,462,23,462,28,428,28"/>
+</map>

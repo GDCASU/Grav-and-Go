@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['pauseresumemanager_2ecs_0',['PauseResumeManager.cs',['../d5/d62/_pause_resume_manager_8cs.html',1,'']]],
-  ['persistentobjectsmanager_2ecs_1',['PersistentObjectsManager.cs',['../d4/dfc/_persistent_objects_manager_8cs.html',1,'']]],
-  ['physics_20object_2ecs_2',['Physics Object.cs',['../dd/db2/_physics_01_object_8cs.html',1,'']]],
-  ['playeranimator_2ecs_3',['PlayerAnimator.cs',['../d7/d62/_player_animator_8cs.html',1,'']]],
-  ['playermovementcontroller_2ecs_4',['PlayerMovementController.cs',['../d5/d3e/_player_movement_controller_8cs.html',1,'']]]
+  ['idamageable_2ecs_0',['IDamageable.cs',['../d1/dee/_i_damageable_8cs.html',1,'']]],
+  ['idatapersistance_2ecs_1',['IDataPersistance.cs',['../dc/d49/_i_data_persistance_8cs.html',1,'']]],
+  ['influenceableobject_2ecs_2',['influenceableObject.cs',['../d6/d20/influenceable_object_8cs.html',1,'']]],
+  ['inputmanager_2ecs_3',['InputManager.cs',['../dd/d96/_input_manager_8cs.html',1,'']]],
+  ['interactable_2ecs_4',['Interactable.cs',['../d2/d3a/_interactable_8cs.html',1,'']]],
+  ['interactionmanager_2ecs_5',['InteractionManager.cs',['../d0/d43/_interaction_manager_8cs.html',1,'']]]
 ];

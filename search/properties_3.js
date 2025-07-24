@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['movementinput_0',['movementInput',['../df/dd1/class_input_manager.html#ab04b65e6842d23f1d7f62b951eef157b',1,'InputManager']]]
+  ['frameinputmovevector_0',['frameInputMoveVector',['../d2/dcb/class_player_movement_controller.html#a13829f8a89253207afecd70b7e21f59b',1,'PlayerMovementController']]]
 ];
