@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6035443741162166848}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7325782539537236310}
   m_Layer: 6
   m_Name: Line Renderers
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 8081354453504888556}
   m_Layer: 0
   m_Name: Gravity Gun Hold Pos Static
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 7254014000091901524}
   m_Layer: 0
   m_Name: Line of Sight Renderer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 3587898526216939860}
   m_Layer: 6
   m_Name: Too Heavy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 8144591835970293115}
   m_Layer: 0
   m_Name: Point 2 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,6 +499,8 @@ MonoBehaviour:
   _endedJumpEarly: 0
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
+  _walkSound: {fileID: 5564989338252753536}
+  _jumpSound: {fileID: 7639427613623515261}
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -575,7 +577,7 @@ GameObject:
   - component: {fileID: 935611806356356915}
   m_Layer: 0
   m_Name: Gravity Gun Hold Pos Dynamic
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -662,7 +664,7 @@ GameObject:
   - component: {fileID: 1537812762001953854}
   m_Layer: 0
   m_Name: Point 2 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -710,7 +712,7 @@ GameObject:
   - component: {fileID: 7890337222752860588}
   m_Layer: 0
   m_Name: Gravity Gun Pivot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -800,7 +802,7 @@ GameObject:
   - component: {fileID: 1335914123245867777}
   m_Layer: 6
   m_Name: Drop
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,37 +847,6 @@ MonoBehaviour:
     playConditions: 0
     playCooldown: 0
   doDebugLog: 0
---- !u!1 &1917041192082041856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2189452910259591293}
-  m_Layer: 6
-  m_Name: Landing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2189452910259591293
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917041192082041856}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8059057072323788165}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141645198784915470
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +859,7 @@ GameObject:
   - component: {fileID: 5458781186100085631}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,7 +946,7 @@ GameObject:
   - component: {fileID: 5994046997020299584}
   m_Layer: 0
   m_Name: Point 1 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,7 +993,7 @@ GameObject:
   - component: {fileID: 3897660017710507255}
   m_Layer: 0
   m_Name: Point 3 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,7 +1026,7 @@ GameObject:
   - component: {fileID: 2248548241929023302}
   m_Layer: 6
   m_Name: No Target
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1112,7 +1083,7 @@ GameObject:
   - component: {fileID: 645508230476056139}
   m_Layer: 0
   m_Name: Point 2 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,7 +1130,7 @@ GameObject:
   - component: {fileID: 5009306570152855119}
   m_Layer: 0
   m_Name: Point 2 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1192,7 +1163,7 @@ GameObject:
   - component: {fileID: 2582611416292188782}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6190,7 +6161,6 @@ MonoBehaviour:
   _launchParticles: {fileID: 2969068312669941334}
   _moveParticles: {fileID: 2969068311631949152}
   _landParticles: {fileID: 2969068312368229178}
-  _walkSound: {fileID: 5564989338252753536}
   _grounded: 0
 --- !u!1 &2969068312368229159
 GameObject:
@@ -21136,7 +21106,7 @@ GameObject:
   - component: {fileID: 5564989338252753536}
   m_Layer: 6
   m_Name: Walking
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21179,7 +21149,7 @@ MonoBehaviour:
     eventPlayTrigger: 0
     eventStopTrigger: 2
     playConditions: 0
-    playCooldown: 0.1
+    playCooldown: 0.2
   doDebugLog: 0
 --- !u!1 &3308379049362991831
 GameObject:
@@ -21196,7 +21166,7 @@ GameObject:
   - component: {fileID: 4949438972427795463}
   m_Layer: 0
   m_Name: Dancing Bezier Two
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21393,7 +21363,7 @@ GameObject:
   - component: {fileID: 8506545890294283520}
   m_Layer: 0
   m_Name: Dancing Bezier One
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21587,7 +21557,7 @@ GameObject:
   - component: {fileID: 2634166947417095697}
   m_Layer: 0
   m_Name: Point 3 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21635,7 +21605,7 @@ GameObject:
   - component: {fileID: 9139349563892912873}
   m_Layer: 0
   m_Name: Helper Target Circle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21722,7 +21692,7 @@ GameObject:
   - component: {fileID: 946992180780146910}
   m_Layer: 8
   m_Name: Interactions
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21773,7 +21743,7 @@ GameObject:
   - component: {fileID: 2138586580137040769}
   m_Layer: 6
   m_Name: Gravigun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21811,7 +21781,7 @@ GameObject:
   - component: {fileID: 1602769411939103341}
   m_Layer: 6
   m_Name: Launch
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21868,7 +21838,7 @@ GameObject:
   - component: {fileID: 2031063011535788243}
   m_Layer: 0
   m_Name: Point 3 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21916,7 +21886,7 @@ GameObject:
   - component: {fileID: 5092641012492230278}
   m_Layer: 0
   m_Name: Point 1 Child
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21964,7 +21934,7 @@ GameObject:
   - component: {fileID: 655961506362276323}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22048,9 +22018,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4080793892514645764}
+  - component: {fileID: 7639427613623515261}
   m_Layer: 6
   m_Name: Jump
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22070,6 +22041,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8059057072323788165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7639427613623515261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438555897027085102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    eventReference:
+      Guid:
+        Data1: -1458055638
+        Data2: 1073796776
+        Data3: -1240084820
+        Data4: 1491099946
+      Path: event:/SFX/Player/Movement/Jumping
+    eventPlayTrigger: 0
+    eventStopTrigger: 2
+    playConditions: 0
+    playCooldown: 0
+  doDebugLog: 0
 --- !u!1 &5977526174606911853
 GameObject:
   m_ObjectHideFlags: 0
@@ -22082,7 +22078,7 @@ GameObject:
   - component: {fileID: 2296433349308652470}
   m_Layer: 6
   m_Name: Pull
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22140,7 +22136,7 @@ GameObject:
   - component: {fileID: 4606920015138701046}
   m_Layer: 0
   m_Name: Start To End Line Renderer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22293,7 +22289,7 @@ GameObject:
   - component: {fileID: 6299346398174948054}
   m_Layer: 6
   m_Name: Sounds
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22326,7 +22322,7 @@ GameObject:
   - component: {fileID: 1097055951107888268}
   m_Layer: 0
   m_Name: Point 1 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22359,7 +22355,7 @@ GameObject:
   - component: {fileID: 6450615699826831256}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22446,7 +22442,7 @@ GameObject:
   - component: {fileID: 8943002414702594039}
   m_Layer: 6
   m_Name: Gravity Gun Contoller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22522,8 +22518,8 @@ MonoBehaviour:
   _pullExecutedThisFrame: 0
   _isPlayerHoldingPullAfterGrab: 0
   _isPushPullLocked: 0
-  isInBetweenHoldAndCenter: 0
-  isNearHoldPos: 0
+  _isInBetweenHoldAndCenter: 0
+  _isNearHoldPos: 0
 --- !u!1 &7348661160077929551
 GameObject:
   m_ObjectHideFlags: 0
@@ -22535,7 +22531,7 @@ GameObject:
   - component: {fileID: 8994299758954431388}
   m_Layer: 0
   m_Name: Point 3 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22568,7 +22564,7 @@ GameObject:
   - component: {fileID: 4183361050090080608}
   m_Layer: 6
   m_Name: Grab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22625,7 +22621,7 @@ GameObject:
   - component: {fileID: 1616940658533811211}
   m_Layer: 0
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22711,7 +22707,7 @@ GameObject:
   - component: {fileID: 213804808570034257}
   m_Layer: 6
   m_Name: Bezier Hold Line
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22745,7 +22741,7 @@ GameObject:
   - component: {fileID: 8059057072323788165}
   m_Layer: 6
   m_Name: Movement
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22765,7 +22761,6 @@ Transform:
   m_Children:
   - {fileID: 6716302220424381474}
   - {fileID: 4080793892514645764}
-  - {fileID: 2189452910259591293}
   m_Father: {fileID: 6299346398174948054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8739999524852375593
@@ -22779,7 +22774,7 @@ GameObject:
   - component: {fileID: 1733592265084482575}
   m_Layer: 0
   m_Name: Point 1 Parent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22812,7 +22807,7 @@ GameObject:
   - component: {fileID: 5394026612346790712}
   m_Layer: 0
   m_Name: Gravity Gun Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

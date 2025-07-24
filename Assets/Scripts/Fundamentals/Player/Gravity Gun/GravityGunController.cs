@@ -198,25 +198,24 @@ public class GravityGunController : MonoBehaviour
         
         // Was of type Physics Object
         _focusedObject = physicsObject;
-        bool inRange1 = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _pushRange;
+        
+        // Check mass limit
+        bool isObjectTooHeavy = _focusedObject.rb.mass > _maxMass;
+        
         // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
-        if (InputManager.Instance.pushPressedThisFrame && !InputManager.Instance.pullHeldDownInput && !_isHoldingObject && inRange1)
+        bool inRange = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _pushRange;
+        bool pushInputCheck = InputManager.Instance.pushPressedThisFrame && !InputManager.Instance.pullHeldDownInput;
+        if (!isObjectTooHeavy && pushInputCheck && !_isHoldingObject && inRange)
         {
-            // Was within range
+            // Was within range and can push
             PerformPush();
 
             // Cooldown
             StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
         }
         
-        // Check mass limit
-        bool isObjectTooHeavy = _focusedObject.rb.mass > _maxMass;
-        
-        // Check if in range of push for sound playing
-        bool inRange2 = Vector2.Distance(_gravigunHoldPosDynamic.position, _focusedObject.transform.position) < _pushRange;
-        
         // Check if above mass limit and in range to play too heavy sound on push, otherwise no target
-        if (inRange2 && InputManager.Instance.pushPressedThisFrame && isObjectTooHeavy)
+        if (inRange && InputManager.Instance.pushPressedThisFrame && isObjectTooHeavy)
         {
             _gravigunTooHeavy.PlaySound();
         }
@@ -298,6 +297,14 @@ public class GravityGunController : MonoBehaviour
             {
                 _gravigunHoldPosDynamic.Translate( -1 * _WheelMoveSpeed * Time.deltaTime * _currentLookDir, Space.World);
             }
+        }
+        
+        // If the player clicked the mouse wheel and we have a special object grabbed, trigger it
+        // Invoke events if of type special object
+        if (InputManager.Instance.didPlayerClickMouseWheelThisFrame && _focusedObject.physicsObjectType is PhysicsObjectType.Special)
+        {
+            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+            gsp.gravEvents.onGravityGunSpecialTriggered.Invoke();
         }
     }
 
@@ -432,6 +439,7 @@ public class GravityGunController : MonoBehaviour
         {
             // Change line renderer color as to show object can be pushed, the same with its outline
             ChangeLineRendererColor(_canPushColor);
+            ChangeTargetCircleColor(_canPushColor);
             if (_focusedObject) _focusedObject.ChangeOutlineColor(_canPushColor);
         }
         else
@@ -500,12 +508,7 @@ public class GravityGunController : MonoBehaviour
     /// </summary>
     private void HandleMouseWheelClick()
     {
-        // Invoke events if of type special object
-        if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
-        {
-            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
-            gsp.gravEvents.onGravityGunSpecialTriggered.Invoke();
-        }
+        
     }
 
     /// <summary>

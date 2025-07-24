@@ -1,3 +1,4 @@
+using System;
 using FMOD.Studio;
 using FMODUnity;
 using System.Collections.Generic;
@@ -27,7 +28,6 @@ public enum SoundGroups
     Master,
     Music,
     SFX,
-    Combat
 }
 
 /// <summary>
@@ -62,7 +62,6 @@ public class SoundManager : MonoBehaviour
     [Header("Group Bus Paths")]
     [SerializeField] private string _sfxGroupPath;
     [SerializeField] private string _musicGroupPath;
-    [SerializeField] private string _combatGroupPath;
 
     // Group variables
     private FMOD.Studio.Bus _sfxGroup;
@@ -76,9 +75,9 @@ public class SoundManager : MonoBehaviour
 
     // Volume Inspector Slider
     [Header("Volume Sliders")]
-    [Range(0f, 1f)][SerializeField] private float _masterSlider;
-    [Range(0f, 1f)][SerializeField] private float _musicSlider;
-    [Range(0f, 1f)][SerializeField] private float _sfxSlider;
+    [Range(0f, 1f)][SerializeField] private float _masterSlider = 0.5f;
+    [Range(0f, 1f)][SerializeField] private float _musicSlider = 0.5f;
+    [Range(0f, 1f)][SerializeField] private float _sfxSlider = 0.5f;
 
     // Settings
     [Header("Settings")]
@@ -113,11 +112,24 @@ public class SoundManager : MonoBehaviour
         // Set up variables
         SetupVCA();
         SetupGroups();
+    }
+
+    private void Start()
+    {
+        // HACK: Whenever we do serialized data saves, remove this
+        if (!_disableSliders)
+        {
+            // Sliders are activated, set the current volume to their values
+            SetVolume(SoundControllers.SFX, _sfxSlider, 1);
+            SetVolume(SoundControllers.Music, _musicSlider, 1);
+            SetVolume(SoundControllers.Master, _masterSlider, 1);
+        }
 
         // Setup the previous volume values for checking
         _masterVCA.getVolume(out float masterVolumeVal);
         _musicVCA.getVolume(out float musicVolumeVal);
         _sfxVCA.getVolume(out float sfxVolumeVal);
+        
         _previousMasterVolume = masterVolumeVal;
         _previousMusicVolume = musicVolumeVal;
         _previousSFXVolume = sfxVolumeVal;
@@ -147,12 +159,10 @@ public class SoundManager : MonoBehaviour
         _sfxGroup = FMODUnity.RuntimeManager.GetBus("bus:/" + _sfxGroupPath);
         _musicGroup = FMODUnity.RuntimeManager.GetBus("bus:/" + _musicGroupPath);
         _masterGroup = FMODUnity.RuntimeManager.GetBus("bus:/");
-        _combatGroup = FMODUnity.RuntimeManager.GetBus("bus:/" + _combatGroupPath);
         // Populate Group Dictionary
         _soundGroupDictionary.Add(SoundGroups.SFX, _sfxGroup);
         _soundGroupDictionary.Add(SoundGroups.Music, _musicGroup);
         _soundGroupDictionary.Add(SoundGroups.Master, _masterGroup);
-        _soundGroupDictionary.Add(SoundGroups.Combat, _combatGroup);
     }
 
     // Debugging
@@ -184,30 +194,30 @@ public class SoundManager : MonoBehaviour
 
         // Check if the volume value has been changed from outside the script
         // Update the sliders to the new value
-        if (_previousMasterVolume != currMasterVolume)
+        if (!Mathf.Approximately(_previousMasterVolume, currMasterVolume))
         {
             _masterSlider = currMasterVolume;
         }
-        if (_previousMusicVolume != currMusicVolume)
+        if (!Mathf.Approximately(_previousMusicVolume, currMusicVolume))
         {
             _musicSlider = currMusicVolume;
         }
-        if (_previousSFXVolume != currSFXVolume)
+        if (Mathf.Approximately(_previousSFXVolume, currSFXVolume))
         {
             _sfxSlider = currSFXVolume;
         }
 
         // Check if the volume sliders in this script have been changed in the inspector
         // If so, update the values of the volumes
-        if (_masterSlider != currMasterVolume)
+        if (Mathf.Approximately(_masterSlider, currMasterVolume))
         {
             SetVolume(SoundControllers.Master, _masterSlider, 1);
         }
-        if (_musicSlider != currMusicVolume)
+        if (Mathf.Approximately(_musicSlider, currMusicVolume))
         {
             SetVolume(SoundControllers.Music, _musicSlider, 1);
         }
-        if (_sfxSlider != currSFXVolume)
+        if (Mathf.Approximately(_sfxSlider, currSFXVolume))
         {
             SetVolume(SoundControllers.SFX, _sfxSlider, 1);
         }

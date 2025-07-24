@@ -25,7 +25,6 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
     
-    
     [Header("Collisions")]
     [SerializeField, InspectorReadOnly] private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
     [SerializeField, InspectorReadOnly] private bool  _grounded; // True when capsule is in contact
@@ -38,6 +37,10 @@ public class PlayerMovementController : MonoBehaviour
     
     [Header("Timing helpers")]
     [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
+    
+    [Header("Audio")]
+    [SerializeField] private SimpleAudioEmitter _walkSound;
+    [SerializeField] private SimpleAudioEmitter _jumpSound;
     
     // Public Helpers
     /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
@@ -192,6 +195,7 @@ public class PlayerMovementController : MonoBehaviour
         _timeJumpWasPressed  = 0;
         _bufferedJumpUsable  = false;
         _coyoteUsable        = false;
+        _jumpSound.PlaySound();
 
         _frameVelocity.y = _stats.JumpPower; // Instant upward velocity
         Jumped?.Invoke();
@@ -204,7 +208,7 @@ public class PlayerMovementController : MonoBehaviour
     /// <summary>Applies ground/air accel & decel to _frameVelocity.x each physics step.</summary>
     private void HandleDirection()
     {
-        if (_frameInput.Move.x == 0) // No horizontal input → decelerate towards 0
+        if (Mathf.Approximately(_frameInput.Move.x, 0f)) // No horizontal input → decelerate towards 0
         {
             var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, decel * Time.fixedDeltaTime);
@@ -214,6 +218,8 @@ public class PlayerMovementController : MonoBehaviour
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x,
                                                  _frameInput.Move.x * _stats.MaxSpeed,
                                                  _stats.Acceleration * Time.fixedDeltaTime);
+            // Only play walk sound if grounded
+            if (_grounded) _walkSound.PlaySound();
         }
     }
     
