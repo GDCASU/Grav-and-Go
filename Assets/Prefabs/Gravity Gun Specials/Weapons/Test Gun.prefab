@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 908834917763375344}
   m_Layer: 9
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: Physics Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,22 +193,22 @@ MonoBehaviour:
   _isTargeted: 0
   _currVelocityVector: {x: 0, y: 0}
   _currVelocityMagnitude: 0
-  OnGravityGunGrab:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGravityGunPull:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGravityGunLaunch:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGravityGunDrop:
-    m_PersistentCalls:
-      m_Calls: []
-  onGravityGunSpecialTriggered:
-    m_PersistentCalls:
-      m_Calls: []
-  _collider: {fileID: 5761719265313575003}
+  gravEvents:
+    OnGravityGunGrab:
+      m_PersistentCalls:
+        m_Calls: []
+    OnGravityGunPull:
+      m_PersistentCalls:
+        m_Calls: []
+    OnGravityGunLaunch:
+      m_PersistentCalls:
+        m_Calls: []
+    OnGravityGunDrop:
+      m_PersistentCalls:
+        m_Calls: []
+    onGravityGunSpecialTriggered:
+      m_PersistentCalls:
+        m_Calls: []
   _projectilePrefab: {fileID: 8904573088866361683, guid: ee13fd4da92227b42a3205876be8866b, type: 3}
   _projectileSpawnPoint: {fileID: 3155703966765532622}
   _projectileAmmoText: {fileID: 908834917763375344}
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 8611881805871988668}
   m_Layer: 9
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Physics Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 4450929561299523477}
   m_Layer: 9
   m_Name: Projectile Spawn Point
-  m_TagString: Untagged
+  m_TagString: Physics Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
