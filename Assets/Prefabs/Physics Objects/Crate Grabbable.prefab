@@ -52,7 +52,9 @@ MonoBehaviour:
   collider: {fileID: 3545394324855644506}
   rb: {fileID: 8625017321519665475}
   physicsObjectType: 0
-  isTargeted: 0
+  _isTargeted: 0
+  _currVelocityVector: {x: 0, y: 0}
+  _currVelocityMagnitude: 0
   _doDebugLog: 0
 --- !u!114 &6031796409860459003
 MonoBehaviour:

@@ -73,6 +73,7 @@ Material:
     - _Offset_Left: -1
     - _Offset_Right: 1
     - _Offset_Up: 1
+    - _OutlineSizePx: 2.1
     - _Outline_On: 0
     - _ZWrite: 0
     m_Colors:

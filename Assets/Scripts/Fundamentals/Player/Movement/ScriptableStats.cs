@@ -1,7 +1,7 @@
 using UnityEngine;
 
-
-[CreateAssetMenu]
+// Class that holds all the settings for the movement of the player
+[CreateAssetMenu(fileName = "ScriptableStats", menuName = "Player Data/Movement Stats")]
 public class ScriptableStats : ScriptableObject
 {
     [Header("LAYERS")] [Tooltip("Set this to the layer your player is on")]
