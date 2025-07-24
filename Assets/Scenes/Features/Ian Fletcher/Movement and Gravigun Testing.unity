@@ -172,30 +172,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOff.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOff.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
-      propertyPath: _OnLeverOff.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
       propertyPath: m_Name
       value: Lever 1
