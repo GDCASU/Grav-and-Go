@@ -79,8 +79,8 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _pullExecutedThisFrame;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPlayerHoldingPullAfterGrab;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPushPullLocked;
-    [SerializeField, InlineToggle, InspectorReadOnly] private bool isInBetweenHoldAndCenter;
-    [SerializeField, InlineToggle, InspectorReadOnly] private bool isNearHoldPos;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isInBetweenHoldAndCenter;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isNearHoldPos;
     
     
     // Local variables
@@ -200,17 +200,13 @@ public class GravityGunController : MonoBehaviour
         _focusedObject = physicsObject;
         bool inRange1 = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _pushRange;
         // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
-        if (InputManager.Instance.pushPressedThisFrame && !InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
+        if (InputManager.Instance.pushPressedThisFrame && !InputManager.Instance.pullHeldDownInput && !_isHoldingObject && inRange1)
         {
-            // Check if in range
-            if (inRange1)
-            {
-                // Was within range
-                PerformPush();
-                
-                // Cooldown
-                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
-            }
+            // Was within range
+            PerformPush();
+
+            // Cooldown
+            StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
         }
         
         // Check mass limit
@@ -448,16 +444,17 @@ public class GravityGunController : MonoBehaviour
         // passed both pull and push, reset bool
         _pullExecutedThisFrame = false;
         
-        // Dont attempt to grab object if not of type grabbable
-        if (_focusedObject.physicsObjectType != PhysicsObjectType.Grabbable) return;
+        // Dont attempt to grab object if not of type grabbable or special
+        bool isGrabbable = _focusedObject.physicsObjectType is PhysicsObjectType.Grabbable or PhysicsObjectType.Special;
+        if (!isGrabbable) return;
 
-        isNearHoldPos = Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) <
+        _isNearHoldPos = Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) <
                              _grabRange;
         
-        isInBetweenHoldAndCenter = InBetweenXAxis(_focusedObject.transform.position, _gravigunPivot.position, _gravigunHoldPosDynamic.position);
+        _isInBetweenHoldAndCenter = InBetweenXAxis(_focusedObject.transform.position, _gravigunPivot.position, _gravigunHoldPosDynamic.position);
         
         // Dont grab object if not in range or if not in between the hold pos and the player
-        if (!isNearHoldPos && !isInBetweenHoldAndCenter) return;
+        if (!_isNearHoldPos && !_isInBetweenHoldAndCenter) return;
         
         // Dont grab if not pulling
         if (!InputManager.Instance.pullHeldDownInput) return;
@@ -503,7 +500,12 @@ public class GravityGunController : MonoBehaviour
     /// </summary>
     private void HandleMouseWheelClick()
     {
-        
+        // Invoke events if of type special object
+        if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
+        {
+            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+            gsp.gravEvents.onGravityGunSpecialTriggered.Invoke();
+        }
     }
 
     /// <summary>
@@ -516,6 +518,13 @@ public class GravityGunController : MonoBehaviour
         _isHoldingObject = true;
         _isPlayerHoldingPullAfterGrab = true;
         _focusedObject.rb.freezeRotation = true;
+        
+        // Invoke events if of type special object
+        if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
+        {
+            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+            gsp.gravEvents.OnGravityGunGrab.Invoke();
+        }
     }
 
     /// <summary>
@@ -524,6 +533,12 @@ public class GravityGunController : MonoBehaviour
     private void StopHoldingObject()
     {
         _gravigunDrop.PlaySound();
+        // Invoke events if of type special object
+        if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
+        {
+            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+            gsp.gravEvents.OnGravityGunDrop.Invoke();
+        }
         _isHoldingObject = false;
         _focusedObject.rb.freezeRotation = false;
         _focusedObject.rb.linearVelocity = Vector2.zero;
@@ -673,10 +688,16 @@ public class GravityGunController : MonoBehaviour
     /// </summary>
     private void PerformPull()
     {
-        // Play sound
+        // Play sound and event
         if (!_dontPlayPullSound)
         {
             _gravigunPull.PlaySound();
+            // Invoke events if of type special object
+            if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
+            {
+                GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+                gsp.gravEvents.OnGravityGunPull.Invoke();
+            }
             _dontPlayPullSound = true;
         }
         
@@ -695,6 +716,12 @@ public class GravityGunController : MonoBehaviour
     private void PerformPush()
     {
         _gravigunLaunch.PlaySound();
+        // Invoke events if of type special object
+        if (_focusedObject.physicsObjectType is PhysicsObjectType.Special)
+        {
+            GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
+            gsp.gravEvents.OnGravityGunLaunch.Invoke();
+        }
         _focusedObject.rb.AddForce(_currentLookDir * _pushForce, ForceMode2D.Impulse);
     }
     

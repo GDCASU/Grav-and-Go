@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /* -----------------------------------------------------------
  * Author:
@@ -25,53 +26,53 @@ using UnityEngine;
 /// </summary>
 public abstract class Interactable : MonoBehaviour
 {
+    // variable
+    public InteractableEvents events;
+    
+    // Foldout Class
+    [System.Serializable]
+    public class InteractableEvents
+    {
+        /// <summary>
+        /// <para>Executes Once</para>
+        /// Will trigger only once when the player enters the range of the interactable
+        /// </summary>
+        public UnityEvent OnInteractionEnter;
 
-    #region Interaction Functions
+        /// <summary>
+        /// <para>Executes every frame if on range</para>
+        /// Will run if the player interaction radius is in range
+        /// </summary>
+        public UnityEvent OnInteractionStay;
 
-    /// <summary>
-    /// <para>Executes Once</para>
-    /// Will trigger only once when the player enters the range of the interactable
-    /// </summary>
-    public System.Action OnInteractionEnter;
+        /// <summary>
+        /// <para>Executes Once</para>
+        /// Will execute if the object is the closest to the player
+        /// </summary>
+        public UnityEvent OnFocusEnter;
 
-    /// <summary>
-    /// <para>Executes every frame if on range</para>
-    /// Will run if the player interaction radius is in range
-    /// </summary>
-    public System.Action OnInteractionStay;
+        /// <summary>
+        /// <para>Executes every frame if on range</para>
+        /// Will run if the object is the closest to the player on the frame
+        /// </summary>
+        public UnityEvent OnFocusStay;
 
-    /// <summary>
-    /// <para>Executes Once</para>
-    /// Will execute if the object is the closest to the player
-    /// </summary>
-    public System.Action OnFocusEnter;
+        /// <summary>
+        /// <para>Executes Once</para>
+        /// Will execute when the object no longer is the closest to the player
+        /// </summary>
+        public UnityEvent OnFocusExit;
 
-    /// <summary>
-    /// <para>Executes every frame if on range</para>
-    /// Will run if the object is the closest to the player on the frame
-    /// </summary>
-    public System.Action OnFocusStay;
+        /// <summary>
+        /// <para>Executes Per Input</para>
+        /// Once the player hits the interaction key, this will execute
+        /// </summary>
+        public UnityEvent OnInteractionExecuted;
 
-    /// <summary>
-    /// <para>Executes Once</para>
-    /// Will execute when the object no longer is the closest to the player
-    /// </summary>
-    public System.Action OnFocusExit;
-
-    /// <summary>
-    /// <para>Executes Per Input</para>
-    /// Once the player hits the interaction key, this will execute
-    /// </summary>
-    public System.Action OnInteractionExecuted;
-
-    /// <summary>
-    /// <para>Executes Once</para>
-    /// Will execute when the player interaction radious no longer reaches the object
-    /// </summary>
-    public System.Action OnInteractionExit;
-
-    #endregion
-
-
-
+        /// <summary>
+        /// <para>Executes Once</para>
+        /// Will execute when the player interaction radious no longer reaches the object
+        /// </summary>
+        public UnityEvent OnInteractionExit;
+    }
 }

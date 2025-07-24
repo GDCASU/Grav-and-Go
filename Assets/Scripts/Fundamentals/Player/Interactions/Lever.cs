@@ -48,10 +48,10 @@ public class Lever : Interactable
         }
         
         // Subscribe to events
-        OnFocusEnter += () => _outline.SetOutline(true);
-        OnFocusExit += () => _outline.SetOutline(false);
+        events.OnFocusEnter.AddListener(() => _outline.SetOutline(true));
+        events.OnFocusExit.AddListener(() => _outline.SetOutline(false));
         // Handle Interaction
-        OnInteractionExecuted += () =>
+        events.OnInteractionExecuted.AddListener(() =>
         {
             if (_animator.GetBool(_isOnID))
             {
@@ -65,7 +65,7 @@ public class Lever : Interactable
                 _animator.SetBool(_isOnID, true);
                 _OnLeverOn?.Invoke();
             }
-        };
+        });
     }
 
     

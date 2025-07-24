@@ -21171,15 +21171,15 @@ MonoBehaviour:
   settings:
     eventReference:
       Guid:
-        Data1: -711460654
-        Data2: 1292522943
-        Data3: 891116935
-        Data4: 298122770
-      Path: event:/SFX/Temp/Test Event
+        Data1: 1819290836
+        Data2: 1291152494
+        Data3: -1294939201
+        Data4: 1261835233
+      Path: event:/SFX/Player/Movement/Walking
     eventPlayTrigger: 0
     eventStopTrigger: 2
     playConditions: 0
-    playCooldown: 0.2
+    playCooldown: 0.1
   doDebugLog: 0
 --- !u!1 &3308379049362991831
 GameObject:
@@ -22489,7 +22489,7 @@ MonoBehaviour:
   _defaultLineOfSightColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
   _validTargetLineColor: {r: 0.9960785, g: 0.5529412, b: 0.09411766, a: 1}
   _canPushColor: {r: 0, g: 1, b: 0.8666668, a: 1}
-  _tooHeavyColor: {r: 0, g: 0, b: 0, a: 0}
+  _tooHeavyColor: {r: 1, g: 0, b: 0, a: 1}
   _gravigunLaunch: {fileID: 1602769411939103341}
   _gravigunGrab: {fileID: 4183361050090080608}
   _gravigunDrop: {fileID: 1335914123245867777}
@@ -22506,7 +22506,7 @@ MonoBehaviour:
   _pullPushCooldown: 0.2
   _lineRaycastMask:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 641
   _maxRaycastDistance: 100
   _pullForce: 10
   _pushForce: 20

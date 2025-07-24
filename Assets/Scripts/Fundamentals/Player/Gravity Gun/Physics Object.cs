@@ -74,4 +74,5 @@ public enum PhysicsObjectType
     Grabbable,
     Influenceable,
     IgnoresGravigun,
+    Special,
 }
