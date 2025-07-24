@@ -23,8 +23,7 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private ParticleSystem _moveParticles;
     [SerializeField] private ParticleSystem _landParticles;
 
-    [Header("Audio")]
-    [SerializeField] private SimpleAudioEmitter _walkSound;
+    
     
     [Header("Readouts")]
     [SerializeField, InspectorReadOnly] private bool _grounded;
@@ -119,7 +118,6 @@ public class PlayerAnimator : MonoBehaviour
             SetColor(_landParticles);
 
             _anim.SetTrigger(GroundedKey);
-            _walkSound.PlaySound();
             _moveParticles.Play();   // Resume dust trail
 
             // Scale landing puff based on impact velocity

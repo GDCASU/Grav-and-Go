@@ -499,6 +499,8 @@ MonoBehaviour:
   _endedJumpEarly: 0
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
+  _walkSound: {fileID: 5564989338252753536}
+  _jumpSound: {fileID: 7639427613623515261}
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -842,63 +844,6 @@ MonoBehaviour:
       Path: event:/SFX/Player/Gravigun/Gravigun Drop
     eventPlayTrigger: 0
     eventStopTrigger: 2
-    playConditions: 0
-    playCooldown: 0
-  doDebugLog: 0
---- !u!1 &1917041192082041856
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2189452910259591293}
-  - component: {fileID: 5739068941495937029}
-  m_Layer: 6
-  m_Name: Landing
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2189452910259591293
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917041192082041856}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8059057072323788165}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5739068941495937029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917041192082041856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settings:
-    eventReference:
-      Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-    eventPlayTrigger: 0
-    eventStopTrigger: 0
     playConditions: 0
     playCooldown: 0
   doDebugLog: 0
@@ -6216,7 +6161,6 @@ MonoBehaviour:
   _launchParticles: {fileID: 2969068312669941334}
   _moveParticles: {fileID: 2969068311631949152}
   _landParticles: {fileID: 2969068312368229178}
-  _walkSound: {fileID: 5564989338252753536}
   _grounded: 0
 --- !u!1 &2969068312368229159
 GameObject:
@@ -21205,7 +21149,7 @@ MonoBehaviour:
     eventPlayTrigger: 0
     eventStopTrigger: 2
     playConditions: 0
-    playCooldown: 0.1
+    playCooldown: 0.2
   doDebugLog: 0
 --- !u!1 &3308379049362991831
 GameObject:
@@ -22112,13 +22056,13 @@ MonoBehaviour:
   settings:
     eventReference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1458055638
+        Data2: 1073796776
+        Data3: -1240084820
+        Data4: 1491099946
+      Path: event:/SFX/Player/Movement/Jumping
     eventPlayTrigger: 0
-    eventStopTrigger: 0
+    eventStopTrigger: 2
     playConditions: 0
     playCooldown: 0
   doDebugLog: 0
@@ -22817,7 +22761,6 @@ Transform:
   m_Children:
   - {fileID: 6716302220424381474}
   - {fileID: 4080793892514645764}
-  - {fileID: 2189452910259591293}
   m_Father: {fileID: 6299346398174948054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8739999524852375593
