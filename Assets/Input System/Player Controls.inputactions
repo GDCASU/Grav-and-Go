@@ -37,6 +37,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "f918d9d4-134a-4640-8470-9f885cec694c",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "2D Vector",
                     "id": "b396d6f1-73b7-4446-aff7-52d644e844bd",
                     "path": "2DVector",
@@ -196,6 +207,17 @@
                     "name": "",
                     "id": "66f5d77c-f615-4db6-a7ea-9a5f0bd7a0f9",
                     "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pull",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b429f7d9-f648-4c64-8d24-a2dbac1a0f8f",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
