@@ -13,23 +13,44 @@ using UnityEngine;
 /// </summary>
 public class PlayerMovementController : MonoBehaviour
 {
-    /* ---------- Serialized Configuration ---------- */
-    [Tooltip("ScriptableObject containing tunable movement numbers")]
-    [SerializeField] private ScriptableStats _stats;
+    // Tuning
+    [Header("Tunning")]
+    [SerializeField, Tooltip("ScriptableObject containing tunable movement numbers")] private ScriptableStats _stats;
 
-    /* ---------- Cached Components ---------- */
-    private Rigidbody2D _rb;
-    private CapsuleCollider2D _col;
-
-    /* ---------- Per-frame state ---------- */
-    private FrameInput _frameInput;    // Raw input sampled this frame
-    private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
-    private bool _cachedQueryStartInColliders;
-
-    #region Interface
-
+    [Header("References")]
+    [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] private CapsuleCollider2D _col;
+    
+    [Header("Per-frame state")]
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
+    
+    [Header("Collisions")]
+    [SerializeField, InspectorReadOnly] private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
+    [SerializeField, InspectorReadOnly] private bool  _grounded; // True when capsule is in contact
+    
+    [Header("Jump state flags")]
+    [SerializeField, InspectorReadOnly] private bool _jumpToConsume;
+    [SerializeField, InspectorReadOnly] private bool _bufferedJumpUsable;
+    [SerializeField, InspectorReadOnly] private bool _endedJumpEarly;
+    [SerializeField, InspectorReadOnly] private bool _coyoteUsable;
+    
+    [Header("Timing helpers")]
+    [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
+    
+    [Header("Audio")]
+    [SerializeField] private SimpleAudioEmitter _walkSound;
+    [SerializeField] private SimpleAudioEmitter _jumpSound;
+    
+    // Public Helpers
     /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
-    public Vector2 FrameInput => _frameInput.Move;
+    public Vector2 frameInputMoveVector => _frameInput.Move;
+    
+    // Private helpers
+    private FrameInput _frameInput; // Raw input sampled this fra
+    private float _time; // Global time accumulator for coyote / buffer windows
+
+    #region Events
 
     /// <summary>Fired when grounded ↔ airborne; float = landing impact strength.</summary>
     public event Action<bool, float> GroundedChanged;
@@ -39,18 +60,10 @@ public class PlayerMovementController : MonoBehaviour
 
     #endregion
 
-    /* ---------- Private helpers ---------- */
-    private float _time;              // Global time accumulator for coyote / buffer windows
-
-    /* ====================================================================== */
-    /*                           Unity Lifecycle                              */
-    /* ====================================================================== */
+    #region Unity Callbacks
 
     private void Awake()
     {
-        _rb  = GetComponent<Rigidbody2D>();
-        _col = GetComponent<CapsuleCollider2D>();
-
         // Store default‐engine setting so we can temporarily override it
         _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
@@ -63,6 +76,24 @@ public class PlayerMovementController : MonoBehaviour
         _time += Time.deltaTime;
         GatherInput();        // Poll Input System each render-frame
     }
+    
+    private void FixedUpdate()
+    {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
+        CheckCollisions();  // Ground / ceiling detection first — movement depends on result
+        
+        HandleJump();
+        HandleDirection();
+        HandleGravity();
+
+        ApplyMovement();    // Finally push calculated velocity to the Rigidbody
+    }
+
+    #endregion
+    
+    #region Input Gathering
 
     /// <summary>Polls InputManager and normalizes the data into <see cref="_frameInput"/>.</summary>
     private void GatherInput()
@@ -94,27 +125,10 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        // Dont do anything if paused
-        if (Time.timeScale <= 0) return;
-        
-        CheckCollisions();  // Ground / ceiling detection first — movement depends on result
+    #endregion
 
-        HandleJump();
-        HandleDirection();
-        HandleGravity();
-
-        ApplyMovement();    // Finally push calculated velocity to the Rigidbody
-    }
-
-    /* ====================================================================== */
-    /*                               Collisions                               */
-    /* ====================================================================== */
-
-    private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
-    private bool  _grounded;                           // True when capsule is in contact
-
+    #region Collisions
+    
     /// <summary>CapsuleCasts for ground & ceiling each physics step.</summary>
     private void CheckCollisions()
     {
@@ -122,9 +136,9 @@ public class PlayerMovementController : MonoBehaviour
 
         // ------------ Ground & ceiling checks ------------
         bool groundHit  = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
-                                                Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
+            Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
         bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
-                                                Vector2.up,   _stats.GrounderDistance, ~_stats.PlayerLayer);
+            Vector2.up,   _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // If we bonk our head, kill any upward momentum
         if (ceilingHit)
@@ -149,18 +163,9 @@ public class PlayerMovementController : MonoBehaviour
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders; // Restore default
     }
 
-    /* ====================================================================== */
-    /*                               Jumping                                  */
-    /* ====================================================================== */
+    #endregion
 
-    // Jump state flags
-    private bool _jumpToConsume;
-    private bool _bufferedJumpUsable;
-    private bool _endedJumpEarly;
-    private bool _coyoteUsable;
-
-    // Timing helpers
-    private float _timeJumpWasPressed;
+    #region Jumping
 
     // Convenience properties
     private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
@@ -190,19 +195,20 @@ public class PlayerMovementController : MonoBehaviour
         _timeJumpWasPressed  = 0;
         _bufferedJumpUsable  = false;
         _coyoteUsable        = false;
+        _jumpSound.PlaySound();
 
         _frameVelocity.y = _stats.JumpPower; // Instant upward velocity
         Jumped?.Invoke();
     }
-
-    /* ====================================================================== */
-    /*                        Horizontal Acceleration                         */
-    /* ====================================================================== */
+    
+    #endregion
+    
+    #region Horizontal Acceleration 
 
     /// <summary>Applies ground/air accel & decel to _frameVelocity.x each physics step.</summary>
     private void HandleDirection()
     {
-        if (_frameInput.Move.x == 0) // No horizontal input → decelerate towards 0
+        if (Mathf.Approximately(_frameInput.Move.x, 0f)) // No horizontal input → decelerate towards 0
         {
             var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, decel * Time.fixedDeltaTime);
@@ -212,12 +218,14 @@ public class PlayerMovementController : MonoBehaviour
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x,
                                                  _frameInput.Move.x * _stats.MaxSpeed,
                                                  _stats.Acceleration * Time.fixedDeltaTime);
+            // Only play walk sound if grounded
+            if (_grounded) _walkSound.PlaySound();
         }
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                                Gravity                                 */
-    /* ====================================================================== */
+    #region Gravity
 
     /// <summary>Custom gravity that supports fast-fall & jump-cut.</summary>
     private void HandleGravity()
@@ -241,27 +249,26 @@ public class PlayerMovementController : MonoBehaviour
                                                  gravity * Time.fixedDeltaTime);
         }
     }
-
-    /* ====================================================================== */
-    /*                          Rigidbody Application                         */
-    /* ====================================================================== */
+    
+    #endregion
+    
+    #region RigidBody Application
 
     /// <summary>Writes the fully-calculated velocity to the Rigidbody2D.</summary>
-    private void ApplyMovement() => _rb.linearVelocity = _frameVelocity;
-
-#if UNITY_EDITOR
-    private void OnValidate()
+    private void ApplyMovement()
     {
-        if (_stats == null)
-            Debug.LogWarning("Please assign a ScriptableStats asset to the Player Controller's Stats slot", this);
+        _rb.linearVelocity = _frameVelocity;
     }
-#endif
+    
+    #endregion
+    
+    /// <summary>Lightweight struct for passing a single frame’s worth of input around.</summary>
+    private struct FrameInput
+    {
+        public bool   JumpDown;
+        public bool   JumpHeld;
+        public Vector2 Move;
+    }
 }
 
-/// <summary>Lightweight struct for passing a single frame’s worth of input around.</summary>
-public struct FrameInput
-{
-    public bool   JumpDown;
-    public bool   JumpHeld;
-    public Vector2 Move;
-}
+

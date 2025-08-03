@@ -10,14 +10,8 @@ using UnityEngine;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * 
- */// --------------------------------------------------------
-
-
 /// <summary>
-/// 
+/// Class that defines an object that the gravigun cant grab, but can influence
 /// </summary>
 public class influenceableObject : PhysicsObject
 {

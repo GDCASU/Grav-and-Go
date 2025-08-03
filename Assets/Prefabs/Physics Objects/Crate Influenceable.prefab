@@ -52,7 +52,9 @@ MonoBehaviour:
   collider: {fileID: 2427697903197361229}
   rb: {fileID: 6638872844243149890}
   physicsObjectType: 1
-  isTargeted: 0
+  _isTargeted: 0
+  _currVelocityVector: {x: 0, y: 0}
+  _currVelocityMagnitude: 0
   _doDebugLog: 0
 --- !u!114 &5481456306849783322
 MonoBehaviour:
@@ -123,7 +125,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0285715, y: 1.0285715}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -168,7 +170,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.0285715, y: 1.0285715}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1.0285715, y: 1.0285715}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

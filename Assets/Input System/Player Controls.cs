@@ -123,6 +123,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""f918d9d4-134a-4640-8470-9f885cec694c"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""2D Vector"",
                     ""id"": ""b396d6f1-73b7-4446-aff7-52d644e844bd"",
                     ""path"": ""2DVector"",
@@ -239,7 +250,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Rotate Object Foward"",
+                    ""name"": ""Mouse Wheel Up"",
                     ""type"": ""Button"",
                     ""id"": ""cc67f370-c1fc-446b-9a8e-7fe6f994bd31"",
                     ""expectedControlType"": """",
@@ -248,9 +259,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Rotate Object Backwards"",
+                    ""name"": ""Mouse Wheel Down"",
                     ""type"": ""Button"",
                     ""id"": ""55d03fde-9085-48fe-808e-c83e392eaed3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Rotate"",
+                    ""type"": ""Button"",
+                    ""id"": ""3b94b6cf-4c75-4c7c-9b77-6675d43e08b1"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -282,6 +302,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""b429f7d9-f648-4c64-8d24-a2dbac1a0f8f"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pull"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""7d50f39e-fb9c-4693-8944-381e28944e1c"",
                     ""path"": ""<Mouse>/middleButton"",
                     ""interactions"": """",
@@ -298,7 +329,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Backwards"",
+                    ""action"": ""Mouse Wheel Down"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -309,7 +340,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Backwards"",
+                    ""action"": ""Mouse Wheel Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -320,7 +351,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Backwards"",
+                    ""action"": ""Mouse Wheel Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -331,7 +362,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Foward"",
+                    ""action"": ""Mouse Wheel Up"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -342,7 +373,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Foward"",
+                    ""action"": ""Mouse Wheel Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -353,9 +384,20 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Rotate Object Foward"",
+                    ""action"": ""Mouse Wheel Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""163d2eeb-2734-4df6-8912-fa62804d4269"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -430,8 +472,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_GravityGun_Push = m_GravityGun.FindAction("Push", throwIfNotFound: true);
         m_GravityGun_Pull = m_GravityGun.FindAction("Pull", throwIfNotFound: true);
         m_GravityGun_Special = m_GravityGun.FindAction("Special", throwIfNotFound: true);
-        m_GravityGun_RotateObjectFoward = m_GravityGun.FindAction("Rotate Object Foward", throwIfNotFound: true);
-        m_GravityGun_RotateObjectBackwards = m_GravityGun.FindAction("Rotate Object Backwards", throwIfNotFound: true);
+        m_GravityGun_MouseWheelUp = m_GravityGun.FindAction("Mouse Wheel Up", throwIfNotFound: true);
+        m_GravityGun_MouseWheelDown = m_GravityGun.FindAction("Mouse Wheel Down", throwIfNotFound: true);
+        m_GravityGun_Rotate = m_GravityGun.FindAction("Rotate", throwIfNotFound: true);
         // Level
         m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
         m_Level_Retry = m_Level.FindAction("Retry", throwIfNotFound: true);
@@ -728,8 +771,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GravityGun_Push;
     private readonly InputAction m_GravityGun_Pull;
     private readonly InputAction m_GravityGun_Special;
-    private readonly InputAction m_GravityGun_RotateObjectFoward;
-    private readonly InputAction m_GravityGun_RotateObjectBackwards;
+    private readonly InputAction m_GravityGun_MouseWheelUp;
+    private readonly InputAction m_GravityGun_MouseWheelDown;
+    private readonly InputAction m_GravityGun_Rotate;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gravity Gun".
     /// </summary>
@@ -754,13 +798,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Special => m_Wrapper.m_GravityGun_Special;
         /// <summary>
-        /// Provides access to the underlying input action "GravityGun/RotateObjectFoward".
+        /// Provides access to the underlying input action "GravityGun/MouseWheelUp".
         /// </summary>
-        public InputAction @RotateObjectFoward => m_Wrapper.m_GravityGun_RotateObjectFoward;
+        public InputAction @MouseWheelUp => m_Wrapper.m_GravityGun_MouseWheelUp;
         /// <summary>
-        /// Provides access to the underlying input action "GravityGun/RotateObjectBackwards".
+        /// Provides access to the underlying input action "GravityGun/MouseWheelDown".
         /// </summary>
-        public InputAction @RotateObjectBackwards => m_Wrapper.m_GravityGun_RotateObjectBackwards;
+        public InputAction @MouseWheelDown => m_Wrapper.m_GravityGun_MouseWheelDown;
+        /// <summary>
+        /// Provides access to the underlying input action "GravityGun/Rotate".
+        /// </summary>
+        public InputAction @Rotate => m_Wrapper.m_GravityGun_Rotate;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -796,12 +844,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Special.started += instance.OnSpecial;
             @Special.performed += instance.OnSpecial;
             @Special.canceled += instance.OnSpecial;
-            @RotateObjectFoward.started += instance.OnRotateObjectFoward;
-            @RotateObjectFoward.performed += instance.OnRotateObjectFoward;
-            @RotateObjectFoward.canceled += instance.OnRotateObjectFoward;
-            @RotateObjectBackwards.started += instance.OnRotateObjectBackwards;
-            @RotateObjectBackwards.performed += instance.OnRotateObjectBackwards;
-            @RotateObjectBackwards.canceled += instance.OnRotateObjectBackwards;
+            @MouseWheelUp.started += instance.OnMouseWheelUp;
+            @MouseWheelUp.performed += instance.OnMouseWheelUp;
+            @MouseWheelUp.canceled += instance.OnMouseWheelUp;
+            @MouseWheelDown.started += instance.OnMouseWheelDown;
+            @MouseWheelDown.performed += instance.OnMouseWheelDown;
+            @MouseWheelDown.canceled += instance.OnMouseWheelDown;
+            @Rotate.started += instance.OnRotate;
+            @Rotate.performed += instance.OnRotate;
+            @Rotate.canceled += instance.OnRotate;
         }
 
         /// <summary>
@@ -822,12 +873,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Special.started -= instance.OnSpecial;
             @Special.performed -= instance.OnSpecial;
             @Special.canceled -= instance.OnSpecial;
-            @RotateObjectFoward.started -= instance.OnRotateObjectFoward;
-            @RotateObjectFoward.performed -= instance.OnRotateObjectFoward;
-            @RotateObjectFoward.canceled -= instance.OnRotateObjectFoward;
-            @RotateObjectBackwards.started -= instance.OnRotateObjectBackwards;
-            @RotateObjectBackwards.performed -= instance.OnRotateObjectBackwards;
-            @RotateObjectBackwards.canceled -= instance.OnRotateObjectBackwards;
+            @MouseWheelUp.started -= instance.OnMouseWheelUp;
+            @MouseWheelUp.performed -= instance.OnMouseWheelUp;
+            @MouseWheelUp.canceled -= instance.OnMouseWheelUp;
+            @MouseWheelDown.started -= instance.OnMouseWheelDown;
+            @MouseWheelDown.performed -= instance.OnMouseWheelDown;
+            @MouseWheelDown.canceled -= instance.OnMouseWheelDown;
+            @Rotate.started -= instance.OnRotate;
+            @Rotate.performed -= instance.OnRotate;
+            @Rotate.canceled -= instance.OnRotate;
         }
 
         /// <summary>
@@ -1119,19 +1173,26 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSpecial(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Rotate Object Foward" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Mouse Wheel Up" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRotateObjectFoward(InputAction.CallbackContext context);
+        void OnMouseWheelUp(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Rotate Object Backwards" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Mouse Wheel Down" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRotateObjectBackwards(InputAction.CallbackContext context);
+        void OnMouseWheelDown(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Rotate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRotate(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Level" which allows adding and removing callbacks.
