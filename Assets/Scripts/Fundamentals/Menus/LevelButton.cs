@@ -41,5 +41,7 @@ public class LevelButton : MonoBehaviour
     public void LoadLevel()
     {
         LevelManager.Instance.LoadLevelViaLevelNameIfUnlocked(_levelReference);
+        // HACK: Make sure to set timescale to 1 in case the game was exited from a pause
+        Time.timeScale = 1f;
     }
 }
