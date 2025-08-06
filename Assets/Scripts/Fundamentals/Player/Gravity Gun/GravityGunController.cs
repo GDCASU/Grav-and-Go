@@ -44,6 +44,8 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private SimpleAudioEmitter _gravigunPull;
     [SerializeField] private SimpleAudioEmitter _gravigunTooHeavy;
     
+    [Header("Others")]
+    [SerializeField] private float _standingOnCheckBoxHeight;
     
     [Header("Debugging")]
     [SerializeField] private bool doDebugLog;
@@ -329,11 +331,26 @@ public class GravityGunController : MonoBehaviour
         
         // Dont do anything if object is over the mass limit
         if (isObjectTooHeavy) return;
-        
+
         // Move focused object if grabbing
         if (_isHoldingObject)
         {
-            MoveFocusedObject();
+            // If the player stands on top of the object, break hold
+            if (IsPlayerStandingOn(_focusedObject))
+            {
+                StopHoldingObject();
+                _bezierLineOneRenderer.enabled = false;
+                _bezierLineTwoRenderer.enabled = false;
+                _holdLineRenderer.enabled = false;
+                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
+                // Trigger a longer cooldown routine to avoid prop surfing
+                StartCoroutine(LockPullPushRoutine(1f));
+            }
+            else
+            {
+                // Move object
+                MoveFocusedObject();
+            }
         }
         
         // Dont do anything if on cooldown
@@ -410,6 +427,8 @@ public class GravityGunController : MonoBehaviour
         if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
         {
             PerformPull();
+            // Trigger a longer cooldown routine to avoid prop surfing
+            if (IsPlayerStandingOn(_focusedObject)) StartCoroutine(LockPullPushRoutine(1f));
             _pullExecutedThisFrame = true;
         }
         else
@@ -452,6 +471,9 @@ public class GravityGunController : MonoBehaviour
         // Dont grab if not pulling
         if (!InputManager.Instance.pullHeldDownInput) return;
         
+        // Prevent grabbing if the player is standing on the object
+        if (IsPlayerStandingOn(_focusedObject)) return;
+
         // Grab object
         GrabFocusedObject();
         
@@ -494,6 +516,24 @@ public class GravityGunController : MonoBehaviour
     private void HandleMouseWheelClick()
     {
         
+    }
+    
+    /// <summary>
+    /// Checks if the player is standing on top of the object
+    /// </summary>
+    private bool IsPlayerStandingOn(PhysicsObject obj)
+    {
+        Vector2 localScale = _focusedObject.transform.localScale;
+        Vector2 checkBoxCenter = (Vector2)_focusedObject.transform.position + Vector2.up * (_standingOnCheckBoxHeight/2 - localScale.y/3);
+        Vector2 checkBoxSize = new Vector2(localScale.x, _standingOnCheckBoxHeight);
+
+        Collider2D[] hits = Physics2D.OverlapBoxAll(checkBoxCenter, checkBoxSize, 0f);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player")) return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -677,6 +717,9 @@ public class GravityGunController : MonoBehaviour
     /// </summary>
     private void PerformPull()
     {
+        // Dont perform pull if standing on object
+        if (IsPlayerStandingOn(_focusedObject)) return;
+        
         // Play sound and event
         if (!_dontPlayPullSound)
         {
@@ -690,13 +733,15 @@ public class GravityGunController : MonoBehaviour
             _dontPlayPullSound = true;
         }
         
+        Vector2 toTarget = _gravigunHoldPosDynamic.position - _focusedObject.transform.position;
+        float distance = toTarget.magnitude;
+        
         // Apply force
-        Vector2 dir = (_gravigunHoldPosDynamic.position - _focusedObject.transform.position);
-        ApplyCappedForce(_focusedObject.rb,
-            dir,
-            _settings.pullForce,
-            ForceMode2D.Force,
-            _settings.maxVelocity);
+        // Curve-based pull scaling (soft near, strong far)
+        float rampedForce = _settings.pullForce * Mathf.Pow(distance, _settings.focusedMoveStrengthExponent);
+        rampedForce = Mathf.Min(rampedForce, _settings.pullForce); // Optional: clamp to original pullForce
+
+        ApplyCappedForce(_focusedObject.rb, toTarget, rampedForce, ForceMode2D.Force, _settings.maxVelocity);
     }
     
     /// <summary>
@@ -789,7 +834,14 @@ public class GravityGunController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        
+        if (_focusedObject != null)
+        {
+            Gizmos.color = Color.red;
+            Vector2 localScale = _focusedObject.transform.localScale;
+            Vector2 checkBoxCenter = (Vector2)_focusedObject.transform.position + Vector2.up * (_standingOnCheckBoxHeight/2 - localScale.y/3);
+            Vector2 checkBoxSize = new Vector2(localScale.x, _standingOnCheckBoxHeight);
+            Gizmos.DrawWireCube(checkBoxCenter, checkBoxSize);
+        }
     }
     
     

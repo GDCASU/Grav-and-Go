@@ -22474,6 +22474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f093b372679e41c4d969a18a33570e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _settings: {fileID: 11400000, guid: ebc35ed475dd2bd42987d61b9ddf07b8, type: 2}
   _gravigunPivot: {fileID: 4706435015038256351}
   _gravigunHoldPosDynamic: {fileID: 3910677852070304181}
   _gravigunHoldPosStatic: {fileID: 5252242024336338537}
@@ -22482,35 +22483,13 @@ MonoBehaviour:
   _bezierLineOneRenderer: {fileID: 4869278425028137206}
   _bezierLineTwoRenderer: {fileID: 7619700515274417229}
   _holdLineRenderer: {fileID: 3999558348571070632}
-  _defaultLineOfSightColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
-  _validTargetLineColor: {r: 0.9960785, g: 0.5529412, b: 0.09411766, a: 1}
-  _canPushColor: {r: 0, g: 1, b: 0.8666668, a: 1}
-  _tooHeavyColor: {r: 1, g: 0, b: 0, a: 1}
   _gravigunLaunch: {fileID: 1602769411939103341}
   _gravigunGrab: {fileID: 4183361050090080608}
   _gravigunDrop: {fileID: 1335914123245867777}
   _gravigunNoTarget: {fileID: 2248548241929023302}
   _gravigunPull: {fileID: 2296433349308652470}
   _gravigunTooHeavy: {fileID: 3587898526216939860}
-  _maxMass: 5
-  _maxVelocity: 5
-  _pushRange: 2.5
-  _focusedMoveMaxSpeed: 25
-  _grabRange: 0.25
-  _WheelMoveMaxDistance: 6
-  _grabDistanceBreak: 100
-  _pullPushCooldown: 0.2
-  _lineRaycastMask:
-    serializedVersion: 2
-    m_Bits: 641
-  _maxRaycastDistance: 100
-  _pullForce: 10
-  _pushForce: 20
-  _rotateSpeed: 600
-  _WheelMoveSpeed: 10
-  _focusedMoveBaseSpeed: 6
-  _focusedMoveStrengthExponent: 1.5
-  _blockingObjectTimeBreak: 1
+  _standingOnCheckBoxHeight: 1
   doDebugLog: 0
   _focusedObject: {fileID: 0}
   _currentLookDir: {x: 0, y: 0}
