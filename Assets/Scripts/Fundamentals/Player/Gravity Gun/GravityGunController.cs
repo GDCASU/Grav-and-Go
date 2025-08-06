@@ -339,10 +339,6 @@ public class GravityGunController : MonoBehaviour
             if (IsPlayerStandingOn(_focusedObject))
             {
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 // Trigger a longer cooldown routine to avoid prop surfing
                 StartCoroutine(LockPullPushRoutine(1f));
             }
@@ -381,10 +377,6 @@ public class GravityGunController : MonoBehaviour
             {
                 // Stop holding object
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 
                 // Trigger Cooldown
                 StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
@@ -408,10 +400,6 @@ public class GravityGunController : MonoBehaviour
             {
                 // Stop holding object
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 
                 // Perform push
                 PerformPush();
@@ -570,6 +558,10 @@ public class GravityGunController : MonoBehaviour
         _isHoldingObject = false;
         _focusedObject.rb.freezeRotation = false;
         _focusedObject.rb.linearVelocity = Vector2.zero;
+        _bezierLineOneRenderer.enabled = false;
+        _bezierLineTwoRenderer.enabled = false;
+        _holdLineRenderer.enabled = false;
+        _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
     }
 
     /// <summary>
@@ -607,10 +599,6 @@ public class GravityGunController : MonoBehaviour
             {
                 // we did pass the limit, break hold
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 break;
             }
             

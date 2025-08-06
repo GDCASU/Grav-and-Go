@@ -530,26 +530,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8943002414702594039, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      propertyPath: _settings
-      value: 
-      objectReference: {fileID: 11400000, guid: ebc35ed475dd2bd42987d61b9ddf07b8, type: 2}
-    - target: {fileID: 8943002414702594039, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      propertyPath: _standingCheckOffset
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943002414702594039, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      propertyPath: _standingOnCheckBoxHeight
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943002414702594039, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      propertyPath: _standingOnCheckBoxSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943002414702594039, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      propertyPath: _standingOnCheckBoxSize.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

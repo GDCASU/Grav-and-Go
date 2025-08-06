@@ -18,7 +18,7 @@ MonoBehaviour:
   focusedMoveMaxSpeed: 25
   grabRange: 0.25
   WheelMoveMaxDistance: 6
-  grabDistanceBreak: 100
+  grabDistanceBreak: 9
   pullPushCooldown: 0.2
   lineRaycastMask:
     serializedVersion: 2
@@ -29,7 +29,7 @@ MonoBehaviour:
   rotateSpeed: 600
   WheelMoveSpeed: 10
   focusedMoveBaseSpeed: 6
-  focusedMoveStrengthExponent: 0.5
+  focusedMoveStrengthExponent: 1.5
   blockingObjectTimeBreak: 1
   defaultLineOfSightColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
   validTargetLineColor: {r: 1, g: 0.40945286, b: 0, a: 1}
