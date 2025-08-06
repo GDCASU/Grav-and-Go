@@ -19,8 +19,9 @@ public struct LevelName
 }
 
 [System.Serializable]
-public struct UnlockedStatus
+public struct LevelStatus
 {
     public bool isUnlocked;
+    public float bestTime;
 }
 
