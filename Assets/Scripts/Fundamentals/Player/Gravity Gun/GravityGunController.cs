@@ -173,7 +173,12 @@ public class GravityGunController : MonoBehaviour
         }
         
         // Was of type Physics Object
+        
+        // Keep a reference
         _focusedObject = physicsObject;
+        
+        // Check if ignoring
+        if (physicsObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
         
         // Check mass limit
         bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
@@ -299,13 +304,20 @@ public class GravityGunController : MonoBehaviour
         _pullExecutedThisFrame = false;
         
         // check if ignoring
-        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
+        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun)
+        {
+            _focusedObject.ChangeOutlineColor(_settings.defaultLineOfSightColor);
+            ChangeTargetCircleColor(_settings.defaultLineOfSightColor);
+            ChangeLineRendererColor(_settings.defaultLineOfSightColor);
+            return;
+        }
         
         // Was an influenceable object, Enable outline and set line renderer
         if (!_trackedObjects.Contains(_focusedObject))
         {
             _focusedObject.EnableTarget();
             _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
+            ChangeTargetCircleColor(_settings.validTargetLineColor);
             if (isObjectTooHeavy)
             {
                 _focusedObject.ChangeOutlineColor(_settings.tooHeavyColor);
@@ -317,9 +329,6 @@ public class GravityGunController : MonoBehaviour
         
         // Dont do anything if object is over the mass limit
         if (isObjectTooHeavy) return;
-        
-        ChangeTargetCircleColor(_settings.validTargetLineColor);
-        ChangeLineRendererColor(_settings.validTargetLineColor);
         
         // Move focused object if grabbing
         if (_isHoldingObject)
@@ -651,9 +660,10 @@ public class GravityGunController : MonoBehaviour
     {
         // Add physics object to list of tracked object
         _trackedObjects.Add(physicsObject);
+        _focusedObject.EnableTarget();
         
         // Wait until the focused object changes
-        while (_focusedObject == physicsObject)
+        while (_focusedObject == physicsObject && physicsObject.physicsObjectType != PhysicsObjectType.IgnoresGravigun)
         {
             yield return null;
         }
