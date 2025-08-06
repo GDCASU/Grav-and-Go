@@ -147,7 +147,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""50687599-eeac-4ce8-981a-a47d08f59714"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -418,8 +418,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""b4e180a5-986a-4ddb-9e41-fa0cadafee6a"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""id"": ""46a99acb-4a81-4bb1-8c56-db88712b0c55"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
