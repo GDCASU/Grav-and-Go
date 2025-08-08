@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxMass: 5
   maxVelocity: 5
-  pushRange: 0.5
+  pushRange: 3.5
   focusedMoveMaxSpeed: 25
   grabRange: 0.25
   WheelMoveMaxDistance: 6
