@@ -1,5 +1,8 @@
 using System;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 /// <summary>
 /// Handles all core movement logic for the player:
@@ -21,6 +24,20 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private CapsuleCollider2D _col;
     
+    [Header("Audio")]
+    [SerializeField] private SimpleAudioEmitter _walkSound;
+    [SerializeField] private SimpleAudioEmitter _jumpSound;
+    
+    [Header("Capsule Cast Offsets")]
+    [SerializeField, Tooltip("Offset for the ground check capsule cast, in local space.")]
+    private Vector2 _groundCheckOffset = Vector2.zero;
+
+    [SerializeField, Tooltip("Offset for the ceiling check capsule cast, in local space.")]
+    private Vector2 _ceilingCheckOffset = Vector2.zero;
+    
+    [Header("Debugging")]
+    [SerializeField] private bool _doDrawCapsuleCast;
+    
     [Header("Per-frame state")]
     [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
@@ -38,9 +55,7 @@ public class PlayerMovementController : MonoBehaviour
     [Header("Timing helpers")]
     [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
     
-    [Header("Audio")]
-    [SerializeField] private SimpleAudioEmitter _walkSound;
-    [SerializeField] private SimpleAudioEmitter _jumpSound;
+    
     
     // Public Helpers
     /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
@@ -128,28 +143,32 @@ public class PlayerMovementController : MonoBehaviour
     #endregion
 
     #region Collisions
-    
+
     /// <summary>CapsuleCasts for ground & ceiling each physics step.</summary>
     private void CheckCollisions()
     {
         Physics2D.queriesStartInColliders = false; // More reliable casts
 
-        // ------------ Ground & ceiling checks ------------
-        bool groundHit  = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
+        // Ground cast with offset
+        Vector2 groundStart = (Vector2)_col.bounds.center + _groundCheckOffset;
+        bool groundHit = Physics2D.CapsuleCast(groundStart, _col.size, _col.direction, 0,
             Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
-        bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
-            Vector2.up,   _stats.GrounderDistance, ~_stats.PlayerLayer);
+
+        // Ceiling cast with offset
+        Vector2 ceilingStart = (Vector2)_col.bounds.center + _ceilingCheckOffset;
+        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _col.size, _col.direction, 0,
+            Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // If we bonk our head, kill any upward momentum
         if (ceilingHit)
             _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
 
         // ------------ Ground-state transitions ------------
-        if (!_grounded && groundHit)           // Landed
+        if (!_grounded && groundHit) // Landed
         {
-            _grounded            = true;
-            _coyoteUsable        = true;
-            _bufferedJumpUsable  = true;
+            _grounded = true;
+            _coyoteUsable = true;
+            _bufferedJumpUsable = true;
             _endedJumpEarly      = false;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
         }
@@ -269,6 +288,93 @@ public class PlayerMovementController : MonoBehaviour
         public bool   JumpHeld;
         public Vector2 Move;
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        if (!_doDrawCapsuleCast) return;
+        
+        if (_col == null || _stats == null) return;
+
+        var center = (Vector2)_col.bounds.center;
+        var size = _col.size;
+        var dir = _col.direction;
+        float dist = _stats.GrounderDistance;
+
+        // Ground cast (down)
+        DrawCapsuleCastGizmo(center + _groundCheckOffset, size, dir, Vector2.down, dist,
+            _grounded ? new Color(0f, 1f, 0f, 1f) : new Color(1f, 0f, 0f, 1f));
+
+        // Ceiling cast (up)
+        DrawCapsuleCastGizmo(center + _ceilingCheckOffset, size, dir, Vector2.up, dist,
+            new Color(0f, 1f, 1f, 1f));
+    }
+
+    /// <summary>Draws start capsule, end capsule, and an arrow for a 2D CapsuleCast.</summary>
+    private void DrawCapsuleCastGizmo(Vector2 center, Vector2 size, CapsuleDirection2D capsuleDir,
+        Vector2 direction, float distance, Color color)
+    {
+        // Start capsule
+        Handles.color = color;
+        DrawWireCapsule2D(center, size, capsuleDir);
+
+        // End capsule
+        var endCenter = center + direction.normalized * distance;
+        Handles.color = new Color(color.r, color.g, color.b, 0.35f);
+        DrawWireCapsule2D(endCenter, size, capsuleDir);
+
+        // Arrow between start and end
+        Handles.color = color;
+        Handles.DrawLine(center, endCenter);
+
+        // Arrow head
+        var headLen = Mathf.Min(size.x, size.y) * 0.25f;
+        var dirNorm = direction.normalized;
+        var left = Quaternion.Euler(0, 0, 135) * dirNorm * headLen;
+        var right = Quaternion.Euler(0, 0, -135) * dirNorm * headLen;
+        Handles.DrawLine(endCenter, endCenter + (Vector2)left);
+        Handles.DrawLine(endCenter, endCenter + (Vector2)right);
+    }
+
+    /// <summary>Editor only helper to draw a 2D capsule outline using two discs and two lines.</summary>
+    private static void DrawWireCapsule2D(Vector2 center, Vector2 size, CapsuleDirection2D capsuleDir)
+    {
+        if (capsuleDir == CapsuleDirection2D.Vertical)
+        {
+            float radius = size.x * 0.5f;
+            float straight = Mathf.Max(0f, size.y - 2f * radius);
+
+            var topCenter = center + Vector2.up * (straight * 0.5f);
+            var bottomCenter = center - Vector2.up * (straight * 0.5f);
+
+            Handles.DrawWireDisc(topCenter, Vector3.forward, radius);
+            Handles.DrawWireDisc(bottomCenter, Vector3.forward, radius);
+
+            var leftOffset = Vector2.left * radius;
+            var rightOffset = Vector2.right * radius;
+
+            Handles.DrawLine(topCenter + leftOffset, bottomCenter + leftOffset);
+            Handles.DrawLine(topCenter + rightOffset, bottomCenter + rightOffset);
+        }
+        else // Horizontal
+        {
+            float radius = size.y * 0.5f;
+            float straight = Mathf.Max(0f, size.x - 2f * radius);
+
+            var rightCenter = center + Vector2.right * (straight * 0.5f);
+            var leftCenter = center - Vector2.right * (straight * 0.5f);
+
+            Handles.DrawWireDisc(rightCenter, Vector3.forward, radius);
+            Handles.DrawWireDisc(leftCenter, Vector3.forward, radius);
+
+            var upOffset = Vector2.up * radius;
+            var downOffset = Vector2.down * radius;
+
+            Handles.DrawLine(rightCenter + upOffset, leftCenter + upOffset);
+            Handles.DrawLine(rightCenter + downOffset, leftCenter + downOffset);
+        }
+    }
+#endif
 }
 
 
