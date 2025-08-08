@@ -384,7 +384,7 @@ public class GravityGunController : MonoBehaviour
             }
         
             // Check if in range of pushing
-            bool inRange = Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) < _settings.pushRange;
+            bool inRange = Vector2.Distance(_focusedObject.transform.position, _gravigunPivot.position) < _settings.pushRange;
             if (inRange)
             {
                 ChangeBezierRendererColor(_settings.canPushColor);

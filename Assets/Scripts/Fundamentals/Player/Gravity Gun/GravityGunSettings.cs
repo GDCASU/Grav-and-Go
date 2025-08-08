@@ -5,20 +5,14 @@ using UnityEngine.Serialization;
 
 /* -----------------------------------------------------------
  * Author:
- * 
+ * Ian Fletcher
  * 
  * Modified By:
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Pupose:
- * 
- */// --------------------------------------------------------
-
-
 /// <summary>
-/// 
+/// Class that handles the settings of the gravity gun for easy editing
 /// </summary>
 [CreateAssetMenu(fileName = "GravityGunSettings", menuName = "GravityGun/GravityGunSettings")]
 public class GravityGunSettings : ScriptableObject
