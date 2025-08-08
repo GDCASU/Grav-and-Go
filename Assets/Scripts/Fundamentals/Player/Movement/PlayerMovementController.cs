@@ -28,12 +28,15 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private SimpleAudioEmitter _walkSound;
     [SerializeField] private SimpleAudioEmitter _jumpSound;
     
-    [Header("Capsule Cast Offsets")]
+    [Header("Capsule Casts")]
     [SerializeField, Tooltip("Offset for the ground check capsule cast, in local space.")]
     private Vector2 _groundCheckOffset = Vector2.zero;
 
     [SerializeField, Tooltip("Offset for the ceiling check capsule cast, in local space.")]
     private Vector2 _ceilingCheckOffset = Vector2.zero;
+
+    [SerializeField, Tooltip("Small substraction as to make sure capsule casts arent bigger than the collider")]
+    private Vector2 _capsuleCastSizeSub = Vector2.zero;
     
     [Header("Debugging")]
     [SerializeField] private bool _doDrawCapsuleCast;
@@ -151,12 +154,12 @@ public class PlayerMovementController : MonoBehaviour
 
         // Ground cast with offset
         Vector2 groundStart = (Vector2)_col.bounds.center + _groundCheckOffset;
-        bool groundHit = Physics2D.CapsuleCast(groundStart, _col.size, _col.direction, 0,
+        bool groundHit = Physics2D.CapsuleCast(groundStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
             Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // Ceiling cast with offset
         Vector2 ceilingStart = (Vector2)_col.bounds.center + _ceilingCheckOffset;
-        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _col.size, _col.direction, 0,
+        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
             Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // If we bonk our head, kill any upward momentum
@@ -297,7 +300,7 @@ public class PlayerMovementController : MonoBehaviour
         if (_col == null || _stats == null) return;
 
         var center = (Vector2)_col.bounds.center;
-        var size = _col.size;
+        var size = _col.size - _capsuleCastSizeSub;
         var dir = _col.direction;
         float dist = _stats.GrounderDistance;
 

@@ -494,7 +494,8 @@ MonoBehaviour:
   _jumpSound: {fileID: 7639427613623515261}
   _groundCheckOffset: {x: 0, y: 0}
   _ceilingCheckOffset: {x: 0, y: 0}
-  _doDrawCapsuleCast: 0
+  _capsuleCastSizeSub: {x: 0.03, y: 0}
+  _doDrawCapsuleCast: 1
   _frameVelocity: {x: 0, y: 0}
   _cachedQueryStartInColliders: 0
   _frameLeftGrounded: -3.4028235e+38
