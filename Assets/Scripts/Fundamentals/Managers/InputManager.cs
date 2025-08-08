@@ -42,6 +42,8 @@ public class InputManager : MonoBehaviour
     public static event Action OnInteract;
     
     public static event Action OnPause;
+    
+    public static event Action OnGravityGunToggle;
 
     #endregion
 
@@ -110,6 +112,7 @@ public class InputManager : MonoBehaviour
         _playerControls.GravityGun.MouseWheelDown.canceled += HandleWheelBackwards;
         _playerControls.GravityGun.MouseWheelUp.performed += HandleWheelFoward;
         _playerControls.GravityGun.MouseWheelUp.canceled += HandleWheelFoward;
+        _playerControls.GravityGun.Toggle.performed += HandleGravigunToggle;
         
         // Interactions
         _playerControls.Interactions.Interact.performed += HandleInteraction;
@@ -146,6 +149,11 @@ public class InputManager : MonoBehaviour
     private void HandleWheelBackwards(InputAction.CallbackContext ctx)
     {
         didPlayerWheelBackwards = ctx.performed;
+    }
+
+    private void HandleGravigunToggle(InputAction.CallbackContext ctx)
+    {
+        OnGravityGunToggle?.Invoke();
     }
     
     #endregion

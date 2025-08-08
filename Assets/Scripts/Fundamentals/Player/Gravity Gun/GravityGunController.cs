@@ -31,10 +31,15 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private Transform _gravigunHoldPosDynamic;
     [SerializeField] private Transform _gravigunHoldPosStatic;
     [SerializeField] private SpriteRenderer _helperTargetCircleSprite;
+    [SerializeField] private SpriteRenderer _gravigunSpriteRenderer;
     [SerializeField] private LineRenderer _lineOfSightRenderer;
     [SerializeField] private LineRenderer _bezierLineOneRenderer;
     [SerializeField] private LineRenderer _bezierLineTwoRenderer;
     [SerializeField] private LineRenderer _holdLineRenderer;
+    
+    [Header("Gravigun Sprites")]
+    [SerializeField] private Sprite _gravigunSpriteOn;
+    [SerializeField] private Sprite _gravigunSpriteOff;
 
     [Header("Sounds")] 
     [SerializeField] private SimpleAudioEmitter _gravigunLaunch;
@@ -59,6 +64,7 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPushPullLocked;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isInBetweenHoldAndCenter;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isNearHoldPos;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isGravityGunOff;
     
     
     // Local variables
@@ -66,6 +72,16 @@ public class GravityGunController : MonoBehaviour
     private List<PhysicsObject> _trackedObjects = new();
     private Coroutine _fadeHoldLinesCo;
     private bool _dontPlayPullSound; // Helper bool for sound playing
+
+    private void Awake()
+    {
+        InputManager.OnGravityGunToggle += ToggleGravigun;
+    }
+
+    private void OnDestroy()
+    {
+        InputManager.OnGravityGunToggle -= ToggleGravigun;
+    }
 
     private void Update()
     {
@@ -80,6 +96,20 @@ public class GravityGunController : MonoBehaviour
         }
 
         UpdateAimAndPivot();
+        
+        // Dont do anything if turned off
+        if (_isGravityGunOff)
+        {
+            if (_focusedObject)
+            {
+                StopHoldingObject();
+                _focusedObject = null;
+            }
+            _lineOfSightRenderer.gameObject.SetActive(false);
+            _helperTargetCircleSprite.gameObject.SetActive(false);
+            return;
+        }
+        _helperTargetCircleSprite.gameObject.SetActive(true);
 
         // Handle Mouse Wheel Click
         if (InputManager.Instance.didPlayerClickMouseWheelThisFrame)
@@ -651,6 +681,16 @@ public class GravityGunController : MonoBehaviour
         _settings.defaultLineOfSightColor.a = alpha;
         _settings.validTargetLineColor.a = alpha;
         _settings.canPushColor.a = alpha;
+    }
+    
+    /// <summary>
+    /// Function that toggles the gravity gun on and off
+    /// </summary>
+    private void ToggleGravigun()
+    {
+        // Toggle
+        _isGravityGunOff = !_isGravityGunOff;
+        _gravigunSpriteRenderer.sprite = _isGravityGunOff ? _gravigunSpriteOff : _gravigunSpriteOn;
     }
 
     /// <summary>
