@@ -147,7 +147,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""50687599-eeac-4ce8-981a-a47d08f59714"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -275,6 +275,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Toggle"",
+                    ""type"": ""Button"",
+                    ""id"": ""79be7cb9-3b3e-49b0-b422-3b21c475d069"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -398,6 +407,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2dbcbad1-9d45-40ba-921c-027c76f25d75"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -418,8 +438,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""b4e180a5-986a-4ddb-9e41-fa0cadafee6a"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""id"": ""46a99acb-4a81-4bb1-8c56-db88712b0c55"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -475,6 +495,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_GravityGun_MouseWheelUp = m_GravityGun.FindAction("Mouse Wheel Up", throwIfNotFound: true);
         m_GravityGun_MouseWheelDown = m_GravityGun.FindAction("Mouse Wheel Down", throwIfNotFound: true);
         m_GravityGun_Rotate = m_GravityGun.FindAction("Rotate", throwIfNotFound: true);
+        m_GravityGun_Toggle = m_GravityGun.FindAction("Toggle", throwIfNotFound: true);
         // Level
         m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
         m_Level_Retry = m_Level.FindAction("Retry", throwIfNotFound: true);
@@ -774,6 +795,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GravityGun_MouseWheelUp;
     private readonly InputAction m_GravityGun_MouseWheelDown;
     private readonly InputAction m_GravityGun_Rotate;
+    private readonly InputAction m_GravityGun_Toggle;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gravity Gun".
     /// </summary>
@@ -809,6 +831,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "GravityGun/Rotate".
         /// </summary>
         public InputAction @Rotate => m_Wrapper.m_GravityGun_Rotate;
+        /// <summary>
+        /// Provides access to the underlying input action "GravityGun/Toggle".
+        /// </summary>
+        public InputAction @Toggle => m_Wrapper.m_GravityGun_Toggle;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -853,6 +879,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Rotate.started += instance.OnRotate;
             @Rotate.performed += instance.OnRotate;
             @Rotate.canceled += instance.OnRotate;
+            @Toggle.started += instance.OnToggle;
+            @Toggle.performed += instance.OnToggle;
+            @Toggle.canceled += instance.OnToggle;
         }
 
         /// <summary>
@@ -882,6 +911,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Rotate.started -= instance.OnRotate;
             @Rotate.performed -= instance.OnRotate;
             @Rotate.canceled -= instance.OnRotate;
+            @Toggle.started -= instance.OnToggle;
+            @Toggle.performed -= instance.OnToggle;
+            @Toggle.canceled -= instance.OnToggle;
         }
 
         /// <summary>
@@ -1193,6 +1225,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnRotate(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Toggle" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggle(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Level" which allows adding and removing callbacks.

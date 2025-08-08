@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     [FormerlySerializedAs("levelProgressDatabase")]
     [Header("Database")] 
-    [SerializeField] private SerializedDictionary<LevelName, UnlockedStatus> _levelProgressDatabase;
+    [SerializeField] private SerializedDictionary<LevelName, LevelStatus> _levelProgressDatabase;
 
     [Header("Debugging")] 
     [SerializeField] private bool _doDebugLog;
@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
     public bool LoadLevelViaLevelNameIfUnlocked(LevelName levelName)
     {
         // Check if in dictionary
-        bool status = _levelProgressDatabase.TryGetValue(levelName, out UnlockedStatus unlockedStatus);
+        bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus unlockedStatus);
         if (!status)
         {
             // Didnt find it in dictionary
@@ -74,7 +74,7 @@ public class LevelManager : MonoBehaviour
     public bool LoadLevelViaLevelName(LevelName levelName)
     {
         // Check if in dictionary
-        bool status = _levelProgressDatabase.TryGetValue(levelName, out UnlockedStatus unlockedStatus);
+        bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus unlockedStatus);
         if (!status)
         {
             // Didnt find it in dictionary
@@ -95,7 +95,7 @@ public class LevelManager : MonoBehaviour
     public bool IsLevelUnlocked(LevelName levelName)
     {
         // Check if level is in database
-        bool status = _levelProgressDatabase.TryGetValue(levelName, out UnlockedStatus value);
+        bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus value);
         if (!status)
         {
             // Not in database
