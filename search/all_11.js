@@ -5,5 +5,6 @@ var searchData=
   ['resetprogress_2',['ResetProgress',['../df/d11/class_gameplay_menu_manager.html#af08df94cf4a850e6d2e2ed3a3b6a6088',1,'GameplayMenuManager']]],
   ['resumeallsounds_3',['ResumeAllSounds',['../d5/dd9/class_sound_manager.html#adafecddf771fa842c3b6f391014809c3',1,'SoundManager']]],
   ['resumesoundgroup_4',['ResumeSoundGroup',['../d5/dd9/class_sound_manager.html#abcaa236f79de80f25d1ddb8a40e3c5c9',1,'SoundManager']]],
-  ['rightaligntoggleattribute_5',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]]
+  ['rightaligntoggleattribute_5',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
+  ['rotatespeed_6',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]]
 ];

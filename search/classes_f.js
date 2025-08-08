@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unlockedstatus_0',['UnlockedStatus',['../dd/d2a/struct_unlocked_status.html',1,'']]]
+  ['vector2compassattribute_0',['Vector2CompassAttribute',['../db/dda/class_vector2_compass_attribute.html',1,'']]]
 ];

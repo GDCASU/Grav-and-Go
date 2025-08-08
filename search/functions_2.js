@@ -7,6 +7,7 @@ var searchData=
   ['changeoutlinecolor_4',['ChangeOutlineColor',['../d6/db5/class_physics_object.html#ae158ccd14463b32ad28f73c80dbf6f0f',1,'PhysicsObject']]],
   ['changesensitivity_5',['ChangeSensitivity',['../df/d11/class_gameplay_menu_manager.html#a4a0b4ef6835c27f1ff5c4e037f95cf86',1,'GameplayMenuManager']]],
   ['changesfxvolume_6',['ChangeSFXVolume',['../df/d60/class_audio_menu_manager.html#a813b9d656ff4d0b3cf7b11020f2d3525',1,'AudioMenuManager']]],
-  ['configdata_7',['ConfigData',['../d1/d32/class_config_data.html#a32753a8ce32be2dc36a83a732c7af877',1,'ConfigData']]],
-  ['confinecursor_8',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]]
+  ['compareto_7',['CompareTo',['../d1/d81/struct_level_name.html#a2c87dd66d1a1125f61cac16c31a330e7',1,'LevelName']]],
+  ['configdata_8',['ConfigData',['../d1/d32/class_config_data.html#a32753a8ce32be2dc36a83a732c7af877',1,'ConfigData']]],
+  ['confinecursor_9',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]]
 ];

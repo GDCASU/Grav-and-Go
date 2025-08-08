@@ -4,7 +4,10 @@ var searchData=
   ['fallacceleration_1',['FallAcceleration',['../da/dd5/class_scriptable_stats.html#a509e87aa92664cf6e04aed4fc6d41ca8',1,'ScriptableStats']]],
   ['filedatahandler_2',['FileDataHandler',['../dd/d11/class_file_data_handler.html',1,'FileDataHandler'],['../dd/d11/class_file_data_handler.html#a03e6fd9c03c9933df7b113ca0808d586',1,'FileDataHandler.FileDataHandler()']]],
   ['filedatahandler_2ecs_3',['FileDataHandler.cs',['../df/d8e/_file_data_handler_8cs.html',1,'']]],
-  ['fpscounter_4',['FPSCounter',['../d8/d6a/class_f_p_s_counter.html',1,'']]],
-  ['fpscounter_2ecs_5',['FPSCounter.cs',['../da/d97/_f_p_s_counter_8cs.html',1,'']]],
-  ['frameinputmovevector_6',['frameInputMoveVector',['../d2/dcb/class_player_movement_controller.html#a13829f8a89253207afecd70b7e21f59b',1,'PlayerMovementController']]]
+  ['focusedmovebasespeed_4',['focusedMoveBaseSpeed',['../db/d9e/class_gravity_gun_settings.html#a841622fdb960c23c60305b64abc6a50a',1,'GravityGunSettings']]],
+  ['focusedmovemaxspeed_5',['focusedMoveMaxSpeed',['../db/d9e/class_gravity_gun_settings.html#ab0e49af798702ef32918f39204ffb903',1,'GravityGunSettings']]],
+  ['focusedmovestrengthexponent_6',['focusedMoveStrengthExponent',['../db/d9e/class_gravity_gun_settings.html#a1d08d05b67d49edf0dfa90b60e6b9a36',1,'GravityGunSettings']]],
+  ['fpscounter_7',['FPSCounter',['../d8/d6a/class_f_p_s_counter.html',1,'']]],
+  ['fpscounter_2ecs_8',['FPSCounter.cs',['../da/d97/_f_p_s_counter_8cs.html',1,'']]],
+  ['frameinputmovevector_9',['frameInputMoveVector',['../d2/dcb/class_player_movement_controller.html#a13829f8a89253207afecd70b7e21f59b',1,'PlayerMovementController']]]
 ];

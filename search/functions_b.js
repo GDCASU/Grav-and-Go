@@ -5,5 +5,7 @@ var searchData=
   ['openinstagramlink_2',['OpenInstagramLink',['../d3/dcd/class_social_links.html#a674ab0b8720dcb5ea12182f5eccc2a8b',1,'SocialLinks']]],
   ['opensoundcloudlink_3',['OpenSoundCloudLink',['../d3/dcd/class_social_links.html#aef7930ea94ee141a2b18d450a7814305',1,'SocialLinks']]],
   ['opensteamlink_4',['OpenSteamLink',['../d3/dcd/class_social_links.html#a84383a468f6bd80baf4c8765cc899913',1,'SocialLinks']]],
-  ['openyoutubelink_5',['OpenYoutubeLink',['../d3/dcd/class_social_links.html#a30b3c2af720891628d8c17105a865451',1,'SocialLinks']]]
+  ['openyoutubelink_5',['OpenYoutubeLink',['../d3/dcd/class_social_links.html#a30b3c2af720891628d8c17105a865451',1,'SocialLinks']]],
+  ['operator_21_3d_6',['operator!=',['../d1/d81/struct_level_name.html#a169b48192fd3d1c3aceba6828613492e',1,'LevelName']]],
+  ['operator_3d_3d_7',['operator==',['../d1/d81/struct_level_name.html#ad2fed901f7ad60ace8b9f382be9f68f2',1,'LevelName']]]
 ];

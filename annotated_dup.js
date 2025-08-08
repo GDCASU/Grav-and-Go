@@ -18,6 +18,7 @@ var annotated_dup =
     [ "GrabbableObject", "de/df2/class_grabbable_object.html", null ],
     [ "GraphicsMenuManager", "d5/dbd/class_graphics_menu_manager.html", "d5/dbd/class_graphics_menu_manager" ],
     [ "GravityGunController", "d6/dba/class_gravity_gun_controller.html", null ],
+    [ "GravityGunSettings", "db/d9e/class_gravity_gun_settings.html", "db/d9e/class_gravity_gun_settings" ],
     [ "GravSpecialObject", "db/d54/class_grav_special_object.html", "db/d54/class_grav_special_object" ],
     [ "GunProjectile", "d6/dfd/class_gun_projectile.html", null ],
     [ "IDamageable", "df/d15/interface_i_damageable.html", "df/d15/interface_i_damageable" ],
@@ -31,6 +32,7 @@ var annotated_dup =
     [ "LevelButton", "dc/d72/class_level_button.html", "dc/d72/class_level_button" ],
     [ "LevelManager", "d6/d06/class_level_manager.html", "d6/d06/class_level_manager" ],
     [ "LevelName", "d1/d81/struct_level_name.html", "d1/d81/struct_level_name" ],
+    [ "LevelStatus", "d7/d51/struct_level_status.html", "d7/d51/struct_level_status" ],
     [ "Lever", "d6/d65/class_lever.html", null ],
     [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", "d4/d0f/class_line_renderer_from_transforms" ],
     [ "LineRendererSmoother", "da/d25/class_line_renderer_smoother.html", "da/d25/class_line_renderer_smoother" ],
@@ -51,7 +53,6 @@ var annotated_dup =
     [ "SocialLinks", "d3/dcd/class_social_links.html", "d3/dcd/class_social_links" ],
     [ "SoundManager", "d5/dd9/class_sound_manager.html", "d5/dd9/class_sound_manager" ],
     [ "StringInList", "d7/d65/class_string_in_list.html", "d7/d65/class_string_in_list" ],
-    [ "UnlockedStatus", "dd/d2a/struct_unlocked_status.html", "dd/d2a/struct_unlocked_status" ],
     [ "Vector2CompassAttribute", "db/dda/class_vector2_compass_attribute.html", null ],
     [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", null ]
 ];

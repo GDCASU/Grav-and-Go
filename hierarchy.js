@@ -13,6 +13,7 @@ var hierarchy =
     ] ],
     [ "Interactable.InteractableEvents", "d8/d40/class_interactable_1_1_interactable_events.html", null ],
     [ "LevelName", "d1/d81/struct_level_name.html", null ],
+    [ "LevelStatus", "d7/d51/struct_level_status.html", null ],
     [ "MonoBehaviour", null, [
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
@@ -64,7 +65,7 @@ var hierarchy =
     ] ],
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "ScriptableObject", null, [
+      [ "GravityGunSettings", "db/d9e/class_gravity_gun_settings.html", null ],
       [ "ScriptableStats", "da/dd5/class_scriptable_stats.html", null ]
-    ] ],
-    [ "UnlockedStatus", "dd/d2a/struct_unlocked_status.html", null ]
+    ] ]
 ];

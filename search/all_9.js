@@ -20,5 +20,5 @@ var searchData=
   ['interactionmanager2d_17',['InteractionManager2D',['../d9/d70/class_interaction_manager2_d.html',1,'']]],
   ['interruptandplay_18',['InterruptAndPlay',['../d0/d51/class_audio_emitter_settings.html#a416fdccbcfcc4dcc81d23d27487ee93da6aac8c5f76c4bda85a0b26228ed4fbfb',1,'AudioEmitterSettings']]],
   ['islevelunlocked_19',['IsLevelUnlocked',['../d6/d06/class_level_manager.html#a203d55b0263d27aab3dc139d825984a1',1,'LevelManager']]],
-  ['isunlocked_20',['isUnlocked',['../dd/d2a/struct_unlocked_status.html#a74631697ee9d46530bb660b735642313',1,'UnlockedStatus']]]
+  ['isunlocked_20',['isUnlocked',['../d7/d51/struct_level_status.html#ab63b0c682fa468477ee88051ed7b9ccf',1,'LevelStatus']]]
 ];

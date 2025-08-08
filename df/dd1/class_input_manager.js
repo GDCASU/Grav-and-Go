@@ -11,6 +11,7 @@ var class_input_manager =
     [ "pullHeldDownInput", "df/dd1/class_input_manager.html#af6a7b0fab3edf66f5e5cc94a5cfb85d7", null ],
     [ "pullPressedThisFrame", "df/dd1/class_input_manager.html#a6da903abe0756cef3567252bc4fff1fa", null ],
     [ "pushPressedThisFrame", "df/dd1/class_input_manager.html#aca86bb815bd99b6f675016d68a839a1b", null ],
+    [ "OnGravityGunToggle", "df/dd1/class_input_manager.html#ad2dee65ea1f022f6c33817726d8341c9", null ],
     [ "OnInteract", "df/dd1/class_input_manager.html#a0a6c34e5e874ebaa4636bbb2bc4966a7", null ],
     [ "OnJump", "df/dd1/class_input_manager.html#ae8e933f9b0b3683f203b25568379c327", null ],
     [ "OnMove", "df/dd1/class_input_manager.html#a7cbae0979f6ec18522060a68490087be", null ],
