@@ -311,17 +311,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b429f7d9-f648-4c64-8d24-a2dbac1a0f8f"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pull"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""7d50f39e-fb9c-4693-8944-381e28944e1c"",
                     ""path"": ""<Mouse>/middleButton"",
                     ""interactions"": """",
