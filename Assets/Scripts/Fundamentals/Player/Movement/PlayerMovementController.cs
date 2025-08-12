@@ -128,13 +128,10 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void OnJump(InputValue value)
+    private void OnJump()
     {
-        if (value.isPressed)
-        {
-            _jumpToConsume = true;
-            _timeJumpWasPressed = _time;
-        }
+        _jumpToConsume = true;
+        _timeJumpWasPressed = _time;
     }
 
     #endregion
@@ -192,7 +189,7 @@ public class PlayerMovementController : MonoBehaviour
     private void HandleJump()
     {
         // If player releases jump early, start applying stronger gravity
-        if (!_endedJumpEarly && !_grounded && /*!_frameInput.JumpHeld && */ _rb.linearVelocity.y > 0)
+        if (!_endedJumpEarly && !_grounded && _rb.linearVelocity.y > 0)
             _endedJumpEarly = true;
 
         // Nothing to do if we didn't press jump or buffer expired

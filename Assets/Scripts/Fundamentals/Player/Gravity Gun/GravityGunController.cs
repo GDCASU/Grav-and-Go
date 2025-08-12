@@ -5,6 +5,22 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/* -----------------------------------------------------------
+ * Author:
+ * Ian Fletcher
+ * 
+ * Modified By:
+ * Cami Lee
+ * 
+ */// --------------------------------------------------------
+
+// WARNING: This script is very complex, I highly suggest you
+// come and ask me before adding or modifying anything on it.
+// Cuz honestly only me and god knows how it works
+// --> Note by Cami: The script has been modified to be less complex;
+// however, there are still some complexities present and caution
+// should be taken with editing it
+
 public class GravityGunController : MonoBehaviour
 {
     [Header("Settings")]
@@ -61,6 +77,64 @@ public class GravityGunController : MonoBehaviour
     bool isPulling;
     bool isRotating;
 
+    enum LineState { NoObject, TooHeavy, ValidObject, GrabbingTooFar, GrabbingNormal, Off, InvalidObject, ObjectIgnoresGravigun }
+
+    LineState currentState = LineState.NoObject;
+
+    #region State Logic
+
+    private void OffState()
+    {
+        if (_focusedObject)
+        {
+            StopHoldingObject();
+            _focusedObject = null;
+        }
+        _lineOfSightRenderer.gameObject.SetActive(false);
+        _helperTargetCircleSprite.gameObject.SetActive(false);
+
+        _gravigunSpriteRenderer.sprite = _isGravityGunOff ? _gravigunSpriteOff : _gravigunSpriteOn;
+    }
+
+    private void HeavyState()
+    {
+        _focusedObject.EnableTarget();
+        _focusedObject.ChangeOutlineColor(_settings.tooHeavyColor);
+        UpdateLineRenderer(true, _settings.tooHeavyColor);
+        UpdateTargetCircle(_settings.tooHeavyColor);
+    }
+
+    private void NoObjectState()
+    {
+        // we didn't hit anything
+        UpdateLineRenderer(false, _settings.defaultLineOfSightColor);
+        UpdateTargetCircle(_settings.defaultLineOfSightColor);
+        UpdateLineRendererPos(_gravigunPivot.position, _currentLookDir, Vector2.zero, _settings.maxRaycastDistance);
+
+        // Clear out focused field
+        if (_focusedObject) _focusedObject = null;
+    }
+
+    private void InvalidObjectState(RaycastHit2D hit)
+    {
+        // We hit a non physics object
+        UpdateLineRenderer(true, _settings.defaultLineOfSightColor);
+        UpdateTargetCircle(_settings.defaultLineOfSightColor);
+        UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
+
+        // Clear out focused field
+        if (_focusedObject) _focusedObject = null;
+    }
+
+    private void IgnoreGravigunState()
+    {
+        _focusedObject.ChangeOutlineColor(_settings.defaultLineOfSightColor);
+        UpdateLineRenderer(true, _settings.defaultLineOfSightColor);
+        UpdateTargetCircle(_settings.defaultLineOfSightColor);
+    }
+
+    #endregion
+
     private void Update()
     {
         // Dont do anything if paused
@@ -73,43 +147,15 @@ public class GravityGunController : MonoBehaviour
             return;
         }
 
-        UpdateAimAndPivot();
-
-        // Dont do anything if turned off
-        if (_isGravityGunOff)
-        {
-            if (_focusedObject)
-            {
-                StopHoldingObject();
-                _focusedObject = null;
-            }
-            _lineOfSightRenderer.gameObject.SetActive(false);
-            _helperTargetCircleSprite.gameObject.SetActive(false);
-            return;
-        }
-
-        _helperTargetCircleSprite.gameObject.SetActive(true);
-
-        if (_isHoldingObject)
-        {
-            UpdateWhenGrabbingObject();
-        }
-        else
-        {
-            UpdateWhenNotHoldingObject();
-        }
-
-        HandlePhysicsAndInput();
+        DetermineStates();
     }
-
 
     #region Focus Logic
 
     /// <summary> Function that toggles the gravity gun on and off </summary>
     private void OnToggle()
     {
-        _isGravityGunOff = !_isGravityGunOff;
-        _gravigunSpriteRenderer.sprite = _isGravityGunOff ? _gravigunSpriteOff : _gravigunSpriteOn;
+        currentState = LineState.Off;
     }
 
     /// <summary> Computes and rotates the gravity gun and its direction </summary>
@@ -171,6 +217,8 @@ public class GravityGunController : MonoBehaviour
             GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
             gsp.gravEvents.OnGravityGunGrab.Invoke();
         }
+
+        currentState = LineState.GrabbingNormal;
     }
 
 
@@ -193,7 +241,6 @@ public class GravityGunController : MonoBehaviour
     }
 
     #endregion
-
 
     #region Holding Logic
 
@@ -289,12 +336,16 @@ public class GravityGunController : MonoBehaviour
             UpdateLineRenderer(false, Color.clear);
             UpdateTargetCircle(_settings.validTargetLineColor);
             ActivateBezierLines(true);
+
+            currentState = LineState.GrabbingTooFar;
         }
         else
         {
             UpdateLineRenderer(false, Color.clear);
             UpdateTargetCircle(_settings.canPushColor);
             ActivateBezierLines(true);
+
+            currentState = LineState.GrabbingNormal;
         }
     }
 
@@ -308,15 +359,8 @@ public class GravityGunController : MonoBehaviour
 
         if (!hit)
         {
-            // we didn't hit anything
-            UpdateLineRenderer(false, _settings.defaultLineOfSightColor);
-            UpdateTargetCircle(_settings.defaultLineOfSightColor);
-            UpdateLineRendererPos(_gravigunPivot.position, _currentLookDir, Vector2.zero, _settings.maxRaycastDistance);
-
-            // Clear out focused field
-            if (_focusedObject) _focusedObject = null;
-
-            if (isPulling || isPushing) { _gravigunNoTarget.PlaySound(); }
+            NoObjectState();
+            currentState = LineState.NoObject;
             return;
         }
 
@@ -326,56 +370,33 @@ public class GravityGunController : MonoBehaviour
         // is it a valid target?
         if (!go1.TryGetComponent(out PhysicsObject physicsObject))
         {
-            // We hit a non physics object
-            UpdateLineRenderer(true, _settings.defaultLineOfSightColor);
-            UpdateTargetCircle(_settings.defaultLineOfSightColor);
-            UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
-
-            // Clear out focused field
-            if (_focusedObject) _focusedObject = null;
+            InvalidObjectState(hit);
+            currentState = LineState.InvalidObject;
             return;
         }
-        else
-        {
-            UpdateLineRenderer(true, _settings.validTargetLineColor);
-            UpdateTargetCircle(_settings.validTargetLineColor);
-            UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
-        }
 
-        // Was of type Physics Object
+        // Update line renderers
+        UpdateLineRenderer(true, _settings.validTargetLineColor);
+        UpdateTargetCircle(_settings.validTargetLineColor);
+        UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
 
         // Keep a reference
         _focusedObject = physicsObject;
 
         // Check if ignoring
-        if (physicsObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
+        if (physicsObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun)
+        {
+            IgnoreGravigunState();
+            currentState = LineState.ObjectIgnoresGravigun;
+            return;
+        }
 
         // Check mass limit
         bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
-
-        // Perform push on non grabbed object if set to do so
-        bool inRange = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _settings.pushRange;
-        if (!isObjectTooHeavy && isPushing && !_isHoldingObject && inRange)
-        {
-            // Was within range and can push
-            PerformPush();
-
-            // Cooldown
-            StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
-        }
-
-        else if (inRange && isPushing)
-        {
-            _gravigunNoTarget.PlaySound();
-        }
-
-        // Check if above mass limit to play too heavy sound on pull or push
-        else if (isObjectTooHeavy && isPulling)
-        {
-            // We play the too heavy to pull sound
-            _gravigunTooHeavy.PlaySound();
-        }
+        if (isObjectTooHeavy) { currentState = LineState.TooHeavy; HeavyState(); }
+        else { currentState = LineState.ValidObject; }
     }
+
 
     private void CheckGrab()
     {
@@ -396,6 +417,8 @@ public class GravityGunController : MonoBehaviour
 
         // Grab object
         GrabFocusedObject();
+
+        StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
     }
 
     /// <summary>
@@ -418,6 +441,47 @@ public class GravityGunController : MonoBehaviour
     private void OnPush(InputValue value)
     {
         isPushing = !isPulling && value.isPressed;
+
+        switch (currentState)
+        {
+            case LineState.NoObject:
+                _gravigunNoTarget.PlaySound();
+                break;
+            case LineState.ValidObject:
+                bool inRange = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _settings.pushRange;
+                if (!_isHoldingObject && inRange)
+                {
+                    // Was within range and can push
+                    PerformPush();
+
+                    // Cooldown
+                    StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
+                }
+                else if (inRange) // NOTE: check this
+                {
+                    _gravigunNoTarget.PlaySound();
+                }
+                break;
+            case LineState.GrabbingTooFar:
+                ChangeBezierRendererColor(_settings.validTargetLineColor);
+                if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
+                break;
+            case LineState.GrabbingNormal:
+                ChangeBezierRendererColor(_settings.canPushColor);
+                if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
+
+                // Stop holding object
+                StopHoldingObject();
+
+                // Perform push
+                PerformPush();
+
+                // Trigger cooldown
+                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
+                break;
+            default:
+                break;
+        }
     }
 
     private void CheckPush()
@@ -461,7 +525,33 @@ public class GravityGunController : MonoBehaviour
     private void OnPull(InputValue value)
     {
         isPulling = !isPushing && value.isPressed;
-        if (!isPulling) _isPlayerHoldingPullAfterGrab = false;
+        if (!isPulling && !_isPushPullLocked) _isPlayerHoldingPullAfterGrab = false;
+
+        switch (currentState)
+        {
+            case LineState.NoObject:
+                _gravigunNoTarget.PlaySound();
+                break;
+            case LineState.TooHeavy:
+                _gravigunTooHeavy.PlaySound();
+                break;
+            case LineState.ValidObject:
+                CheckGrab();
+                break;
+            case LineState.GrabbingTooFar:
+            case LineState.GrabbingNormal:
+                if (_isPushPullLocked) break;
+
+                // Stop holding object
+                StopHoldingObject();
+
+                // Trigger cooldown
+                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
+                break;
+            default:
+                break;
+        }
+
     }
 
     private void CheckPull()
@@ -523,48 +613,71 @@ public class GravityGunController : MonoBehaviour
         _isPushPullLocked = false;
     }
 
+
+
+
+    private void DetermineStates()
+    {
+        // Calculate mouse point and line
+        UpdateAimAndPivot();
+
+        // Dont do anything if turned off
+        if (currentState == LineState.Off)
+        {
+            OffState();
+            return;
+        }
+
+        _helperTargetCircleSprite.gameObject.SetActive(true);
+
+        if (_isHoldingObject)
+        {
+            UpdateWhenGrabbingObject();
+        }
+        else
+        {
+            UpdateWhenNotHoldingObject();
+        }
+
+        HandlePhysicsAndInput();
+    }
+
+
+
+
     /// <summary> Handles all physics and input logic. </summary>
     private void HandlePhysicsAndInput()
     {
         // Dont do anything if no focused object available
         if (!_focusedObject) return;
 
-        // Check mass limit
-        bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
-
         // check if ignoring
-        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun)
-        {
-            _focusedObject.ChangeOutlineColor(_settings.defaultLineOfSightColor);
-            UpdateLineRenderer(true, _settings.defaultLineOfSightColor);
-            UpdateTargetCircle(_settings.defaultLineOfSightColor);
-            return;
-        }
+        if (currentState == LineState.ObjectIgnoresGravigun) return;
 
         // Was an influenceable object, Enable outline and set line renderer
         if (!_trackedObjects.Contains(_focusedObject))
         {
             _focusedObject.EnableTarget();
-            if (isObjectTooHeavy)
+            if (currentState == LineState.TooHeavy)
             {
-                _focusedObject.ChangeOutlineColor(_settings.tooHeavyColor);
-                UpdateLineRenderer(true, _settings.tooHeavyColor);
-                UpdateTargetCircle(_settings.tooHeavyColor);
+                HeavyState(); // NOTE: come back to the logic of this
+                StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
+                return;
             }
             else
             {
+                // NOTE: what state is this?
                 _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
                 UpdateLineRenderer(true, _settings.validTargetLineColor);
+                StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
             }
-            StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
         }
-
-        // Dont do anything else if object is over the mass limit
-        if (isObjectTooHeavy) return;
 
         // Move focused object if grabbing
         if (_isHoldingObject)
         {
+            // -- Check to see if we should still be holding the object 
+
             // If the player stands on top of the object, break hold
             if (IsPlayerStandingOn())
             {
@@ -577,18 +690,14 @@ public class GravityGunController : MonoBehaviour
                 // Move object
                 MoveFocusedObject();
             }
-        }
 
-        // Dont do anything else if on cooldown
-        if (_isPushPullLocked) return;
+            // -- Dont do anything else if on cooldown
+            if (_isPushPullLocked) return;
 
-        // Check if we are grabbing
-        if (_isHoldingObject)
-        {
             // Start coroutine
             if (_fadeHoldLinesCo == null) _fadeHoldLinesCo = StartCoroutine(FadeHoldLinesRoutine());
 
-            // Break if the object goes too far from hold pos
+            // Break if the object has gone too far from hold position
             if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) > _settings.grabDistanceBreak)
             {
                 // Stop holding object
@@ -602,48 +711,15 @@ public class GravityGunController : MonoBehaviour
             // Dont accept input until the player releases pull at least once
             if (_isPlayerHoldingPullAfterGrab) return;
 
-            if (isPulling)
-            {
-                // Stop holding object
-                StopHoldingObject();
 
-                // Trigger cooldown
-                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
-                return;
-            }
-
-            else if (isPushing)
-            {
-
-                // Check if in range of pushing
-                bool inRange = Vector2.Distance(_focusedObject.transform.position, _gravigunPivot.position) < _settings.pushRange;
-                if (inRange)
-                {
-                    ChangeBezierRendererColor(_settings.canPushColor);
-                    if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
-
-                    // Stop holding object
-                    StopHoldingObject();
-
-                    // Perform push
-                    PerformPush();
-
-                    // Trigger cooldown
-                    StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
-                    return;
-                }
-                else
-                {
-                    ChangeBezierRendererColor(_settings.validTargetLineColor);
-                    if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
-                }
-            }
+            // Check if in range of pushing
+            bool inRange = Vector2.Distance(_focusedObject.transform.position, _gravigunPivot.position) < _settings.pushRange;
+            if (inRange) { currentState = LineState.GrabbingNormal; }
+            else { currentState = LineState.GrabbingTooFar; }
         }
 
         CheckPull();
         CheckPush();
-
-        CheckGrab();
     }
 
     /// <summary> 
@@ -698,7 +774,6 @@ public class GravityGunController : MonoBehaviour
             _lineOfSightRenderer.startColor = targetColor;
             _lineOfSightRenderer.endColor = targetColor;
         }
-
     }
 
     /// <summary>
