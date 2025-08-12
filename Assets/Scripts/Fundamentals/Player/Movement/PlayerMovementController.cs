@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+using Unity.VisualScripting;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -59,6 +62,7 @@ public class PlayerMovementController : MonoBehaviour
 
     [Header("Timing helpers")]
     [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
+    [SerializeField, InspectorReadOnly] private float _timeJumpWasReleased;
 
 
 
@@ -128,10 +132,24 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void OnJump()
+    private void OnJump(InputValue value)
     {
-        _jumpToConsume = true;
-        _timeJumpWasPressed = _time;
+        if (value.isPressed)
+        {
+            _jumpToConsume = true;
+            _timeJumpWasPressed = _time;
+        }
+        else
+        {
+            _timeJumpWasReleased = _time;
+
+            // If player releases jump early, start applying stronger gravity
+            if (!_endedJumpEarly && !_grounded && _rb.linearVelocity.y > 0)
+            {
+                Debug.Log("jumpEndedEarly");
+                _endedJumpEarly = true;
+            }
+        }
     }
 
     #endregion
@@ -188,10 +206,6 @@ public class PlayerMovementController : MonoBehaviour
     /// <summary>Processes buffered / coyote jumps and variable jump height.</summary>
     private void HandleJump()
     {
-        // If player releases jump early, start applying stronger gravity
-        if (!_endedJumpEarly && !_grounded && _rb.linearVelocity.y > 0)
-            _endedJumpEarly = true;
-
         // Nothing to do if we didn't press jump or buffer expired
         if (!_jumpToConsume && !HasBufferedJump) return;
 
