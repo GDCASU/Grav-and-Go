@@ -37,13 +37,6 @@ public class InteractionManager2D : MonoBehaviour
     private void Start()
     {
         _player = transform;
-        
-        InputManager.OnInteract += OnInteractPressed;
-    }
-
-    private void OnDestroy()
-    {
-        InputManager.OnInteract -= OnInteractPressed;
     }
 
     private void Update()
@@ -106,7 +99,7 @@ public class InteractionManager2D : MonoBehaviour
             Debug.Log($"Focused: {_focused.name}", _focused);
     }
 
-    private void OnInteractPressed()
+    private void OnInteract()
     {
         _focused?.events.OnInteractionExecuted?.Invoke();
         if (doDebugLog) Debug.Log($"Interact: {_focused.name}", _focused);

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 #if UNITY_EDITOR
@@ -15,7 +15,7 @@ using UnityEditor;
 /// <para> This script *does not* animate or play VFX/SFX directly; those concerns live
 /// in <see cref="PlayerAnimator"/>. </para>
 /// </summary>
-public class PlayerMovementController : MonoBehaviour
+public class NewPlayerMovement : MonoBehaviour
 {
     // Tuning
     [Header("Tunning")]
@@ -43,7 +43,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private bool _doDrawCapsuleCast;
 
     [Header("Per-frame state")]
-    [SerializeField, Vector2Compass, InspectorReadOnly] public Vector2 movement;    // Movement we gather from input
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 movement;    // Movement we gather from input
     [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 velocity;    // Velocity we write to Rigidbody each FixedUpdate
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
 
@@ -63,6 +63,7 @@ public class PlayerMovementController : MonoBehaviour
 
 
     // Private helpers
+    //private FrameInput _frameInput; // Raw input sampled this fra
     private float _time; // Global time accumulator for coyote / buffer windows
 
     #region Events
@@ -114,6 +115,23 @@ public class PlayerMovementController : MonoBehaviour
     private void OnMove(InputValue value)
     {
         movement = value.Get<Vector2>();
+
+        if (Mathf.Approximately(movement.x, 0f)) // No horizontal input → decelerate towards 0
+        {
+            var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
+            velocity.x = Mathf.MoveTowards(velocity.x, 0, decel * Time.fixedDeltaTime);
+        }
+        else                                    // Accelerate towards target speed in chosen direction
+        {
+            velocity.x = Mathf.MoveTowards(
+                velocity.x,
+                movement.x * _stats.MaxSpeed,
+                _stats.Acceleration * Time.fixedDeltaTime
+            );
+
+            // Only play walk sound if grounded
+            if (_grounded) _walkSound.PlaySound();
+        }
 
         // Optional "digital" snapping so small stick values become full cardinal movement.
         if (_stats.SnapInput)
@@ -251,23 +269,6 @@ public class PlayerMovementController : MonoBehaviour
     /// <summary>Writes the fully-calculated velocity to the Rigidbody2D.</summary>
     private void ApplyMovement()
     {
-        if (Mathf.Approximately(movement.x, 0f)) // No horizontal input → decelerate towards 0
-        {
-            var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
-            velocity.x = Mathf.MoveTowards(velocity.x, 0, decel * Time.fixedDeltaTime);
-        }
-        else                                    // Accelerate towards target speed in chosen direction
-        {
-            velocity.x = Mathf.MoveTowards(
-                velocity.x,
-                movement.x * _stats.MaxSpeed,
-                _stats.Acceleration * Time.fixedDeltaTime
-            );
-
-            // Only play walk sound if grounded
-            if (_grounded) _walkSound.PlaySound();
-        }
-
         _rb.linearVelocity = velocity;
     }
 

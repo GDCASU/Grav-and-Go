@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 1544650614272011792}
   - component: {fileID: 1544650614272011793}
   - component: {fileID: 1544650614272011794}
+  - component: {fileID: 2263943290181670641}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -488,15 +489,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 05e6a06c5af93134ab98ff12e2c27265, type: 2}
-  _rb: {fileID: 1544650614272011793}
-  _col: {fileID: 1544650614272011794}
   _walkSound: {fileID: 5564989338252753536}
   _jumpSound: {fileID: 7639427613623515261}
   _groundCheckOffset: {x: 0, y: 0}
   _ceilingCheckOffset: {x: 0, y: 0}
   _capsuleCastSizeSub: {x: 0.03, y: 0}
   _doDrawCapsuleCast: 1
-  _frameVelocity: {x: 0, y: 0}
+  movement: {x: 0, y: 0}
+  velocity: {x: 0, y: 0}
   _cachedQueryStartInColliders: 0
   _frameLeftGrounded: -3.4028235e+38
   _grounded: 0
@@ -569,6 +569,36 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.7}
   m_Size: {x: 0.9, y: 1.4}
   m_Direction: 0
+--- !u!114 &2263943290181670641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544650614272011804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
+  m_NotificationBehavior: 1
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Movement
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1607290443805032806
 GameObject:
   m_ObjectHideFlags: 0
@@ -21694,6 +21724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8366946725509420783}
   - component: {fileID: 946992180780146910}
+  - component: {fileID: 871822120565416599}
   m_Layer: 6
   m_Name: Interactions
   m_TagString: Player
@@ -21736,6 +21767,36 @@ MonoBehaviour:
   doDebugLog: 0
   _focused: {fileID: 0}
   _focusEntered: 0
+--- !u!114 &871822120565416599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3753649370124419533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Interactions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &4078314920491853628
 GameObject:
   m_ObjectHideFlags: 0
@@ -22444,6 +22505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354934529680673937}
   - component: {fileID: 8943002414702594039}
+  - component: {fileID: 4408788475789229896}
   m_Layer: 6
   m_Name: Gravity Gun Contoller
   m_TagString: Player
@@ -22483,10 +22545,14 @@ MonoBehaviour:
   _gravigunHoldPosDynamic: {fileID: 3910677852070304181}
   _gravigunHoldPosStatic: {fileID: 5252242024336338537}
   _helperTargetCircleSprite: {fileID: 9139349563892912873}
+  _gravigunSpriteRenderer: {fileID: 5394026612346790712}
   _lineOfSightRenderer: {fileID: 7254014000091901524}
   _bezierLineOneRenderer: {fileID: 4869278425028137206}
   _bezierLineTwoRenderer: {fileID: 7619700515274417229}
   _holdLineRenderer: {fileID: 3999558348571070632}
+  player: {fileID: 1544650614272011804}
+  _gravigunSpriteOn: {fileID: 4660308795232609358, guid: 58a574dd3d2bb764a94c525275c773a6, type: 3}
+  _gravigunSpriteOff: {fileID: 21300000, guid: 2f78fb950c92f9b4cbe70d233bfe615e, type: 3}
   _gravigunLaunch: {fileID: 1602769411939103341}
   _gravigunGrab: {fileID: 4183361050090080608}
   _gravigunDrop: {fileID: 1335914123245867777}
@@ -22498,11 +22564,41 @@ MonoBehaviour:
   _focusedObject: {fileID: 0}
   _currentLookDir: {x: 0, y: 0}
   _isHoldingObject: 0
-  _pullExecutedThisFrame: 0
   _isPlayerHoldingPullAfterGrab: 0
   _isPushPullLocked: 0
   _isInBetweenHoldAndCenter: 0
   _isNearHoldPos: 0
+  _isGravityGunOff: 0
+--- !u!114 &4408788475789229896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104193132742653072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Gravity Gun
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &7348661160077929551
 GameObject:
   m_ObjectHideFlags: 0

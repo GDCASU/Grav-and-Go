@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3751748375662883088}
-  - component: {fileID: 965675335846385589}
+  - component: {fileID: 1643012777045875894}
   m_Layer: 0
   m_Name: Input Manager
   m_TagString: Untagged
@@ -128,7 +128,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2995322240427699229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &965675335846385589
+--- !u!114 &1643012777045875894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,10 +137,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 3350722358984841745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37de610cbdecf0443b73c28547562950, type: 3}
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _doDebugLog: 0
+  m_NotificationBehavior: 1
+  m_MaxPlayerCount: -1
+  m_AllowJoining: 1
+  m_JoinBehavior: 0
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ce06c2f6-a048-4d5c-9d6d-30fce8ad04b3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 0}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &8189321104251077825
 GameObject:
   m_ObjectHideFlags: 0
