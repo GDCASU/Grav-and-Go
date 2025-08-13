@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using TMPro;
 using UnityEngine;
 
 public class Scene : MonoBehaviour
 {
     [Header("Narrative Input")]
     public TextAsset script;
-    public Sprite scriptBackground;
+    public Sprite textBackground;
     public Sprite sceneBackground;
     public Dialogue dialogue;
 
@@ -24,12 +25,20 @@ public class Scene : MonoBehaviour
         if (remakeScript) { ReadFile(); }
     }
 
-    public bool UpdateDialogue()
+    public bool UpdateDialogue(TypewriterText dialogueText)
     {
-        dialogueIndex++;
-        if (dialogueIndex > dialogue.blocks.Count) { return false; }
+        if (dialogueIndex >= dialogue.blocks.Count)
+        {
+            if (dialogueText.UpdateText(currentBlock.speaker + ": " + currentBlock.line))
+            {
+                return false;
+            }
+            else return true;
+        }
 
         currentBlock = dialogue.blocks[dialogueIndex];
+        if (dialogueText.UpdateText(currentBlock.speaker + ": " + currentBlock.line)) { dialogueIndex++; }
+
         return true;
     }
 

@@ -26,12 +26,13 @@ public class TypewriterText : MonoBehaviour
             textBox.text = resultText;
             return false;
         }
-        else
+        else if (text != resultText)
         {
             resultText = text;
             coroutine = StartCoroutine(TypeWriterText(text));
             return true;
         }
+        else { return true; }
     }
 
     IEnumerator TypeWriterText(string text)
@@ -43,7 +44,7 @@ public class TypewriterText : MonoBehaviour
             currentText += letter;
             textBox.text = currentText;
 
-            yield return new WaitForSeconds(letterFrequency);
+            yield return new WaitForSeconds(1/letterFrequency);
         }
         textUpdating = false;
     }
