@@ -61,7 +61,7 @@
                 {
                     "name": "up",
                     "id": "50687599-eeac-4ce8-981a-a47d08f59714",
-                    "path": "<Keyboard>/w",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -189,6 +189,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle",
+                    "type": "Button",
+                    "id": "79be7cb9-3b3e-49b0-b422-3b21c475d069",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -207,17 +216,6 @@
                     "name": "",
                     "id": "66f5d77c-f615-4db6-a7ea-9a5f0bd7a0f9",
                     "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Pull",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b429f7d9-f648-4c64-8d24-a2dbac1a0f8f",
-                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -312,6 +310,17 @@
                     "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2dbcbad1-9d45-40ba-921c-027c76f25d75",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -332,8 +341,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "b4e180a5-986a-4ddb-9e41-fa0cadafee6a",
-                    "path": "<Keyboard>/r",
+                    "id": "46a99acb-4a81-4bb1-8c56-db88712b0c55",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

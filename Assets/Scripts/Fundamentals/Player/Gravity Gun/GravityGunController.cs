@@ -23,21 +23,23 @@ using Debug = UnityEngine.Debug;
 /// </summary>
 public class GravityGunController : MonoBehaviour
 {
+    [Header("Settings")]
+    [SerializeField] private GravityGunSettings _settings;
+    
     [Header("References")]
     [SerializeField] private Transform _gravigunPivot;
     [SerializeField] private Transform _gravigunHoldPosDynamic;
     [SerializeField] private Transform _gravigunHoldPosStatic;
     [SerializeField] private SpriteRenderer _helperTargetCircleSprite;
+    [SerializeField] private SpriteRenderer _gravigunSpriteRenderer;
     [SerializeField] private LineRenderer _lineOfSightRenderer;
     [SerializeField] private LineRenderer _bezierLineOneRenderer;
     [SerializeField] private LineRenderer _bezierLineTwoRenderer;
     [SerializeField] private LineRenderer _holdLineRenderer;
     
-    [Header("Colors")]
-    [SerializeField] private Color _defaultLineOfSightColor; // The color of the line when not pointing towards something influenceable
-    [SerializeField] private Color _validTargetLineColor; // The color of the line when its pointing to a valid target
-    [SerializeField] private Color _canPushColor; // The color the bezier lines will turn into if the object can be launched
-    [SerializeField] private Color _tooHeavyColor;
+    [Header("Gravigun Sprites")]
+    [SerializeField] private Sprite _gravigunSpriteOn;
+    [SerializeField] private Sprite _gravigunSpriteOff;
 
     [Header("Sounds")] 
     [SerializeField] private SimpleAudioEmitter _gravigunLaunch;
@@ -47,27 +49,8 @@ public class GravityGunController : MonoBehaviour
     [SerializeField] private SimpleAudioEmitter _gravigunPull;
     [SerializeField] private SimpleAudioEmitter _gravigunTooHeavy;
     
-    [Header("Limiters")]
-    [SerializeField, Range(0f, 100f)] private float _maxMass; // The max amount of mass the gravigun can influence
-    [SerializeField, Range(0f, 100f)] private float _maxVelocity; // Cap the velocity at which we pull an object
-    [SerializeField, Range(0f, 100f)] private float _pushRange; // Range in which the push works
-    [SerializeField, Range(0f, 25f)] private float _focusedMoveMaxSpeed = 25f;  // safety cap
-    [SerializeField, Range(0f, 10f)] private float _grabRange; // Range where the pull grabs the object
-    [SerializeField, Range(0f, 50f)] private float _WheelMoveMaxDistance; // Max distance at which the player can move an object
-    [SerializeField, Range(0f, 100f)] private float _grabDistanceBreak; // The distance where the grab breaks from the object
-    [SerializeField, Range(0f, 2f)] private float _pullPushCooldown; // Small input cooldown so player doesnt immediatly drop the object after grabbing it
-    
-    
-    [Header("Settings")]
-    [SerializeField] private LayerMask _lineRaycastMask; // The mask of all valid gravity gun targets
-    [SerializeField, Range(0f,100f)] private float _maxRaycastDistance; // Max distance at which perform the raycast for a valid target
-    [SerializeField, Range(0f, 100f)] private float _pullForce; // Force at which to pull the object
-    [SerializeField, Range(0f, 100f)] private float _pushForce; // Force at which to launch the object
-    [SerializeField, Range(0f, 720f)] private float _rotateSpeed; // Speed at which the mousewheel rotates the object
-    [SerializeField, Range(0f, 50f)] private float _WheelMoveSpeed; // Speed at which the object moves back and forth on mousewheel move
-    [SerializeField, Range(0f,50f)] private float _focusedMoveBaseSpeed = 6f;   // baseline units/sec at 1‑unit distance
-    [SerializeField, Range(0f,5f)] private float _focusedMoveStrengthExponent = 1.5f; // curve exponent (1 = linear)
-    [SerializeField, Range(0f, 100f)] private float _blockingObjectTimeBreak; // Time it will take for the gravity gun to break hold if some object is in the middle of the path
+    [Header("Others")]
+    [SerializeField] private float _standingOnCheckBoxHeight;
     
     [Header("Debugging")]
     [SerializeField] private bool doDebugLog;
@@ -81,6 +64,7 @@ public class GravityGunController : MonoBehaviour
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isPushPullLocked;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isInBetweenHoldAndCenter;
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _isNearHoldPos;
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _isGravityGunOff;
     
     
     // Local variables
@@ -88,6 +72,16 @@ public class GravityGunController : MonoBehaviour
     private List<PhysicsObject> _trackedObjects = new();
     private Coroutine _fadeHoldLinesCo;
     private bool _dontPlayPullSound; // Helper bool for sound playing
+
+    private void Awake()
+    {
+        InputManager.OnGravityGunToggle += ToggleGravigun;
+    }
+
+    private void OnDestroy()
+    {
+        InputManager.OnGravityGunToggle -= ToggleGravigun;
+    }
 
     private void Update()
     {
@@ -102,6 +96,20 @@ public class GravityGunController : MonoBehaviour
         }
 
         UpdateAimAndPivot();
+        
+        // Dont do anything if turned off
+        if (_isGravityGunOff)
+        {
+            if (_focusedObject)
+            {
+                StopHoldingObject();
+                _focusedObject = null;
+            }
+            _lineOfSightRenderer.gameObject.SetActive(false);
+            _helperTargetCircleSprite.gameObject.SetActive(false);
+            return;
+        }
+        _helperTargetCircleSprite.gameObject.SetActive(true);
 
         // Handle Mouse Wheel Click
         if (InputManager.Instance.didPlayerClickMouseWheelThisFrame)
@@ -147,16 +155,16 @@ public class GravityGunController : MonoBehaviour
     {
         // Wasn't holding, perform as usual
         // Fire a raycast in the direction of the mouse
-        RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, _currentLookDir, _maxRaycastDistance, _lineRaycastMask);
+        RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, _currentLookDir, _settings.maxRaycastDistance, _settings.lineRaycastMask);
         _currentHit = hit;
 
         if (!hit)
         {
             // we didnt hit anything
             _lineOfSightRenderer.gameObject.SetActive(false);
-            ChangeTargetCircleColor(_defaultLineOfSightColor);
-            ChangeLineRendererColor(_defaultLineOfSightColor);
-            UpdateLineRendererPos(_gravigunPivot.position, _currentLookDir, Vector2.zero, _maxRaycastDistance);
+            ChangeTargetCircleColor(_settings.defaultLineOfSightColor);
+            ChangeLineRendererColor(_settings.defaultLineOfSightColor);
+            UpdateLineRendererPos(_gravigunPivot.position, _currentLookDir, Vector2.zero, _settings.maxRaycastDistance);
             
             // If the player clicked push or pull, play sound for no target
             if (InputManager.Instance.pullPressedThisFrame || InputManager.Instance.pushPressedThisFrame)
@@ -182,8 +190,8 @@ public class GravityGunController : MonoBehaviour
         if (!go1.TryGetComponent(out PhysicsObject physicsObject))
         {
             // We hit a non physics object
-            ChangeTargetCircleColor(_defaultLineOfSightColor);
-            ChangeLineRendererColor(_defaultLineOfSightColor);
+            ChangeTargetCircleColor(_settings.defaultLineOfSightColor);
+            ChangeLineRendererColor(_settings.defaultLineOfSightColor);
             
             // If the player performs pull or push on it, play no target sound
             if (InputManager.Instance.pullPressedThisFrame || InputManager.Instance.pushPressedThisFrame)
@@ -197,13 +205,18 @@ public class GravityGunController : MonoBehaviour
         }
         
         // Was of type Physics Object
+        
+        // Keep a reference
         _focusedObject = physicsObject;
         
+        // Check if ignoring
+        if (physicsObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
+        
         // Check mass limit
-        bool isObjectTooHeavy = _focusedObject.rb.mass > _maxMass;
+        bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
         
         // Perform push on non grabbed object if set to do so, but ignore if pull is being held down
-        bool inRange = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _pushRange;
+        bool inRange = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _settings.pushRange;
         bool pushInputCheck = InputManager.Instance.pushPressedThisFrame && !InputManager.Instance.pullHeldDownInput;
         if (!isObjectTooHeavy && pushInputCheck && !_isHoldingObject && inRange)
         {
@@ -211,7 +224,7 @@ public class GravityGunController : MonoBehaviour
             PerformPush();
 
             // Cooldown
-            StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+            StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
         }
         
         // Check if above mass limit and in range to play too heavy sound on push, otherwise no target
@@ -248,13 +261,13 @@ public class GravityGunController : MonoBehaviour
         _holdLineRenderer.enabled = true;
         
         // Check if we should change the hold color depending on push range
-        if (Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) > _pushRange)
+        if (Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) > _settings.pushRange)
         {
-            ChangeTargetCircleColor(_validTargetLineColor);
+            ChangeTargetCircleColor(_settings.validTargetLineColor);
         }
         else
         {
-            ChangeTargetCircleColor(_canPushColor);
+            ChangeTargetCircleColor(_settings.canPushColor);
         }
         
         // Check for mouse up and down for rotation
@@ -263,15 +276,15 @@ public class GravityGunController : MonoBehaviour
             // Check if we are rotating
             if (InputManager.Instance.didPlayerHoldDownRotate)
             {
-                _focusedObject.transform.Rotate(Vector3.forward, _rotateSpeed * Time.deltaTime, Space.Self);
+                _focusedObject.transform.Rotate(Vector3.forward, _settings.rotateSpeed * Time.deltaTime, Space.Self);
                 return;
             }
             
             // move object foward only if not passing max distance
-            if (Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) >= _WheelMoveMaxDistance) return;
+            if (Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) >= _settings.WheelMoveMaxDistance) return;
             
             // Otherwise, move object foward
-            _gravigunHoldPosDynamic.Translate( _WheelMoveSpeed * Time.deltaTime * _currentLookDir, Space.World);
+            _gravigunHoldPosDynamic.Translate( _settings.WheelMoveSpeed * Time.deltaTime * _currentLookDir, Space.World);
             
         }
         else if (InputManager.Instance.didPlayerWheelBackwards)
@@ -279,7 +292,7 @@ public class GravityGunController : MonoBehaviour
             // Check if we are rotating backwards
             if (InputManager.Instance.didPlayerHoldDownRotate)
             {
-                _focusedObject.transform.Rotate(Vector3.forward, -1 * _rotateSpeed * Time.deltaTime, Space.Self);
+                _focusedObject.transform.Rotate(Vector3.forward, -1 * _settings.rotateSpeed * Time.deltaTime, Space.Self);
                 return;
             }
             
@@ -295,7 +308,7 @@ public class GravityGunController : MonoBehaviour
             // move object backwards only if not behind the static starting position
             if (_gravigunHoldPosDynamic.localPosition is { x: >= 0f, y: >= 0f })
             {
-                _gravigunHoldPosDynamic.Translate( -1 * _WheelMoveSpeed * Time.deltaTime * _currentLookDir, Space.World);
+                _gravigunHoldPosDynamic.Translate( -1 * _settings.WheelMoveSpeed * Time.deltaTime * _currentLookDir, Space.World);
             }
         }
         
@@ -317,38 +330,53 @@ public class GravityGunController : MonoBehaviour
         if (!_focusedObject) return;
         
         // Check mass limit
-        bool isObjectTooHeavy = _focusedObject.rb.mass > _maxMass;
+        bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
         
         // Reset check bool
         _pullExecutedThisFrame = false;
         
         // check if ignoring
-        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun) return;
+        if (_focusedObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun)
+        {
+            _focusedObject.ChangeOutlineColor(_settings.defaultLineOfSightColor);
+            ChangeTargetCircleColor(_settings.defaultLineOfSightColor);
+            ChangeLineRendererColor(_settings.defaultLineOfSightColor);
+            return;
+        }
         
         // Was an influenceable object, Enable outline and set line renderer
         if (!_trackedObjects.Contains(_focusedObject))
         {
             _focusedObject.EnableTarget();
-            _focusedObject.ChangeOutlineColor(_validTargetLineColor);
+            _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
+            ChangeTargetCircleColor(_settings.validTargetLineColor);
             if (isObjectTooHeavy)
             {
-                _focusedObject.ChangeOutlineColor(_tooHeavyColor);
-                ChangeTargetCircleColor(_tooHeavyColor);
-                ChangeLineRendererColor(_tooHeavyColor);
+                _focusedObject.ChangeOutlineColor(_settings.tooHeavyColor);
+                ChangeTargetCircleColor(_settings.tooHeavyColor);
+                ChangeLineRendererColor(_settings.tooHeavyColor);
             }
             StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
         }
         
         // Dont do anything if object is over the mass limit
         if (isObjectTooHeavy) return;
-        
-        ChangeTargetCircleColor(_validTargetLineColor);
-        ChangeLineRendererColor(_validTargetLineColor);
-        
+
         // Move focused object if grabbing
         if (_isHoldingObject)
         {
-            MoveFocusedObject();
+            // If the player stands on top of the object, break hold
+            if (IsPlayerStandingOn(_focusedObject))
+            {
+                StopHoldingObject();
+                // Trigger a longer cooldown routine to avoid prop surfing
+                StartCoroutine(LockPullPushRoutine(1f));
+            }
+            else
+            {
+                // Move object
+                MoveFocusedObject();
+            }
         }
         
         // Dont do anything if on cooldown
@@ -361,13 +389,13 @@ public class GravityGunController : MonoBehaviour
             if (_fadeHoldLinesCo == null) _fadeHoldLinesCo = StartCoroutine(FadeHoldLinesRoutine());
             
             // Break if the object goes too far from hold pos
-            if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) > _grabDistanceBreak)
+            if (Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) > _settings.grabDistanceBreak)
             {
                 // Stop holding object
                 StopHoldingObject();
                 
                 // Trigger Cooldown
-                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
                 return;
             }
             
@@ -379,43 +407,35 @@ public class GravityGunController : MonoBehaviour
             {
                 // Stop holding object
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 
                 // Trigger Cooldown
-                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
                 return;
             }
         
             // Check if in range of pushing
-            bool inRange = Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) < _pushRange;
+            bool inRange = Vector2.Distance(_focusedObject.transform.position, _gravigunPivot.position) < _settings.pushRange;
             if (inRange)
             {
-                ChangeBezierRendererColor(_canPushColor);
-                if (_focusedObject) _focusedObject.ChangeOutlineColor(_canPushColor);
+                ChangeBezierRendererColor(_settings.canPushColor);
+                if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
             }
             else
             {
-                ChangeBezierRendererColor(_validTargetLineColor);
-                if (_focusedObject) _focusedObject.ChangeOutlineColor(_validTargetLineColor);
+                ChangeBezierRendererColor(_settings.validTargetLineColor);
+                if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
             }
             // Check if the player clicked push as to launch the object
             if (InputManager.Instance.pushPressedThisFrame && inRange)
             {
                 // Stop holding object
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 
                 // Perform push
                 PerformPush();
                 
                 // Trigger cooldown
-                StartCoroutine(LockPullPushRoutine(_pullPushCooldown));
+                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
                 return;
             }
             return;
@@ -425,6 +445,8 @@ public class GravityGunController : MonoBehaviour
         if (InputManager.Instance.pullHeldDownInput && !_isHoldingObject)
         {
             PerformPull();
+            // Trigger a longer cooldown routine to avoid prop surfing
+            if (IsPlayerStandingOn(_focusedObject)) StartCoroutine(LockPullPushRoutine(1f));
             _pullExecutedThisFrame = true;
         }
         else
@@ -434,19 +456,19 @@ public class GravityGunController : MonoBehaviour
         }
         
         // Check if in range of push
-        bool inRange2 = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _pushRange;
+        bool inRange2 = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _settings.pushRange;
         if (inRange2)
         {
             // Change line renderer color as to show object can be pushed, the same with its outline
-            ChangeLineRendererColor(_canPushColor);
-            ChangeTargetCircleColor(_canPushColor);
-            if (_focusedObject) _focusedObject.ChangeOutlineColor(_canPushColor);
+            ChangeLineRendererColor(_settings.canPushColor);
+            ChangeTargetCircleColor(_settings.canPushColor);
+            if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
         }
         else
         {
             // Default colors
-            ChangeLineRendererColor(_validTargetLineColor);
-            if (_focusedObject) _focusedObject.ChangeOutlineColor(_validTargetLineColor);
+            ChangeLineRendererColor(_settings.validTargetLineColor);
+            if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
         }
         
         // passed both pull and push, reset bool
@@ -457,7 +479,7 @@ public class GravityGunController : MonoBehaviour
         if (!isGrabbable) return;
 
         _isNearHoldPos = Vector2.Distance(_focusedObject.transform.position, _gravigunHoldPosDynamic.position) <
-                             _grabRange;
+                         _settings.grabRange;
         
         _isInBetweenHoldAndCenter = InBetweenXAxis(_focusedObject.transform.position, _gravigunPivot.position, _gravigunHoldPosDynamic.position);
         
@@ -467,6 +489,9 @@ public class GravityGunController : MonoBehaviour
         // Dont grab if not pulling
         if (!InputManager.Instance.pullHeldDownInput) return;
         
+        // Prevent grabbing if the player is standing on the object
+        if (IsPlayerStandingOn(_focusedObject)) return;
+
         // Grab object
         GrabFocusedObject();
         
@@ -495,8 +520,8 @@ public class GravityGunController : MonoBehaviour
         
         // distance‑scaled speed
         // speed = baseSpeed * (distance^strength)
-        float speed = _focusedMoveBaseSpeed * Mathf.Pow(distance, _focusedMoveStrengthExponent);
-        speed       = Mathf.Min(speed, _focusedMoveMaxSpeed);     // clamp
+        float speed = _settings.focusedMoveBaseSpeed * Mathf.Pow(distance, _settings.focusedMoveStrengthExponent);
+        speed       = Mathf.Min(speed, _settings.focusedMoveMaxSpeed);     // clamp
     
         // Move object to destination
         Vector3 step = speed * Time.deltaTime * toTarget.normalized; 
@@ -509,6 +534,24 @@ public class GravityGunController : MonoBehaviour
     private void HandleMouseWheelClick()
     {
         
+    }
+    
+    /// <summary>
+    /// Checks if the player is standing on top of the object
+    /// </summary>
+    private bool IsPlayerStandingOn(PhysicsObject obj)
+    {
+        Vector2 localScale = _focusedObject.transform.localScale;
+        Vector2 checkBoxCenter = (Vector2)_focusedObject.transform.position + Vector2.up * (_standingOnCheckBoxHeight/2 - localScale.y/3);
+        Vector2 checkBoxSize = new Vector2(localScale.x, _standingOnCheckBoxHeight);
+
+        Collider2D[] hits = Physics2D.OverlapBoxAll(checkBoxCenter, checkBoxSize, 0f);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player")) return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -545,6 +588,10 @@ public class GravityGunController : MonoBehaviour
         _isHoldingObject = false;
         _focusedObject.rb.freezeRotation = false;
         _focusedObject.rb.linearVelocity = Vector2.zero;
+        _bezierLineOneRenderer.enabled = false;
+        _bezierLineTwoRenderer.enabled = false;
+        _holdLineRenderer.enabled = false;
+        _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
     }
 
     /// <summary>
@@ -578,24 +625,20 @@ public class GravityGunController : MonoBehaviour
             t += Time.deltaTime;
             
             // Check if we have passed the break limit
-            if (t >= _blockingObjectTimeBreak)
+            if (t >= _settings.blockingObjectTimeBreak)
             {
                 // we did pass the limit, break hold
                 StopHoldingObject();
-                _bezierLineOneRenderer.enabled = false;
-                _bezierLineTwoRenderer.enabled = false;
-                _holdLineRenderer.enabled = false;
-                _gravigunHoldPosDynamic.position = _gravigunHoldPosStatic.position;
                 break;
             }
             
             // Math
-            float a = Mathf.Lerp(1f, 0f, t / _blockingObjectTimeBreak);
+            float a = Mathf.Lerp(1f, 0f, t / _settings.blockingObjectTimeBreak);
             
             // Perform a raycast
             float distance = Vector2.Distance(_gravigunPivot.position, _focusedObject.transform.position);
             Vector2 dir =  (_focusedObject.transform.position - _gravigunPivot.position).normalized;
-            RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, dir, distance, _lineRaycastMask);
+            RaycastHit2D hit = Physics2D.Raycast(_gravigunPivot.position, dir, distance, _settings.lineRaycastMask);
             
             // Get game object
             GameObject go1 = hit.collider.gameObject;
@@ -635,9 +678,19 @@ public class GravityGunController : MonoBehaviour
     /// <param name="alpha"> Alpha value between 1 and 0 </param>
     private void SetAlphaAllColors(float alpha)
     {
-        _defaultLineOfSightColor.a = alpha;
-        _validTargetLineColor.a = alpha;
-        _canPushColor.a = alpha;
+        _settings.defaultLineOfSightColor.a = alpha;
+        _settings.validTargetLineColor.a = alpha;
+        _settings.canPushColor.a = alpha;
+    }
+    
+    /// <summary>
+    /// Function that toggles the gravity gun on and off
+    /// </summary>
+    private void ToggleGravigun()
+    {
+        // Toggle
+        _isGravityGunOff = !_isGravityGunOff;
+        _gravigunSpriteRenderer.sprite = _isGravityGunOff ? _gravigunSpriteOff : _gravigunSpriteOn;
     }
 
     /// <summary>
@@ -675,9 +728,10 @@ public class GravityGunController : MonoBehaviour
     {
         // Add physics object to list of tracked object
         _trackedObjects.Add(physicsObject);
+        _focusedObject.EnableTarget();
         
         // Wait until the focused object changes
-        while (_focusedObject == physicsObject)
+        while (_focusedObject == physicsObject && physicsObject.physicsObjectType != PhysicsObjectType.IgnoresGravigun)
         {
             yield return null;
         }
@@ -691,6 +745,9 @@ public class GravityGunController : MonoBehaviour
     /// </summary>
     private void PerformPull()
     {
+        // Dont perform pull if standing on object
+        if (IsPlayerStandingOn(_focusedObject)) return;
+        
         // Play sound and event
         if (!_dontPlayPullSound)
         {
@@ -704,13 +761,15 @@ public class GravityGunController : MonoBehaviour
             _dontPlayPullSound = true;
         }
         
+        Vector2 toTarget = _gravigunHoldPosDynamic.position - _focusedObject.transform.position;
+        float distance = toTarget.magnitude;
+        
         // Apply force
-        Vector2 dir = (_gravigunHoldPosDynamic.position - _focusedObject.transform.position);
-        ApplyCappedForce(_focusedObject.rb,
-            dir,
-            _pullForce,
-            ForceMode2D.Force,
-            _maxVelocity);
+        // Curve-based pull scaling (soft near, strong far)
+        float rampedForce = _settings.pullForce * Mathf.Pow(distance, _settings.focusedMoveStrengthExponent);
+        rampedForce = Mathf.Min(rampedForce, _settings.pullForce); // Optional: clamp to original pullForce
+
+        ApplyCappedForce(_focusedObject.rb, toTarget, rampedForce, ForceMode2D.Force, _settings.maxVelocity);
     }
     
     /// <summary>
@@ -725,7 +784,7 @@ public class GravityGunController : MonoBehaviour
             GravSpecialObject gsp = (GravSpecialObject)_focusedObject;
             gsp.gravEvents.OnGravityGunLaunch.Invoke();
         }
-        _focusedObject.rb.AddForce(_currentLookDir * _pushForce, ForceMode2D.Impulse);
+        _focusedObject.rb.AddForce(_currentLookDir * _settings.pushForce, ForceMode2D.Impulse);
     }
     
     /// <summary>
@@ -803,7 +862,14 @@ public class GravityGunController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        
+        if (_focusedObject != null)
+        {
+            Gizmos.color = Color.red;
+            Vector2 localScale = _focusedObject.transform.localScale;
+            Vector2 checkBoxCenter = (Vector2)_focusedObject.transform.position + Vector2.up * (_standingOnCheckBoxHeight/2 - localScale.y/3);
+            Vector2 checkBoxSize = new Vector2(localScale.x, _standingOnCheckBoxHeight);
+            Gizmos.DrawWireCube(checkBoxCenter, checkBoxSize);
+        }
     }
     
     

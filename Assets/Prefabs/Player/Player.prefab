@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5523041074258772447}
   - component: {fileID: 6035443741162166848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5252242024336338537}
   - component: {fileID: 8081354453504888556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gravity Gun Hold Pos Static
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2599712589501260962}
   - component: {fileID: 7254014000091901524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line of Sight Renderer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8144591835970293115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -490,6 +490,12 @@ MonoBehaviour:
   _stats: {fileID: 11400000, guid: 05e6a06c5af93134ab98ff12e2c27265, type: 2}
   _rb: {fileID: 1544650614272011793}
   _col: {fileID: 1544650614272011794}
+  _walkSound: {fileID: 5564989338252753536}
+  _jumpSound: {fileID: 7639427613623515261}
+  _groundCheckOffset: {x: 0, y: 0}
+  _ceilingCheckOffset: {x: 0, y: 0}
+  _capsuleCastSizeSub: {x: 0.03, y: 0}
+  _doDrawCapsuleCast: 1
   _frameVelocity: {x: 0, y: 0}
   _cachedQueryStartInColliders: 0
   _frameLeftGrounded: -3.4028235e+38
@@ -499,8 +505,6 @@ MonoBehaviour:
   _endedJumpEarly: 0
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
-  _walkSound: {fileID: 5564989338252753536}
-  _jumpSound: {fileID: 7639427613623515261}
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -575,7 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3910677852070304181}
   - component: {fileID: 935611806356356915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gravity Gun Hold Pos Dynamic
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -662,7 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9015413029382148144}
   - component: {fileID: 1537812762001953854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -710,7 +714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4706435015038256351}
   - component: {fileID: 7890337222752860588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gravity Gun Pivot
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -857,7 +861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4567007464684713747}
   - component: {fileID: 5458781186100085631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -944,7 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5523806377999030863}
   - component: {fileID: 5994046997020299584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 1 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -991,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3897660017710507255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1081,7 +1085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5736803179467460869}
   - component: {fileID: 645508230476056139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1128,7 +1132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5009306570152855119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1161,7 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7339633733420102879}
   - component: {fileID: 2582611416292188782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21164,7 +21168,7 @@ GameObject:
   - component: {fileID: 6067231537862550237}
   - component: {fileID: 3824142724794578927}
   - component: {fileID: 4949438972427795463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dancing Bezier Two
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21361,7 +21365,7 @@ GameObject:
   - component: {fileID: 2761764928639293013}
   - component: {fileID: 3338190296213247615}
   - component: {fileID: 8506545890294283520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dancing Bezier One
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21555,7 +21559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900920527423540566}
   - component: {fileID: 2634166947417095697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21603,7 +21607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2640481411739123982}
   - component: {fileID: 9139349563892912873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Helper Target Circle
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21690,7 +21694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8366946725509420783}
   - component: {fileID: 946992180780146910}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Interactions
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21836,7 +21840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8703071056466760176}
   - component: {fileID: 2031063011535788243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21884,7 +21888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 641875694838985301}
   - component: {fileID: 5092641012492230278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 1 Child
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -21932,7 +21936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5938088014519075260}
   - component: {fileID: 655961506362276323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22134,7 +22138,7 @@ GameObject:
   - component: {fileID: 1972773391765694499}
   - component: {fileID: 3999558348571070632}
   - component: {fileID: 4606920015138701046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Start To End Line Renderer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22320,7 +22324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1097055951107888268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 1 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22353,7 +22357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8683183516862934374}
   - component: {fileID: 6450615699826831256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22474,6 +22478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f093b372679e41c4d969a18a33570e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _settings: {fileID: 11400000, guid: ebc35ed475dd2bd42987d61b9ddf07b8, type: 2}
   _gravigunPivot: {fileID: 4706435015038256351}
   _gravigunHoldPosDynamic: {fileID: 3910677852070304181}
   _gravigunHoldPosStatic: {fileID: 5252242024336338537}
@@ -22482,35 +22487,13 @@ MonoBehaviour:
   _bezierLineOneRenderer: {fileID: 4869278425028137206}
   _bezierLineTwoRenderer: {fileID: 7619700515274417229}
   _holdLineRenderer: {fileID: 3999558348571070632}
-  _defaultLineOfSightColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
-  _validTargetLineColor: {r: 0.9960785, g: 0.5529412, b: 0.09411766, a: 1}
-  _canPushColor: {r: 0, g: 1, b: 0.8666668, a: 1}
-  _tooHeavyColor: {r: 1, g: 0, b: 0, a: 1}
   _gravigunLaunch: {fileID: 1602769411939103341}
   _gravigunGrab: {fileID: 4183361050090080608}
   _gravigunDrop: {fileID: 1335914123245867777}
   _gravigunNoTarget: {fileID: 2248548241929023302}
   _gravigunPull: {fileID: 2296433349308652470}
   _gravigunTooHeavy: {fileID: 3587898526216939860}
-  _maxMass: 5
-  _maxVelocity: 5
-  _pushRange: 2.5
-  _focusedMoveMaxSpeed: 25
-  _grabRange: 0.25
-  _WheelMoveMaxDistance: 6
-  _grabDistanceBreak: 100
-  _pullPushCooldown: 0.2
-  _lineRaycastMask:
-    serializedVersion: 2
-    m_Bits: 641
-  _maxRaycastDistance: 100
-  _pullForce: 10
-  _pushForce: 20
-  _rotateSpeed: 600
-  _WheelMoveSpeed: 10
-  _focusedMoveBaseSpeed: 6
-  _focusedMoveStrengthExponent: 1.5
-  _blockingObjectTimeBreak: 1
+  _standingOnCheckBoxHeight: 1
   doDebugLog: 0
   _focusedObject: {fileID: 0}
   _currentLookDir: {x: 0, y: 0}
@@ -22529,7 +22512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8994299758954431388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22619,7 +22602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7860676292723480327}
   - component: {fileID: 1616940658533811211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22772,7 +22755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1733592265084482575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 1 Parent
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -22805,7 +22788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5467021884499277630}
   - component: {fileID: 5394026612346790712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gravity Gun Sprite
   m_TagString: Player
   m_Icon: {fileID: 0}

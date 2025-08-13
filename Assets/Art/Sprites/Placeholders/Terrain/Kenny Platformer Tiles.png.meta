@@ -626,3785 +626,3785 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tileset_forTiled_0
+      name: Kenny Platformer Tiles_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 951
-        width: 72
-        height: 72
+        x: 0
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c841fef0fe528b000800000000000000
-      internalID: 51833104409498764
+      spriteID: 5e28ae0365485da49a57ddc8c2534d25
+      internalID: -434239082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_1
+      name: Kenny Platformer Tiles_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 925
-        width: 7
-        height: 26
+        x: 72
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2ce005b4cbbb1c700800000000000000
-      internalID: 558934246162435778
+      spriteID: 7153ec3c040502a4eaf7c771f444b834
+      internalID: -1183139326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_2
+      name: Kenny Platformer Tiles_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 951
-        width: 72
-        height: 72
+        x: 144
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be61f572ab5df4b20800000000000000
-      internalID: 3120948062292219627
+      spriteID: 34e0857c9005bae4caec7cdd39f868ef
+      internalID: 1059105761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_3
+      name: Kenny Platformer Tiles_3
       rect:
         serializedVersion: 2
-        x: 73
-        y: 879
-        width: 72
-        height: 72
+        x: 216
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07ac0752ecfbe10a0800000000000000
-      internalID: -6908873886227445136
+      spriteID: e16cab1273db7904882c0a54f456d36c
+      internalID: -2129505858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_4
+      name: Kenny Platformer Tiles_4
       rect:
         serializedVersion: 2
-        x: 145
-        y: 951
-        width: 72
-        height: 72
+        x: 288
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ec28acf8ae3c20d0800000000000000
-      internalID: -3446310719330964249
+      spriteID: ff6aa72c4c2c25f45a332470785dfb7d
+      internalID: 982608401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_5
+      name: Kenny Platformer Tiles_5
       rect:
         serializedVersion: 2
-        x: 145
-        y: 925
-        width: 7
-        height: 26
+        x: 360
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03eda587becbdcda0800000000000000
-      internalID: -5922870215399776720
+      spriteID: 0ee6943efb05020479deb870b65e7d12
+      internalID: 755711263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_6
+      name: Kenny Platformer Tiles_6
       rect:
         serializedVersion: 2
-        x: 217
-        y: 951
-        width: 72
-        height: 72
+        x: 432
+        y: 936
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cb5864b7b2c10b250800000000000000
-      internalID: 5958293280088556988
+      spriteID: a2f7b0666154a2f4d8b2118824e97796
+      internalID: -1094569001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_7
+      name: Kenny Platformer Tiles_7
       rect:
         serializedVersion: 2
-        x: 217
-        y: 909
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b22c9394113e5ed40800000000000000
-      internalID: 5613142173969662507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_8
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 951
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4f135529d4952d60800000000000000
-      internalID: 7864855984627457871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_9
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 909
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11ea97e43113c5b50800000000000000
-      internalID: 6583190714299559441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_10
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 951
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2322fdef5baf924c0800000000000000
-      internalID: -4311639508658478542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_11
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 909
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a777bee89ffa59e0800000000000000
-      internalID: -1631710882663270494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_12
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 951
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0993673c14be2590800000000000000
-      internalID: -7697016679848240882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_13
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d5472b249a1d8080800000000000000
-      internalID: -9183654841457097263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_14
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fda6fcd798cf82a0800000000000000
-      internalID: -6732942363322831373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_15
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 837
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6594701cef7203ac0800000000000000
-      internalID: -3877555304052340394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_16
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcd264c0193839710800000000000000
-      internalID: 1698846143448231373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_17
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50b33a8f3f5a30290800000000000000
-      internalID: -7925308451974857979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_18
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 105d1641b0eb2e280800000000000000
-      internalID: -9015434549246438143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_19
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 807
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b27ec05047cd0710800000000000000
-      internalID: 1661202916617122488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_20
-      rect:
-        serializedVersion: 2
-        x: 516
-        y: 879
-        width: 50
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2de62a5eb9c873410800000000000000
-      internalID: 1456787605678091986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_21
-      rect:
-        serializedVersion: 2
-        x: 516
-        y: 807
-        width: 50
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12e81068a67a9ac50800000000000000
-      internalID: 6677051998510091809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_22
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 879
-        width: 50
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b74c24cec2e95240800000000000000
-      internalID: 4781101857112868793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_23
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 693c84e9baaebb740800000000000000
-      internalID: 5168983020153652118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_24
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8464d53bd2965050800000000000000
-      internalID: 5788975841229956236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_25
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5152675be7371660800000000000000
-      internalID: 7356410000255897947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_26
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3795c05490916160800000000000000
-      internalID: 7017048661104629567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_27
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23deb74b4870c82c0800000000000000
-      internalID: -4428156067066942158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_28
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05e73d3f1f9c37570800000000000000
-      internalID: 8463330165774319184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_29
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a30836782cf6bea0800000000000000
-      internalID: -5857217014636477530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_30
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82aa78753d29a4910800000000000000
-      internalID: 1822430435629050408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_31
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f0b4f974e0cf2350800000000000000
-      internalID: 5994221716584575217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_32
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 807
-        width: 50
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6532b5d47563a390800000000000000
-      internalID: -7808285776454470294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_33
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b46be423b3a2a8100800000000000000
-      internalID: 110947574559454795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_34
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 807
-        width: 50
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a09c9e64c533d940800000000000000
-      internalID: 5319654702640304294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_35
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3354979b9a2bb07f0800000000000000
-      internalID: -645225679566584525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_36
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2573fa5eb861bce0800000000000000
-      internalID: -1391215643101792977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_37
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7101a048e2c861420800000000000000
-      internalID: 2600419966264676375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_38
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 735
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7dcec28c7bab578c0800000000000000
-      internalID: -4002087395348648745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_39
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 709
-        width: 7
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b9bc281ecb4113a0800000000000000
-      internalID: -6696487822382286413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_40
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 663
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ded26ed36578bc740800000000000000
-      internalID: 5173377401440579053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_41
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 709
-        width: 7
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2704286fe7da5df50800000000000000
-      internalID: 6905616364455739506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_42
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 693
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa7b1f7682de4d8d0800000000000000
-      internalID: -2822370308656089174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_43
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 693
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1816b2fd8ee60f340800000000000000
-      internalID: 4895534741407359361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_44
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 693
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 486b0b04d8fa83490800000000000000
-      internalID: -7766264536189847932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_45
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 715
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9706a5b977ae8d9c0800000000000000
-      internalID: -3902111277688135559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_46
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 663
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3788f1c0f6a0eec30800000000000000
-      internalID: 4390458158793853043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_47
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 715
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd6a346448c6c0e40800000000000000
-      internalID: 5623989350049228507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_48
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 692
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4212dbb6bd9b79830800000000000000
-      internalID: 4077932339663806756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_49
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 692
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0583c30c5acfd3f30800000000000000
-      internalID: 4557076186793785424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_50
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 692
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3b10fff2b6c2c4d0800000000000000
-      internalID: -3115709520086557891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_51
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0cb656894558e4f0800000000000000
-      internalID: -799295159583458294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_52
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 814b7b9a2dede0250800000000000000
-      internalID: 5912908357155927064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_53
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 621
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2ea9da10262bcad0800000000000000
-      internalID: -2681007233837715923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_54
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c7624eabc7d04fa0800000000000000
-      internalID: -5818413448760760375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_55
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0097d7a5f1947b7f0800000000000000
-      internalID: -596928026592315136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_56
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1e9095d1b8400940800000000000000
-      internalID: 5260284293398175262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_57
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a775364da5826f7b0800000000000000
-      internalID: -5190917149922470022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_58
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e0528a4b6728a540800000000000000
-      internalID: 5019305126469456096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_59
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f518cb618d657d660800000000000000
-      internalID: 7410487197955817823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_60
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 620
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56bca5713fd258800800000000000000
-      internalID: 613947446298069861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_61
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3452bb4c329e8e370800000000000000
-      internalID: 8352181848792311107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_62
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec76d8d41246290c0800000000000000
-      internalID: -4570480577629820978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_63
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 186d020ce872b79b0800000000000000
-      internalID: -5081424260495255935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_64
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 591
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c49350b6e2884200800000000000000
-      internalID: 164525313711379656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_65
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71df3032423237a90800000000000000
-      internalID: -7317466331433665257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_66
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 499
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e30b6a7dbd27d1b00800000000000000
-      internalID: 800922597283246142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_67
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79a19668ddf17b170800000000000000
-      internalID: 8194053083327175319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_68
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 447
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 777e1bd2623294ab0800000000000000
-      internalID: -5023445262472714377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_69
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d030141e487dc3780800000000000000
-      internalID: -8701843414271851763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_70
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 499
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d30e7c5595c63000800000000000000
-      internalID: 15416894034936784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_71
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57d84e0cc938aa1e0800000000000000
-      internalID: -2185789959860613771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_72
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 32081ee83c6e75a10800000000000000
-      internalID: 1898239495550107683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_73
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b709cd8db33ea92b0800000000000000
-      internalID: -5576895342364028805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_74
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0883a77dccb586ee0800000000000000
-      internalID: -1267662359758227328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_75
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4ef2de7f399a9850800000000000000
-      internalID: 6384583919740845643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_76
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 121920b3580f8dce0800000000000000
-      internalID: -1380088830777716447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_77
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f60e5e367eb4ef0f0800000000000000
-      internalID: -1081343403336802193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_78
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bdd1a3e72ed95d20800000000000000
-      internalID: 3267887267538132402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_79
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 499
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4019f9016d55d000800000000000000
-      internalID: 60056841399898188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_80
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67bf955767d8b8240800000000000000
-      internalID: 4795081768180513654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_81
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 447
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10b2bc625dd2fa640800000000000000
-      internalID: 5093340097081453313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_82
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09cb4313663e0af10800000000000000
-      internalID: 2279071439501180048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_83
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 499
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cef658be60b303ca0800000000000000
-      internalID: -6039262199396601876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_84
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d1454ffa50dfaf80800000000000000
-      internalID: -8093020916113129008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_85
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12f1157f469df4ba0800000000000000
-      internalID: -6102419942394487007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_86
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2260bf092c68b0c0800000000000000
-      internalID: -4559775699099950546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_87
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18e918910c7813e40800000000000000
-      internalID: 5634433867948596865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_88
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5967cf90d8d2fbe80800000000000000
-      internalID: -8160753915990870379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_89
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 476
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ddf0f4ec7699d3fd0800000000000000
-      internalID: -2360561958550302755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_90
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 519
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d35dcd45714c82b10800000000000000
-      internalID: 1957029642579531069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_91
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1211affe1ffb63340800000000000000
-      internalID: 4843269495117713697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_92
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f128a23621ddad180800000000000000
-      internalID: -9089709826851044833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_93
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 404
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38dc65a78877e44c0800000000000000
-      internalID: -4301369166040478333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_94
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c91c8e128a8f236d0800000000000000
-      internalID: -3012071799750344292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_95
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea294c061ea4c3450800000000000000
-      internalID: 6069808729640178350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_96
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0745917c010b81ef0800000000000000
-      internalID: -137166202528508816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_97
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 309bb91c51c9a3d40800000000000000
-      internalID: 5564931906826123523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_98
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 418236580fff737c0800000000000000
-      internalID: -4091520327947704300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_99
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51ef800071f49b110800000000000000
-      internalID: 1277138929539677717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_100
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 404
-        width: 72
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b758d8ca1e82da970800000000000000
-      internalID: 8767708999287932283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_101
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a40f504525c008390800000000000000
-      internalID: -7818235405378654134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_102
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b5b03763f560c360800000000000000
-      internalID: 7187857101366015409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_103
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27c03a743649f0e10800000000000000
-      internalID: 2166113099913038962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_104
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 375
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b8f7d6cf8410b2b0800000000000000
-      internalID: -5570930131308382024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_105
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a69fae6c7f9280250800000000000000
-      internalID: 5911020655094724970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_106
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b74efaaf5a8892f50800000000000000
-      internalID: 6857162154105103483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_107
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d15c73f020bb9560800000000000000
-      internalID: 7321639274791326162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_108
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1becc35fbc60303d0800000000000000
-      internalID: -3241739833714094415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_109
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb1a3d3e86be1a6a0800000000000000
-      internalID: -6439607156431674945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_110
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb4777d602cb2c6c0800000000000000
-      internalID: -4124527461256432449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_111
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b94becd07e63fc80800000000000000
-      internalID: -8290161058037151305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_112
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34aeddbf326cac6e0800000000000000
-      internalID: -1816421641838794173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_113
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 303
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f15b671aee731930800000000000000
-      internalID: 4112770428599751159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_114
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 303
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24504fc662299bdf0800000000000000
-      internalID: -163939217687968446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_115
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 303
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 148b8afcddd02e7f0800000000000000
-      internalID: -584889755281868735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_116
-      rect:
-        serializedVersion: 2
-        x: 797
-        y: 305
-        width: 64
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbd35571702e64390800000000000000
-      internalID: -7834325981680288323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_117
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 279
-        width: 7
+        x: 65
+        y: 910
+        width: 5
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7fe9130e5d1cf58a0800000000000000
-      internalID: -6314115028216602889
+      spriteID: 4b2de977742eab74faa376307c448601
+      internalID: 551621839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_118
+      name: Kenny Platformer Tiles_8
       rect:
         serializedVersion: 2
-        x: 73
-        y: 231
-        width: 72
-        height: 72
+        x: 72
+        y: 864
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a503fb75d181f5360800000000000000
-      internalID: 7160468446847643738
+      spriteID: b3984221b1164274882766c7f3a2e882
+      internalID: 1683257811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_119
+      name: Kenny Platformer Tiles_9
       rect:
         serializedVersion: 2
-        x: 145
-        y: 279
-        width: 7
+        x: 144
+        y: 910
+        width: 5
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b63aedf792a6c150800000000000000
-      internalID: 5892575936144619188
+      spriteID: 4331d58f53c1ca246b80a7ecf5824069
+      internalID: -1073669968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_120
+      name: Kenny Platformer Tiles_10
       rect:
         serializedVersion: 2
-        x: 217
-        y: 261
-        width: 72
-        height: 42
+        x: 216
+        y: 894
+        width: 70
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07845b8cea2986bb0800000000000000
-      internalID: -4942539311649830800
+      spriteID: 970c187970a8dca428b272c2be5086c7
+      internalID: -1891626573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_121
+      name: Kenny Platformer Tiles_11
       rect:
         serializedVersion: 2
-        x: 289
-        y: 261
-        width: 72
-        height: 42
+        x: 288
+        y: 894
+        width: 70
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 913f453abf9b77c60800000000000000
-      internalID: 7815920168752968473
+      spriteID: 1a38d503d388f7d4ab5e45e92feab96d
+      internalID: 415869456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_122
+      name: Kenny Platformer Tiles_12
       rect:
         serializedVersion: 2
-        x: 361
-        y: 261
-        width: 72
-        height: 42
+        x: 360
+        y: 894
+        width: 70
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f681cbdd28ce4b910800000000000000
-      internalID: 1852365393566111855
+      spriteID: 44ed5e84b46201444862aaa22c96426c
+      internalID: -1254101879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_123
+      name: Kenny Platformer Tiles_13
       rect:
         serializedVersion: 2
-        x: 526
-        y: 233
-        width: 30
+        x: 503
+        y: 864
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8efa0a88cece047816d68d97d8eb82
+      internalID: -116583456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 864
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba7cb1010f8de04bba8617efd132fc7
+      internalID: 1522057979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f248787ffc75cc94b9196d92d3c6ef5a
+      internalID: -1563750202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbc920ead5e80a42976191cc6aa731a
+      internalID: -101655813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 822
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ff61c41ac5bf24f898e164801a2afc
+      internalID: 949484240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29d44498ecca8745bfd6d866903873e
+      internalID: 274822976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3779cb22af83524c91a89418342a977
+      internalID: 2061897589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d84df5ca3375264092acea33972a502
+      internalID: -102415335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 792
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089254a5daaa4d74d8c305b1e024b5b2
+      internalID: 831573370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 792
+        width: 71
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fc419b6138f3986f0800000000000000
-      internalID: -681944036315425585
+      spriteID: 46b5b1281d022d14cbf109c99d52b4e7
+      internalID: 322105152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_124
+      name: Kenny Platformer Tiles_23
       rect:
         serializedVersion: 2
-        x: 597
-        y: 233
-        width: 30
-        height: 69
+        x: 575
+        y: 792
+        width: 73
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0531e8d21b0bd42b0800000000000000
-      internalID: -5598624486731672752
+      spriteID: ca4fc9b46cacce443bee8c901cdc87ba
+      internalID: -94177588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_125
+      name: Kenny Platformer Tiles_24
       rect:
         serializedVersion: 2
-        x: 670
-        y: 233
-        width: 30
-        height: 52
+        x: 648
+        y: 792
+        width: 72
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8971a7dfebb00c680800000000000000
-      internalID: -8736970362174433384
+      spriteID: bc0596cab68a7594c951ad9f4941907e
+      internalID: 760556476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_126
+      name: Kenny Platformer Tiles_25
       rect:
         serializedVersion: 2
-        x: 748
-        y: 231
-        width: 18
+        x: 0
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ea0c94453d9574599de748b72ded79
+      internalID: -1368020941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a416d30971a46bb4dbff47ba0c805f3d
+      internalID: -202258116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8741a845b559542a021371a17dcc9a
+      internalID: -1565099764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d884675f8dac8214c828f05363a6b431
+      internalID: -935130805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e207a7e274eb3364eb40dced7a23b4e5
+      internalID: -1143038560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ac3ae2acfeb1e4894986c1bb22d1dd
+      internalID: 552981033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd25a0b91b4d3e41b1b26b715e94a0b
+      internalID: -17683757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb5a4df8cd1b194fa2702a0c372e945
+      internalID: -102015683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18ae69c1b3285f4f8207cad509dc0e6
+      internalID: 992561588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c3d766cd8d907488bfaa265d617597
+      internalID: 1920065350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18b562e2b976c548b3889766c9e9b6a
+      internalID: 70194976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a4233da55d54046851cf45fde07d9e
+      internalID: -1966984230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b47c7ed203401d478574bc434e91a7a
+      internalID: 479735207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 720
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8a66cdafceb1a4c803b9a580afaad3
+      internalID: -263428158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 694
+        width: 5
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c8ee67fe4d851409aededba6bfd4a5
+      internalID: -25079941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e143baafd9adee4eba6e98247b8643e
+      internalID: 1290802661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 694
+        width: 5
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f158043e864cab4bbaa622c7c75c80f
+      internalID: 908038773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e59dff7084dd3f4591556ce945a5c55
+      internalID: 1360251325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 647
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4c908834ecfe849b60ff4f33e20f7b
+      internalID: -29141478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ea035b493873543b84bb0addeaedb8
+      internalID: -1642570483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 700
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1066045ed60165b48888c53a73631dea
+      internalID: 1001194495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18ee5694dc78bd4fa768ff0ed1edbc7
+      internalID: 1103469983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 700
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab07167032120140b1bc24a5c1687ce
+      internalID: 882066648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 647
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59c4f9be68c08f4ead82100a7f3a8fe
+      internalID: 738238848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 648
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87f97c80a77606468063bb0a952e7d4
+      internalID: -834853829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 647
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168558007ec83bf48af7c97b1cb44cf9
+      internalID: 1093337443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd00fb68580b24438f83ba80f1a2de4
+      internalID: 1387194064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b8fb02dff3ece4d944f2f6de861e7a
+      internalID: -1008378989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 606
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d86b9aa85e161a4f8c9bf4f3c31fc1f
+      internalID: 79910523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffa9787168f86249965b4a9c194fbb1
+      internalID: -1742366897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda3c03346bbeda4cb3b24888a55678c
+      internalID: 1881692265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_56
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6121e077a5da6244b3775022a30bd9c
+      internalID: -94925673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c36a969ed7ee042a2bbaa004b6dbed
+      internalID: 696478604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_58
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e151dc99a696d419d02793837dbd1f
+      internalID: -86981526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_59
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de7830840157d84f83600344cf53132
+      internalID: 2060015362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_60
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 575
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbb74ff765543840a292ca8276e5a76
+      internalID: -1398360315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_61
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2cdfba4a6c1c741b80b2b6bb4b26f6
+      internalID: -1594966663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_62
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78140eac19f8b3b42ab23695840a2689
+      internalID: 239260712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_63
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a047cf23c4dbac458a56f49f919b5a6
+      internalID: 1774952832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_64
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 576
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc1098dc4ec5df4486f95b813a79069
+      internalID: 7973020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e050acab1e2c027489ff7c21b5e32deb
+      internalID: -719381236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_66
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13681584f2b15c34eaad9c6e22e060fc
+      internalID: -1647752938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26874d36e62a6b04088c95528b8383ac
+      internalID: -1451283316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_68
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df214189e889143bd8d55a01ec4393
+      internalID: -1911357130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e092e6a9301684080494d41f1e0670
+      internalID: -1973795101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_70
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4dd98dbb48db644965ad073d2288a5
+      internalID: -318370390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_71
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79b6916393e4df4ba2d7a9d23557f21
+      internalID: 1726881049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_72
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7ca9c4642fc5143923cbd21e2ee1f7
+      internalID: 1580540376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbfc6310c7bc3342a2c7a748d0818c4
+      internalID: -769369148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_74
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37385558782db34abff99a64c4f8864
+      internalID: -986628695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_75
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4932417e481f61941a5fe775c2dbe02b
+      internalID: 1508731009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_76
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e92be66cc889f149867aaa03e5d25ea
+      internalID: 1464550354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_77
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41099ab9fd02b9149bce6a7206ba6776
+      internalID: 893683598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_78
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 504
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ce34740399aae40938f6bdb84c8b2b
+      internalID: 1105423691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_79
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 484
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22387db9899cfb442a443d817bb5665c
+      internalID: -1654625137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_80
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 432
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f36fa94f87defa418c646f3288da4f6
+      internalID: 1110230414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 484
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18165d80f5c2af4cbc492b2126a74c2
+      internalID: 657216817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_82
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 431
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181fc9d88386f664dbde73d3f1bd771f
+      internalID: -1866445821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 430
+        width: 70
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 104d350b550e5e0f0800000000000000
-      internalID: -1088217076304980991
+      spriteID: 4596aafe543e7c64c93fd8f9f1e1834f
+      internalID: 1315956290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_127
+      name: Kenny Platformer Tiles_84
       rect:
         serializedVersion: 2
-        x: 898
-        y: 231
-        width: 7
+        x: 360
+        y: 429
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a37d619808d384d83d541ddc551245
+      internalID: -867756493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_85
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 484
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643d3af2f19316e4ba2baf3258329838
+      internalID: -46033541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_86
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 432
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd4b6f07801524c91a44245e640ee8
+      internalID: 2016318524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_87
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 484
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c8ec495fa185b4ebea280d1ae7e777
+      internalID: -1883391342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_88
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 461
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536a0706c55e4f34785323462e1a32c8
+      internalID: -227266860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_89
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 461
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf15f0c2abe1314887719e060526708
+      internalID: 107444615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_90
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 461
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b93c24e3553654fa83443b3b48ef63
+      internalID: 1313688139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e62a932bd711d46ae67ae278582075
+      internalID: 1250842450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_92
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b019be716beaab44bac74793283bea8
+      internalID: -1622507716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 389
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fa2a1b9bd258841bffc1a4a2a78557
+      internalID: -1798024544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_94
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561adcdea4881df4cb4ad86bc2a8ed85
+      internalID: -2089563621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_95
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349388ffc4f4a4142995ebfd3ed4006a
+      internalID: -1093421062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_96
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d64b51531376443842e2ec87b74e4f
+      internalID: 1809135801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_97
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4f73ed6d927e5429ef18fa58919dea
+      internalID: -1253740930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_98
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba99ff23e8c7e2489727e966abc3673
+      internalID: 1685886859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_99
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4cc4af401c1bf40b5c2f47c5bb4c46
+      internalID: -1832222283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_100
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 359
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5541c21245aaa844e9cf496ddb13ae87
+      internalID: 1045985646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_101
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69dd33429842a546969fc9ff8f803f2
+      internalID: -1029852657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_102
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c57c4374effc804091bb074e3dd5f84
+      internalID: -2006875453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_103
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b940cebbaf0774cad77d90e072a63b
+      internalID: -1544530166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_104
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 360
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d7e0684abebaf4080aaca68138a1fc
+      internalID: 247814419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c648074dd770cd24c812f5ff3767783c
+      internalID: 1869245438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_106
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfa2389cf72bf04193391cec492b686
+      internalID: 1035330670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f5f025d5748cb45a1cf3e52cc1d68b
+      internalID: 269119196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_108
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd4a41a8240b3d4c9ffc47b1b1376bd
+      internalID: 1919749422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0acfd4c03a21434bbad5aa4f5cbc62d
+      internalID: 1605993527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_110
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aeb7bad5ece3a24aba1453b33df8157
+      internalID: -1243679739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_111
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e330126b005e37f48a621cf08e6cdfa8
+      internalID: 406392934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_112
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 288
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d2eccdcdf520547aa612b7cc9e349d
+      internalID: 2002119651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_113
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 70
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5541ff6797f6c3d60800000000000000
-      internalID: 7871288816214938709
+      spriteID: 225f067896450744a80f55823a93948d
+      internalID: 13840570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_128
+      name: Kenny Platformer Tiles_114
       rect:
         serializedVersion: 2
-        x: 793
-        y: 263
-        width: 72
-        height: 7
+        x: 648
+        y: 288
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8731c66e2462b5b50800000000000000
-      internalID: 6582897349107651448
+      spriteID: fbd3199ecab26f54fbc8f497082b89bf
+      internalID: -580633924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_129
+      name: Kenny Platformer Tiles_115
       rect:
         serializedVersion: 2
-        x: 937
-        y: 231
-        width: 72
-        height: 47
+        x: 720
+        y: 288
+        width: 70
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0734d74d714c9b90800000000000000
-      internalID: -7233834895132051698
+      spriteID: 5ee51a5fa8b184d4b967657853f002aa
+      internalID: 535050001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_130
+      name: Kenny Platformer Tiles_116
       rect:
         serializedVersion: 2
-        x: 1
-        y: 159
-        width: 72
+        x: 792
+        y: 287
+        width: 70
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 229ffe1cee97793a0800000000000000
-      internalID: -6658719457681082078
+      spriteID: 20fc5dd62bbbe364d84832d964d1e438
+      internalID: -143371897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_131
+      name: Kenny Platformer Tiles_117
       rect:
         serializedVersion: 2
-        x: 73
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ff13a6b4e1b1a750800000000000000
-      internalID: 6314523748424949744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_132
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 189
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79497885fe850d5e0800000000000000
-      internalID: -1886910458862529385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_133
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5d498423c21cff60800000000000000
-      internalID: 8069345261681986910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_134
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5f660d497a8a0530800000000000000
-      internalID: 3822019487365230428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_135
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1da1d43ffa7ecd290800000000000000
-      internalID: -7864156106408518959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_136
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 964c777e94c669f90800000000000000
-      internalID: -6947246310500613015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_137
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d710f0bd0f5aacf40800000000000000
-      internalID: 5749590328177787261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_138
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 937656c86aa195fc0800000000000000
-      internalID: -3505741532308871367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_139
-      rect:
-        serializedVersion: 2
-        x: 653
-        y: 159
-        width: 66
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5cb0b3107e332f900800000000000000
-      internalID: 716692357956438981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_140
-      rect:
-        serializedVersion: 2
-        x: 724
-        y: 159
-        width: 66
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef1bfd5473bb83e20800000000000000
-      internalID: 3330617770510365182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_141
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7263ac4e3b4d508c0800000000000000
-      internalID: -4033584022137719257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_142
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 159
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db59edc4a15a6a110800000000000000
-      internalID: 1271885477156132285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_143
-      rect:
-        serializedVersion: 2
-        x: 937
-        y: 159
-        width: 72
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f213c3b1e42861cd0800000000000000
-      internalID: -2587737663901781713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_144
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 87
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92d51651c6e2ddfc0800000000000000
-      internalID: -3468565096255365847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_145
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 15
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1034467c6a8d5890800000000000000
-      internalID: -7467660408665133030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_146
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 87
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ee76a640a9c07f20800000000000000
-      internalID: 3418453807391473377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_147
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 15
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1badc69c763801d00800000000000000
-      internalID: 941396803904658097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_148
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 87
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e67ba73e6844b5d0800000000000000
-      internalID: -3047731409605396759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_149
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 15
-        width: 72
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 955b96dc1f8a78760800000000000000
-      internalID: 7460117064249357657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_150
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 87
-        width: 72
+        x: 65
+        y: 264
+        width: 5
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8f9c56d1e0cacb80800000000000000
-      internalID: -8373668480945447027
+      spriteID: 1cfb9e37c13938f41ac4a558976a114d
+      internalID: -465839755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_151
+      name: Kenny Platformer Tiles_118
       rect:
         serializedVersion: 2
-        x: 217
-        y: 15
-        width: 72
+        x: 72
+        y: 216
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0195c2b3a9f98b14bb627abbfb88775f
+      internalID: -31763174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_119
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 264
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a40de1a9689bcb4e907bc0790ea8a04
+      internalID: 441257069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_120
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 215
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144165baf34b23046bd40c285b5e6df2
+      internalID: 1323399545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 214
+        width: 70
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f03191446d2a1ae40800000000000000
-      internalID: 5665988847357989647
+      spriteID: e426a74c842ae4c44b13e5ef6930a99a
+      internalID: 1467774332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_152
+      name: Kenny Platformer Tiles_122
       rect:
         serializedVersion: 2
-        x: 289
-        y: 87
-        width: 72
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81107cabb1c11def0800000000000000
-      internalID: -85256012520029928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tileset_forTiled_153
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 15
-        width: 72
+        x: 360
+        y: 214
+        width: 70
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1dea7af19755e10a0800000000000000
-      internalID: -6908990799629275439
+      spriteID: 9b1e9a23d2be18c44879d1f84a9095dc
+      internalID: 89693720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_154
+      name: Kenny Platformer Tiles_123
       rect:
         serializedVersion: 2
-        x: 361
-        y: 87
-        width: 72
-        height: 72
+        x: 525
+        y: 218
+        width: 28
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4a157c3b298899d0800000000000000
-      internalID: -2767311152228263345
+      spriteID: acce846a89dfb404a87f0afe261d1ee8
+      internalID: -551336486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_155
+      name: Kenny Platformer Tiles_124
       rect:
         serializedVersion: 2
-        x: 361
-        y: 15
-        width: 72
-        height: 72
+        x: 596
+        y: 218
+        width: 28
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b426a15c18ffdfa30800000000000000
-      internalID: 4250834556130320971
+      spriteID: 559d6f7171bd56d4cab3fa5ae305634f
+      internalID: -1538668540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_156
+      name: Kenny Platformer Tiles_125
       rect:
         serializedVersion: 2
-        x: 433
-        y: 87
-        width: 72
-        height: 72
+        x: 669
+        y: 218
+        width: 28
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: afcc1df2e36b47f30800000000000000
-      internalID: 4572479899894402298
+      spriteID: 0d4cec5096101524d94a6c997fcf0380
+      internalID: 2109542063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_157
+      name: Kenny Platformer Tiles_126
       rect:
         serializedVersion: 2
-        x: 433
-        y: 15
-        width: 72
-        height: 72
+        x: 747
+        y: 216
+        width: 16
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: baec128486906f910800000000000000
-      internalID: 1870693038710443691
+      spriteID: 5d97c7fe61ff091428087464768efb86
+      internalID: 58358562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_158
+      name: Kenny Platformer Tiles_127
       rect:
         serializedVersion: 2
-        x: 505
-        y: 87
-        width: 72
-        height: 72
+        x: 897
+        y: 216
+        width: 5
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ecc36dafe8748ba10800000000000000
-      internalID: 1925367520120159438
+      spriteID: 743d379883f937e43927d24fa4940d41
+      internalID: 30577550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_159
+      name: Kenny Platformer Tiles_128
       rect:
         serializedVersion: 2
-        x: 505
-        y: 15
-        width: 72
-        height: 72
+        x: 792
+        y: 248
+        width: 70
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1623429a76a0f9610800000000000000
-      internalID: 1630033030467039841
+      spriteID: eaa4ec2b7cad6514ebd7c3dcaf5129f3
+      internalID: -639489027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_160
+      name: Kenny Platformer Tiles_129
       rect:
         serializedVersion: 2
-        x: 577
-        y: 87
-        width: 72
-        height: 72
+        x: 936
+        y: 216
+        width: 70
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4b0de0a34d2d1930800000000000000
-      internalID: 4115495402972449614
+      spriteID: 4aeec7aa544c99c478e2d3c3c725f68f
+      internalID: -887008146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_161
+      name: Kenny Platformer Tiles_130
       rect:
         serializedVersion: 2
-        x: 577
-        y: 15
-        width: 72
-        height: 72
+        x: 0
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94a5190cb38b01910800000000000000
-      internalID: 1806146017348901449
+      spriteID: 1a3701fcbd95cb746b3cf463c03d7bc2
+      internalID: 912286884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_162
+      name: Kenny Platformer Tiles_131
       rect:
         serializedVersion: 2
-        x: 649
-        y: 87
-        width: 72
-        height: 72
+        x: 72
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dcfbc90f9ff2eb0a0800000000000000
-      internalID: -6863996031535890483
+      spriteID: 45065667193dd9d499a7456f77203c8a
+      internalID: 25644383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_163
+      name: Kenny Platformer Tiles_132
       rect:
         serializedVersion: 2
-        x: 649
-        y: 15
-        width: 72
-        height: 72
+        x: 144
+        y: 141
+        width: 70
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 65493d91550ec4db0800000000000000
-      internalID: -4806220046201023402
+      spriteID: 0b61682adda7b1546871b835a9c3aec0
+      internalID: 2071116825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_164
+      name: Kenny Platformer Tiles_133
       rect:
         serializedVersion: 2
-        x: 721
-        y: 87
-        width: 72
-        height: 72
+        x: 216
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5fd30ed7a14d01c10800000000000000
-      internalID: 2022349442935438837
+      spriteID: 9f6d0de218fafbb4793387a7480c510b
+      internalID: 2128050403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_165
+      name: Kenny Platformer Tiles_134
       rect:
         serializedVersion: 2
-        x: 721
-        y: 15
-        width: 72
-        height: 72
+        x: 288
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b158207857465fad0800000000000000
-      internalID: -2669116748208110309
+      spriteID: edef64ccc7bec8f458326ae7fd74a883
+      internalID: 1285843540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_166
+      name: Kenny Platformer Tiles_135
       rect:
         serializedVersion: 2
-        x: 793
-        y: 87
-        width: 72
-        height: 63
+        x: 360
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5e420cbc33b6cf420800000000000000
-      internalID: 2665122949702362341
+      spriteID: 2a8c680117deb854c8779cc0ac6c78dd
+      internalID: 537354669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_167
+      name: Kenny Platformer Tiles_136
       rect:
         serializedVersion: 2
-        x: 793
-        y: 15
-        width: 72
-        height: 72
+        x: 432
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4f42545e0aabb4bf0800000000000000
-      internalID: -338972146732292876
+      spriteID: 6749c91d187db224cab18a8662c3d8ff
+      internalID: -325857931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_168
+      name: Kenny Platformer Tiles_137
       rect:
         serializedVersion: 2
-        x: 865
-        y: 87
-        width: 72
-        height: 63
+        x: 504
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5a841002ea34ecf50800000000000000
-      internalID: 6903529693945874597
+      spriteID: 7527af0752f2388478f73536b2350ed6
+      internalID: -385249898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_169
+      name: Kenny Platformer Tiles_138
       rect:
         serializedVersion: 2
-        x: 865
-        y: 15
-        width: 72
-        height: 72
+        x: 576
+        y: 144
+        width: 70
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da2ee7a1b1988ac60800000000000000
-      internalID: 7829658701685252781
+      spriteID: 978e425a027574b4aad43d2a9a05cdfd
+      internalID: 405172166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_170
+      name: Kenny Platformer Tiles_139
       rect:
         serializedVersion: 2
-        x: 937
-        y: 87
-        width: 72
-        height: 47
+        x: 652
+        y: 144
+        width: 64
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4eb6f51ee17f39c90800000000000000
-      internalID: -7164110870214120476
+      spriteID: f0e548fbd09cdc44eb7896cbdc32cba7
+      internalID: -1851290267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset_forTiled_171
+      name: Kenny Platformer Tiles_140
       rect:
         serializedVersion: 2
-        x: 937
-        y: 15
-        width: 72
-        height: 47
+        x: 723
+        y: 144
+        width: 64
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7eb078c36634ab20800000000000000
-      internalID: 3144698242003943036
+      spriteID: aaf4e057bc7482b4ca341ea3b27d0e20
+      internalID: 122696846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_141
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 144
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce91550ab189a04b8b713a0c8e3aebb
+      internalID: 2010432085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_142
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 144
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f2f5f8912008245b5a49ba5fc37bbf
+      internalID: -1481817519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_143
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 144
+        width: 70
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f0c5e54bd3380429765c287c21d047
+      internalID: 1153053288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be53dc266897eb4892628e70e110702
+      internalID: -1175968640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_145
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e28e85d3e8c2e94da93699fb3a7fec9
+      internalID: -1171782879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_146
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558c376002c7ae549af0df5c7a816a2b
+      internalID: -1183786333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_147
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 72
+        width: 70
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745d8cd2b9efc2e4ba2a4f6ceaf27b6f
+      internalID: -1498935295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_148
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 70
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8663aec89de784da8da319a55ee94b
+      internalID: -432729839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_149
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876b331146468524b8e94180e111017f
+      internalID: -896159867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_150
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1727059d749faca41a3f57db165b7f2b
+      internalID: 99675286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_151
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d43a549ee0b4b40bd22a0dea3224ae
+      internalID: -1551824685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_152
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006aa463e4496a64b8ed9fd6e32c4e3d
+      internalID: 423880679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_153
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cc8a7176fef3b42a3161992d463baa
+      internalID: 1008134630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_154
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 72
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5a973496c35a6468d3e6b1e40764de
+      internalID: -1770465187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_155
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 72
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362909ab3a60fc7429b05eed2c79fa90
+      internalID: 60347468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_156
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 72
+        width: 70
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8693ddada1742a439097afdd089245c
+      internalID: 1449659340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_157
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 72
+        width: 70
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28ac7fc0a87e534db50910605d76a32
+      internalID: 2022969538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_158
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfb0e9282626314b8ba078186480f9f
+      internalID: -1462694110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_159
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5285f8ed99f44ba4fa7816f949781b36
+      internalID: 1933690335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_160
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c6977586598a94497477a47f87747f
+      internalID: 903551049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_161
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2b554a051f504488815033730f392d
+      internalID: -672931859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_162
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edff6a98b7732174b82dfe61fc01b179
+      internalID: 1807459109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_163
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16caf159244a2e478b2b908ebdf50c8
+      internalID: 1097924650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_164
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78289b26bc0fb2469a19925b0921475
+      internalID: 897403578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_165
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ac7e6a3a4f27d4eb386c0ba110b55f
+      internalID: -494646532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_166
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a894251432ebb5c4c8dd12cd35c8439d
+      internalID: -285748482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_167
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f251ddd616ec80640ad670d9fb765feb
+      internalID: 1312848205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_168
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3269ac390ba50ee4bbe57d74e09bb061
+      internalID: -1885419778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_169
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01d0cda2016d834b83441ea124eb0b8
+      internalID: -2004657381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_170
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73c6acbb980967478d9f26144b76f20
+      internalID: 918717171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kenny Platformer Tiles_171
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 70
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae218bd5446f0c43b8388af0acae247
+      internalID: 390411468
       vertices: []
       indices: 
       edges: []
@@ -4413,7 +4413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c833576c00190f74eb3cfd0a98df3d3d
     internalID: 0
     vertices: []
     indices: 
@@ -4423,178 +4423,178 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tileset_forTiled_0: 51833104409498764
-      tileset_forTiled_1: 558934246162435778
-      tileset_forTiled_10: -4311639508658478542
-      tileset_forTiled_100: 8767708999287932283
-      tileset_forTiled_101: -7818235405378654134
-      tileset_forTiled_102: 7187857101366015409
-      tileset_forTiled_103: 2166113099913038962
-      tileset_forTiled_104: -5570930131308382024
-      tileset_forTiled_105: 5911020655094724970
-      tileset_forTiled_106: 6857162154105103483
-      tileset_forTiled_107: 7321639274791326162
-      tileset_forTiled_108: -3241739833714094415
-      tileset_forTiled_109: -6439607156431674945
-      tileset_forTiled_11: -1631710882663270494
-      tileset_forTiled_110: -4124527461256432449
-      tileset_forTiled_111: -8290161058037151305
-      tileset_forTiled_112: -1816421641838794173
-      tileset_forTiled_113: 4112770428599751159
-      tileset_forTiled_114: -163939217687968446
-      tileset_forTiled_115: -584889755281868735
-      tileset_forTiled_116: -7834325981680288323
-      tileset_forTiled_117: -6314115028216602889
-      tileset_forTiled_118: 7160468446847643738
-      tileset_forTiled_119: 5892575936144619188
-      tileset_forTiled_12: -7697016679848240882
-      tileset_forTiled_120: -4942539311649830800
-      tileset_forTiled_121: 7815920168752968473
-      tileset_forTiled_122: 1852365393566111855
-      tileset_forTiled_123: -681944036315425585
-      tileset_forTiled_124: -5598624486731672752
-      tileset_forTiled_125: -8736970362174433384
-      tileset_forTiled_126: -1088217076304980991
-      tileset_forTiled_127: 7871288816214938709
-      tileset_forTiled_128: 6582897349107651448
-      tileset_forTiled_129: -7233834895132051698
-      tileset_forTiled_13: -9183654841457097263
-      tileset_forTiled_130: -6658719457681082078
-      tileset_forTiled_131: 6314523748424949744
-      tileset_forTiled_132: -1886910458862529385
-      tileset_forTiled_133: 8069345261681986910
-      tileset_forTiled_134: 3822019487365230428
-      tileset_forTiled_135: -7864156106408518959
-      tileset_forTiled_136: -6947246310500613015
-      tileset_forTiled_137: 5749590328177787261
-      tileset_forTiled_138: -3505741532308871367
-      tileset_forTiled_139: 716692357956438981
-      tileset_forTiled_14: -6732942363322831373
-      tileset_forTiled_140: 3330617770510365182
-      tileset_forTiled_141: -4033584022137719257
-      tileset_forTiled_142: 1271885477156132285
-      tileset_forTiled_143: -2587737663901781713
-      tileset_forTiled_144: -3468565096255365847
-      tileset_forTiled_145: -7467660408665133030
-      tileset_forTiled_146: 3418453807391473377
-      tileset_forTiled_147: 941396803904658097
-      tileset_forTiled_148: -3047731409605396759
-      tileset_forTiled_149: 7460117064249357657
-      tileset_forTiled_15: -3877555304052340394
-      tileset_forTiled_150: -8373668480945447027
-      tileset_forTiled_151: 5665988847357989647
-      tileset_forTiled_152: -85256012520029928
-      tileset_forTiled_153: -6908990799629275439
-      tileset_forTiled_154: -2767311152228263345
-      tileset_forTiled_155: 4250834556130320971
-      tileset_forTiled_156: 4572479899894402298
-      tileset_forTiled_157: 1870693038710443691
-      tileset_forTiled_158: 1925367520120159438
-      tileset_forTiled_159: 1630033030467039841
-      tileset_forTiled_16: 1698846143448231373
-      tileset_forTiled_160: 4115495402972449614
-      tileset_forTiled_161: 1806146017348901449
-      tileset_forTiled_162: -6863996031535890483
-      tileset_forTiled_163: -4806220046201023402
-      tileset_forTiled_164: 2022349442935438837
-      tileset_forTiled_165: -2669116748208110309
-      tileset_forTiled_166: 2665122949702362341
-      tileset_forTiled_167: -338972146732292876
-      tileset_forTiled_168: 6903529693945874597
-      tileset_forTiled_169: 7829658701685252781
-      tileset_forTiled_17: -7925308451974857979
-      tileset_forTiled_170: -7164110870214120476
-      tileset_forTiled_171: 3144698242003943036
-      tileset_forTiled_18: -9015434549246438143
-      tileset_forTiled_19: 1661202916617122488
-      tileset_forTiled_2: 3120948062292219627
-      tileset_forTiled_20: 1456787605678091986
-      tileset_forTiled_21: 6677051998510091809
-      tileset_forTiled_22: 4781101857112868793
-      tileset_forTiled_23: 5168983020153652118
-      tileset_forTiled_24: 5788975841229956236
-      tileset_forTiled_25: 7356410000255897947
-      tileset_forTiled_26: 7017048661104629567
-      tileset_forTiled_27: -4428156067066942158
-      tileset_forTiled_28: 8463330165774319184
-      tileset_forTiled_29: -5857217014636477530
-      tileset_forTiled_3: -6908873886227445136
-      tileset_forTiled_30: 1822430435629050408
-      tileset_forTiled_31: 5994221716584575217
-      tileset_forTiled_32: -7808285776454470294
-      tileset_forTiled_33: 110947574559454795
-      tileset_forTiled_34: 5319654702640304294
-      tileset_forTiled_35: -645225679566584525
-      tileset_forTiled_36: -1391215643101792977
-      tileset_forTiled_37: 2600419966264676375
-      tileset_forTiled_38: -4002087395348648745
-      tileset_forTiled_39: -6696487822382286413
-      tileset_forTiled_4: -3446310719330964249
-      tileset_forTiled_40: 5173377401440579053
-      tileset_forTiled_41: 6905616364455739506
-      tileset_forTiled_42: -2822370308656089174
-      tileset_forTiled_43: 4895534741407359361
-      tileset_forTiled_44: -7766264536189847932
-      tileset_forTiled_45: -3902111277688135559
-      tileset_forTiled_46: 4390458158793853043
-      tileset_forTiled_47: 5623989350049228507
-      tileset_forTiled_48: 4077932339663806756
-      tileset_forTiled_49: 4557076186793785424
-      tileset_forTiled_5: -5922870215399776720
-      tileset_forTiled_50: -3115709520086557891
-      tileset_forTiled_51: -799295159583458294
-      tileset_forTiled_52: 5912908357155927064
-      tileset_forTiled_53: -2681007233837715923
-      tileset_forTiled_54: -5818413448760760375
-      tileset_forTiled_55: -596928026592315136
-      tileset_forTiled_56: 5260284293398175262
-      tileset_forTiled_57: -5190917149922470022
-      tileset_forTiled_58: 5019305126469456096
-      tileset_forTiled_59: 7410487197955817823
-      tileset_forTiled_6: 5958293280088556988
-      tileset_forTiled_60: 613947446298069861
-      tileset_forTiled_61: 8352181848792311107
-      tileset_forTiled_62: -4570480577629820978
-      tileset_forTiled_63: -5081424260495255935
-      tileset_forTiled_64: 164525313711379656
-      tileset_forTiled_65: -7317466331433665257
-      tileset_forTiled_66: 800922597283246142
-      tileset_forTiled_67: 8194053083327175319
-      tileset_forTiled_68: -5023445262472714377
-      tileset_forTiled_69: -8701843414271851763
-      tileset_forTiled_7: 5613142173969662507
-      tileset_forTiled_70: 15416894034936784
-      tileset_forTiled_71: -2185789959860613771
-      tileset_forTiled_72: 1898239495550107683
-      tileset_forTiled_73: -5576895342364028805
-      tileset_forTiled_74: -1267662359758227328
-      tileset_forTiled_75: 6384583919740845643
-      tileset_forTiled_76: -1380088830777716447
-      tileset_forTiled_77: -1081343403336802193
-      tileset_forTiled_78: 3267887267538132402
-      tileset_forTiled_79: 60056841399898188
-      tileset_forTiled_8: 7864855984627457871
-      tileset_forTiled_80: 4795081768180513654
-      tileset_forTiled_81: 5093340097081453313
-      tileset_forTiled_82: 2279071439501180048
-      tileset_forTiled_83: -6039262199396601876
-      tileset_forTiled_84: -8093020916113129008
-      tileset_forTiled_85: -6102419942394487007
-      tileset_forTiled_86: -4559775699099950546
-      tileset_forTiled_87: 5634433867948596865
-      tileset_forTiled_88: -8160753915990870379
-      tileset_forTiled_89: -2360561958550302755
-      tileset_forTiled_9: 6583190714299559441
-      tileset_forTiled_90: 1957029642579531069
-      tileset_forTiled_91: 4843269495117713697
-      tileset_forTiled_92: -9089709826851044833
-      tileset_forTiled_93: -4301369166040478333
-      tileset_forTiled_94: -3012071799750344292
-      tileset_forTiled_95: 6069808729640178350
-      tileset_forTiled_96: -137166202528508816
-      tileset_forTiled_97: 5564931906826123523
-      tileset_forTiled_98: -4091520327947704300
-      tileset_forTiled_99: 1277138929539677717
+      Kenny Platformer Tiles_0: -434239082
+      Kenny Platformer Tiles_1: -1183139326
+      Kenny Platformer Tiles_10: -1891626573
+      Kenny Platformer Tiles_100: 1045985646
+      Kenny Platformer Tiles_101: -1029852657
+      Kenny Platformer Tiles_102: -2006875453
+      Kenny Platformer Tiles_103: -1544530166
+      Kenny Platformer Tiles_104: 247814419
+      Kenny Platformer Tiles_105: 1869245438
+      Kenny Platformer Tiles_106: 1035330670
+      Kenny Platformer Tiles_107: 269119196
+      Kenny Platformer Tiles_108: 1919749422
+      Kenny Platformer Tiles_109: 1605993527
+      Kenny Platformer Tiles_11: 415869456
+      Kenny Platformer Tiles_110: -1243679739
+      Kenny Platformer Tiles_111: 406392934
+      Kenny Platformer Tiles_112: 2002119651
+      Kenny Platformer Tiles_113: 13840570
+      Kenny Platformer Tiles_114: -580633924
+      Kenny Platformer Tiles_115: 535050001
+      Kenny Platformer Tiles_116: -143371897
+      Kenny Platformer Tiles_117: -465839755
+      Kenny Platformer Tiles_118: -31763174
+      Kenny Platformer Tiles_119: 441257069
+      Kenny Platformer Tiles_12: -1254101879
+      Kenny Platformer Tiles_120: 1323399545
+      Kenny Platformer Tiles_121: 1467774332
+      Kenny Platformer Tiles_122: 89693720
+      Kenny Platformer Tiles_123: -551336486
+      Kenny Platformer Tiles_124: -1538668540
+      Kenny Platformer Tiles_125: 2109542063
+      Kenny Platformer Tiles_126: 58358562
+      Kenny Platformer Tiles_127: 30577550
+      Kenny Platformer Tiles_128: -639489027
+      Kenny Platformer Tiles_129: -887008146
+      Kenny Platformer Tiles_13: -116583456
+      Kenny Platformer Tiles_130: 912286884
+      Kenny Platformer Tiles_131: 25644383
+      Kenny Platformer Tiles_132: 2071116825
+      Kenny Platformer Tiles_133: 2128050403
+      Kenny Platformer Tiles_134: 1285843540
+      Kenny Platformer Tiles_135: 537354669
+      Kenny Platformer Tiles_136: -325857931
+      Kenny Platformer Tiles_137: -385249898
+      Kenny Platformer Tiles_138: 405172166
+      Kenny Platformer Tiles_139: -1851290267
+      Kenny Platformer Tiles_14: 1522057979
+      Kenny Platformer Tiles_140: 122696846
+      Kenny Platformer Tiles_141: 2010432085
+      Kenny Platformer Tiles_142: -1481817519
+      Kenny Platformer Tiles_143: 1153053288
+      Kenny Platformer Tiles_144: -1175968640
+      Kenny Platformer Tiles_145: -1171782879
+      Kenny Platformer Tiles_146: -1183786333
+      Kenny Platformer Tiles_147: -1498935295
+      Kenny Platformer Tiles_148: -432729839
+      Kenny Platformer Tiles_149: -896159867
+      Kenny Platformer Tiles_15: -1563750202
+      Kenny Platformer Tiles_150: 99675286
+      Kenny Platformer Tiles_151: -1551824685
+      Kenny Platformer Tiles_152: 423880679
+      Kenny Platformer Tiles_153: 1008134630
+      Kenny Platformer Tiles_154: -1770465187
+      Kenny Platformer Tiles_155: 60347468
+      Kenny Platformer Tiles_156: 1449659340
+      Kenny Platformer Tiles_157: 2022969538
+      Kenny Platformer Tiles_158: -1462694110
+      Kenny Platformer Tiles_159: 1933690335
+      Kenny Platformer Tiles_16: -101655813
+      Kenny Platformer Tiles_160: 903551049
+      Kenny Platformer Tiles_161: -672931859
+      Kenny Platformer Tiles_162: 1807459109
+      Kenny Platformer Tiles_163: 1097924650
+      Kenny Platformer Tiles_164: 897403578
+      Kenny Platformer Tiles_165: -494646532
+      Kenny Platformer Tiles_166: -285748482
+      Kenny Platformer Tiles_167: 1312848205
+      Kenny Platformer Tiles_168: -1885419778
+      Kenny Platformer Tiles_169: -2004657381
+      Kenny Platformer Tiles_17: 949484240
+      Kenny Platformer Tiles_170: 918717171
+      Kenny Platformer Tiles_171: 390411468
+      Kenny Platformer Tiles_18: 274822976
+      Kenny Platformer Tiles_19: 2061897589
+      Kenny Platformer Tiles_2: 1059105761
+      Kenny Platformer Tiles_20: -102415335
+      Kenny Platformer Tiles_21: 831573370
+      Kenny Platformer Tiles_22: 322105152
+      Kenny Platformer Tiles_23: -94177588
+      Kenny Platformer Tiles_24: 760556476
+      Kenny Platformer Tiles_25: -1368020941
+      Kenny Platformer Tiles_26: -202258116
+      Kenny Platformer Tiles_27: -1565099764
+      Kenny Platformer Tiles_28: -935130805
+      Kenny Platformer Tiles_29: -1143038560
+      Kenny Platformer Tiles_3: -2129505858
+      Kenny Platformer Tiles_30: 552981033
+      Kenny Platformer Tiles_31: -17683757
+      Kenny Platformer Tiles_32: -102015683
+      Kenny Platformer Tiles_33: 992561588
+      Kenny Platformer Tiles_34: 1920065350
+      Kenny Platformer Tiles_35: 70194976
+      Kenny Platformer Tiles_36: -1966984230
+      Kenny Platformer Tiles_37: 479735207
+      Kenny Platformer Tiles_38: -263428158
+      Kenny Platformer Tiles_39: -25079941
+      Kenny Platformer Tiles_4: 982608401
+      Kenny Platformer Tiles_40: 1290802661
+      Kenny Platformer Tiles_41: 908038773
+      Kenny Platformer Tiles_42: 1360251325
+      Kenny Platformer Tiles_43: -29141478
+      Kenny Platformer Tiles_44: -1642570483
+      Kenny Platformer Tiles_45: 1001194495
+      Kenny Platformer Tiles_46: 1103469983
+      Kenny Platformer Tiles_47: 882066648
+      Kenny Platformer Tiles_48: 738238848
+      Kenny Platformer Tiles_49: -834853829
+      Kenny Platformer Tiles_5: 755711263
+      Kenny Platformer Tiles_50: 1093337443
+      Kenny Platformer Tiles_51: 1387194064
+      Kenny Platformer Tiles_52: -1008378989
+      Kenny Platformer Tiles_53: 79910523
+      Kenny Platformer Tiles_54: -1742366897
+      Kenny Platformer Tiles_55: 1881692265
+      Kenny Platformer Tiles_56: -94925673
+      Kenny Platformer Tiles_57: 696478604
+      Kenny Platformer Tiles_58: -86981526
+      Kenny Platformer Tiles_59: 2060015362
+      Kenny Platformer Tiles_6: -1094569001
+      Kenny Platformer Tiles_60: -1398360315
+      Kenny Platformer Tiles_61: -1594966663
+      Kenny Platformer Tiles_62: 239260712
+      Kenny Platformer Tiles_63: 1774952832
+      Kenny Platformer Tiles_64: 7973020
+      Kenny Platformer Tiles_65: -719381236
+      Kenny Platformer Tiles_66: -1647752938
+      Kenny Platformer Tiles_67: -1451283316
+      Kenny Platformer Tiles_68: -1911357130
+      Kenny Platformer Tiles_69: -1973795101
+      Kenny Platformer Tiles_7: 551621839
+      Kenny Platformer Tiles_70: -318370390
+      Kenny Platformer Tiles_71: 1726881049
+      Kenny Platformer Tiles_72: 1580540376
+      Kenny Platformer Tiles_73: -769369148
+      Kenny Platformer Tiles_74: -986628695
+      Kenny Platformer Tiles_75: 1508731009
+      Kenny Platformer Tiles_76: 1464550354
+      Kenny Platformer Tiles_77: 893683598
+      Kenny Platformer Tiles_78: 1105423691
+      Kenny Platformer Tiles_79: -1654625137
+      Kenny Platformer Tiles_8: 1683257811
+      Kenny Platformer Tiles_80: 1110230414
+      Kenny Platformer Tiles_81: 657216817
+      Kenny Platformer Tiles_82: -1866445821
+      Kenny Platformer Tiles_83: 1315956290
+      Kenny Platformer Tiles_84: -867756493
+      Kenny Platformer Tiles_85: -46033541
+      Kenny Platformer Tiles_86: 2016318524
+      Kenny Platformer Tiles_87: -1883391342
+      Kenny Platformer Tiles_88: -227266860
+      Kenny Platformer Tiles_89: 107444615
+      Kenny Platformer Tiles_9: -1073669968
+      Kenny Platformer Tiles_90: 1313688139
+      Kenny Platformer Tiles_91: 1250842450
+      Kenny Platformer Tiles_92: -1622507716
+      Kenny Platformer Tiles_93: -1798024544
+      Kenny Platformer Tiles_94: -2089563621
+      Kenny Platformer Tiles_95: -1093421062
+      Kenny Platformer Tiles_96: 1809135801
+      Kenny Platformer Tiles_97: -1253740930
+      Kenny Platformer Tiles_98: 1685886859
+      Kenny Platformer Tiles_99: -1832222283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

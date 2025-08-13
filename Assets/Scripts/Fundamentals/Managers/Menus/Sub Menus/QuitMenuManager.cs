@@ -39,6 +39,8 @@ public class QuitMenuManager : MonoBehaviour
     /// </summary>
     public void QuitToMainMenu()
     {
+        Time.timeScale = 1;
+        //float error!
         //LevelManager.Instance.ChangeScene(LevelNames.MainMenu);
     }
 }

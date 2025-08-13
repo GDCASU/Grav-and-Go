@@ -58,7 +58,7 @@ public class PressurePlate2D : MonoBehaviour
     private void Awake()
     {
         _massTargetText.text = requiredMassKg.ToString("0.0");
-        _restY = _plateRB.position.y;
+        _restY = _plateRB.transform.localPosition.y;
         AutoConfigureFrequency();
     }
     
@@ -84,13 +84,13 @@ public class PressurePlate2D : MonoBehaviour
     private void FixedUpdate()
     {
         // If the plate has escaped the boundaries, reset it
-        if (_plateRB.position.y > _restY)
+        if (_plateRB.transform.localPosition.y > _restY)
         {
-            _plateRB.transform.position = new Vector2(_plateRB.position.x,_restY);
+            _plateRB.transform.localPosition = new Vector2(_plateRB.transform.localPosition.x,_restY);
         }
         
         /*  How far has the plate sunk?  Positive when below the rest height. */
-        float currentCompression = _restY - _plateRB.position.y;
+        float currentCompression = _restY - _plateRB.transform.localPosition.y;
 
         /* ---------- Rising edge: plate just got pressed ---------- */
         if (!_isPressed && currentCompression >= _compressDistance)
@@ -118,7 +118,7 @@ public class PressurePlate2D : MonoBehaviour
     // Gizmo to visualise the activation depth when object is selected.
     private void OnDrawGizmosSelected()
     {
-        Vector3 top    = new Vector3(transform.position.x, _plateRB.position.y, 0f);
+        Vector3 top    = new Vector3(transform.localPosition.x, _plateRB.transform.localPosition.y, 0f);
         Vector3 bottom = top + Vector3.down * _compressDistance;
 
         Gizmos.color = Color.yellow;
