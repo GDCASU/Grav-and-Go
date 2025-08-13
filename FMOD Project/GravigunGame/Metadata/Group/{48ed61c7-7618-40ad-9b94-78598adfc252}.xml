@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{48ed61c7-7618-40ad-9b94-78598adfc252}">
+		<property name="name">
+			<value>Gravigun</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ce00733d-8a44-463d-9b1f-2dd7bc51916b}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{08496aed-0e67-41e9-998b-75b3eae5a9f3}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{a7044323-3909-4c68-a194-205e01b09b8d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ce00733d-8a44-463d-9b1f-2dd7bc51916b}">
+		<relationship name="effects">
+			<destination>{a1b0d1bc-8088-4a8c-aa3a-709db308f284}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{08496aed-0e67-41e9-998b-75b3eae5a9f3}" />
+	<object class="MixerBusFader" id="{a1b0d1bc-8088-4a8c-aa3a-709db308f284}" />
+</objects>

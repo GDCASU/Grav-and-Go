@@ -37,6 +37,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "f918d9d4-134a-4640-8470-9f885cec694c",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "2D Vector",
                     "id": "b396d6f1-73b7-4446-aff7-52d644e844bd",
                     "path": "2DVector",
@@ -50,7 +61,7 @@
                 {
                     "name": "up",
                     "id": "50687599-eeac-4ce8-981a-a47d08f59714",
-                    "path": "<Keyboard>/w",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -153,7 +164,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Rotate Object Foward",
+                    "name": "Mouse Wheel Up",
                     "type": "Button",
                     "id": "cc67f370-c1fc-446b-9a8e-7fe6f994bd31",
                     "expectedControlType": "",
@@ -162,9 +173,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Rotate Object Backwards",
+                    "name": "Mouse Wheel Down",
                     "type": "Button",
                     "id": "55d03fde-9085-48fe-808e-c83e392eaed3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "3b94b6cf-4c75-4c7c-9b77-6675d43e08b1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle",
+                    "type": "Button",
+                    "id": "79be7cb9-3b3e-49b0-b422-3b21c475d069",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -212,7 +241,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -223,7 +252,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -234,7 +263,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Backwards",
+                    "action": "Mouse Wheel Down",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -245,7 +274,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -256,7 +285,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -267,9 +296,31 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate Object Foward",
+                    "action": "Mouse Wheel Up",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "163d2eeb-2734-4df6-8912-fa62804d4269",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2dbcbad1-9d45-40ba-921c-027c76f25d75",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -290,8 +341,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "b4e180a5-986a-4ddb-9e41-fa0cadafee6a",
-                    "path": "<Keyboard>/r",
+                    "id": "46a99acb-4a81-4bb1-8c56-db88712b0c55",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Default (ONLY COPY).unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/InProgressLevels/Main Menu.unity
+    guid: 84b29488081ab0f4f970f86e9efe9106
+  - enabled: 1
+    path: Assets/Scenes/InProgressLevels/Level Select.unity
+    guid: 83b1055fbc59ea945bec3655a24a93fd
+  - enabled: 1
+    path: Assets/Scenes/InProgressLevels/Chapter 1 Level 1.unity
+    guid: 80b558d1fc64aea40b7be387fdfcac14
+  - enabled: 1
+    path: Assets/Scenes/InProgressLevels/Chapter 1 Level 2.unity
+    guid: 3e932937de8cbf245b02589d81878df8
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
   m_UseUCBPForAssetBundles: 0

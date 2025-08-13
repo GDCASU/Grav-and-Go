@@ -1,5 +1,8 @@
 using System;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 /// <summary>
 /// Handles all core movement logic for the player:
@@ -13,23 +16,59 @@ using UnityEngine;
 /// </summary>
 public class PlayerMovementController : MonoBehaviour
 {
-    /* ---------- Serialized Configuration ---------- */
-    [Tooltip("ScriptableObject containing tunable movement numbers")]
-    [SerializeField] private ScriptableStats _stats;
+    // Tuning
+    [Header("Tunning")]
+    [SerializeField, Tooltip("ScriptableObject containing tunable movement numbers")] private ScriptableStats _stats;
 
-    /* ---------- Cached Components ---------- */
-    private Rigidbody2D _rb;
-    private CapsuleCollider2D _col;
+    [Header("References")]
+    [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] private CapsuleCollider2D _col;
+    
+    [Header("Audio")]
+    [SerializeField] private SimpleAudioEmitter _walkSound;
+    [SerializeField] private SimpleAudioEmitter _jumpSound;
+    
+    [Header("Capsule Casts")]
+    [SerializeField, Tooltip("Offset for the ground check capsule cast, in local space.")]
+    private Vector2 _groundCheckOffset = Vector2.zero;
 
-    /* ---------- Per-frame state ---------- */
-    private FrameInput _frameInput;    // Raw input sampled this frame
-    private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
-    private bool _cachedQueryStartInColliders;
+    [SerializeField, Tooltip("Offset for the ceiling check capsule cast, in local space.")]
+    private Vector2 _ceilingCheckOffset = Vector2.zero;
 
-    #region Interface  --------------------------------------------------------
-
+    [SerializeField, Tooltip("Small substraction as to make sure capsule casts arent bigger than the collider")]
+    private Vector2 _capsuleCastSizeSub = Vector2.zero;
+    
+    [Header("Debugging")]
+    [SerializeField] private bool _doDrawCapsuleCast;
+    
+    [Header("Per-frame state")]
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
+    [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
+    
+    [Header("Collisions")]
+    [SerializeField, InspectorReadOnly] private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
+    [SerializeField, InspectorReadOnly] private bool  _grounded; // True when capsule is in contact
+    
+    [Header("Jump state flags")]
+    [SerializeField, InspectorReadOnly] private bool _jumpToConsume;
+    [SerializeField, InspectorReadOnly] private bool _bufferedJumpUsable;
+    [SerializeField, InspectorReadOnly] private bool _endedJumpEarly;
+    [SerializeField, InspectorReadOnly] private bool _coyoteUsable;
+    
+    [Header("Timing helpers")]
+    [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
+    
+    
+    
+    // Public Helpers
     /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
-    public Vector2 FrameInput => _frameInput.Move;
+    public Vector2 frameInputMoveVector => _frameInput.Move;
+    
+    // Private helpers
+    private FrameInput _frameInput; // Raw input sampled this fra
+    private float _time; // Global time accumulator for coyote / buffer windows
+
+    #region Events
 
     /// <summary>Fired when grounded ↔ airborne; float = landing impact strength.</summary>
     public event Action<bool, float> GroundedChanged;
@@ -39,27 +78,40 @@ public class PlayerMovementController : MonoBehaviour
 
     #endregion
 
-    /* ---------- Private helpers ---------- */
-    private float _time;              // Global time accumulator for coyote / buffer windows
-
-    /* ====================================================================== */
-    /*                           Unity Lifecycle                              */
-    /* ====================================================================== */
+    #region Unity Callbacks
 
     private void Awake()
     {
-        _rb  = GetComponent<Rigidbody2D>();
-        _col = GetComponent<CapsuleCollider2D>();
-
         // Store default‐engine setting so we can temporarily override it
         _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
 
     private void Update()
     {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
         _time += Time.deltaTime;
         GatherInput();        // Poll Input System each render-frame
     }
+    
+    private void FixedUpdate()
+    {
+        // Dont do anything if paused
+        if (Time.timeScale <= 0) return;
+        
+        CheckCollisions();  // Ground / ceiling detection first — movement depends on result
+        
+        HandleJump();
+        HandleDirection();
+        HandleGravity();
+
+        ApplyMovement();    // Finally push calculated velocity to the Rigidbody
+    }
+
+    #endregion
+    
+    #region Input Gathering
 
     /// <summary>Polls InputManager and normalizes the data into <see cref="_frameInput"/>.</summary>
     private void GatherInput()
@@ -91,45 +143,35 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        CheckCollisions();  // Ground / ceiling detection first — movement depends on result
+    #endregion
 
-        HandleJump();
-        HandleDirection();
-        HandleGravity();
-
-        ApplyMovement();    // Finally push calculated velocity to the Rigidbody
-    }
-
-    /* ====================================================================== */
-    /*                               Collisions                               */
-    /* ====================================================================== */
-
-    private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
-    private bool  _grounded;                           // True when capsule is in contact
+    #region Collisions
 
     /// <summary>CapsuleCasts for ground & ceiling each physics step.</summary>
     private void CheckCollisions()
     {
         Physics2D.queriesStartInColliders = false; // More reliable casts
 
-        // ------------ Ground & ceiling checks ------------
-        bool groundHit  = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
-                                                Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
-        bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0,
-                                                Vector2.up,   _stats.GrounderDistance, ~_stats.PlayerLayer);
+        // Ground cast with offset
+        Vector2 groundStart = (Vector2)_col.bounds.center + _groundCheckOffset;
+        bool groundHit = Physics2D.CapsuleCast(groundStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
+            Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
+
+        // Ceiling cast with offset
+        Vector2 ceilingStart = (Vector2)_col.bounds.center + _ceilingCheckOffset;
+        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
+            Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // If we bonk our head, kill any upward momentum
         if (ceilingHit)
             _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
 
         // ------------ Ground-state transitions ------------
-        if (!_grounded && groundHit)           // Landed
+        if (!_grounded && groundHit) // Landed
         {
-            _grounded            = true;
-            _coyoteUsable        = true;
-            _bufferedJumpUsable  = true;
+            _grounded = true;
+            _coyoteUsable = true;
+            _bufferedJumpUsable = true;
             _endedJumpEarly      = false;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
         }
@@ -143,18 +185,9 @@ public class PlayerMovementController : MonoBehaviour
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders; // Restore default
     }
 
-    /* ====================================================================== */
-    /*                               Jumping                                  */
-    /* ====================================================================== */
+    #endregion
 
-    // Jump state flags
-    private bool _jumpToConsume;
-    private bool _bufferedJumpUsable;
-    private bool _endedJumpEarly;
-    private bool _coyoteUsable;
-
-    // Timing helpers
-    private float _timeJumpWasPressed;
+    #region Jumping
 
     // Convenience properties
     private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
@@ -184,19 +217,20 @@ public class PlayerMovementController : MonoBehaviour
         _timeJumpWasPressed  = 0;
         _bufferedJumpUsable  = false;
         _coyoteUsable        = false;
+        _jumpSound.PlaySound();
 
         _frameVelocity.y = _stats.JumpPower; // Instant upward velocity
         Jumped?.Invoke();
     }
-
-    /* ====================================================================== */
-    /*                        Horizontal Acceleration                         */
-    /* ====================================================================== */
+    
+    #endregion
+    
+    #region Horizontal Acceleration 
 
     /// <summary>Applies ground/air accel & decel to _frameVelocity.x each physics step.</summary>
     private void HandleDirection()
     {
-        if (_frameInput.Move.x == 0) // No horizontal input → decelerate towards 0
+        if (Mathf.Approximately(_frameInput.Move.x, 0f)) // No horizontal input → decelerate towards 0
         {
             var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, decel * Time.fixedDeltaTime);
@@ -206,12 +240,14 @@ public class PlayerMovementController : MonoBehaviour
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x,
                                                  _frameInput.Move.x * _stats.MaxSpeed,
                                                  _stats.Acceleration * Time.fixedDeltaTime);
+            // Only play walk sound if grounded
+            if (_grounded) _walkSound.PlaySound();
         }
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                                Gravity                                 */
-    /* ====================================================================== */
+    #region Gravity
 
     /// <summary>Custom gravity that supports fast-fall & jump-cut.</summary>
     private void HandleGravity()
@@ -235,27 +271,113 @@ public class PlayerMovementController : MonoBehaviour
                                                  gravity * Time.fixedDeltaTime);
         }
     }
-
-    /* ====================================================================== */
-    /*                          Rigidbody Application                         */
-    /* ====================================================================== */
+    
+    #endregion
+    
+    #region RigidBody Application
 
     /// <summary>Writes the fully-calculated velocity to the Rigidbody2D.</summary>
-    private void ApplyMovement() => _rb.linearVelocity = _frameVelocity;
+    private void ApplyMovement()
+    {
+        _rb.linearVelocity = _frameVelocity;
+    }
+    
+    #endregion
+    
+    /// <summary>Lightweight struct for passing a single frame’s worth of input around.</summary>
+    private struct FrameInput
+    {
+        public bool   JumpDown;
+        public bool   JumpHeld;
+        public Vector2 Move;
+    }
 
 #if UNITY_EDITOR
-    private void OnValidate()
+    private void OnDrawGizmosSelected()
     {
-        if (_stats == null)
-            Debug.LogWarning("Please assign a ScriptableStats asset to the Player Controller's Stats slot", this);
+        if (!_doDrawCapsuleCast) return;
+        
+        if (_col == null || _stats == null) return;
+
+        var center = (Vector2)_col.bounds.center;
+        var size = _col.size - _capsuleCastSizeSub;
+        var dir = _col.direction;
+        float dist = _stats.GrounderDistance;
+
+        // Ground cast (down)
+        DrawCapsuleCastGizmo(center + _groundCheckOffset, size, dir, Vector2.down, dist,
+            _grounded ? new Color(0f, 1f, 0f, 1f) : new Color(1f, 0f, 0f, 1f));
+
+        // Ceiling cast (up)
+        DrawCapsuleCastGizmo(center + _ceilingCheckOffset, size, dir, Vector2.up, dist,
+            new Color(0f, 1f, 1f, 1f));
+    }
+
+    /// <summary>Draws start capsule, end capsule, and an arrow for a 2D CapsuleCast.</summary>
+    private void DrawCapsuleCastGizmo(Vector2 center, Vector2 size, CapsuleDirection2D capsuleDir,
+        Vector2 direction, float distance, Color color)
+    {
+        // Start capsule
+        Handles.color = color;
+        DrawWireCapsule2D(center, size, capsuleDir);
+
+        // End capsule
+        var endCenter = center + direction.normalized * distance;
+        Handles.color = new Color(color.r, color.g, color.b, 0.35f);
+        DrawWireCapsule2D(endCenter, size, capsuleDir);
+
+        // Arrow between start and end
+        Handles.color = color;
+        Handles.DrawLine(center, endCenter);
+
+        // Arrow head
+        var headLen = Mathf.Min(size.x, size.y) * 0.25f;
+        var dirNorm = direction.normalized;
+        var left = Quaternion.Euler(0, 0, 135) * dirNorm * headLen;
+        var right = Quaternion.Euler(0, 0, -135) * dirNorm * headLen;
+        Handles.DrawLine(endCenter, endCenter + (Vector2)left);
+        Handles.DrawLine(endCenter, endCenter + (Vector2)right);
+    }
+
+    /// <summary>Editor only helper to draw a 2D capsule outline using two discs and two lines.</summary>
+    private static void DrawWireCapsule2D(Vector2 center, Vector2 size, CapsuleDirection2D capsuleDir)
+    {
+        if (capsuleDir == CapsuleDirection2D.Vertical)
+        {
+            float radius = size.x * 0.5f;
+            float straight = Mathf.Max(0f, size.y - 2f * radius);
+
+            var topCenter = center + Vector2.up * (straight * 0.5f);
+            var bottomCenter = center - Vector2.up * (straight * 0.5f);
+
+            Handles.DrawWireDisc(topCenter, Vector3.forward, radius);
+            Handles.DrawWireDisc(bottomCenter, Vector3.forward, radius);
+
+            var leftOffset = Vector2.left * radius;
+            var rightOffset = Vector2.right * radius;
+
+            Handles.DrawLine(topCenter + leftOffset, bottomCenter + leftOffset);
+            Handles.DrawLine(topCenter + rightOffset, bottomCenter + rightOffset);
+        }
+        else // Horizontal
+        {
+            float radius = size.y * 0.5f;
+            float straight = Mathf.Max(0f, size.x - 2f * radius);
+
+            var rightCenter = center + Vector2.right * (straight * 0.5f);
+            var leftCenter = center - Vector2.right * (straight * 0.5f);
+
+            Handles.DrawWireDisc(rightCenter, Vector3.forward, radius);
+            Handles.DrawWireDisc(leftCenter, Vector3.forward, radius);
+
+            var upOffset = Vector2.up * radius;
+            var downOffset = Vector2.down * radius;
+
+            Handles.DrawLine(rightCenter + upOffset, leftCenter + upOffset);
+            Handles.DrawLine(rightCenter + downOffset, leftCenter + downOffset);
+        }
     }
 #endif
 }
 
-/// <summary>Lightweight struct for passing a single frame’s worth of input around.</summary>
-public struct FrameInput
-{
-    public bool   JumpDown;
-    public bool   JumpHeld;
-    public Vector2 Move;
-}
+

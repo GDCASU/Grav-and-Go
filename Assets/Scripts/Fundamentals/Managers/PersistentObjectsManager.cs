@@ -10,13 +10,6 @@ using UnityEngine;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Pupose:
- * Stop Unity from deleting the persistent objects on change 
- * of scene.
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that will protect all objects that are meant to be present on all scenes
 /// </summary>
@@ -25,7 +18,7 @@ public class PersistentObjectsManager : MonoBehaviour
     // There's nothing to access here, but DontDestroyOnLoad only works on root
     // Objects, so if we need to nest them, they need to be in an object were
     // DontDestroyOnLoad is called at root
-    public static PersistentObjectsManager Instance;
+    public static PersistentObjectsManager Instance { get; private set;}
 
     private void Awake()
     {

@@ -10,13 +10,6 @@ using UnityEngine;
  * 
  */// --------------------------------------------------------
 
-/* -----------------------------------------------------------
- * Purpose:
- * Governs all physics objects that can be grabbed by the
- * gravigun
- */// --------------------------------------------------------
-
-
 /// <summary>
 /// Class that governs all physics objects that can be grabbed
 /// </summary>

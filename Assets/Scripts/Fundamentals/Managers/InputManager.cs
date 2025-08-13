@@ -8,22 +8,27 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class InputManager : MonoBehaviour
 {
-    /* ---------- Singleton Boilerplate ---------- */
-    public static InputManager Instance;
-
-    /* ---------- Inspector Flags ---------- */
+    // Singleton
+    public static InputManager Instance { get; private set;}
+    
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog = false; // Gate for spammy logs
 
-    /* ---------- Input-updated fields ---------- */
+    // Input-updated fields
     public Vector2 movementInput { get; private set; } // Left-stick / WASD
     public bool jumpHeldDownInput { get; private set; }  // True while jump button held
     public bool jumpPressedThisFrame { get; private set; }  // True only on the frame pressed
-    public bool pullHeldDownInput { get; private set; }
-    public bool pushInputRecieved; // Controlled by the gravigun
+    public bool pullHeldDownInput { get; private set; } // True while pull button held
+    public bool didPlayerWheelFoward { get; private set; } // True while the player spins the mousewheel up
+    public bool didPlayerWheelBackwards { get; private set; } // True while the player spins the mousewheel down
+    public bool didPlayerHoldDownRotate { get; private set; } // True while the player holds down R
+    public bool didPlayerClickMouseWheelThisFrame { get; private set; } // True if the player clicked the mouse wheel this frame
+    public bool pullPressedThisFrame { get; private set; }  // True only on the frame pressed
+    public bool pushPressedThisFrame { get; private set; }  // True only on the frame pressed
 
-    /* ---------- Private vars ---------- */
+    // Local Variables
     private PlayerControls _playerControls;
+    private bool _pushInputRecieved; 
 
     #region Public Events
     
@@ -35,25 +40,26 @@ public class InputManager : MonoBehaviour
     
     /// <summary> Raised when the player clicks the interact key </summary>
     public static event Action OnInteract;
+    
+    public static event Action OnPause;
+    
+    public static event Action OnGravityGunToggle;
 
     #endregion
 
-    /* ====================================================================== */
-    /*                          Unity Lifecycle                               */
-    /* ====================================================================== */
+    #region Unity Lifecycle
 
     private void Awake()
     {
-        /* -------- Singleton enforcement -------- */
+        // Singleton enforcement
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
-        /* -------- Input System mapping -------- */
+        // Input System mapping
         if (_playerControls == null)
         {
             _playerControls = new PlayerControls();
@@ -69,12 +75,10 @@ public class InputManager : MonoBehaviour
         jumpPressedThisFrame = _playerControls.Movement.Jump.WasPerformedThisFrame();
         jumpHeldDownInput = _playerControls.Movement.Jump.IsPressed();
         pullHeldDownInput = _playerControls.GravityGun.Pull.IsPressed();
-        if (_playerControls.GravityGun.Push.WasPerformedThisFrame())
-        {
-            // This one requires special attention due to the gravity gun using fixedUpdate
-            pushInputRecieved = true;
-        }
-        
+        didPlayerHoldDownRotate = _playerControls.GravityGun.Rotate.IsPressed();
+        didPlayerClickMouseWheelThisFrame = _playerControls.GravityGun.Special.WasPerformedThisFrame();
+        pullPressedThisFrame = _playerControls.GravityGun.Pull.WasPerformedThisFrame();
+        pushPressedThisFrame = _playerControls.GravityGun.Push.WasPerformedThisFrame();
     }
 
     private void OnDestroy()
@@ -87,10 +91,10 @@ public class InputManager : MonoBehaviour
         }
         StopAllCoroutines();
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                         Binding & Callbacks                            */
-    /* ====================================================================== */
+    #region Binding & Callbacks  
 
     /// <summary>
     /// Subscribes C# methods to each InputAction. This keeps logic decoupled
@@ -98,26 +102,29 @@ public class InputManager : MonoBehaviour
     /// </summary>
     private void BindPlayerEvents()
     {
-        /* -------- Movement Axis -------- */
+        // Movement Axis
         _playerControls.Movement.Move.performed += HandleMovementInput;
-        _playerControls.Movement.Move.canceled  += HandleMovementInput;
+        _playerControls.Movement.Move.canceled += HandleMovementInput;
 
-        /* -------- Gravity Gun Actions -------- */
-        _playerControls.GravityGun.Push.performed   += HandlePush;
-        _playerControls.GravityGun.Pull.performed  += HandlePull;
-        _playerControls.GravityGun.Special.performed+= HandleSpecial;
-        _playerControls.GravityGun.RotateObjectBackwards.performed += HandleRotateBackwards;
-        _playerControls.GravityGun.RotateObjectFoward.performed   += HandleRotateFoward;
+        // Gravity Gun Actions 
+        _playerControls.GravityGun.Special.performed += HandleSpecial;
+        _playerControls.GravityGun.MouseWheelDown.performed += HandleWheelBackwards;
+        _playerControls.GravityGun.MouseWheelDown.canceled += HandleWheelBackwards;
+        _playerControls.GravityGun.MouseWheelUp.performed += HandleWheelFoward;
+        _playerControls.GravityGun.MouseWheelUp.canceled += HandleWheelFoward;
+        _playerControls.GravityGun.Toggle.performed += HandleGravigunToggle;
         
-        /* -------- Interactions -------- */
+        // Interactions
         _playerControls.Interactions.Interact.performed += HandleInteraction;
 
-        /* -------- Level / UI Actions -------- */
+        // Level / UI Actions
         _playerControls.Level.Retry.performed += HandleLevelRetry;
-        _playerControls.UI.Pause.performed    += HandlePause;
+        _playerControls.UI.Pause.performed += HandlePause;
     }
-
-    /* ---------------- Movement ---------------- */
+    
+    #endregion
+    
+    #region Movement
 
     private void HandleMovementInput(InputAction.CallbackContext context)
     {
@@ -126,23 +133,50 @@ public class InputManager : MonoBehaviour
         if (_doDebugLog) Debug.Log($"Movement Input = {movementInput}");
         OnMove?.Invoke();
     }
-
-    /* --------------- Gravity Gun -------------- */
-    // NOTE: Gameplay not implemented yet; methods are placeholders
-    private void HandlePush   (InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandlePull  (InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandleRotateFoward   (InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandleRotateBackwards (InputAction.CallbackContext ctx) { /* TODO */ }
     
-    /* -------- Interactions -------- */
+    #endregion
+    
+    #region Gravity Gun
+
+    // NOTE: Gameplay not implemented yet; some methods are placeholders
+    private void HandleSpecial(InputAction.CallbackContext ctx) { /* TODO */ }
+    
+    private void HandleWheelFoward(InputAction.CallbackContext ctx)
+    {
+        didPlayerWheelFoward = ctx.performed;
+    }
+
+    private void HandleWheelBackwards(InputAction.CallbackContext ctx)
+    {
+        didPlayerWheelBackwards = ctx.performed;
+    }
+
+    private void HandleGravigunToggle(InputAction.CallbackContext ctx)
+    {
+        OnGravityGunToggle?.Invoke();
+    }
+    
+    #endregion
+
+    #region Interactions
 
     private void HandleInteraction(InputAction.CallbackContext ctx)
     {
         if (ctx.performed) OnInteract?.Invoke();
     }
 
-    /* ---------------- Level / UI -------------- */
+    #endregion
+
+    #region Level / UI
+    
     private void HandleLevelRetry(InputAction.CallbackContext ctx) { /* TODO */ }
-    private void HandlePause     (InputAction.CallbackContext ctx) { /* TODO */ }
+
+    private void HandlePause(InputAction.CallbackContext ctx)
+    {
+        OnPause?.Invoke();
+    }
+    
+    #endregion
+
+    
 }

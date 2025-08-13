@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['bank_0',['Bank',['../struct_f_m_o_d_1_1_studio_1_1_bank.html',1,'FMOD::Studio']]],
-  ['bank_5finfo_1',['BANK_INFO',['../struct_f_m_o_d_1_1_studio_1_1_b_a_n_k___i_n_f_o.html',1,'FMOD::Studio']]],
-  ['bankloadexception_2',['BankLoadException',['../class_f_m_o_d_unity_1_1_bank_load_exception.html',1,'FMODUnity']]],
-  ['bankrefattribute_3',['BankRefAttribute',['../class_f_m_o_d_unity_1_1_bank_ref_attribute.html',1,'FMODUnity']]],
-  ['bankrefdrawer_4',['BankRefDrawer',['../class_f_m_o_d_unity_1_1_bank_ref_drawer.html',1,'FMODUnity']]],
-  ['bankrefresher_5',['BankRefresher',['../class_f_m_o_d_unity_1_1_bank_refresher.html',1,'FMODUnity']]],
-  ['bankrefreshwindow_6',['BankRefreshWindow',['../class_f_m_o_d_unity_1_1_bank_refresh_window.html',1,'FMODUnity']]],
-  ['behaviourusagematch_7',['BehaviourUsageMatch',['../class_asset_usage_detector_namespace_1_1_behaviour_usage_match.html',1,'AssetUsageDetectorNamespace']]],
-  ['betterhierarchyicondisplayer_8',['BetterHierarchyIconDisplayer',['../class_utilities_1_1_better_hierarchy_1_1_better_hierarchy_icon_displayer.html',1,'Utilities::BetterHierarchy']]],
-  ['betterhierarchypreferences_9',['BetterHierarchyPreferences',['../class_utilities_1_1_better_hierarchy_1_1_better_hierarchy_preferences.html',1,'Utilities::BetterHierarchy']]],
-  ['boltintegration_10',['BoltIntegration',['../class_f_m_o_d_unity_1_1_bolt_integration.html',1,'FMODUnity']]],
-  ['buffer_5finfo_11',['BUFFER_INFO',['../struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___i_n_f_o.html',1,'FMOD::Studio']]],
-  ['buffer_5fusage_12',['BUFFER_USAGE',['../struct_f_m_o_d_1_1_studio_1_1_b_u_f_f_e_r___u_s_a_g_e.html',1,'FMOD::Studio']]],
-  ['buildprocessor_13',['BuildProcessor',['../class_f_m_o_d_unity_1_1_editor_settings_1_1_build_processor.html',1,'FMODUnity::EditorSettings']]],
-  ['buildstatuswatcher_14',['BuildStatusWatcher',['../class_f_m_o_d_unity_1_1_build_status_watcher.html',1,'FMODUnity']]],
-  ['bus_15',['Bus',['../struct_f_m_o_d_1_1_studio_1_1_bus.html',1,'FMOD::Studio']]],
-  ['busnotfoundexception_16',['BusNotFoundException',['../class_f_m_o_d_unity_1_1_bus_not_found_exception.html',1,'FMODUnity']]]
+  ['frameinput_0',['FrameInput',['../struct_frame_input.html',1,'']]]
 ];

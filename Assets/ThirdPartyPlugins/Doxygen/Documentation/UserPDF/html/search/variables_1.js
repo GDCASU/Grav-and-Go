@@ -1,23 +1,5 @@
 var searchData=
 [
-  ['backwall_0',['BackWall',['../class_f_m_o_d_unity_resonance_1_1_fmod_resonance_audio_room.html#adb0a2657ed96734e32d5bc5ef3798fe3',1,'FMODUnityResonance::FmodResonanceAudioRoom']]],
-  ['bankloadtype_1',['BankLoadType',['../class_f_m_o_d_unity_1_1_settings.html#af61e911d616c010efe4780473addf918',1,'FMODUnity::Settings']]],
-  ['bankrefreshcooldown_2',['BankRefreshCooldown',['../class_f_m_o_d_unity_1_1_settings.html#aacffafbb5a2ff068078a8e0fabf79835',1,'FMODUnity::Settings']]],
-  ['banks_3',['Banks',['../class_f_m_o_d_unity_1_1_editor_event_ref.html#a7b69b211a01c934da1bca8c26418e5b0',1,'FMODUnity.EditorEventRef.Banks'],['../class_f_m_o_d_unity_1_1_settings.html#af4e70499313d6882e2977a0a15080768',1,'FMODUnity.Settings.Banks'],['../class_f_m_o_d_unity_1_1_studio_bank_loader.html#aedce2a82100883b19f304f0e112eaced',1,'FMODUnity.StudioBankLoader.Banks']]],
-  ['bankstoload_4',['BanksToLoad',['../class_f_m_o_d_unity_1_1_settings.html#a68f750bf78f71faa5e6d71f228504e53',1,'FMODUnity::Settings']]],
-  ['bankstubprefix_5',['BankStubPrefix',['../class_f_m_o_d_unity_1_1_runtime_manager.html#a5128bd7350996a4e077d17aaf611111b',1,'FMODUnity::RuntimeManager']]],
-  ['bar_6',['bar',['../struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s.html#aad949fb694e4455db3925c47299e3959',1,'FMOD::Studio::TIMELINE_BEAT_PROPERTIES']]],
-  ['basestate_7',['baseState',['../class_f_m_o_d_unity_1_1_event_browser_1_1_tree_view_1_1_state.html#a31fe4337b73b55e020585fad2dfd55f2',1,'FMODUnity::EventBrowser::TreeView::State']]],
-  ['beat_8',['beat',['../struct_f_m_o_d_1_1_studio_1_1_t_i_m_e_l_i_n_e___b_e_a_t___p_r_o_p_e_r_t_i_e_s.html#af714c313cd06cbc1af29c76d56973aea',1,'FMOD::Studio::TIMELINE_BEAT_PROPERTIES']]],
-  ['behaviour_9',['Behaviour',['../class_asset_usage_detector_namespace_1_1_behaviour_usage_match.html#aff7ef5c9cd4c50677bd4b61698be0375',1,'AssetUsageDetectorNamespace::BehaviourUsageMatch']]],
-  ['booldesc_10',['booldesc',['../struct_f_m_o_d_1_1_d_s_p___p_a_r_a_m_e_t_e_r___d_e_s_c___u_n_i_o_n.html#aadc444a6b255b4390345470b8a802064',1,'FMOD::DSP_PARAMETER_DESC_UNION']]],
-  ['boolvalue_11',['boolvalue',['../struct_f_m_o_d_1_1_studio_1_1_union___int_bool_float_string.html#a71b5e442ab664999c980aa1a357e61ef',1,'FMOD::Studio::Union_IntBoolFloatString']]],
-  ['bordercolor_12',['BorderColor',['../class_a_yellowpaper_1_1_serialized_collections_1_1_editor_1_1_serialized_dictionary_drawer.html#aa4b7530c79837f4bdef30fae383053dd',1,'AYellowpaper::SerializedCollections::Editor::SerializedDictionaryDrawer']]],
-  ['buffer_13',['buffer',['../struct_f_m_o_d_1_1_a_s_y_n_c_r_e_a_d_i_n_f_o.html#a53412cadf5d1fcab135861561c2bf67a',1,'FMOD::ASYNCREADINFO']]],
-  ['bufferchannelmask_14',['bufferchannelmask',['../struct_f_m_o_d_1_1_d_s_p___b_u_f_f_e_r___a_r_r_a_y.html#aa8d26d3c65641aa891183e34e5103dae',1,'FMOD::DSP_BUFFER_ARRAY']]],
-  ['buffernumchannels_15',['buffernumchannels',['../struct_f_m_o_d_1_1_d_s_p___b_u_f_f_e_r___a_r_r_a_y.html#ac81b8f772a7659f1643e092f81008094',1,'FMOD::DSP_BUFFER_ARRAY']]],
-  ['buffers_16',['buffers',['../struct_f_m_o_d_1_1_d_s_p___b_u_f_f_e_r___a_r_r_a_y.html#acd84a4bf385acec6a8cfff4817d72da4',1,'FMOD::DSP_BUFFER_ARRAY']]],
-  ['builddirectory_17',['BuildDirectory',['../class_f_m_o_d_unity_1_1_platform_1_1_property_storage.html#a99a9f8b7df430ac7f40166010bc6a70d',1,'FMODUnity::Platform::PropertyStorage']]],
-  ['buildfolder_18',['BuildFolder',['../class_f_m_o_d_unity_1_1_editor_utils.html#a9644d7bba2bbdc41f67e01ec647dde4e',1,'FMODUnity::EditorUtils']]],
-  ['bytesread_19',['bytesread',['../struct_f_m_o_d_1_1_a_s_y_n_c_r_e_a_d_i_n_f_o.html#a7df85bb85cda25e4c091a9b4f34d747a',1,'FMOD::ASYNCREADINFO']]]
+  ['acceleration_0',['Acceleration',['../class_scriptable_stats.html#a385f774b91cec472310c2baaaeeaa438',1,'ScriptableStats']]],
+  ['airdeceleration_1',['AirDeceleration',['../class_scriptable_stats.html#ac3481225572edf84b36f918555eb5bb2',1,'ScriptableStats']]]
 ];

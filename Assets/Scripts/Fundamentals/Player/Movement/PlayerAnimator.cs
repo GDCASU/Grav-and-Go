@@ -11,17 +11,11 @@ using UnityEngine.Serialization;
 /// </summary>
 public class PlayerAnimator : MonoBehaviour
 {
-    /* ---------- Inspector References ---------- */
     [Header("References")]
     [SerializeField] private Animator        _anim;
-    [FormerlySerializedAs("_player")] [SerializeField] private PlayerMovementController playerMovement;  // Event source
+    [SerializeField] private PlayerMovementController playerMovement;  // Event source
     [SerializeField] private SpriteRenderer  _sprite;
     [SerializeField] private Rigidbody2D     _rb;
-
-    [Header("Settings")]
-    [SerializeField, Range(1f, 3f)] private float _maxIdleSpeed = 2; // Idle bob speed multiplier
-    [SerializeField] private float _maxTilt  = 5;   // Max sprite tilt in degrees (unused in sample)
-    [SerializeField] private float _tiltSpeed = 20; // Speed to tilt towards target rotation
 
     [Header("Particles")]
     [SerializeField] private ParticleSystem _jumpParticles;
@@ -29,24 +23,25 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private ParticleSystem _moveParticles;
     [SerializeField] private ParticleSystem _landParticles;
 
-    [Header("Audio Clips")]
-    [SerializeField] private AudioClip[] _footsteps;
+    
+    
+    [Header("Readouts")]
+    [SerializeField, InspectorReadOnly] private bool _grounded;
 
-    /* ---------- Internals ---------- */
-    private AudioSource _source;
-    private bool _grounded;
+    // Local Variables
     private ParticleSystem.MinMaxGradient _currentGradient; // Dynamic color for ground-dependent VFX
 
-    /* ====================================================================== */
-    /*                          Unity Lifecycle                               */
-    /* ====================================================================== */
+    #region Unity Callbacks
 
-    private void Awake() => _source = GetComponent<AudioSource>();
+    private void Awake()
+    {
+        
+    }
 
     private void OnEnable()
     {
         // Subscribe to gameplay events
-        playerMovement.Jumped          += OnJumped;
+        playerMovement.Jumped += OnJumped;
         playerMovement.GroundedChanged += OnGroundedChanged;
 
         _moveParticles.Play(); // Start dust trail immediately
@@ -62,19 +57,17 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        if (playerMovement == null) return; // Safety for prefab previews
+        if (!playerMovement) return; // Safety for prefab previews
 
         DetectGroundColor(); // Update particle tint if we change terrain
-
         HandleSpriteFlip();  // Face movement direction
-        HandleIdleSpeed();   // Adjust idle animation speed
         DetectFalling();     // Set Falling bool
         DetectRunning();     // Set Running bool
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                      Animation State Helpers                           */
-    /* ====================================================================== */
+    #region Animation State Helpers 
 
     /// <summary>Sets "Falling" bool based on vertical velocity sign.</summary>
     private void DetectFalling()
@@ -92,28 +85,13 @@ public class PlayerAnimator : MonoBehaviour
     /// <summary>Flips sprite when player walks left/right.</summary>
     private void HandleSpriteFlip()
     {
-        if (playerMovement.FrameInput.x != 0)
-            _sprite.flipX = playerMovement.FrameInput.x < 0;
+        if (playerMovement.frameInputMoveVector.x != 0)
+            _sprite.flipX = playerMovement.frameInputMoveVector.x < 0;
     }
-
-    /// <summary>Drive idle bob speed & particle scale from analog stick strength.</summary>
-    private void HandleIdleSpeed()
-    {
-        float inputStrength = Mathf.Abs(playerMovement.FrameInput.x);
-
-        // Idle animation: 1× speed when stick neutral → maxIdleSpeed when fully held
-        _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
-
-        // Dust trail grows / shrinks with speed
-        _moveParticles.transform.localScale =
-            Vector3.MoveTowards(_moveParticles.transform.localScale,
-                                Vector3.one * inputStrength,
-                                2 * Time.deltaTime);
-    }
-
-    /* ====================================================================== */
-    /*                           Event Handlers                               */
-    /* ====================================================================== */
+    
+    #endregion
+    
+    #region Event Handlers
 
     private void OnJumped()
     {
@@ -140,7 +118,6 @@ public class PlayerAnimator : MonoBehaviour
             SetColor(_landParticles);
 
             _anim.SetTrigger(GroundedKey);
-            _source.PlayOneShot(_footsteps[Random.Range(0, _footsteps.Length)]);
             _moveParticles.Play();   // Resume dust trail
 
             // Scale landing puff based on impact velocity
@@ -153,9 +130,10 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
-    /* ====================================================================== */
-    /*               Dynamic Particle Tint (matches ground)                   */
-    /* ====================================================================== */
+    #endregion
+
+    #region Dynamic Particle Tint (matches ground)  
+
 
     /// <summary>Raycasts down to grab the color of the tile we’re standing on.</summary>
     private void DetectGroundColor()
@@ -176,14 +154,16 @@ public class PlayerAnimator : MonoBehaviour
         var main = ps.main;
         main.startColor = _currentGradient;
     }
+    
+    #endregion
 
-    /* ====================================================================== */
-    /*                           Animator Hashes                              */
-    /* ====================================================================== */
+
+    #region Animator Hashes
 
     private static readonly int GroundedKey  = Animator.StringToHash("Grounded");
-    private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
     private static readonly int JumpKey      = Animator.StringToHash("Jump");
     private static readonly int FallingBool  = Animator.StringToHash("Falling");
     private static readonly int RunningBool  = Animator.StringToHash("Running");
+
+    #endregion
 }
