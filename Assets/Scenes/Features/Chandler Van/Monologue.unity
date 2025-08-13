@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &365804437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textLabel: {fileID: 274055229}
+  nextImage: {fileID: 274091869}
   chatContainer: {fileID: 365804436}
   typingSpeed: 15
 --- !u!1 &519420028
@@ -1045,7 +1046,7 @@ PrefabInstance:
     - target: {fileID: 2289353971900343695, guid: 7d434cbaceef14c4993eece35337ca90, type: 3}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 365804438}
     - target: {fileID: 2289353971900343695, guid: 7d434cbaceef14c4993eece35337ca90, type: 3}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
