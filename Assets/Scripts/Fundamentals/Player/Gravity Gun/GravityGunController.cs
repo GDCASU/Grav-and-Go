@@ -662,13 +662,13 @@ public class GravityGunController : MonoBehaviour
         // check if ignoring
         if (currentState == LineState.ObjectIgnoresGravigun) return;
 
+        // check if too heavy
+        if (currentState == LineState.TooHeavy) return;
+
         // Was an influenceable object, Enable outline and set line renderer
         if (!_trackedObjects.Contains(_focusedObject))
         {
             StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
-
-            // check if too heavy
-            if (currentState == LineState.TooHeavy) return;
         }
 
         // Move focused object if grabbing
