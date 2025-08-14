@@ -100,6 +100,7 @@ public class GravityGunController : MonoBehaviour
     {
         _focusedObject.EnableTarget();
         _focusedObject.ChangeOutlineColor(_settings.tooHeavyColor);
+
         UpdateLineRenderer(true, _settings.tooHeavyColor);
         UpdateTargetCircle(_settings.tooHeavyColor);
     }
@@ -131,6 +132,16 @@ public class GravityGunController : MonoBehaviour
         _focusedObject.ChangeOutlineColor(_settings.defaultLineOfSightColor);
         UpdateLineRenderer(true, _settings.defaultLineOfSightColor);
         UpdateTargetCircle(_settings.defaultLineOfSightColor);
+    }
+
+    private void ValidObjectState(RaycastHit2D hit)
+    {
+        UpdateLineRenderer(true, _settings.validTargetLineColor);
+        UpdateTargetCircle(_settings.validTargetLineColor);
+        UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
+
+        _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
+        StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
     }
 
     #endregion
@@ -290,7 +301,7 @@ public class GravityGunController : MonoBehaviour
         {
             if (isRotating)
             {
-                _focusedObject.transform.Rotate(Vector3.forward, -1 * _settings.rotateSpeed * Time.deltaTime, Space.Self);
+                _focusedObject.transform.Rotate(Vector3.forward, 1 * _settings.rotateSpeed * Time.deltaTime, Space.Self);
                 return;
             }
 
@@ -375,13 +386,10 @@ public class GravityGunController : MonoBehaviour
             return;
         }
 
-        // Update line renderers
-        UpdateLineRenderer(true, _settings.validTargetLineColor);
-        UpdateTargetCircle(_settings.validTargetLineColor);
-        UpdateLineRendererPos(_gravigunPivot.position, Vector2.zero, hit.point, 0f);
-
-        // Keep a reference
+        // Keep a reference & update
         _focusedObject = physicsObject;
+        _focusedObject.EnableTarget();
+        ValidObjectState(hit);
 
         // Check if ignoring
         if (physicsObject.physicsObjectType == PhysicsObjectType.IgnoresGravigun)
@@ -657,20 +665,10 @@ public class GravityGunController : MonoBehaviour
         // Was an influenceable object, Enable outline and set line renderer
         if (!_trackedObjects.Contains(_focusedObject))
         {
-            _focusedObject.EnableTarget();
-            if (currentState == LineState.TooHeavy)
-            {
-                HeavyState(); // NOTE: come back to the logic of this
-                StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
-                return;
-            }
-            else
-            {
-                // NOTE: what state is this?
-                _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
-                UpdateLineRenderer(true, _settings.validTargetLineColor);
-                StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
-            }
+            StartCoroutine(TrackFocusedObjectLeftRoutine(_focusedObject));
+
+            // check if too heavy
+            if (currentState == LineState.TooHeavy) return;
         }
 
         // Move focused object if grabbing
