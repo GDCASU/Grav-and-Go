@@ -55,11 +55,21 @@ public class MonologueManager : MonoBehaviour
     private Dictionary<string, Func<string[], string>> textBindings = new();
 
     /// <summary>
+    /// Registers a text binding key and its associated function for dynamic text replacement.
+    /// </summary>
+    /// <param name="key">Unique identifier for the text binding.</param>
+    /// <param name="func">Function to call when the binding is encountered.</param>
+    public void LoadTextBinding(string key, Func<string[], string> func)
+    {
+        textBindings[key] = func;
+    }
+
+    /// <summary>
     /// Removes a registered text binding by key.
     /// </summary>
     /// <param name="key">Text binding key to remove.</param>
     /// <returns>
-    /// If the binding was found and successfully removed
+    /// if the binding existed and was removed successfully
     /// </returns>
     public bool UnloadTextBinding(string key)
     {
