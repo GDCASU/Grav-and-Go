@@ -15,7 +15,7 @@ public class MonologueManager : MonoBehaviour
     [Header("Typing Settings")]
     public int typingSpeed = 15;
 
-    private UnityEvent onMonologSkip;
+    private UnityEvent onLineFinish;
     private bool monologing = false;
 
     private Coroutine currentLineCoro = null;
@@ -49,9 +49,9 @@ public class MonologueManager : MonoBehaviour
 
     #region Text Binding Functions
 
-    private Dictionary<string, Func<string>> textBindings = new();
+    private Dictionary<string, Func<string[],string>> textBindings = new();
 
-    public void LoadTextBinding(string key, Func<string> func)
+    public void LoadTextBinding(string key, Func<string[],string> func)
     {
         textBindings[key] = func;
     }
@@ -63,11 +63,11 @@ public class MonologueManager : MonoBehaviour
         textBindings[key] = null;
     }
 
-    public string CallTextBinding(string key)
+    public string CallTextBinding(string key, string[] arg)
     {
         if (!textBindings.ContainsKey(key)) { throw new KeyNotFoundException($"{key} was not found as a text binding"); }
 
-        return textBindings[key].Invoke();
+        return textBindings[key].Invoke(arg);
     }
 
     #endregion
@@ -107,6 +107,7 @@ public class MonologueManager : MonoBehaviour
         if(currentLineCoro != null) // skip typing animation if still running
         {
             StopCoroutine(currentLineCoro);
+            onLineFinish?.Invoke();
             textLabel.text = currentLine;
             currentLineCoro = null;
             currentLineIndex++;
@@ -143,6 +144,7 @@ public class MonologueManager : MonoBehaviour
         }
 
         nextImage.SetActive(true);
+        onLineFinish?.Invoke();
         currentLineCoro = null;
         currentLineIndex++;
     }
@@ -172,12 +174,15 @@ public class MonologueManager : MonoBehaviour
             if (bindingEndIndex == -1) throw new Exception($"Unclosed textBindings found in line \"{line}\"");
 
             // get text binding key
-            string key = finalLine.Substring(textBindingsIndex + 2, bindingEndIndex - textBindingsIndex - 2);
+            string cmd = finalLine.Substring(textBindingsIndex + 2, bindingEndIndex - textBindingsIndex - 2);
 
-            string result = CallTextBinding(key);
+            string[] sections = cmd.Split("?=");
+            string[] args = sections.Length > 1 ? sections[1].Split(",") : null;
+
+            string result = CallTextBinding(sections[0], args);
 
             // insert text binding key to location
-            while (finalLine.Contains("${" + key + "}")) finalLine = finalLine.Replace("${" + key + "}", "{" + bindingResults.Count + "}");
+            while (finalLine.Contains("${" + cmd + "}")) finalLine = finalLine.Replace("${" + cmd + "}", "{" + bindingResults.Count + "}");
 
             bindingResults.Add(result);
 
