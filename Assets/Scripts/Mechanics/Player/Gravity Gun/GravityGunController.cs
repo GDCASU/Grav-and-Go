@@ -17,6 +17,7 @@ using UnityEngine.InputSystem;
 // WARNING: This script is very complex, I highly suggest you
 // come and ask me before adding or modifying anything on it.
 // Cuz honestly only me and god knows how it works
+//
 // --> Note by Cami: The script has been modified to be less complex;
 // however, there are still some complexities present and caution
 // should be taken with editing it
@@ -402,7 +403,10 @@ public class GravityGunController : MonoBehaviour
         // Check mass limit
         bool isObjectTooHeavy = _focusedObject.rb.mass > _settings.maxMass;
         if (isObjectTooHeavy) { currentState = LineState.TooHeavy; HeavyState(); }
-        else { currentState = LineState.ValidObject; }
+        else { 
+            currentState = LineState.ValidObject; 
+            if (isPulling) { CheckGrab(); }
+        }
     }
 
 
@@ -550,11 +554,14 @@ public class GravityGunController : MonoBehaviour
             case LineState.GrabbingNormal:
                 if (_isPushPullLocked) break;
 
-                // Stop holding object
-                StopHoldingObject();
+                if (isPulling)
+                {
+                    // Stop holding object
+                    StopHoldingObject();
 
-                // Trigger cooldown
-                StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
+                    // Trigger cooldown
+                    StartCoroutine(LockPullPushRoutine(_settings.pullPushCooldown));
+                }
                 break;
             default:
                 break;
