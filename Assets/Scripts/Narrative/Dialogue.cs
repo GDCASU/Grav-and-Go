@@ -5,6 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Dialogue", menuName = "Scriptable Objects/Dialogue")]
 public class Dialogue : ScriptableObject
 {
+    /* -----------------------------------------------------------
+     * Author:
+     * Cami Lee
+     * 
+     * Modified By:
+     * 
+     * Purpose: Create dialogue blocks that are added by Scene.cs
+       --------------------------------------------------------
+    */
+
     public enum Character { None, Cami, Chandler, Ian, }
 
     public List<Block> blocks;

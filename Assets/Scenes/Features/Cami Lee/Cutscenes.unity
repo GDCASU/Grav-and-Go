@@ -406,6 +406,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 758240741}
     m_Modifications:
     - target: {fileID: 4903422289631670047, guid: 085328c77f767d74b949793a76cce831, type: 3}
+      propertyPath: remakeScript
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903422289631670047, guid: 085328c77f767d74b949793a76cce831, type: 3}
       propertyPath: textBackground
       value: 
       objectReference: {fileID: -2423627725662423091, guid: d0e95d2385097ad46a2beac536eb675f, type: 3}
@@ -416,6 +420,10 @@ PrefabInstance:
     - target: {fileID: 6338716009077688232, guid: 085328c77f767d74b949793a76cce831, type: 3}
       propertyPath: m_Name
       value: CutsceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689868827607241858, guid: 085328c77f767d74b949793a76cce831, type: 3}
+      propertyPath: remakeScript
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7689868827607241858, guid: 085328c77f767d74b949793a76cce831, type: 3}
       propertyPath: textBackground

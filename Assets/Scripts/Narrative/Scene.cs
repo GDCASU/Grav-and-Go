@@ -7,6 +7,17 @@ using UnityEngine;
 
 public class Scene : MonoBehaviour
 {
+    /* --------------------------------------------------------
+     * Author:
+     * Cami Lee
+     * 
+     * Modified By:
+     * 
+     * Purpose: Create scenes that read in narrative text & spit out
+     * an editable scene.
+     * --------------------------------------------------------
+    */
+
     [Header("Narrative Input")]
     public TextAsset script;
     public Sprite textBackground;

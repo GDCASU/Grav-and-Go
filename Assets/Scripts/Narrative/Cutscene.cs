@@ -5,6 +5,16 @@ using UnityEngine.UI;
 
 public class Cutscene : MonoBehaviour
 {
+    /* --------------------------------------------------------
+     * Author:
+     * Cami Lee
+     * 
+     * Modified By:
+     * 
+     * Purpose: Manage scenes and the transitions between them.
+     * --------------------------------------------------------
+    */
+
     [SerializeField, InspectorReadOnly] Scene[] scenes;
     [SerializeField, InspectorReadOnly] Image sceneBackground;
     [SerializeField, InspectorReadOnly] Image textBackground;
@@ -23,19 +33,20 @@ public class Cutscene : MonoBehaviour
         dialogue = textBackground.gameObject.GetComponentInChildren<TypewriterText>();
         scenes = GetComponentsInChildren<Scene>();
 
-        StartDialogue();
+        StartScene();
     }
 
-
+    /// <summary> Called by Input System to perform changing the dialogue </summary>
     public void OnChangeDialogue()
     {
+        // If we are done with this cutscene
+        if (sceneIndex >= scenes.Length) return;
+
+        // If we are still going between scenes
         if (sceneTransitioning) return;
 
-        if (scenes[sceneIndex].UpdateDialogue(dialogue))
-        {
-            // continue
-        }
-        else
+        // If we are done with the current dialogue block
+        if (!scenes[sceneIndex].UpdateDialogue(dialogue))
         {
             StartCoroutine(SceneTransition());
         }
@@ -44,9 +55,12 @@ public class Cutscene : MonoBehaviour
     private void EndDialogue()
     {
         // Call event or something? Idk depends on the scenes probably
+
+        // Make dialogue empty
+        dialogue.ClearText();
     }
 
-    private void StartDialogue()
+    private void StartScene()
     {
         // Update images
         if (scenes[sceneIndex].sceneBackground) { sceneBackground.sprite = scenes[sceneIndex].sceneBackground; }
@@ -56,21 +70,17 @@ public class Cutscene : MonoBehaviour
     IEnumerator SceneTransition()
     {
         sceneTransitioning = true;
-
-        // Update images
         sceneIndex++;
 
-        if (sceneIndex >= scenes.Length)
+        if (sceneIndex >= scenes.Length) { EndDialogue(); }
+
+        else
         {
-            EndDialogue();
-            yield return null;
+            StartScene();
+            dialogue.ClearText();
         }
 
-        if (scenes[sceneIndex].sceneBackground) { sceneBackground.sprite = scenes[sceneIndex].sceneBackground; }
-        if (scenes[sceneIndex].textBackground) { textBackground.sprite = scenes[sceneIndex].textBackground; }
-
         sceneTransitioning = false;
-
         yield return null;
     }
 }
