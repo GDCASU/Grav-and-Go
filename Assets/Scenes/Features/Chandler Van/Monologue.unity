@@ -267,9 +267,9 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 10000
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
+  m_charWidthMaxAdj: 15.51
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 28.012665, y: 0, z: 88.687256, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -346,10 +346,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1137152331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 279.3928, y: -30.17}
-  m_SizeDelta: {x: 58.5744, y: 39.6598}
+  m_AnchorMin: {x: 0.8007786, y: 0.17500001}
+  m_AnchorMax: {x: 0.94938934, y: 0.82900006}
+  m_AnchoredPosition: {x: 0.16099548, y: -0.29199982}
+  m_SizeDelta: {x: 1.6789017, y: 0.11100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274091871
 MonoBehaviour:
@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &365804437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -727,10 +727,10 @@ RectTransform:
   - {fileID: 274091870}
   m_Father: {fileID: 365804437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -105}
-  m_SizeDelta: {x: 618.57, y: 100}
+  m_AnchorMin: {x: 0.080434784, y: 0.126}
+  m_AnchorMax: {x: 0.9186413, y: 0.36758456}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.5700073, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137152332
 MonoBehaviour:
@@ -909,6 +909,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5597204382599329834, guid: 1d2d1ac08a0e20147b64b154ff3b5e94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6316159385730472277, guid: 1d2d1ac08a0e20147b64b154ff3b5e94, type: 3}
       propertyPath: m_Name
       value: Gameplay Camera
@@ -957,7 +961,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5990425165595406028, guid: 1d2d1ac08a0e20147b64b154ff3b5e94, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 365804437}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d2d1ac08a0e20147b64b154ff3b5e94, type: 3}
