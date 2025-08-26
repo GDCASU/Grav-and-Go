@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Singleton that owns the <c>PlayerControls</c> asset and surfaces the
+/// Singleton that compiles all user input and surfaces the
 /// current input state each frame.
 /// </summary>
 public class InputManager : MonoBehaviour
