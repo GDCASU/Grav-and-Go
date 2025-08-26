@@ -36,6 +36,7 @@ var annotated_dup =
     [ "Lever", "d6/d65/class_lever.html", null ],
     [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", "d4/d0f/class_line_renderer_from_transforms" ],
     [ "LineRendererSmoother", "da/d25/class_line_renderer_smoother.html", "da/d25/class_line_renderer_smoother" ],
+    [ "MonologueManager", "da/d64/class_monologue_manager.html", "da/d64/class_monologue_manager" ],
     [ "MultiAudioEmitter", "d9/d11/class_multi_audio_emitter.html", "d9/d11/class_multi_audio_emitter" ],
     [ "Outline2D", "d5/df2/class_outline2_d.html", "d5/df2/class_outline2_d" ],
     [ "PauseResumeManager", "d7/d25/class_pause_resume_manager.html", "d7/d25/class_pause_resume_manager" ],
@@ -53,6 +54,7 @@ var annotated_dup =
     [ "SocialLinks", "d3/dcd/class_social_links.html", "d3/dcd/class_social_links" ],
     [ "SoundManager", "d5/dd9/class_sound_manager.html", "d5/dd9/class_sound_manager" ],
     [ "StringInList", "d7/d65/class_string_in_list.html", "d7/d65/class_string_in_list" ],
+    [ "TriggerBox", "d7/dd1/class_trigger_box.html", "d7/dd1/class_trigger_box" ],
     [ "Vector2CompassAttribute", "db/dda/class_vector2_compass_attribute.html", null ],
     [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", null ]
 ];

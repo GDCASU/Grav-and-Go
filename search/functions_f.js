@@ -8,9 +8,10 @@ var searchData=
   ['setfullscreen_5',['SetFullscreen',['../d5/dbd/class_graphics_menu_manager.html#a82b1e9862fd9cb6014a40ec365a58321',1,'GraphicsMenuManager']]],
   ['setoutline_6',['SetOutline',['../d5/df2/class_outline2_d.html#a7899ef0b883950f2236fd74b56397718',1,'Outline2D']]],
   ['setvolume_7',['SetVolume',['../d5/dd9/class_sound_manager.html#a53cae3504dfeef5bf6b651fb10c26e51',1,'SoundManager']]],
-  ['stopallsounds_8',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
-  ['stopsound_9',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
-  ['stopsoundgroup_10',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
-  ['stringinlist_11',['StringInList',['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
-  ['stringtointeger_12',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
+  ['startmonolog_8',['StartMonolog',['../da/d64/class_monologue_manager.html#ae278d4f431bd2bad14cd9ee752d03456',1,'MonologueManager']]],
+  ['stopallsounds_9',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
+  ['stopsound_10',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
+  ['stopsoundgroup_11',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
+  ['stringinlist_12',['StringInList',['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
+  ['stringtointeger_13',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
 ];

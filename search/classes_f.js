@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector2compassattribute_0',['Vector2CompassAttribute',['../db/dda/class_vector2_compass_attribute.html',1,'']]]
+  ['triggerbox_0',['TriggerBox',['../d7/dd1/class_trigger_box.html',1,'']]]
 ];

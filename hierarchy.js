@@ -36,6 +36,7 @@ var hierarchy =
       [ "LevelManager", "d6/d06/class_level_manager.html", null ],
       [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", null ],
       [ "LineRendererSmoother", "da/d25/class_line_renderer_smoother.html", null ],
+      [ "MonologueManager", "da/d64/class_monologue_manager.html", null ],
       [ "MultiAudioEmitter", "d9/d11/class_multi_audio_emitter.html", null ],
       [ "Outline2D", "d5/df2/class_outline2_d.html", null ],
       [ "PauseResumeManager", "d7/d25/class_pause_resume_manager.html", null ],
@@ -54,7 +55,8 @@ var hierarchy =
       [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
-      [ "SoundManager", "d5/dd9/class_sound_manager.html", null ]
+      [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
+      [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ]
     ] ],
     [ "PropertyAttribute", null, [
       [ "InlineToggleAttribute", "de/dc7/class_inline_toggle_attribute.html", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weaponpistol_2ecs_0',['WeaponPistol.cs',['../db/dea/_weapon_pistol_8cs.html',1,'']]]
+  ['triggerbox_2ecs_0',['TriggerBox.cs',['../de/d64/_trigger_box_8cs.html',1,'']]]
 ];

@@ -29,12 +29,13 @@ var searchData=
   ['special_26',['Special',['../dd/db2/_physics_01_object_8cs.html#a9d7ae902d196bdcb62e85cfbd14108ceab4c2b550635fe54fd29f2b64dfaca55d',1,'Physics Object.cs']]],
   ['speed_27',['speed',['../d4/de1/class_dancing_midpoint.html#a29664c0ba1c566674b1aad6cbcb3651b',1,'DancingMidpoint']]],
   ['start_28',['start',['../d1/d96/class_equidistant_points_updater.html#a4f25b88865990b720aced96350e62b6b',1,'EquidistantPointsUpdater']]],
-  ['startposition_29',['StartPosition',['../df/da0/class_bezier_curve.html#a0b8088ac3dc980bef5f04c44386ebd1d',1,'BezierCurve']]],
-  ['startsavingevent_30',['StartSavingEvent',['../de/dd1/class_serialized_data_manager.html#a53131e31e9f7e24d33cc3c15ada6b664',1,'SerializedDataManager']]],
-  ['stopallsounds_31',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
-  ['stopsound_32',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
-  ['stopsoundgroup_33',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
-  ['stopstyle_34',['StopStyle',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22ed',1,'AudioEmitterSettings']]],
-  ['stringinlist_35',['StringInList',['../d7/d65/class_string_in_list.html',1,'StringInList'],['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
-  ['stringtointeger_36',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
+  ['startmonolog_29',['StartMonolog',['../da/d64/class_monologue_manager.html#ae278d4f431bd2bad14cd9ee752d03456',1,'MonologueManager']]],
+  ['startposition_30',['StartPosition',['../df/da0/class_bezier_curve.html#a0b8088ac3dc980bef5f04c44386ebd1d',1,'BezierCurve']]],
+  ['startsavingevent_31',['StartSavingEvent',['../de/dd1/class_serialized_data_manager.html#a53131e31e9f7e24d33cc3c15ada6b664',1,'SerializedDataManager']]],
+  ['stopallsounds_32',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
+  ['stopsound_33',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
+  ['stopsoundgroup_34',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
+  ['stopstyle_35',['StopStyle',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22ed',1,'AudioEmitterSettings']]],
+  ['stringinlist_36',['StringInList',['../d7/d65/class_string_in_list.html',1,'StringInList'],['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
+  ['stringtointeger_37',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
 ];

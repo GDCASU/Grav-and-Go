@@ -1,7 +1,13 @@
 var searchData=
 [
   ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#a53bdf2109e6fb634adb9b04d3c236a2d',1,'IDamageable']]],
-  ['testbool_1',['testBool',['../d8/d23/class_game_data.html#a0ba40a542d2a9388b633840c12d969bb',1,'GameData']]],
-  ['togglefpscounter_2',['ToggleFPSCounter',['../df/d11/class_gameplay_menu_manager.html#ad2ad363803762b6f414f88b96c0777fd',1,'GameplayMenuManager']]],
-  ['tooheavycolor_3',['tooHeavyColor',['../db/d9e/class_gravity_gun_settings.html#a74fe2e61e895564925b28250c4723c34',1,'GravityGunSettings']]]
+  ['targetlayers_1',['targetLayers',['../d7/dd1/class_trigger_box.html#acd0c30b0f23a98aeccd0438c7b453459',1,'TriggerBox']]],
+  ['targettags_2',['targetTags',['../d7/dd1/class_trigger_box.html#a4a08584b86f7b90442fd5986663745b1',1,'TriggerBox']]],
+  ['testbool_3',['testBool',['../d8/d23/class_game_data.html#a0ba40a542d2a9388b633840c12d969bb',1,'GameData']]],
+  ['textlabel_4',['textLabel',['../da/d64/class_monologue_manager.html#a7bff8aeffbd3d6c8d050a86173aa224a',1,'MonologueManager']]],
+  ['togglefpscounter_5',['ToggleFPSCounter',['../df/d11/class_gameplay_menu_manager.html#ad2ad363803762b6f414f88b96c0777fd',1,'GameplayMenuManager']]],
+  ['tooheavycolor_6',['tooHeavyColor',['../db/d9e/class_gravity_gun_settings.html#a74fe2e61e895564925b28250c4723c34',1,'GravityGunSettings']]],
+  ['triggerbox_7',['TriggerBox',['../d7/dd1/class_trigger_box.html',1,'']]],
+  ['triggerbox_2ecs_8',['TriggerBox.cs',['../de/d64/_trigger_box_8cs.html',1,'']]],
+  ['typingspeed_9',['typingSpeed',['../da/d64/class_monologue_manager.html#a65cebf6ad9831b178829914444dea556',1,'MonologueManager']]]
 ];
