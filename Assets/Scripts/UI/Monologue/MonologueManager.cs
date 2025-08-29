@@ -43,9 +43,11 @@ public class MonologueManager : MonoBehaviour
             return;
         }
         Instance = this;
+    }
 
-        // Bind monologue continuation to the interact event
-        InputManager.OnInteract += ContinueMonolog;
+    void OnInteract()
+    {
+        ContinueMonolog();
     }
 
     #endregion
