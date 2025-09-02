@@ -1,5 +1,9 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
+using Unity.VisualScripting;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -21,13 +25,13 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField, Tooltip("ScriptableObject containing tunable movement numbers")] private ScriptableStats _stats;
 
     [Header("References")]
-    [SerializeField] private Rigidbody2D _rb;
-    [SerializeField] private CapsuleCollider2D _col;
-    
+    private Rigidbody2D _rb;
+    private CapsuleCollider2D _collider;
+
     [Header("Audio")]
     [SerializeField] private SimpleAudioEmitter _walkSound;
     [SerializeField] private SimpleAudioEmitter _jumpSound;
-    
+
     [Header("Capsule Casts")]
     [SerializeField, Tooltip("Offset for the ground check capsule cast, in local space.")]
     private Vector2 _groundCheckOffset = Vector2.zero;
@@ -37,35 +41,32 @@ public class PlayerMovementController : MonoBehaviour
 
     [SerializeField, Tooltip("Small substraction as to make sure capsule casts arent bigger than the collider")]
     private Vector2 _capsuleCastSizeSub = Vector2.zero;
-    
+
     [Header("Debugging")]
     [SerializeField] private bool _doDrawCapsuleCast;
-    
+
     [Header("Per-frame state")]
-    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 _frameVelocity;    // Velocity we write to Rigidbody each FixedUpdate
+    [SerializeField, Vector2Compass, InspectorReadOnly] public Vector2 movement;    // Movement we gather from input
+    [SerializeField, Vector2Compass, InspectorReadOnly] private Vector2 velocity;    // Velocity we write to Rigidbody each FixedUpdate
     [SerializeField, InlineToggle, InspectorReadOnly] private bool _cachedQueryStartInColliders;
-    
+
     [Header("Collisions")]
     [SerializeField, InspectorReadOnly] private float _frameLeftGrounded = float.MinValue; // Time when feet last left ground
-    [SerializeField, InspectorReadOnly] private bool  _grounded; // True when capsule is in contact
-    
+    [SerializeField, InspectorReadOnly] private bool _grounded; // True when capsule is in contact
+
     [Header("Jump state flags")]
     [SerializeField, InspectorReadOnly] private bool _jumpToConsume;
     [SerializeField, InspectorReadOnly] private bool _bufferedJumpUsable;
     [SerializeField, InspectorReadOnly] private bool _endedJumpEarly;
     [SerializeField, InspectorReadOnly] private bool _coyoteUsable;
-    
+
     [Header("Timing helpers")]
     [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
-    
-    
-    
-    // Public Helpers
-    /// <summary>Expose last-read movement input so external scripts (e.g. PlayerAnimator) can inspect facing direction.</summary>
-    public Vector2 frameInputMoveVector => _frameInput.Move;
-    
+    [SerializeField, InspectorReadOnly] private float _timeJumpWasReleased;
+
+
+
     // Private helpers
-    private FrameInput _frameInput; // Raw input sampled this fra
     private float _time; // Global time accumulator for coyote / buffer windows
 
     #region Events
@@ -80,6 +81,12 @@ public class PlayerMovementController : MonoBehaviour
 
     #region Unity Callbacks
 
+    private void Start()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+        _collider = GetComponent<CapsuleCollider2D>(); // not in use?
+    }
+
     private void Awake()
     {
         // Store default‐engine setting so we can temporarily override it
@@ -89,57 +96,59 @@ public class PlayerMovementController : MonoBehaviour
     private void Update()
     {
         // Dont do anything if paused
-        if (Time.timeScale <= 0) return;
-        
-        _time += Time.deltaTime;
-        GatherInput();        // Poll Input System each render-frame
+        if (Time.timeScale > 0) _time += Time.deltaTime;
     }
-    
+
     private void FixedUpdate()
     {
         // Dont do anything if paused
         if (Time.timeScale <= 0) return;
-        
+
         CheckCollisions();  // Ground / ceiling detection first — movement depends on result
-        
+
         HandleJump();
-        HandleDirection();
         HandleGravity();
 
         ApplyMovement();    // Finally push calculated velocity to the Rigidbody
     }
 
     #endregion
-    
-    #region Input Gathering
 
-    /// <summary>Polls InputManager and normalizes the data into <see cref="_frameInput"/>.</summary>
-    private void GatherInput()
+    #region Input Functions
+    private void OnMove(InputValue value)
     {
-        _frameInput = new FrameInput
-        {
-            JumpDown = InputManager.Instance.jumpPressedThisFrame,
-            JumpHeld = InputManager.Instance.jumpHeldDownInput,
-            Move     = InputManager.Instance.movementInput
-        };
+        movement = value.Get<Vector2>();
 
         // Optional "digital" snapping so small stick values become full cardinal movement.
         if (_stats.SnapInput)
         {
-            _frameInput.Move.x = Mathf.Abs(_frameInput.Move.x) < _stats.HorizontalDeadZoneThreshold
+            movement.x = Mathf.Abs(movement.x) < _stats.HorizontalDeadZoneThreshold
                                  ? 0
-                                 : Mathf.Sign(_frameInput.Move.x);
+                                 : Mathf.Sign(movement.x);
 
-            _frameInput.Move.y = Mathf.Abs(_frameInput.Move.y) < _stats.VerticalDeadZoneThreshold
+            movement.y = Mathf.Abs(movement.y) < _stats.VerticalDeadZoneThreshold
                                  ? 0
-                                 : Mathf.Sign(_frameInput.Move.y);
+                                 : Mathf.Sign(movement.y);
         }
+    }
 
-        // Buffer jump so it can be consumed in FixedUpdate (safer than reading in physics step)
-        if (_frameInput.JumpDown)
+    private void OnJump(InputValue value)
+    {
+        if (value.isPressed)
         {
-            _jumpToConsume      = true;
+            _jumpToConsume = true;
             _timeJumpWasPressed = _time;
+        }
+        else
+        {
+            _timeJumpWasReleased = _time;
+
+            // If player releases jump early, start applying stronger gravity
+            if (!_endedJumpEarly && !_grounded && _rb.linearVelocity.y > 0)
+            {
+                Debug.Log("jumpEndedEarly");
+                _endedJumpEarly = true;
+            }
         }
     }
 
@@ -153,18 +162,18 @@ public class PlayerMovementController : MonoBehaviour
         Physics2D.queriesStartInColliders = false; // More reliable casts
 
         // Ground cast with offset
-        Vector2 groundStart = (Vector2)_col.bounds.center + _groundCheckOffset;
-        bool groundHit = Physics2D.CapsuleCast(groundStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
+        Vector2 groundStart = (Vector2)_collider.bounds.center + _groundCheckOffset;
+        bool groundHit = Physics2D.CapsuleCast(groundStart, _collider.size - _capsuleCastSizeSub, _collider.direction, 0,
             Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // Ceiling cast with offset
-        Vector2 ceilingStart = (Vector2)_col.bounds.center + _ceilingCheckOffset;
-        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _col.size - _capsuleCastSizeSub, _col.direction, 0,
+        Vector2 ceilingStart = (Vector2)_collider.bounds.center + _ceilingCheckOffset;
+        bool ceilingHit = Physics2D.CapsuleCast(ceilingStart, _collider.size - _capsuleCastSizeSub, _collider.direction, 0,
             Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // If we bonk our head, kill any upward momentum
         if (ceilingHit)
-            _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
+            velocity.y = Mathf.Min(0, velocity.y);
 
         // ------------ Ground-state transitions ------------
         if (!_grounded && groundHit) // Landed
@@ -172,13 +181,13 @@ public class PlayerMovementController : MonoBehaviour
             _grounded = true;
             _coyoteUsable = true;
             _bufferedJumpUsable = true;
-            _endedJumpEarly      = false;
-            GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
+            _endedJumpEarly = false;
+            GroundedChanged?.Invoke(true, Mathf.Abs(velocity.y));
         }
         else if (_grounded && !groundHit)      // Left ground
         {
-            _grounded           = false;
-            _frameLeftGrounded  = _time;
+            _grounded = false;
+            _frameLeftGrounded = _time;
             GroundedChanged?.Invoke(false, 0);
         }
 
@@ -191,16 +200,12 @@ public class PlayerMovementController : MonoBehaviour
 
     // Convenience properties
     private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
-    private bool CanUseCoyote    => _coyoteUsable      && !_grounded &&
+    private bool CanUseCoyote => _coyoteUsable && !_grounded &&
                                     _time < _frameLeftGrounded + _stats.CoyoteTime;
 
     /// <summary>Processes buffered / coyote jumps and variable jump height.</summary>
     private void HandleJump()
     {
-        // If player releases jump early, start applying stronger gravity
-        if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0)
-            _endedJumpEarly = true;
-
         // Nothing to do if we didn't press jump or buffer expired
         if (!_jumpToConsume && !HasBufferedJump) return;
 
@@ -213,38 +218,16 @@ public class PlayerMovementController : MonoBehaviour
     /// <summary>Performs the actual jump impulse.</summary>
     private void ExecuteJump()
     {
-        _endedJumpEarly      = false;
-        _timeJumpWasPressed  = 0;
-        _bufferedJumpUsable  = false;
-        _coyoteUsable        = false;
+        _endedJumpEarly = false;
+        _timeJumpWasPressed = 0;
+        _bufferedJumpUsable = false;
+        _coyoteUsable = false;
         _jumpSound.PlaySound();
 
-        _frameVelocity.y = _stats.JumpPower; // Instant upward velocity
+        velocity.y = _stats.JumpPower; // Instant upward velocity
         Jumped?.Invoke();
     }
-    
-    #endregion
-    
-    #region Horizontal Acceleration 
 
-    /// <summary>Applies ground/air accel & decel to _frameVelocity.x each physics step.</summary>
-    private void HandleDirection()
-    {
-        if (Mathf.Approximately(_frameInput.Move.x, 0f)) // No horizontal input → decelerate towards 0
-        {
-            var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
-            _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, decel * Time.fixedDeltaTime);
-        }
-        else                         // Accelerate towards target speed in chosen direction
-        {
-            _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x,
-                                                 _frameInput.Move.x * _stats.MaxSpeed,
-                                                 _stats.Acceleration * Time.fixedDeltaTime);
-            // Only play walk sound if grounded
-            if (_grounded) _walkSound.PlaySound();
-        }
-    }
-    
     #endregion
 
     #region Gravity
@@ -252,56 +235,65 @@ public class PlayerMovementController : MonoBehaviour
     /// <summary>Custom gravity that supports fast-fall & jump-cut.</summary>
     private void HandleGravity()
     {
-        if (_grounded && _frameVelocity.y <= 0f)
+        if (_grounded && velocity.y <= 0f)
         {
             // Stick player to ground (prevents tiny bounces on slopes)
-            _frameVelocity.y = _stats.GroundingForce;
+            velocity.y = _stats.GroundingForce;
         }
         else
         {
             float gravity = _stats.FallAcceleration;
 
             // If jump was cut early, increase downward pull
-            if (_endedJumpEarly && _frameVelocity.y > 0)
+            if (_endedJumpEarly && velocity.y > 0)
                 gravity *= _stats.JumpEndEarlyGravityModifier;
 
             // Gradually move toward terminal fall speed
-            _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y,
+            velocity.y = Mathf.MoveTowards(velocity.y,
                                                  -_stats.MaxFallSpeed,
                                                  gravity * Time.fixedDeltaTime);
         }
     }
-    
+
     #endregion
-    
+
     #region RigidBody Application
 
     /// <summary>Writes the fully-calculated velocity to the Rigidbody2D.</summary>
     private void ApplyMovement()
     {
-        _rb.linearVelocity = _frameVelocity;
+        if (Mathf.Approximately(movement.x, 0f)) // No horizontal input → decelerate towards 0
+        {
+            var decel = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
+            velocity.x = Mathf.MoveTowards(velocity.x, 0, decel * Time.fixedDeltaTime);
+        }
+        else                                    // Accelerate towards target speed in chosen direction
+        {
+            velocity.x = Mathf.MoveTowards(
+                velocity.x,
+                movement.x * _stats.MaxSpeed,
+                _stats.Acceleration * Time.fixedDeltaTime
+            );
+
+            // Only play walk sound if grounded
+            if (_grounded) _walkSound.PlaySound();
+        }
+
+        _rb.linearVelocity = velocity;
     }
-    
+
     #endregion
-    
-    /// <summary>Lightweight struct for passing a single frame’s worth of input around.</summary>
-    private struct FrameInput
-    {
-        public bool   JumpDown;
-        public bool   JumpHeld;
-        public Vector2 Move;
-    }
 
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (!_doDrawCapsuleCast) return;
-        
-        if (_col == null || _stats == null) return;
 
-        var center = (Vector2)_col.bounds.center;
-        var size = _col.size - _capsuleCastSizeSub;
-        var dir = _col.direction;
+        if (_collider == null || _stats == null) return;
+
+        var center = (Vector2)_collider.bounds.center;
+        var size = _collider.size - _capsuleCastSizeSub;
+        var dir = _collider.direction;
         float dist = _stats.GrounderDistance;
 
         // Ground cast (down)

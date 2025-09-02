@@ -8949,6 +8949,7 @@ GameObject:
   - component: {fileID: 6692054220631066569}
   - component: {fileID: 7872256524189076897}
   - component: {fileID: 2477533334171651322}
+  - component: {fileID: 1981218062872850769}
   m_Layer: 5
   m_Name: Pause Menu Container
   m_TagString: Untagged
@@ -9178,6 +9179,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doDebugLog: 0
+--- !u!114 &1981218062872850769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883384506617351108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &8934760706953246595
 GameObject:
   m_ObjectHideFlags: 0
