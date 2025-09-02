@@ -27,7 +27,6 @@ var hierarchy =
       [ "GraphicsMenuManager", "d5/dbd/class_graphics_menu_manager.html", null ],
       [ "GravityGunController", "d6/dba/class_gravity_gun_controller.html", null ],
       [ "GunProjectile", "d6/dfd/class_gun_projectile.html", null ],
-      [ "InputManager", "df/dd1/class_input_manager.html", null ],
       [ "Interactable", "dc/dc0/class_interactable.html", [
         [ "Lever", "d6/d65/class_lever.html", null ]
       ] ],

@@ -9,7 +9,7 @@ var searchData=
   ['maxvelocity_6',['maxVelocity',['../db/d9e/class_gravity_gun_settings.html#a0623ebbff7b9798f65d1f6c507a12e88',1,'GravityGunSettings']]],
   ['monologuemanager_7',['MonologueManager',['../da/d64/class_monologue_manager.html',1,'']]],
   ['monologuemanager_2ecs_8',['MonologueManager.cs',['../d7/d0b/_monologue_manager_8cs.html',1,'']]],
-  ['movementinput_9',['movementInput',['../df/dd1/class_input_manager.html#ab04b65e6842d23f1d7f62b951eef157b',1,'InputManager']]],
+  ['movement_9',['movement',['../d2/dcb/class_player_movement_controller.html#a54b84ab377e395dd6dc35370bf6caafd',1,'PlayerMovementController']]],
   ['multiaudioemitter_10',['MultiAudioEmitter',['../d9/d11/class_multi_audio_emitter.html',1,'']]],
   ['multiaudioemitter_2ecs_11',['MultiAudioEmitter.cs',['../d8/dfb/_multi_audio_emitter_8cs.html',1,'']]],
   ['music_12',['Music',['../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290a47dcbd834e669233d7eb8a51456ed217',1,'Music:&#160;SoundManager.cs'],['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8a47dcbd834e669233d7eb8a51456ed217',1,'Music:&#160;SoundManager.cs']]],

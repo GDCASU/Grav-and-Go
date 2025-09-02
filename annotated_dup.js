@@ -25,7 +25,6 @@ var annotated_dup =
     [ "IDataPersistance", "d3/d95/interface_i_data_persistance.html", "d3/d95/interface_i_data_persistance" ],
     [ "influenceableObject", "d7/dce/classinfluenceable_object.html", null ],
     [ "InlineToggleAttribute", "de/dc7/class_inline_toggle_attribute.html", null ],
-    [ "InputManager", "df/dd1/class_input_manager.html", "df/dd1/class_input_manager" ],
     [ "InspectorReadOnly", "d8/d23/class_inspector_read_only.html", null ],
     [ "Interactable", "dc/dc0/class_interactable.html", "dc/dc0/class_interactable" ],
     [ "InteractionManager2D", "d9/d70/class_interaction_manager2_d.html", null ],
