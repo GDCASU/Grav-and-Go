@@ -85,8 +85,8 @@ public class PlayerAnimator : MonoBehaviour
     /// <summary>Flips sprite when player walks left/right.</summary>
     private void HandleSpriteFlip()
     {
-        if (playerMovement.frameInputMoveVector.x != 0)
-            _sprite.flipX = playerMovement.frameInputMoveVector.x < 0;
+        if (playerMovement.movement.x != 0)
+            _sprite.flipX = playerMovement.movement.x < 0;
     }
     
     #endregion

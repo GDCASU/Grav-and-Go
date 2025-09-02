@@ -176,6 +176,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+--- !u!1 &216499953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+  m_PrefabInstance: {fileID: 216499952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &274055227
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.3000183, y: 0}
+  m_AnchoredPosition: {x: -0.30004883, y: 0}
   m_SizeDelta: {x: -0.6000061, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274055229
@@ -348,7 +353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8007786, y: 0.17500001}
   m_AnchorMax: {x: 0.94938934, y: 0.82900006}
-  m_AnchoredPosition: {x: 0.16099548, y: -0.29199982}
+  m_AnchoredPosition: {x: 0.16101074, y: -0.29199982}
   m_SizeDelta: {x: 1.6789017, y: 0.11100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274091871
@@ -396,6 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365804437}
   - component: {fileID: 365804438}
+  - component: {fileID: 365804439}
   m_Layer: 0
   m_Name: Monolog UI Container
   m_TagString: Untagged
@@ -439,6 +445,36 @@ MonoBehaviour:
   nextImage: {fileID: 274091869}
   chatContainer: {fileID: 365804436}
   typingSpeed: 15
+--- !u!114 &365804439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365804436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6ed56d1db47cee64e9e745af3d9b253b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Interactions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +1014,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1643012777045875894, guid: 094b8e8e8b8a67e45b082ce48a747004, type: 3}
+      propertyPath: m_PlayerPrefab
+      value: 
+      objectReference: {fileID: 216499953}
     - target: {fileID: 2371034042329909295, guid: 094b8e8e8b8a67e45b082ce48a747004, type: 3}
       propertyPath: m_Name
       value: Persistent Objects

@@ -27,22 +27,8 @@ public class PauseResumeManager : MonoBehaviour
     // These events are only meant to be triggered by the pause key, not the UI
     [SerializeField] private UnityEvent onPause; 
     [SerializeField] private UnityEvent onResume;
-    
-    
-    void Start()
-    {
-        // Listen to the pause input of the player
-        InputManager.OnPause += HandlePauseInput;
-    }
 
-    private void OnDestroy()
-    {
-        // Stop listening if destroyed
-        InputManager.OnPause -= HandlePauseInput;
-    }
-
-
-    private void HandlePauseInput()
+    private void OnPause()
     {
         if (Time.timeScale <= 0)
         {
