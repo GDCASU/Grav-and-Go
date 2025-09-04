@@ -68,7 +68,6 @@ public class SerializedDataManager : MonoBehaviour
         _configFileName = _configFileName.Trim();
         
         // Check for empty fields
-        bool dontInitialize;
         if (_saveFileName.Length <= 0)
         {
             Debug.LogWarning("No save file name provided, using default save file name");
