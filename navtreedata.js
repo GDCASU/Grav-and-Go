@@ -30,7 +30,7 @@ var NAVTREE =
       [ "Data Structure Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"db/db1/_bezier_curve_8cs.html"
+"db/d9d/_pressure_plate2_d_8cs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

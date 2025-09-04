@@ -7,7 +7,9 @@ var annotated_dup =
     [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", "d7/dc3/class_bezier_from_transforms" ],
     [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
     [ "ConfigData", "d1/d32/class_config_data.html", "d1/d32/class_config_data" ],
+    [ "Cutscene", "d5/dd5/class_cutscene.html", "d5/dd5/class_cutscene" ],
     [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", "d4/de1/class_dancing_midpoint" ],
+    [ "Dialogue", "d0/d9d/class_dialogue.html", "d0/d9d/class_dialogue" ],
     [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", "d1/dc9/class_dynamic_line_bezier" ],
     [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", "d1/d96/class_equidistant_points_updater" ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", "dd/d11/class_file_data_handler" ],
@@ -15,6 +17,7 @@ var annotated_dup =
     [ "GameData", "d8/d23/class_game_data.html", "d8/d23/class_game_data" ],
     [ "GameplayMenuManager", "df/d11/class_gameplay_menu_manager.html", "df/d11/class_gameplay_menu_manager" ],
     [ "GameSettings", "d5/d6e/class_game_settings.html", "d5/d6e/class_game_settings" ],
+    [ "GlitchManager", "dd/d1a/class_glitch_manager.html", "dd/d1a/class_glitch_manager" ],
     [ "GrabbableObject", "de/df2/class_grabbable_object.html", null ],
     [ "GraphicsMenuManager", "d5/dbd/class_graphics_menu_manager.html", "d5/dbd/class_graphics_menu_manager" ],
     [ "GravityGunController", "d6/dba/class_gravity_gun_controller.html", null ],
@@ -47,6 +50,7 @@ var annotated_dup =
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", "d5/dd3/class_quit_menu_manager" ],
     [ "RightAlignToggleAttribute", "d3/d1e/class_right_align_toggle_attribute.html", null ],
+    [ "Scene", "d6/db5/class_scene.html", "d6/db5/class_scene" ],
     [ "ScriptableStats", "da/dd5/class_scriptable_stats.html", "da/dd5/class_scriptable_stats" ],
     [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", "de/dd1/class_serialized_data_manager" ],
     [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", "d1/da0/class_simple_audio_emitter" ],
@@ -54,6 +58,7 @@ var annotated_dup =
     [ "SoundManager", "d5/dd9/class_sound_manager.html", "d5/dd9/class_sound_manager" ],
     [ "StringInList", "d7/d65/class_string_in_list.html", "d7/d65/class_string_in_list" ],
     [ "TriggerBox", "d7/dd1/class_trigger_box.html", "d7/dd1/class_trigger_box" ],
+    [ "TypewriterText", "d1/ddd/class_typewriter_text.html", "d1/ddd/class_typewriter_text" ],
     [ "Vector2CompassAttribute", "db/dda/class_vector2_compass_attribute.html", null ],
     [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", null ]
 ];

@@ -5,5 +5,7 @@ var searchData=
   ['beziercurve_2ecs_2',['BezierCurve.cs',['../db/db1/_bezier_curve_8cs.html',1,'']]],
   ['bezierfromtransforms_3',['BezierFromTransforms',['../d7/dc3/class_bezier_from_transforms.html',1,'']]],
   ['bezierfromtransforms_2ecs_4',['BezierFromTransforms.cs',['../d4/d14/_bezier_from_transforms_8cs.html',1,'']]],
-  ['blockingobjecttimebreak_5',['blockingObjectTimeBreak',['../db/d9e/class_gravity_gun_settings.html#a662ca11fad5e301e572ae4b815a57f68',1,'GravityGunSettings']]]
+  ['block_5',['Block',['../db/d9e/struct_dialogue_1_1_block.html',1,'Dialogue']]],
+  ['blockingobjecttimebreak_6',['blockingObjectTimeBreak',['../db/d9e/class_gravity_gun_settings.html#a662ca11fad5e301e572ae4b815a57f68',1,'GravityGunSettings']]],
+  ['blocks_7',['blocks',['../d0/d9d/class_dialogue.html#a2478ec7dca220f21323edf6c701e5b2b',1,'Dialogue']]]
 ];

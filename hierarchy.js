@@ -3,6 +3,7 @@ var hierarchy =
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", null ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", null ],
     [ "BezierCurve", "df/da0/class_bezier_curve.html", null ],
+    [ "Dialogue.Block", "db/d9e/struct_dialogue_1_1_block.html", null ],
     [ "ConfigData", "d1/d32/class_config_data.html", null ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", null ],
     [ "GameData", "d8/d23/class_game_data.html", null ],
@@ -18,12 +19,14 @@ var hierarchy =
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
+      [ "Cutscene", "d5/dd5/class_cutscene.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
       [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", null ],
       [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", null ],
       [ "GameSettings", "d5/d6e/class_game_settings.html", null ],
       [ "GameplayMenuManager", "df/d11/class_gameplay_menu_manager.html", null ],
+      [ "GlitchManager", "dd/d1a/class_glitch_manager.html", null ],
       [ "GraphicsMenuManager", "d5/dbd/class_graphics_menu_manager.html", null ],
       [ "GravityGunController", "d6/dba/class_gravity_gun_controller.html", null ],
       [ "GunProjectile", "d6/dfd/class_gun_projectile.html", null ],
@@ -51,11 +54,13 @@ var hierarchy =
       [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ],
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
+      [ "Scene", "d6/db5/class_scene.html", null ],
       [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
       [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
-      [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ]
+      [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ],
+      [ "TypewriterText", "d1/ddd/class_typewriter_text.html", null ]
     ] ],
     [ "PropertyAttribute", null, [
       [ "InlineToggleAttribute", "de/dc7/class_inline_toggle_attribute.html", null ],
@@ -66,6 +71,7 @@ var hierarchy =
     ] ],
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "ScriptableObject", null, [
+      [ "Dialogue", "d0/d9d/class_dialogue.html", null ],
       [ "GravityGunSettings", "db/d9e/class_gravity_gun_settings.html", null ],
       [ "ScriptableStats", "da/dd5/class_scriptable_stats.html", null ]
     ] ]
