@@ -364,6 +364,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ChangeDialogue",
+                    "type": "Button",
+                    "id": "3d7abe73-e66b-40e9-ae6d-bc7bae779336",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -375,6 +384,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "642750d1-e9e7-42f1-a5c6-65ddb5e35ae9",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeDialogue",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

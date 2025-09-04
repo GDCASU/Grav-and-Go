@@ -26,8 +26,8 @@ MonoBehaviour:
   maxRaycastDistance: 100
   pullForce: 10
   pushForce: 20
-  rotateSpeed: 600
-  WheelMoveSpeed: 10
+  rotateSpeed: 720
+  WheelMoveSpeed: 40
   focusedMoveBaseSpeed: 6
   focusedMoveStrengthExponent: 1.5
   blockingObjectTimeBreak: 1
