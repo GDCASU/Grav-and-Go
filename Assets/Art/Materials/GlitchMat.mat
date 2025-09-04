@@ -57,10 +57,11 @@ Material:
     - _AlphaClip: 0.5
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _GlitchStrength: 1
-    - _NoiseAmount: 50
+    - _GlitchStrength: 0.58
+    - _NoiseAmount: 29
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ScanLinesStrength: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0

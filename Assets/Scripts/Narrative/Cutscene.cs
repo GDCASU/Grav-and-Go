@@ -20,6 +20,9 @@ public class Cutscene : MonoBehaviour
     [SerializeField, InspectorReadOnly] Image textBackground;
     [SerializeField, InspectorReadOnly] TypewriterText dialogue;
 
+    [SerializeField] GlitchManager glitchManager;
+    [SerializeField] float sceneTransitionTime = 1;
+
 
     Dialogue.Block currentBlock;
     int sceneIndex = 0;
@@ -52,14 +55,16 @@ public class Cutscene : MonoBehaviour
         }
     }
 
+    /// <summary> Ends the current cutscene. </summary>
     private void EndDialogue()
     {
-        // Call event or something? Idk depends on the scenes probably
+        // TBD: event that switches to the next scene
 
         // Make dialogue empty
         dialogue.ClearText();
     }
 
+    /// <summary> Starts a new scene within the current cutscene. </summary>
     private void StartScene()
     {
         // Update images
@@ -76,8 +81,15 @@ public class Cutscene : MonoBehaviour
 
         else
         {
-            StartScene();
+            glitchManager.StartGlitch();
             dialogue.ClearText();
+
+            yield return new WaitForSeconds(sceneTransitionTime/2);
+
+            StartScene();
+
+            yield return new WaitForSeconds(sceneTransitionTime/2);
+            glitchManager.StopGlitch();
         }
 
         sceneTransitioning = false;

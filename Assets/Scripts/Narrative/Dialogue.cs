@@ -15,14 +15,13 @@ public class Dialogue : ScriptableObject
        --------------------------------------------------------
     */
 
-    public enum Character { None, Cami, Chandler, Ian, }
 
     public List<Block> blocks;
 
     [Serializable]
     public struct Block
     {
-        [SerializeField] public Character speaker;
+        [SerializeField] public Scene.Character speaker;
         [SerializeField] public string line;
         [SerializeField] public Color color;
     }

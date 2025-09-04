@@ -29,6 +29,8 @@ public class Scene : MonoBehaviour
     Dialogue.Block currentBlock;
     int dialogueIndex = 0;
 
+    public enum Character { None, Player, NPC }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +38,11 @@ public class Scene : MonoBehaviour
         if (remakeScript) { ReadFile(); }
     }
 
+    /// <summary>
+    /// Updates the dialogue based on where in the scene we are.
+    /// </summary>
+    /// <param name="dialogueText"> The text field to be updated. </param>
+    /// <returns></returns>
     public bool UpdateDialogue(TypewriterText dialogueText)
     {
         if (dialogueIndex >= dialogue.blocks.Count)
@@ -61,13 +68,13 @@ public class Scene : MonoBehaviour
         string[] lines = Regex.Split(scriptText, "\n|\r|\r\n");
 
         dialogue.blocks = new List<Dialogue.Block>();
-        Dialogue.Character currentSpeaker = Dialogue.Character.None;
+        Character currentSpeaker = Character.None;
 
         foreach (string line in lines)
         {
             if (line.TrimStart().StartsWith('#') || string.IsNullOrWhiteSpace(line)) { continue; } // if is a comment or blank
 
-            else if (IsCharacterName(line) != Dialogue.Character.None) { currentSpeaker = IsCharacterName(line); } // If is a name
+            else if (IsCharacterName(line) != Character.None) { currentSpeaker = IsCharacterName(line); } // If is a name
 
             else if (line == "END") { return; }
 
@@ -81,14 +88,17 @@ public class Scene : MonoBehaviour
         }
     }
 
-    private Dialogue.Character IsCharacterName(string text)
+    /// <summary> 
+    /// Method to figure out what style the text should be based on the 
+    /// character name. 
+    /// </summary>
+    private Character IsCharacterName(string text)
     {
         switch (text.Replace(" ", ""))
         {
-            case "Cami": return Dialogue.Character.Cami;
-            case "Chandler": return Dialogue.Character.Chandler;
-            case "Ian": return Dialogue.Character.Ian;
-            default: return Dialogue.Character.None;
+            case "NPC": return Character.NPC;
+            case "Player": return Character.Player;
+            default: return Character.None;
         }
     }
 }
