@@ -537,7 +537,7 @@ public class GravityGunController : MonoBehaviour
     private void OnPull(InputValue value)
     {
         isPulling = !isPushing && value.isPressed;
-        if (!isPulling && !_isPushPullLocked) _isPlayerHoldingPullAfterGrab = false;
+        if (_isPushPullLocked) return;
 
         switch (currentState)
         {
@@ -552,8 +552,6 @@ public class GravityGunController : MonoBehaviour
                 break;
             case LineState.GrabbingTooFar:
             case LineState.GrabbingNormal:
-                if (_isPushPullLocked) break;
-
                 if (isPulling)
                 {
                     // Stop holding object
@@ -572,7 +570,7 @@ public class GravityGunController : MonoBehaviour
     private void CheckPull()
     {
         // Perform Pull on non grabbed object if set to do so
-        if (isPulling && !_isHoldingObject)
+        if (isPulling && !_isHoldingObject && !_isPushPullLocked)
         {
             PerformPull();
             // Trigger a longer cooldown routine to avoid prop surfing
