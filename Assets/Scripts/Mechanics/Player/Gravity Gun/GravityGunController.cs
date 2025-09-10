@@ -346,16 +346,16 @@ public class GravityGunController : MonoBehaviour
         // Check if we should change the hold color depending on push range
         if (Vector2.Distance(_gravigunHoldPosDynamic.position, _gravigunHoldPosStatic.position) > _settings.pushRange)
         {
-            UpdateLineRenderer(false, Color.clear);
             UpdateTargetCircle(_settings.validTargetLineColor);
+            UpdateLineRenderer(false, Color.clear);
             ActivateBezierLines(true);
 
             currentState = LineState.GrabbingTooFar;
         }
         else
         {
-            UpdateLineRenderer(false, Color.clear);
             UpdateTargetCircle(_settings.canPushColor);
+            UpdateLineRenderer(false, Color.clear);
             ActivateBezierLines(true);
 
             currentState = LineState.GrabbingNormal;
@@ -504,15 +504,14 @@ public class GravityGunController : MonoBehaviour
         if (inRange2)
         {
             // Change line renderer color as to show object can be pushed, the same with its outline
-            UpdateTargetCircle(_settings.canPushColor);
-            UpdateLineRenderer(true, _settings.canPushColor);
             if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
+            else { UpdateTargetCircle(_settings.canPushColor); UpdateLineRenderer(true, _settings.canPushColor); }
         }
         else
         {
             // Default colors
-            UpdateLineRenderer(true, _settings.validTargetLineColor);
             if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
+            else UpdateLineRenderer(true, _settings.validTargetLineColor);
         }
     }
 
