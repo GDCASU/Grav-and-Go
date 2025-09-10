@@ -499,19 +499,23 @@ public class GravityGunController : MonoBehaviour
 
     private void CheckPush()
     {
+        if (_isHoldingObject) return;
+
         // Check if in range of pushs
         bool inRange2 = Vector2.Distance(_currentHit.point, _gravigunPivot.position) < _settings.pushRange;
         if (inRange2)
         {
             // Change line renderer color as to show object can be pushed, the same with its outline
-            if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.canPushColor);
-            else { UpdateTargetCircle(_settings.canPushColor); UpdateLineRenderer(true, _settings.canPushColor); }
+            UpdateTargetCircle(_settings.canPushColor);
+            UpdateLineRenderer(true, _settings.canPushColor);
+            if (_focusedObject)  _focusedObject.ChangeOutlineColor(_settings.canPushColor);
         }
         else
         {
             // Default colors
-            if (_focusedObject) _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
-            else UpdateLineRenderer(true, _settings.validTargetLineColor);
+            UpdateTargetCircle(_settings.validTargetLineColor);
+            UpdateLineRenderer(true, _settings.validTargetLineColor);
+            if (_focusedObject)  _focusedObject.ChangeOutlineColor(_settings.validTargetLineColor);
         }
     }
 
