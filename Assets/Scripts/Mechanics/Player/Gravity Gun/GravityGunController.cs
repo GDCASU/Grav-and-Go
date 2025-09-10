@@ -167,7 +167,8 @@ public class GravityGunController : MonoBehaviour
     /// <summary> Function that toggles the gravity gun on and off </summary>
     private void OnToggle()
     {
-        currentState = LineState.Off;
+        if (currentState == LineState.Off) currentState = LineState.NoObject;
+        else currentState = LineState.Off;
     }
 
     /// <summary> Computes and rotates the gravity gun and its direction </summary>
