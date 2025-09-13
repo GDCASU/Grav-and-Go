@@ -80,7 +80,6 @@ jobs:
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           git commit -m "Update Doxygen docs for commit ${SHORT_SHA}" || echo "No changes to commit"
       
-          # Create a new branch name for this update
           BRANCH="docs-update-${SHORT_SHA}"
           git checkout -b "$BRANCH"
           git push origin "$BRANCH"
@@ -92,8 +91,8 @@ jobs:
             --title "Update Doxygen docs for commit ${SHORT_SHA}" \
             --body "Automated Doxygen documentation update."
       
-          # Enable auto-merge (squash)
-          gh pr merge --auto --squash --delete-branch
+          # Merge immediately (squash + delete branch)
+          gh pr merge --squash --delete-branch --admin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
