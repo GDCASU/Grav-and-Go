@@ -48,6 +48,9 @@ public struct LevelName
 public struct LevelStatus
 {
     public bool isUnlocked;
-    public float bestTime;
+    /// <summary>
+    /// The best time in milliseconds
+    /// </summary>
+    public int bestTime;
 }
 
