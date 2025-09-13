@@ -13,6 +13,7 @@ var hierarchy =
       [ "GameSettings", "d5/d6e/class_game_settings.html", null ]
     ] ],
     [ "Interactable.InteractableEvents", "d8/d40/class_interactable_1_1_interactable_events.html", null ],
+    [ "LayerCollisionDetection.LayerEventPair", "d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html", null ],
     [ "LevelName", "d1/d81/struct_level_name.html", null ],
     [ "LevelStatus", "d7/d51/struct_level_status.html", null ],
     [ "MonoBehaviour", null, [
@@ -34,6 +35,7 @@ var hierarchy =
         [ "Lever", "d6/d65/class_lever.html", null ]
       ] ],
       [ "InteractionManager2D", "d9/d70/class_interaction_manager2_d.html", null ],
+      [ "LayerCollisionDetection", "db/df8/class_layer_collision_detection.html", null ],
       [ "LevelButton", "dc/d72/class_level_button.html", null ],
       [ "LevelManager", "d6/d06/class_level_manager.html", null ],
       [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", null ],
@@ -54,6 +56,7 @@ var hierarchy =
       [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ],
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
+      [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", null ],
       [ "Scene", "d6/db5/class_scene.html", null ],
       [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],

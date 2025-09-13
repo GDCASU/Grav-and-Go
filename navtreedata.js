@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"db/d9d/_pressure_plate2_d_8cs.html"
+"da/dd5/class_scriptable_stats.html#a5a3c74438de2bbc09ab50132414c1918"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
