@@ -64,6 +64,14 @@ public abstract class PhysicsObject : MonoBehaviour
         _isTargeted = false;
         _outline.SetOutline(false);
     }
+
+    /// <summary>
+    /// A simple getter for the isTargeted variable
+    /// </summary
+    public virtual bool get_isTargeted()
+    {
+        return _isTargeted;
+    }
 }
 
 /// <summary>
