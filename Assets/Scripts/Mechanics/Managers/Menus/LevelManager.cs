@@ -34,8 +34,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool _doDebugLog;
 
     [Header("Events")]
+	/// Triggered when the player starts playing the level
     public UnityEvent<LevelName> OnLevelStart { get; private set; } = new UnityEvent<LevelName>();
-    public UnityEvent<LevelName> OnLevelEnd { get; private set; } = new UnityEvent<LevelName>();
+
+	/// Triggered when the level is completed successfully
+    public UnityEvent<LevelName> OnLevelComplete { get; private set; } = new UnityEvent<LevelName>();
 
     void Awake()
     {
@@ -127,7 +130,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     /// <param name="levelName">The name of the level</param>
     /// <returns>The best time of the level. If the level hasn't been played 0, if there was an error -1.</returns>
-    public int GetLevelBestTime(LevelName levelName)
+    public float GetLevelBestTime(LevelName levelName)
     {
         // Check if the level is in database
         bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus level);
@@ -147,7 +150,7 @@ public class LevelManager : MonoBehaviour
     /// <param name="levelName">The name of the level</param>
     /// <param name="time">Time in milliseconds</param>
     /// <returns>True if new time is best</returns>
-    public bool UpdateLevelBestTime(LevelName levelName, int time)
+    public bool UpdateLevelBestTime(LevelName levelName, float time)
     {
         // Check if the level is in database
         bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus level);

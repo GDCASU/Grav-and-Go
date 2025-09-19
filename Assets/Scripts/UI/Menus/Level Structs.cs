@@ -51,6 +51,6 @@ public struct LevelStatus
     /// <summary>
     /// The best time in milliseconds
     /// </summary>
-    public int bestTime;
+    public float bestTime;
 }
 
