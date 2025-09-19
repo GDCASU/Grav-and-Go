@@ -514,7 +514,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 625781053574762727, guid: 88699c8bf3c68e948b2f007c81d83cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 980973666}
   m_SourcePrefab: {fileID: 100100000, guid: 88699c8bf3c68e948b2f007c81d83cae, type: 3}
 --- !u!1 &619394800
 GameObject:
@@ -2208,6 +2211,30 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &980973665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 625781053574762727, guid: 88699c8bf3c68e948b2f007c81d83cae, type: 3}
+  m_PrefabInstance: {fileID: 526645806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &980973666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980973665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8860b4ddba6038f48b2daf84861f3537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelMusic:
+    Guid:
+      Data1: -964626890
+      Data2: 1207928547
+      Data3: -171988320
+      Data4: 1283777481
+    Path: event:/Music/Main Menu Music
 --- !u!1 &1225538705
 GameObject:
   m_ObjectHideFlags: 0
