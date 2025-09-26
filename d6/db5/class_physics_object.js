@@ -3,6 +3,7 @@ var class_physics_object =
     [ "ChangeOutlineColor", "d6/db5/class_physics_object.html#ae158ccd14463b32ad28f73c80dbf6f0f", null ],
     [ "DisableTarget", "d6/db5/class_physics_object.html#a551cc95c4ae240a49378143862497299", null ],
     [ "EnableTarget", "d6/db5/class_physics_object.html#ab342afdb3fcfc1d8799fcb4fc584d6a7", null ],
+    [ "get_isTargeted", "d6/db5/class_physics_object.html#a54d704725f7f865e8697e1f059e2acad", null ],
     [ "_outline", "d6/db5/class_physics_object.html#ae78ae960b479ffb7e52aff51ade1384c", null ],
     [ "collider", "d6/db5/class_physics_object.html#ab3b0ecffda0df63f042bc33b915a0b74", null ],
     [ "physicsObjectType", "d6/db5/class_physics_object.html#a6e79939a8b0115239a1d01c563eed006", null ],
