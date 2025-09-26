@@ -9,7 +9,9 @@ var hierarchy =
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", null ],
     [ "GameData", "d8/d23/class_game_data.html", null ],
     [ "GravSpecialObject.GravEvents", "d9/d82/class_grav_special_object_1_1_grav_events.html", null ],
-    [ "IDamageable", "df/d15/interface_i_damageable.html", null ],
+    [ "IDamageable", "df/d15/interface_i_damageable.html", [
+      [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ]
+    ] ],
     [ "IDataPersistance", "d3/d95/interface_i_data_persistance.html", [
       [ "GameSettings", "d5/d6e/class_game_settings.html", null ]
     ] ],
@@ -21,6 +23,7 @@ var hierarchy =
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
+      [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
       [ "Cutscene", "d5/dd5/class_cutscene.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],
@@ -58,6 +61,7 @@ var hierarchy =
       [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ],
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
+      [ "RetryManager", "d1/d94/class_retry_manager.html", null ],
       [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", null ],
       [ "Scene", "d6/db5/class_scene.html", null ],
       [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
