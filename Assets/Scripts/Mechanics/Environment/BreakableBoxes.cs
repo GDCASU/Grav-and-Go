@@ -16,14 +16,6 @@ public class BreakableBoxes : MonoBehaviour, IDamageable
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-
-
-        
-
-    }
 
 
 
@@ -48,6 +40,7 @@ public class BreakableBoxes : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
         if (currentHealth <= 0 && !destroyed)
         {
             boxDied();
