@@ -1,0 +1,7 @@
+<map id="RetryManager.OnDeath" name="RetryManager.OnDeath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,180,56"/>
+<area shape="rect" id="Node000002" href="$d1/d94/class_retry_manager.html#ab1de4e103b072edb38de80f3df994de7" title=" " alt="" coords="228,5,399,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,214,27,215,32,180,36"/>
+<area shape="rect" id="Node000003" href="$d1/d94/class_retry_manager.html#a6e68ab181edc564ee8fbe9d135a059a4" title=" " alt="" coords="230,55,397,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,50,217,54,216,59,180,55"/>
+</map>

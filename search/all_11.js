@@ -7,6 +7,9 @@ var searchData=
   ['resetprogress_4',['ResetProgress',['../df/d11/class_gameplay_menu_manager.html#af08df94cf4a850e6d2e2ed3a3b6a6088',1,'GameplayMenuManager']]],
   ['resumeallsounds_5',['ResumeAllSounds',['../d5/dd9/class_sound_manager.html#adafecddf771fa842c3b6f391014809c3',1,'SoundManager']]],
   ['resumesoundgroup_6',['ResumeSoundGroup',['../d5/dd9/class_sound_manager.html#abcaa236f79de80f25d1ddb8a40e3c5c9',1,'SoundManager']]],
-  ['rightaligntoggleattribute_7',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
-  ['rotatespeed_8',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]]
+  ['retrymanager_7',['RetryManager',['../d1/d94/class_retry_manager.html',1,'']]],
+  ['retrymanager_2ecs_8',['RetryManager.cs',['../d0/df0/_retry_manager_8cs.html',1,'']]],
+  ['retryui_9',['RetryUI',['../d1/d94/class_retry_manager.html#a6e68ab181edc564ee8fbe9d135a059a4',1,'RetryManager']]],
+  ['rightaligntoggleattribute_10',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
+  ['rotatespeed_11',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]]
 ];

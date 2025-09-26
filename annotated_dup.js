@@ -52,6 +52,7 @@ var annotated_dup =
     [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", "d0/df0/class_pressure_plate2_d" ],
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", "d5/dd3/class_quit_menu_manager" ],
+    [ "RetryManager", "d1/d94/class_retry_manager.html", "d1/d94/class_retry_manager" ],
     [ "RightAlignToggleAttribute", "d3/d1e/class_right_align_toggle_attribute.html", null ],
     [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", "d7/d00/class_saw_blade_mover" ],
     [ "Scene", "d6/db5/class_scene.html", "d6/db5/class_scene" ],

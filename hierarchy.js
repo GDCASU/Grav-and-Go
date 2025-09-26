@@ -58,6 +58,7 @@ var hierarchy =
       [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ],
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
+      [ "RetryManager", "d1/d94/class_retry_manager.html", null ],
       [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", null ],
       [ "Scene", "d6/db5/class_scene.html", null ],
       [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
