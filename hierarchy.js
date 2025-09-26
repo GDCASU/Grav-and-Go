@@ -5,6 +5,7 @@ var hierarchy =
     [ "BezierCurve", "df/da0/class_bezier_curve.html", null ],
     [ "Dialogue.Block", "db/d9e/struct_dialogue_1_1_block.html", null ],
     [ "ConfigData", "d1/d32/class_config_data.html", null ],
+    [ "EffectList", "d9/d40/class_effect_list.html", null ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", null ],
     [ "GameData", "d8/d23/class_game_data.html", null ],
     [ "GravSpecialObject.GravEvents", "d9/d82/class_grav_special_object_1_1_grav_events.html", null ],
@@ -17,6 +18,7 @@ var hierarchy =
     [ "LevelName", "d1/d81/struct_level_name.html", null ],
     [ "LevelStatus", "d7/d51/struct_level_status.html", null ],
     [ "MonoBehaviour", null, [
+      [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],

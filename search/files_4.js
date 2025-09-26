@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['equidistantpointsupdater_2ecs_0',['EquidistantPointsUpdater.cs',['../d0/d92/_equidistant_points_updater_8cs.html',1,'']]]
+  ['effectlist_2ecs_0',['EffectList.cs',['../da/d22/_effect_list_8cs.html',1,'']]],
+  ['equidistantpointsupdater_2ecs_1',['EquidistantPointsUpdater.cs',['../d0/d92/_equidistant_points_updater_8cs.html',1,'']]]
 ];

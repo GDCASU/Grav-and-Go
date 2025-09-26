@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", "df/d1a/class_a_o_e__cylinder" ],
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", "d0/d51/class_audio_emitter_settings" ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", "d8/d49/class_audio_emitter_tools" ],
     [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", "df/d60/class_audio_menu_manager" ],
@@ -11,6 +12,7 @@ var annotated_dup =
     [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", "d4/de1/class_dancing_midpoint" ],
     [ "Dialogue", "d0/d9d/class_dialogue.html", "d0/d9d/class_dialogue" ],
     [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", "d1/dc9/class_dynamic_line_bezier" ],
+    [ "EffectList", "d9/d40/class_effect_list.html", "d9/d40/class_effect_list" ],
     [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", "d1/d96/class_equidistant_points_updater" ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", "dd/d11/class_file_data_handler" ],
     [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", "d8/d6a/class_f_p_s_counter" ],
