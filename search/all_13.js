@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#a53bdf2109e6fb634adb9b04d3c236a2d',1,'IDamageable']]],
+  ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#a53bdf2109e6fb634adb9b04d3c236a2d',1,'IDamageable.TakeDamage()'],['../d0/d30/class_breakable_boxes.html#aeb93f50fdf4d9b9d3d509bfef42495b6',1,'BreakableBoxes.TakeDamage()']]],
   ['targetlayers_1',['targetLayers',['../d7/dd1/class_trigger_box.html#acd0c30b0f23a98aeccd0438c7b453459',1,'TriggerBox']]],
   ['targettags_2',['targetTags',['../d7/dd1/class_trigger_box.html#a4a08584b86f7b90442fd5986663745b1',1,'TriggerBox']]],
   ['testbool_3',['testBool',['../d8/d23/class_game_data.html#a0ba40a542d2a9388b633840c12d969bb',1,'GameData']]],

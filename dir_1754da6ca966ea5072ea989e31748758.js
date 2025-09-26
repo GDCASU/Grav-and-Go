@@ -5,5 +5,6 @@ var dir_1754da6ca966ea5072ea989e31748758 =
     [ "GameSettings.cs", "d1/d48/_game_settings_8cs.html", "d1/d48/_game_settings_8cs" ],
     [ "InteractionManager.cs", "d0/d43/_interaction_manager_8cs.html", "d0/d43/_interaction_manager_8cs" ],
     [ "PersistentObjectsManager.cs", "d4/dfc/_persistent_objects_manager_8cs.html", "d4/dfc/_persistent_objects_manager_8cs" ],
+    [ "RetryManager.cs", "d0/df0/_retry_manager_8cs.html", "d0/df0/_retry_manager_8cs" ],
     [ "SoundManager.cs", "db/dc2/_sound_manager_8cs.html", "db/dc2/_sound_manager_8cs" ]
 ];
