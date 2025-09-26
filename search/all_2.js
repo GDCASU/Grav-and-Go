@@ -7,5 +7,7 @@ var searchData=
   ['bezierfromtransforms_2ecs_4',['BezierFromTransforms.cs',['../d4/d14/_bezier_from_transforms_8cs.html',1,'']]],
   ['block_5',['Block',['../db/d9e/struct_dialogue_1_1_block.html',1,'Dialogue']]],
   ['blockingobjecttimebreak_6',['blockingObjectTimeBreak',['../db/d9e/class_gravity_gun_settings.html#a662ca11fad5e301e572ae4b815a57f68',1,'GravityGunSettings']]],
-  ['blocks_7',['blocks',['../d0/d9d/class_dialogue.html#a2478ec7dca220f21323edf6c701e5b2b',1,'Dialogue']]]
+  ['blocks_7',['blocks',['../d0/d9d/class_dialogue.html#a2478ec7dca220f21323edf6c701e5b2b',1,'Dialogue']]],
+  ['breakableboxes_8',['BreakableBoxes',['../d0/d30/class_breakable_boxes.html',1,'']]],
+  ['breakableboxes_2ecs_9',['BreakableBoxes.cs',['../d4/d83/_breakable_boxes_8cs.html',1,'']]]
 ];
