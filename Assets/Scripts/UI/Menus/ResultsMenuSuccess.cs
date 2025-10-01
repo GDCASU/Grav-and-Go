@@ -1,4 +1,6 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 /* -----------------------------------------------------------
  * Author:
@@ -7,19 +9,28 @@ using UnityEngine;
  * Modified By:
  * 
  */// --------------------------------------------------------
+
 public class ResultsMenuSuccess : MonoBehaviour 
 {
-    // stats displayed on the menu
-    private float timer = 0f;
-    int health;
-    string powerUps;
+    public GameObject resultsPanel;
+    public TMP_Text timeText;
+    public TMP_Text healthText;
+    public TMP_Text powerUpsText;
+
+    // set to false until level is successfully completed
     void Start()
     {
-
+        resultsPanel.SetActive(false);
     }
 
-    void Update()
+    public void ShowResults(float time, int health, string powerUps)
     {
-        timer += Time.deltaTime;
+        resultsPanel.SetActive(true);
+
+        timeText.text = "Time: " + time.ToString("F2") + "s";
+        healthText.text = "Health: " + health.ToString("");
+        powerUpsText.text = "Power ups: " + powerUps;
+        
+        Time.timeScale = 0f;
     }
 }
