@@ -33,4 +33,25 @@ public class ResultsMenuSuccess : MonoBehaviour
         
         Time.timeScale = 0f;
     }
+
+    // buttons
+    public void OnRetry()
+    {
+        Time.timeScale = 1f;
+    }
+    
+    public void OnLevelSelect()
+    {
+
+    }
+
+    public void OnMainMenu()
+    {
+
+    }
+
+    public void OnNextLevel()
+    {
+
+    }
 }
