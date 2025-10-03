@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamedata_0',['gameData',['../de/dd1/class_serialized_data_manager.html#a2144c8914e10b9dd523598f56981ab9b',1,'SerializedDataManager']]]
+  ['gamedata_0',['gameData',['../da/da0/class_save_manager.html#a3725cd5b03e927fcb5aa9996fb8c379b',1,'SaveManager']]]
 ];

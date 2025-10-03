@@ -111,21 +111,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03e6fd9c03c9933df7b113ca0808d586" id="r_a03e6fd9c03c9933df7b113ca0808d586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03e6fd9c03c9933df7b113ca0808d586">FileDataHandler</a> (string dataFolderName, string dataFileName, string configFileName)</td></tr>
-<tr class="memitem:a3d4b8530cbb0c18f53ffe1aba3cab2e4" id="r_a3d4b8530cbb0c18f53ffe1aba3cab2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d23/class_game_data.html">GameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d4b8530cbb0c18f53ffe1aba3cab2e4">LoadGameData</a> ()</td></tr>
-<tr class="memdesc:a3d4b8530cbb0c18f53ffe1aba3cab2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will load the player's game data from file.  <br /></td></tr>
-<tr class="memitem:a841516faaf0acad17989ee322c721c67" id="r_a841516faaf0acad17989ee322c721c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d32/class_config_data.html">ConfigData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841516faaf0acad17989ee322c721c67">LoadConfigData</a> ()</td></tr>
-<tr class="memdesc:a841516faaf0acad17989ee322c721c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will load the player's config data from file.  <br /></td></tr>
-<tr class="memitem:a5b73057869f196cb537fbad32f8343dd" id="r_a5b73057869f196cb537fbad32f8343dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b73057869f196cb537fbad32f8343dd">SaveGameData</a> (<a class="el" href="../../d8/d23/class_game_data.html">GameData</a> data)</td></tr>
-<tr class="memdesc:a5b73057869f196cb537fbad32f8343dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the game data class to a file.  <br /></td></tr>
-<tr class="memitem:aac8f10b82495b4eeb4d9bbc611a22651" id="r_aac8f10b82495b4eeb4d9bbc611a22651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8f10b82495b4eeb4d9bbc611a22651">SaveConfigData</a> (<a class="el" href="../../d1/d32/class_config_data.html">ConfigData</a> data)</td></tr>
-<tr class="memdesc:aac8f10b82495b4eeb4d9bbc611a22651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the config data class to a file.  <br /></td></tr>
+<tr class="memitem:a518f7481ff1d9fb178bf29ebd3940113" id="r_a518f7481ff1d9fb178bf29ebd3940113"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a518f7481ff1d9fb178bf29ebd3940113">FileDataHandler</a> (string dataFolderName)</td></tr>
+<tr class="memitem:a9c0bf1b40af5d367033d5b9c5e38daec" id="r_a9c0bf1b40af5d367033d5b9c5e38daec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c0bf1b40af5d367033d5b9c5e38daec">SaveData&lt; T &gt;</a> (string relativePath, T data, bool isEncrypted)</td></tr>
+<tr class="memdesc:a9c0bf1b40af5d367033d5b9c5e38daec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves current data iteration.  <br /></td></tr>
+<tr class="memitem:a6f644a56eb5c4aeb46f76f74c455cdf0" id="r_a6f644a56eb5c4aeb46f76f74c455cdf0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f644a56eb5c4aeb46f76f74c455cdf0">LoadData&lt; T &gt;</a> (string relativePath, bool isEncrypted)</td></tr>
+<tr class="memdesc:a6f644a56eb5c4aeb46f76f74c455cdf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads data by path name.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handler class that will take care of storing the data to a file in the streaming assets folder. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a03e6fd9c03c9933df7b113ca0808d586" name="a03e6fd9c03c9933df7b113ca0808d586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03e6fd9c03c9933df7b113ca0808d586">&#9670;&#160;</a></span>FileDataHandler()</h2>
+<a id="a518f7481ff1d9fb178bf29ebd3940113" name="a518f7481ff1d9fb178bf29ebd3940113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518f7481ff1d9fb178bf29ebd3940113">&#9670;&#160;</a></span>FileDataHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,17 +132,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">FileDataHandler.FileDataHandler </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dataFolderName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dataFolderName</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>dataFileName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>configFileName</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -159,8 +146,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a841516faaf0acad17989ee322c721c67" name="a841516faaf0acad17989ee322c721c67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a841516faaf0acad17989ee322c721c67">&#9670;&#160;</a></span>LoadConfigData()</h2>
+<a id="a6f644a56eb5c4aeb46f76f74c455cdf0" name="a6f644a56eb5c4aeb46f76f74c455cdf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f644a56eb5c4aeb46f76f74c455cdf0">&#9670;&#160;</a></span>LoadData&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,10 +156,14 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d32/class_config_data.html">ConfigData</a> FileDataHandler.LoadConfigData </td>
+          <td class="memname">T FileDataHandler.LoadData&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>relativePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isEncrypted</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -182,12 +173,32 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Will load the player's config data from file. </p>
+<p>Loads data by path name. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of data we're storing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relativePath</td><td>Folder to take the data from under data folder.</td></tr>
+    <tr><td class="paramname">isEncrypted</td><td>Whether or not the data we're accessing is encrypted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Current data</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FileNotFoundException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3d4b8530cbb0c18f53ffe1aba3cab2e4" name="a3d4b8530cbb0c18f53ffe1aba3cab2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d4b8530cbb0c18f53ffe1aba3cab2e4">&#9670;&#160;</a></span>LoadGameData()</h2>
+<a id="a9c0bf1b40af5d367033d5b9c5e38daec" name="a9c0bf1b40af5d367033d5b9c5e38daec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0bf1b40af5d367033d5b9c5e38daec">&#9670;&#160;</a></span>SaveData&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,10 +207,19 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d23/class_game_data.html">GameData</a> FileDataHandler.LoadGameData </td>
+          <td class="memname">bool FileDataHandler.SaveData&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>relativePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isEncrypted</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -209,61 +229,22 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Will load the player's game data from file. </p>
-
-</div>
-</div>
-<a id="aac8f10b82495b4eeb4d9bbc611a22651" name="aac8f10b82495b4eeb4d9bbc611a22651"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac8f10b82495b4eeb4d9bbc611a22651">&#9670;&#160;</a></span>SaveConfigData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FileDataHandler.SaveConfigData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d32/class_config_data.html">ConfigData</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Saves the config data class to a file. </p>
-
-</div>
-</div>
-<a id="a5b73057869f196cb537fbad32f8343dd" name="a5b73057869f196cb537fbad32f8343dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b73057869f196cb537fbad32f8343dd">&#9670;&#160;</a></span>SaveGameData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FileDataHandler.SaveGameData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d23/class_game_data.html">GameData</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Saves the game data class to a file. </p>
+<p>Saves current data iteration. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relativePath</td><td>Specific folder to store the data in </td></tr>
+    <tr><td class="paramname">data</td><td>The data to store in JSON format </td></tr>
+    <tr><td class="paramname">isEncrypted</td><td>Whether or not we want to hide the data from users (slower) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the data saved</dd></dl>
 
 </div>
 </div>

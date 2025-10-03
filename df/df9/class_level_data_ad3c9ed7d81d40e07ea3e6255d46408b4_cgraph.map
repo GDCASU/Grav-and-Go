@@ -1,0 +1,14 @@
+<map id="LevelData.Load" name="LevelData.Load">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,128,81"/>
+<area shape="rect" id="Node000002" href="$d4/dd0/struct_level.html#a5b2da640c34ed674653f4af2132872b8" title="Finds the hazard objects in the scene." alt="" coords="357,5,536,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,54,127,33,175,15,261,5,344,5,344,10,261,10,177,21,129,37,89,58"/>
+<area shape="rect" id="Node000003" href="$d4/dd0/struct_level.html#aa07a8b228a7c330460c1feffc4839b60" title="Finds the physics objects in the scene." alt="" coords="348,68,545,93"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,68,334,74,334,80,128,73"/>
+<area shape="rect" id="Node000004" href="$d4/dd0/struct_level.html#a66b3abb17766128808c11227ccb4fb03" title="Finds the active player object in the scene." alt="" coords="363,117,530,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,76,355,113,354,118,128,81"/>
+<area shape="rect" id="Node000005" href="$df/df9/class_level_data.html#a8562f013e83bbee65aa55b9e154b696e" title=" " alt="" coords="176,31,300,56"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="128,57,162,52,162,57,129,62"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="300,33,343,28,344,33,300,39"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="301,52,362,63,361,68,300,57"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="259,54,299,79,349,104,370,111,369,116,347,108,297,84,256,58"/>
+</map>

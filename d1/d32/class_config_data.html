@@ -105,19 +105,26 @@ $(function() {
   <div class="headertitle"><div class="title">ConfigData Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>small data that can easily be stored as an int, string, or float  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32753a8ce32be2dc36a83a732c7af877" id="r_a32753a8ce32be2dc36a83a732c7af877"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32753a8ce32be2dc36a83a732c7af877">ConfigData</a> ()</td></tr>
 <tr class="memdesc:a32753a8ce32be2dc36a83a732c7af877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that will be called when creating a new game.  <br /></td></tr>
+<tr class="memitem:a5ee8b449afd493462e60f16f30d9b00d" id="r_a5ee8b449afd493462e60f16f30d9b00d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ee8b449afd493462e60f16f30d9b00d">Save</a> ()</td></tr>
+<tr class="memitem:a87e996d3ae73130fceaa24375d3b0562" id="r_a87e996d3ae73130fceaa24375d3b0562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e996d3ae73130fceaa24375d3b0562">Load</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a86967b0bdfac6d57d9a8e8053d906485" id="r_a86967b0bdfac6d57d9a8e8053d906485"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86967b0bdfac6d57d9a8e8053d906485">masterVolumeValue</a></td></tr>
-<tr class="memitem:a8600b877f52c7f4668f88431575a17fb" id="r_a8600b877f52c7f4668f88431575a17fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8600b877f52c7f4668f88431575a17fb">sfxVolumeValue</a></td></tr>
-<tr class="memitem:a3d7817503ea2f9d8326dc2495d000108" id="r_a3d7817503ea2f9d8326dc2495d000108"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d7817503ea2f9d8326dc2495d000108">musicVolumeValue</a></td></tr>
+<tr class="memitem:ab688eae39879260dcbbe2e54a8f0a063" id="r_ab688eae39879260dcbbe2e54a8f0a063"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab688eae39879260dcbbe2e54a8f0a063">intDict</a></td></tr>
+<tr class="memitem:aaa63c48c0b7f08d069ae7bdb1400f3a0" id="r_aaa63c48c0b7f08d069ae7bdb1400f3a0"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa63c48c0b7f08d069ae7bdb1400f3a0">stringDict</a></td></tr>
+<tr class="memitem:ad8b1516745e9113428f998d17e624b7e" id="r_ad8b1516745e9113428f998d17e624b7e"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8b1516745e9113428f998d17e624b7e">floatDict</a></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>small data that can easily be stored as an int, string, or float </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a32753a8ce32be2dc36a83a732c7af877" name="a32753a8ce32be2dc36a83a732c7af877"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32753a8ce32be2dc36a83a732c7af877">&#9670;&#160;</a></span>ConfigData()</h2>
 
@@ -145,43 +152,94 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a87e996d3ae73130fceaa24375d3b0562" name="a87e996d3ae73130fceaa24375d3b0562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e996d3ae73130fceaa24375d3b0562">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigData.Load </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ee8b449afd493462e60f16f30d9b00d" name="a5ee8b449afd493462e60f16f30d9b00d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee8b449afd493462e60f16f30d9b00d">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigData.Save </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
-<a id="a86967b0bdfac6d57d9a8e8053d906485" name="a86967b0bdfac6d57d9a8e8053d906485"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86967b0bdfac6d57d9a8e8053d906485">&#9670;&#160;</a></span>masterVolumeValue</h2>
+<a id="ad8b1516745e9113428f998d17e624b7e" name="ad8b1516745e9113428f998d17e624b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b1516745e9113428f998d17e624b7e">&#9670;&#160;</a></span>floatDict</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ConfigData.masterVolumeValue</td>
+          <td class="memname">Dictionary&lt;string, float&gt; ConfigData.floatDict</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3d7817503ea2f9d8326dc2495d000108" name="a3d7817503ea2f9d8326dc2495d000108"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d7817503ea2f9d8326dc2495d000108">&#9670;&#160;</a></span>musicVolumeValue</h2>
+<a id="ab688eae39879260dcbbe2e54a8f0a063" name="ab688eae39879260dcbbe2e54a8f0a063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab688eae39879260dcbbe2e54a8f0a063">&#9670;&#160;</a></span>intDict</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ConfigData.musicVolumeValue</td>
+          <td class="memname">Dictionary&lt;string, int&gt; ConfigData.intDict</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8600b877f52c7f4668f88431575a17fb" name="a8600b877f52c7f4668f88431575a17fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8600b877f52c7f4668f88431575a17fb">&#9670;&#160;</a></span>sfxVolumeValue</h2>
+<a id="aaa63c48c0b7f08d069ae7bdb1400f3a0" name="aaa63c48c0b7f08d069ae7bdb1400f3a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa63c48c0b7f08d069ae7bdb1400f3a0">&#9670;&#160;</a></span>stringDict</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ConfigData.sfxVolumeValue</td>
+          <td class="memname">Dictionary&lt;string, string&gt; ConfigData.stringDict</td>
         </tr>
       </table>
 </div><div class="memdoc">

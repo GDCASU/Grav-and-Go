@@ -1,0 +1,9 @@
+<map id="LevelData.Save" name="LevelData.Save">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,129,80"/>
+<area shape="rect" id="Node000002" href="$d4/dd0/struct_level.html#a5b2da640c34ed674653f4af2132872b8" title="Finds the hazard objects in the scene." alt="" coords="187,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,52,208,31,209,36,122,57"/>
+<area shape="rect" id="Node000003" href="$d4/dd0/struct_level.html#aa07a8b228a7c330460c1feffc4839b60" title="Finds the physics objects in the scene." alt="" coords="177,55,375,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,65,164,65,164,70,129,70"/>
+<area shape="rect" id="Node000004" href="$d4/dd0/struct_level.html#a66b3abb17766128808c11227ccb4fb03" title="Finds the active player object in the scene." alt="" coords="193,104,359,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,77,209,98,208,103,121,83"/>
+</map>
