@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 1544650614272011793}
   - component: {fileID: 1544650614272011794}
   - component: {fileID: 2263943290181670641}
+  - component: {fileID: 8336772857293765284}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -505,6 +506,7 @@ MonoBehaviour:
   _endedJumpEarly: 0
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
+  _timeJumpWasReleased: 0
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -599,6 +601,39 @@ MonoBehaviour:
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &8336772857293765284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544650614272011804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d47d71d220dd244bdfd7ccf36967c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerCollisionEvents:
+  - mask:
+      serializedVersion: 2
+      m_Bits: 4096
+    type: 0
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6526196842957496462, guid: cab9ac31f7910d8478acad5fcb870d91, type: 3}
+          m_TargetAssemblyTypeName: DeathManager, Assembly-CSharp
+          m_MethodName: TriggerPlayerDeath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    debug: 1
 --- !u!1 &1607290443805032806
 GameObject:
   m_ObjectHideFlags: 0
