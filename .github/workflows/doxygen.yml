@@ -80,10 +80,14 @@ jobs:
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
       
           if git diff --cached --quiet; then
-            echo "No changes to commit. Exiting."
+            echo "No changes to commit. Cleaning up and exiting."
+            # Clean up the worktree
+            cd ..
+            git worktree remove docs-branch --force
+            git branch -D docs || true
             exit 0
           fi
-
+      
           git commit -m "Update Doxygen docs for commit ${SHORT_SHA}"
       
           BRANCH="docs-update-${SHORT_SHA}"
