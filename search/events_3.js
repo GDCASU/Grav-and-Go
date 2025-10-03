@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['startsavingevent_0',['StartSavingEvent',['../de/dd1/class_serialized_data_manager.html#a53131e31e9f7e24d33cc3c15ada6b664',1,'SerializedDataManager']]]
+  ['startsavingevent_0',['StartSavingEvent',['../da/da0/class_save_manager.html#aa79d6d6a96e49dd26b5e56049ce9679d',1,'SaveManager']]]
 ];

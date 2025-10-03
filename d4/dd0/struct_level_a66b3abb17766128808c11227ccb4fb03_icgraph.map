@@ -1,0 +1,8 @@
+<map id="Level.GetPlayerObject" name="Level.GetPlayerObject">
+<area shape="rect" id="Node000001" title="Finds the active player object in the scene." alt="" coords="348,5,515,31"/>
+<area shape="rect" id="Node000002" href="$df/df9/class_level_data.html#ad3c9ed7d81d40e07ea3e6255d46408b4" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,21,128,21,128,15,334,15"/>
+<area shape="rect" id="Node000003" href="$df/df9/class_level_data.html#a8562f013e83bbee65aa55b9e154b696e" title=" " alt="" coords="176,31,300,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,33,300,38,300,33,334,28"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="162,35,128,30,129,24,163,30"/>
+</map>

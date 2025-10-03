@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sawblademover_0',['SawBladeMover',['../d7/d00/class_saw_blade_mover.html',1,'']]],
-  ['scene_1',['Scene',['../d6/db5/class_scene.html',1,'']]],
-  ['scriptablestats_2',['ScriptableStats',['../da/dd5/class_scriptable_stats.html',1,'']]],
-  ['serializeddatamanager_3',['SerializedDataManager',['../de/dd1/class_serialized_data_manager.html',1,'']]],
+  ['savemanager_0',['SaveManager',['../da/da0/class_save_manager.html',1,'']]],
+  ['sawblademover_1',['SawBladeMover',['../d7/d00/class_saw_blade_mover.html',1,'']]],
+  ['scene_2',['Scene',['../d6/db5/class_scene.html',1,'']]],
+  ['scriptablestats_3',['ScriptableStats',['../da/dd5/class_scriptable_stats.html',1,'']]],
   ['simpleaudioemitter_4',['SimpleAudioEmitter',['../d1/da0/class_simple_audio_emitter.html',1,'']]],
   ['sociallinks_5',['SocialLinks',['../d3/dcd/class_social_links.html',1,'']]],
   ['soundmanager_6',['SoundManager',['../d5/dd9/class_sound_manager.html',1,'']]],

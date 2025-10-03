@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effectsenum_0',['effectsEnum',['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afd',1,'EffectList.cs']]]
+  ['datatype_0',['DataType',['../da/da0/class_save_manager.html#ae2daa5fa6d1e40867cdc88a94bd73851',1,'SaveManager']]]
 ];

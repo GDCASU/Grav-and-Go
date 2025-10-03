@@ -10,7 +10,7 @@ var searchData=
   ['end_7',['end',['../d1/d96/class_equidistant_points_updater.html#a3997d5a581922ba7825f0f09997a7078',1,'EquidistantPointsUpdater']]],
   ['endposition_8',['EndPosition',['../df/da0/class_bezier_curve.html#a51f91db96517b4a9b8921856d642e78d',1,'BezierCurve']]],
   ['enter_9',['Enter',['../db/df8/class_layer_collision_detection.html#a7b9fee448a5b754014c251e992acd57caf1851d5600eae616ee802a31ac74701b',1,'LayerCollisionDetection']]],
-  ['equals_10',['Equals',['../d1/d81/struct_level_name.html#afdd27fa60366370b989d371c69f7fc1a',1,'LevelName.Equals(LevelName other)'],['../d1/d81/struct_level_name.html#ac3ec5633ad8152f2c15b76c0e8cc74e5',1,'LevelName.Equals(object obj)']]],
+  ['equals_10',['Equals',['../d4/dd0/struct_level.html#adf2209379d36de5dff99de0b9d5fa967',1,'Level.Equals(Level other)'],['../d4/dd0/struct_level.html#ae2db1b58329796b17039baae8d915886',1,'Level.Equals(object obj)']]],
   ['equidistantpointsupdater_11',['EquidistantPointsUpdater',['../d1/d96/class_equidistant_points_updater.html',1,'']]],
   ['equidistantpointsupdater_2ecs_12',['EquidistantPointsUpdater.cs',['../d0/d92/_equidistant_points_updater_8cs.html',1,'']]],
   ['eventplaytrigger_13',['eventPlayTrigger',['../d0/d51/class_audio_emitter_settings.html#aac6c778cafc4e8d718bd924ac11cfcaa',1,'AudioEmitterSettings']]],

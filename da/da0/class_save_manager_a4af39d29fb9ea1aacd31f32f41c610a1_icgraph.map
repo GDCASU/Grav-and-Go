@@ -1,0 +1,5 @@
+<map id="SaveManager.LoadLevel" name="SaveManager.LoadLevel">
+<area shape="rect" id="Node000001" title="Update the values in the associated level struct." alt="" coords="301,5,481,31"/>
+<area shape="rect" id="Node000002" href="$d6/d06/class_level_manager.html#aaccca644b8d4e1f0cb6175ad789249c4" title=" " alt="" coords="5,5,253,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,21,253,21,253,15,288,15"/>
+</map>

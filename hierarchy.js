@@ -12,12 +12,10 @@ var hierarchy =
     [ "IDamageable", "df/d15/interface_i_damageable.html", [
       [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ]
     ] ],
-    [ "IDataPersistance", "d3/d95/interface_i_data_persistance.html", [
-      [ "GameSettings", "d5/d6e/class_game_settings.html", null ]
-    ] ],
     [ "Interactable.InteractableEvents", "d8/d40/class_interactable_1_1_interactable_events.html", null ],
     [ "LayerCollisionDetection.LayerEventPair", "d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html", null ],
-    [ "LevelName", "d1/d81/struct_level_name.html", null ],
+    [ "Level", "d4/dd0/struct_level.html", null ],
+    [ "LevelData", "df/df9/class_level_data.html", null ],
     [ "LevelStatus", "d7/d51/struct_level_status.html", null ],
     [ "MonoBehaviour", null, [
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
@@ -25,6 +23,7 @@ var hierarchy =
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
       [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
+      [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],
       [ "Cutscene", "d5/dd5/class_cutscene.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
@@ -62,9 +61,9 @@ var hierarchy =
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
       [ "RetryManager", "d1/d94/class_retry_manager.html", null ],
+      [ "SaveManager", "da/da0/class_save_manager.html", null ],
       [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", null ],
       [ "Scene", "d6/db5/class_scene.html", null ],
-      [ "SerializedDataManager", "de/dd1/class_serialized_data_manager.html", null ],
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
       [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
