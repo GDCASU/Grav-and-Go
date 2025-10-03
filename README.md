@@ -20,7 +20,9 @@ Video Game Development Club: Repository for the year 2025-2026
 **ASU SunDevilCentral:** VGDC@ASU
 
 ## Game Summary:
-TBD
+Project Gravigun is a vibrant 2D puzzle-platformer starring a tiny prize robot with one big dream: to escape the arcade. 
+With a hacked gravity gun in hand, players explore a web of interconnected arcade machines, 
+hopping through game cables and navigating a chaotic mix of genre-themed cabinets.
 
 ## Documentation: 
 Our current codebase documentation is here: [doxygen docs](https://gdcasu.github.io/VGDC-Game-2025-26/index.html)
