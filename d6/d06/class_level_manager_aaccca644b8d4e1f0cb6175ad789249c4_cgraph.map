@@ -1,0 +1,7 @@
+<map id="LevelManager.LoadLastCheckpoint" name="LevelManager.LoadLastCheckpoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,253,31"/>
+<area shape="rect" id="Node000002" href="$da/da0/class_save_manager.html#a4af39d29fb9ea1aacd31f32f41c610a1" title="Update the values in the associated level struct." alt="" coords="301,5,481,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,15,288,15,288,21,253,21"/>
+<area shape="rect" id="Node000003" href="$da/da0/class_save_manager.html#a9db288d07eab5e7a608354636d9cb7d7" title=" " alt="" coords="529,5,715,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="481,15,516,15,516,21,481,21"/>
+</map>

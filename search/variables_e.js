@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['objectswithdataopened_0',['objectsWithDataOpened',['../de/dd1/class_serialized_data_manager.html#afc9bf246e01976e077d018801e99b854',1,'SerializedDataManager']]],
+  ['objectswithdataopened_0',['objectsWithDataOpened',['../da/da0/class_save_manager.html#a353236d02421b31e82312d82b5782e63',1,'SaveManager']]],
   ['onenter_1',['OnEnter',['../d7/dd1/class_trigger_box.html#a585fd872825a3b92f44263548782a75f',1,'TriggerBox']]],
   ['onexit_2',['OnExit',['../d7/dd1/class_trigger_box.html#ae14d7b57a70cc3159c7196fd72c10a98',1,'TriggerBox']]],
   ['onfocusenter_3',['OnFocusEnter',['../d8/d40/class_interactable_1_1_interactable_events.html#a06fff16f97c59a81fa26a35951a23d62',1,'Interactable::InteractableEvents']]],

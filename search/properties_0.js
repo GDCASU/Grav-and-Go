@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['configdata_0',['configData',['../de/dd1/class_serialized_data_manager.html#a12a87db303608208aeace7458e026eb1',1,'SerializedDataManager']]]
+  ['configdata_0',['configData',['../da/da0/class_save_manager.html#a90cb0061b6530fa10a68255cf2554974',1,'SaveManager']]]
 ];

@@ -8,7 +8,7 @@ var searchData=
   ['changesensitivity_5',['ChangeSensitivity',['../df/d11/class_gameplay_menu_manager.html#a4a0b4ef6835c27f1ff5c4e037f95cf86',1,'GameplayMenuManager']]],
   ['changesfxvolume_6',['ChangeSFXVolume',['../df/d60/class_audio_menu_manager.html#a813b9d656ff4d0b3cf7b11020f2d3525',1,'AudioMenuManager']]],
   ['cleartext_7',['ClearText',['../d1/ddd/class_typewriter_text.html#a1140c83ff33fad04ce0b1b0fd499e3f5',1,'TypewriterText']]],
-  ['compareto_8',['CompareTo',['../d1/d81/struct_level_name.html#a2c87dd66d1a1125f61cac16c31a330e7',1,'LevelName']]],
+  ['compareto_8',['CompareTo',['../d4/dd0/struct_level.html#a3fbda8118b3d5077f72ae821963db377',1,'Level']]],
   ['configdata_9',['ConfigData',['../d1/d32/class_config_data.html#a32753a8ce32be2dc36a83a732c7af877',1,'ConfigData']]],
   ['confinecursor_10',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]]
 ];

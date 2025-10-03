@@ -1,0 +1,11 @@
+<map id="SaveManager.NewLevels" name="SaveManager.NewLevels">
+<area shape="rect" id="Node000001" title=" " alt="" coords="531,31,716,56"/>
+<area shape="rect" id="Node000002" href="$da/da0/class_save_manager.html#a4af39d29fb9ea1aacd31f32f41c610a1" title="Update the values in the associated level struct." alt="" coords="302,5,482,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="516,34,482,30,482,25,517,29"/>
+<area shape="rect" id="Node000004" href="$da/da0/class_save_manager.html#a38113763d617ed9373f584cafa6bf94a" title="Save level data." alt="" coords="301,55,483,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="517,57,483,61,483,55,517,52"/>
+<area shape="rect" id="Node000003" href="$d6/d06/class_level_manager.html#aaccca644b8d4e1f0cb6175ad789249c4" title=" " alt="" coords="5,5,253,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,21,254,21,254,15,289,15"/>
+<area shape="rect" id="Node000005" href="$d6/d06/class_level_manager.html#acb6b5ac11f7e4a7156623f9aed1be2e1" title=" " alt="" coords="18,55,241,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="288,70,241,70,241,65,288,65"/>
+</map>
