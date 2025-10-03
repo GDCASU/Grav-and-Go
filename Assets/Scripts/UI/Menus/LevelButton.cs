@@ -21,7 +21,7 @@ public class LevelButton : MonoBehaviour
     [SerializeField] private Button _levelButton;
     
     [Header("Target Level")]
-    [SerializeField] private LevelName _levelReference;
+    [SerializeField] private Level _levelReference;
     
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
