@@ -4,7 +4,7 @@ Video Game Development Club: Repository for the year 2025-2026
 ## Officers: 
 - President [FalconKiaT](https://github.com/FalconKiaT)
 - Vice President [Daniaurena](https://github.com/Daniaurena)
-- Secretary ---
+- Secretary [Ananyaappl3](https://github.com/Ananyaappl3) 
 - Systems Officer [camilee03](https://github.com/camilee03) 
 - Vice Systems Officer [CQVan](https://github.com/CQVan) 
 - Design Officer [VanLathanWinn](https://github.com/VanLathanWinn)
