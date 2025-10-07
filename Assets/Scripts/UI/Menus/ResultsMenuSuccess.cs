@@ -13,44 +13,46 @@ using UnityEngine.SceneManagement;
 public class ResultsMenuSuccess : MonoBehaviour 
 {
     public GameObject resultsPanel;
-    public TMP_Text timeText;
-    public TMP_Text healthText;
-    public TMP_Text powerUpsText;
+    public TMP_Text time_text;
+    public TMP_Text best_time_text;
+    public TMP_Text health_text;
+    public TMP_Text power_ups_text;
 
-    // set to false until level is successfully completed
+    // results menu set to false until level is completed sucessfully
     void Start()
     {
         resultsPanel.SetActive(false);
     }
 
-    public void ShowResults(float time, int health, string powerUps)
+    public void ShowResults(float time, float best_time, int health, string power_ups)
     {
         resultsPanel.SetActive(true);
 
-        timeText.text = "Time: " + time.ToString("F2") + "s";
-        healthText.text = "Health: " + health.ToString("");
-        powerUpsText.text = "Power ups: " + powerUps;
+        time_text.text = "Time Taken: " + time.ToString("F2");
+        best_time_text.text = "Best Time: " + best_time.ToString("F2");
+        health_text.text = "Health: " + health.ToString("");
+        power_ups_text.text = "Power ups: " + power_ups;
         
         Time.timeScale = 0f;
     }
 
     // buttons
+    public void OnNextLevel()
+    {
+
+    }
+
     public void OnRetry()
     {
-        Time.timeScale = 1f;
+
     }
-    
+
     public void OnLevelSelect()
     {
 
     }
 
     public void OnMainMenu()
-    {
-
-    }
-
-    public void OnNextLevel()
     {
 
     }
