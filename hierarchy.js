@@ -26,6 +26,8 @@ var hierarchy =
       [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],
       [ "Cutscene", "d5/dd5/class_cutscene.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],
+      [ "DoorKey", "d7/de8/class_door_key.html", null ],
+      [ "DoorWithLock", "d7/d78/class_door_with_lock.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
       [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", null ],
       [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", null ],

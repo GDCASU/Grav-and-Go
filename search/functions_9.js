@@ -12,5 +12,6 @@ var searchData=
   ['loadlevelvialevelnameifunlocked_9',['LoadLevelViaLevelNameIfUnlocked',['../d6/d06/class_level_manager.html#a2892667776f0f9990d16c4b0f92396e8',1,'LevelManager']]],
   ['loadstringdata_10',['LoadStringData',['../da/da0/class_save_manager.html#aedf7bd68a75b57804a1a6291bc1e47bb',1,'SaveManager']]],
   ['loadtextbinding_11',['LoadTextBinding',['../da/d64/class_monologue_manager.html#a6d3feb4d2accab69a6cceaf6f030f4bd',1,'MonologueManager']]],
-  ['lockcursor_12',['LockCursor',['../d5/d6e/class_game_settings.html#a8ee87d9fa252c1f47dccff4c5b8a2b05',1,'GameSettings']]]
+  ['lock_12',['Lock',['../d7/d78/class_door_with_lock.html#a309e0f89f03728ca2a49c5150fcdf430',1,'DoorWithLock']]],
+  ['lockcursor_13',['LockCursor',['../d5/d6e/class_game_settings.html#a8ee87d9fa252c1f47dccff4c5b8a2b05',1,'GameSettings']]]
 ];
