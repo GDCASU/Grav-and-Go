@@ -17,5 +17,6 @@ public class DoorWithLock : MonoBehaviour
     {
         _collider.enabled = locked;
         _spriteRenderer.enabled = locked;
+        _isEnabled = locked;
     }
 }

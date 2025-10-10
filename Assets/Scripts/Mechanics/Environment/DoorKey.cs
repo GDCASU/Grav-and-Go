@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DoorKey : MonoBehaviour
@@ -6,7 +7,7 @@ public class DoorKey : MonoBehaviour
 
     private Vector3 _originalPos;
 
-    private Transform followTarget;
+    private Transform _followTarget;
 
     private FollowMode _followMode;
     private enum FollowMode
@@ -29,8 +30,13 @@ public class DoorKey : MonoBehaviour
     {
         if (_followMode == FollowMode.Follow)
         {
-            transform.position = Vector2.Lerp(transform.position, followTarget.position, Time.fixedDeltaTime);
-            if (Vector2.Distance(transform.position, _assignedDoor.transform.position) < 2f) Unlock();
+            float x = _followTarget.position.x - Mathf.Sign(_followTarget.localScale.x);
+            float y = _followTarget.position.y + 0.5f;
+            Vector2 behindTarget = new Vector3(x, y);
+            transform.position = Vector2.Lerp(transform.position, behindTarget, Time.fixedDeltaTime * 5f);
+
+            Collider2D col = _assignedDoor.GetComponent<Collider2D>();
+            if (Vector2.Distance(_followTarget.position, col.ClosestPoint(_followTarget.position)) < 1f) Unlock();
         }
     }
 
@@ -38,13 +44,15 @@ public class DoorKey : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out PlayerMovementController player))
         {
-            if (followTarget != null) return;
-            followTarget = player.transform;
+            if (_followTarget != null) return;
+            _followTarget = player.transform;
+            _followMode = FollowMode.Follow;
         }
     }
 
     private void Unlock()
     {
+        Debug.Log("Unlock");
         _assignedDoor.Lock(false);
 
         _collider.enabled = false;
@@ -53,7 +61,7 @@ public class DoorKey : MonoBehaviour
         _followMode = FollowMode.None;
     }
 
-    private void ResetObject()
+    public void ResetObject()
     {
         transform.position = _originalPos;
 
