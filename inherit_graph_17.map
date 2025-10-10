@@ -1,9 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,55,135,80"/>
 <area shape="rect" id="Node000001" href="$d0/d9d/class_dialogue.html" title=" " alt="" coords="217,5,297,31"/>
-<area shape="poly" id="edge55_Node000000_Node000001" title=" " alt="" coords="131,49,217,26,218,31,133,54"/>
+<area shape="poly" id="edge57_Node000000_Node000001" title=" " alt="" coords="131,49,217,26,218,31,133,54"/>
 <area shape="rect" id="Node000002" href="$db/d9e/class_gravity_gun_settings.html" title="Class that handles the settings of the gravity gun for easy editing." alt="" coords="183,55,332,80"/>
-<area shape="poly" id="edge56_Node000000_Node000002" title=" " alt="" coords="148,65,182,65,182,70,148,70"/>
+<area shape="poly" id="edge58_Node000000_Node000002" title=" " alt="" coords="148,65,182,65,182,70,148,70"/>
 <area shape="rect" id="Node000003" href="$da/dd5/class_scriptable_stats.html" title=" " alt="" coords="197,104,317,129"/>
-<area shape="poly" id="edge57_Node000000_Node000003" title=" " alt="" coords="133,81,209,101,207,106,131,86"/>
+<area shape="poly" id="edge59_Node000000_Node000003" title=" " alt="" coords="133,81,209,101,207,106,131,86"/>
 </map>

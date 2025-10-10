@@ -13,6 +13,8 @@ var annotated_dup =
     [ "Cutscene", "d5/dd5/class_cutscene.html", "d5/dd5/class_cutscene" ],
     [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", "d4/de1/class_dancing_midpoint" ],
     [ "Dialogue", "d0/d9d/class_dialogue.html", "d0/d9d/class_dialogue" ],
+    [ "DoorKey", "d7/de8/class_door_key.html", "d7/de8/class_door_key" ],
+    [ "DoorWithLock", "d7/d78/class_door_with_lock.html", "d7/d78/class_door_with_lock" ],
     [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", "d1/dc9/class_dynamic_line_bezier" ],
     [ "EffectList", "d9/d40/class_effect_list.html", "d9/d40/class_effect_list" ],
     [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", "d1/d96/class_equidistant_points_updater" ],
