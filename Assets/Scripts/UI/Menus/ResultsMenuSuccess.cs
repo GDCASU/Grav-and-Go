@@ -24,6 +24,11 @@ public class ResultsMenuSuccess : MonoBehaviour
         resultsPanel.SetActive(false);
     }
 
+    public void OnLevelCompleted()
+    {
+        resultsPanel.SetActive(true);
+    }
+
     public void ShowResults(float time, float best_time, int health, string power_ups)
     {
         resultsPanel.SetActive(true);
