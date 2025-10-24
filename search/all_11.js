@@ -6,12 +6,15 @@ var searchData=
   ['remakescript_3',['remakeScript',['../d6/db5/class_scene.html#a523b886044c0745e0f6aac5eacc95406',1,'Scene']]],
   ['resetobject_4',['ResetObject',['../d7/de8/class_door_key.html#ae91dd108531ed6b2cb9434533b3b6731',1,'DoorKey']]],
   ['resetprogress_5',['ResetProgress',['../df/d11/class_gameplay_menu_manager.html#af08df94cf4a850e6d2e2ed3a3b6a6088',1,'GameplayMenuManager']]],
-  ['resumeallsounds_6',['ResumeAllSounds',['../d5/dd9/class_sound_manager.html#adafecddf771fa842c3b6f391014809c3',1,'SoundManager']]],
-  ['resumesoundgroup_7',['ResumeSoundGroup',['../d5/dd9/class_sound_manager.html#abcaa236f79de80f25d1ddb8a40e3c5c9',1,'SoundManager']]],
-  ['retrymanager_8',['RetryManager',['../d1/d94/class_retry_manager.html',1,'']]],
-  ['retrymanager_2ecs_9',['RetryManager.cs',['../d0/df0/_retry_manager_8cs.html',1,'']]],
-  ['retryui_10',['RetryUI',['../d1/d94/class_retry_manager.html#a6e68ab181edc564ee8fbe9d135a059a4',1,'RetryManager']]],
-  ['rightaligntoggleattribute_11',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
-  ['rotatespeed_12',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]],
-  ['rotatevector_13',['RotateVector',['../dc/d93/class_turret_controller.html#a34d41f5cb3803a3588df730a0cab6e36',1,'TurretController']]]
+  ['resultsmenusuccess_6',['ResultsMenuSuccess',['../dc/d7e/class_results_menu_success.html',1,'']]],
+  ['resultsmenusuccess_2ecs_7',['ResultsMenuSuccess.cs',['../d4/d62/_results_menu_success_8cs.html',1,'']]],
+  ['resultspanel_8',['resultsPanel',['../dc/d7e/class_results_menu_success.html#aabbc10ff043ccef21995d7d71ad76e9b',1,'ResultsMenuSuccess']]],
+  ['resumeallsounds_9',['ResumeAllSounds',['../d5/dd9/class_sound_manager.html#adafecddf771fa842c3b6f391014809c3',1,'SoundManager']]],
+  ['resumesoundgroup_10',['ResumeSoundGroup',['../d5/dd9/class_sound_manager.html#abcaa236f79de80f25d1ddb8a40e3c5c9',1,'SoundManager']]],
+  ['retrymanager_11',['RetryManager',['../d1/d94/class_retry_manager.html',1,'']]],
+  ['retrymanager_2ecs_12',['RetryManager.cs',['../d0/df0/_retry_manager_8cs.html',1,'']]],
+  ['retryui_13',['RetryUI',['../d1/d94/class_retry_manager.html#a6e68ab181edc564ee8fbe9d135a059a4',1,'RetryManager']]],
+  ['rightaligntoggleattribute_14',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
+  ['rotatespeed_15',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]],
+  ['rotatevector_16',['RotateVector',['../dc/d93/class_turret_controller.html#a34d41f5cb3803a3588df730a0cab6e36',1,'TurretController']]]
 ];
