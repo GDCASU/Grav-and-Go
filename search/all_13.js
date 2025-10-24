@@ -8,10 +8,14 @@ var searchData=
   ['textlabel_5',['textLabel',['../da/d64/class_monologue_manager.html#a7bff8aeffbd3d6c8d050a86173aa224a',1,'MonologueManager']]],
   ['togglefpscounter_6',['ToggleFPSCounter',['../df/d11/class_gameplay_menu_manager.html#ad2ad363803762b6f414f88b96c0777fd',1,'GameplayMenuManager']]],
   ['tooheavycolor_7',['tooHeavyColor',['../db/d9e/class_gravity_gun_settings.html#a74fe2e61e895564925b28250c4723c34',1,'GravityGunSettings']]],
-  ['triggerbox_8',['TriggerBox',['../d7/dd1/class_trigger_box.html',1,'']]],
-  ['triggerbox_2ecs_9',['TriggerBox.cs',['../de/d64/_trigger_box_8cs.html',1,'']]],
-  ['type_10',['type',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a94baf6b4456d8e9970c2592806b54356',1,'LayerCollisionDetection::LayerEventPair']]],
-  ['typewritertext_11',['TypewriterText',['../d1/ddd/class_typewriter_text.html',1,'']]],
-  ['typewritertext_2ecs_12',['TypewriterText.cs',['../dc/dcf/_typewriter_text_8cs.html',1,'']]],
-  ['typingspeed_13',['typingSpeed',['../da/d64/class_monologue_manager.html#a65cebf6ad9831b178829914444dea556',1,'MonologueManager']]]
+  ['tracking_5fturret_8',['TRACKING_TURRET',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa215b2017605f3ffeda0e2720a3ecd7c8',1,'TurretController']]],
+  ['triggerbox_9',['TriggerBox',['../d7/dd1/class_trigger_box.html',1,'']]],
+  ['triggerbox_2ecs_10',['TriggerBox.cs',['../de/d64/_trigger_box_8cs.html',1,'']]],
+  ['turretcontroller_11',['TurretController',['../dc/d93/class_turret_controller.html',1,'']]],
+  ['turretcontroller_2ecs_12',['TurretController.cs',['../d9/d7b/_turret_controller_8cs.html',1,'']]],
+  ['turrettype_13',['TurretType',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781f',1,'TurretController']]],
+  ['type_14',['type',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a94baf6b4456d8e9970c2592806b54356',1,'LayerCollisionDetection::LayerEventPair']]],
+  ['typewritertext_15',['TypewriterText',['../d1/ddd/class_typewriter_text.html',1,'']]],
+  ['typewritertext_2ecs_16',['TypewriterText.cs',['../dc/dcf/_typewriter_text_8cs.html',1,'']]],
+  ['typingspeed_17',['typingSpeed',['../da/d64/class_monologue_manager.html#a65cebf6ad9831b178829914444dea556',1,'MonologueManager']]]
 ];

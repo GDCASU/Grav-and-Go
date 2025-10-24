@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"da/d22/_effect_list_8cs.html":[1,0,0,0,1,1,0,1],
 "da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afd":[1,0,0,0,1,1,0,1,1],
 "da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afda7b888a0e8b45362d2eebbbb93582a966":[1,0,0,0,1,1,0,1,1,0],
 "da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afdab88e4511775b25c36ce54cf0b15cdf1b":[1,0,0,0,1,1,0,1,1,1],
@@ -102,7 +103,7 @@ var NAVTREEINDEX1 =
 "db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8a47dcbd834e669233d7eb8a51456ed217":[1,0,0,0,1,3,6,2,1],
 "db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8ada101052f6ba998ab41d571a6fff1708":[1,0,0,0,1,3,6,2,2],
 "db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8af03bde11d261f185cbacfa32c1c6538c":[1,0,0,0,1,3,6,2,0],
-"db/dda/class_vector2_compass_attribute.html":[0,0,68],
+"db/dda/class_vector2_compass_attribute.html":[0,0,69],
 "db/dea/_weapon_pistol_8cs.html":[1,0,0,0,1,4,0,0,0,1],
 "db/df8/class_layer_collision_detection.html":[0,0,36],
 "db/df8/class_layer_collision_detection.html#a58bc3872500a6a7f9e53ddedf134fbd6":[0,0,36,2],
@@ -114,6 +115,11 @@ var NAVTREEINDEX1 =
 "dc/d72/class_level_button.html":[0,0,38],
 "dc/d72/class_level_button.html#a37ba2f70b1f7fdc4b3dad237e34fe38c":[0,0,38,0],
 "dc/d7a/_a_o_e__cylinder_8cs.html":[1,0,0,0,1,1,0,0],
+"dc/d93/class_turret_controller.html":[0,0,67],
+"dc/d93/class_turret_controller.html#a34d41f5cb3803a3588df730a0cab6e36":[0,0,67,1],
+"dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781f":[0,0,67,0],
+"dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa215b2017605f3ffeda0e2720a3ecd7c8":[0,0,67,0,1],
+"dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa8e2934a245301d8c4c4dacb4c4027469":[0,0,67,0,0],
 "dc/d98/_dynamic_line_bezier_8cs.html":[1,0,0,0,5,0,3],
 "dc/dae/_line_renderer_from_transforms_8cs.html":[1,0,0,0,5,0,5],
 "dc/dc0/class_interactable.html":[0,0,34],
