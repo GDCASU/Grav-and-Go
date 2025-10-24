@@ -67,6 +67,7 @@ var annotated_dup =
     [ "SoundManager", "d5/dd9/class_sound_manager.html", "d5/dd9/class_sound_manager" ],
     [ "StringInList", "d7/d65/class_string_in_list.html", "d7/d65/class_string_in_list" ],
     [ "TriggerBox", "d7/dd1/class_trigger_box.html", "d7/dd1/class_trigger_box" ],
+    [ "TurretController", "dc/d93/class_turret_controller.html", "dc/d93/class_turret_controller" ],
     [ "TypewriterText", "d1/ddd/class_typewriter_text.html", "d1/ddd/class_typewriter_text" ],
     [ "Vector2CompassAttribute", "db/dda/class_vector2_compass_attribute.html", null ],
     [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", null ]

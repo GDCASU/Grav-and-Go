@@ -44,13 +44,14 @@ var searchData=
   ['startmonolog_41',['StartMonolog',['../da/d64/class_monologue_manager.html#ae278d4f431bd2bad14cd9ee752d03456',1,'MonologueManager']]],
   ['startposition_42',['StartPosition',['../df/da0/class_bezier_curve.html#a0b8088ac3dc980bef5f04c44386ebd1d',1,'BezierCurve']]],
   ['startsavingevent_43',['StartSavingEvent',['../da/da0/class_save_manager.html#aa79d6d6a96e49dd26b5e56049ce9679d',1,'SaveManager']]],
-  ['stay_44',['Stay',['../db/df8/class_layer_collision_detection.html#a7b9fee448a5b754014c251e992acd57ca89302eb620f755ea605acbdcd41d2547',1,'LayerCollisionDetection']]],
-  ['stopallsounds_45',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
-  ['stopglitch_46',['StopGlitch',['../dd/d1a/class_glitch_manager.html#aade28734ed0b975f74046ed5111783e0',1,'GlitchManager']]],
-  ['stopsound_47',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
-  ['stopsoundgroup_48',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
-  ['stopstyle_49',['StopStyle',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22ed',1,'AudioEmitterSettings']]],
-  ['stringdict_50',['stringDict',['../d1/d32/class_config_data.html#aaa63c48c0b7f08d069ae7bdb1400f3a0',1,'ConfigData']]],
-  ['stringinlist_51',['StringInList',['../d7/d65/class_string_in_list.html',1,'StringInList'],['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
-  ['stringtointeger_52',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
+  ['static_5fturret_44',['STATIC_TURRET',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa8e2934a245301d8c4c4dacb4c4027469',1,'TurretController']]],
+  ['stay_45',['Stay',['../db/df8/class_layer_collision_detection.html#a7b9fee448a5b754014c251e992acd57ca89302eb620f755ea605acbdcd41d2547',1,'LayerCollisionDetection']]],
+  ['stopallsounds_46',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
+  ['stopglitch_47',['StopGlitch',['../dd/d1a/class_glitch_manager.html#aade28734ed0b975f74046ed5111783e0',1,'GlitchManager']]],
+  ['stopsound_48',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
+  ['stopsoundgroup_49',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
+  ['stopstyle_50',['StopStyle',['../d0/d51/class_audio_emitter_settings.html#ae72898aad511d24dda3da4a609ed22ed',1,'AudioEmitterSettings']]],
+  ['stringdict_51',['stringDict',['../d1/d32/class_config_data.html#aaa63c48c0b7f08d069ae7bdb1400f3a0',1,'ConfigData']]],
+  ['stringinlist_52',['StringInList',['../d7/d65/class_string_in_list.html',1,'StringInList'],['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
+  ['stringtointeger_53',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
 ];

@@ -12,5 +12,6 @@ var searchData=
   ['retrymanager_2ecs_9',['RetryManager.cs',['../d0/df0/_retry_manager_8cs.html',1,'']]],
   ['retryui_10',['RetryUI',['../d1/d94/class_retry_manager.html#a6e68ab181edc564ee8fbe9d135a059a4',1,'RetryManager']]],
   ['rightaligntoggleattribute_11',['RightAlignToggleAttribute',['../d3/d1e/class_right_align_toggle_attribute.html',1,'']]],
-  ['rotatespeed_12',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]]
+  ['rotatespeed_12',['rotateSpeed',['../db/d9e/class_gravity_gun_settings.html#a27f6b6c3b73e1bded2a171b5b6237f8a',1,'GravityGunSettings']]],
+  ['rotatevector_13',['RotateVector',['../dc/d93/class_turret_controller.html#a34d41f5cb3803a3588df730a0cab6e36',1,'TurretController']]]
 ];

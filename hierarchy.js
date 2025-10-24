@@ -70,6 +70,7 @@ var hierarchy =
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
       [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
       [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ],
+      [ "TurretController", "dc/d93/class_turret_controller.html", null ],
       [ "TypewriterText", "d1/ddd/class_typewriter_text.html", null ]
     ] ],
     [ "PropertyAttribute", null, [
