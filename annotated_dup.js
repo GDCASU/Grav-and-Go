@@ -53,6 +53,7 @@ var annotated_dup =
     [ "PhysicsObject", "d6/db5/class_physics_object.html", "d6/db5/class_physics_object" ],
     [ "PlayerAnimator", "d4/da1/class_player_animator.html", null ],
     [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", "d2/dcb/class_player_movement_controller" ],
+    [ "PortalDefinition", "df/d4f/class_portal_definition.html", "df/d4f/class_portal_definition" ],
     [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", "d0/df0/class_pressure_plate2_d" ],
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", "d5/dd3/class_quit_menu_manager" ],

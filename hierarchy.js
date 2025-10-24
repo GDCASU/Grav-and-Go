@@ -60,6 +60,7 @@ var hierarchy =
       ] ],
       [ "PlayerAnimator", "d4/da1/class_player_animator.html", null ],
       [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ],
+      [ "PortalDefinition", "df/d4f/class_portal_definition.html", null ],
       [ "PressurePlate2D", "d0/df0/class_pressure_plate2_d.html", null ],
       [ "QuitMenuManager", "d5/dd3/class_quit_menu_manager.html", null ],
       [ "ResultsMenuSuccess", "dc/d7e/class_results_menu_success.html", null ],
