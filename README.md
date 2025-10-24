@@ -4,7 +4,7 @@ Video Game Development Club: Repository for the year 2025-2026
 ## Officers: 
 - President [FalconKiaT](https://github.com/FalconKiaT)
 - Vice President [Daniaurena](https://github.com/Daniaurena)
-- Secretary ---
+- Secretary [Ananyaappl3](https://github.com/Ananyaappl3) 
 - Systems Officer [camilee03](https://github.com/camilee03) 
 - Vice Systems Officer [CQVan](https://github.com/CQVan) 
 - Design Officer [VanLathanWinn](https://github.com/VanLathanWinn)
@@ -20,7 +20,9 @@ Video Game Development Club: Repository for the year 2025-2026
 **ASU SunDevilCentral:** VGDC@ASU
 
 ## Game Summary:
-TBD
+Project Gravigun is a vibrant 2D puzzle-platformer starring a tiny prize robot with one big dream: to escape the arcade. 
+With a hacked gravity gun in hand, players explore a web of interconnected arcade machines, 
+hopping through game cables and navigating a chaotic mix of genre-themed cabinets.
 
 ## Documentation: 
 Our current codebase documentation is here: [doxygen docs](https://gdcasu.github.io/VGDC-Game-2025-26/index.html)

@@ -75,10 +75,20 @@ jobs:
           cd docs-branch
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+          
           git add --all
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
-          git commit -m "Update Doxygen docs for commit ${SHORT_SHA}" || echo "No changes to commit"
+      
+          if git diff --cached --quiet; then
+            echo "No changes to commit. Cleaning up and exiting."
+            # Clean up the worktree
+            cd ..
+            git worktree remove docs-branch --force
+            git branch -D docs || true
+            exit 0
+          fi
+      
+          git commit -m "Update Doxygen docs for commit ${SHORT_SHA}"
       
           BRANCH="docs-update-${SHORT_SHA}"
           git checkout -b "$BRANCH"
