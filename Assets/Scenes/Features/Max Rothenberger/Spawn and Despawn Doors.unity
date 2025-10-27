@@ -1817,7 +1817,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8485060570993339358, guid: df88097d866586348bc1dae106db920b, type: 3}
   m_PrefabInstance: {fileID: 230676222}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Scenes/Features/Max Rothenberger/Spawn and Despawn Doors.unity
 --- !u!1001 &667038724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,13 +1874,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc227780af02c2d4e9caf37f85492e63, type: 3}
---- !u!4 &674781646 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2995322240427699229, guid: 094b8e8e8b8a67e45b082ce48a747004, type: 3}
-  m_PrefabInstance: {fileID: 1637431147}
-  m_PrefabAsset: {fileID: 0}
-========
->>>>>>>> main:Assets/Scenes/Features/Matthew Glos/Turret test.unity
 --- !u!1001 &678278085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3508,6 +3500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 229071595762212281, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
+      propertyPath: _levelToLoad.name
+      value: Main Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 4375367433529622767, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
       propertyPath: m_Name
       value: Exit Door

@@ -1,4 +1,11 @@
 using UnityEngine;
+/* -----------------------------------------------------------
+ * Author:
+ * Max Rothenberger
+ * 
+ * Modified By:
+ * 
+ */// --------------------------------------------------------
 
 public class DoorWithLock : MonoBehaviour
 {
