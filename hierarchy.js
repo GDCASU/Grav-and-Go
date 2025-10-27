@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Ammo", "d7/d27/class_ammo.html", null ],
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", null ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", null ],
     [ "BezierCurve", "df/da0/class_bezier_curve.html", null ],
