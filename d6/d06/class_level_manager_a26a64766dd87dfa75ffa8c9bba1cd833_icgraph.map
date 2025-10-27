@@ -1,0 +1,5 @@
+<map id="LevelManager.LoadLevelViaLevelName" name="LevelManager.LoadLevelViaLevelName">
+<area shape="rect" id="Node000001" title="Function that loads a level via LevelName." alt="" coords="200,5,404,45"/>
+<area shape="rect" id="Node000002" href="$d8/db5/class_exit_door.html#ae931c657fd7d0264f307e83594284e4b" title=" " alt="" coords="5,13,152,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,28,152,28,152,23,186,23"/>
+</map>

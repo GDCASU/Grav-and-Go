@@ -30,6 +30,7 @@ var hierarchy =
       [ "DoorWithLock", "d7/d78/class_door_with_lock.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
       [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", null ],
+      [ "ExitDoor", "d8/db5/class_exit_door.html", null ],
       [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", null ],
       [ "GameSettings", "d5/d6e/class_game_settings.html", null ],
       [ "GameplayMenuManager", "df/d11/class_gameplay_menu_manager.html", null ],
@@ -71,6 +72,7 @@ var hierarchy =
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
       [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
+      [ "SpawnDoor", "d4/df5/class_spawn_door.html", null ],
       [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ],
       [ "TurretController", "dc/d93/class_turret_controller.html", null ],
       [ "TypewriterText", "d1/ddd/class_typewriter_text.html", null ]
