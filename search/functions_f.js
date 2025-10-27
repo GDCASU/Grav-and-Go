@@ -16,12 +16,13 @@ var searchData=
   ['setoutline_13',['SetOutline',['../d5/df2/class_outline2_d.html#a7899ef0b883950f2236fd74b56397718',1,'Outline2D']]],
   ['setvolume_14',['SetVolume',['../d5/dd9/class_sound_manager.html#a53cae3504dfeef5bf6b651fb10c26e51',1,'SoundManager']]],
   ['showresults_15',['ShowResults',['../dc/d7e/class_results_menu_success.html#a0dd01760810ec81dc10ddb6a3faf4392',1,'ResultsMenuSuccess']]],
-  ['startglitch_16',['StartGlitch',['../dd/d1a/class_glitch_manager.html#a2fb8564061b9c151431fd3fe1dc2fb43',1,'GlitchManager']]],
-  ['startmonolog_17',['StartMonolog',['../da/d64/class_monologue_manager.html#ae278d4f431bd2bad14cd9ee752d03456',1,'MonologueManager']]],
-  ['stopallsounds_18',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
-  ['stopglitch_19',['StopGlitch',['../dd/d1a/class_glitch_manager.html#aade28734ed0b975f74046ed5111783e0',1,'GlitchManager']]],
-  ['stopsound_20',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
-  ['stopsoundgroup_21',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
-  ['stringinlist_22',['StringInList',['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
-  ['stringtointeger_23',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
+  ['spawnplayer_16',['SpawnPlayer',['../d4/df5/class_spawn_door.html#aa1b7be24067cc733a6c17591800eeffc',1,'SpawnDoor']]],
+  ['startglitch_17',['StartGlitch',['../dd/d1a/class_glitch_manager.html#a2fb8564061b9c151431fd3fe1dc2fb43',1,'GlitchManager']]],
+  ['startmonolog_18',['StartMonolog',['../da/d64/class_monologue_manager.html#ae278d4f431bd2bad14cd9ee752d03456',1,'MonologueManager']]],
+  ['stopallsounds_19',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
+  ['stopglitch_20',['StopGlitch',['../dd/d1a/class_glitch_manager.html#aade28734ed0b975f74046ed5111783e0',1,'GlitchManager']]],
+  ['stopsound_21',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
+  ['stopsoundgroup_22',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
+  ['stringinlist_23',['StringInList',['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
+  ['stringtointeger_24',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
 ];
