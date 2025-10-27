@@ -1,9 +1,18 @@
 using System;
 using UnityEngine;
+/* -----------------------------------------------------------
+ * Author:
+ * Max Rothenberger
+ * 
+ * Modified By:
+ * Cami Lee
+ * 
+ */// --------------------------------------------------------
 
 public class DoorKey : MonoBehaviour
 {
     [SerializeField] private DoorWithLock _assignedDoor;
+    private Collider2D _doorColl;
 
     private Vector3 _originalPos;
 
@@ -24,6 +33,7 @@ public class DoorKey : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _originalPos = transform.position;
+        _doorColl = _assignedDoor.GetComponent<Collider2D>();
     }
 
     private void FixedUpdate()
@@ -35,21 +45,22 @@ public class DoorKey : MonoBehaviour
             Vector2 behindTarget = new Vector3(x, y);
             transform.position = Vector2.Lerp(transform.position, behindTarget, Time.fixedDeltaTime * 5f);
 
-            Collider2D col = _assignedDoor.GetComponent<Collider2D>();
-            if (Vector2.Distance(_followTarget.position, col.ClosestPoint(_followTarget.position)) < 1f) Unlock();
+            // Unlock the door if the key is close enough
+            if (Vector2.Distance(_followTarget.position, _doorColl.ClosestPoint(_followTarget.position)) < 1f) Unlock();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out PlayerMovementController player))
+        if (collision.CompareTag("Player"))
         {
             if (_followTarget != null) return;
-            _followTarget = player.transform;
+            _followTarget = collision.transform;
             _followMode = FollowMode.Follow;
         }
     }
 
+    /// <summary> Unlocks the door and makes the key disappear </summary>
     private void Unlock()
     {
         Debug.Log("Unlock");
@@ -61,6 +72,9 @@ public class DoorKey : MonoBehaviour
         _followMode = FollowMode.None;
     }
 
+    /// <summary>
+    /// Resets the key
+    /// </summary>
     public void ResetObject()
     {
         transform.position = _originalPos;
