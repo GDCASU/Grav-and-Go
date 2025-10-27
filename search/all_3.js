@@ -24,7 +24,8 @@ var searchData=
   ['confinecursor_21',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]],
   ['controlpoints_22',['controlPoints',['../d1/dc9/class_dynamic_line_bezier.html#ab5b186f2df41282d8fb6222ed702cc49',1,'DynamicLineBezier']]],
   ['coyotetime_23',['CoyoteTime',['../da/dd5/class_scriptable_stats.html#a20c5882cfca0bdf9d6adc677d7184275',1,'ScriptableStats']]],
-  ['customattributes_2ecs_24',['CustomAttributes.cs',['../dd/dad/_custom_attributes_8cs.html',1,'']]],
-  ['cutscene_25',['Cutscene',['../d5/dd5/class_cutscene.html',1,'']]],
-  ['cutscene_2ecs_26',['Cutscene.cs',['../d0/d7a/_cutscene_8cs.html',1,'']]]
+  ['current_24',['Current',['../d7/d27/class_ammo.html#ae69469ebe7d09131f40a01e64db6db93',1,'Ammo']]],
+  ['customattributes_2ecs_25',['CustomAttributes.cs',['../dd/dad/_custom_attributes_8cs.html',1,'']]],
+  ['cutscene_26',['Cutscene',['../d5/dd5/class_cutscene.html',1,'']]],
+  ['cutscene_2ecs_27',['Cutscene.cs',['../d0/d7a/_cutscene_8cs.html',1,'']]]
 ];

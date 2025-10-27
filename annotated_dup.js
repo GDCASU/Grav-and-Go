@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "Ammo", "d7/d27/class_ammo.html", "d7/d27/class_ammo" ],
     [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", "df/d1a/class_a_o_e__cylinder" ],
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", "d0/d51/class_audio_emitter_settings" ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", "d8/d49/class_audio_emitter_tools" ],
@@ -74,5 +75,5 @@ var annotated_dup =
     [ "TurretController", "dc/d93/class_turret_controller.html", "dc/d93/class_turret_controller" ],
     [ "TypewriterText", "d1/ddd/class_typewriter_text.html", "d1/ddd/class_typewriter_text" ],
     [ "Vector2CompassAttribute", "db/dda/class_vector2_compass_attribute.html", null ],
-    [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", null ]
+    [ "WeaponPistol", "d0/d76/class_weapon_pistol.html", "d0/d76/class_weapon_pistol" ]
 ];
