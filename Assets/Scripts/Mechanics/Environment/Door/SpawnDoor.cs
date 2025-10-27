@@ -1,5 +1,11 @@
 using UnityEngine;
-
+/* -----------------------------------------------------------
+ * Author:
+ * Max Rothenberger
+ * 
+ * Modified By:
+ * 
+ */// --------------------------------------------------------
 public class SpawnDoor : MonoBehaviour
 {
     private PlayerMovementController _player;

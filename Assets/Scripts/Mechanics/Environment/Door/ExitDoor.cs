@@ -1,10 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+/* -----------------------------------------------------------
+ * Author:
+ * Max Rothenberger
+ * 
+ * Modified By:
+ * 
+ */// --------------------------------------------------------
 
 public class ExitDoor : MonoBehaviour
 {
-    [SerializeField] private Level _thisLevel; //I currently do not know how to get this to pass to the level manager.
+    [SerializeField] private Level _levelToLoad;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,7 +26,7 @@ public class ExitDoor : MonoBehaviour
         Debug.Log("Level Complete");
         yield return new WaitForSeconds(2f); //Add a delay in the case of transitions or having something to read.
 
-        NextLevel(_thisLevel);
+        NextLevel(_levelToLoad);
     }
 
     public void NextLevel(Level level)
