@@ -141,27 +141,39 @@ public class LevelSelectButton : MonoBehaviour
     private void playCabinetAnimation(GameObject storedChapterCabinet, GameObject currentChapterCabinet, LevelSelectButton[] interactableButtons, GameObject objectParent)
     {
         // Zoom out of the canvas first
+
         GameObject parentObject = objectParent.GetComponent<Transform>().parent.gameObject;
         float stepZoom = 40f * Time.deltaTime;
         float zoomDesiredScale = 1f; // 1
         float zoomDesiredYpos = 0f; // y pos to 0
-
+        
         IEnumerator ZoomOut()
         {
-            //Fix the position BEFORE zooming out so the canvas doesn't go off screen basically
-            parentObject.GetComponent<RectTransform>().anchoredPosition = new UnityEngine.Vector3(0, zoomDesiredYpos, 0);
-
+            
             while (parentObject.GetComponent<RectTransform>().localScale.x != zoomDesiredScale)
             {
                 parentObject.GetComponent<RectTransform>().localScale = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
-                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, desiredYpos, 0), step);
+                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom*100);
+                yield return new WaitForSeconds(0.01f);
+            }
+            //At end of routine
+
+            //Cabinet movement routine starts after this one is done. should wait for this one to finish otherwise it will move before this one is done.
+            StartCoroutine(ArcadeCabinetMoveLoop());
+        }
+
+        IEnumerator AdjustPositionOut()
+        {
+            zoomDesiredYpos = 0;
+            //Fixong the y position as the canvas is zoomed out
+    
+            while (parentObject.GetComponent<RectTransform>().anchoredPosition.y != zoomDesiredYpos)
+            {
+                parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom*100);
                 //
                 yield return new WaitForSeconds(0.01f);
             }
             //At end of routine
-            
-            //Cabinet movement routine starts after this one is done. should wait for this one to finish otherwise it will move before this one is done.
-            StartCoroutine(ArcadeCabinetMoveLoop());
         }
         ///////
         
@@ -197,7 +209,7 @@ public class LevelSelectButton : MonoBehaviour
                 //
                 yield return new WaitForSeconds(0.01f);
             }
-            //At end of routine, re-enable buttons, also zoom back out
+            //At end of routine, re-enable buttons, also zoom back in
             foreach (LevelSelectButton currentComponent in interactableButtons)
             {
                 currentComponent.gameObject.GetComponent<Image>().enabled = true;
@@ -205,8 +217,10 @@ public class LevelSelectButton : MonoBehaviour
             }
             levelButton.gameObject.GetComponent<Image>().enabled = true;
             levelButton.gameObject.GetComponent<Button>().interactable = true;
+
+            StartCoroutine(AdjustPositionIn());
+            StartCoroutine(ZoomIn()); // Zoom back in
             
-            StartCoroutine(ZoomIn()); // Zoom back out
             ////
         }
 
@@ -215,22 +229,34 @@ public class LevelSelectButton : MonoBehaviour
         IEnumerator ZoomIn()
         {
             zoomDesiredScale = 4f;
-            zoomDesiredYpos = -500f;
+            //zoomDesiredYpos = -500f;
 
             while (parentObject.GetComponent<RectTransform>().localScale.x != zoomDesiredScale)
             {
                 parentObject.GetComponent<RectTransform>().localScale = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
-                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, desiredYpos, 0), step);
+                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom * 100);
+                yield return new WaitForSeconds(0.01f);
+            }
+            //At end of routine
+        }
+        
+        IEnumerator AdjustPositionIn()
+        {
+            zoomDesiredYpos = -500f;
+            //Fixong the y position as the canvas is zoomed out
+
+            while (parentObject.GetComponent<RectTransform>().anchoredPosition.y != zoomDesiredYpos)
+            {
+                parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom * 100);
                 //
                 yield return new WaitForSeconds(0.01f);
             }
             //At end of routine
-            
-            //Correct screen position
-             parentObject.GetComponent<RectTransform>().anchoredPosition = new UnityEngine.Vector3(0, zoomDesiredYpos, 0);
         }
-
+        
+        StartCoroutine(AdjustPositionOut());
         StartCoroutine(ZoomOut()); // Start zoom out
+        
     }
     
 
