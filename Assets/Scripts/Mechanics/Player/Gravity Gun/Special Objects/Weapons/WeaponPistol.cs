@@ -8,7 +8,7 @@ using UnityEngine;
  * Ian Fletcher
  * 
  * Modified By:
- * 
+ * Steven Soto
  */// --------------------------------------------------------
 
 /// <summary>
@@ -16,6 +16,8 @@ using UnityEngine;
 /// </summary>
 public class WeaponPistol : GravSpecialObject
 {
+   
+
     [Header("References")]
     [SerializeField] private GameObject _projectilePrefab;
     [SerializeField] private Transform _projectileSpawnPoint;
@@ -31,17 +33,19 @@ public class WeaponPistol : GravSpecialObject
     [Header("Readouts")]
     [SerializeField, InspectorReadOnly] private bool _isOnCooldown;
     [SerializeField, InspectorReadOnly] private int _currentAmmoCount = 0;
+
+    public Ammo Ammo { get; private set; }
     
     void Start()
     {
         // Add Listener to event
         gravEvents.onGravityGunSpecialTriggered.AddListener(FireProjectile);
-        
+
         // Set max ammo
-        _currentAmmoCount = _projectileMaxAmmoCount;
+        Ammo = new Ammo(_projectileMaxAmmoCount); 
         
         // Set ammo text
-        _projectileAmmoText.text = _currentAmmoCount.ToString();
+        _projectileAmmoText.text = Ammo.Current.ToString();
     }
 
     /// <summary>
@@ -53,7 +57,7 @@ public class WeaponPistol : GravSpecialObject
         if (_isOnCooldown) return;
         
         // Dont fire if there's no ammo
-        if (_currentAmmoCount <= 0) return;
+        if (!Ammo.Use()) return;
         
         // Else, spawn projectile
         Quaternion rotation = _projectileSpawnPoint.rotation * Quaternion.Euler(0f, 0f, -90f);
@@ -64,10 +68,10 @@ public class WeaponPistol : GravSpecialObject
         Physics2D.IgnoreCollision(collider, projectileCollider, true);
         
         // Lower ammo
-        _currentAmmoCount--;
+        
         
         // Set ammo text
-        _projectileAmmoText.text = _currentAmmoCount.ToString();
+        _projectileAmmoText.text = Ammo.Current.ToString();
         
         // Trigger cooldown
         StartCoroutine(CooldownRoutine());
