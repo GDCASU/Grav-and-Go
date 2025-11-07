@@ -30,6 +30,7 @@ public class DoorKey : MonoBehaviour
 
     private void Awake()
     {
+        if (_assignedDoor == null) Debug.LogError($"Assign a door to the key {this}");
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _originalPos = transform.position;

@@ -6,17 +6,33 @@ using System.Collections;
  * Max Rothenberger
  * 
  * Modified By:
+ * Cami Lee (to support locked doors)
  * 
  */// --------------------------------------------------------
 
 public class ExitDoor : MonoBehaviour
 {
     [SerializeField] private Level _levelToLoad;
+    [SerializeField] DoorType type;
+
+    [Header("Locked Door Attributes")]
+    private DoorWithLock doorWithLock;
+    enum DoorType { Default, Locked }
+
+    private void Start()
+    {
+        if (type == DoorType.Locked) doorWithLock = GetComponent<DoorWithLock>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Ensures the level does not end when a non-player object touches the door.
-        if (collision.gameObject.GetComponent<PlayerMovementController>()) StartCoroutine(nameof(EndLevel));
+        // Check to see if the door can be opened
+        bool canOpen = false;
+        if (type == DoorType.Locked && !doorWithLock.IsLocked()) canOpen = true;
+        else if (type == DoorType.Default) canOpen = true;
+
+        // Ensures the level does not end when a non-player object touches the door.
+        if (canOpen && collision.CompareTag("Player")) StartCoroutine(nameof(EndLevel));
     }
 
     private IEnumerator EndLevel()
@@ -34,3 +50,4 @@ public class ExitDoor : MonoBehaviour
         LevelManager.Instance.LoadLevelViaLevelName(level);
     }
 }
+

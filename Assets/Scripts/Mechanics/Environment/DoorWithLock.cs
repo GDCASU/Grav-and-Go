@@ -4,6 +4,7 @@ using UnityEngine;
  * Max Rothenberger
  * 
  * Modified By:
+ * Cami Lee (to support exit doors)
  * 
  */// --------------------------------------------------------
 
@@ -11,19 +12,16 @@ public class DoorWithLock : MonoBehaviour
 {
     private bool _isEnabled;
 
-    private Collider2D _collider;
-    private SpriteRenderer _spriteRenderer;
-
-    private void Awake()
-    {
-        _collider = GetComponent<Collider2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    [SerializeField] SpriteRenderer _lockSprite;
 
     public void Lock(bool locked)
     {
-        _collider.enabled = locked;
-        _spriteRenderer.enabled = locked;
+        _lockSprite.enabled = locked;
         _isEnabled = locked;
+    }
+
+    public bool IsLocked()
+    {
+        return _isEnabled;
     }
 }
