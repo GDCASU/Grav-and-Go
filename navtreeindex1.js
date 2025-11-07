@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"d9/d11/class_multi_audio_emitter.html":[0,0,48],
 "d9/d11/class_multi_audio_emitter.html#aa9476c5bbe1e8c3a0db6b8713a772f8d":[0,0,48,0],
 "d9/d11/class_multi_audio_emitter.html#ac5a1ed6b0846d06832492493dff1c31a":[0,0,48,1],
 "d9/d40/class_effect_list.html":[0,0,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "functions_f.html":[0,3,0,6],
 "functions_func.html":[0,3,1],
 "functions_g.html":[0,3,0,7],
-"functions_h.html":[0,3,0,8],
-"functions_i.html":[0,3,0,9]
+"functions_h.html":[0,3,0,8]
 };
