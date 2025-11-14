@@ -46,7 +46,7 @@ public class GunProjectile : MonoBehaviour
         // Attempt to damage target
         if (collision.gameObject.TryGetComponent<IDamageable>(out var damageable))
         {
-            damageable.TakeDamage(_damageAmount);
+            damageable.TakeDamage(_damageAmount, _rb);
         }
         
         // Destroy the bullet
