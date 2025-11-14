@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 //using static UnityEditor.Searcher.SearcherWindow.Alignment; //what is this
 
 
@@ -24,19 +25,26 @@ using UnityEngine.UI;
  * If box is being grabbed and gets destroyed, bugs out, minor
  */// --------------------------------------------------------
 
-public class Breakable : Graphic, IDamageable
+public class Breakable : MonoBehaviour, IDamageable
 {
 
     private GameObject breakableObj;
-    private int maxHealth = 3;
+    public int maxHealth = 3;
     private int currentHealth;
     private bool destroyed = false;
-    public float chunks = 3f; //range 2-10, exponential performance cost
+    public float chunks = 3f; //^2
+    private List<GameObject> myChunks = new List<GameObject>();
+    private Vector2 collisionPoint;
+    private Vector2 collisionVelocity;
+    [HideInInspector]
+    public float objMass;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     new void Start()
     {
         currentHealth = maxHealth;
+        objMass = GetComponent<Rigidbody2D>().mass;
+        print("Object mass: " + objMass);
         //print("Breakable box ready with health: " + currentHealth);
     }
 
@@ -55,36 +63,46 @@ public class Breakable : Graphic, IDamageable
         //release particles maybe play coroutine
         //play sound
         SpriteRenderer SR = gameObject.GetComponent<SpriteRenderer>();
-        Sprite newSprite = Sprite.Create(SR.sprite.texture, SR.sprite.textureRect, new Vector2(0.5f, 0.5f), pixelsPerUnit:SR.sprite.pixelsPerUnit); //gets the box from the tileset
+        Sprite newSprite = Sprite.Create(SR.sprite.texture, SR.sprite.textureRect, new Vector2(0.5f, 0.5f), pixelsPerUnit: SR.sprite.pixelsPerUnit); //gets the box from the tileset
         GameObject Clone = Instantiate(gameObject, gameObject.transform.parent);
+        Physics2D.IgnoreCollision(Clone.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
         Clone.GetComponent<SpriteRenderer>().sprite = newSprite;
+
+        Breakable cloneBreakable = Clone.GetComponent<Breakable>();
+
+        cloneBreakable.objMass = objMass;
+        cloneBreakable.collisionPoint = collisionPoint;
+        cloneBreakable.collisionVelocity = collisionVelocity;
+
+
+        Clone.GetComponent<Rigidbody2D>().linearVelocity = GetComponent<Rigidbody2D>().linearVelocity;
         Clone.GetComponent<Breakable>().breakObj(Clone);
-        SetVerticesDirty();
+        //SetVerticesDirty();
 
 
     }
 
-    protected override void OnPopulateMesh(VertexHelper vh)
-    {
-        if (!destroyed)
-            return;
+    //protected override void OnPopulateMesh(VertexHelper vh)
+    //{
+    //    if (!destroyed)
+    //        return;
 
-        List<UIVertex> vertices = new List<UIVertex>();
-        Transform[] me = new Transform[10 * 10 * 10];
-        var vertex = UIVertex.simpleVert;
-        vertex.color = new Color(255, 255, 255, 255);
+    //    List<UIVertex> vertices = new List<UIVertex>();
+    //    Transform[] me = new Transform[10 * 10 * 10];
+    //    var vertex = UIVertex.simpleVert;
+    //    vertex.color = new Color(255, 255, 255, 255);
 
-        //initial vertex
-        vertex.position = new Vector2(0, 0);
-        vertex.uv0 = new Vector2(vertex.position.x, vertex.position.y);
-        vertices.Add(vertex);
-        
-
-        //ignore this function
-        //vh.AddUIVertexStream(vertices, indices);
+    //    //initial vertex
+    //    vertex.position = new Vector2(0, 0);
+    //    vertex.uv0 = new Vector2(vertex.position.x, vertex.position.y);
+    //    vertices.Add(vertex);
 
 
-    }
+    //    //ignore this function
+    //    //vh.AddUIVertexStream(vertices, indices);
+
+
+    //}
 
 
 
@@ -100,8 +118,17 @@ public class Breakable : Graphic, IDamageable
         //Destroy(box);
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Rigidbody2D rb)
     {
+        if (rb != null)
+        {
+            collisionPoint = rb.position;
+            collisionVelocity = rb.linearVelocity;
+            //objMass = rb.mass;
+            print("collision point: " + collisionPoint.ToString());
+        }
+            
+
         currentHealth -= damage;
 
         if (currentHealth <= 0 && !destroyed)
@@ -112,29 +139,31 @@ public class Breakable : Graphic, IDamageable
 
     public void breakObj(GameObject objToBreak)
     {
+        print(objToBreak.name);
+
         for (float i = 0; i < chunks; i++)
         {
             for (float j = 0; j < chunks; j++)
             {
                 GameObject chunkObj = Instantiate(objToBreak);
+                myChunks.Add(chunkObj);
                 //remove this script from the new chunk
                 Destroy(chunkObj.GetComponent<Breakable>());
-                chunkObj.name = "Chunk " + i;
+                chunkObj.name = "Chunk " + i.ToString() + j.ToString();
 
+                #region dividing
                 Sprite cloneSprite = chunkObj.GetComponent<SpriteRenderer>().sprite;
-                Sprite sprite = Sprite.Create(
-                    cloneSprite.texture,
-                    cloneSprite.rect,
-                    cloneSprite.pivot / cloneSprite.rect.size,
-                    cloneSprite.pixelsPerUnit
-                    );
+                print("Original sprite rect: " + cloneSprite.rect.ToString()); //because we're getting sprite from tilemap, need to store the ogrect then modify it to get full obj?
+
+                // rect x is position of box, 0 is leftmost point
+                // rect y is bottommost point, also 0
+                //width starts from 0, so does y
+                // need to define width from chunks, then position 
 
 
-                float chunkWidth = sprite.rect.width / chunks;
-                float chunkHeight = sprite.rect.height / chunks;
 
-                float sprHeight = sprite.rect.height;
-                float sprWidth = sprite.rect.width;
+                float sprHeight = cloneSprite.rect.height;
+                float sprWidth = cloneSprite.rect.width;
 
                 float chunkWidthBegin = sprWidth / chunks * i;
                 float chunkWidthEnd = sprWidth / chunks * (i + 1);
@@ -143,50 +172,155 @@ public class Breakable : Graphic, IDamageable
                 float chunkHeightEnd = sprHeight / chunks * (j + 1);
 
 
-                Vector2[] vertices = new Vector2[4];
-                Vector2[] uv = new Vector2[4]; //uvs are the same number as the vertices..? at least what video said
-                ushort[] triangles = new ushort[6];
+                float uMin = chunkWidthBegin / sprWidth;
+                float uMax = chunkWidthEnd / sprWidth;
+                float vMin = chunkHeightBegin / sprHeight;
+                float vMax = chunkHeightEnd / sprHeight;
 
-                vertices[0] = new Vector3(chunkWidthBegin, chunkHeightBegin);
-                vertices[1] = new Vector3(chunkWidthBegin, chunkHeightEnd);
-                vertices[2] = new Vector3(chunkWidthEnd, chunkHeightEnd);
-                vertices[3] = new Vector3(chunkWidthEnd, chunkHeightBegin);
+                Vector2[] myUv = new Vector2[] {
+                    new Vector2(uMin, vMin),
+                    new Vector2(uMin, vMax),
+                    new Vector2(uMax, vMax),
+                    new Vector2(uMax, vMin)
+                };
 
-                uv[0] = new Vector2(0, 0);
-                uv[1] = new Vector2(0, 1);
-                uv[2] = new Vector2(1, 1);
-                uv[3] = new Vector2(1, 0);
+                Rect chunkRect = new Rect(
+                    cloneSprite.rect.x + i * (cloneSprite.rect.width / chunks),
+                    cloneSprite.rect.y + j * (cloneSprite.rect.height / chunks),
+                    cloneSprite.rect.width / chunks,
+                    cloneSprite.rect.height / chunks
+                );
 
-                triangles[0] = 0;
-                triangles[1] = 1;
-                triangles[2] = 2;
+                Sprite tempSprite = Sprite.Create(
+                    cloneSprite.texture,
+                    chunkRect,
+                    new Vector2(0.5f, 0.5f),
+                    cloneSprite.pixelsPerUnit
+                );
 
-                triangles[3] = 0;
-                triangles[4] = 2;
-                triangles[5] = 3;
+                Vector2[] verts = new Vector2[]
+                {
+                    new Vector2(0, 0),
+                    new Vector2(0, chunkRect.height),
+                    new Vector2(chunkRect.width, chunkRect.height),
+                    new Vector2(chunkRect.width, 0)
+                };
 
-                sprite.OverrideGeometry(vertices, triangles);
-                Vector2[] colliderPoints = sprite.vertices;
+                ushort[] triangles = new ushort[] { 0, 1, 2, 0, 2, 3 };
+
+                tempSprite.OverrideGeometry(verts, triangles);
+                Vector2[] colliderPoints = tempSprite.vertices;
+                #endregion
                 PolygonCollider2D poly;
 
-                if (objToBreak.TryGetComponent<BoxCollider2D>(out _)) // might be a waste of memory?
+                if (objToBreak.TryGetComponent<Collider2D>(out _)) // might be a waste of memory?, maybe need to change from boxcollider2d to collider2d
                 {
-                    Destroy(chunkObj.GetComponent<BoxCollider2D>());
+                    Destroy(chunkObj.GetComponent<Collider2D>());
                     poly = chunkObj.AddComponent<PolygonCollider2D>();
-                } else
+                }
+                else
                 {
                     poly = chunkObj.GetComponent<PolygonCollider2D>();
                 }
-
+                
                 poly.SetPath(0, colliderPoints);
+                chunkObj.GetComponent<SpriteRenderer>().sprite = tempSprite;
 
 
-                chunkObj.GetComponent<SpriteRenderer>().sprite = sprite;
+                //if chunk doesnt have rb2d add one
+                Rigidbody2D chunkRB;
                 if (!objToBreak.TryGetComponent<Rigidbody2D>(out _))
-                    chunkObj.AddComponent<Rigidbody2D>();
+                {
+                    chunkRB = chunkObj.AddComponent<Rigidbody2D>();
+                }
+                else
+                {
+                    chunkRB = chunkObj.GetComponent<Rigidbody2D>();
+                }
+                chunkRB.useAutoMass = false;
+                chunkRB.mass = objMass / (chunks * chunks);
+                print("Obj mass " + objMass.ToString() + " chunks " + chunks.ToString());
+                print("chunk mass: " + chunkRB.mass);
+
+                if (objToBreak.TryGetComponent<Rigidbody2D>(out Rigidbody2D originalRB))
+                {
+                    //print("og has rb2d");
+                    Physics2D.IgnoreCollision(objToBreak.GetComponent<Collider2D>(), poly, true);
+                    chunkRB.linearVelocity = objToBreak.GetComponent<Rigidbody2D>().linearVelocity;
+
+
+                }
+
+                //set chunk pos relative to original obj
+                Vector3 ogPos = objToBreak.transform.position;
+                float chunkWidth = cloneSprite.bounds.size.x / chunks;
+                float chunkHeight = cloneSprite.bounds.size.y / chunks;
+
+                chunkObj.transform.position = new Vector3(
+                    ogPos.x - cloneSprite.bounds.size.x / 2f + (i * chunkWidth) + chunkWidth / 2f,
+                    ogPos.y - cloneSprite.bounds.size.y / 2f + (j * chunkHeight) + chunkHeight / 2f,
+                    ogPos.z
+                );
+
+                chunkRB.constraints = RigidbodyConstraints2D.FreezeAll;
+
             }
         }
         Destroy(objToBreak);
+        
+        if (collisionPoint != Vector2.zero)
+        {
+            ApplyImpact();
+        }
+        else
+        {
+            print("no collision point");
+        }
+
+
+    }
+
+    private void ApplyImpact()
+    {
+        //get the closest chunk to the collision point, apply force to that chunk from collision obj direction
+
+
+
+        GameObject closestChunk = null;
+        for (int i = 0; i < myChunks.Count; i++)
+        {
+            print(i);
+            if (closestChunk == null)
+            {
+                closestChunk = myChunks[i];
+            } else if (Vector2.Distance(collisionPoint, (Vector2)myChunks[i].transform.position) < Vector2.Distance(collisionPoint, (Vector2)closestChunk.transform.position))
+            {
+                print(myChunks[i].transform.position);
+
+                closestChunk = myChunks[i];
+            }
+        }
+
+        float calculatedForce = 7f;
+
+        //bug, closest chunk is always 0,0 this is cuz rect is still the size of original obj
+
+        closestChunk.GetComponent<Rigidbody2D>().AddForce(((Vector2)closestChunk.transform.position - collisionPoint).normalized * calculatedForce, ForceMode2D.Impulse);
+        print("applied " + calculatedForce.ToString() + " force to " + closestChunk.name);
+
+
+    }
+
+    private void ApplyRandomImpact()
+    {
+        for (int i = 0; i < myChunks.Count; i++)
+        {
+            float calculatedForce = 7f;
+
+            myChunks[i].GetComponent<Rigidbody2D>().AddForce(UnityEngine.Random.insideUnitCircle.normalized * calculatedForce, ForceMode2D.Impulse);
+        }
+
+        
     }
 
 }

@@ -3199,6 +3199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 607163353507042961, guid: a8f7ecea036eb5f4ebf78c33d0b5d256, type: 3}
+      propertyPath: chunks
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: a8f7ecea036eb5f4ebf78c33d0b5d256, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3213,11 +3217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: a8f7ecea036eb5f4ebf78c33d0b5d256, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1491003
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: a8f7ecea036eb5f4ebf78c33d0b5d256, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.514127
+      value: 4.91
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: a8f7ecea036eb5f4ebf78c33d0b5d256, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3834,6 +3838,26 @@ MonoBehaviour:
   radius: 1
   speed: 0.2
   useLocalSpace: 1
+--- !u!1 &1847869085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673298617940267959, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
+  m_PrefabInstance: {fileID: 1882995459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1847869091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847869085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031e9c9dbc2792e46bfbe1fe8c5dc580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  chunks: 4
+  objMass: 0
 --- !u!1 &1875579025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,11 +3967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.018
+      value: 6.15
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.182
+      value: -6.38
       objectReference: {fileID: 0}
     - target: {fileID: 3101021209332540699, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3992,7 +4016,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3673298617940267959, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1847869091}
   m_SourcePrefab: {fileID: 100100000, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
 --- !u!1001 &1894575702
 PrefabInstance:
@@ -6073,10 +6100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031e9c9dbc2792e46bfbe1fe8c5dc580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  maxHealth: 3
+  chunks: 3
+  objMass: 0
 --- !u!50 &5274928648535325383
 Rigidbody2D:
   serializedVersion: 5
