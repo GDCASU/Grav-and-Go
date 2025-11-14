@@ -104,45 +104,11 @@ public class LevelSelectButton : MonoBehaviour
         */
     }
 
-    /*
-    private void zoomCanvas(bool zoomIn, GameObject canvas, GameObject objectParent)
-    {
-        GameObject parentObject = objectParent.GetComponent<Transform>().parent.gameObject;
-        float step = 40f * Time.deltaTime;
-        float desiredScale;
-        float desiredYpos = -500f;
-
-        if (zoomIn)
-        {
-            desiredScale = 4f;
-
-        }
-        else
-        {
-            desiredScale = 1f;
-        }
-
-        IEnumerator Zoom()
-        {
-            while (parentObject.GetComponent<RectTransform>().localScale.x != desiredScale)
-            {
-                parentObject.GetComponent<RectTransform>().localScale = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().localScale, new UnityEngine.Vector3(desiredScale, desiredScale, desiredScale), step);
-                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, desiredYpos, 0), step);
-                //
-                yield return new WaitForSeconds(0.01f);
-            }
-            //At end of routine
-            parentObject.GetComponent<RectTransform>().anchoredPosition = new UnityEngine.Vector3(0, desiredYpos, 0);
-        }
-        StartCoroutine(Zoom());
-    }
-
-    */
     private void playCabinetAnimation(GameObject storedChapterCabinet, GameObject currentChapterCabinet, LevelSelectButton[] interactableButtons, GameObject objectParent)
     {
         // Zoom out of the canvas first
 
-        GameObject parentObject = objectParent.GetComponent<Transform>().parent.gameObject;
+        GameObject parentObject = objectParent.transform.parent.gameObject;
         float stepZoom = 40f * Time.deltaTime;
         float zoomDesiredScale = 1f; // 1
         float zoomDesiredYpos = 0f; // y pos to 0
@@ -150,10 +116,10 @@ public class LevelSelectButton : MonoBehaviour
         IEnumerator ZoomOut()
         {
             
-            while (parentObject.GetComponent<RectTransform>().localScale.x != zoomDesiredScale)
+            while (parentObject.transform.localScale.x != zoomDesiredScale)
             {
-                parentObject.GetComponent<RectTransform>().localScale = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
-                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom*100);
+                parentObject.transform.localScale = UnityEngine.Vector3.MoveTowards(parentObject.transform.localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
+                
                 yield return new WaitForSeconds(0.01f);
             }
             //At end of routine
@@ -167,9 +133,9 @@ public class LevelSelectButton : MonoBehaviour
             zoomDesiredYpos = 0;
             //Fixong the y position as the canvas is zoomed out
     
-            while (parentObject.GetComponent<RectTransform>().anchoredPosition.y != zoomDesiredYpos)
+            while (parentObject.transform.localPosition.y != zoomDesiredYpos)
             {
-                parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom*100);
+                parentObject.transform.localPosition = UnityEngine.Vector3.MoveTowards(parentObject.transform.localPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom*100);
                 //
                 yield return new WaitForSeconds(0.01f);
             }
@@ -180,7 +146,7 @@ public class LevelSelectButton : MonoBehaviour
         //Cabinet Animation//
 
         float step = 4000 * Time.deltaTime;
-        float distance = UnityEngine.Vector3.Distance(storedChapterCabinet.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0f, 0f, 0f));
+        float distance = UnityEngine.Vector3.Distance(storedChapterCabinet.transform.localPosition, new UnityEngine.Vector3(0f, 0f, 0f));
         float direction;
 
         /*direction value is just arbitrary position off screen relative to canvas, should be fine but if the sprite for the final
@@ -195,17 +161,17 @@ public class LevelSelectButton : MonoBehaviour
         }
 
         //Move the stored one and other to appropriate side, it's just whichever is not the current one, but the side should be different depending on direction
-        storedChapterCabinet.GetComponent<RectTransform>().anchoredPosition = new UnityEngine.Vector3(direction, 0f, 0f);
-        currentChapterCabinet.GetComponent<RectTransform>().anchoredPosition = new UnityEngine.Vector3(0f, 0f, 0f);
+        storedChapterCabinet.transform.localPosition = new UnityEngine.Vector3(direction, 0f, 0f);
+        currentChapterCabinet.transform.localPosition = new UnityEngine.Vector3(0f, 0f, 0f);
 
         IEnumerator ArcadeCabinetMoveLoop()
         {
             while (distance > 0)
             {
-                storedChapterCabinet.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(storedChapterCabinet.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0f, 0f, 0f), step);
-                currentChapterCabinet.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(currentChapterCabinet.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(-direction, 0f, 0f), step);
+                storedChapterCabinet.transform.localPosition = UnityEngine.Vector3.MoveTowards(storedChapterCabinet.transform.localPosition, new UnityEngine.Vector3(0f, 0f, 0f), step);
+                currentChapterCabinet.transform.localPosition = UnityEngine.Vector3.MoveTowards(currentChapterCabinet.transform.localPosition, new UnityEngine.Vector3(-direction, 0f, 0f), step);
                 //
-                distance = UnityEngine.Vector3.Distance(storedChapterCabinet.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0f, 0f, 0f));
+                distance = UnityEngine.Vector3.Distance(storedChapterCabinet.transform.localPosition, new UnityEngine.Vector3(0f, 0f, 0f));
                 //
                 yield return new WaitForSeconds(0.01f);
             }
@@ -231,10 +197,10 @@ public class LevelSelectButton : MonoBehaviour
             zoomDesiredScale = 4f;
             //zoomDesiredYpos = -500f;
 
-            while (parentObject.GetComponent<RectTransform>().localScale.x != zoomDesiredScale)
+            while (parentObject.transform.localScale.x != zoomDesiredScale)
             {
-                parentObject.GetComponent<RectTransform>().localScale = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
-                //parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom * 100);
+                parentObject.transform.localScale = UnityEngine.Vector3.MoveTowards(parentObject.transform.localScale, new UnityEngine.Vector3(zoomDesiredScale, zoomDesiredScale, zoomDesiredScale), stepZoom);
+                
                 yield return new WaitForSeconds(0.01f);
             }
             //At end of routine
@@ -245,9 +211,9 @@ public class LevelSelectButton : MonoBehaviour
             zoomDesiredYpos = -500f;
             //Fixong the y position as the canvas is zoomed out
 
-            while (parentObject.GetComponent<RectTransform>().anchoredPosition.y != zoomDesiredYpos)
+            while (parentObject.transform.localPosition.y != zoomDesiredYpos)
             {
-                parentObject.GetComponent<RectTransform>().anchoredPosition = UnityEngine.Vector3.MoveTowards(parentObject.GetComponent<RectTransform>().anchoredPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom * 100);
+                parentObject.transform.localPosition = UnityEngine.Vector3.MoveTowards(parentObject.transform.localPosition, new UnityEngine.Vector3(0, zoomDesiredYpos, 0), stepZoom * 100);
                 //
                 yield return new WaitForSeconds(0.01f);
             }
@@ -288,7 +254,7 @@ public class LevelSelectButton : MonoBehaviour
         levelButtonObject.GetComponent<Button>().interactable = false;
         
         //for finding the arcade object parent
-        foreach (Transform currentComponent in canvas.GetComponent<Transform>())
+        foreach (Transform currentComponent in canvas.transform)
         {
             if (currentComponent.TryGetComponent<CanvasGroup>(out var T) != false)
             {
@@ -299,9 +265,9 @@ public class LevelSelectButton : MonoBehaviour
 
         //define which object is currently in use/not
         //which cabinet is currently the one is use will be determined by which is NOT at the center of screen
-        foreach (Transform currentComponent in objectParent.GetComponent<Transform>())
+        foreach (Transform currentComponent in objectParent.transform)
         {
-            if (currentComponent.GetComponent<RectTransform>().anchoredPosition.x == 0f)
+            if (currentComponent.transform.localPosition.x == 0f)
             {
 
                 currentChapterCabinet = currentComponent.gameObject;
@@ -376,7 +342,7 @@ public class LevelSelectButton : MonoBehaviour
             chapterData.selectedChapterIndex = Math.Clamp(chapterData.selectedChapterIndex + 1, 1, maxChapters);
 
             /*level index and selected level goes back to 1 
-            when chapter is changed, because chapters might 
+            when chapter is changed , because chapters might 
             have varying levels, so want to make sure the
             index is within the max #levels in the CURRENT chapter*/
             chapterData.selectedLevelIndex = 1;
