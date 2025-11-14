@@ -4,8 +4,7 @@ public class DoorScriptY : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private int _rotateAmt = 0;
-    private bool _doorXrotate =false;
-    private bool _doorYrotate = false;
+
     public bool PlayerCloseEnough = false;
     private float _closeEnoughDistance = 2;
     private int _countClose = 0; // used so door only rotates once when player is near

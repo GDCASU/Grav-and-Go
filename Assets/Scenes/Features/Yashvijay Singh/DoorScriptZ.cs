@@ -4,13 +4,13 @@ public class DoorScriptZ : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private int _rotateAmt = 0;
-    private bool _doorXrotate =false;
-    private bool _doorYrotate = false;
+    
     public bool PlayerCloseEnough = false;
-    private float _closeEnoughDistance = 2;
-    private float _topOfObject = 0;
+    private float _closeEnoughDistance = 7;
+    private int _topOfObject = 0;
     private int _countClose = 0; // used so door only rotates once when player is near
     private int _countFar = 1; // used to rotate door back when player no longer close
+    [SerializeField] private Transform _pivotPoint;
     public PlayerMovementController Player;  
 
     // now give it collision i guess? 
@@ -26,7 +26,7 @@ public class DoorScriptZ : MonoBehaviour
     void Update()
     {
 
-        if (Vector2.Distance(Player.transform.position, transform.position) < _closeEnoughDistance)//checks if player close to door
+        if (Vector2.Distance(Player.transform.position, _pivotPoint.position) < _closeEnoughDistance)//checks if player close to door
         {
             PlayerCloseEnough = true;
 
@@ -39,14 +39,14 @@ public class DoorScriptZ : MonoBehaviour
 
         if (PlayerCloseEnough && (_countClose < 1))
         {
-            doorRotateZ();
+            doorRotateZ(90);
             _countClose += 1;
             _countFar = 0;
 
         }
         if (!PlayerCloseEnough && (_countFar < 1))
         {
-            doorRotateZ();
+            doorRotateZ(-90);
             _countClose = 0;
             _countFar += 1;
         }
@@ -60,15 +60,11 @@ public class DoorScriptZ : MonoBehaviour
     }
     // make door rotate about the z axis. Need to figure out how to make it rotate around the top rather than
     // around the center of the object. 
-    void doorRotateZ()
+    void doorRotateZ(int rotateNum)
     {
-        _rotateAmt = 90;
-        transform.Rotate(Vector3.forward, _rotateAmt);
+        _pivotPoint.Rotate(Vector3.forward, rotateNum);
 
     } 
     
-    void findTop() // finds the top of the object 
-    {
-        _topOfObject = transform.position + Vector3.up;
-    }
+    
 }
