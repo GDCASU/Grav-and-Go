@@ -146,7 +146,6 @@ public class PlayerMovementController : MonoBehaviour
             // If player releases jump early, start applying stronger gravity
             if (!_endedJumpEarly && !_grounded && _rb.linearVelocity.y > 0)
             {
-                Debug.Log("jumpEndedEarly");
                 _endedJumpEarly = true;
             }
         }

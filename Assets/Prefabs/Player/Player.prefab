@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 1544650614272011793}
   - component: {fileID: 1544650614272011794}
   - component: {fileID: 2263943290181670641}
-  - component: {fileID: 8336772857293765284}
+  - component: {fileID: 7357925020573674009}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &8336772857293765284
+--- !u!114 &7357925020573674009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -620,19 +620,7 @@ MonoBehaviour:
     type: 0
     events:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6526196842957496462, guid: cab9ac31f7910d8478acad5fcb870d91, type: 3}
-          m_TargetAssemblyTypeName: DeathManager, Assembly-CSharp
-          m_MethodName: TriggerPlayerDeath
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     debug: 1
 --- !u!1 &1607290443805032806
 GameObject:
