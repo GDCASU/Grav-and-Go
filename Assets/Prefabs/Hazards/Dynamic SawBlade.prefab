@@ -287,6 +287,8 @@ MonoBehaviour:
   travelSpeed: 4
   rotationSpeed: 800
   motion: 1
+  PathNodeInitialOffset: 0
+  PathInitialOffsetPercent: 0
 --- !u!58 &2450265586703689708
 CircleCollider2D:
   m_ObjectHideFlags: 0

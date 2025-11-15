@@ -14,6 +14,7 @@ using UnityEngine.Serialization;
  * Ian Fletcher
  *
  * Modified By:
+ * Cami Lee
  * 
  */// --------------------------------------------------------
 
@@ -27,7 +28,8 @@ public class LevelManager : MonoBehaviour
 
     [FormerlySerializedAs("levelProgressDatabase")]
     [Header("Database")] 
-    [SerializeField] private SerializedDictionary<LevelName, LevelStatus> _levelProgressDatabase;
+    [SerializeField] private SerializedDictionary<Level, LevelStatus> _levelProgressDatabase;
+    Level currentLevelName;
 
     [Header("Debugging")] 
     [SerializeField] private bool _doDebugLog;
@@ -44,12 +46,10 @@ public class LevelManager : MonoBehaviour
         Instance = this;
     }
 
-    /// <summary>
-    /// Function that loads a level via LevelName only if unlocked
-    /// </summary>
+    /// <summary> Function that loads a level via LevelName only if unlocked </summary>
     /// <param name="levelName"> The name of the level </param>
     /// <returns> Returns false if failed, otherwise true for succeeded </returns>
-    public bool LoadLevelViaLevelNameIfUnlocked(LevelName levelName)
+    public bool LoadLevelViaLevelNameIfUnlocked(Level levelName)
     {
         // Check if in dictionary
         bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus unlockedStatus);
@@ -66,12 +66,10 @@ public class LevelManager : MonoBehaviour
         return isUnlocked;
     }
 
-    /// <summary>
-    /// Function that loads a level via LevelName
-    /// </summary>
+    /// <summary> Function that loads a level via LevelName </summary>
     /// <param name="levelName"> The name of the level, set in the inspector please </param>
     /// <returns> False if failed </returns>
-    public bool LoadLevelViaLevelName(LevelName levelName)
+    public bool LoadLevelViaLevelName(Level levelName)
     {
         // Check if in dictionary
         bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus unlockedStatus);
@@ -81,18 +79,17 @@ public class LevelManager : MonoBehaviour
             Debug.LogWarning($"The level {levelName} is not defined in the level database.");
             return false;
         }
-        
+
         // Was defined
-        SceneManager.LoadSceneAsync(levelName.name);
+        currentLevelName = levelName;
+        StartCoroutine(LoadLevel());
         return true;
     }
     
-    /// <summary>
-    /// Function that checks if a certain level is unlocked
-    /// </summary>
+    /// <summary> Function that checks if a certain level is unlocked </summary>
     /// <param name="levelName"> The name of the level, set in the inspector please </param>
     /// <returns> False if not unlocked </returns>
-    public bool IsLevelUnlocked(LevelName levelName)
+    public bool IsLevelUnlocked(Level levelName)
     {
         // Check if level is in database
         bool status = _levelProgressDatabase.TryGetValue(levelName, out LevelStatus value);
@@ -106,7 +103,31 @@ public class LevelManager : MonoBehaviour
         // Return unlocked status
         return value.isUnlocked;
     }
-    
+
+    public void SaveCheckpoint()
+    {
+        SaveManager.Instance.SaveLevel(currentLevelName);
+        if (_doDebugLog) Debug.Log($"Saving level {currentLevelName.name}");
+    }
+
+    public void LoadLastCheckpoint()
+    {
+        SaveManager.Instance.LoadLevel(currentLevelName);
+        if (_doDebugLog) Debug.Log($"Loading level {currentLevelName.name}");
+    }
+
+    IEnumerator LoadLevel()
+    {
+        AsyncOperation load = SceneManager.LoadSceneAsync(currentLevelName.name);
+
+        while (!load.isDone)
+        {
+            yield return null;
+        }
+
+        if (currentLevelName.name != "Main Menu" 
+            && currentLevelName.name != "Level Select") SaveManager.Instance.SaveLevel(currentLevelName);
+    }
 }
 
 

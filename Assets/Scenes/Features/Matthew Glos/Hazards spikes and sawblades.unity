@@ -3542,10 +3542,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1347790190}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
 --- !u!1 &1347790184 stripped
 GameObject:
@@ -3557,27 +3554,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1544650614272011795, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
   m_PrefabInstance: {fileID: 1347790183}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1347790190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347790184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d47d71d220dd244bdfd7ccf36967c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerCollisionEvents:
-  - mask:
-      serializedVersion: 2
-      m_Bits: 4096
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    type: 0
-    debug: 1
 --- !u!4 &1356958161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3849436573008560762, guid: dee0b54e852c1bc4e9b88323cf4e87e6, type: 3}
