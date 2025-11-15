@@ -6,41 +6,33 @@ using UnityEngine.Events;
  * Finn Meeks
  *
  * Modified By:
+ * Cami Lee
  * 
  */// --------------------------------------------------------
 
 
 /// <summary>
 /// Class that handles death. Initiate the player death with TriggerPlayerDeath()
+/// Does not need to be added to the scene: can be called from anywhere
 /// </summary>
-public class DeathManager : MonoBehaviour
+public static class DeathManager
 {
-    // Singleton
-    public static DeathManager Instance { get; private set; }
-
-    [SerializeField] public UnityEvent OnPlayerDeath = new UnityEvent();
-
-    void Awake()
+    public static void TriggerPlayerDeath()
     {
-        // Singleton enforcement
-        if (Instance != null && Instance != this)
+        PlayerAnimator playerAnim = Object.FindFirstObjectByType<PlayerAnimator>();
+        PlayerMovementController playerController = Object.FindFirstObjectByType<PlayerMovementController>();
+
+        if (playerAnim != null)
         {
-            Destroy(gameObject);
-            return;
-        }
+            // Player animation death & prevent from moving
+            playerController.enabled = false;
+            playerAnim.OnDeath();
 
-        Instance = this;
-    }
+            // Load death screen (TBI)
 
-
-    public void TriggerPlayerDeath()
-    {
-        GameObject player = Object.FindObjectOfType<PlayerMovementController>().gameObject;
-
-        if (player != null)
-        {
-            OnPlayerDeath.Invoke();
-            Destroy(player);
+            // Reload current checkpoint after 3 seconds
+            // (after player animation is done)
+            LevelManager.Instance.LoadLastCheckpoint(3);
         }
     }
 }

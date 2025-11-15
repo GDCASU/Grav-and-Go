@@ -3543,6 +3543,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 698325161}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1347790184}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8336772857293765284, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1

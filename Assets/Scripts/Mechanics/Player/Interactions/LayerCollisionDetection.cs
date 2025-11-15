@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 /**
  *  Matthew Glos 9/12/25
+ *  Modified by Cami Lee 11/14/25
  *  
  *  General purpose script to detect collisions with objects of a particular layer 
  *  and call a set of UnityEvents when those collisions occur.
@@ -35,14 +36,23 @@ public class LayerCollisionDetection : MonoBehaviour
         [Tooltip("Collision type")]
         public CollisionType type;
 
-        [Tooltip("Collision event")]
-        public UnityEvent events;
+        [Tooltip("Collision damage")]
+        public int damage;
 
         [Tooltip("Do Debug Log")]
         public bool debug;
     }
 
     [SerializeField] private List<LayerEventPair> layerCollisionEvents = new();
+    IDamageable damageInterface;
+    Rigidbody2D rgd;
+
+
+    private void Start()
+    {
+        damageInterface = GetComponent<IDamageable>();
+        rgd = GetComponent<Rigidbody2D>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision) =>
         HandleCollision(collision.gameObject.layer, CollisionType.Enter);
@@ -74,7 +84,7 @@ public class LayerCollisionDetection : MonoBehaviour
                     string pr = $"<b><color=red>{this.gameObject.name} {currentType} with layer {LayerMask.LayerToName(layer)}</color></b>";
                     Debug.Log(pr);
                 }
-                pair.events?.Invoke();
+                damageInterface.TakeDamage(pair.damage, rgd);
             }
         }
     }
