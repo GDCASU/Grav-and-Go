@@ -30,6 +30,8 @@ public class LevelManager : MonoBehaviour
     [Header("Database")] 
     [SerializeField] private SerializedDictionary<Level, LevelStatus> _levelProgressDatabase;
     Level currentLevelName;
+    [SerializeField] Level levelSelect;
+    [SerializeField] Level mainMenu;
 
     [Header("Player")]
     PlayerMovementController playerController;
@@ -93,7 +95,22 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(LoadLevel());
         return true;
     }
+
+    public void ReloadCurrentLevel()
+    {
+        LoadLevelViaLevelName(currentLevelName);
+    }
     
+    public void LoadLevelSelect()
+    {
+        LoadLevelViaLevelName(levelSelect);
+    }
+
+    public void LoadMainMenu()
+    {
+        LoadLevelViaLevelName(mainMenu);
+    }
+
     /// <summary> Function that checks if a certain level is unlocked </summary>
     /// <param name="levelName"> The name of the level, set in the inspector please </param>
     /// <returns> False if not unlocked </returns>
