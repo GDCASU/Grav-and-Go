@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,6 +39,7 @@ public class Breakable : MonoBehaviour, IDamageable
     private Vector2 collisionVelocity;
     [HideInInspector]
     public float objMass;
+    public float fadeTime = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     new void Start()
@@ -141,11 +143,14 @@ public class Breakable : MonoBehaviour, IDamageable
     {
         print(objToBreak.name);
 
+
+
         for (float i = 0; i < chunks; i++)
         {
             for (float j = 0; j < chunks; j++)
             {
                 GameObject chunkObj = Instantiate(objToBreak);
+                Destroy(chunkObj.GetComponent<GrabbableObject>());
                 myChunks.Add(chunkObj);
                 //remove this script from the new chunk
                 Destroy(chunkObj.GetComponent<Breakable>());
@@ -190,6 +195,8 @@ public class Breakable : MonoBehaviour, IDamageable
                     cloneSprite.rect.width / chunks,
                     cloneSprite.rect.height / chunks
                 );
+
+
 
                 Sprite tempSprite = Sprite.Create(
                     cloneSprite.texture,
@@ -262,12 +269,16 @@ public class Breakable : MonoBehaviour, IDamageable
                     ogPos.z
                 );
 
-                chunkRB.constraints = RigidbodyConstraints2D.FreezeAll;
+                //chunkRB.constraints = RigidbodyConstraints2D.FreezeAll;
 
             }
         }
+        //Destroy(objToBreak);
+        StartCoroutine(DestroyChunk());
+        //WaitForSeconds wait = new WaitForSeconds(fadeTime);
         Destroy(objToBreak);
-        
+
+
         if (collisionPoint != Vector2.zero)
         {
             ApplyImpact();
@@ -275,6 +286,21 @@ public class Breakable : MonoBehaviour, IDamageable
         else
         {
             print("no collision point");
+        }
+
+
+    }
+
+    //destroy chunk coroutine for fadeout
+    private IEnumerator DestroyChunk()
+    {
+        print("starting destroy coroutine");
+        yield return new WaitForSeconds(fadeTime);
+        print("fading chunks");
+        for (int i = 0; i < myChunks.Count; i++)
+        {
+            print("destroying chunk " + i.ToString());
+            Destroy(myChunks[i]);
         }
 
 
