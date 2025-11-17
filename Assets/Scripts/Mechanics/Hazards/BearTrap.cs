@@ -31,15 +31,21 @@ public class BearTrap : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D other)
     {   
-        // close animation 
-        // close sound effect
+        // TODO: close animation 
+        // TODO: close sound effect
+        
+        // disable the collider to make sure it can't be used again
         bearTrapColl.enabled = false;
         
+        
+        // checks for the object type if its player or interactable
         if (other.gameObject.tag == "Player")
         {
             // I have no idea where I can use a game over code. I just used the level manager for now
             // add delay if needed unless that is part of the manager
+            if (_doDebugLog){Debug.Log("Game Over");}
             LevelManager.Instance.LoadLastCheckpoint(); 
+            
             
         }
         else if (other.gameObject.tag == "Physics Object")
@@ -50,7 +56,7 @@ public class BearTrap : MonoBehaviour
 
     
 
-    // Grabs the velocity of the collided object and adds to it
+    // Grabs the velocity of the collided object and modifies it so it flies up
     private void ApplyVelocityToObject(GameObject objectToApply)
     {
         Rigidbody2D rb = objectToApply.GetComponent<Rigidbody2D>();
