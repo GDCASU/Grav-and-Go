@@ -23,6 +23,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
+      [ "BearTrap", "d8/dfa/class_bear_trap.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
       [ "Breakable", "de/d93/class_breakable.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],

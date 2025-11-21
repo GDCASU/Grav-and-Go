@@ -5,6 +5,7 @@ var annotated_dup =
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", "d0/d51/class_audio_emitter_settings" ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", "d8/d49/class_audio_emitter_tools" ],
     [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", "df/d60/class_audio_menu_manager" ],
+    [ "BearTrap", "d8/dfa/class_bear_trap.html", null ],
     [ "BezierCurve", "df/da0/class_bezier_curve.html", "df/da0/class_bezier_curve" ],
     [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", "d7/dc3/class_bezier_from_transforms" ],
     [ "Breakable", "de/d93/class_breakable.html", "de/d93/class_breakable" ],
