@@ -1,0 +1,5 @@
+<map id="LevelManager.LoadLevelSelect" name="LevelManager.LoadLevelSelect">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,228,38"/>
+<area shape="rect" id="Node000002" href="$d6/d06/class_level_manager.html#a26a64766dd87dfa75ffa8c9bba1cd833" title="Function that loads a level via LevelName." alt="" coords="276,5,480,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,23,262,23,262,28,228,28"/>
+</map>

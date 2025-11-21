@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#a53bdf2109e6fb634adb9b04d3c236a2d',1,'IDamageable.TakeDamage()'],['../d0/d30/class_breakable_boxes.html#aeb93f50fdf4d9b9d3d509bfef42495b6',1,'BreakableBoxes.TakeDamage()']]],
+  ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#a39cd3ae7a3ae4bf1eba2bb5bd26a8a76',1,'IDamageable.TakeDamage()'],['../de/d93/class_breakable.html#a9c44650496a7a48b82a610be83b97dbd',1,'Breakable.TakeDamage()'],['../d2/dcb/class_player_movement_controller.html#a648743b36783a158abba87f02fd20f67',1,'PlayerMovementController.TakeDamage()']]],
   ['targetlayers_1',['targetLayers',['../d7/dd1/class_trigger_box.html#acd0c30b0f23a98aeccd0438c7b453459',1,'TriggerBox']]],
   ['targettags_2',['targetTags',['../d7/dd1/class_trigger_box.html#a4a08584b86f7b90442fd5986663745b1',1,'TriggerBox']]],
   ['testbool_3',['testBool',['../d8/d23/class_game_data.html#a0ba40a542d2a9388b633840c12d969bb',1,'GameData']]],
@@ -12,11 +12,12 @@ var searchData=
   ['tracking_5fturret_9',['TRACKING_TURRET',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa215b2017605f3ffeda0e2720a3ecd7c8',1,'TurretController']]],
   ['triggerbox_10',['TriggerBox',['../d7/dd1/class_trigger_box.html',1,'']]],
   ['triggerbox_2ecs_11',['TriggerBox.cs',['../de/d64/_trigger_box_8cs.html',1,'']]],
-  ['turretcontroller_12',['TurretController',['../dc/d93/class_turret_controller.html',1,'']]],
-  ['turretcontroller_2ecs_13',['TurretController.cs',['../d9/d7b/_turret_controller_8cs.html',1,'']]],
-  ['turrettype_14',['TurretType',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781f',1,'TurretController']]],
-  ['type_15',['type',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a94baf6b4456d8e9970c2592806b54356',1,'LayerCollisionDetection::LayerEventPair']]],
-  ['typewritertext_16',['TypewriterText',['../d1/ddd/class_typewriter_text.html',1,'']]],
-  ['typewritertext_2ecs_17',['TypewriterText.cs',['../dc/dcf/_typewriter_text_8cs.html',1,'']]],
-  ['typingspeed_18',['typingSpeed',['../da/d64/class_monologue_manager.html#a65cebf6ad9831b178829914444dea556',1,'MonologueManager']]]
+  ['triggerplayerdeath_12',['TriggerPlayerDeath',['../d1/d13/class_death_manager.html#af9ce2a61e6e8d801e8fb88a956798d5d',1,'DeathManager']]],
+  ['turretcontroller_13',['TurretController',['../dc/d93/class_turret_controller.html',1,'']]],
+  ['turretcontroller_2ecs_14',['TurretController.cs',['../d9/d7b/_turret_controller_8cs.html',1,'']]],
+  ['turrettype_15',['TurretType',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781f',1,'TurretController']]],
+  ['type_16',['type',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a94baf6b4456d8e9970c2592806b54356',1,'LayerCollisionDetection::LayerEventPair']]],
+  ['typewritertext_17',['TypewriterText',['../d1/ddd/class_typewriter_text.html',1,'']]],
+  ['typewritertext_2ecs_18',['TypewriterText.cs',['../dc/dcf/_typewriter_text_8cs.html',1,'']]],
+  ['typingspeed_19',['typingSpeed',['../da/d64/class_monologue_manager.html#a65cebf6ad9831b178829914444dea556',1,'MonologueManager']]]
 ];

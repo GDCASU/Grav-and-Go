@@ -1,0 +1,13 @@
+<map id="PlayerMovementController.TakeDamage" name="PlayerMovementController.TakeDamage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,205,63"/>
+<area shape="rect" id="Node000002" href="$d1/d13/class_death_manager.html#af9ce2a61e6e8d801e8fb88a956798d5d" title=" " alt="" coords="253,23,460,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,41,239,41,239,46,206,46"/>
+<area shape="rect" id="Node000003" href="$d6/d06/class_level_manager.html#aaccca644b8d4e1f0cb6175ad789249c4" title=" " alt="" coords="508,5,756,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,31,494,28,494,33,461,36"/>
+<area shape="rect" id="Node000006" href="$d4/da1/class_player_animator.html#a901100ef80edda74ac678ed5eed6d787" title=" " alt="" coords="541,55,723,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="461,50,527,56,527,61,460,55"/>
+<area shape="rect" id="Node000004" href="$da/da0/class_save_manager.html#a4af39d29fb9ea1aacd31f32f41c610a1" title="Update the values in the associated level struct." alt="" coords="804,5,984,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="756,15,790,15,790,21,756,21"/>
+<area shape="rect" id="Node000005" href="$da/da0/class_save_manager.html#a9db288d07eab5e7a608354636d9cb7d7" title=" " alt="" coords="1032,5,1217,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="984,15,1018,15,1018,21,984,21"/>
+</map>

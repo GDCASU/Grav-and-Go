@@ -1,7 +1,7 @@
 var searchData=
 [
   ['onchangedialogue_0',['OnChangeDialogue',['../d5/dd5/class_cutscene.html#ad36919305e93672e7e6f5aeb97d2ab8c',1,'Cutscene']]],
-  ['ondeath_1',['OnDeath',['../d1/d94/class_retry_manager.html#a7163202bd972bd5637c777d5c8fd6512',1,'RetryManager']]],
+  ['ondeath_1',['OnDeath',['../d1/d94/class_retry_manager.html#a7163202bd972bd5637c777d5c8fd6512',1,'RetryManager.OnDeath()'],['../d4/da1/class_player_animator.html#a901100ef80edda74ac678ed5eed6d787',1,'PlayerAnimator.OnDeath()']]],
   ['onlevelcompleted_2',['OnLevelCompleted',['../dc/d7e/class_results_menu_success.html#ae47ff797aa6a3d8c043303f3437f50bd',1,'ResultsMenuSuccess']]],
   ['onlevelselect_3',['OnLevelSelect',['../dc/d7e/class_results_menu_success.html#ad4ad9f4159574527034a2f5f5a17f913',1,'ResultsMenuSuccess']]],
   ['onmainmenu_4',['OnMainMenu',['../dc/d7e/class_results_menu_success.html#afa5a5b28bbfb7c9372c2a46873a38b89',1,'ResultsMenuSuccess']]],

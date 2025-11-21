@@ -1,5 +1,11 @@
 <map id="LevelManager.LoadLevelViaLevelName" name="LevelManager.LoadLevelViaLevelName">
-<area shape="rect" id="Node000001" title="Function that loads a level via LevelName." alt="" coords="200,5,404,45"/>
-<area shape="rect" id="Node000002" href="$d8/db5/class_exit_door.html#ae931c657fd7d0264f307e83594284e4b" title=" " alt="" coords="5,13,152,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,28,152,28,152,23,186,23"/>
+<area shape="rect" id="Node000001" title="Function that loads a level via LevelName." alt="" coords="276,73,480,113"/>
+<area shape="rect" id="Node000002" href="$d6/d06/class_level_manager.html#a3d712c6e6953f95a26590103482a592c" title=" " alt="" coords="5,5,228,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,71,227,45,182,33,183,28,229,39,311,66"/>
+<area shape="rect" id="Node000003" href="$d6/d06/class_level_manager.html#a8c32cb8e23b34ea46b28e87196f651d0" title=" " alt="" coords="9,55,225,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,84,225,80,225,75,263,79"/>
+<area shape="rect" id="Node000004" href="$d8/db5/class_exit_door.html#ae931c657fd7d0264f307e83594284e4b" title=" " alt="" coords="43,104,190,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,106,190,113,190,107,262,101"/>
+<area shape="rect" id="Node000005" href="$d6/d06/class_level_manager.html#a153355bed12ea797ec47dd4389427abf" title=" " alt="" coords="11,154,222,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="303,119,229,143,186,156,184,151,227,138,302,114"/>
 </map>
