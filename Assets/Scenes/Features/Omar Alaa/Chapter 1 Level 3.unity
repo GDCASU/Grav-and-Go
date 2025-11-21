@@ -457,7 +457,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3673298617940267959, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722831213}
   m_SourcePrefab: {fileID: 100100000, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
 --- !u!1 &619394800
 GameObject:
@@ -2151,6 +2154,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &722831206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673298617940267959, guid: 07c54cf6f7b93d0439fc80d0edd3f96d, type: 3}
+  m_PrefabInstance: {fileID: 495139218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &722831213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722831206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031e9c9dbc2792e46bfbe1fe8c5dc580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  chunks: 4
+  objMass: 0
+  fadeTime: 3
 --- !u!1 &1225538705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,7 +2297,7 @@ MonoBehaviour:
   maxHealth: 3
   chunks: 3
   objMass: 0
-  fadeTime: 3
+  fadeTime: 300
 --- !u!1 &1516544728
 GameObject:
   m_ObjectHideFlags: 0
