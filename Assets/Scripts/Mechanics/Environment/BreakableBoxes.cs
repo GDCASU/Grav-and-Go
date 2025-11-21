@@ -58,6 +58,8 @@ public class Breakable : MonoBehaviour, IDamageable
         {
             boxDied();
         }
+
+        print("im prnting");
     }
 
     private void throwEffects() // need 2 change function name
@@ -143,13 +145,15 @@ public class Breakable : MonoBehaviour, IDamageable
     {
         print(objToBreak.name);
 
-
-
         for (float i = 0; i < chunks; i++)
         {
             for (float j = 0; j < chunks; j++)
             {
                 GameObject chunkObj = Instantiate(objToBreak);
+                chunkObj.layer = LayerMask.NameToLayer("Chunk");
+                chunkObj.GetComponent<Rigidbody2D>().includeLayers = LayerMask.GetMask("Terrain"); //make sure chunks can interact with environment and grabbable
+                ////ignore all layers except terrain
+                chunkObj.GetComponent<Rigidbody2D>().excludeLayers = (LayerMask.GetMask("Physics Objects"));
                 Destroy(chunkObj.GetComponent<GrabbableObject>());
                 myChunks.Add(chunkObj);
                 //remove this script from the new chunk
@@ -258,6 +262,8 @@ public class Breakable : MonoBehaviour, IDamageable
 
                 }
 
+
+
                 //set chunk pos relative to original obj
                 Vector3 ogPos = objToBreak.transform.position;
                 float chunkWidth = cloneSprite.bounds.size.x / chunks;
@@ -274,9 +280,9 @@ public class Breakable : MonoBehaviour, IDamageable
             }
         }
         //Destroy(objToBreak);
-        StartCoroutine(DestroyChunk());
+        StartCoroutine(DestroyChunk(objToBreak));
         //WaitForSeconds wait = new WaitForSeconds(fadeTime);
-        Destroy(objToBreak);
+        //Destroy(objToBreak);
 
 
         if (collisionPoint != Vector2.zero)
@@ -288,13 +294,15 @@ public class Breakable : MonoBehaviour, IDamageable
             print("no collision point");
         }
 
-
     }
 
     //destroy chunk coroutine for fadeout
-    private IEnumerator DestroyChunk()
+    private IEnumerator DestroyChunk(GameObject cloneObj)
     {
         print("starting destroy coroutine");
+        cloneObj.GetComponent<Collider2D>().enabled = false;
+        cloneObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        cloneObj.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(fadeTime);
         print("fading chunks");
         for (int i = 0; i < myChunks.Count; i++)
@@ -302,7 +310,6 @@ public class Breakable : MonoBehaviour, IDamageable
             print("destroying chunk " + i.ToString());
             Destroy(myChunks[i]);
         }
-
 
     }
 
