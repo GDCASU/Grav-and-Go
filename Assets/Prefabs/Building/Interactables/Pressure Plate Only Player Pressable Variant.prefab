@@ -49,8 +49,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6083065393165213970, guid: c7ea1ab082d1a104d8391705ffa2e7b4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6083065393165213970, guid: c7ea1ab082d1a104d8391705ffa2e7b4, type: 3}
       propertyPath: m_Name
       value: Pressure Plate Only Player Pressable Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169172421518804983, guid: c7ea1ab082d1a104d8391705ffa2e7b4, type: 3}
+      propertyPath: _activationMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6538908042934809972, guid: c7ea1ab082d1a104d8391705ffa2e7b4, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
