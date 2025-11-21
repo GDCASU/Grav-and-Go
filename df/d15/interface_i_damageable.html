@@ -113,21 +113,23 @@ Inheritance diagram for IDamageable:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/dda/interface_i_damageable__inherit__graph.png" border="0" usemap="#a_i_damageable_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_i_damageable_inherit__map" id="a_i_damageable_inherit__map">
-<area shape="rect" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="14,5,123,31"/>
-<area shape="rect" href="../../d0/d30/class_breakable_boxes.html" title=" " alt="" coords="5,79,132,104"/>
-<area shape="poly" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
+<area shape="rect" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="77,5,186,31"/>
+<area shape="rect" href="../../de/d93/class_breakable.html" title=" " alt="" coords="5,79,92,104"/>
+<area shape="poly" title=" " alt="" coords="109,42,64,80,60,76,106,38"/>
+<area shape="rect" href="../../d2/dcb/class_player_movement_controller.html" title="Handles all core movement logic for the player:" alt="" coords="117,79,314,104"/>
+<area shape="poly" title=" " alt="" coords="157,38,203,76,200,80,154,42"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53bdf2109e6fb634adb9b04d3c236a2d" id="r_a53bdf2109e6fb634adb9b04d3c236a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53bdf2109e6fb634adb9b04d3c236a2d">TakeDamage</a> (int damage)</td></tr>
+<tr class="memitem:a39cd3ae7a3ae4bf1eba2bb5bd26a8a76" id="r_a39cd3ae7a3ae4bf1eba2bb5bd26a8a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39cd3ae7a3ae4bf1eba2bb5bd26a8a76">TakeDamage</a> (int damage, Rigidbody2D rb)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to handle the damage dealt by weapons on the game. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a53bdf2109e6fb634adb9b04d3c236a2d" name="a53bdf2109e6fb634adb9b04d3c236a2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53bdf2109e6fb634adb9b04d3c236a2d">&#9670;&#160;</a></span>TakeDamage()</h2>
+<a id="a39cd3ae7a3ae4bf1eba2bb5bd26a8a76" name="a39cd3ae7a3ae4bf1eba2bb5bd26a8a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39cd3ae7a3ae4bf1eba2bb5bd26a8a76">&#9670;&#160;</a></span>TakeDamage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,13 +137,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void IDamageable.TakeDamage </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>damage</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>damage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Rigidbody2D</td>          <td class="paramname"><span class="paramname"><em>rb</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d0/d30/class_breakable_boxes.html#aeb93f50fdf4d9b9d3d509bfef42495b6">BreakableBoxes</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d93/class_breakable.html#a9c44650496a7a48b82a610be83b97dbd">Breakable</a>, and <a class="el" href="../../d2/dcb/class_player_movement_controller.html#a648743b36783a158abba87f02fd20f67">PlayerMovementController</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,7 @@
+<map id="LevelManager.LoadLastCheckpoint" name="LevelManager.LoadLastCheckpoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="508,13,756,38"/>
+<area shape="rect" id="Node000002" href="$d1/d13/class_death_manager.html#af9ce2a61e6e8d801e8fb88a956798d5d" title=" " alt="" coords="253,5,460,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="494,28,460,28,460,23,494,23"/>
+<area shape="rect" id="Node000003" href="$d2/dcb/class_player_movement_controller.html#a648743b36783a158abba87f02fd20f67" title=" " alt="" coords="5,5,205,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,28,206,28,206,23,239,23"/>
+</map>

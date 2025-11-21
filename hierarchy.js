@@ -6,12 +6,14 @@ var hierarchy =
     [ "BezierCurve", "df/da0/class_bezier_curve.html", null ],
     [ "Dialogue.Block", "db/d9e/struct_dialogue_1_1_block.html", null ],
     [ "ConfigData", "d1/d32/class_config_data.html", null ],
+    [ "DeathManager", "d1/d13/class_death_manager.html", null ],
     [ "EffectList", "d9/d40/class_effect_list.html", null ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", null ],
     [ "GameData", "d8/d23/class_game_data.html", null ],
     [ "GravSpecialObject.GravEvents", "d9/d82/class_grav_special_object_1_1_grav_events.html", null ],
     [ "IDamageable", "df/d15/interface_i_damageable.html", [
-      [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ]
+      [ "Breakable", "de/d93/class_breakable.html", null ],
+      [ "PlayerMovementController", "d2/dcb/class_player_movement_controller.html", null ]
     ] ],
     [ "Interactable.InteractableEvents", "d8/d40/class_interactable_1_1_interactable_events.html", null ],
     [ "LayerCollisionDetection.LayerEventPair", "d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html", null ],
@@ -22,7 +24,7 @@ var hierarchy =
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
-      [ "BreakableBoxes", "d0/d30/class_breakable_boxes.html", null ],
+      [ "Breakable", "de/d93/class_breakable.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
       [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],
       [ "Cutscene", "d5/dd5/class_cutscene.html", null ],

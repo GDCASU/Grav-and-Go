@@ -113,9 +113,11 @@ Inheritance diagram for PlayerMovementController:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dfd/class_player_movement_controller__inherit__graph.png" border="0" usemap="#a_player_movement_controller_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_player_movement_controller_inherit__map" id="a_player_movement_controller_inherit__map">
-<area shape="rect" title="Handles all core movement logic for the player:" alt="" coords="5,79,203,104"/>
-<area shape="rect" title=" " alt="" coords="42,5,166,31"/>
-<area shape="poly" title=" " alt="" coords="107,44,107,79,101,79,101,44"/>
+<area shape="rect" title="Handles all core movement logic for the player:" alt="" coords="39,79,237,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" title=" " alt="" coords="91,39,128,77,125,80,87,43"/>
+<area shape="rect" href="../../df/d15/interface_i_damageable.html" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="154,5,263,31"/>
+<area shape="poly" title=" " alt="" coords="189,43,151,80,148,77,185,39"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -123,12 +125,18 @@ Collaboration diagram for PlayerMovementController:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/db6/class_player_movement_controller__coll__graph.png" border="0" usemap="#a_player_movement_controller_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_player_movement_controller_coll__map" id="a_player_movement_controller_coll__map">
-<area shape="rect" title="Handles all core movement logic for the player:" alt="" coords="5,79,203,104"/>
-<area shape="rect" title=" " alt="" coords="42,5,166,31"/>
-<area shape="poly" title=" " alt="" coords="107,44,107,79,101,79,101,44"/>
+<area shape="rect" title="Handles all core movement logic for the player:" alt="" coords="39,79,237,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" title=" " alt="" coords="91,39,128,77,125,80,87,43"/>
+<area shape="rect" href="../../df/d15/interface_i_damageable.html" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="154,5,263,31"/>
+<area shape="poly" title=" " alt="" coords="189,43,151,80,148,77,185,39"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a648743b36783a158abba87f02fd20f67" id="r_a648743b36783a158abba87f02fd20f67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a648743b36783a158abba87f02fd20f67">TakeDamage</a> (int damage, Rigidbody2D rb)</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a54b84ab377e395dd6dc35370bf6caafd" id="r_a54b84ab377e395dd6dc35370bf6caafd"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54b84ab377e395dd6dc35370bf6caafd">movement</a></td></tr>
@@ -147,7 +155,57 @@ Events</h2></td></tr>
 <p>– Implements variable-height jumping with coyote-time and jump-buffer </p>
 <p>– Calculates custom gravity and grounding logic </p>
 <p>This script <em>does not</em> animate or play VFX/SFX directly; those concerns live in <a class="el" href="../../d4/da1/class_player_animator.html" title="Pure presentation layer for the player: – Listens to events from PlayerMovementController to trigger ...">PlayerAnimator</a>. </p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a648743b36783a158abba87f02fd20f67" name="a648743b36783a158abba87f02fd20f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648743b36783a158abba87f02fd20f67">&#9670;&#160;</a></span>TakeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovementController.TakeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>damage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rigidbody2D</td>          <td class="paramname"><span class="paramname"><em>rb</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/d15/interface_i_damageable.html#a39cd3ae7a3ae4bf1eba2bb5bd26a8a76">IDamageable</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dcb/class_player_movement_controller_a648743b36783a158abba87f02fd20f67_cgraph.png" border="0" usemap="#ad2/dcb/class_player_movement_controller_a648743b36783a158abba87f02fd20f67_cgraph" loading="lazy" alt=""/></div>
+<map name="ad2/dcb/class_player_movement_controller_a648743b36783a158abba87f02fd20f67_cgraph" id="ad2/dcb/class_player_movement_controller_a648743b36783a158abba87f02fd20f67_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,205,63"/>
+<area shape="rect" href="../../d1/d13/class_death_manager.html#af9ce2a61e6e8d801e8fb88a956798d5d" title=" " alt="" coords="253,23,460,63"/>
+<area shape="poly" title=" " alt="" coords="206,41,239,41,239,46,206,46"/>
+<area shape="rect" href="../../d6/d06/class_level_manager.html#aaccca644b8d4e1f0cb6175ad789249c4" title=" " alt="" coords="508,5,756,31"/>
+<area shape="poly" title=" " alt="" coords="460,31,494,28,494,33,461,36"/>
+<area shape="rect" href="../../d4/da1/class_player_animator.html#a901100ef80edda74ac678ed5eed6d787" title=" " alt="" coords="541,55,723,80"/>
+<area shape="poly" title=" " alt="" coords="461,50,527,56,527,61,460,55"/>
+<area shape="rect" href="../../da/da0/class_save_manager.html#a4af39d29fb9ea1aacd31f32f41c610a1" title="Update the values in the associated level struct." alt="" coords="804,5,984,31"/>
+<area shape="poly" title=" " alt="" coords="756,15,790,15,790,21,756,21"/>
+<area shape="rect" href="../../da/da0/class_save_manager.html#a9db288d07eab5e7a608354636d9cb7d7" title=" " alt="" coords="1032,5,1217,31"/>
+<area shape="poly" title=" " alt="" coords="984,15,1018,15,1018,21,984,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a54b84ab377e395dd6dc35370bf6caafd" name="a54b84ab377e395dd6dc35370bf6caafd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54b84ab377e395dd6dc35370bf6caafd">&#9670;&#160;</a></span>movement</h2>
 

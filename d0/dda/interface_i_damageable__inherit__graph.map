@@ -1,5 +1,7 @@
 <map id="IDamageable" name="IDamageable">
-<area shape="rect" id="Node000001" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="14,5,123,31"/>
-<area shape="rect" id="Node000002" href="$d0/d30/class_breakable_boxes.html" title=" " alt="" coords="5,79,132,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
+<area shape="rect" id="Node000001" title="Interface to handle the damage dealt by weapons on the game." alt="" coords="77,5,186,31"/>
+<area shape="rect" id="Node000002" href="$de/d93/class_breakable.html" title=" " alt="" coords="5,79,92,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,42,64,80,60,76,106,38"/>
+<area shape="rect" id="Node000003" href="$d2/dcb/class_player_movement_controller.html" title="Handles all core movement logic for the player:" alt="" coords="117,79,314,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,38,203,76,200,80,154,42"/>
 </map>
