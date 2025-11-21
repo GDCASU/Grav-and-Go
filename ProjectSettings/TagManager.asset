@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Interactable
   - Physics Object
+  - Hazard
+  - Tile
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Ignore Player and Physics Object
   - Projectiles
   - Hazards
-  - 
+  - TurretProjectiles
   - 
   - 
   - 

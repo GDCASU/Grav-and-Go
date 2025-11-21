@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 1544650614272011793}
   - component: {fileID: 1544650614272011794}
   - component: {fileID: 2263943290181670641}
+  - component: {fileID: 7357925020573674009}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -505,6 +506,7 @@ MonoBehaviour:
   _endedJumpEarly: 0
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
+  _timeJumpWasReleased: 0
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -599,6 +601,27 @@ MonoBehaviour:
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7357925020573674009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544650614272011804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d47d71d220dd244bdfd7ccf36967c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerCollisionEvents:
+  - mask:
+      serializedVersion: 2
+      m_Bits: 4096
+    type: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    debug: 1
 --- !u!1 &1607290443805032806
 GameObject:
   m_ObjectHideFlags: 0
