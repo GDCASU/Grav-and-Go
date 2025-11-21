@@ -48,6 +48,7 @@ var hierarchy =
       [ "LayerCollisionDetection", "db/df8/class_layer_collision_detection.html", null ],
       [ "LevelButton", "dc/d72/class_level_button.html", null ],
       [ "LevelManager", "d6/d06/class_level_manager.html", null ],
+      [ "LevelSelectButton", "d4/de8/class_level_select_button.html", null ],
       [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", null ],
       [ "LineRendererSmoother", "da/d25/class_line_renderer_smoother.html", null ],
       [ "MonologueManager", "da/d64/class_monologue_manager.html", null ],
@@ -89,6 +90,7 @@ var hierarchy =
     ] ],
     [ "PropertyDrawersHelper", "d1/d04/class_property_drawers_helper.html", null ],
     [ "ScriptableObject", null, [
+      [ "ChapterData", "dc/d70/class_chapter_data.html", null ],
       [ "Dialogue", "d0/d9d/class_dialogue.html", null ],
       [ "GravityGunSettings", "db/d9e/class_gravity_gun_settings.html", null ],
       [ "ScriptableStats", "da/dd5/class_scriptable_stats.html", null ]
