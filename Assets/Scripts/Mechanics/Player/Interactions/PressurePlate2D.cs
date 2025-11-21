@@ -39,9 +39,18 @@ public class PressurePlate2D : MonoBehaviour
              " 10 % = frequency * 0.90  (softer)\n" +
              " 25 % = frequency * 0.75  (much softer)")]
     private float frequencyOffsetPercent = 0f;
+
+    [SerializeField] private ActivationMode _activationMode;
+    private enum ActivationMode //What is allowed to activate the switch.
+    {
+        PlayerAndObjects,
+        PlayerOnly,
+        ObjectsOnly
+    }
     
     [Header("References")]
     [SerializeField] private Rigidbody2D _plateRB; // dynamic plate body
+    [SerializeField] private Collider2D _plateCol;
     [SerializeField] private SpringJoint2D _sj; // spring linking plate to base
     [SerializeField] private TextMeshProUGUI _massTargetText;
     
@@ -60,6 +69,22 @@ public class PressurePlate2D : MonoBehaviour
         _massTargetText.text = requiredMassKg.ToString("0.0");
         _restY = _plateRB.transform.localPosition.y;
         AutoConfigureFrequency();
+
+        //The numbers of layers are hardcoded because they will not change.
+        if (_activationMode == ActivationMode.ObjectsOnly) _plateCol.excludeLayers += 6;
+        else if (_activationMode == ActivationMode.PlayerOnly)
+        {
+            for (int i = 0; i < 32; i++)
+            {
+                if (i == 6 || i == 10) continue; //Skips layers that need to be touched.
+
+                string name = LayerMask.LayerToName(i);
+
+                if (string.IsNullOrEmpty(name)) continue; //Ensures only used layers count.
+
+                _plateCol.excludeLayers += 1 << i;
+            }
+        }
     }
     
     private void AutoConfigureFrequency()
@@ -108,13 +133,12 @@ public class PressurePlate2D : MonoBehaviour
             onReleased?.Invoke();
         }
     }
-
     #endregion
 
-    
+
 
 #if UNITY_EDITOR
-     
+
     // Gizmo to visualise the activation depth when object is selected.
     private void OnDrawGizmosSelected()
     {

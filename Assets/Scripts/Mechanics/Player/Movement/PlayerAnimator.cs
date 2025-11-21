@@ -130,6 +130,11 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
+    public void OnDeath()
+    {
+        _anim.SetTrigger("Death");
+    }
+
     #endregion
 
     #region Dynamic Particle Tint (matches ground)  
