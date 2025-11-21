@@ -48,9 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5783487169199246139, guid: df6cf3cb9c2f4294996ce7449fccf3f6, type: 3}
+      propertyPath: _activationMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887679087147806174, guid: df6cf3cb9c2f4294996ce7449fccf3f6, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 5887679087147806174, guid: df6cf3cb9c2f4294996ce7449fccf3f6, type: 3}
       propertyPath: m_Name
-      value: Pressure Plate (1) Variant
+      value: Pressure Plate Non Player Pressable
       objectReference: {fileID: 0}
     - target: {fileID: 6872635323432024504, guid: df6cf3cb9c2f4294996ce7449fccf3f6, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
