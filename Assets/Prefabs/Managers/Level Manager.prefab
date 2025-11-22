@@ -50,16 +50,24 @@ MonoBehaviour:
         name: Main Menu
       Value:
         isUnlocked: 1
+        bestTime: 0
     - Key:
         name: Level Select
       Value:
         isUnlocked: 1
+        bestTime: 0
     - Key:
         name: Chapter 1 Level 1
       Value:
         isUnlocked: 1
+        bestTime: 0
     - Key:
         name: Chapter 1 Level 2
       Value:
         isUnlocked: 0
+        bestTime: 0
+  levelSelect:
+    name: Level Select
+  mainMenu:
+    name: Main Menu
   _doDebugLog: 0

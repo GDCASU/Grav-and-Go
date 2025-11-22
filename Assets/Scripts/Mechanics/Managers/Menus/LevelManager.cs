@@ -30,6 +30,11 @@ public class LevelManager : MonoBehaviour
     [Header("Database")] 
     [SerializeField] private SerializedDictionary<Level, LevelStatus> _levelProgressDatabase;
     Level currentLevelName;
+    [SerializeField] Level levelSelect;
+    [SerializeField] Level mainMenu;
+
+    [Header("Player")]
+    PlayerMovementController playerController;
 
     [Header("Debugging")] 
     [SerializeField] private bool _doDebugLog;
@@ -44,6 +49,11 @@ public class LevelManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        playerController = Object.FindFirstObjectByType<PlayerMovementController>();
     }
 
     /// <summary> Function that loads a level via LevelName only if unlocked </summary>
@@ -85,7 +95,22 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(LoadLevel());
         return true;
     }
+
+    public void ReloadCurrentLevel()
+    {
+        LoadLevelViaLevelName(currentLevelName);
+    }
     
+    public void LoadLevelSelect()
+    {
+        LoadLevelViaLevelName(levelSelect);
+    }
+
+    public void LoadMainMenu()
+    {
+        LoadLevelViaLevelName(mainMenu);
+    }
+
     /// <summary> Function that checks if a certain level is unlocked </summary>
     /// <param name="levelName"> The name of the level, set in the inspector please </param>
     /// <returns> False if not unlocked </returns>
@@ -113,7 +138,19 @@ public class LevelManager : MonoBehaviour
     public void LoadLastCheckpoint()
     {
         SaveManager.Instance.LoadLevel(currentLevelName);
+        playerController.enabled = true;
         if (_doDebugLog) Debug.Log($"Loading level {currentLevelName.name}");
+    }
+
+    public void LoadLastCheckpoint(int delay)
+    {
+        StartCoroutine(LoadCheckpoint(delay));
+    }
+
+    IEnumerator LoadCheckpoint(int delay)
+    {
+        yield return new WaitForSeconds(delay);
+        LoadLastCheckpoint();
     }
 
     IEnumerator LoadLevel()

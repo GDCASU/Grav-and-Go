@@ -18,7 +18,7 @@ using UnityEditor;
 /// <para> This script *does not* animate or play VFX/SFX directly; those concerns live
 /// in <see cref="PlayerAnimator"/>. </para>
 /// </summary>
-public class PlayerMovementController : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour, IDamageable
 {
     // Tuning
     [Header("Tunning")]
@@ -283,6 +283,11 @@ public class PlayerMovementController : MonoBehaviour
 
     #endregion
 
+    public void TakeDamage(int damage, Rigidbody2D rb)
+    {
+        DeathManager.TriggerPlayerDeath();
+    }
+
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
@@ -368,6 +373,7 @@ public class PlayerMovementController : MonoBehaviour
             Handles.DrawLine(rightCenter + downOffset, leftCenter + downOffset);
         }
     }
+
 #endif
 }
 
