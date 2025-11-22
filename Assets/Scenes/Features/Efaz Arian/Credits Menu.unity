@@ -2840,7 +2840,7 @@ GameObject:
   - component: {fileID: 663413046}
   - component: {fileID: 663413045}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
