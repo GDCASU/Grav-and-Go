@@ -2860,6 +2860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 56176650}
     m_Modifications:
+    - target: {fileID: 1544650614272011793, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1544650614272011795, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.58
@@ -3357,7 +3361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844024743802651330, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: effectParticles.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 844024743802651330, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: 'effectParticles.Array.data[0]'
@@ -3374,18 +3378,18 @@ PrefabInstance:
     - target: {fileID: 844024743802651330, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: 'effectParticles.Array.data[3]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1974118453252776772, guid: 987f6fa8716e26d4fb80dbfc74d49659, type: 3}
     - target: {fileID: 1924837334395969387, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_Name
       value: Example AOE cylinder
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.722994
+      value: 5.28
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.182928
+      value: -8.03
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.z

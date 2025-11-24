@@ -7,7 +7,7 @@ using UnityEngine;
  * Author:
  * Davyd Yehudin
  * 
- * Modified By:
+ * Modified By: Justin Miller
  * 
  */// --------------------------------------------------------
 
@@ -33,7 +33,7 @@ public class EffectList
         forced.AddForce(force);
         Debug.Log(a.name);
     }
-    //effect1 (sideways force)
+    //effect1 (Right force)
     public static void effect1(GameObject a){
         Rigidbody2D forced;
         if(!a.TryGetComponent<Rigidbody2D>(out forced)){
@@ -47,10 +47,44 @@ public class EffectList
         Debug.Log(a.name);
     }
 
+    //effect2 (Downward force)
+    public static void effect2(GameObject a)
+    {
+        Rigidbody2D forced;
+        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        {
+            Debug.Log("(((((");
+            return;
+        }
+        Vector2 force;
+        force.x = 0;
+        force.y = -100;
+        forced.AddForce(force);
+        Debug.Log(a.name);
+    }
+
+    //effect3 (Left force)
+    public static void effect3(GameObject a)
+    {
+        Rigidbody2D forced;
+        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        {
+            Debug.Log("(((((");
+            return;
+        }
+        Vector2 force;
+        force.y = 0;
+        force.x = -100;
+        forced.AddForce(force);
+        Debug.Log(a.name);
+    }
+
     //effects 0 and 1 are examples, change if necessary
 }
 //enum of all effects, don't forget to add the new effect here and then add it to the switch statement in AOE_cylinder
 public enum effectsEnum{
     effect0,
-    effect1
+    effect1,
+    effect2,
+    effect3
 }

@@ -22,6 +22,7 @@ using UnityEngine;
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
+    [SerializeField] public bool _isInCylinder;
     [SerializeField] private effectsEnum effectNumber = 0;
     [SerializeField] private GameObject[] effectParticles;
     private GameObject currentParticle = null;
@@ -51,6 +52,10 @@ using UnityEngine;
     //triggers while an object is inside the "cylinder"
     void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player"))
+        {
+            _isInCylinder = true;
+        }
         GrabbableObject grabbedObj;
         bool isGrabbed = false; //if the object doesn't have GrabbableObject then we still interact with it. Change to true to not interact with them
         if(collision.TryGetComponent<GrabbableObject>(out grabbedObj)){
@@ -67,9 +72,23 @@ using UnityEngine;
                 case effectsEnum.effect1:
                 EffectList.effect1(collision.gameObject);
                 break;
+                case effectsEnum.effect2:
+                EffectList.effect2(collision.gameObject);
+                break;
+                case effectsEnum.effect3:
+                EffectList.effect3(collision.gameObject);
+                break;
                 default:
                 return;
             }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            _isInCylinder = false;
         }
     }
 
