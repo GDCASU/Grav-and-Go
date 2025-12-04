@@ -19,11 +19,14 @@ using UnityEngine;
 /// <summary>
 /// Class that holds the settings of the game
 /// </summary>
-public class GameSettings : MonoBehaviour, IDataPersistance
+public class GameSettings : MonoBehaviour
 {
     public static GameSettings Instance;        // Singleton reference
 
-    [Header("Cursor Settings")]
+    [Header("General")]
+    private SaveManager save;
+
+    [Header("Cursor")]
     [SerializeField] private bool hideCursor;
     [SerializeField] private bool lockCursor;
     [SerializeField] private bool confineCursor;
@@ -34,7 +37,7 @@ public class GameSettings : MonoBehaviour, IDataPersistance
 
     // [Header("Cheats")]
     
-    private void Awake()            
+    private void Awake()           
     {
         // Set the Singleton
         if (Instance != null && Instance != this)
@@ -46,40 +49,46 @@ public class GameSettings : MonoBehaviour, IDataPersistance
         // Not set yet
         Instance = this;
 
-        // Subscribe to saving events
-        SerializedDataManager.StartSavingEvent += SaveData;
+        // Add SaveData to save event
+        SaveManager.StartSavingEvent += SaveData;
     }
 
     private void Start()
     {
         // Load Data
+        save = SaveManager.Instance;
         LoadData();
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe from events
+        SaveManager.StartSavingEvent -= SaveData;
     }
 
     public void SaveData()
     {
-        // Save data to file Here
-
-        // Unsubscribe from events
-        SerializedDataManager.StartSavingEvent -= SaveData;
+        // Save data to file
+        save.SaveConfigData("capFrameRate", capFrameRate ? 1 : 0);
+        save.SaveConfigData("hideCursor", hideCursor ? 1 : 0);
+        save.SaveConfigData("lockCursor", lockCursor ? 1 : 0);
+        save.SaveConfigData("confineCursor", confineCursor ?  1 : 0);
     }
 
     public void LoadData()
     {
-        // Load data from configs here
+        // load variables from data
+        capFrameRate = save.LoadIntData("capFrameRate") == 1;
+        hideCursor = save.LoadIntData("hideCursor") == 1;
+        lockCursor = save.LoadIntData("lockCursor") == 1;
+        confineCursor = save.LoadIntData("confineCursor") == 1;
 
         // Set variables
-        if (capFrameRate)
-            SetFrameRate(targetFrameRate);
+        if (capFrameRate) SetFrameRate(targetFrameRate);
 
-        if (hideCursor)
-            HideCursor(hideCursor);
-
-        if (lockCursor)
-            LockCursor(lockCursor);
-
-        if (confineCursor)
-            ConfineCursor(confineCursor);
+        HideCursor(hideCursor);
+        LockCursor(lockCursor);
+        ConfineCursor(confineCursor);
     }
 
     /// <summary>

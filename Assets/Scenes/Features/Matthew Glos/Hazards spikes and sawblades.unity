@@ -1500,6 +1500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192020411}
     m_Modifications:
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _startOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
       propertyPath: m_Name
       value: Lever 1
@@ -3539,13 +3543,38 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 698325161}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1347790184}
+    - target: {fileID: 7357925020573674009, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336772857293765284, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336772857293765284, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6526196842957496462, guid: cab9ac31f7910d8478acad5fcb870d91, type: 3}
+    - target: {fileID: 8336772857293765284, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerPlayerDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336772857293765284, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      propertyPath: layerCollisionEvents.Array.data[0].events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DeathManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1347790190}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
 --- !u!1 &1347790184 stripped
 GameObject:
@@ -3557,27 +3586,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1544650614272011795, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
   m_PrefabInstance: {fileID: 1347790183}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1347790190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347790184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d47d71d220dd244bdfd7ccf36967c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerCollisionEvents:
-  - mask:
-      serializedVersion: 2
-      m_Bits: 4096
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    type: 0
-    debug: 1
 --- !u!4 &1356958161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3849436573008560762, guid: dee0b54e852c1bc4e9b88323cf4e87e6, type: 3}
