@@ -1,5 +1,7 @@
 <map id="LevelButton" name="LevelButton">
-<area shape="rect" id="Node000001" title="Class that handles a button in the level select window." alt="" coords="17,79,117,104"/>
+<area shape="rect" id="Node000001" title="Class that handles a button in the level select window." alt="" coords="75,101,175,127"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,44,70,79,65,79,65,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,41,120,100,115,103,79,44"/>
+<area shape="rect" id="Node000003" href="$d4/dd0/struct_level.html" title=" " alt="" coords="153,5,211,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,44,134,103,129,100,166,41"/>
 </map>
