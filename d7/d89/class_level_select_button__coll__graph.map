@@ -1,12 +1,14 @@
 <map id="LevelSelectButton" name="LevelSelectButton">
-<area shape="rect" id="Node000001" title=" " alt="" coords="53,176,193,201"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="100,197,240,223"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,59,74,63,105,73,125,85,144,112,174,108,177,81,147,68,128,58,106,54,74,58,43"/>
-<area shape="rect" id="Node000005" href="$dc/d72/class_level_button.html" title="Class that handles a button in the level select window." alt="" coords="73,80,173,105"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="87,40,116,78,112,81,83,43"/>
-<area shape="rect" id="Node000003" href="$dc/d70/class_chapter_data.html" title=" " alt="" coords="198,80,302,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,119,230,137,214,154,192,168,169,178,167,173,190,164,211,150,226,134,237,116"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="185,5,315,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,45,253,80,247,80,247,45"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,119,126,176,121,176,121,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,43,90,83,110,125,136,165,162,196,157,199,132,168,105,128,85,85,72,45"/>
+<area shape="rect" id="Node000005" href="$dc/d72/class_level_button.html" title="Class that handles a button in the level select window." alt="" coords="120,101,220,127"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="92,38,159,99,156,103,89,42"/>
+<area shape="rect" id="Node000003" href="$dc/d70/class_chapter_data.html" title=" " alt="" coords="250,101,354,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="291,140,278,159,261,175,238,190,214,200,212,195,235,185,258,171,274,155,287,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="243,5,372,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,45,305,101,300,101,303,44"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="173,141,173,197,167,197,167,141"/>
+<area shape="rect" id="Node000006" href="$d4/dd0/struct_level.html" title=" " alt="" coords="153,5,211,31"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="181,44,174,101,169,101,176,44"/>
 </map>
