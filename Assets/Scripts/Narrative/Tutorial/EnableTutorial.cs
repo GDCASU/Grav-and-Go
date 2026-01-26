@@ -16,11 +16,16 @@ public class EnableTutorial : MonoBehaviour
      * 
        --------------------------------------------------------
     */
+    [Header("Tutorial Content")]
+    [SerializeField, TextArea(2, 4)] string tutorialText = "You can press [input] to switch the lever."; // Text with [input] placeholder
+    
+    [Header("Input")]
+    [SerializeField] InputActionReference inputActionReference; // Reference to the InputAction that triggers the tutorial
+    
+    [Header("UnityEvent")]
+    [SerializeField] public UnityEvent callbackEvent; // Event that triggers tutorial completion
 
-    [Header("Tutorial Data")]
-    [SerializeField] TutorialData tutorialData; // ScriptableObject containing all tutorial data
-
-    [Header("Events")]
+    [Header("Completion Events")]
     [SerializeField] UnityEvent onTutorialCompleted = new UnityEvent();
 
     // Flag to check if the tutorial has been triggered
@@ -35,13 +40,6 @@ public class EnableTutorial : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Check if tutorial data is assigned
-        if (tutorialData == null)
-        {
-            Debug.LogError("EnableTutorial on " + gameObject.name + " has no TutorialData assigned!");
-            return;
-        }
-
         // Auto-detect Interactable component
         interactable = GetComponent<Interactable>();
 
@@ -51,10 +49,10 @@ public class EnableTutorial : MonoBehaviour
             interactable.events.OnFocusEnter.AddListener(OnFocusEnter);
             interactable.events.OnFocusExit.AddListener(OnFocusExit);
             
-            // Subscribe to the callback event from tutorial data
-            if (tutorialData.callbackEvent != null)
+            // Subscribe to the callback event
+            if (callbackEvent != null)
             {
-                tutorialData.callbackEvent.AddListener(OnExternalEventTriggered);
+                callbackEvent.AddListener(OnExternalEventTriggered);
             }
 
             // Don't show canvas until focused
@@ -69,10 +67,10 @@ public class EnableTutorial : MonoBehaviour
             // No interactable component, just create the tutorial
             CreateTutorialCanvas();
             
-            // Subscribe to the callback event from tutorial data
-            if (tutorialData.callbackEvent != null)
+            // Subscribe to the callback event
+            if (callbackEvent != null)
             {
-                tutorialData.callbackEvent.AddListener(OnExternalEventTriggered);
+                callbackEvent.AddListener(OnExternalEventTriggered);
             }
         }
     }
@@ -87,9 +85,9 @@ public class EnableTutorial : MonoBehaviour
         }
         
         // Unsubscribe from callback event
-        if (tutorialData != null && tutorialData.callbackEvent != null)
+        if (callbackEvent != null)
         {
-            tutorialData.callbackEvent.RemoveListener(OnExternalEventTriggered);
+            callbackEvent.RemoveListener(OnExternalEventTriggered);
         }
     }
 
@@ -114,9 +112,6 @@ public class EnableTutorial : MonoBehaviour
     /// </summary>
     private void CreateTutorialCanvas()
     {
-        if (tutorialData == null)
-            return;
-
         GameObject tutorialCanvasPrefab = Resources.Load<GameObject>("LevelSelectScreen/Tutorials/TutorialCanvas");
 
         if (tutorialCanvasPrefab == null)
@@ -136,7 +131,7 @@ public class EnableTutorial : MonoBehaviour
             string keyDisplay = GetInputKeyDisplay();
             
             // Replace [input] placeholder with the actual key
-            string finalText = tutorialData.tutorialText.Replace("[input]", keyDisplay);
+            string finalText = tutorialText.Replace("[input]", keyDisplay);
             
             tutorialTextComponent.text = finalText;
         }
@@ -147,16 +142,23 @@ public class EnableTutorial : MonoBehaviour
     /// </summary>
     private string GetInputKeyDisplay()
     {
-        if (tutorialData == null || tutorialData.inputAction == null)
+        if (inputActionReference == null)
         {
-            Debug.LogWarning("InputAction not assigned in TutorialData!");
+            Debug.LogWarning("InputActionReference not assigned in EnableTutorial!");
+            return "[Input Not Set]";
+        }
+
+        InputAction inputAction = inputActionReference.action;
+        if (inputAction == null)
+        {
+            Debug.LogWarning("InputAction is null in InputActionReference!");
             return "[Input Not Set]";
         }
 
         // Get the display string of the first binding
-        if (tutorialData.inputAction.bindings.Count > 0)
+        if (inputAction.bindings.Count > 0)
         {
-            return tutorialData.inputAction.bindings[0].ToDisplayString();
+            return inputAction.bindings[0].ToDisplayString();
         }
 
         return "[No Binding]";
@@ -165,7 +167,7 @@ public class EnableTutorial : MonoBehaviour
     /// <summary>
     /// Called when the callback event fires.
     /// </summary>
-    private void OnExternalEventTriggered()
+    public void OnExternalEventTriggered()
     {
         if (!isTriggered)
         {
