@@ -172,6 +172,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1873734546}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnExternalEventTriggered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnableTutorial, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399630558985295494, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      propertyPath: _OnLeverOn.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
       propertyPath: m_Name
       value: Lever 1
@@ -222,7 +250,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1873734539}
+      addedObject: {fileID: 1873734546}
   m_SourcePrefab: {fileID: 100100000, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
 --- !u!1 &59407491
 GameObject:
@@ -2154,6 +2182,54 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &966657464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+  m_PrefabInstance: {fileID: 1382190664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &966657471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966657464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8195584e55c484d9c3b787739213b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1068039797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1068039798}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1068039798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068039797}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.600773, y: -9.154527, z: 2.2567298}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225538705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2330,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 966657471}
   m_SourcePrefab: {fileID: 100100000, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
 --- !u!1 &1411068059 stripped
 GameObject:
@@ -2529,7 +2608,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1545055411602488014, guid: cd4ee869875b95749b5ee5566398358b, type: 3}
   m_PrefabInstance: {fileID: 54416255}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1873734539
+--- !u!114 &1873734546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2541,8 +2620,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2c74f83a5d6a1408178888e6146760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBackground: {fileID: -2423627725662423091, guid: d0e95d2385097ad46a2beac536eb675f, type: 3}
-  text: Press E to use Levers.
+  tutorialText: You can press [input] to switch the lever.
+  inputActionReference: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  callbackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTutorialCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1896775879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3312,3 +3397,4 @@ SceneRoots:
   - {fileID: 2200537625439244004}
   - {fileID: 362910527}
   - {fileID: 5448944466035813599}
+  - {fileID: 1068039798}
