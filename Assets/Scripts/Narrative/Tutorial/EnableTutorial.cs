@@ -27,6 +27,7 @@ public class EnableTutorial : MonoBehaviour
 
     [Header("Canvas")]
     [SerializeField] GameObject customCanvasPrefab; // Custom canvas prefab (optional)
+    [SerializeField] string defaultCanvasResourcePath = "LevelSelectScreen/Tutorials/TutorialCanvas"; // Default resource path for canvas prefab
 
     [Header("Display Behavior")]
     [SerializeField] bool requireFocusToDisplay = true; // If true, tutorial only shows when focused; if false, always visible
@@ -140,12 +141,12 @@ public class EnableTutorial : MonoBehaviour
         else
         {
             // Fall back to default prefab path
-            tutorialCanvasPrefab = Resources.Load<GameObject>("LevelSelectScreen/Tutorials/TutorialCanvas");
+            tutorialCanvasPrefab = Resources.Load<GameObject>(defaultCanvasResourcePath);
         }
 
         if (tutorialCanvasPrefab == null)
         {
-            Debug.LogError("Tutorial Canvas Prefab could not be found! Assign a prefab to customCanvasPrefab or ensure Resources/LevelSelectScreen/Tutorials/TutorialCanvas.prefab exists!");
+            Debug.LogError($"Tutorial Canvas Prefab could not be found! Assign a prefab to customCanvasPrefab or ensure Resources/{defaultCanvasResourcePath}.prefab exists!");
             return;
         }
 
