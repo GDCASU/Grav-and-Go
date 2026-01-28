@@ -25,6 +25,12 @@ public class EnableTutorial : MonoBehaviour
     [Header("UnityEvent")]
     [SerializeField] public UnityEvent callbackEvent; // Event that triggers tutorial completion
 
+    [Header("Canvas")]
+    [SerializeField] GameObject customCanvasPrefab; // Custom canvas prefab (optional)
+
+    [Header("Display Behavior")]
+    [SerializeField] bool requireFocusToDisplay = true; // If true, tutorial only shows when focused; if false, always visible
+
     [Header("Completion Events")]
     [SerializeField] UnityEvent onTutorialCompleted = new UnityEvent();
 
@@ -55,17 +61,29 @@ public class EnableTutorial : MonoBehaviour
                 callbackEvent.AddListener(OnExternalEventTriggered);
             }
 
-            // Don't show canvas until focused
+            // Create canvas
             CreateTutorialCanvas();
             if (canvasInstance != null)
             {
-                canvasInstance.SetActive(false);
+                // Only hide canvas if it requires focus to display
+                canvasInstance.SetActive(!requireFocusToDisplay);
             }
         }
         else
         {
-            // No interactable component, just create the tutorial
+            // No interactable component available
+            if (requireFocusToDisplay)
+            {
+                Debug.LogWarning("EnableTutorial: requireFocusToDisplay is true but no Interactable component found. Tutorial will not display. Either add an Interactable component or set requireFocusToDisplay to false.");
+            }
+            
+            // Create the tutorial
             CreateTutorialCanvas();
+            if (canvasInstance != null)
+            {
+                // Show canvas if not requiring focus
+                canvasInstance.SetActive(!requireFocusToDisplay);
+            }
             
             // Subscribe to the callback event
             if (callbackEvent != null)
@@ -93,7 +111,7 @@ public class EnableTutorial : MonoBehaviour
 
     private void OnFocusEnter()
     {
-        if (canvasInstance != null && !isTriggered)
+        if (canvasInstance != null && !isTriggered && requireFocusToDisplay)
         {
             canvasInstance.SetActive(true);
         }
@@ -101,7 +119,7 @@ public class EnableTutorial : MonoBehaviour
 
     private void OnFocusExit()
     {
-        if (canvasInstance != null && !isTriggered)
+        if (canvasInstance != null && !isTriggered && requireFocusToDisplay)
         {
             canvasInstance.SetActive(false);
         }
@@ -112,18 +130,29 @@ public class EnableTutorial : MonoBehaviour
     /// </summary>
     private void CreateTutorialCanvas()
     {
-        GameObject tutorialCanvasPrefab = Resources.Load<GameObject>("LevelSelectScreen/Tutorials/TutorialCanvas");
+        GameObject tutorialCanvasPrefab = null;
+
+        // Try to load custom prefab if assigned
+        if (customCanvasPrefab != null)
+        {
+            tutorialCanvasPrefab = customCanvasPrefab;
+        }
+        else
+        {
+            // Fall back to default prefab path
+            tutorialCanvasPrefab = Resources.Load<GameObject>("LevelSelectScreen/Tutorials/TutorialCanvas");
+        }
 
         if (tutorialCanvasPrefab == null)
         {
-            Debug.LogError("Tutorial Canvas Prefab could not be found at Resources/LevelSelectScreen/Tutorials/TutorialCanvas.prefab!");
+            Debug.LogError("Tutorial Canvas Prefab could not be found! Assign a prefab to customCanvasPrefab or ensure Resources/LevelSelectScreen/Tutorials/TutorialCanvas.prefab exists!");
             return;
         }
 
         // Instantiate the prefab at the tutorial object's position
         canvasInstance = Instantiate(tutorialCanvasPrefab, transform.position, Quaternion.identity);
 
-        // Find and update the Text component
+        // Find and update the Text component if it exists
         tutorialTextComponent = canvasInstance.GetComponentInChildren<Text>();
         if (tutorialTextComponent != null)
         {
@@ -134,6 +163,10 @@ public class EnableTutorial : MonoBehaviour
             string finalText = tutorialText.Replace("[input]", keyDisplay);
             
             tutorialTextComponent.text = finalText;
+        }
+        else
+        {
+            Debug.LogWarning("No Text component found in the instantiated canvas. The tutorial text will not be displayed.");
         }
     }
 
