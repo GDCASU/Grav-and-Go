@@ -1,13 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,104,140,129"/>
 <area shape="rect" id="Node000001" href="$de/dc7/class_inline_toggle_attribute.html" title="Creates a [InlineToggle] attribute that places the bool checkbox right after the text,..." alt="" coords="203,5,361,31"/>
-<area shape="poly" id="edge60_Node000000_Node000001" title=" " alt="" coords="100,93,140,65,187,40,219,28,221,33,189,44,142,70,103,97"/>
+<area shape="poly" id="edge61_Node000000_Node000001" title=" " alt="" coords="100,93,140,65,187,40,219,28,221,33,189,44,142,70,103,97"/>
 <area shape="rect" id="Node000002" href="$d8/d23/class_inspector_read_only.html" title="Creates a [InspectorReadOnly] Attribute so we can expose values to the inspector while not allowing i..." alt="" coords="209,55,355,80"/>
-<area shape="poly" id="edge61_Node000000_Node000002" title=" " alt="" coords="140,98,227,77,228,83,141,103"/>
+<area shape="poly" id="edge62_Node000000_Node000002" title=" " alt="" coords="140,98,227,77,228,83,141,103"/>
 <area shape="rect" id="Node000003" href="$d3/d1e/class_right_align_toggle_attribute.html" title="Creates a [RightAlignToggle] attribute that will render bool checkboxes to the right in the inspector..." alt="" coords="188,104,376,129"/>
-<area shape="poly" id="edge62_Node000000_Node000003" title=" " alt="" coords="154,114,188,114,188,119,154,119"/>
+<area shape="poly" id="edge63_Node000000_Node000003" title=" " alt="" coords="154,114,188,114,188,119,154,119"/>
 <area shape="rect" id="Node000004" href="$d7/d65/class_string_in_list.html" title="Creates an attribute [StringInList(&quot;A&quot;, &quot;B&quot;)] as to create a dropdown that isnt prone to typing error..." alt="" coords="235,153,329,179"/>
-<area shape="poly" id="edge63_Node000000_Node000004" title=" " alt="" coords="141,130,235,152,234,158,140,135"/>
+<area shape="poly" id="edge64_Node000000_Node000004" title=" " alt="" coords="141,130,235,152,234,158,140,135"/>
 <area shape="rect" id="Node000005" href="$db/dda/class_vector2_compass_attribute.html" title="Creates a [Vector2Compass] Attribute to draw vector2s on the gui." alt="" coords="188,203,376,228"/>
-<area shape="poly" id="edge64_Node000000_Node000005" title=" " alt="" coords="103,136,143,163,189,188,224,200,222,205,187,192,140,167,100,140"/>
+<area shape="poly" id="edge65_Node000000_Node000005" title=" " alt="" coords="103,136,143,163,189,188,224,200,222,205,187,192,140,167,100,140"/>
 </map>
