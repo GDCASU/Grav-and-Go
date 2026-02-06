@@ -33,6 +33,7 @@ var hierarchy =
       [ "DoorKey", "d7/de8/class_door_key.html", null ],
       [ "DoorWithLock", "d7/d78/class_door_with_lock.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
+      [ "EnableTutorial", "d4/d9a/class_enable_tutorial.html", null ],
       [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", null ],
       [ "ExitDoor", "d8/db5/class_exit_door.html", null ],
       [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", null ],

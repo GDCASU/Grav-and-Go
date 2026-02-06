@@ -21,6 +21,7 @@ var annotated_dup =
     [ "DoorWithLock", "d7/d78/class_door_with_lock.html", "d7/d78/class_door_with_lock" ],
     [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", "d1/dc9/class_dynamic_line_bezier" ],
     [ "EffectList", "d9/d40/class_effect_list.html", "d9/d40/class_effect_list" ],
+    [ "EnableTutorial", "d4/d9a/class_enable_tutorial.html", "d4/d9a/class_enable_tutorial" ],
     [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", "d1/d96/class_equidistant_points_updater" ],
     [ "ExitDoor", "d8/db5/class_exit_door.html", "d8/db5/class_exit_door" ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", "dd/d11/class_file_data_handler" ],
