@@ -21,6 +21,9 @@ using UnityEngine;
  public class AOE_cylinder : MonoBehaviour
 {
     // Use this bool to gate all your Debug.Log Statements please
+    [Header("Customization")]
+    [SerializeField] private float thrust = 100f;
+    // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
     [SerializeField] public bool _isInCylinder;
@@ -78,8 +81,9 @@ using UnityEngine;
                 break;
                 case effectsEnum.effect3:
                 EffectList.effect3(collision.gameObject);
+                break;
                 case effectsEnum.GravityWell:
-                EffectList.GravityWell(collision.gameObject);
+                EffectList.GravityWell(collision.gameObject, this.GetComponent<Collider2D>(), thrust);
                 break;
                 default:
                 return;

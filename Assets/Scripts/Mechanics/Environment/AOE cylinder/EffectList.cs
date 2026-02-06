@@ -83,20 +83,28 @@ public class EffectList
         Debug.Log(a.name);
     }
     
-    //effect3 (Left force)
-    public static void GravityWell(GameObject a)
+    //Gravity Well (Brings to Center)
+    public static void GravityWell(GameObject pulled, Collider2D towards, float thrust)
     {
-        Rigidbody2D forced;
-        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        Rigidbody2D rb;
+        if (!pulled.TryGetComponent<Rigidbody2D>(out rb))
         {
             Debug.Log("(((((");
             return;
         }
         Vector2 force;
-        force.y = 0;
-        force.x = -100;
-        forced.AddForce(force);
-        Debug.Log(a.name);
+
+        // Calculate the direction vector from the current object to the target
+        Vector2 direction = (Vector2)towards.bounds.center - (Vector2)pulled.transform.position;
+
+        // Normalize the vector to get a consistent magnitude (length of 1)
+        // This ensures the force applied is the same regardless of distance
+        direction.Normalize();
+
+        // Apply force in that direction, multiplied by the thrust value
+        force = direction * thrust;
+        rb.AddForce(force);
+        Debug.Log(pulled.name);
     }
 
     //effects 0 and 1 are examples, change if necessary
