@@ -9,6 +9,7 @@ using UnityEngine;
  * Davyd Yehudin
  * 
  * Modified By: Justin Miller
+ * Joshua Wright
  * 
  */// --------------------------------------------------------
 
@@ -77,6 +78,8 @@ using UnityEngine;
                 break;
                 case effectsEnum.effect3:
                 EffectList.effect3(collision.gameObject);
+                case effectsEnum.GravityWell:
+                EffectList.GravityWell(collision.gameObject);
                 break;
                 default:
                 return;
