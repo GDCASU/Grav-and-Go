@@ -101,8 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe6d906b214f824abed9ce46e5c47c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _doDebugLog: 0
-  effectNumber: 1
+  _doDebugLog: 1
+  effectNumber: 0
+  effectParticles: []
 --- !u!61 &805716997767688990
 BoxCollider2D:
   m_ObjectHideFlags: 0
