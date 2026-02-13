@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 4278534347156515230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071074, w: -0.7071062}
-  m_LocalPosition: {x: -0.64, y: -1.67, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -166,39 +166,11 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 4288
     type: 0
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5199708370287021364}
-          m_TargetAssemblyTypeName: TurretController, Assembly-CSharp
-          m_MethodName: playerEnter
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+    damage: 0
     debug: 0
   - mask:
       serializedVersion: 2
       m_Bits: 64
     type: 2
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5199708370287021364}
-          m_TargetAssemblyTypeName: TurretController, Assembly-CSharp
-          m_MethodName: playerExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+    damage: 0
     debug: 0
