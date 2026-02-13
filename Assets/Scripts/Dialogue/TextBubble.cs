@@ -1,16 +1,25 @@
+using FMODUnity;
 using UnityEngine;
 
 public class TextBubble : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject UIReference;
+    public Speaker speaker;
+    public string line;
+    public EventReference[] voiceLines;
+
+    public void Init()
     {
-        
+        //Stub
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Finish()
     {
-        
+        //Stub
+    }
+
+    public void Close()
+    {
+        //Stub
     }
 }

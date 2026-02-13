@@ -1,16 +1,26 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public TextBubble textBubblePrefab;
+
+    private bool isRunning;
+    private List<string> currentDialogue;
+    private int currentLineIndex;
+
+    public void StartDialogue()
     {
-        
+        //Stub
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ContinueDialogue()
     {
-        
+        //Stub
+    }
+
+    public bool Running()
+    {
+        return false; //Stub
     }
 }
