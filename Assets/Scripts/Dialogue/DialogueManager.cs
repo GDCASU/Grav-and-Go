@@ -1,26 +1,53 @@
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
+using static Dialogue;
 
 public class DialogueManager : MonoBehaviour
 {
     public TextBubble textBubblePrefab;
 
     private bool isRunning;
-    private List<string> currentDialogue;
+    private List<Line> currentDialogue;
     private int currentLineIndex;
+    private EventReference? eventReference;
+    private string currentTextLine;
 
-    public void StartDialogue()
+    public void StartDialogue(Dialogue dialogue)
     {
-        //Stub
+        isRunning = true;
+        currentDialogue = dialogue.InterpretTextAsset();
+        currentLineIndex = 0;
     }
 
     public void ContinueDialogue()
     {
-        //Stub
+        while (currentLineIndex < currentDialogue.Count)
+        {
+            eventReference = currentDialogue[currentLineIndex].voiceLine;
+            currentTextLine = currentDialogue[currentLineIndex].text;
+
+            currentLineIndex++;
+
+            if (!textBubblePrefab.IsFinishedTyping /* && buttonPressed*/)
+            {
+                //Immediately complete text
+            }
+            else if (textBubblePrefab.IsFinishedTyping /* && buttonPressed*/)
+            {
+                //Load new text
+            }
+
+            //Look for available speaker with chosen ID.
+            //Give access to where to put bubble and who the speaker is.
+            //Display text bubble and start typing.
+        }
+
+        textBubblePrefab.Close();
     }
 
-    public bool Running()
+    public bool DialogueRunning()
     {
-        return false; //Stub
+        return isRunning;
     }
 }
