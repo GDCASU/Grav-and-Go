@@ -3,6 +3,9 @@ using FMODUnity;
 using UnityEngine;
 using static Dialogue;
 
+/// <summary>
+/// A class made to handle dialogue bubbles and the flow of dialogue.
+/// </summary>
 public class DialogueManager : MonoBehaviour
 {
     public TextBubble textBubblePrefab;
@@ -38,17 +41,23 @@ public class DialogueManager : MonoBehaviour
 
             currentLineIndex++;
 
-            if (!textBubblePrefab.IsFinishedTyping /* && buttonPressed*/)
+            if (!textBubblePrefab.IsFinishedTyping && Input.GetKeyDown(KeyCode.Space))
             {
-                //Immediately complete text
+                textBubblePrefab.Finish();
             }
-            else if (textBubblePrefab.IsFinishedTyping /* && buttonPressed*/)
+            else if (textBubblePrefab.IsFinishedTyping && Input.GetKeyDown(KeyCode.Space))
             {
-                //Load new text
+                textBubblePrefab.Init(currentLine);
             }
 
             DisplayTextBubble(currentLine);
         }
+    }
+
+    public void CloseDialogue()
+    {
+        isRunning = false;
+        textBubblePrefab.Close();
     }
 
     public bool DialogueRunning()
