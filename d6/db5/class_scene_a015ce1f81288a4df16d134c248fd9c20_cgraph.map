@@ -1,5 +1,0 @@
-<map id="Scene.UpdateDialogue" name="Scene.UpdateDialogue">
-<area shape="rect" id="Node000001" title="Updates the dialogue based on where in the scene we are." alt="" coords="5,5,176,31"/>
-<area shape="rect" id="Node000002" href="$d1/ddd/class_typewriter_text.html#a1ae4e039fb6436a8abf4b12c8dbad8ce" title="Updates text in a typewriter format." alt="" coords="224,5,419,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
-</map>

@@ -4,10 +4,12 @@ var hierarchy =
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", null ],
     [ "AudioEmitterTools", "d8/d49/class_audio_emitter_tools.html", null ],
     [ "BezierCurve", "df/da0/class_bezier_curve.html", null ],
-    [ "Dialogue.Block", "db/d9e/struct_dialogue_1_1_block.html", null ],
     [ "ConfigData", "d1/d32/class_config_data.html", null ],
     [ "DeathManager", "d1/d13/class_death_manager.html", null ],
     [ "EffectList", "d9/d40/class_effect_list.html", null ],
+    [ "System.Exception", null, [
+      [ "Dialogue.InvalidDialogueLineException", "df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html", null ]
+    ] ],
     [ "FileDataHandler", "dd/d11/class_file_data_handler.html", null ],
     [ "GameData", "d8/d23/class_game_data.html", null ],
     [ "GravSpecialObject.GravEvents", "d9/d82/class_grav_special_object_1_1_grav_events.html", null ],
@@ -20,6 +22,7 @@ var hierarchy =
     [ "Level", "d4/dd0/struct_level.html", null ],
     [ "LevelData", "df/df9/class_level_data.html", null ],
     [ "LevelStatus", "d7/d51/struct_level_status.html", null ],
+    [ "Dialogue.Line", "d2/dc5/struct_dialogue_1_1_line.html", null ],
     [ "MonoBehaviour", null, [
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
@@ -28,12 +31,11 @@ var hierarchy =
       [ "Breakable", "de/d93/class_breakable.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
       [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],
-      [ "Cutscene", "d5/dd5/class_cutscene.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],
+      [ "DialogueManager", "de/d70/class_dialogue_manager.html", null ],
       [ "DoorKey", "d7/de8/class_door_key.html", null ],
       [ "DoorWithLock", "d7/d78/class_door_with_lock.html", null ],
       [ "DynamicLineBezier", "d1/dc9/class_dynamic_line_bezier.html", null ],
-      [ "EnableTutorial", "d4/d9a/class_enable_tutorial.html", null ],
       [ "EquidistantPointsUpdater", "d1/d96/class_equidistant_points_updater.html", null ],
       [ "ExitDoor", "d8/db5/class_exit_door.html", null ],
       [ "FPSCounter", "d8/d6a/class_f_p_s_counter.html", null ],
@@ -53,7 +55,6 @@ var hierarchy =
       [ "LevelSelectButton", "d4/de8/class_level_select_button.html", null ],
       [ "LineRendererFromTransforms", "d4/d0f/class_line_renderer_from_transforms.html", null ],
       [ "LineRendererSmoother", "da/d25/class_line_renderer_smoother.html", null ],
-      [ "MonologueManager", "da/d64/class_monologue_manager.html", null ],
       [ "MultiAudioEmitter", "d9/d11/class_multi_audio_emitter.html", null ],
       [ "Outline2D", "d5/df2/class_outline2_d.html", null ],
       [ "PauseResumeManager", "d7/d25/class_pause_resume_manager.html", null ],
@@ -74,14 +75,14 @@ var hierarchy =
       [ "RetryManager", "d1/d94/class_retry_manager.html", null ],
       [ "SaveManager", "da/da0/class_save_manager.html", null ],
       [ "SawBladeMover", "d7/d00/class_saw_blade_mover.html", null ],
-      [ "Scene", "d6/db5/class_scene.html", null ],
       [ "SimpleAudioEmitter", "d1/da0/class_simple_audio_emitter.html", null ],
       [ "SocialLinks", "d3/dcd/class_social_links.html", null ],
       [ "SoundManager", "d5/dd9/class_sound_manager.html", null ],
       [ "SpawnDoor", "d4/df5/class_spawn_door.html", null ],
+      [ "Speaker", "db/d33/class_speaker.html", null ],
+      [ "TextBubble", "db/d4c/class_text_bubble.html", null ],
       [ "TriggerBox", "d7/dd1/class_trigger_box.html", null ],
-      [ "TurretController", "dc/d93/class_turret_controller.html", null ],
-      [ "TypewriterText", "d1/ddd/class_typewriter_text.html", null ]
+      [ "TurretController", "dc/d93/class_turret_controller.html", null ]
     ] ],
     [ "PropertyAttribute", null, [
       [ "InlineToggleAttribute", "de/dc7/class_inline_toggle_attribute.html", null ],
@@ -96,5 +97,6 @@ var hierarchy =
       [ "Dialogue", "d0/d9d/class_dialogue.html", null ],
       [ "GravityGunSettings", "db/d9e/class_gravity_gun_settings.html", null ],
       [ "ScriptableStats", "da/dd5/class_scriptable_stats.html", null ]
-    ] ]
+    ] ],
+    [ "TextBubble.UIReference", "d3/db8/struct_text_bubble_1_1_u_i_reference.html", null ]
 ];

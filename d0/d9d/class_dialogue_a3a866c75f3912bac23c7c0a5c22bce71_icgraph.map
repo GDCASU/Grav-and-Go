@@ -1,0 +1,5 @@
+<map id="Dialogue.InterpretTextAsset" name="Dialogue.InterpretTextAsset">
+<area shape="rect" id="Node000001" title="Parses textAsset and connects it to voiceLines to generate a list of lines." alt="" coords="283,5,485,31"/>
+<area shape="rect" id="Node000002" href="$de/d70/class_dialogue_manager.html#a4c952b5fb5a3c41fd6ce8259df3c654b" title=" " alt="" coords="5,5,235,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,21,235,21,235,15,269,15"/>
+</map>

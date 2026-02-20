@@ -9,6 +9,7 @@ var searchData=
   ['levelselectbutton_6',['LevelSelectButton',['../d4/de8/class_level_select_button.html',1,'']]],
   ['levelstatus_7',['LevelStatus',['../d7/d51/struct_level_status.html',1,'']]],
   ['lever_8',['Lever',['../d6/d65/class_lever.html',1,'']]],
-  ['linerendererfromtransforms_9',['LineRendererFromTransforms',['../d4/d0f/class_line_renderer_from_transforms.html',1,'']]],
-  ['linerenderersmoother_10',['LineRendererSmoother',['../da/d25/class_line_renderer_smoother.html',1,'']]]
+  ['line_9',['Line',['../d2/dc5/struct_dialogue_1_1_line.html',1,'Dialogue']]],
+  ['linerendererfromtransforms_10',['LineRendererFromTransforms',['../d4/d0f/class_line_renderer_from_transforms.html',1,'']]],
+  ['linerenderersmoother_11',['LineRendererSmoother',['../da/d25/class_line_renderer_smoother.html',1,'']]]
 ];

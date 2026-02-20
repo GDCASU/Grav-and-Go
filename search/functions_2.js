@@ -9,8 +9,8 @@ var searchData=
   ['changeselectedlevel_6',['ChangeSelectedLevel',['../d4/de8/class_level_select_button.html#ac15b59f3becdbcdbbe05fa9592af2370',1,'LevelSelectButton']]],
   ['changesensitivity_7',['ChangeSensitivity',['../df/d11/class_gameplay_menu_manager.html#a4a0b4ef6835c27f1ff5c4e037f95cf86',1,'GameplayMenuManager']]],
   ['changesfxvolume_8',['ChangeSFXVolume',['../df/d60/class_audio_menu_manager.html#a813b9d656ff4d0b3cf7b11020f2d3525',1,'AudioMenuManager']]],
-  ['cleartext_9',['ClearText',['../d1/ddd/class_typewriter_text.html#a1140c83ff33fad04ce0b1b0fd499e3f5',1,'TypewriterText']]],
-  ['compareto_10',['CompareTo',['../d4/dd0/struct_level.html#a3fbda8118b3d5077f72ae821963db377',1,'Level']]],
-  ['configdata_11',['ConfigData',['../d1/d32/class_config_data.html#a32753a8ce32be2dc36a83a732c7af877',1,'ConfigData']]],
-  ['confinecursor_12',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]]
+  ['compareto_9',['CompareTo',['../d4/dd0/struct_level.html#a3fbda8118b3d5077f72ae821963db377',1,'Level']]],
+  ['configdata_10',['ConfigData',['../d1/d32/class_config_data.html#a32753a8ce32be2dc36a83a732c7af877',1,'ConfigData']]],
+  ['confinecursor_11',['ConfineCursor',['../d5/d6e/class_game_settings.html#a62eb755dfa79479b8df4c45485bed0ec',1,'GameSettings']]],
+  ['continuedialogue_12',['ContinueDialogue',['../de/d70/class_dialogue_manager.html#ac7334fc57d480116f2f82266c19d41f6',1,'DialogueManager']]]
 ];

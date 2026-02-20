@@ -1,0 +1,7 @@
+<map id="TextBubble" name="TextBubble">
+<area shape="rect" id="Node000001" title="The class created to handle the dialog text bubble logic and rendering." alt="" coords="108,101,203,127"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,39,146,99,143,103,86,43"/>
+<area shape="rect" id="Node000003" href="$d3/db8/struct_text_bubble_1_1_u_i_reference.html" title=" " alt="" coords="154,5,333,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,43,168,103,164,99,221,39"/>
+</map>

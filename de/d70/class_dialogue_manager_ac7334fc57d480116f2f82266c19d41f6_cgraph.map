@@ -1,0 +1,5 @@
+<map id="DialogueManager.ContinueDialogue" name="DialogueManager.ContinueDialogue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,204,45"/>
+<area shape="rect" id="Node000002" href="$de/d70/class_dialogue_manager.html#a90fe217bafeaed898e4d4432b2d227ee" title=" " alt="" coords="252,5,468,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,23,238,23,238,28,204,28"/>
+</map>

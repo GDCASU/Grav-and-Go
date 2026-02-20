@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector2compassattribute_0',['Vector2CompassAttribute',['../db/dda/class_vector2_compass_attribute.html',1,'']]]
+  ['uireference_0',['UIReference',['../d3/db8/struct_text_bubble_1_1_u_i_reference.html',1,'TextBubble']]]
 ];
