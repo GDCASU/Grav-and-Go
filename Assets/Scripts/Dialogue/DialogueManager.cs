@@ -47,10 +47,8 @@ public class DialogueManager : MonoBehaviour
                 //Load new text
             }
 
-            /DisplayTextBubble(currentLine);
+            DisplayTextBubble(currentLine);
         }
-
-        textBubblePrefab.Close();
     }
 
     public bool DialogueRunning()
