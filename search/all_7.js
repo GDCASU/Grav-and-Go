@@ -33,12 +33,13 @@ var searchData=
   ['gravityguncontroller_2ecs_30',['GravityGunController.cs',['../d7/de1/_gravity_gun_controller_8cs.html',1,'']]],
   ['gravitygunsettings_31',['GravityGunSettings',['../db/d9e/class_gravity_gun_settings.html',1,'']]],
   ['gravitygunsettings_2ecs_32',['GravityGunSettings.cs',['../db/d3b/_gravity_gun_settings_8cs.html',1,'']]],
-  ['gravspecialobject_33',['GravSpecialObject',['../db/d54/class_grav_special_object.html',1,'']]],
-  ['gravspecialobject_2ecs_34',['GravSpecialObject.cs',['../d9/d89/_grav_special_object_8cs.html',1,'']]],
-  ['grounddeceleration_35',['GroundDeceleration',['../da/dd5/class_scriptable_stats.html#a5a3c74438de2bbc09ab50132414c1918',1,'ScriptableStats']]],
-  ['groundedchanged_36',['GroundedChanged',['../d2/dcb/class_player_movement_controller.html#a21cb50cf0d0adfe07bd0c282e45682ad',1,'PlayerMovementController']]],
-  ['grounderdistance_37',['GrounderDistance',['../da/dd5/class_scriptable_stats.html#a880e4c215dd29f74a0e38d6a357cda3a',1,'ScriptableStats']]],
-  ['groundingforce_38',['GroundingForce',['../da/dd5/class_scriptable_stats.html#a0eab03cf67124733a9bb506f64095645',1,'ScriptableStats']]],
-  ['gunprojectile_39',['GunProjectile',['../d6/dfd/class_gun_projectile.html',1,'']]],
-  ['gunprojectile_2ecs_40',['GunProjectile.cs',['../d3/d49/_gun_projectile_8cs.html',1,'']]]
+  ['gravitywell_33',['GravityWell',['../d9/d40/class_effect_list.html#a14ba0c9ec99edd473a6cfac342dad8e3',1,'EffectList.GravityWell()'],['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afda0361a9b2f1353a430adf7daea2179ffa',1,'GravityWell:&#160;EffectList.cs']]],
+  ['gravspecialobject_34',['GravSpecialObject',['../db/d54/class_grav_special_object.html',1,'']]],
+  ['gravspecialobject_2ecs_35',['GravSpecialObject.cs',['../d9/d89/_grav_special_object_8cs.html',1,'']]],
+  ['grounddeceleration_36',['GroundDeceleration',['../da/dd5/class_scriptable_stats.html#a5a3c74438de2bbc09ab50132414c1918',1,'ScriptableStats']]],
+  ['groundedchanged_37',['GroundedChanged',['../d2/dcb/class_player_movement_controller.html#a21cb50cf0d0adfe07bd0c282e45682ad',1,'PlayerMovementController']]],
+  ['grounderdistance_38',['GrounderDistance',['../da/dd5/class_scriptable_stats.html#a880e4c215dd29f74a0e38d6a357cda3a',1,'ScriptableStats']]],
+  ['groundingforce_39',['GroundingForce',['../da/dd5/class_scriptable_stats.html#a0eab03cf67124733a9bb506f64095645',1,'ScriptableStats']]],
+  ['gunprojectile_40',['GunProjectile',['../d6/dfd/class_gun_projectile.html',1,'']]],
+  ['gunprojectile_2ecs_41',['GunProjectile.cs',['../d3/d49/_gun_projectile_8cs.html',1,'']]]
 ];
