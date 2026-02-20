@@ -1,0 +1,10 @@
+<map id="DialogueManager" name="DialogueManager">
+<area shape="rect" id="Node000001" title="A class made to handle dialogue bubbles and the flow of dialogue." alt="" coords="20,197,157,223"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,129,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,90,197,85,198,68,45"/>
+<area shape="rect" id="Node000003" href="$db/d4c/class_text_bubble.html" title="The class created to handle the dialog text bubble logic and rendering." alt="" coords="105,101,200,127"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="89,39,144,99,140,103,85,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,139,99,199,94,196,135,136"/>
+<area shape="rect" id="Node000004" href="$d3/db8/struct_text_bubble_1_1_u_i_reference.html" title=" " alt="" coords="154,5,333,31"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="224,43,166,103,162,99,221,39"/>
+</map>

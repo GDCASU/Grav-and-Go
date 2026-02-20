@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['callbackevent_0',['callbackEvent',['../d4/d9a/class_enable_tutorial.html#a46479283fd9eb43bc72b749fa9c27953',1,'EnableTutorial']]],
-  ['canpushcolor_1',['canPushColor',['../db/d9e/class_gravity_gun_settings.html#a705a11eabb0304997a0dbf5847f1c612',1,'GravityGunSettings']]],
-  ['chapterdata_2',['chapterData',['../d4/de8/class_level_select_button.html#a280ec414e87ead88bf202d3d8cf413e2',1,'LevelSelectButton']]],
-  ['chatcontainer_3',['chatContainer',['../da/d64/class_monologue_manager.html#a599de488487df9cbd9758967e56d1c62',1,'MonologueManager']]],
+  ['canpushcolor_0',['canPushColor',['../db/d9e/class_gravity_gun_settings.html#a705a11eabb0304997a0dbf5847f1c612',1,'GravityGunSettings']]],
+  ['centerlayoutgroup_1',['centerLayoutGroup',['../d3/db8/struct_text_bubble_1_1_u_i_reference.html#a07fab44951f6abfa324ec965d4593804',1,'TextBubble::UIReference']]],
+  ['centersizefitter_2',['centerSizeFitter',['../d3/db8/struct_text_bubble_1_1_u_i_reference.html#acecd4e03ffaffc6805c243187e2baa21',1,'TextBubble::UIReference']]],
+  ['chapterdata_3',['chapterData',['../d4/de8/class_level_select_button.html#a280ec414e87ead88bf202d3d8cf413e2',1,'LevelSelectButton']]],
   ['chunks_4',['chunks',['../de/d93/class_breakable.html#a76a4fa5f6df6072563e0d5cc0789a1de',1,'Breakable']]],
   ['collider_5',['collider',['../d6/db5/class_physics_object.html#ab3b0ecffda0df63f042bc33b915a0b74',1,'PhysicsObject']]],
-  ['color_6',['color',['../db/d9e/struct_dialogue_1_1_block.html#a8aa0fcb1c0173f4746b73b238d728088',1,'Dialogue::Block']]],
-  ['controlpoints_7',['controlPoints',['../d1/dc9/class_dynamic_line_bezier.html#ab5b186f2df41282d8fb6222ed702cc49',1,'DynamicLineBezier']]],
-  ['coyotetime_8',['CoyoteTime',['../da/dd5/class_scriptable_stats.html#a20c5882cfca0bdf9d6adc677d7184275',1,'ScriptableStats']]]
+  ['controlpoints_6',['controlPoints',['../d1/dc9/class_dynamic_line_bezier.html#ab5b186f2df41282d8fb6222ed702cc49',1,'DynamicLineBezier']]],
+  ['coyotetime_7',['CoyoteTime',['../da/dd5/class_scriptable_stats.html#a20c5882cfca0bdf9d6adc677d7184275',1,'ScriptableStats']]]
 ];

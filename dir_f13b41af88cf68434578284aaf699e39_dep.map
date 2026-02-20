@@ -1,10 +1,10 @@
 <map id="Scripts" name="Scripts">
-<area shape="rect" id="node2" href="dir_64d6ebdce7bd8f58dd22d9d0a97fb80d.html" title="Data Persistance" alt="" coords="482,63,614,88"/>
-<area shape="rect" id="node3" href="dir_10faedcd5425cee29744584be80de5e3.html" title="Mechanics" alt="" coords="367,63,457,88"/>
-<area shape="rect" id="node4" href="dir_21aa9fd170738d2ff90155f8d8383f64.html" title="Narrative" alt="" coords="260,63,343,88"/>
+<area shape="rect" id="node2" href="dir_64d6ebdce7bd8f58dd22d9d0a97fb80d.html" title="Data Persistance" alt="" coords="479,63,611,88"/>
+<area shape="rect" id="node3" href="dir_aa23bca5f149d5309c75a1211640051e.html" title="Dialogue" alt="" coords="375,63,455,88"/>
+<area shape="rect" id="node4" href="dir_10faedcd5425cee29744584be80de5e3.html" title="Mechanics" alt="" coords="260,63,351,88"/>
 <area shape="rect" id="node5" href="dir_5ca6d2d643ef08897cc8aec139b8d9e3.html" title="Sound" alt="" coords="173,63,235,88"/>
 <area shape="rect" id="node6" href="dir_4ae35e2d0d203079e26c83ccaec95743.html" title="UI" alt="" coords="110,63,149,88"/>
 <area shape="rect" id="node7" href="dir_629949e35dfdf722565369645ab82dc7.html" title="VFX" alt="" coords="37,63,85,88"/>
-<area shape="rect" id="clust2" href="dir_f13b41af88cf68434578284aaf699e39.html" alt="" coords="27,52,716,99"/>
-<area shape="rect" id="clust1" href="dir_84bbf7b3c7f28a5a18725745e1505219.html" title="Assets" alt="" coords="16,16,727,109"/>
+<area shape="rect" id="clust2" href="dir_f13b41af88cf68434578284aaf699e39.html" alt="" coords="27,52,713,99"/>
+<area shape="rect" id="clust1" href="dir_84bbf7b3c7f28a5a18725745e1505219.html" title="Assets" alt="" coords="16,16,724,109"/>
 </map>

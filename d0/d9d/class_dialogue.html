@@ -128,21 +128,87 @@ Collaboration diagram for Dialogue:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:Block" id="r_Block"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9e/struct_dialogue_1_1_block.html">Block</a></td></tr>
+<tr class="memitem:InvalidDialogueLineException" id="r_InvalidDialogueLineException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html">InvalidDialogueLineException</a></td></tr>
+<tr class="memitem:Line" id="r_Line"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc5/struct_dialogue_1_1_line.html">Line</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a866c75f3912bac23c7c0a5c22bce71" id="r_a3a866c75f3912bac23c7c0a5c22bce71"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d2/dc5/struct_dialogue_1_1_line.html">Line</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a866c75f3912bac23c7c0a5c22bce71">InterpretTextAsset</a> ()</td></tr>
+<tr class="memdesc:a3a866c75f3912bac23c7c0a5c22bce71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses <b>textAsset</b> and connects it to <b>voiceLines</b> to generate a list of lines.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2478ec7dca220f21323edf6c701e5b2b" id="r_a2478ec7dca220f21323edf6c701e5b2b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../db/d9e/struct_dialogue_1_1_block.html">Block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2478ec7dca220f21323edf6c701e5b2b">blocks</a></td></tr>
+<tr class="memitem:abca855364911b3819cc6604288f378fe" id="r_abca855364911b3819cc6604288f378fe"><td class="memItemLeft" align="right" valign="top">TextAsset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abca855364911b3819cc6604288f378fe">textAsset</a></td></tr>
+<tr class="memitem:ad1dedaeff9743704af142b8028cfa9ad" id="r_ad1dedaeff9743704af142b8028cfa9ad"><td class="memItemLeft" align="right" valign="top">EventReference[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1dedaeff9743704af142b8028cfa9ad">voiceLines</a></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a3a866c75f3912bac23c7c0a5c22bce71" name="a3a866c75f3912bac23c7c0a5c22bce71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a866c75f3912bac23c7c0a5c22bce71">&#9670;&#160;</a></span>InterpretTextAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../d2/dc5/struct_dialogue_1_1_line.html">Line</a> &gt; Dialogue.InterpretTextAsset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses <b>textAsset</b> and connects it to <b>voiceLines</b> to generate a list of lines. </p>
+<dl class="section return"><dt>Returns</dt><dd>The list of the dialogue's lines. If the line does not have a voice line for it, it will be null</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html">InvalidDialogueLineException</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d9d/class_dialogue_a3a866c75f3912bac23c7c0a5c22bce71_icgraph.png" border="0" usemap="#ad0/d9d/class_dialogue_a3a866c75f3912bac23c7c0a5c22bce71_icgraph" loading="lazy" alt=""/></div>
+<map name="ad0/d9d/class_dialogue_a3a866c75f3912bac23c7c0a5c22bce71_icgraph" id="ad0/d9d/class_dialogue_a3a866c75f3912bac23c7c0a5c22bce71_icgraph">
+<area shape="rect" title="Parses textAsset and connects it to voiceLines to generate a list of lines." alt="" coords="283,5,485,31"/>
+<area shape="rect" href="../../de/d70/class_dialogue_manager.html#a4c952b5fb5a3c41fd6ce8259df3c654b" title=" " alt="" coords="5,5,235,31"/>
+<area shape="poly" title=" " alt="" coords="269,21,235,21,235,15,269,15"/>
+</map>
+</div>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
-<a id="a2478ec7dca220f21323edf6c701e5b2b" name="a2478ec7dca220f21323edf6c701e5b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2478ec7dca220f21323edf6c701e5b2b">&#9670;&#160;</a></span>blocks</h2>
+<a id="abca855364911b3819cc6604288f378fe" name="abca855364911b3819cc6604288f378fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca855364911b3819cc6604288f378fe">&#9670;&#160;</a></span>textAsset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="../../db/d9e/struct_dialogue_1_1_block.html">Block</a>&gt; Dialogue.blocks</td>
+          <td class="memname">TextAsset Dialogue.textAsset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1dedaeff9743704af142b8028cfa9ad" name="ad1dedaeff9743704af142b8028cfa9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1dedaeff9743704af142b8028cfa9ad">&#9670;&#160;</a></span>voiceLines</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventReference [] Dialogue.voiceLines</td>
         </tr>
       </table>
 </div><div class="memdoc">

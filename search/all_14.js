@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['unloadtextbinding_0',['UnloadTextBinding',['../da/d64/class_monologue_manager.html#a78cc1cfefb729b3bed8aae70f68dcbd8',1,'MonologueManager']]],
-  ['updatedialogue_1',['UpdateDialogue',['../d6/db5/class_scene.html#a015ce1f81288a4df16d134c248fd9c20',1,'Scene']]],
-  ['updatetext_2',['UpdateText',['../d1/ddd/class_typewriter_text.html#a1ae4e039fb6436a8abf4b12c8dbad8ce',1,'TypewriterText']]],
-  ['use_3',['Use',['../d7/d27/class_ammo.html#a0d4dae5ef115ef7290014af20162e498',1,'Ammo']]],
-  ['uselocalspace_4',['useLocalSpace',['../d4/de1/class_dancing_midpoint.html#a169df6021a9b4df5691680d22be3c356',1,'DancingMidpoint']]]
+  ['uireference_0',['UIReference',['../d3/db8/struct_text_bubble_1_1_u_i_reference.html',1,'TextBubble']]],
+  ['uireferences_1',['uiReferences',['../db/d4c/class_text_bubble.html#ac17897e7c2b3c38157cc1b8f379acc3a',1,'TextBubble']]],
+  ['use_2',['Use',['../d7/d27/class_ammo.html#a0d4dae5ef115ef7290014af20162e498',1,'Ammo']]],
+  ['uselocalspace_3',['useLocalSpace',['../d4/de1/class_dancing_midpoint.html#a169df6021a9b4df5691680d22be3c356',1,'DancingMidpoint']]]
 ];

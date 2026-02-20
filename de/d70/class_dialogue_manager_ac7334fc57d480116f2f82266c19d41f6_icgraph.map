@@ -1,0 +1,7 @@
+<map id="DialogueManager.ContinueDialogue" name="DialogueManager.ContinueDialogue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="283,23,481,63"/>
+<area shape="rect" id="Node000002" href="$de/d70/class_dialogue_manager.html#ad738571622a99aff1e20cd5ac3e14807" title=" " alt="" coords="16,5,224,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,35,224,31,225,25,269,30"/>
+<area shape="rect" id="Node000003" href="$de/d70/class_dialogue_manager.html#a4c952b5fb5a3c41fd6ce8259df3c654b" title=" " alt="" coords="5,55,235,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,56,235,59,235,54,269,51"/>
+</map>

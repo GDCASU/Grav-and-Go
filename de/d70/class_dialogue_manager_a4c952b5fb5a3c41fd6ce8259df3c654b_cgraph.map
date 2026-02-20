@@ -1,0 +1,9 @@
+<map id="DialogueManager.StartDialogue" name="DialogueManager.StartDialogue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,235,67"/>
+<area shape="rect" id="Node000002" href="$de/d70/class_dialogue_manager.html#ac7334fc57d480116f2f82266c19d41f6" title=" " alt="" coords="285,5,483,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,39,271,35,271,41,235,45"/>
+<area shape="rect" id="Node000004" href="$d0/d9d/class_dialogue.html#a3a866c75f3912bac23c7c0a5c22bce71" title="Parses textAsset and connects it to voiceLines to generate a list of lines." alt="" coords="283,70,485,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,64,269,68,269,73,235,69"/>
+<area shape="rect" id="Node000003" href="$de/d70/class_dialogue_manager.html#a90fe217bafeaed898e4d4432b2d227ee" title=" " alt="" coords="533,5,749,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,23,519,23,519,28,483,28"/>
+</map>
