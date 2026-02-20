@@ -3357,7 +3357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844024743802651330, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: effectNumber
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 844024743802651330, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: effectParticles.Array.size
@@ -3384,12 +3384,20 @@ PrefabInstance:
       value: Example AOE cylinder
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.6372
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.4277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.28
+      value: 6.72
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.03
+      value: -7.35
       objectReference: {fileID: 0}
     - target: {fileID: 5526679828061638370, guid: fd2ed5c807ded984db40e5a6bf6ee82d, type: 3}
       propertyPath: m_LocalPosition.z

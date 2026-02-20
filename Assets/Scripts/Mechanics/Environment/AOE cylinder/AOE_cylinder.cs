@@ -9,6 +9,7 @@ using UnityEngine;
  * Davyd Yehudin
  * 
  * Modified By: Justin Miller
+ * Joshua Wright
  * 
  */// --------------------------------------------------------
 
@@ -19,6 +20,9 @@ using UnityEngine;
 
  public class AOE_cylinder : MonoBehaviour
 {
+    // Use this bool to gate all your Debug.Log Statements please
+    [Header("Customization")]
+    [SerializeField] private float thrust = 100f;
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
@@ -77,6 +81,9 @@ using UnityEngine;
                 break;
                 case effectsEnum.effect3:
                 EffectList.effect3(collision.gameObject);
+                break;
+                case effectsEnum.GravityWell:
+                EffectList.GravityWell(collision.gameObject, this.GetComponent<Collider2D>(), thrust);
                 break;
                 default:
                 return;
