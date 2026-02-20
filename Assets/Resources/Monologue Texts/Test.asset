@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c472497733819644bace7269079b1e37, type: 3}
-  m_Name: Dialogue1
+  m_Script: {fileID: 11500000, guid: 7af50224dd18b7f43babec34a652649b, type: 3}
+  m_Name: Test
   m_EditorClassIdentifier: 
-  speaker: 0
-  line: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  textAsset: {fileID: 4900000, guid: 0d43eb0b578be344c83d3c1b532429c9, type: 3}
+  voiceLines: []
