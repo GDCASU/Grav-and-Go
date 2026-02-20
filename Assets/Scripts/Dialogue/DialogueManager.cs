@@ -10,22 +10,31 @@ public class DialogueManager : MonoBehaviour
     private bool isRunning;
     private List<Line> currentDialogue;
     private int currentLineIndex;
-    private EventReference? eventReference;
-    private string currentTextLine;
+    private Line currentLine;
+
+    private readonly Dictionary<string, Speaker> currentSpeakers = new();
 
     public void StartDialogue(Dialogue dialogue)
     {
         isRunning = true;
         currentDialogue = dialogue.InterpretTextAsset();
         currentLineIndex = 0;
+
+        currentSpeakers.Clear();
+
+        // Gets a Dictonary of all speakers before dialog starts
+        Speaker[] speakers = FindObjectsByType<Speaker>(FindObjectsSortMode.None);
+        foreach(Speaker speaker in speakers)
+            currentSpeakers[speaker.speakerID] = speaker;
+
+        ContinueDialogue();
     }
 
     public void ContinueDialogue()
     {
         while (currentLineIndex < currentDialogue.Count)
         {
-            eventReference = currentDialogue[currentLineIndex].voiceLine;
-            currentTextLine = currentDialogue[currentLineIndex].text;
+            currentLine = currentDialogue[currentLineIndex];
 
             currentLineIndex++;
 
@@ -38,9 +47,7 @@ public class DialogueManager : MonoBehaviour
                 //Load new text
             }
 
-            //Look for available speaker with chosen ID.
-            //Give access to where to put bubble and who the speaker is.
-            //Display text bubble and start typing.
+            /DisplayTextBubble(currentLine);
         }
 
         textBubblePrefab.Close();
@@ -49,5 +56,15 @@ public class DialogueManager : MonoBehaviour
     public bool DialogueRunning()
     {
         return isRunning;
+    }
+
+    public void DisplayTextBubble(Line line)
+    {
+        if (!currentSpeakers.TryGetValue(line.speakerID, out Speaker speaker))
+            throw new KeyNotFoundException($"Dialogue does not contain speaker: {line.speakerID}");
+
+        TextBubble textBubble = Instantiate(textBubblePrefab, speaker.transform);
+
+        textBubble.Init(line);
     }
 }

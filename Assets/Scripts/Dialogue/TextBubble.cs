@@ -30,6 +30,8 @@ public class TextBubble : MonoBehaviour
 
     [Header("Visual Settings")]
     public float typewriterSpeed = 60;
+    public float popinSpeed = 0.5f;
+    public float popoutSpeed = 0.5f;
 
     /// <summary>
     /// Gets whether or not the text bubble is done showing its typing animation
@@ -42,7 +44,6 @@ public class TextBubble : MonoBehaviour
     private void Awake()
     {
         audioEmitter = GetComponent<SimpleAudioEmitter>();
-        Init(Line);
     }
 
     /// <summary>
@@ -81,6 +82,8 @@ public class TextBubble : MonoBehaviour
         // TODO: Add closing animation if needed
         Destroy(gameObject);
     }
+
+
 
     private void StartTyping()
     {
