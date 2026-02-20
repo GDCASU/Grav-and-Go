@@ -11,5 +11,6 @@ var searchData=
   ['getsegment_8',['GetSegment',['../df/da0/class_bezier_curve.html#a2ae6e089b1fddd085e9693ae9b01b8cd',1,'BezierCurve']]],
   ['getsegments_9',['GetSegments',['../df/da0/class_bezier_curve.html#a01e19ee468aad554270bbccc8664d8d4',1,'BezierCurve']]],
   ['getstringlist_10',['GetStringList',['../d7/d65/class_string_in_list.html#aaaadc41096588fcbef27a13d187f84ed',1,'StringInList']]],
-  ['getvcavolume_11',['GetVCAVolume',['../d5/dd9/class_sound_manager.html#ae00ec7980386fe28b25618938d11c770',1,'SoundManager']]]
+  ['getvcavolume_11',['GetVCAVolume',['../d5/dd9/class_sound_manager.html#ae00ec7980386fe28b25618938d11c770',1,'SoundManager']]],
+  ['gravitywell_12',['GravityWell',['../d9/d40/class_effect_list.html#a14ba0c9ec99edd473a6cfac342dad8e3',1,'EffectList']]]
 ];
