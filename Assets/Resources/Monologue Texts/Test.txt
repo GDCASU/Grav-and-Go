@@ -1,4 +1,3 @@
-Hey!
-This is a test but maybe it will work
-There are currently levels planned
-Also here is something that happens right when this starts
+Person1: This is an example text!
+Person2: Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Person1: Ok it works i guess!

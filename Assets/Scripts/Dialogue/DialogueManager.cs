@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using FMODUnity;
 using UnityEngine;
+using UnityEngine.Events;
 using static Dialogue;
 
 /// <summary>
@@ -10,18 +11,33 @@ public class DialogueManager : MonoBehaviour
 {
     public TextBubble textBubblePrefab;
 
-    private bool isRunning;
-    private List<Line> currentDialogue;
-    private int currentLineIndex;
+    public UnityEvent onContinue = new();
+
+    public static DialogueManager Instance { get; private set; }
+
+    private Queue<Line> currentDialogue = new();
     private Line currentLine;
 
     private readonly Dictionary<string, Speaker> currentSpeakers = new();
+    private TextBubble currentTextBubble;
+
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            Destroy(this);
+            return; 
+        }
+
+        Instance = this;
+    }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        isRunning = true;
-        currentDialogue = dialogue.InterpretTextAsset();
-        currentLineIndex = 0;
+        if (currentDialogue.Count > 0)
+            return;
+
+        currentDialogue = new(dialogue.InterpretTextAsset());
 
         currentSpeakers.Clear();
 
@@ -35,34 +51,19 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        while (currentLineIndex < currentDialogue.Count)
+        if (currentDialogue.Count > 0)
         {
-            currentLine = currentDialogue[currentLineIndex];
+            currentLine = currentDialogue.Dequeue();
 
-            currentLineIndex++;
-
-            if (!textBubblePrefab.IsFinishedTyping && Input.GetKeyDown(KeyCode.Space))
-            {
-                textBubblePrefab.Finish();
-            }
-            else if (textBubblePrefab.IsFinishedTyping && Input.GetKeyDown(KeyCode.Space))
-            {
-                textBubblePrefab.Init(currentLine);
-            }
+            onContinue?.Invoke();
 
             DisplayTextBubble(currentLine);
         }
-    }
 
-    public void CloseDialogue()
-    {
-        isRunning = false;
-        textBubblePrefab.Close();
-    }
-
-    public bool DialogueRunning()
-    {
-        return isRunning;
+        if(currentTextBubble != null)
+        {
+            onContinue?.Invoke();
+        }
     }
 
     public void DisplayTextBubble(Line line)
@@ -70,8 +71,14 @@ public class DialogueManager : MonoBehaviour
         if (!currentSpeakers.TryGetValue(line.speakerID, out Speaker speaker))
             throw new KeyNotFoundException($"Dialogue does not contain speaker: {line.speakerID}");
 
-        TextBubble textBubble = Instantiate(textBubblePrefab, speaker.transform);
+        currentTextBubble = Instantiate(textBubblePrefab, speaker.transform);
+        currentTextBubble.transform.localPosition = speaker.offset;
 
-        textBubble.Init(line);
+        currentTextBubble.Init(speaker, line);
+    }
+
+    public void OnInteract()
+    {
+        ContinueDialogue();
     }
 }

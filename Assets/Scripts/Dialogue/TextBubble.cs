@@ -15,6 +15,16 @@ using static Dialogue;
 [RequireComponent(typeof(SimpleAudioEmitter))]
 public class TextBubble : MonoBehaviour
 {
+
+    enum BubbleState
+    {
+        PoppingIn,
+        Typing,
+        Finished,
+        ClosingOut,
+        Closed
+    }
+
     [System.Serializable]
     public struct UIReference
     {
@@ -30,103 +40,129 @@ public class TextBubble : MonoBehaviour
 
     [Header("Visual Settings")]
     public float typewriterSpeed = 60;
-    public float popinSpeed = 0.5f;
-    public float popoutSpeed = 0.5f;
+    public float popinTime = 0.5f;
+    public float popoutTime = 0.5f;
 
     /// <summary>
     /// Gets whether or not the text bubble is done showing its typing animation
     /// </summary>
-    public bool IsFinishedTyping { get { return currentCoroutine == null; }  }
 
-    private Coroutine currentCoroutine;
+    private BubbleState state = BubbleState.PoppingIn;
     private SimpleAudioEmitter audioEmitter;
+    private float elapsedTimer = 0;
 
     private void Awake()
     {
         audioEmitter = GetComponent<SimpleAudioEmitter>();
+        DialogueManager.Instance.onContinue.AddListener(OnDialogueContinue);
+    }
+
+    private void OnDestroy()
+    {
+        DialogueManager.Instance.onContinue.RemoveListener(OnDialogueContinue);
     }
 
     /// <summary>
     /// Initializes the text bubble and starts its processes
     /// </summary>
-    public void Init(Dialogue.Line line)
+    public void Init(Speaker speaker, Dialogue.Line line)
     {
         Line = line;
         uiReferences.lineText.text = "";
-
-        StartTyping();
-    }
-
-    /// <summary>
-    /// Finishes the line early if still displaying its typing animation
-    /// </summary>
-    public void Finish()
-    {
-        if (currentCoroutine == null) // already finished
-            return;
-
-        StopCoroutine(currentCoroutine);
-    }
-
-    /// <summary>
-    /// Closes the typing bubble 
-    /// </summary>
-    public void Close()
-    {
-        while (currentCoroutine != null)
-            Finish();
-
-        // Stop voiceline
-        audioEmitter.StopSound();
-
-        // TODO: Add closing animation if needed
-        Destroy(gameObject);
+        uiReferences.lineText.color = speaker.textColor;
     }
 
 
-
-    private void StartTyping()
+    private void OnDialogueContinue()
     {
-        currentCoroutine = StartCoroutine(TypingCoroutine());
+        SwitchState(state + 1);
+    }
 
-        if (Line.voiceLine != null)
+    private void Update()
+    {
+        switch (state)
         {
-            audioEmitter.settings.eventReference = (EventReference)Line.voiceLine;
-            audioEmitter.PlaySound();
+            case BubbleState.PoppingIn:
+                if(elapsedTimer <= popinTime)
+                {
+                    transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one, elapsedTimer / popinTime);
+                }
+                else
+                {
+                    transform.localScale = Vector3.one;
+                    SwitchState(BubbleState.Typing);
+                }
+
+                elapsedTimer += Time.deltaTime;
+
+                break;
+
+            case BubbleState.Typing:
+
+                if(uiReferences.lineText.text != Line.text)
+                {
+                    if(elapsedTimer > 1f / typewriterSpeed)
+                    {
+                        uiReferences.lineText.text += Line.text[uiReferences.lineText.text.Length];
+                        elapsedTimer = 0f;
+                    }
+                    else
+                    {
+                        elapsedTimer += Time.deltaTime;
+                    }
+                }
+                else
+                {
+                    SwitchState(BubbleState.Finished);
+                }
+
+                break;
+
+            case BubbleState.Finished:
+                break;
+
+            case BubbleState.ClosingOut:
+                if (elapsedTimer <= popinTime)
+                {
+                    transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, elapsedTimer / popoutTime);
+                    elapsedTimer += Time.deltaTime;
+                }
+                else
+                {
+                    transform.localScale = Vector3.zero;
+                    SwitchState(BubbleState.Closed);
+                }
+
+                break;
+
         }
     }
 
-    #region Coroutines
-
-    private IEnumerator PopupCoroutine()
+    private void SwitchState(BubbleState newState)
     {
-        // TODO: Add Pop up animation if needed
-        yield return null;
-    }
-
-    private IEnumerator TypingCoroutine()
-    {
-        try
+        switch (newState)
         {
-            uiReferences.lineText.text = "";
+            case BubbleState.PoppingIn:
+                transform.localScale = Vector3.zero;
+                break;
 
-            yield return PopupCoroutine();
+            case BubbleState.Typing:
+                transform.localScale = Vector3.one;
+                uiReferences.lineText.text = "";
+                break;
 
-            for (int i = 0; i < Line.text.Length; i++)
-            {
-                uiReferences.lineText.text += Line.text[i];
-                yield return new WaitForSeconds(1f / typewriterSpeed);
-            }
+            case BubbleState.Finished:
+                uiReferences.lineText.text = Line.text;
+                break;
+
+            case BubbleState.ClosingOut:
+                break;
+
+            case BubbleState.Closed:
+                Destroy(gameObject);
+                break;
         }
-        finally // runs when line is finished or when coroutine is stopped via StopCoroutine(coroutine)
-        {
-            uiReferences.lineText.text = Line.text;
-            uiReferences.textBubbleCanvas.transform.localScale = Vector3.one;
 
-            currentCoroutine = null;
-        }
+        state = newState;
     }
-
-    #endregion
-
 }
