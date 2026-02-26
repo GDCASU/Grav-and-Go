@@ -22,13 +22,16 @@ public class LaserSensor : MonoBehaviour
     
     [Header("Laser Color")]
     [SerializeField] private LaserColorEnum requiredColor = LaserColorEnum.Red;
+    [Header("Laser Timings")]
+    [SerializeField] private float TimeToTurnOn = 0.5f;
+    [SerializeField] private float TimeToTurnOff = 0.5f;
 
     [Header("Events")]
     public UnityEvent laserSensorActive;
     public UnityEvent laserSensorDisabled;
     private Coroutine sensorOff = null;
 
-    public void laserHit(LaserColorEnum laserCol)
+    public void LaserHit(LaserColorEnum laserCol)
     {
         if(laserCol == requiredColor)
         {
@@ -43,7 +46,7 @@ public class LaserSensor : MonoBehaviour
 
     IEnumerator disableSensor()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(TimeToTurnOff);
         laserSensorDisabled.Invoke();
         sensorOff = null;
     }

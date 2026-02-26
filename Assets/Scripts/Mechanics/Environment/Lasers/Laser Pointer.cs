@@ -160,7 +160,7 @@ public class LaserPointer : MonoBehaviour
             GameObject hitObject = hit.transform.gameObject;
             if(hitObject.TryGetComponent(out LaserSensor sensor))
             {
-                sensor.laserHit(laserColor);
+                sensor.LaserHit(laserColor);
                 break;
             }
             if(hitObject.TryGetComponent(out ColorSensor sensorC))
