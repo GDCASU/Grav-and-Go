@@ -1,5 +1,13 @@
 using UnityEngine;
 
+/* -----------------------------------------------------------
+ * Author:
+ * Joshua Wright
+ * 
+ * Modified By: 
+ * 
+ * 
+ */// --------------------------------------------------------
 public class AOE_Resistance : MonoBehaviour
 {
     [Header("Resistance Settings")]
