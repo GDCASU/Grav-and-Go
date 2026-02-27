@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { get; private set; }
 
     [FormerlySerializedAs("levelProgressDatabase")]
-    [Header("Database")] 
+    [Header("Database")]
     [SerializeField] private SerializedDictionary<Level, LevelStatus> _levelProgressDatabase;
     Level currentLevelName;
     [SerializeField] Level levelSelect;
@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     [Header("Player")]
     PlayerMovementController playerController;
 
-    [Header("Debugging")] 
+    [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
 
     void Awake()
@@ -69,7 +69,7 @@ public class LevelManager : MonoBehaviour
             Debug.LogWarning($"The level {levelName} is not defined in the level database.");
             return false;
         }
-        
+
         // Was defined, check if unlocked
         bool isUnlocked = IsLevelUnlocked(levelName);
         if (isUnlocked) SceneManager.LoadSceneAsync(levelName.name);
@@ -100,7 +100,7 @@ public class LevelManager : MonoBehaviour
     {
         LoadLevelViaLevelName(currentLevelName);
     }
-    
+
     public void LoadLevelSelect()
     {
         LoadLevelViaLevelName(levelSelect);
@@ -124,7 +124,7 @@ public class LevelManager : MonoBehaviour
             Debug.LogWarning($"The level {levelName} is not defined in the level database.");
             return false;
         }
-        
+
         // Return unlocked status
         return value.isUnlocked;
     }
@@ -162,8 +162,47 @@ public class LevelManager : MonoBehaviour
             yield return null;
         }
 
-        if (currentLevelName.name != "Main Menu" 
+        if (currentLevelName.name != "Main Menu"
             && currentLevelName.name != "Level Select") SaveManager.Instance.SaveLevel(currentLevelName);
+    }
+
+    /// <summary> 
+    /// Checks the current time against the database and saves if it's a new record.
+    /// </summary>
+    /// <param name="completionTime">The time the player just achieved.</param>
+    public void UpdateLevelTime(float completionTime)
+    {
+        if (currentLevelName == null) return;
+
+        if (_levelProgressDatabase.TryGetValue(currentLevelName, out LevelStatus status))
+        {
+            // Check if new time is better
+            if (status.bestTime <= 0 || completionTime < status.bestTime)
+            {
+                // 1. Modify the local COPY
+                status.bestTime = completionTime;
+
+                // 2. OVERWRITE the dictionary entry with the updated struct
+                _levelProgressDatabase[currentLevelName] = status;
+
+                if (_doDebugLog)
+                    Debug.Log($"<color=green>New Best Time!</color> {currentLevelName.name}: {completionTime}s");
+
+                SaveCheckpoint();
+            }
+            else
+            {
+                // DEBUG: The level was found, but the time wasn't fast enough
+                if (_doDebugLog)
+                    Debug.Log($"<color=yellow>No New Record:</color> Current run ({completionTime}s) was slower than Best Time ({status.bestTime}s).");
+            }
+        }
+        if (_doDebugLog)
+        {
+            // DEBUG: The dictionary couldn't find the key
+            string levelNameStr = currentLevelName == null ? "NULL" : currentLevelName.name;
+            Debug.LogError($"<color=red>Dictionary Lookup Failed!</color> Level '{levelNameStr}' is missing from the _levelProgressDatabase.");
+        }
     }
 }
 
