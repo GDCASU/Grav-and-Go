@@ -1,6 +1,14 @@
 using UnityEngine;
 using TMPro; // Required for TextMeshPro
 
+/* -----------------------------------------------------------
+ * Author:
+ * Joshua Wright
+ * 
+ * Modified By:
+ * 
+ * 
+ */// --------------------------------------------------------
 public class LevelTimer : MonoBehaviour
 {
     [Header("UI References")]
@@ -8,7 +16,7 @@ public class LevelTimer : MonoBehaviour
 
     // The total time elapsed in seconds
     public float TotalTime { get; private set; }
-    
+
     private bool isRunning = true;
 
     void Update()
@@ -45,7 +53,7 @@ public class LevelTimer : MonoBehaviour
         int minutes = Mathf.FloorToInt(TotalTime / 60F);
         int seconds = Mathf.FloorToInt(TotalTime % 60F);
         int milliseconds = Mathf.FloorToInt((TotalTime * 1000F) % 1000F); // Updated to 3 digits for precision
-        
+
         return string.Format("{0:00}:{1:00}.{2:000}", minutes, seconds, milliseconds);
     }
 }

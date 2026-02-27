@@ -15,6 +15,7 @@ using UnityEngine.Serialization;
  *
  * Modified By:
  * Cami Lee
+ * Joshua Wright (to support timer and speedrunning saves)
  * 
  */// --------------------------------------------------------
 

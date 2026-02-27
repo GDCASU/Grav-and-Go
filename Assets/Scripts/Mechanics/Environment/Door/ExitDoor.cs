@@ -2,6 +2,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+/* -----------------------------------------------------------
+ * Author:
+ * Max Rothenberger
+ * 
+ * Modified By:
+ * Cami Lee (to support locked doors)
+ * Joshua Wright (to support timer and speedrunning saves)
+ * 
+ */// --------------------------------------------------------
 public class ExitDoor : MonoBehaviour
 {
     [SerializeField] private Level _levelToLoad;
