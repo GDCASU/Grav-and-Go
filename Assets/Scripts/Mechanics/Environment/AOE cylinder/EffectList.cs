@@ -22,70 +22,57 @@ public class EffectList
     [SerializeField] private bool _doDebugLog;
 
     //effect0 (upward force)
-    public static void effect0(GameObject a)
+    // effect0 (Upward force)
+    public static void effect0(GameObject a, float thrust, float resistance)
     {
-        Rigidbody2D forced;
-        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        if (!a.TryGetComponent<Rigidbody2D>(out Rigidbody2D forced))
         {
-            Debug.Log("(((((");
             return;
         }
-        Vector2 force;
-        force.x = 0;
-        force.y = 100;
+
+        // Apply force: direction * base thrust * multiplier
+        Vector2 force = new Vector2(0, thrust * resistance);
         forced.AddForce(force);
-        Debug.Log(a.name);
-    }
-    //effect1 (Right force)
-    public static void effect1(GameObject a)
-    {
-        Rigidbody2D forced;
-        if (!a.TryGetComponent<Rigidbody2D>(out forced))
-        {
-            Debug.Log("(((((");
-            return;
-        }
-        Vector2 force;
-        force.y = 0;
-        force.x = 100;
-        forced.AddForce(force);
-        Debug.Log(a.name);
     }
 
-    //effect2 (Downward force)
-    public static void effect2(GameObject a)
+    // effect1 (Right force)
+    public static void effect1(GameObject a, float thrust, float resistance)
     {
-        Rigidbody2D forced;
-        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        if (!a.TryGetComponent<Rigidbody2D>(out Rigidbody2D forced))
         {
-            Debug.Log("(((((");
             return;
         }
-        Vector2 force;
-        force.x = 0;
-        force.y = -100;
+
+        Vector2 force = new Vector2(thrust * resistance, 0);
         forced.AddForce(force);
-        Debug.Log(a.name);
     }
 
-    //effect3 (Left force)
-    public static void effect3(GameObject a)
+    // effect2 (Downward force)
+    public static void effect2(GameObject a, float thrust, float resistance)
     {
-        Rigidbody2D forced;
-        if (!a.TryGetComponent<Rigidbody2D>(out forced))
+        if (!a.TryGetComponent<Rigidbody2D>(out Rigidbody2D forced))
         {
-            Debug.Log("(((((");
             return;
         }
-        Vector2 force;
-        force.y = 0;
-        force.x = -100;
+
+        Vector2 force = new Vector2(0, -thrust * resistance);
         forced.AddForce(force);
-        Debug.Log(a.name);
+    }
+
+    // effect3 (Left force)
+    public static void effect3(GameObject a, float thrust, float resistance)
+    {
+        if (!a.TryGetComponent<Rigidbody2D>(out Rigidbody2D forced))
+        {
+            return;
+        }
+
+        Vector2 force = new Vector2(-thrust * resistance, 0);
+        forced.AddForce(force);
     }
     
     //Gravity Well (Brings to Center)
-    public static void GravityWell(GameObject pulled, Collider2D towards, float thrust)
+    public static void GravityWell(GameObject pulled, Collider2D towards, float thrust, float resistance)
     {
         Rigidbody2D rb;
         if (!pulled.TryGetComponent<Rigidbody2D>(out rb))
@@ -103,7 +90,7 @@ public class EffectList
         direction.Normalize();
 
         // Apply force in that direction, multiplied by the thrust value
-        force = direction * thrust;
+        force = direction * thrust * resistance;
         rb.AddForce(force);
         Debug.Log(pulled.name);
     }
