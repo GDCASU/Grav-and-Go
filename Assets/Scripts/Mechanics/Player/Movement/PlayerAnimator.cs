@@ -86,7 +86,7 @@ public class PlayerAnimator : MonoBehaviour
     private void HandleSpriteFlip()
     {
         if (playerMovement.movement.x != 0)
-            _sprite.flipX = playerMovement.movement.x < 0;
+            _sprite.flipX = playerMovement.movement.x > 0;
     }
     
     #endregion
@@ -112,12 +112,14 @@ public class PlayerAnimator : MonoBehaviour
     {
         _grounded = grounded;
 
+        _anim.SetBool(GroundedKey, grounded);
+
+
         if (grounded)
         {
             DetectGroundColor();     // Refresh tint
             SetColor(_landParticles);
 
-            _anim.SetTrigger(GroundedKey);
             _moveParticles.Play();   // Resume dust trail
 
             // Scale landing puff based on impact velocity
