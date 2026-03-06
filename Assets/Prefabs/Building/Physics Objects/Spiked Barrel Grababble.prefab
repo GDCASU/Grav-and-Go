@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4954895797726179005}
   - component: {fileID: 8625017321519665475}
   - component: {fileID: 6979971936426226687}
+  - component: {fileID: 4463552630445601926}
   m_Layer: 9
   m_Name: Spiked Barrel Grababble
   m_TagString: Physics Object
@@ -194,3 +195,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.475
+--- !u!114 &4463552630445601926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673298617940267959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d47d71d220dd244bdfd7ccf36967c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerCollisionEvents:
+  - mask:
+      serializedVersion: 2
+      m_Bits: 64
+    type: 0
+    damage: 1
+    debug: 0
