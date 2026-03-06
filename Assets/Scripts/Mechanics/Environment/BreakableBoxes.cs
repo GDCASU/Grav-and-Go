@@ -59,7 +59,7 @@ public class Breakable : MonoBehaviour, IDamageable
             boxDied();
         }
 
-        print("im prnting");
+        //print("im prnting");
     }
 
     private void throwEffects() // need 2 change function name
