@@ -4,14 +4,19 @@ public class BulletController : MonoBehaviour
 {
     [SerializeField] public float speed;
 
-    private void Update()
-    {
-        transform.Translate(Vector3.up*Time.deltaTime*speed);
-    }
+    [SerializeField] private Rigidbody2D rb2D;
 
-    public void end()
-    {
-        Destroy(gameObject);
-    }
+    private bool _isGrabbed;
 
+    private void FixedUpdate()
+    {
+        if (!_isGrabbed)
+        {
+            rb2D.linearVelocity = transform.up * speed;
+        }
+        else
+        {
+            
+        }
+    }
 }
