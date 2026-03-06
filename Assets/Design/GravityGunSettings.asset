@@ -22,7 +22,7 @@ MonoBehaviour:
   pullPushCooldown: 0.2
   lineRaycastMask:
     serializedVersion: 2
-    m_Bits: 641
+    m_Bits: 8833
   maxRaycastDistance: 100
   pullForce: 10
   pushForce: 20

@@ -8,6 +8,8 @@ public class BulletController : GravSpecialObject
 
     private bool isGrabbed;
 
+    private bool canDamage = true;
+
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -27,12 +29,12 @@ public class BulletController : GravSpecialObject
         rb2D.linearVelocity = Vector2.zero;
         rb2D.gravityScale = 1;
         isGrabbed = true;
+        canDamage = false;
     }
 
     public void OnRelease()
     {
-        rb2D.linearVelocity = transform.up * speed;
-        rb2D.gravityScale = 0;
+        rb2D.gravityScale = 1;
         isGrabbed = false;
     }
 }
