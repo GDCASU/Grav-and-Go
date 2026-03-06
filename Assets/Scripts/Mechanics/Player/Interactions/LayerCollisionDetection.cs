@@ -40,7 +40,7 @@ public class LayerCollisionDetection : MonoBehaviour
         public int damage;
 
         [Tooltip("Do Debug Log")]
-        public bool debug;
+        public bool debug = true;
     }
 
     [SerializeField] private List<LayerEventPair> layerCollisionEvents = new();
