@@ -137,6 +137,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadLastCheckpoint()
     {
+        DeathManager.ResetDeathState();
         SaveManager.Instance.LoadLevel(currentLevelName);
         playerController.enabled = true;
         if (_doDebugLog) Debug.Log($"Loading level {currentLevelName.name}");

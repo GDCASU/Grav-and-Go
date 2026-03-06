@@ -288,6 +288,18 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
         DeathManager.TriggerPlayerDeath();
     }
 
+    /// <summary>
+    /// Completely freezes the player in place by zeroing velocity.
+    /// Useful for death sequences, dialogue, or level transitions.
+    /// </summary>
+    public void FreezeMovement()
+    {
+        velocity = Vector2.zero;
+        movement = Vector2.zero;
+        _rb.linearVelocity = Vector2.zero;
+        _rb.angularVelocity = 0f;
+    }
+
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {

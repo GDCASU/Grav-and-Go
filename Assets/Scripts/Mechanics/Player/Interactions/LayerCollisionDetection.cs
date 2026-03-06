@@ -1,21 +1,9 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-/**
- *  Matthew Glos 9/12/25
- *  Modified by Cami Lee 11/14/25
- *  
- *  General purpose script to detect collisions with objects of a particular layer 
- *  and call a set of UnityEvents when those collisions occur.
- *  
- *  Written to handle the player object colliding with objects with the Hazard tag
- *  to trigger the death sequence. 
- *  
- *  Attach to the object you'd like to detect the collisions, and make sure either 
- *  a collision or trigger event can happend between the two objects
- */
+/* -----------------------------------------------------------
+ * Modified by: Joshua Wright (2026)
+ * ----------------------------------------------------------- */
 
 public class LayerCollisionDetection : MonoBehaviour
 {
@@ -30,13 +18,13 @@ public class LayerCollisionDetection : MonoBehaviour
     [System.Serializable]
     public class LayerEventPair
     {
-        [Tooltip("Collision mask")]
+        [Tooltip("Collision mask of the object to BE DAMAGED")]
         public LayerMask mask;
 
         [Tooltip("Collision type")]
         public CollisionType type;
 
-        [Tooltip("Collision damage")]
+        [Tooltip("Damage to deal to the target")]
         public int damage;
 
         [Tooltip("Do Debug Log")]
@@ -44,47 +32,47 @@ public class LayerCollisionDetection : MonoBehaviour
     }
 
     [SerializeField] private List<LayerEventPair> layerCollisionEvents = new();
-    IDamageable damageInterface;
-    Rigidbody2D rgd;
 
+    // Note: rgd is usually the source of the impact for knockback logic
+    private Rigidbody2D myRgd;
 
     private void Start()
     {
-        damageInterface = GetComponent<IDamageable>();
-        rgd = GetComponent<Rigidbody2D>();
+        myRgd = GetComponent<Rigidbody2D>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Enter);
+    // Collision Handlers
+    private void OnCollisionEnter2D(Collision2D collision) => HandleCollision(collision.gameObject, CollisionType.Enter);
+    private void OnCollisionStay2D(Collision2D collision) => HandleCollision(collision.gameObject, CollisionType.Stay);
+    private void OnCollisionExit2D(Collision2D collision) => HandleCollision(collision.gameObject, CollisionType.Leave);
 
-    private void OnCollisionStay2D(Collision2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Stay);
-
-    private void OnCollisionExit2D(Collision2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Leave);
-
-    private void OnTriggerEnter2D(Collider2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Enter);
-
-    private void OnTriggerStay2D(Collider2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Stay);
-
-    private void OnTriggerExit2D(Collider2D collision) =>
-        HandleCollision(collision.gameObject.layer, CollisionType.Leave);
+    // Trigger Handlers
+    private void OnTriggerEnter2D(Collider2D collision) => HandleCollision(collision.gameObject, CollisionType.Enter);
+    private void OnTriggerStay2D(Collider2D collision) => HandleCollision(collision.gameObject, CollisionType.Stay);
+    private void OnTriggerExit2D(Collider2D collision) => HandleCollision(collision.gameObject, CollisionType.Leave);
 
     // Core logic
-    public void HandleCollision(int layer, CollisionType currentType)
+    public void HandleCollision(GameObject other, CollisionType currentType)
     {
+        int layer = other.layer;
+
         foreach (var pair in layerCollisionEvents)
         {
+            // Check if the layer matches the mask AND the collision phase matches
             if (((1 << layer) & pair.mask.value) != 0 && pair.type == currentType)
             {
-                if (pair.debug)
+                // We find the interface on the 'other' object, not 'this'
+                if (other.TryGetComponent<IDamageable>(out IDamageable targetDamageable))
                 {
-                    string pr = $"<b><color=red>{this.gameObject.name} {currentType} with layer {LayerMask.LayerToName(layer)}</color></b>";
-                    Debug.Log(pr);
+                    if (pair.debug)
+                    {
+                        Debug.Log($"<b><color=orange>{gameObject.name}</color></b> dealt {pair.damage} damage to <b><color=red>{other.name}</color></b> via {currentType}");
+                    }
+
+                    // Apply damage to the thing we hit
+                    // We pass myRgd as the 'source' of the force for knockback
+                    targetDamageable.TakeDamage(pair.damage, myRgd);
                 }
-                damageInterface.TakeDamage(pair.damage, rgd);
             }
         }
     }
