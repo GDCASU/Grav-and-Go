@@ -1,22 +1,38 @@
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class BulletController : GravSpecialObject
 {
-    [SerializeField] public float speed;
+    public float speed;
 
-    [SerializeField] private Rigidbody2D rb2D;
+    private Rigidbody2D rb2D;
 
-    private bool _isGrabbed;
+    private bool isGrabbed;
+
+    private void Awake()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+        rb2D.linearVelocity = transform.up * speed;
+    }
 
     private void FixedUpdate()
     {
-        if (!_isGrabbed)
+        if (transform.position.x < -50 || transform.position.x > 50 || transform.position.y < -50 || transform.position.y > 50)
         {
-            rb2D.linearVelocity = transform.up * speed;
+            Destroy(gameObject);
         }
-        else
-        {
-            
-        }
+    }
+
+    public void OnGrab()
+    {
+        rb2D.linearVelocity = Vector2.zero;
+        rb2D.gravityScale = 1;
+        isGrabbed = true;
+    }
+
+    public void OnRelease()
+    {
+        rb2D.linearVelocity = transform.up * speed;
+        rb2D.gravityScale = 0;
+        isGrabbed = false;
     }
 }

@@ -84,7 +84,7 @@ public class LayerCollisionDetection : MonoBehaviour
                     string pr = $"<b><color=red>{this.gameObject.name} {currentType} with layer {LayerMask.LayerToName(layer)}</color></b>";
                     Debug.Log(pr);
                 }
-                damageInterface.TakeDamage(pair.damage, rgd);
+                damageInterface?.TakeDamage(pair.damage, rgd);
             }
         }
     }
