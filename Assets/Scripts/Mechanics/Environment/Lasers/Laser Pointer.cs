@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,49 +20,45 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class LaserPointer : MonoBehaviour
 {
+    const float laserTick = 0.1f;
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
     [Header("Laser stuff")]
     private LineRenderer Laser;
-    [SerializeField] private LaserColorEnum laserColor = LaserColorEnum.Red;
+    [SerializeField] public LaserColorEnum laserColor = LaserColorEnum.Red;
     [SerializeField] private float LaserWidth = 0.1f; //this is a random choice, change if needed
     [SerializeField] private GameObject Emitter = null;
     [SerializeField] private bool LaserOn = true;
+    [Header("Laser Prefab to Spawn(Invisible)")]
+    [SerializeField] public GameObject LaserPrefab;
     private Vector2 laserDir;
     private float LastFrameRotation = -1;
     private int vertexLimit = 40;
+    private GameObject subLaser = null;
+    private bool isSubLaser = false;
+
+    void Awake()
+    {
+        LaserSetup();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        Laser = this.AddComponent<LineRenderer>();
         if(Emitter == null)
         {
             Debug.LogError("No emitter defined for laser " + this.name);
             return;
         }
-        LaserSetup();
         StartCoroutine(LaserCoroutine());
     }
 
-    // Update is called once per frame
-    /*void Update()
+    public void MakeThisSubLaser(float lifetime)
     {
-        if(!LaserOn) return;
-        Color laserActualColor = LaserColor.getColorFromEnum(laserColor);
-        Laser.startColor = laserActualColor;
-        Laser.endColor = laserActualColor;
-        if (this.transform.rotation.eulerAngles.z != LastFrameRotation)
-        {
-        LastFrameRotation = this.transform.rotation.eulerAngles.z;
-        laserDir = CalculateRotation(LastFrameRotation);
-        }
-        float Vert0x = Emitter.transform.position.x;
-        float Vert0y = Emitter.transform.position.y;
-        //Laser.SetPosition(0, new Vector2(Vert0x, Vert0y));
-        calculateWholeLaser();
-        //Laser.SetPosition(1, calcVertex());
-    }*/
+        isSubLaser = true;
+        Destroy(gameObject, lifetime);
+    }
 
     //Because launching a bunch of raycasts every frame is not that good for performance
     //It is better to make it async and make it update less than every frame
@@ -70,25 +67,32 @@ public class LaserPointer : MonoBehaviour
         while (true)
         {
             LaserLoop();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(laserTick);
         }
     }
 
     void LaserLoop()
     {
-        if(!LaserOn) return;
-        Color laserActualColor = LaserColor.getColorFromEnum(laserColor);
+        if(!LaserOn)
+        {
+            Laser.positionCount = 0;
+            return;
+        }
+
+        if(Laser == null)
+            return;
+
+        Color laserActualColor = global::LaserColor.getColorFromEnum(laserColor);
         Laser.startColor = laserActualColor;
         Laser.endColor = laserActualColor;
+
         if (this.transform.rotation.eulerAngles.z != LastFrameRotation)
         {
             LastFrameRotation = this.transform.rotation.eulerAngles.z;
             laserDir = CalculateRotation(LastFrameRotation);
         }
-        float Vert0x = Emitter.transform.position.x;
-        float Vert0y = Emitter.transform.position.y;
-        //Laser.SetPosition(0, new Vector2(Vert0x, Vert0y));
-        calculateWholeLaser();
+
+        CalculateWholeLaser();
     }
 
     //Calculate the direction vector given rotation using trigonometry
@@ -104,21 +108,18 @@ public class LaserPointer : MonoBehaviour
     //Sets up a created laser.
     void LaserSetup()
     {
-        if (Laser == null)
-        {
-            return;
-        }
+        // swap to GetComponenet?
+        Laser = this.AddComponent<LineRenderer>();
         Laser.material = new Material(Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply")); // this finds a default line shader
-        //also colors don't work without the line above XD
 
 
-        Color laserActualColor = LaserColor.getColorFromEnum(laserColor);
+        Color laserActualColor = global::LaserColor.getColorFromEnum(laserColor);
         Laser.startColor = laserActualColor;
         Laser.endColor = laserActualColor;
+        
         if (_doDebugLog)
-        {
             Debug.Log(laserActualColor);
-        }
+
         LastFrameRotation = this.transform.rotation.eulerAngles.z;
         laserDir = CalculateRotation(LastFrameRotation);
         Laser.startWidth = LaserWidth;
@@ -129,8 +130,9 @@ public class LaserPointer : MonoBehaviour
     }
     
 
-    void calculateWholeLaser()
+    void CalculateWholeLaser()
     {
+        //if(subLaser != null) Destroy(subLaser);
         //List<Vector2> laser_positions;
         Laser.positionCount = vertexLimit;
         float Vert0x = Emitter.transform.position.x;
@@ -156,16 +158,53 @@ public class LaserPointer : MonoBehaviour
             
             Vector2 norm = hit.normal;
 
-            //check if we hit a mirror or a sensor
+            //check if we hit a mirror or a sensor or anything important in general
             GameObject hitObject = hit.transform.gameObject;
             if(hitObject.TryGetComponent(out LaserSensor sensor))
-            {
                 sensor.LaserHit(laserColor);
-                break;
-            }
-            if(hitObject.TryGetComponent(out ColorSensor sensorC))
+
+            if(hitObject.TryGetComponent(out LaserCombiner sensorC))
+                sensorC.OnLaserHit(laserColor, laserTick);
+
+            //if we hit a portal we teleport
+            if(hitObject.TryGetComponent(out PortalDefinition portal1))
             {
-                sensorC.laserHit(laserColor);
+                GameObject portal2 = portal1.getExitPortal();
+                //first find where we entered
+                float enterX1 = hit.point.x;
+                float enterY1 = hit.point.y;
+
+                //now find where we would have entered for the second portal
+                float enterX2 = portal2.transform.position.x + (enterX1 - hitObject.transform.position.x);
+                float enterY2 = portal2.transform.position.y + (enterY1 - hitObject.transform.position.y);
+
+                //we have the direction of the laser, now find the point where it would exit
+                //all we need to do is to solve f(t) = entry + dir * t so that f(t) is outside the box
+                //do this by finding bottom left and top right corners first
+                Vector2 bottLeft = portal2.transform.position - portal2.transform.localScale/2;
+                Vector2 topRight = portal2.transform.position + portal2.transform.localScale/2;
+
+                //calculate how many times we need to use the dir vector to leave the portal
+                float tx1 = (bottLeft.x - enterX2) / reflectVector.x;
+                float tx2 = (topRight.x - enterX2) / reflectVector.x;
+                float ty1 = (bottLeft.y - enterY2) / reflectVector.y;
+                float ty2 = (topRight.y - enterY2) / reflectVector.y;
+
+                //get the smaller of the big ones
+                float tVector = Mathf.Min(Mathf.Max(tx1, tx2), Mathf.Max(ty1, ty2));
+                Vector2 exit = new Vector2(enterX2, enterY2) + tVector * reflectVector;
+
+                //because of how unity's lineRenderer works, we have to create a different laser
+                //Quaternion reflection = Quaternion.LookRotation(reflectVector); //hopefully this is correct
+                float angle = Mathf.Atan2(reflectVector.y, reflectVector.x) * Mathf.Rad2Deg; //convert vector into angle
+                subLaser = Instantiate(LaserPrefab, exit, Quaternion.Euler(0,0,angle));
+                LaserPointer  subLaserPointer = subLaser.GetComponent<LaserPointer>();
+                subLaserPointer.laserColor = this.laserColor;
+                subLaserPointer.MakeThisSubLaser(laserTick);
+                subLaserPointer.LaserPrefab = this.LaserPrefab;
+
+                //subLaser.
+                //the subLaser should handle everything else on its own
                 break;
             }
             if(!hitObject.TryGetComponent(out Mirror objectMirror)) break;
@@ -179,21 +218,6 @@ public class LaserPointer : MonoBehaviour
         Laser.positionCount = 1 + i;
     }
 
-    //some setters and getters
-    //if there isn't one you need just make it I am lazy
+    public void SetLaserSwitch(bool sw) => LaserOn = sw;
 
-    public void setLaserSwitch(bool sw)
-    {
-        LaserOn = sw;
-    }
-
-    public void setLaserColor(LaserColorEnum newCol)
-    {
-        laserColor = newCol;
-    }
-
-    public LaserColorEnum getLaserColor()
-    {
-        return laserColor;
-    }
 }

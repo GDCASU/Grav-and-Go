@@ -15,12 +15,14 @@ using UnityEngine;
 /// </summary>
 public enum LaserColorEnum
 {
+    None = 1,
     Red = 2,
     Lime = 3,
     Cyan = 5,
     Orange = 6,
     Pink = 10,
-    Purple = 15
+    Purple = 15,
+    White = 30
 }
 
 class LaserColor
