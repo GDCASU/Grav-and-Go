@@ -35,10 +35,10 @@ public static class DeathManager
             playerAnim.OnDeath();
 
             // Load death screen (TBI)
-
+            DeathScreen.Instance.ShowDeathScreen();
             // Reload current checkpoint after 3 seconds
             // (after player animation is done)
-            LevelManager.Instance.LoadLastCheckpoint(3);
+            //LevelManager.Instance.LoadLastCheckpoint(3);
         }
     }
     
