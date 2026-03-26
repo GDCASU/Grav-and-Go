@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class DoorKey : MonoBehaviour
 {
-    [SerializeField] private DoorWithLock _assignedDoor;
+    [SerializeField] private ExitDoor _assignedDoor;
     private Collider2D _doorColl;
 
     private Vector3 _originalPos;

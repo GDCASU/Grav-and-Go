@@ -77,7 +77,7 @@ public class InteractionManager2D : MonoBehaviour
         // Focus change handling
         if (nearest != _focused)
         {
-            _focused?.events.OnFocusExit?.Invoke();
+            _focused?.interactableEvents.OnFocusExit?.Invoke();
             _focused      = nearest;
             _focusEntered = false;
         }
@@ -87,12 +87,12 @@ public class InteractionManager2D : MonoBehaviour
 
         if (!_focusEntered)
         {
-            _focused.events.OnFocusEnter?.Invoke();
+            _focused.interactableEvents.OnFocusEnter?.Invoke();
             _focusEntered = true;
         }
         else
         {
-            _focused.events.OnFocusStay?.Invoke();
+            _focused.interactableEvents.OnFocusStay?.Invoke();
         }
 
         if (doDebugLog)
@@ -101,7 +101,7 @@ public class InteractionManager2D : MonoBehaviour
 
     private void OnInteract()
     {
-        _focused?.events.OnInteractionExecuted?.Invoke();
+        _focused?.interactableEvents.OnInteractionExecuted?.Invoke();
         if (doDebugLog) Debug.Log($"Interact: {_focused.name}", _focused);
     }
     

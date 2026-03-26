@@ -4,43 +4,89 @@ using System.Collections;
 /* -----------------------------------------------------------
  * Author:
  * Max Rothenberger
- * 
+ *
  * Modified By:
- * Cami Lee (to support locked doors)
- * 
+ * Cami Lee
+ * Chandler Van
  */// --------------------------------------------------------
 
 public class ExitDoor : MonoBehaviour
 {
+    [Tooltip("The level to load when the player enters this door.")]
     [SerializeField] private Level _levelToLoad;
-    [SerializeField] DoorType type;
+
+    [Tooltip("The type of door, which determines how it interacts with the player.")]
+    [SerializeField] private DoorType _type;
 
     [Header("Locked Door Attributes")]
-    private DoorWithLock doorWithLock;
-    enum DoorType { Default, Locked }
+    [SerializeField] private GameObject _lockedVisuals;
 
-    private void Start()
+    private bool _isLocked;
+
+    /// <summary>
+    /// When non-null, overrides the normal lock state for IsLocked() checks.
+    /// true  = forced locked   (door will never open)
+    /// false = forced unlocked (door always opens, ignoring key state)
+    /// null  = no override; use the real lock state
+    /// </summary>
+    private bool? _forcedState = null;
+
+    private enum DoorType { Default, Locked }
+
+    /// <summary>Sets the door's real lock state and updates visuals.</summary>
+    public void Lock(bool locked)
     {
-        if (type == DoorType.Locked) doorWithLock = GetComponent<DoorWithLock>();
+        _isLocked = locked;
+        if (_lockedVisuals != null) _lockedVisuals.SetActive(locked);
+    }
+
+    /// <summary>
+    /// Returns whether the door is currently considered locked,
+    /// respecting any active forced state.
+    /// </summary>
+    public bool IsLocked()
+    {
+        return _forcedState ?? _isLocked;
+    }
+
+    /// <summary>
+    /// Forces the door into a specific lock state, overriding key interactions
+    /// until <see cref="ClearForcedState"/> is called.
+    /// Pass <c>true</c> to force-lock, <c>false</c> to force-unlock.
+    /// </summary>
+    public void ForcedState(bool forceLocked)
+    {
+        _forcedState = forceLocked;
+
+        // Keep visuals in sync with the effective state
+        if (_lockedVisuals != null) _lockedVisuals.SetActive(IsLocked());
+    }
+
+    /// <summary>
+    /// Removes any forced state so the door goes back to responding
+    /// normally to key interactions.
+    /// </summary>
+    public void ClearForcedState()
+    {
+        _forcedState = null;
+
+        // Restore visuals to the real underlying lock state
+        if (_lockedVisuals != null) _lockedVisuals.SetActive(_isLocked);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check to see if the door can be opened
         bool canOpen = false;
-        if (type == DoorType.Locked && !doorWithLock.IsLocked()) canOpen = true;
-        else if (type == DoorType.Default) canOpen = true;
+        if (_type == DoorType.Locked && !IsLocked()) canOpen = true;
+        else if (_type == DoorType.Default) canOpen = true;
 
-        // Ensures the level does not end when a non-player object touches the door.
         if (canOpen && collision.CompareTag("Player")) StartCoroutine(nameof(EndLevel));
     }
 
     private IEnumerator EndLevel()
     {
-        //Do code that occurs prior to loading the next level.
-
         Debug.Log("Level Complete");
-        yield return new WaitForSeconds(2f); //Add a delay in the case of transitions or having something to read.
+        yield return new WaitForSeconds(2f);
 
         NextLevel(_levelToLoad);
     }
@@ -50,4 +96,3 @@ public class ExitDoor : MonoBehaviour
         LevelManager.Instance.LoadLevelViaLevelName(level);
     }
 }
-

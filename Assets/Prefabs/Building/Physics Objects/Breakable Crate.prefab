@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8625017321519665475}
   - component: {fileID: 607163353507042961}
   m_Layer: 9
-  m_Name: BreakableCrate
+  m_Name: Breakable Crate
   m_TagString: Physics Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

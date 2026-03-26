@@ -959,7 +959,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -973,26 +981,48 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: NaN
-      e01: 2.19e-43
-      e02: 0
-      e03: 2.146893e+36
-      e10: NaN
+      e00: 1.427e-42
+      e01: 0
+      e02: 1e-45
+      e03: 2.0401127e+10
+      e10: 0
       e11: 0
       e12: 0
-      e13: 8.8e-44
-      e20: 0.99999994
-      e21: 2.2764492e-30
-      e22: 2.1469501e+36
-      e23: 1.7395539e-31
-      e30: 0
-      e31: 4.5915e-41
-      e32: 8.8e-44
-      e33: 4.5915e-41
+      e13: 8.13e-43
+      e20: 1.2198839e-36
+      e21: 2.0401127e+10
+      e22: -3.717074e+19
+      e23: -1.2651636e-28
+      e30: 4.5914e-41
+      e31: 8.13e-43
+      e32: 8.16e-43
+      e33: 8.13e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 1e-45, g: 1e-45, b: 1e-45, a: 1e-45}
-  m_TileObjectToInstantiateArray: []
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  - m_RefCount: 0
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  - m_RefCount: 0
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  - m_RefCount: 0
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  - m_RefCount: 0
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  - m_RefCount: 0
+    m_Data: {r: 7.7842e-41, g: 7.7842e-41, b: 7.7842e-41, a: 7.7842e-41}
+  m_TileObjectToInstantiateArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -25, y: -10, z: 0}
@@ -2428,6 +2458,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1313544932
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4023294
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4340917
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021209332540699, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673298617940267959, guid: 91688887f6518cb44adbd6a954484458, type: 3}
+      propertyPath: m_Name
+      value: Barrel Grabbable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91688887f6518cb44adbd6a954484458, type: 3}
 --- !u!1001 &1347790183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3935,3 +4022,4 @@ SceneRoots:
   - {fileID: 56176650}
   - {fileID: 1656960160}
   - {fileID: 1256361076}
+  - {fileID: 1313544932}
