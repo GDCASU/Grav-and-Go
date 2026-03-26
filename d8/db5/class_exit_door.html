@@ -128,9 +128,146 @@ Collaboration diagram for ExitDoor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad8f10d0d89c1f894f0705cf8a22449c3" id="r_ad8f10d0d89c1f894f0705cf8a22449c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8f10d0d89c1f894f0705cf8a22449c3">Lock</a> (bool locked)</td></tr>
+<tr class="memdesc:ad8f10d0d89c1f894f0705cf8a22449c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the door's real lock state and updates visuals.  <br /></td></tr>
+<tr class="memitem:af36940975378bc4990b1afe7a3e36e5a" id="r_af36940975378bc4990b1afe7a3e36e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af36940975378bc4990b1afe7a3e36e5a">IsLocked</a> ()</td></tr>
+<tr class="memdesc:af36940975378bc4990b1afe7a3e36e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the door is currently considered locked, respecting any active forced state.  <br /></td></tr>
+<tr class="memitem:a1a074246d93ec9c715c0d81ea87654a3" id="r_a1a074246d93ec9c715c0d81ea87654a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a074246d93ec9c715c0d81ea87654a3">ForcedState</a> (bool forceLocked)</td></tr>
+<tr class="memdesc:a1a074246d93ec9c715c0d81ea87654a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the door into a specific lock state, overriding key interactions until <a class="el" href="#a7441a6615b02681233853de44eeeab3d" title="Removes any forced state so the door goes back to responding normally to key interactions.">ClearForcedState</a> is called.  <br /></td></tr>
+<tr class="memitem:a7441a6615b02681233853de44eeeab3d" id="r_a7441a6615b02681233853de44eeeab3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7441a6615b02681233853de44eeeab3d">ClearForcedState</a> ()</td></tr>
+<tr class="memdesc:a7441a6615b02681233853de44eeeab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes any forced state so the door goes back to responding normally to key interactions.  <br /></td></tr>
 <tr class="memitem:ae931c657fd7d0264f307e83594284e4b" id="r_ae931c657fd7d0264f307e83594284e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae931c657fd7d0264f307e83594284e4b">NextLevel</a> (<a class="el" href="../../d4/dd0/struct_level.html">Level</a> level)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a7441a6615b02681233853de44eeeab3d" name="a7441a6615b02681233853de44eeeab3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7441a6615b02681233853de44eeeab3d">&#9670;&#160;</a></span>ClearForcedState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExitDoor.ClearForcedState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes any forced state so the door goes back to responding normally to key interactions. </p>
+
+</div>
+</div>
+<a id="a1a074246d93ec9c715c0d81ea87654a3" name="a1a074246d93ec9c715c0d81ea87654a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a074246d93ec9c715c0d81ea87654a3">&#9670;&#160;</a></span>ForcedState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExitDoor.ForcedState </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>forceLocked</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Forces the door into a specific lock state, overriding key interactions until <a class="el" href="#a7441a6615b02681233853de44eeeab3d" title="Removes any forced state so the door goes back to responding normally to key interactions.">ClearForcedState</a> is called. </p>
+<p>Pass <code>true</code> to force-lock, <code>false</code> to force-unlock. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/db5/class_exit_door_a1a074246d93ec9c715c0d81ea87654a3_cgraph.png" border="0" usemap="#ad8/db5/class_exit_door_a1a074246d93ec9c715c0d81ea87654a3_cgraph" loading="lazy" alt=""/></div>
+<map name="ad8/db5/class_exit_door_a1a074246d93ec9c715c0d81ea87654a3_cgraph" id="ad8/db5/class_exit_door_a1a074246d93ec9c715c0d81ea87654a3_cgraph">
+<area shape="rect" title="Forces the door into a specific lock state, overriding key interactions until ClearForcedState is cal..." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../d8/db5/class_exit_door.html#af36940975378bc4990b1afe7a3e36e5a" title="Returns whether the door is currently considered locked, respecting any active forced state." alt="" coords="212,5,349,31"/>
+<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af36940975378bc4990b1afe7a3e36e5a" name="af36940975378bc4990b1afe7a3e36e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36940975378bc4990b1afe7a3e36e5a">&#9670;&#160;</a></span>IsLocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExitDoor.IsLocked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether the door is currently considered locked, respecting any active forced state. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/db5/class_exit_door_af36940975378bc4990b1afe7a3e36e5a_icgraph.png" border="0" usemap="#ad8/db5/class_exit_door_af36940975378bc4990b1afe7a3e36e5a_icgraph" loading="lazy" alt=""/></div>
+<map name="ad8/db5/class_exit_door_af36940975378bc4990b1afe7a3e36e5a_icgraph" id="ad8/db5/class_exit_door_af36940975378bc4990b1afe7a3e36e5a_icgraph">
+<area shape="rect" title="Returns whether the door is currently considered locked, respecting any active forced state." alt="" coords="212,5,349,31"/>
+<area shape="rect" href="../../d8/db5/class_exit_door.html#a1a074246d93ec9c715c0d81ea87654a3" title="Forces the door into a specific lock state, overriding key interactions until ClearForcedState is cal..." alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8f10d0d89c1f894f0705cf8a22449c3" name="ad8f10d0d89c1f894f0705cf8a22449c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f10d0d89c1f894f0705cf8a22449c3">&#9670;&#160;</a></span>Lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExitDoor.Lock </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>locked</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the door's real lock state and updates visuals. </p>
+
+</div>
+</div>
 <a id="ae931c657fd7d0264f307e83594284e4b" name="ae931c657fd7d0264f307e83594284e4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae931c657fd7d0264f307e83594284e4b">&#9670;&#160;</a></span>NextLevel()</h2>
 

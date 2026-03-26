@@ -14,12 +14,14 @@ var searchData=
   ['interactable_11',['Interactable',['../dc/dc0/class_interactable.html',1,'']]],
   ['interactable_2ecs_12',['Interactable.cs',['../d2/d3a/_interactable_8cs.html',1,'']]],
   ['interactableevents_13',['InteractableEvents',['../d8/d40/class_interactable_1_1_interactable_events.html',1,'Interactable']]],
-  ['interactionmanager_2ecs_14',['InteractionManager.cs',['../d0/d43/_interaction_manager_8cs.html',1,'']]],
-  ['interactionmanager2d_15',['InteractionManager2D',['../d9/d70/class_interaction_manager2_d.html',1,'']]],
-  ['interprettextasset_16',['InterpretTextAsset',['../d0/d9d/class_dialogue.html#a3a866c75f3912bac23c7c0a5c22bce71',1,'Dialogue']]],
-  ['interruptandplay_17',['InterruptAndPlay',['../d0/d51/class_audio_emitter_settings.html#a416fdccbcfcc4dcc81d23d27487ee93da6aac8c5f76c4bda85a0b26228ed4fbfb',1,'AudioEmitterSettings']]],
-  ['invaliddialoguelineexception_18',['InvalidDialogueLineException',['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html',1,'Dialogue.InvalidDialogueLineException'],['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html#a09ac3185fd7a38cdbbf82917e842431e',1,'Dialogue.InvalidDialogueLineException.InvalidDialogueLineException()']]],
-  ['islevelunlocked_19',['IsLevelUnlocked',['../d6/d06/class_level_manager.html#a55e46d8c01a8f706652aad8b39a09c35',1,'LevelManager']]],
-  ['islocked_20',['IsLocked',['../d7/d78/class_door_with_lock.html#a2b5d8b5c792b5894af2a74e5286db1fa',1,'DoorWithLock']]],
-  ['isunlocked_21',['isUnlocked',['../d7/d51/struct_level_status.html#ab63b0c682fa468477ee88051ed7b9ccf',1,'LevelStatus']]]
+  ['interactableevents_14',['interactableEvents',['../dc/dc0/class_interactable.html#a221e95b334b877cf1f71553e9aa441cf',1,'Interactable']]],
+  ['interactionmanager_2ecs_15',['InteractionManager.cs',['../d0/d43/_interaction_manager_8cs.html',1,'']]],
+  ['interactionmanager2d_16',['InteractionManager2D',['../d9/d70/class_interaction_manager2_d.html',1,'']]],
+  ['interprettextasset_17',['InterpretTextAsset',['../d0/d9d/class_dialogue.html#a3a866c75f3912bac23c7c0a5c22bce71',1,'Dialogue']]],
+  ['interruptandplay_18',['InterruptAndPlay',['../d0/d51/class_audio_emitter_settings.html#a416fdccbcfcc4dcc81d23d27487ee93da6aac8c5f76c4bda85a0b26228ed4fbfb',1,'AudioEmitterSettings']]],
+  ['invaliddialoguelineexception_19',['InvalidDialogueLineException',['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html',1,'Dialogue.InvalidDialogueLineException'],['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html#a09ac3185fd7a38cdbbf82917e842431e',1,'Dialogue.InvalidDialogueLineException.InvalidDialogueLineException()']]],
+  ['islevelunlocked_20',['IsLevelUnlocked',['../d6/d06/class_level_manager.html#a55e46d8c01a8f706652aad8b39a09c35',1,'LevelManager']]],
+  ['islocked_21',['IsLocked',['../d8/db5/class_exit_door.html#af36940975378bc4990b1afe7a3e36e5a',1,'ExitDoor']]],
+  ['istargeted_22',['IsTargeted',['../d6/db5/class_physics_object.html#aca6400727cf811d4516b32e424356d7e',1,'PhysicsObject']]],
+  ['isunlocked_23',['isUnlocked',['../d7/d51/struct_level_status.html#ab63b0c682fa468477ee88051ed7b9ccf',1,'LevelStatus']]]
 ];
