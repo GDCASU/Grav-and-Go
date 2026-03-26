@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3326276492126459838}
   - component: {fileID: 7980193485011957219}
   - component: {fileID: 9060670247551323259}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Left Collider
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -89,10 +89,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -396,7 +396,7 @@ SpriteRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 160805320731493182}
   - component: {fileID: 2362155867065469217}
   - component: {fileID: 2897304802126271766}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Right Collider
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -663,10 +663,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 8684673447417186289}
   - component: {fileID: 3007721759331326300}
   - component: {fileID: 7035768228574510119}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Top Collider
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -797,10 +797,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -994,10 +994,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -1066,8 +1066,8 @@ Transform:
   m_GameObject: {fileID: 7106478193944335968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.385, y: -0.4264, z: -0.5221143}
-  m_LocalScale: {x: 1.77, y: 0.29555678, z: 1}
+  m_LocalPosition: {x: 0.5, y: -0.3522216, z: 0}
+  m_LocalScale: {x: 2, y: 0.29555678, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7791647532119659626}
@@ -1086,10 +1086,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -1294,10 +1294,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -1456,10 +1456,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: 2716711367078717522}
   - component: {fileID: 6984189365009150603}
   - component: {fileID: 8750827557626782856}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Bottom Collider
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -1625,10 +1625,10 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
