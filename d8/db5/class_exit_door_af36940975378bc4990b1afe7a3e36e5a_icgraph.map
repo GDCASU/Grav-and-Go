@@ -1,0 +1,5 @@
+<map id="ExitDoor.IsLocked" name="ExitDoor.IsLocked">
+<area shape="rect" id="Node000001" title="Returns whether the door is currently considered locked, respecting any active forced state." alt="" coords="212,5,349,31"/>
+<area shape="rect" id="Node000002" href="$d8/db5/class_exit_door.html#a1a074246d93ec9c715c0d81ea87654a3" title="Forces the door into a specific lock state, overriding key interactions until ClearForcedState is cal..." alt="" coords="5,5,164,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>
