@@ -37,7 +37,7 @@ public class ExitDoor : MonoBehaviour
     {
         if(_type == DoorType.Locked)
         {
-            Lock(_isLocked);
+            Lock(true);
         }
     }
 
