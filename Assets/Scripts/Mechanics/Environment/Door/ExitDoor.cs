@@ -33,6 +33,14 @@ public class ExitDoor : MonoBehaviour
 
     private enum DoorType { Default, Locked }
 
+    private void Start()
+    {
+        if(_type == DoorType.Locked)
+        {
+            Lock(_isLocked);
+        }
+    }
+
     /// <summary>Sets the door's real lock state and updates visuals.</summary>
     public void Lock(bool locked)
     {
