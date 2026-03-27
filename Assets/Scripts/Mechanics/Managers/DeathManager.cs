@@ -34,7 +34,13 @@ public static class DeathManager
             playerController.enabled = false;
             playerAnim.OnDeath();
 
-            // Load death screen (TBI)
+            // Disable all turrets in the scene
+            DisableAllTurrets();
+
+            // Despawn all projectiles in the scene
+            DespawnAllProjectiles();
+
+            // Load death screen
             DeathScreen.Instance.ShowDeathScreen();
             // Reload current checkpoint after 3 seconds
             // (after player animation is done)
@@ -45,5 +51,23 @@ public static class DeathManager
     public static void ResetDeathState()
     {
         _isPlayerDead = false;
+    }
+
+    private static void DisableAllTurrets()
+    {
+        TurretController[] turrets = Object.FindObjectsByType<TurretController>(FindObjectsSortMode.None);
+        foreach (TurretController turret in turrets)
+        {
+            turret.enabled = false;
+        }
+    }
+
+    private static void DespawnAllProjectiles()
+    {
+        GunProjectile[] projectiles = Object.FindObjectsByType<GunProjectile>(FindObjectsSortMode.None);
+        foreach (GunProjectile projectile in projectiles)
+        {
+            Object.Destroy(projectile.gameObject);
+        }
     }
 }
