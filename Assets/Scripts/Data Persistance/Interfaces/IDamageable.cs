@@ -15,5 +15,5 @@ using UnityEngine;
 /// </summary>
 public interface IDamageable
 {
-    public void TakeDamage(int damage, Rigidbody2D rb);
+    public void TakeDamage(int damage, Rigidbody2D source = null);
 }
