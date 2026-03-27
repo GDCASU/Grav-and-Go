@@ -4,16 +4,16 @@ using UnityEngine;
 
 /* -----------------------------------------------------------
  * Author:
- * Ian Fletcher
+ * Davyd Yehudin
  * 
  * Modified By:
  * 
  */// --------------------------------------------------------
 
 /// <summary>
-/// Interface to handle the damage dealt by weapons on the game
+/// Stub to check if an object is a mirror
 /// </summary>
-public interface IDamageable
+public class Mirror : MonoBehaviour
 {
-    public void TakeDamage(int damage, Rigidbody2D source = null);
+    public bool isMirror = true;
 }

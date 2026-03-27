@@ -48,10 +48,10 @@ public class Lever : Interactable
         }
         
         // Subscribe to events
-        events.OnFocusEnter.AddListener(() => _outline.SetOutline(true));
-        events.OnFocusExit.AddListener(() => _outline.SetOutline(false));
+        interactableEvents.OnFocusEnter.AddListener(() => _outline.SetOutline(true));
+        interactableEvents.OnFocusExit.AddListener(() => _outline.SetOutline(false));
         // Handle Interaction
-        events.OnInteractionExecuted.AddListener(() =>
+        interactableEvents.OnInteractionExecuted.AddListener(() =>
         {
             if (_animator.GetBool(_isOnID))
             {

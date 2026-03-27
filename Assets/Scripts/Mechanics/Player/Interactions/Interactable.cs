@@ -27,7 +27,7 @@ using UnityEngine.Events;
 public abstract class Interactable : MonoBehaviour
 {
     // variable
-    public InteractableEvents events;
+    public InteractableEvents interactableEvents;
     
     // Foldout Class
     [System.Serializable]

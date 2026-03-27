@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 246ea98f1d9b87d489f8d1846fe53eb8
+guid: 703d97677b539488a9f678658261acd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5132439421190127843
-    second: lever sprites_0
-  - first:
-      213: 4251073676619681476
-    second: lever sprites_1
-  - first:
-      213: 1978141187550533518
-    second: lever sprites_2
-  - first:
-      213: -2778535707383812204
-    second: lever sprites_3
+      213: -6680602808956130083
+    second: 2d440152f2e02f8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 57
+  spritePixelsToUnits: 762
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lever sprites_0
+      name: 2d440152f2e02f8_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 57
-        height: 57
+        x: 113
+        y: 265
+        width: 762
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f30cc0a89e5c8b0800000000000000
-      internalID: -5132439421190127843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lever sprites_1
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 0
-        width: 59
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4ce0ee85cf8defa30800000000000000
-      internalID: 4251073676619681476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lever sprites_2
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 0
-        width: 57
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e87d48fede4c37b10800000000000000
-      internalID: 1978141187550533518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lever sprites_3
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 0
-        width: 59
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49f26a5de78a079d0800000000000000
-      internalID: -2778535707383812204
+      spriteID: ddc61bef32bb943a0800000000000000
+      internalID: -6680602808956130083
       vertices: []
       indices: 
       edges: []
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lever sprites_0: -5132439421190127843
-      lever sprites_1: 4251073676619681476
-      lever sprites_2: 1978141187550533518
-      lever sprites_3: -2778535707383812204
+      2d440152f2e02f8_0: -6680602808956130083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

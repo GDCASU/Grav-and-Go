@@ -111,10 +111,9 @@ public class TurretController : MonoBehaviour
 
             // Raycast using layermask
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, rayCastDistance, layermask);
-            bool hitPlayer = false;
             if (hit)
             {
-                hitPlayer = hit.collider.CompareTag(playerTag) && hit.distance < rayCastDistance;
+                bool hitPlayer = hit.collider.CompareTag(playerTag) && hit.distance < rayCastDistance;
                 if (hitPlayer)
                     foundPlayer = true;
 
@@ -204,8 +203,7 @@ public class TurretController : MonoBehaviour
         if (bulletPrefab == null) return;
 
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        var bulletController = bullet.GetComponent<BulletController>();
-        if (bulletController != null)
-            bulletController.speed = bulletSpeed;
+        BulletController bulletController = bullet.GetComponent<BulletController>();
+        bulletController.speed = bulletSpeed;
     }
 }
