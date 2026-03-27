@@ -9,8 +9,11 @@ using UnityEngine;
  * 
  */// --------------------------------------------------------
 
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class DoorKey : MonoBehaviour
 {
+    [Tooltip("The door this key is assigned to open")]
     [SerializeField] private ExitDoor _assignedDoor;
     private Collider2D _doorColl;
 

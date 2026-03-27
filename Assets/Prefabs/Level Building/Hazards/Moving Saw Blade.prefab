@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5041820927260573602}
   m_Layer: 0
-  m_Name: Dynamic SawBlade
+  m_Name: Moving Saw Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 2648807152076343761}
   - component: {fileID: 2450265586703689708}
   m_Layer: 12
-  m_Name: Dynamic SawBlade
+  m_Name: Saw Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,9 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecde0bf5a5a0d6340b9e4c4875a64a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathPoints: []
-  AutoAssignPath: 1
-  AutoPathRoot: {fileID: 1946668294737723120}
+  pathPointContainer: {fileID: 2399395599213045591}
+  pathNodeInitialIndex: 0
   interpolationCurve:
     serializedVersion: 2
     m_Curve:
@@ -287,8 +286,6 @@ MonoBehaviour:
   travelSpeed: 4
   rotationSpeed: 800
   motion: 1
-  PathNodeInitialOffset: 0
-  PathInitialOffsetPercent: 0
 --- !u!58 &2450265586703689708
 CircleCollider2D:
   m_ObjectHideFlags: 0

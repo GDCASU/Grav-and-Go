@@ -136,7 +136,7 @@ MonoBehaviour:
   turretType: 1
   bulletPrefab: {fileID: 8851746751253001027, guid: 1794994ef54a6564983593024f91ecb6, type: 3}
   playerTag: Player
-  debug: 1
+  debug: 0
   rayCastCount: 10
   rayCastSpread: 45
   rayCastDistance: 20
