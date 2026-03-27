@@ -5,75 +5,67 @@ public class DeathScreen : MonoBehaviour
 {
     public static DeathScreen Instance { get; private set; }
 
-    [Header("UI Prefabs")]
-    [SerializeField, Tooltip("Drag the Death Menu Prefab here")] 
-    private GameObject _deathMenuPrefab;
+    [Header("UI References")]
+    [SerializeField, Tooltip("Drag the Death Menu GameObject here")] 
+    private GameObject _deathMenu;
 
-    // This keeps track of the specific menu currently on screen
-    private GameObject _activeMenuInstance;
+    private Button _retryButton;
+    private Button _levelSelectButton;
+    private Button _mainMenuButton;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        InitializeButtons();
+        _deathMenu.SetActive(false); // Start disabled
     }
 
-    public void ShowDeathScreen()
+    private void InitializeButtons()
     {
-        // Prevent multiple menus from spawning if called twice
-        if (_activeMenuInstance != null) return;
+        // Find buttons on the death menu
+        _retryButton = _deathMenu.transform.Find("_retryButton")?.GetComponent<Button>();
+        _levelSelectButton = _deathMenu.transform.Find("_levelSelectButton")?.GetComponent<Button>();
+        _mainMenuButton = _deathMenu.transform.Find("_mainMenuButton")?.GetComponent<Button>();
 
-        //Instantiate the prefab
-        _activeMenuInstance = Instantiate(_deathMenuPrefab);
-        _activeMenuInstance.transform.SetParent(this.transform, false);
-
-        //Find and setup buttons on this specific instance
-        InitializeButtons(_activeMenuInstance.transform);
-    }
-
-    private void InitializeButtons(Transform menuTransform)
-    {
-        // Finding children by name on the NEWLY instantiated object
-        Button retryBtn = menuTransform.Find("_retryButton")?.GetComponent<Button>();
-        Button levelBtn = menuTransform.Find("_levelSelectButton")?.GetComponent<Button>();
-        Button menuBtn = menuTransform.Find("_mainMenuButton")?.GetComponent<Button>();
-
-        if (retryBtn == null || levelBtn == null || menuBtn == null)
+        if (_retryButton == null || _levelSelectButton == null || _mainMenuButton == null)
         {
-            Debug.LogError("DeathScreen: Buttons missing on instantiated prefab! Check naming.");
+            Debug.LogError("DeathScreen: Buttons missing on prefab! Check naming.");
             return;
         }
 
         // Hook up listeners
-        retryBtn.onClick.AddListener(OnRetryClicked);
-        levelBtn.onClick.AddListener(OnLevelSelectClicked);
-        menuBtn.onClick.AddListener(OnMainMenuClicked);
+        _retryButton.onClick.AddListener(OnRetryClicked);
+        _levelSelectButton.onClick.AddListener(OnLevelSelectClicked);
+        _mainMenuButton.onClick.AddListener(OnMainMenuClicked);
+    }
+
+    public void ShowDeathScreen()
+    {
+        _deathMenu.SetActive(true);
+    }
+
+    public void HideDeathScreen()
+    {
+        _deathMenu.SetActive(false);
     }
 
     private void OnRetryClicked()
     {
-        Cleanup();
+        HideDeathScreen();
         LevelManager.Instance.LoadLastCheckpoint();
     }
 
     private void OnLevelSelectClicked()
     {
-        Cleanup();
+        HideDeathScreen();
         LevelManager.Instance.LoadLevelSelect();
     }
 
     private void OnMainMenuClicked()
     {
-        Cleanup();
+        HideDeathScreen();
         LevelManager.Instance.LoadMainMenu();
-    }
-
-    private void Cleanup()
-    {
-        if (_activeMenuInstance != null)
-        {
-            Destroy(_activeMenuInstance);
-            _activeMenuInstance = null;
-        }
     }
 }
