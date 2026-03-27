@@ -22,6 +22,7 @@ var searchData=
   ['invaliddialoguelineexception_19',['InvalidDialogueLineException',['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html',1,'Dialogue.InvalidDialogueLineException'],['../df/d6d/class_dialogue_1_1_invalid_dialogue_line_exception.html#a09ac3185fd7a38cdbbf82917e842431e',1,'Dialogue.InvalidDialogueLineException.InvalidDialogueLineException()']]],
   ['islevelunlocked_20',['IsLevelUnlocked',['../d6/d06/class_level_manager.html#a55e46d8c01a8f706652aad8b39a09c35',1,'LevelManager']]],
   ['islocked_21',['IsLocked',['../d8/db5/class_exit_door.html#af36940975378bc4990b1afe7a3e36e5a',1,'ExitDoor']]],
-  ['istargeted_22',['IsTargeted',['../d6/db5/class_physics_object.html#aca6400727cf811d4516b32e424356d7e',1,'PhysicsObject']]],
-  ['isunlocked_23',['isUnlocked',['../d7/d51/struct_level_status.html#ab63b0c682fa468477ee88051ed7b9ccf',1,'LevelStatus']]]
+  ['ismirror_22',['isMirror',['../d7/d0d/class_mirror.html#abe15667387334e5af0f0bfd249dc3b33',1,'Mirror']]],
+  ['istargeted_23',['IsTargeted',['../d6/db5/class_physics_object.html#aca6400727cf811d4516b32e424356d7e',1,'PhysicsObject']]],
+  ['isunlocked_24',['isUnlocked',['../d7/d51/struct_level_status.html#ab63b0c682fa468477ee88051ed7b9ccf',1,'LevelStatus']]]
 ];

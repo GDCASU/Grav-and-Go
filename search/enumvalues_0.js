@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['effect0_0',['effect0',['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afda7b888a0e8b45362d2eebbbb93582a966',1,'EffectList.cs']]],
-  ['effect1_1',['effect1',['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afdab88e4511775b25c36ce54cf0b15cdf1b',1,'EffectList.cs']]],
-  ['effect2_2',['effect2',['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afdaef387739c40beb0111776acb1b6294aa',1,'EffectList.cs']]],
-  ['effect3_3',['effect3',['../da/d22/_effect_list_8cs.html#a7eb43cea6235ff6ebc6bce2721090afdaadb5d470173dcf41362f1974c80ebf29',1,'EffectList.cs']]],
-  ['enter_4',['Enter',['../db/df8/class_layer_collision_detection.html#a7b9fee448a5b754014c251e992acd57caf1851d5600eae616ee802a31ac74701b',1,'LayerCollisionDetection']]]
+  ['cyan_0',['Cyan',['../d2/de0/_laser_01_color_01_enum_8cs.html#a954a15a59caa5870393895d18358b7c6a023c239d2f2538f140a20e72c7b73f20',1,'Laser Color Enum.cs']]]
 ];

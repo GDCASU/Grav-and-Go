@@ -1,7 +1,8 @@
 <map id="Environment" name="Environment">
-<area shape="rect" id="node2" href="dir_3c5ca60a0465b6a7b1ef67a6cd781d5a.html" title="AOE cylinder" alt="" coords="230,63,335,88"/>
-<area shape="rect" id="node3" href="dir_1458281151b75b9eeca516e4cfb43db3.html" title="Door" alt="" coords="152,63,205,88"/>
-<area shape="rect" id="node4" href="dir_82035b946f099dd47744215e6bc8fb70.html" title="Portals (3)" alt="" coords="38,63,127,88"/>
-<area shape="rect" id="clust2" href="dir_d5faea65deb7f796666c0e45f0b09cb3.html" alt="" coords="27,52,475,99"/>
-<area shape="rect" id="clust1" href="dir_10faedcd5425cee29744584be80de5e3.html" title="Mechanics" alt="" coords="16,16,485,109"/>
+<area shape="rect" id="node2" href="dir_3c5ca60a0465b6a7b1ef67a6cd781d5a.html" title="AOE cylinder" alt="" coords="318,63,423,88"/>
+<area shape="rect" id="node3" href="dir_1458281151b75b9eeca516e4cfb43db3.html" title="Door" alt="" coords="240,63,293,88"/>
+<area shape="rect" id="node4" href="dir_4918eec0fec4ff61b40e59ae5bd4a314.html" title="Lasers" alt="" coords="152,63,216,88"/>
+<area shape="rect" id="node5" href="dir_82035b946f099dd47744215e6bc8fb70.html" title="Portals (3)" alt="" coords="38,63,127,88"/>
+<area shape="rect" id="clust2" href="dir_d5faea65deb7f796666c0e45f0b09cb3.html" alt="" coords="27,52,563,99"/>
+<area shape="rect" id="clust1" href="dir_10faedcd5425cee29744584be80de5e3.html" title="Mechanics" alt="" coords="16,16,573,109"/>
 </map>

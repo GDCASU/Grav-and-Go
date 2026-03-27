@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['takedamage_0',['TakeDamage',['../df/d15/interface_i_damageable.html#ab775d4a5fca4deaae86228470b8a66fa',1,'IDamageable.TakeDamage()'],['../de/d93/class_breakable.html#ac0db4d6f3f76d91afbf57e175af909fc',1,'Breakable.TakeDamage()'],['../d2/dcb/class_player_movement_controller.html#a648743b36783a158abba87f02fd20f67',1,'PlayerMovementController.TakeDamage()']]],
-  ['togglefpscounter_1',['ToggleFPSCounter',['../df/d11/class_gameplay_menu_manager.html#ad2ad363803762b6f414f88b96c0777fd',1,'GameplayMenuManager']]],
-  ['triggerplayerdeath_2',['TriggerPlayerDeath',['../d1/d13/class_death_manager.html#af9ce2a61e6e8d801e8fb88a956798d5d',1,'DeathManager']]]
+  ['save_0',['Save',['../df/df9/class_level_data.html#a8562f013e83bbee65aa55b9e154b696e',1,'LevelData.Save()'],['../d1/d32/class_config_data.html#a5ee8b449afd493462e60f16f30d9b00d',1,'ConfigData.Save()']]],
+  ['savecheckpoint_1',['SaveCheckpoint',['../d6/d06/class_level_manager.html#acb6b5ac11f7e4a7156623f9aed1be2e1',1,'LevelManager']]],
+  ['saveconfigdata_2',['SaveConfigData',['../da/da0/class_save_manager.html#a164aa45d2eb3cedf875da2e4d423500b',1,'SaveManager.SaveConfigData(string key, int value)'],['../da/da0/class_save_manager.html#ab00bc4aed36c4837c152f8c86f50e0bf',1,'SaveManager.SaveConfigData(string key, float value)'],['../da/da0/class_save_manager.html#a52c3848dd6cf6eb00b308a37ca87a26e',1,'SaveManager.SaveConfigData(string key, string value)']]],
+  ['savedata_3',['SaveData',['../d5/d6e/class_game_settings.html#a874df26619c37fe8fd6831cfbb4922fb',1,'GameSettings']]],
+  ['savedata_3c_20t_20_3e_4',['SaveData&lt; T &gt;',['../dd/d11/class_file_data_handler.html#a9c0bf1b40af5d367033d5b9c5e38daec',1,'FileDataHandler']]],
+  ['savegame_5',['SaveGame',['../da/da0/class_save_manager.html#a854cf3a7870f1df3b23bac5fa6721ef1',1,'SaveManager']]],
+  ['savelevel_6',['SaveLevel',['../da/da0/class_save_manager.html#a38113763d617ed9373f584cafa6bf94a',1,'SaveManager']]],
+  ['setdefaultoutlinecolor_7',['SetDefaultOutlineColor',['../d5/df2/class_outline2_d.html#a957a0e42b3bcd6f6a337db317fb0e87f',1,'Outline2D']]],
+  ['seteffect_8',['setEffect',['../df/d1a/class_a_o_e__cylinder.html#abc8bbb3d5d02ed7131d13831954fe616',1,'AOE_cylinder']]],
+  ['setexitportal_9',['setExitPortal',['../df/d4f/class_portal_definition.html#a5a4ff98c97d83f44c27da1775e00c6ef',1,'PortalDefinition']]],
+  ['setframerate_10',['SetFrameRate',['../d5/d6e/class_game_settings.html#a7211eab84b1c4430df7e97ed6592bba2',1,'GameSettings']]],
+  ['setfullscreen_11',['SetFullscreen',['../d5/dbd/class_graphics_menu_manager.html#a82b1e9862fd9cb6014a40ec365a58321',1,'GraphicsMenuManager']]],
+  ['setlaserswitch_12',['SetLaserSwitch',['../df/d8e/class_laser_pointer.html#addf3dcac7514df0b765db09f8c10dd4b',1,'LaserPointer']]],
+  ['setonstate_13',['setOnState',['../df/d4f/class_portal_definition.html#a6cb80bdeaab09f9335a240451f43ea43',1,'PortalDefinition']]],
+  ['setoutline_14',['SetOutline',['../d5/df2/class_outline2_d.html#a7899ef0b883950f2236fd74b56397718',1,'Outline2D']]],
+  ['setvolume_15',['SetVolume',['../d5/dd9/class_sound_manager.html#a53cae3504dfeef5bf6b651fb10c26e51',1,'SoundManager']]],
+  ['showresults_16',['ShowResults',['../dc/d7e/class_results_menu_success.html#a0dd01760810ec81dc10ddb6a3faf4392',1,'ResultsMenuSuccess']]],
+  ['startdialogue_17',['StartDialogue',['../de/d70/class_dialogue_manager.html#a4c952b5fb5a3c41fd6ce8259df3c654b',1,'DialogueManager']]],
+  ['startglitch_18',['StartGlitch',['../dd/d1a/class_glitch_manager.html#a2fb8564061b9c151431fd3fe1dc2fb43',1,'GlitchManager']]],
+  ['stopallsounds_19',['StopAllSounds',['../d5/dd9/class_sound_manager.html#a905a97a244795293bcee61eff3be7708',1,'SoundManager']]],
+  ['stopglitch_20',['StopGlitch',['../dd/d1a/class_glitch_manager.html#aade28734ed0b975f74046ed5111783e0',1,'GlitchManager']]],
+  ['stopsound_21',['StopSound',['../d1/da0/class_simple_audio_emitter.html#ad12341b684424a8f789fc282eec6e0b9',1,'SimpleAudioEmitter']]],
+  ['stopsoundgroup_22',['StopSoundGroup',['../d5/dd9/class_sound_manager.html#a0c2fd8e9afde5e4d5f5dc9f86e823e10',1,'SoundManager']]],
+  ['stringinlist_23',['StringInList',['../d7/d65/class_string_in_list.html#afdb4fa4ed8ca943035b34d026bce3951',1,'StringInList.StringInList(params string[] list)'],['../d7/d65/class_string_in_list.html#a80c3c23ec3144035b9d864986d4174f3',1,'StringInList.StringInList(Type type, string methodName)']]],
+  ['stringtointeger_24',['StringToInteger',['../d8/d49/class_audio_emitter_tools.html#a5468f44384fb910b7bf89f1e88463bca',1,'AudioEmitterTools']]]
 ];

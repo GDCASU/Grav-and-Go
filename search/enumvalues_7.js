@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['pingpong_0',['PingPong',['../d7/d00/class_saw_blade_mover.html#a478f724ad58f52186e962ec781a51b64a99e52704462d3580db3528cad7ea9660',1,'SawBladeMover']]],
-  ['playalways_1',['PlayAlways',['../d0/d51/class_audio_emitter_settings.html#a416fdccbcfcc4dcc81d23d27487ee93da095d6609acc23bb0fcf04e70f44e0c76',1,'AudioEmitterSettings']]],
-  ['playerpref_2',['PlayerPref',['../da/da0/class_save_manager.html#ae2daa5fa6d1e40867cdc88a94bd73851ad8e161eb52606d7709b482028c7c9615',1,'SaveManager']]],
-  ['playifnotplaying_3',['PlayIfNotPlaying',['../d0/d51/class_audio_emitter_settings.html#a416fdccbcfcc4dcc81d23d27487ee93da4335ce72f2e0e5d7fa8f826f80c95c12',1,'AudioEmitterSettings']]]
+  ['master_0',['Master',['../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290af03bde11d261f185cbacfa32c1c6538c',1,'Master:&#160;SoundManager.cs'],['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8af03bde11d261f185cbacfa32c1c6538c',1,'Master:&#160;SoundManager.cs']]],
+  ['music_1',['Music',['../db/dc2/_sound_manager_8cs.html#a12392e0fa3a1e5f497752bad1bf1a290a47dcbd834e669233d7eb8a51456ed217',1,'Music:&#160;SoundManager.cs'],['../db/dc2/_sound_manager_8cs.html#a65b59f00dd0028b19107bd42f02f42f8a47dcbd834e669233d7eb8a51456ed217',1,'Music:&#160;SoundManager.cs']]]
 ];

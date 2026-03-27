@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tracking_5fturret_0',['TRACKING_TURRET',['../dc/d93/class_turret_controller.html#a5bb9abf4071b244fcea393f1cf4e781fa215b2017605f3ffeda0e2720a3ecd7c8',1,'TurretController']]]
+  ['orange_0',['Orange',['../d2/de0/_laser_01_color_01_enum_8cs.html#a954a15a59caa5870393895d18358b7c6a909cea0c97058cfe2e3ea8d675cb08e1',1,'Laser Color Enum.cs']]]
 ];

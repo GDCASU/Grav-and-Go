@@ -18,7 +18,9 @@ var searchData=
   ['eventplaytrigger_15',['eventPlayTrigger',['../d0/d51/class_audio_emitter_settings.html#aac6c778cafc4e8d718bd924ac11cfcaa',1,'AudioEmitterSettings']]],
   ['eventreference_16',['eventReference',['../d0/d51/class_audio_emitter_settings.html#a14d69cb325cd20677451b32d1649f4c9',1,'AudioEmitterSettings']]],
   ['eventstoptrigger_17',['eventStopTrigger',['../d0/d51/class_audio_emitter_settings.html#ae3aeb0fac84e95aa49acca355e276521',1,'AudioEmitterSettings']]],
-  ['exitdoor_18',['ExitDoor',['../d8/db5/class_exit_door.html',1,'']]],
-  ['exitdoor_2ecs_19',['ExitDoor.cs',['../d0/ddb/_exit_door_8cs.html',1,'']]],
-  ['exploderadius_20',['explodeRadius',['../d0/d88/class_air_mine.html#ada0a3c557e6e954b24487cfc235c1538',1,'AirMine']]]
+  ['exampledoorlistener_18',['ExampleDoorListener',['../dc/da2/class_example_door_listener.html',1,'']]],
+  ['exampledoorlistener_2ecs_19',['ExampleDoorListener.cs',['../d9/db2/_example_door_listener_8cs.html',1,'']]],
+  ['exitdoor_20',['ExitDoor',['../d8/db5/class_exit_door.html',1,'']]],
+  ['exitdoor_2ecs_21',['ExitDoor.cs',['../d0/ddb/_exit_door_8cs.html',1,'']]],
+  ['exploderadius_22',['explodeRadius',['../d0/d88/class_air_mine.html#ada0a3c557e6e954b24487cfc235c1538',1,'AirMine']]]
 ];

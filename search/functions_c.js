@@ -1,8 +1,19 @@
 var searchData=
 [
-  ['pauseallsounds_0',['PauseAllSounds',['../d5/dd9/class_sound_manager.html#aca7433eef1205212fb50ca369b10722c',1,'SoundManager']]],
-  ['pausegame_1',['PauseGame',['../d7/d25/class_pause_resume_manager.html#a3974a459269260786f29163cd05a434c',1,'PauseResumeManager']]],
-  ['pausemenuresumebutton_2',['PauseMenuResumeButton',['../d7/d25/class_pause_resume_manager.html#a59fff8f3c1f74ad774fee5e6314b1d46',1,'PauseResumeManager']]],
-  ['pausesoundgroup_3',['PauseSoundGroup',['../d5/dd9/class_sound_manager.html#ace5bbbf7646375bc8bba9221d7fefad7',1,'SoundManager']]],
-  ['playsound_4',['PlaySound',['../d9/d11/class_multi_audio_emitter.html#ac5a1ed6b0846d06832492493dff1c31a',1,'MultiAudioEmitter.PlaySound(string soundString)'],['../d9/d11/class_multi_audio_emitter.html#aa9476c5bbe1e8c3a0db6b8713a772f8d',1,'MultiAudioEmitter.PlaySound(int soundID)'],['../d1/da0/class_simple_audio_emitter.html#a0ac920e68b2a7ac0c16838ad3cd58155',1,'SimpleAudioEmitter.PlaySound()']]]
+  ['ondeath_0',['OnDeath',['../d1/d94/class_retry_manager.html#a7163202bd972bd5637c777d5c8fd6512',1,'RetryManager.OnDeath()'],['../d4/da1/class_player_animator.html#a901100ef80edda74ac678ed5eed6d787',1,'PlayerAnimator.OnDeath()']]],
+  ['oninteract_1',['OnInteract',['../de/d70/class_dialogue_manager.html#ad738571622a99aff1e20cd5ac3e14807',1,'DialogueManager']]],
+  ['onlaserhit_2',['OnLaserHit',['../d5/d1b/class_laser_combiner.html#a04e44fc6a9ca7756abbfa757c35373e5',1,'LaserCombiner']]],
+  ['onlevelcompleted_3',['OnLevelCompleted',['../dc/d7e/class_results_menu_success.html#ae47ff797aa6a3d8c043303f3437f50bd',1,'ResultsMenuSuccess']]],
+  ['onlevelselect_4',['OnLevelSelect',['../dc/d7e/class_results_menu_success.html#ad4ad9f4159574527034a2f5f5a17f913',1,'ResultsMenuSuccess']]],
+  ['onmainmenu_5',['OnMainMenu',['../dc/d7e/class_results_menu_success.html#afa5a5b28bbfb7c9372c2a46873a38b89',1,'ResultsMenuSuccess']]],
+  ['onnextlevel_6',['OnNextLevel',['../dc/d7e/class_results_menu_success.html#aa762382d09124d5fe4ffed3a4e829875',1,'ResultsMenuSuccess']]],
+  ['onretry_7',['OnRetry',['../d1/d94/class_retry_manager.html#ab1de4e103b072edb38de80f3df994de7',1,'RetryManager.OnRetry()'],['../dc/d7e/class_results_menu_success.html#a6597c664315b26d7d455ffe276c8952e',1,'ResultsMenuSuccess.OnRetry()']]],
+  ['open_8',['open',['../dc/da2/class_example_door_listener.html#a51a296e85955e6201aa0ed06afcb7e33',1,'ExampleDoorListener']]],
+  ['opengithublink_9',['OpenGitHubLink',['../d3/dcd/class_social_links.html#add508fe37bf383b6394fc3c8d1ec4820',1,'SocialLinks']]],
+  ['openinstagramlink_10',['OpenInstagramLink',['../d3/dcd/class_social_links.html#a674ab0b8720dcb5ea12182f5eccc2a8b',1,'SocialLinks']]],
+  ['opensoundcloudlink_11',['OpenSoundCloudLink',['../d3/dcd/class_social_links.html#aef7930ea94ee141a2b18d450a7814305',1,'SocialLinks']]],
+  ['opensteamlink_12',['OpenSteamLink',['../d3/dcd/class_social_links.html#a84383a468f6bd80baf4c8765cc899913',1,'SocialLinks']]],
+  ['openyoutubelink_13',['OpenYoutubeLink',['../d3/dcd/class_social_links.html#a30b3c2af720891628d8c17105a865451',1,'SocialLinks']]],
+  ['operator_21_3d_14',['operator!=',['../d4/dd0/struct_level.html#aa8fb2ae4e94f3520cd9bf0f4d50800f9',1,'Level']]],
+  ['operator_3d_3d_15',['operator==',['../d4/dd0/struct_level.html#a6452e1b6d8883eb3f4ea81390ae86dc5',1,'Level']]]
 ];
