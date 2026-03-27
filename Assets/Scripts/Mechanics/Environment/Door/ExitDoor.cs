@@ -6,8 +6,9 @@ using System.Collections;
  * Max Rothenberger
  *
  * Modified By:
- * Cami Lee
+ * Cami Lee (to support locked doors)
  * Chandler Van
+ * Joshua Wright (to support timer and speedrunning saves)
  */// --------------------------------------------------------
 
 public class ExitDoor : MonoBehaviour
@@ -17,6 +18,8 @@ public class ExitDoor : MonoBehaviour
 
     [Tooltip("The type of door, which determines how it interacts with the player.")]
     [SerializeField] private DoorType _type;
+
+    [SerializeField] private LevelTimer timer;
 
     [Header("Locked Door Attributes")]
     [SerializeField] private GameObject _lockedVisuals;
@@ -85,6 +88,14 @@ public class ExitDoor : MonoBehaviour
 
     private IEnumerator EndLevel()
     {
+        if (timer != null)
+        {
+            timer.ToggleTimer(false);
+            
+            Debug.Log("Update Level Time Triggered");
+            LevelManager.Instance.UpdateLevelTime(timer.TotalTime);
+        }
+
         Debug.Log("Level Complete");
         yield return new WaitForSeconds(2f);
 
