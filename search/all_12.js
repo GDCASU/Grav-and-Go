@@ -41,7 +41,7 @@ var searchData=
   ['speaker_2ecs_38',['Speaker.cs',['../d8/d34/_speaker_8cs.html',1,'']]],
   ['speakerid_39',['speakerID',['../d2/dc5/struct_dialogue_1_1_line.html#a6a81c1260e6e06f00f878b962e553c2f',1,'Dialogue.Line.speakerID'],['../db/d33/class_speaker.html#a08f3bf2f1bef2000222368970664f9b0',1,'Speaker.speakerID']]],
   ['special_40',['Special',['../dd/db2/_physics_01_object_8cs.html#a9d7ae902d196bdcb62e85cfbd14108ceab4c2b550635fe54fd29f2b64dfaca55d',1,'Physics Object.cs']]],
-  ['speed_41',['speed',['../d4/de1/class_dancing_midpoint.html#a29664c0ba1c566674b1aad6cbcb3651b',1,'DancingMidpoint']]],
+  ['speed_41',['speed',['../de/d98/class_bullet_controller.html#ada1bb6cee74090f805cb6eeeb9b0f17b',1,'BulletController.speed'],['../d4/de1/class_dancing_midpoint.html#a29664c0ba1c566674b1aad6cbcb3651b',1,'DancingMidpoint.speed']]],
   ['start_42',['start',['../d1/d96/class_equidistant_points_updater.html#a4f25b88865990b720aced96350e62b6b',1,'EquidistantPointsUpdater']]],
   ['startdialogue_43',['StartDialogue',['../de/d70/class_dialogue_manager.html#a4c952b5fb5a3c41fd6ce8259df3c654b',1,'DialogueManager']]],
   ['startglitch_44',['StartGlitch',['../dd/d1a/class_glitch_manager.html#a2fb8564061b9c151431fd3fe1dc2fb43',1,'GlitchManager']]],

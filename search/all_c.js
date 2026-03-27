@@ -9,7 +9,7 @@ var searchData=
   ['maxraycastdistance_6',['maxRaycastDistance',['../db/d9e/class_gravity_gun_settings.html#ad25566427bd856212743264d9a7a90b0',1,'GravityGunSettings']]],
   ['maxspeed_7',['MaxSpeed',['../da/dd5/class_scriptable_stats.html#aa3d8e12bb9c2014d7ccea6e97e82391a',1,'ScriptableStats']]],
   ['maxvelocity_8',['maxVelocity',['../db/d9e/class_gravity_gun_settings.html#a0623ebbff7b9798f65d1f6c507a12e88',1,'GravityGunSettings']]],
-  ['motiontype_9',['motionType',['../d7/d00/class_saw_blade_mover.html#a43cbdb47daa92ec2c50aa43e8c35c59d',1,'SawBladeMover']]],
+  ['motiontype_9',['MotionType',['../d7/d00/class_saw_blade_mover.html#a478f724ad58f52186e962ec781a51b64',1,'SawBladeMover']]],
   ['movement_10',['movement',['../d2/dcb/class_player_movement_controller.html#a54b84ab377e395dd6dc35370bf6caafd',1,'PlayerMovementController']]],
   ['multiaudioemitter_11',['MultiAudioEmitter',['../d9/d11/class_multi_audio_emitter.html',1,'']]],
   ['multiaudioemitter_2ecs_12',['MultiAudioEmitter.cs',['../d8/dfb/_multi_audio_emitter_8cs.html',1,'']]],
