@@ -11,5 +11,7 @@ var searchData=
   ['blockingobjecttimebreak_8',['blockingObjectTimeBreak',['../db/d9e/class_gravity_gun_settings.html#a662ca11fad5e301e572ae4b815a57f68',1,'GravityGunSettings']]],
   ['breakable_9',['Breakable',['../de/d93/class_breakable.html',1,'']]],
   ['breakableboxes_2ecs_10',['BreakableBoxes.cs',['../d4/d83/_breakable_boxes_8cs.html',1,'']]],
-  ['breakobj_11',['breakObj',['../de/d93/class_breakable.html#acfea1af4bf4070164458b9d5b3b160ff',1,'Breakable']]]
+  ['breakobj_11',['breakObj',['../de/d93/class_breakable.html#acfea1af4bf4070164458b9d5b3b160ff',1,'Breakable']]],
+  ['bulletcontroller_12',['BulletController',['../de/d98/class_bullet_controller.html',1,'']]],
+  ['bulletcontroller_2ecs_13',['BulletController.cs',['../d1/ddb/_bullet_controller_8cs.html',1,'']]]
 ];

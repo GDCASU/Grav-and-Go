@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "AirMine", "d0/d88/class_air_mine.html", "d0/d88/class_air_mine" ],
     [ "Ammo", "d7/d27/class_ammo.html", "d7/d27/class_ammo" ],
     [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", "df/d1a/class_a_o_e__cylinder" ],
     [ "AudioEmitterSettings", "d0/d51/class_audio_emitter_settings.html", "d0/d51/class_audio_emitter_settings" ],
@@ -9,6 +10,7 @@ var annotated_dup =
     [ "BezierCurve", "df/da0/class_bezier_curve.html", "df/da0/class_bezier_curve" ],
     [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", "d7/dc3/class_bezier_from_transforms" ],
     [ "Breakable", "de/d93/class_breakable.html", "de/d93/class_breakable" ],
+    [ "BulletController", "de/d98/class_bullet_controller.html", "de/d98/class_bullet_controller" ],
     [ "ChapterData", "dc/d70/class_chapter_data.html", "dc/d70/class_chapter_data" ],
     [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
     [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],

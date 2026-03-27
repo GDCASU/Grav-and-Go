@@ -25,10 +25,12 @@ var hierarchy =
     [ "Dialogue.Line", "d2/dc5/struct_dialogue_1_1_line.html", null ],
     [ "MonoBehaviour", null, [
       [ "AOE_cylinder", "df/d1a/class_a_o_e__cylinder.html", null ],
+      [ "AirMine", "d0/d88/class_air_mine.html", null ],
       [ "AudioMenuManager", "df/d60/class_audio_menu_manager.html", null ],
       [ "BearTrap", "d8/dfa/class_bear_trap.html", null ],
       [ "BezierFromTransforms", "d7/dc3/class_bezier_from_transforms.html", null ],
       [ "Breakable", "de/d93/class_breakable.html", null ],
+      [ "BulletController", "de/d98/class_bullet_controller.html", null ],
       [ "CheatsManager", "d1/d86/class_cheats_manager.html", null ],
       [ "Checkpoint", "d1/d24/class_checkpoint.html", null ],
       [ "DancingMidpoint", "d4/de1/class_dancing_midpoint.html", null ],

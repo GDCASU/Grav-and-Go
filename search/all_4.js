@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['damage_0',['damage',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a4fa207995fa4b6cc5065e9941b642ef7',1,'LayerCollisionDetection::LayerEventPair']]],
+  ['damage_0',['damage',['../d0/d88/class_air_mine.html#abdca2e611125676d2550ee0341783045',1,'AirMine.damage'],['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#a4fa207995fa4b6cc5065e9941b642ef7',1,'LayerCollisionDetection.LayerEventPair.damage']]],
   ['dancingmidpoint_1',['DancingMidpoint',['../d4/de1/class_dancing_midpoint.html',1,'']]],
   ['dancingmidpoint_2ecs_2',['DancingMidpoint.cs',['../d6/dd8/_dancing_midpoint_8cs.html',1,'']]],
   ['dataclasses_2ecs_3',['DataClasses.cs',['../d5/df9/_data_classes_8cs.html',1,'']]],
@@ -9,16 +9,17 @@ var searchData=
   ['deathmanager_2ecs_6',['DeathManager.cs',['../d3/d01/_death_manager_8cs.html',1,'']]],
   ['debug_7',['debug',['../d2/da1/class_layer_collision_detection_1_1_layer_event_pair.html#ad588a55058ac83c489b0f14abeaf5fd5',1,'LayerCollisionDetection::LayerEventPair']]],
   ['defaultlineofsightcolor_8',['defaultLineOfSightColor',['../db/d9e/class_gravity_gun_settings.html#a831cac14b503663c0df4f55eb9d08cac',1,'GravityGunSettings']]],
-  ['dialogue_9',['Dialogue',['../d0/d9d/class_dialogue.html',1,'']]],
-  ['dialogue_2ecs_10',['Dialogue.cs',['../d1/d76/_dialogue_8cs.html',1,'']]],
-  ['dialoguemanager_11',['DialogueManager',['../de/d70/class_dialogue_manager.html',1,'']]],
-  ['dialoguemanager_2ecs_12',['DialogueManager.cs',['../d1/de7/_dialogue_manager_8cs.html',1,'']]],
-  ['disabletarget_13',['DisableTarget',['../d6/db5/class_physics_object.html#a551cc95c4ae240a49378143862497299',1,'PhysicsObject']]],
-  ['displayname_14',['displayName',['../db/d33/class_speaker.html#ae0763512fdc0e5af4366fd61181546b0',1,'Speaker']]],
-  ['displaytextbubble_15',['DisplayTextBubble',['../de/d70/class_dialogue_manager.html#a90fe217bafeaed898e4d4432b2d227ee',1,'DialogueManager']]],
-  ['dodebug_16',['DoDebug',['../d7/dd1/class_trigger_box.html#a2cd7ec88aecc427a301243663af4124e',1,'TriggerBox']]],
-  ['doorkey_17',['DoorKey',['../d7/de8/class_door_key.html',1,'']]],
-  ['doorkey_2ecs_18',['DoorKey.cs',['../da/d2c/_door_key_8cs.html',1,'']]],
-  ['dynamiclinebezier_19',['DynamicLineBezier',['../d1/dc9/class_dynamic_line_bezier.html',1,'']]],
-  ['dynamiclinebezier_2ecs_20',['DynamicLineBezier.cs',['../dc/d98/_dynamic_line_bezier_8cs.html',1,'']]]
+  ['detectradius_9',['detectRadius',['../d0/d88/class_air_mine.html#a0509b05cf63e9adc4273001eda7de219',1,'AirMine']]],
+  ['dialogue_10',['Dialogue',['../d0/d9d/class_dialogue.html',1,'']]],
+  ['dialogue_2ecs_11',['Dialogue.cs',['../d1/d76/_dialogue_8cs.html',1,'']]],
+  ['dialoguemanager_12',['DialogueManager',['../de/d70/class_dialogue_manager.html',1,'']]],
+  ['dialoguemanager_2ecs_13',['DialogueManager.cs',['../d1/de7/_dialogue_manager_8cs.html',1,'']]],
+  ['disabletarget_14',['DisableTarget',['../d6/db5/class_physics_object.html#a551cc95c4ae240a49378143862497299',1,'PhysicsObject']]],
+  ['displayname_15',['displayName',['../db/d33/class_speaker.html#ae0763512fdc0e5af4366fd61181546b0',1,'Speaker']]],
+  ['displaytextbubble_16',['DisplayTextBubble',['../de/d70/class_dialogue_manager.html#a90fe217bafeaed898e4d4432b2d227ee',1,'DialogueManager']]],
+  ['dodebug_17',['DoDebug',['../d7/dd1/class_trigger_box.html#a2cd7ec88aecc427a301243663af4124e',1,'TriggerBox']]],
+  ['doorkey_18',['DoorKey',['../d7/de8/class_door_key.html',1,'']]],
+  ['doorkey_2ecs_19',['DoorKey.cs',['../da/d2c/_door_key_8cs.html',1,'']]],
+  ['dynamiclinebezier_20',['DynamicLineBezier',['../d1/dc9/class_dynamic_line_bezier.html',1,'']]],
+  ['dynamiclinebezier_2ecs_21',['DynamicLineBezier.cs',['../dc/d98/_dynamic_line_bezier_8cs.html',1,'']]]
 ];
