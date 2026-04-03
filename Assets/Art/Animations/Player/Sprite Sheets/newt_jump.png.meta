@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 9e66fbcb6193ed94bb3e5b791a7ec566
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5549402110221511542
+    second: Newt_Jump_spritesheet_0
+  - first:
+      213: -3101680751243989983
+    second: Newt_Jump_spritesheet_1
+  - first:
+      213: -1144431203959548943
+    second: Newt_Jump_spritesheet_2
+  - first:
+      213: 8762758737081221683
+    second: Newt_Jump_spritesheet_3
+  - first:
+      213: 349551529920818110
+    second: Newt_Jump_spritesheet_4
+  - first:
+      213: -1340460652076675632
+    second: Newt_Jump_spritesheet_5
+  - first:
+      213: -2601599206771179300
+    second: Newt_Jump_spritesheet_6
+  - first:
+      213: 1135078570946484064
+    second: Newt_Jump_spritesheet_7
+  - first:
+      213: -8519618779080648245
+    second: Newt_Jump_spritesheet_8
+  - first:
+      213: 6339749727928118712
+    second: Newt_Jump_spritesheet_9
+  - first:
+      213: 6364171297033784795
+    second: Newt_Jump_spritesheet_10
+  - first:
+      213: 8399624059231940414
+    second: Newt_Jump_spritesheet_11
+  - first:
+      213: 8954043332549888560
+    second: Newt_Jump_spritesheet_12
+  - first:
+      213: 1207337181405310630
+    second: Newt_Jump_spritesheet_13
+  - first:
+      213: -4163791856893430768
+    second: Newt_Jump_spritesheet_14
+  - first:
+      213: -166374524407451224
+    second: Newt_Jump_spritesheet_15
+  - first:
+      213: 1698058577171481578
+    second: Newt_Jump_spritesheet_16
+  - first:
+      213: -4029866713232840584
+    second: Newt_Jump_spritesheet_17
+  - first:
+      213: -8804041398202132633
+    second: Newt_Jump_spritesheet_18
+  - first:
+      213: 3877695005721376783
+    second: Newt_Jump_spritesheet_19
+  - first:
+      213: -7826192172790700973
+    second: Newt_Jump_spritesheet_20
+  - first:
+      213: 2490230461647613914
+    second: Newt_Jump_spritesheet_21
+  - first:
+      213: 2521756087513221034
+    second: Newt_Jump_spritesheet_22
+  - first:
+      213: -5512856439016303559
+    second: Newt_Jump_spritesheet_23
+  - first:
+      213: 465840996786827865
+    second: Newt_Jump_spritesheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 41.11111
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: newt_jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1256
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599ce3df273a42047846d69e21850df6
+      internalID: 1068716050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_1
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1256
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed53619ea4342604096e38afb390d02c
+      internalID: -2061101657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_2
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1256
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffe43602fb46de44a4597758cd08580
+      internalID: 583795856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_3
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1256
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae75ea5838819f4aa415c7d5636aa17
+      internalID: -2045451806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_4
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1256
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29af268f30238ef49bd70e227ef420fb
+      internalID: -739508325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 942
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdc731d6c0cc854780b747449350ece
+      internalID: -1045145762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 942
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117cf0547326ec143ae2b4a9da2736a6
+      internalID: -1104205088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 942
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9f71f9a35fc994dbf1c47e4bae230f
+      internalID: -2048752513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_8
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 942
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a04dc17f4bdb741ae6c6f6c209eecd
+      internalID: 204380364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_9
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 942
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f8685113bd8684cbb5c7798590e060
+      internalID: 1456769761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cd6c9808ad7bb4bbc390bad3c792b6
+      internalID: -534530670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_11
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 628
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801c7b7f7f3e48b49b016ffb88f11dc2
+      internalID: -1151187286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 628
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242babe7611d7ea4d9cd8c00c45d44e3
+      internalID: -1364615295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_13
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 628
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525c7d6674d9a294ca6d2b37b1388ae1
+      internalID: 275344961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_14
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 628
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe77ed5f7627c7f4f9474710d60cb4c8
+      internalID: 54965122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7db70cb80fd35489a8f820f471931d
+      internalID: -850656576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 314
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3aaa131a392104482a8f64de19a33e
+      internalID: 477155908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 314
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89eb341a39084994baf25b34bd7ab390
+      internalID: -1406250513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_18
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 314
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0bcf5abd9baea45919d93d600d8415
+      internalID: -219390531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_19
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 314
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5164b3e2c391a43991f98789dd221b
+      internalID: -2041890129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c123b44917f624f82e17b6b8a1b892
+      internalID: -1721390504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988283dcacb317444bfb5cf9305466c2
+      internalID: 100055128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_22
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2220a43b779947c42b234697a3ce7509
+      internalID: -1996115163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_23
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 0
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ab8b272352a2d409ee8d0a1d0b2acf
+      internalID: -1161027636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newt_jump_24
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 296
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af73b1062bc82954ca3a3c7e86d2321a
+      internalID: -929168684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 07a23928f79b62f49ae1ec5d3ab3ed54
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      newt_jump_0: 1068716050
+      newt_jump_1: -2061101657
+      newt_jump_10: -534530670
+      newt_jump_11: -1151187286
+      newt_jump_12: -1364615295
+      newt_jump_13: 275344961
+      newt_jump_14: 54965122
+      newt_jump_15: -850656576
+      newt_jump_16: 477155908
+      newt_jump_17: -1406250513
+      newt_jump_18: -219390531
+      newt_jump_19: -2041890129
+      newt_jump_2: 583795856
+      newt_jump_20: -1721390504
+      newt_jump_21: 100055128
+      newt_jump_22: -1996115163
+      newt_jump_23: -1161027636
+      newt_jump_24: -929168684
+      newt_jump_3: -2045451806
+      newt_jump_4: -739508325
+      newt_jump_5: -1045145762
+      newt_jump_6: -1104205088
+      newt_jump_7: -2048752513
+      newt_jump_8: 204380364
+      newt_jump_9: 1456769761
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

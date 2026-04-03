@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__credits" xml:lang="en-US">
-<title>
-<para>Credits </para>
-</title>
-<indexterm><primary>Credits</primary></indexterm>
-
-<para>Thanks to Kerry Enfinger for submitting a bug report and how to fix it. </para>
-</section>
