@@ -30,6 +30,7 @@ public class LaserPointer : MonoBehaviour
     [SerializeField] private float LaserWidth = 0.1f; //this is a random choice, change if needed
     [SerializeField] private GameObject Emitter = null;
     [SerializeField] private bool LaserOn = true;
+    [SerializeField] private Material LaserMat;
     [Header("Laser Prefab to Spawn(Invisible)")]
     [SerializeField] public GameObject LaserPrefab;
     private Vector2 laserDir;
@@ -109,8 +110,8 @@ public class LaserPointer : MonoBehaviour
     void LaserSetup()
     {
         // swap to GetComponenet?
-        Laser = this.AddComponent<LineRenderer>();
-        Laser.material = new Material(Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply")); // this finds a default line shader
+        Laser = this.GetComponent<LineRenderer>();
+        Laser.material = LaserMat; // this finds a default line shader
 
 
         Color laserActualColor = global::LaserColor.getColorFromEnum(laserColor);

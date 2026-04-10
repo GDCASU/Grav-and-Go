@@ -25,10 +25,14 @@ public class LaserCombiner : MonoBehaviour
     private LaserColorEnum Color1, Color2 = LaserColorEnum.None;
     private LaserPointer LaserScript;
     private Coroutine ColorTimerRef1, ColorTimerRef2;
+    [Header("Combiner Vanity Elements")]
+    [SerializeField] private GameObject CombinerColor = null;
+    private SpriteRenderer CombinerRenderer;
     private void Awake()
     {
         LaserScript = this.GetComponent<LaserPointer>();
         LaserScript.SetLaserSwitch(false);
+        if(!CombinerColor.TryGetComponent<SpriteRenderer>(out CombinerRenderer)) CombinerRenderer = null;
     }
     void Update()
     {
@@ -59,6 +63,7 @@ public class LaserCombiner : MonoBehaviour
         }
         LaserScript.SetLaserSwitch(true);
         LaserScript.laserColor = (LaserColorEnum)laserColorID;
+        if(CombinerRenderer != null) CombinerRenderer.color = LaserColor.getColorFromEnum((LaserColorEnum)laserColorID);
     }
     public void OnLaserHit(LaserColorEnum color, float tickSpeed)
     {

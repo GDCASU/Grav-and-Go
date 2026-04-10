@@ -24,7 +24,6 @@ public class LaserSensor : MonoBehaviour
     [SerializeField] private bool needCertainColor = true;
     [SerializeField] private LaserColorEnum requiredColor = LaserColorEnum.Red;
     [Header("Laser Timings")]
-    [SerializeField] private float TimeToTurnOn = 0.5f;
     [SerializeField] private float TimeToTurnOff = 0.5f;
 
     [Header("Events")]
