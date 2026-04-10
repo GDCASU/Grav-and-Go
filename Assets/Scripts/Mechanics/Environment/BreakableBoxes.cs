@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
+
+[RequireComponent(typeof(Rigidbody2D))]
 //using static UnityEditor.Searcher.SearcherWindow.Alignment; //what is this
 
 
@@ -34,7 +36,7 @@ public class Breakable : MonoBehaviour, IDamageable
     private int currentHealth;
     private bool destroyed = false;
     public float chunks = 3f; //^2
-    private List<GameObject> myChunks = new List<GameObject>();
+    private List<GameObject> myChunks = new();
     private Vector2 collisionPoint;
     private Vector2 collisionVelocity;
     [HideInInspector]
@@ -42,7 +44,7 @@ public class Breakable : MonoBehaviour, IDamageable
     public float fadeTime = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    new void Start()
+    private void Start()
     {
         currentHealth = maxHealth;
         objMass = GetComponent<Rigidbody2D>().mass;
@@ -122,12 +124,12 @@ public class Breakable : MonoBehaviour, IDamageable
         //Destroy(box);
     }
 
-    public void TakeDamage(int damage, Rigidbody2D rb)
+    public void TakeDamage(int damage, Rigidbody2D source)
     {
-        if (rb != null)
+        if (source != null)
         {
-            collisionPoint = rb.position;
-            collisionVelocity = rb.linearVelocity;
+            collisionPoint = source.position;
+            collisionVelocity = source.linearVelocity;
             //objMass = rb.mass;
             print("collision point: " + collisionPoint.ToString());
         }

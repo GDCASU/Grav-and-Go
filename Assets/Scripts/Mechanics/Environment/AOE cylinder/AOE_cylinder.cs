@@ -75,10 +75,9 @@ using UnityEngine;
         }
 
         GrabbableObject grabbedObj;
-        bool isGrabbed = false; 
-        if(collision.TryGetComponent<GrabbableObject>(out grabbedObj))
-        {
-            isGrabbed = grabbedObj.get_isTargeted();
+        bool isGrabbed = false; //if the object doesn't have GrabbableObject then we still interact with it. Change to true to not interact with them
+        if(collision.TryGetComponent<GrabbableObject>(out grabbedObj)){
+            isGrabbed = grabbedObj.IsTargeted();
         }
 
         if(!isGrabbed)

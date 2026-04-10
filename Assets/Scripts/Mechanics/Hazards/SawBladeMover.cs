@@ -1,13 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
-using NUnit.Framework;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
-using Unity.VisualScripting;
-using UnityEditor;
+using System;
 
 /**
  * Matthew Glos 9/12/25
@@ -16,144 +10,99 @@ using UnityEditor;
  * Supports an arbitrary number of points, customizable interpolation, and consistent motion speed across different path lengths.
  * 
  * could be used for moving other objects as well
+ * 
+ * Modified By:
+ * Chandler Van
  */
 public class SawBladeMover : MonoBehaviour
 {
-    public enum motionType
-    {
-        Loop_Disconnected,
-        Loop_Connected,
+    public enum MotionType
+    {   
+        Looping,
         PingPong
     }
 
-    [Tooltip("List of Points the object travels between")]
-    [SerializeField] List<Transform> PathPoints;
+    [Header("References")]
+    [Tooltip("The object containing all the points of the sawblade path")]
+    [SerializeField] private Transform pathPointContainer;
+    [SerializeField] private Sawblade sawBlade;
 
-    [Tooltip("Automatically assign path points on start as the children of AutPathRoot. Heirarchy order determines the order the object traverses the points in.")]
-    [SerializeField] bool AutoAssignPath;
-    [SerializeField] GameObject AutoPathRoot;
-
+    [Header("Motion Settings")]
+    [Tooltip("Set the index of the node the object should start at")]
+    [SerializeField] int initialPathPosition;
     [Tooltip("Interpolation curve the object follows between points")]
     [SerializeField] AnimationCurve interpolationCurve;
     [SerializeField] float travelSpeed;
+    [Tooltip("How fast the sawblade spins (Cosmetic)")]
     [SerializeField] float rotationSpeed;
-    [SerializeField] motionType motion;
+    [SerializeField] MotionType motion;
 
-    [Tooltip("Set the index of the node the object should start at")]
-    [SerializeField] int PathNodeInitialOffset;
-    [Tooltip("Set how far along the first edge the object should start at as a percentage of the distance")]
-    [SerializeField] float PathInitialOffsetPercent;
+    [Header("Damage Settings")]
+    [SerializeField] int damage;
 
-
-    private int pathIndex = 0;
+    public int pathIndex = 0;
     private int direction = 1;
     private float t = 0f;
 
-    private Vector3 pos1;
-    private Vector3 pos2;
+    private readonly List<Transform> pathPoints = new();
 
-    private bool returnTrip = false;
+    private void Awake()
+    {
+        pathPoints.AddRange(pathPointContainer.GetComponentsInChildren<Transform>());
+
+        if(motion == MotionType.PingPong)
+        {
+            direction *= -1;
+        }
+    }
+
     void Start()
     {
-        pathIndex = PathNodeInitialOffset;
-
-        if (AutoAssignPath)
-        {
-            PathPoints = new List<Transform>();
-
-            foreach (Transform g in AutoPathRoot.GetComponentsInChildren<Transform>())
-            {
-                if (g != AutoPathRoot.transform)
-                    PathPoints.Add(g);
-            }
-        }
-
-        pos1 = PathPoints[pathIndex].position;
-        pos2 = PathPoints[pathIndex + 1].position;
-
-        this.transform.position = Vector3.Lerp(pos1, pos2, interpolationCurve.Evaluate(PathInitialOffsetPercent));
+        pathIndex = initialPathPosition;
+        sawBlade.transform.position = pathPoints[pathIndex].position;
+        sawBlade.Init(damage);
     }
 
     private void Update()
     {
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+        sawBlade.transform.position = Vector3.MoveTowards(sawBlade.transform.position, pathPoints[pathIndex].position, travelSpeed * Time.deltaTime);
+        sawBlade.transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
 
-        t += Time.deltaTime * travelSpeed;
-        float animIndex = ((t / (Vector3.Distance(pos1, pos2))) + PathInitialOffsetPercent) % 1f;
-        this.transform.position = Vector3.Lerp(pos1, pos2, interpolationCurve.Evaluate(animIndex));
-
-        if (Vector3.Distance(this.transform.position, pos2) > .01f) return;
-
-        PathInitialOffsetPercent = 0f;
-        switch (motion)
+        if (Vector3.Distance(sawBlade.transform.position, pathPoints[pathIndex].position) < 0.01f)
         {
-            case motionType.Loop_Connected:
-                {
-                    pathIndex += 1;
-                    t = 0;
-
-                    pos1 = PathPoints[pathIndex % PathPoints.Count].position;
-                    pos2 = PathPoints[(pathIndex + 1) % PathPoints.Count].position;
-
+            sawBlade.transform.position = pathPoints[pathIndex].position;
+            
+            switch(motion)
+            {
+                case MotionType.Looping:
+                    pathIndex = (pathIndex + 1) % pathPoints.Count;
                     break;
-                }
-
-            case motionType.Loop_Disconnected:
-                {
-                    pathIndex += 1;
-                    t = 0;
-
-                    if (pathIndex >= PathPoints.Count - 1)
-                    {
-                        pathIndex = 0;
-                        pos1 = PathPoints[pathIndex % PathPoints.Count].position;
-                        pos2 = PathPoints[(pathIndex + 1) % PathPoints.Count].position;
-                        transform.position = pos1;
-                        break;
-                    }
-
-                    pos1 = PathPoints[pathIndex % PathPoints.Count].position;
-                    pos2 = PathPoints[(pathIndex + 1) % PathPoints.Count].position;
-
-                    break;
-                }
-
-            case motionType.PingPong:
-                {
-                    pathIndex += direction;
-                    t = 0;
-
-                    if (pathIndex >= PathPoints.Count - 1 || pathIndex == 0)
-                    {
+                case MotionType.PingPong:
+                    if(pathIndex == pathPoints.Count - 1 || pathIndex == 0)
                         direction *= -1;
-                    }
-
-                    pos1 = PathPoints[pathIndex % PathPoints.Count].position;
-                    pos2 = PathPoints[(pathIndex + direction) % PathPoints.Count].position;
-
+                    pathIndex += direction;
                     break;
-                }
+            };
         }
+        
     }
+
     private void OnDrawGizmos()
     {
-        if (PathPoints == null || PathPoints.Count < 2)
+        if (pathPoints == null || pathPoints.Count < 2)
             return;
 
         Gizmos.color = Color.red;
 
-        for (int i = 0; i < PathPoints.Count - 1; i++)
+        for (int i = 0; i < pathPoints.Count - 1; i++)
         {
-            if (PathPoints[i] != null && PathPoints[i + 1] != null)
+            if (pathPoints[i] != null && pathPoints[i + 1] != null)
             {
-                Gizmos.DrawLine(PathPoints[i].position, PathPoints[i + 1].position);
+                Gizmos.DrawLine(pathPoints[i].position, pathPoints[i + 1].position);
             }
         }
 
-        if (motion == motionType.Loop_Connected && PathPoints.First() != null && PathPoints.Last() != null)
-        {
-            Gizmos.DrawLine(PathPoints.Last().position, PathPoints.First().position);
-        }
+        
     }
 
-}
+}

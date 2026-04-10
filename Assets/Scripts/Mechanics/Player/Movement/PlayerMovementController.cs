@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 using Unity.VisualScripting;
+using System.Collections.Generic;
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -64,7 +66,7 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     [SerializeField, InspectorReadOnly] private float _timeJumpWasPressed;
     [SerializeField, InspectorReadOnly] private float _timeJumpWasReleased;
 
-
+    [InspectorReadOnly] public TractorBeam _tractorBeam;
 
     // Private helpers
     private float _time; // Global time accumulator for coyote / buffer windows
@@ -106,11 +108,19 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
         CheckCollisions();  // Ground / ceiling detection first — movement depends on result
 
-        HandleJump();
-        HandleGravity();
+        if(_tractorBeam != null)
+        {
+            HandleTractorPull();
+        }
+        else
+        {
+			HandleJump();
+			HandleGravity();
+			ApplyMovement();    // Finally push calculated velocity to the Rigidbody
+		}
 
-        ApplyMovement();    // Finally push calculated velocity to the Rigidbody
-    }
+		_rb.linearVelocity = velocity;
+	}
 
     #endregion
 
@@ -195,10 +205,27 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
     #endregion
 
-    #region Jumping
+    private void HandleTractorPull()
+    {
+        Vector2 targetVelocity = _tractorBeam.PullSpeed * _tractorBeam.GetPullVector();
+        Vector2 difference = targetVelocity - velocity;
+        if(difference.magnitude > _tractorBeam.ObjectDeceleration * Time.fixedDeltaTime)
+        {
+            velocity += _tractorBeam.ObjectDeceleration * Time.fixedDeltaTime * difference.normalized;
+        }
+        else
+        {
+            velocity = targetVelocity;
+        }
 
-    // Convenience properties
-    private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
+        // Prevent auto jump upon leaving tractor beam
+		_jumpToConsume = false;
+	}
+
+	#region Jumping
+
+	// Convenience properties
+	private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
     private bool CanUseCoyote => _coyoteUsable && !_grounded &&
                                     _time < _frameLeftGrounded + _stats.CoyoteTime;
 
@@ -277,8 +304,6 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
             // Only play walk sound if grounded
             if (_grounded) _walkSound.PlaySound();
         }
-
-        _rb.linearVelocity = velocity;
     }
 
     #endregion
