@@ -3023,18 +3023,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 229071595762212281, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
-      propertyPath: _type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 805067331654357345, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190680267975609074, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 4375367433529622767, guid: e70e255c5f4f4cd4b9116351d8e6c3cc, type: 3}
       propertyPath: m_Name
       value: Exit Door
