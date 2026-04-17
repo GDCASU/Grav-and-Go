@@ -254,6 +254,11 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
         Jumped?.Invoke();
     }
 
+    public void AddVelocity(Vector2 force)
+    {
+        velocity += force;
+    }
+
     #endregion
 
     #region Gravity
