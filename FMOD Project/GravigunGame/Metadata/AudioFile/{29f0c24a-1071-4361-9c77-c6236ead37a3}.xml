@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{29f0c24a-1071-4361-9c77-c6236ead37a3}">
+		<property name="assetPath">
+			<value>Dialogue/Chapter 1/Big Monkey Boss/march 27th VGDC voice  acting 52 Big Boss 2(5).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e9709488-b137-4f4b-9184-437d4d6105a8}</destination>
+		</relationship>
+	</object>
+</objects>
