@@ -2,15 +2,17 @@
 Video Game Development Club: Repository for the year 2025-2026
 
 ## Officers: 
-- President [FalconKiaT](https://github.com/FalconKiaT)
-- Vice President [Daniaurena](https://github.com/Daniaurena)
-- Secretary [Ananyaappl3](https://github.com/Ananyaappl3) 
-- Systems Officer [camilee03](https://github.com/camilee03) 
-- Vice Systems Officer [CQVan](https://github.com/CQVan) 
-- Design Officer [VanLathanWinn](https://github.com/VanLathanWinn)
-- Sound Officer [ShoTheFlow](https://github.com/ShoTheFlow)
-- Narrative Officer [jarauj10](https://github.com/jarauj10)
-- Art Officer [Imhaber2](https://github.com/Imhaber2)
+- President: [FalconKiaT](https://github.com/FalconKiaT)
+- Vice President: [Daniaurena](https://github.com/Daniaurena)
+- Secretary: [Ananyaappl3](https://github.com/Ananyaappl3) 
+- Systems Officer Fall 2025: [camilee03](https://github.com/camilee03)
+- Systems Officer Spring 2026: [CQVan](https://github.com/CQVan)
+- Vice Systems Officer Fall 2025: [CQVan](https://github.com/CQVan)
+- Vice System Officer Spring 2026: [ShtanDY](https://github.com/ShtanDY)
+- Design Officer: [VanLathanWinn](https://github.com/VanLathanWinn)
+- Sound Officer: Blake Evans
+- Narrative Officer: [jarauj10](https://github.com/jarauj10)
+- Art Officer: [Imhaber2](https://github.com/Imhaber2)
 
 ## Socials: 
 **Instagram:** [heatwavestudioaz](https://www.instagram.com/heatwavestudioaz/?hl=en)

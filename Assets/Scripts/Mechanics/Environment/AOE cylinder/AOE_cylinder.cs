@@ -9,6 +9,7 @@ using UnityEngine;
  * Davyd Yehudin
  * 
  * Modified By: Justin Miller
+ * Joshua Wright
  * 
  */// --------------------------------------------------------
 
@@ -19,6 +20,9 @@ using UnityEngine;
 
  public class AOE_cylinder : MonoBehaviour
 {
+    // Use this bool to gate all your Debug.Log Statements please
+    [Header("Customization")]
+    [SerializeField] private float thrust = 100f;
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
@@ -56,30 +60,46 @@ using UnityEngine;
         {
             _isInCylinder = true;
         }
+
+        // 1. Get the multiplier directly from the resistance component
+        AOE_Resistance resistance = collision.GetComponent<AOE_Resistance>();
+        
+        // If no component found, multiplier is 1.0 (100% force)
+        float forceMultiplier = (resistance != null) ? resistance.GetForceMultiplier() : 1f;
+
+        // 2. Optimization: If the multiplier is 0, don't bother with the rest of the logic
+        if (forceMultiplier <= 0)
+        {
+            if(_doDebugLog) Debug.Log($"{collision.name} is immune (Multiplier is 0).");
+            return;
+        }
+
         GrabbableObject grabbedObj;
         bool isGrabbed = false; //if the object doesn't have GrabbableObject then we still interact with it. Change to true to not interact with them
         if(collision.TryGetComponent<GrabbableObject>(out grabbedObj)){
-            isGrabbed = grabbedObj.get_isTargeted();
+            isGrabbed = grabbedObj.IsTargeted();
         }
-        if(!isGrabbed){
-            if(_doDebugLog){
-                Debug.Log(collision.name);
-            }
-            switch (effectNumber){
+
+        if(!isGrabbed)
+        {
+            // Pass 'forceMultiplier' into the effects
+            switch (effectNumber)
+            {
                 case effectsEnum.effect0:
-                EffectList.effect0(collision.gameObject);
-                break;
+                    EffectList.effect0(collision.gameObject, thrust, forceMultiplier);
+                    break;
                 case effectsEnum.effect1:
-                EffectList.effect1(collision.gameObject);
-                break;
+                    EffectList.effect1(collision.gameObject, thrust, forceMultiplier);
+                    break;
                 case effectsEnum.effect2:
-                EffectList.effect2(collision.gameObject);
-                break;
+                    EffectList.effect2(collision.gameObject, thrust, forceMultiplier);
+                    break;
                 case effectsEnum.effect3:
-                EffectList.effect3(collision.gameObject);
-                break;
-                default:
-                return;
+                    EffectList.effect3(collision.gameObject, thrust, forceMultiplier);
+                    break;
+                case effectsEnum.GravityWell:
+                    EffectList.GravityWell(collision.gameObject, this.GetComponent<Collider2D>(), thrust, forceMultiplier);
+                    break;
             }
         }
     }

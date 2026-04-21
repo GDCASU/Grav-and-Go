@@ -18,7 +18,7 @@ public abstract class PhysicsObject : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] protected Outline2D _outline;
-    public Collider2D collider;
+    public new Collider2D collider;
     public Rigidbody2D rb;
     
     [Header("Settings")]
@@ -68,7 +68,7 @@ public abstract class PhysicsObject : MonoBehaviour
     /// <summary>
     /// A simple getter for the isTargeted variable
     /// </summary
-    public virtual bool get_isTargeted()
+    public virtual bool IsTargeted()
     {
         return _isTargeted;
     }
@@ -79,8 +79,8 @@ public abstract class PhysicsObject : MonoBehaviour
 /// </summary>
 public enum PhysicsObjectType
 {
-    Grabbable,
-    Influenceable,
-    IgnoresGravigun,
-    Special,
+    Grabbable, // For objects that can be grabbed by the gravigun
+    Influenceable, // For objects that can't be grabbed, but can be influenced by objects that are grabbed
+    IgnoresGravigun, // The name
+    Special, // For objects that have special interactions
 }

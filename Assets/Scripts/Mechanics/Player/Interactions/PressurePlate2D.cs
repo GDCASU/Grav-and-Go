@@ -53,7 +53,9 @@ public class PressurePlate2D : MonoBehaviour
     [SerializeField] private Collider2D _plateCol;
     [SerializeField] private SpringJoint2D _sj; // spring linking plate to base
     [SerializeField] private TextMeshProUGUI _massTargetText;
-    
+    [SerializeField] private GameObject statusBarActive;
+    [SerializeField] private GameObject statusBarInactive;
+
     [Header("Events")]
     public UnityEvent onPressed;   // invoked once when plate first crosses threshold
     public UnityEvent onReleased;  // invoked once when it rises back up
@@ -122,6 +124,9 @@ public class PressurePlate2D : MonoBehaviour
         {
             _isPressed = true;
             onPressed?.Invoke();
+
+            statusBarActive.SetActive(true);
+            statusBarInactive.SetActive(false);
         }
 
         /* ---------- Falling edge: plate just got released ----------
@@ -131,6 +136,9 @@ public class PressurePlate2D : MonoBehaviour
         {
             _isPressed = false;
             onReleased?.Invoke();
+
+            statusBarActive.SetActive(false);
+            statusBarInactive.SetActive(true);
         }
     }
     #endregion
