@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a367163e-2a5f-4c72-9d59-d64bd5aa611f}">
+		<property name="assetPath">
+			<value>Dialogue/Chapter 2/Professor Photon/Miles april 7th Prof Pho Outro (4).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>25.696009070294785</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e9709488-b137-4f4b-9184-437d4d6105a8}</destination>
+		</relationship>
+	</object>
+</objects>
