@@ -259,7 +259,9 @@ public class Breakable : MonoBehaviour, IDamageable
                 {
                     //print("og has rb2d");
                     Physics2D.IgnoreCollision(objToBreak.GetComponent<Collider2D>(), poly, true);
-                    chunkRB.linearVelocity = objToBreak.GetComponent<Rigidbody2D>().linearVelocity;
+                    chunkRB.linearVelocity = objToBreak.GetComponent<Rigidbody2D>().linearVelocity 
+                                           + Vector2.right * UnityEngine.Random.Range(-3, 3)
+                                           + Vector2.up * UnityEngine.Random.Range(-1, 1);
 
 
                 }
