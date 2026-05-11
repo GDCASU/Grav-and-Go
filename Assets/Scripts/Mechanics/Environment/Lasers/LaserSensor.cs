@@ -30,6 +30,7 @@ public class LaserSensor : MonoBehaviour
     public UnityEvent laserSensorActive;
     public UnityEvent laserSensorDisabled;
     private Coroutine sensorOff = null;
+    [SerializeField] private SpriteRenderer sensorColor;
 
     public void LaserHit(LaserColorEnum laserCol)
     {
@@ -49,5 +50,10 @@ public class LaserSensor : MonoBehaviour
         yield return new WaitForSeconds(TimeToTurnOff);
         laserSensorDisabled.Invoke();
         sensorOff = null;
+    }
+
+    public void Awake()
+    {
+        if(sensorColor != null) sensorColor.color = LaserColor.getColorFromEnum(requiredColor);
     }
 }
