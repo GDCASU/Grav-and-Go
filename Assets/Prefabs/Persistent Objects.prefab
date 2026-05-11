@@ -389,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.size
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[1].Key.name
@@ -420,6 +420,22 @@ PrefabInstance:
       value: CH 1 Level 4 - ID 1-5
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[8].Key.name
+      value: CH 1 Level 5 - ID 1-7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[9].Key.name
+      value: CH 2 Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[10].Key.name
+      value: CH 2 Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[11].Key.name
+      value: CH 2 Level 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[3].Value.isUnlocked
       value: 1
       objectReference: {fileID: 0}
@@ -437,6 +453,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[7].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[8].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[9].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[10].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[11].Value.isUnlocked
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
