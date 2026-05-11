@@ -507,6 +507,7 @@ MonoBehaviour:
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
   _timeJumpWasReleased: 0
+  _tractorBeam: {fileID: 0}
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
@@ -568,8 +569,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.7}
-  m_Size: {x: 0.9, y: 1.4}
+  m_Offset: {x: 0, y: 0.7061524}
+  m_Size: {x: 0.9, y: 1.3876952}
   m_Direction: 0
 --- !u!114 &2263943290181670641
 MonoBehaviour:
@@ -781,7 +782,7 @@ Transform:
   m_GameObject: {fileID: 1730821138796497913}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.432, z: 0}
+  m_LocalPosition: {x: 0, y: 0.566, z: 0}
   m_LocalScale: {x: 0.31, y: 0.31, z: 0.31}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6191,8 +6192,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2969068311871471201}
-  - {fileID: 4706435015038256351}
   - {fileID: 2969068313154050965}
+  - {fileID: 4706435015038256351}
   - {fileID: 7325782539537236310}
   m_Father: {fileID: 1544650614272011795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6211,6 +6212,7 @@ MonoBehaviour:
   _anim: {fileID: 2969068313154050966}
   playerMovement: {fileID: 1544650614272011792}
   _sprite: {fileID: 2969068313154050967}
+  _gravGunSprite: {fileID: 5394026612346790712}
   _rb: {fileID: 1544650614272011793}
   _jumpParticles: {fileID: 2969068312619346371}
   _launchParticles: {fileID: 2969068312669941334}
@@ -20968,7 +20970,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1735055266, guid: 174e5a7ac076a8a408d38241cf6fbebb, type: 3}
+  m_Sprite: {fileID: 4689286389128506607, guid: ec9f156c13cea9046bdac4eff0070fcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -22921,7 +22923,7 @@ Transform:
   m_GameObject: {fileID: 9025625058083382112}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7161293, y: 0, z: 0}
+  m_LocalPosition: {x: 1.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -22970,8 +22972,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4660308795232609358, guid: 58a574dd3d2bb764a94c525275c773a6, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -4444715042203241125, guid: 17468c0bf42b441438f0573daf4e9fd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
