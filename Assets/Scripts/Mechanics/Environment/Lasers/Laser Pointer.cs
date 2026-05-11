@@ -182,7 +182,9 @@ public class LaserPointer : MonoBehaviour
                 GameObject portal2 = portal1.getExitPortal();
                 Vector2 localOffset = hit.point - (Vector2)hitObject.transform.position;
 
-                Vector2 exit = (Vector2)portal2.transform.position + localOffset + reflectVector.normalized * 0.1f;
+                Vector2 sizeOffset = (Vector2)portal2.transform.localScale * reflectVector.normalized * 3;
+
+                Vector2 exit = (Vector2)portal2.transform.position + localOffset + reflectVector.normalized * 0.1f + sizeOffset;
 
                 //because of how unity's lineRenderer works, we have to create a different laser
                 //Quaternion reflection = Quaternion.LookRotation(reflectVector); //hopefully this is correct
