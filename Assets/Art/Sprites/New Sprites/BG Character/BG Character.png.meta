@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: 511f19453bc79c747b7e3fe8231f1889
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4854853716807358126
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_0
+  - first:
+      213: -4295158868400839950
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_1
+  - first:
+      213: 974633401838952264
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_2
+  - first:
+      213: -8720262280781951735
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_3
+  - first:
+      213: -6367257456190972608
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_4
+  - first:
+      213: 4264899916182964029
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_5
+  - first:
+      213: -3727739042449432465
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_6
+  - first:
+      213: -3331242560250342412
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_7
+  - first:
+      213: 1901393456725500145
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_8
+  - first:
+      213: -8061897287558619637
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_9
+  - first:
+      213: -5174085252703034499
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_10
+  - first:
+      213: 7600807953684442364
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_11
+  - first:
+      213: -6644156986452487567
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_12
+  - first:
+      213: -1490616059155075724
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_13
+  - first:
+      213: -5195112280700760648
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_14
+  - first:
+      213: 1922674346001883974
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_15
+  - first:
+      213: 6056471744935162646
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_16
+  - first:
+      213: -1182310331141357590
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_17
+  - first:
+      213: 5561596476341613357
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_18
+  - first:
+      213: 3751253063763035106
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_19
+  - first:
+      213: -3610837049796980680
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_20
+  - first:
+      213: -1140836239090744577
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_21
+  - first:
+      213: 7168427908398206344
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_22
+  - first:
+      213: 6609495294871987959
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_23
+  - first:
+      213: -6202244760305481546
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_24
+  - first:
+      213: -2169611348485275574
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_25
+  - first:
+      213: 4191790417388300773
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_26
+  - first:
+      213: -882010961439868440
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_27
+  - first:
+      213: 8809176463200223308
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_28
+  - first:
+      213: 7157177529901451867
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_29
+  - first:
+      213: 8327254579875668613
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_30
+  - first:
+      213: 8525156039256208471
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_31
+  - first:
+      213: -4063501630954523222
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_32
+  - first:
+      213: 4178563466423580712
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_33
+  - first:
+      213: -4573270538124300958
+    second: Bg-Character-1-animation-ezgif.com-gif-to-sprite-converter_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BG Character_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2625
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9149807d4fdb64a85260333ba01a36
+      internalID: 1004521196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2625
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bd7df6ad2a3404fb2024591b4af155
+      internalID: 836252502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2625
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef8c0f15cc935646a438955b7709bae
+      internalID: 695512493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_3
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2625
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb6b966f44751647a85e8170a1db3ae
+      internalID: 482908976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2625
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9699e66d0ac3ac549a414b0108c00fec
+      internalID: 1779270264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baa21e298f302540ac44cb51e148c7f
+      internalID: -1766290161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2100
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9a186289d48b2478e2218c850290bf
+      internalID: -218458281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2100
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379bb37c850b60642bebdb94b11f1824
+      internalID: -587513690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_8
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2100
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6343f1c3754c82d4aab4a1450cac4311
+      internalID: -515272525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_9
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2100
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39772d7ba9c3e7546a986383192bfae9
+      internalID: 808260594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1575
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6ca165477fd164ba48f277011e6a75
+      internalID: 1758581463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_11
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1575
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae76046423959d9408c680780fb5e0c3
+      internalID: -701118176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_12
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1575
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5414dfe9380a86d4694a9494373f39b1
+      internalID: 1727234287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_13
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1575
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b99df9f32c251449a45acb1d03184d
+      internalID: -248390559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1575
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac7bc75fc5cf0442bda17ac9171d180
+      internalID: -1975941965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f19d248db53fa94c850f15dc3e5d269
+      internalID: 1237231670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_16
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1050
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592cf7668b041af4cb18dc9997848397
+      internalID: -1980090260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1050
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2d7bfed98291f4088fdfa08ab41370
+      internalID: 1460088365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1050
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4c4afe340d90d4d9a6adb03b55859e
+      internalID: -1711688314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_19
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1050
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ce3454001c7354799cf32a9bcbb99c
+      internalID: 899667993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9b59297fc01f54fbfe4ae95f00f677
+      internalID: -811566134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 525
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ef16a991468fd4d8b67372334e8e3d
+      internalID: 294050074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_22
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 525
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f44b20c648f354a9d79fcdb3024fd7
+      internalID: 1578287564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_23
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 525
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f31090a93837514d8ee29a0d1cca63c
+      internalID: -345934833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_24
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 525
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4df22e6fce04e42bdf2ca107033dc2
+      internalID: -1666572728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db335d03dbd35243b9fae98fec141d2
+      internalID: 715464596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98acbdc9a618c6419af729982777910
+      internalID: 731885707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bac945c9836ef4eb54ec2b597d6de0
+      internalID: 1444262087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_28
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc26e9bb841c01f4694f2181d5d8ce10
+      internalID: -1970952905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Character_29
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 700
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a4e8af9acc984b9e5b79591a827f8
+      internalID: 1633620147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e35da6758bd2ed34f88de26775e71aeb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BG Character_0: 1004521196
+      BG Character_1: 836252502
+      BG Character_10: 1758581463
+      BG Character_11: -701118176
+      BG Character_12: 1727234287
+      BG Character_13: -248390559
+      BG Character_14: -1975941965
+      BG Character_15: 1237231670
+      BG Character_16: -1980090260
+      BG Character_17: 1460088365
+      BG Character_18: -1711688314
+      BG Character_19: 899667993
+      BG Character_2: 695512493
+      BG Character_20: -811566134
+      BG Character_21: 294050074
+      BG Character_22: 1578287564
+      BG Character_23: -345934833
+      BG Character_24: -1666572728
+      BG Character_25: 715464596
+      BG Character_26: 731885707
+      BG Character_27: 1444262087
+      BG Character_28: -1970952905
+      BG Character_29: 1633620147
+      BG Character_3: 482908976
+      BG Character_4: 1779270264
+      BG Character_5: -1766290161
+      BG Character_6: -218458281
+      BG Character_7: -587513690
+      BG Character_8: -515272525
+      BG Character_9: 808260594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

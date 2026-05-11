@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 

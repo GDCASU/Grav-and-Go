@@ -495,6 +495,7 @@ MonoBehaviour:
   _collider: {fileID: 1544650614272011794}
   _walkSound: {fileID: 5564989338252753536}
   _jumpSound: {fileID: 7639427613623515261}
+  _deathSound: {fileID: 7381301166172315988}
   _groundCheckOffset: {x: 0, y: 0}
   _ceilingCheckOffset: {x: 0, y: 0}
   _capsuleCastSizeSub: {x: 0.03, y: 0}
@@ -22403,6 +22404,7 @@ Transform:
   m_Children:
   - {fileID: 2138586580137040769}
   - {fileID: 8059057072323788165}
+  - {fileID: 2056002553569296753}
   m_Father: {fileID: 1544650614272011795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6885779256217647881
@@ -22712,6 +22714,63 @@ MonoBehaviour:
         Data3: -1522417250
         Data4: -560770111
       Path: event:/SFX/Player/Gravigun/Gravigun Grab
+    eventPlayTrigger: 0
+    eventStopTrigger: 2
+    playConditions: 0
+    playCooldown: 0
+  doDebugLog: 0
+--- !u!1 &7520183696382623667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056002553569296753}
+  - component: {fileID: 7381301166172315988}
+  m_Layer: 6
+  m_Name: Death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2056002553569296753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520183696382623667}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6299346398174948054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7381301166172315988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520183696382623667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    eventReference:
+      Guid:
+        Data1: 2083770135
+        Data2: 1251010128
+        Data3: -1242147668
+        Data4: -1649842610
+      Path: event:/SFX/Player/Events/Player Death
     eventPlayTrigger: 0
     eventStopTrigger: 2
     playConditions: 0

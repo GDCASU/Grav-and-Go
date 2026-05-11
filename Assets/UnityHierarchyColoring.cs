@@ -9,7 +9,7 @@ using UnityEditor;
 
 /// <summary> Sets a background color for game objects in the Hierarchy tab </summary>
 [UnityEditor.InitializeOnLoad]
-#endif
+
 public class UnityHierarchyColoring
 {
     private static Vector2 offset = new Vector2(20, 1);
@@ -102,3 +102,4 @@ public class UnityHierarchyColoring
         }
     }
 }
+#endif
