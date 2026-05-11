@@ -43,6 +43,7 @@ public class LaserCombiner : MonoBehaviour
         }
         else
         {
+            if(CombinerRenderer != null) CombinerRenderer.color = LaserColor.getColorFromEnum(LaserColorEnum.White);
             LaserScript.SetLaserSwitch(false);
         }
     }

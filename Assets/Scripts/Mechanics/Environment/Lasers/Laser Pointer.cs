@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Linq;
 
 /* -----------------------------------------------------------
  * Author:
@@ -33,10 +34,12 @@ public class LaserPointer : MonoBehaviour
     [SerializeField] private bool LaserOn = true;
     [SerializeField] float laserTick = 0.05f;
     [SerializeField] private Material LaserMat;
+    [SerializeField] private float AngleOffset = 0f;
     [Header("Laser Prefab to Spawn(Invisible)")]
     [SerializeField] public GameObject LaserPrefab;
     
     private Vector2 laserDir;
+    public int depth = 0;
     private float LastFrameRotation = -1;
     private int vertexLimit = 40;
     private GameObject subLaser = null;
@@ -90,9 +93,11 @@ public class LaserPointer : MonoBehaviour
         Laser.startColor = laserActualColor;
         Laser.endColor = laserActualColor;
 
-        if (this.transform.rotation.eulerAngles.z != LastFrameRotation)
+        float laserRot = this.transform.rotation.eulerAngles.z + AngleOffset;
+
+        if (laserRot != LastFrameRotation)
         {
-            LastFrameRotation = this.transform.rotation.eulerAngles.z;
+            LastFrameRotation = laserRot;
             laserDir = CalculateRotation(LastFrameRotation);
         }
 
@@ -136,6 +141,7 @@ public class LaserPointer : MonoBehaviour
 
     void CalculateWholeLaser()
     {
+        if(depth >= 10) return;
         //if(subLaser != null) Destroy(subLaser);
         //List<Vector2> laser_positions;
         Laser.positionCount = vertexLimit;
@@ -174,29 +180,9 @@ public class LaserPointer : MonoBehaviour
             if(hitObject.TryGetComponent(out PortalDefinition portal1))
             {
                 GameObject portal2 = portal1.getExitPortal();
-                //first find where we entered
-                float enterX1 = hit.point.x;
-                float enterY1 = hit.point.y;
+                Vector2 localOffset = hit.point - (Vector2)hitObject.transform.position;
 
-                //now find where we would have entered for the second portal
-                float enterX2 = portal2.transform.position.x + (enterX1 - hitObject.transform.position.x);
-                float enterY2 = portal2.transform.position.y + (enterY1 - hitObject.transform.position.y);
-
-                //we have the direction of the laser, now find the point where it would exit
-                //all we need to do is to solve f(t) = entry + dir * t so that f(t) is outside the box
-                //do this by finding bottom left and top right corners first
-                Vector2 bottLeft = portal2.transform.position - portal2.transform.localScale/2;
-                Vector2 topRight = portal2.transform.position + portal2.transform.localScale/2;
-
-                //calculate how many times we need to use the dir vector to leave the portal
-                float tx1 = (bottLeft.x - enterX2) / reflectVector.x;
-                float tx2 = (topRight.x - enterX2) / reflectVector.x;
-                float ty1 = (bottLeft.y - enterY2) / reflectVector.y;
-                float ty2 = (topRight.y - enterY2) / reflectVector.y;
-
-                //get the smaller of the big ones
-                float tVector = Mathf.Min(Mathf.Max(tx1, tx2), Mathf.Max(ty1, ty2));
-                Vector2 exit = new Vector2(enterX2, enterY2) + tVector * reflectVector;
+                Vector2 exit = (Vector2)portal2.transform.position + localOffset + reflectVector.normalized * 0.1f;
 
                 //because of how unity's lineRenderer works, we have to create a different laser
                 //Quaternion reflection = Quaternion.LookRotation(reflectVector); //hopefully this is correct
@@ -206,6 +192,7 @@ public class LaserPointer : MonoBehaviour
                 subLaserPointer.laserColor = this.laserColor;
                 subLaserPointer.MakeThisSubLaser(laserTick);
                 subLaserPointer.LaserPrefab = this.LaserPrefab;
+                subLaserPointer.depth = this.depth + 1;
 
                 //subLaser.
                 //the subLaser should handle everything else on its own
