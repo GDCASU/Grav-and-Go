@@ -490,6 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 05e6a06c5af93134ab98ff12e2c27265, type: 2}
+  _collider: {fileID: 1544650614272011794}
   _walkSound: {fileID: 5564989338252753536}
   _jumpSound: {fileID: 7639427613623515261}
   _groundCheckOffset: {x: 0, y: 0}
@@ -507,6 +508,7 @@ MonoBehaviour:
   _coyoteUsable: 0
   _timeJumpWasPressed: 0
   _timeJumpWasReleased: 0
+  _tractorBeam: {fileID: 0}
 --- !u!50 &1544650614272011793
 Rigidbody2D:
   serializedVersion: 5
