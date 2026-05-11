@@ -216,9 +216,6 @@ public class MusicPlayer : MonoBehaviour
             int trackIndex = _shuffledIndices[_playlistCursor];
             EventReference trackRef = _tracks[trackIndex];
 
-            Log($"Playing track [{_playlistCursor + 1}/{_shuffledIndices.Count}] " +
-                $"(tracks[] index {trackIndex}): {trackRef.Path}");
-
             // Create and start the instance
             _currentInstance = RuntimeManager.CreateInstance(trackRef);
             _currentInstance.start();
