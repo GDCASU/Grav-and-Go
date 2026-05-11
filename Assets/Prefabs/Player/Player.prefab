@@ -492,6 +492,7 @@ MonoBehaviour:
   _stats: {fileID: 11400000, guid: 05e6a06c5af93134ab98ff12e2c27265, type: 2}
   _deathDelaySeconds: 3
   _playerAnimator: {fileID: 2969068311962969431}
+  _collider: {fileID: 1544650614272011794}
   _walkSound: {fileID: 5564989338252753536}
   _jumpSound: {fileID: 7639427613623515261}
   _groundCheckOffset: {x: 0, y: 0}
