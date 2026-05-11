@@ -31,7 +31,7 @@ public class FPSCounter : MonoBehaviour
     [SerializeField, InspectorReadOnly] private bool _enabledReadout;
     
     // Local Variables
-    public static bool enable = false;
+    public static bool enable = true;   
     private float[] frameTimes;
     private int index;
 

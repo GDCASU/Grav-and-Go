@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1dbe1160-711f-43af-bd5c-0618270558c5}">
+		<property name="assetPath">
+			<value>Dialogue/Chapter 1/Big Monkey Boss/Big Monkey Boss - Line 4.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e9709488-b137-4f4b-9184-437d4d6105a8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -36,20 +36,22 @@ public class AudioMenuManager : MonoBehaviour
     
     void Start()
     {
-        // On load, set the loaded sound values into the audio sliders
+        // On load, set the loaded sound values into the audio sliders.
+        // GetVCAVolume returns [0,1], so scale up to each slider's maxValue
+        // to match the display range (e.g. 0-100).
         float volume = 0f;
         string volumeStr = "";
-        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.Master);
+        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.Master) * masterSlider.maxValue;
         volumeStr = volume.ToString("F0");
         masterSlider.value = volume;
         masterValue.text = volumeStr;
         if (masterShadow != null) masterShadow.text = volumeStr;
-        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.Music);
+        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.Music) * musicSlider.maxValue;
         volumeStr = volume.ToString("F0");
         musicSlider.value = volume;
         musicValue.text = volumeStr;
         if (musicShadow != null) musicShadow.text = volumeStr;
-        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.SFX);
+        volume = SoundManager.Instance.GetVCAVolume(SoundControllers.SFX) * SFXSlider.maxValue;
         volumeStr = volume.ToString("F0");
         SFXSlider.value = volume;
         SFXValue.text = volumeStr;
