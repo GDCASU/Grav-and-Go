@@ -175,10 +175,13 @@ public class LaserPointer : MonoBehaviour
             //if we hit a portal we teleport
             if(hitObject.TryGetComponent(out PortalDefinition portal1))
             {
+                
                 GameObject portal2 = portal1.getExitPortal();
                 Vector2 localOffset = hit.point - (Vector2)hitObject.transform.position;
 
-                Vector2 sizeOffset = (Vector2)portal2.transform.localScale * reflectVector.normalized * 3;
+                Vector2 sizeOffset = portal2.GetComponent<BoxCollider2D>().size;
+                sizeOffset = Vector2.Scale(sizeOffset, portal2.transform.lossyScale)* reflectVector.normalized;
+                if(_doDebugLog) Debug.Log(sizeOffset);
 
                 Vector2 exit = (Vector2)portal2.transform.position + localOffset + reflectVector.normalized * 0.1f + sizeOffset;
 
