@@ -138,6 +138,12 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     #endregion
 
     #region Input Functions
+
+    private void OnRetry(InputValue value)
+    {
+        Die();
+    }
+    
     private void OnMove(InputValue value)
     {
         if (_isDead)
