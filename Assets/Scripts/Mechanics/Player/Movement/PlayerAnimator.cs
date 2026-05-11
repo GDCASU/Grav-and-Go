@@ -15,6 +15,7 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private Animator        _anim;
     [SerializeField] private PlayerMovementController playerMovement;  // Event source
     [SerializeField] private SpriteRenderer  _sprite;
+    [SerializeField] private SpriteRenderer  _gravGunSprite;
     [SerializeField] private Rigidbody2D     _rb;
 
     [Header("Particles")]
@@ -86,7 +87,10 @@ public class PlayerAnimator : MonoBehaviour
     private void HandleSpriteFlip()
     {
         if (playerMovement.movement.x != 0)
+        {
             _sprite.flipX = playerMovement.movement.x > 0;
+            _gravGunSprite.flipY = playerMovement.movement.x < 0;
+        }
     }
     
     #endregion
