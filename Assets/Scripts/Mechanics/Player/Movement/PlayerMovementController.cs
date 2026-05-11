@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,7 +27,15 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     [Header("Tunning")]
     [SerializeField, Tooltip("ScriptableObject containing tunable movement numbers")] private ScriptableStats _stats;
 
+    [Header("Death")]
+    [SerializeField, Tooltip("Seconds to wait after death animation before reloading the level.")]
+    private float _deathDelaySeconds = 3f;
+
+    // Death state — guard against TakeDamage firing more than once before reload
+    private bool _isDead = false;
+
     [Header("References")]
+    [SerializeField] private PlayerAnimator _playerAnimator;
     private Rigidbody2D _rb;
     private CapsuleCollider2D _collider;
 
@@ -103,12 +112,14 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
     private void FixedUpdate()
     {
+        if (_isDead) return;
+        
         // Dont do anything if paused
         if (Time.timeScale <= 0) return;
 
         CheckCollisions();  // Ground / ceiling detection first — movement depends on result
 
-        if(_tractorBeam != null)
+        if(_tractorBeam)
         {
             HandleTractorPull();
         }
@@ -127,6 +138,12 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     #region Input Functions
     private void OnMove(InputValue value)
     {
+        if (_isDead)
+        {
+            movement = Vector2.zero;
+            return;
+        }
+        
         movement = value.Get<Vector2>();
 
         // Optional "digital" snapping so small stick values become full cardinal movement.
@@ -144,6 +161,8 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
     private void OnJump(InputValue value)
     {
+        if (_isDead) return;
+        
         if (value.isPressed)
         {
             _jumpToConsume = true;
@@ -315,7 +334,41 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage, Rigidbody2D rb)
     {
-        DeathManager.TriggerPlayerDeath();
+        Die();
+    }
+
+    /// <summary>
+    /// Triggers the player death sequence:
+    /// freezes movement, plays the death animation,
+    /// then reloads the current level after <see cref="_deathDelaySeconds"/>.
+    /// Safe to call multiple times — does nothing if already dead.
+    /// </summary>
+    private void Die()
+    {
+        if (_isDead) return;
+        _isDead = true;
+
+        // Freeze all movement
+        velocity = Vector2.zero;
+        _rb.linearVelocity = Vector2.zero;
+        _rb.bodyType = RigidbodyType2D.Kinematic;
+
+        // Trigger death animation
+        if (_playerAnimator != null)
+            _playerAnimator.OnDeath();
+        else
+            Debug.LogWarning("[PlayerMovementController] _playerAnimator is not assigned — skipping death animation.");
+
+        StartCoroutine(DeathReloadRoutine());
+    }
+
+    /// <summary>
+    /// Waits for the death animation to finish, then reloads the current level.
+    /// </summary>
+    private IEnumerator DeathReloadRoutine()
+    {
+        yield return new WaitForSeconds(_deathDelaySeconds);
+        LevelManager.Instance.ReloadCurrentLevel();
     }
 
 #if UNITY_EDITOR
@@ -406,5 +459,3 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
 #endif
 }
-
-
