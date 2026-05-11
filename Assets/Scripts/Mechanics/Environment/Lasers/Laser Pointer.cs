@@ -20,19 +20,22 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class LaserPointer : MonoBehaviour
 {
-    const float laserTick = 0.1f;
+    
     // Use this bool to gate all your Debug.Log Statements please
     [Header("Debugging")]
     [SerializeField] private bool _doDebugLog;
-    [Header("Laser stuff")]
+    
     private LineRenderer Laser;
+    [Header("Laser stuff")]
     [SerializeField] public LaserColorEnum laserColor = LaserColorEnum.Red;
     [SerializeField] private float LaserWidth = 0.1f; //this is a random choice, change if needed
     [SerializeField] private GameObject Emitter = null;
     [SerializeField] private bool LaserOn = true;
+    [SerializeField] float laserTick = 0.05f;
     [SerializeField] private Material LaserMat;
     [Header("Laser Prefab to Spawn(Invisible)")]
     [SerializeField] public GameObject LaserPrefab;
+    
     private Vector2 laserDir;
     private float LastFrameRotation = -1;
     private int vertexLimit = 40;
@@ -111,8 +114,8 @@ public class LaserPointer : MonoBehaviour
     {
         // swap to GetComponenet?
         Laser = this.GetComponent<LineRenderer>();
-        Laser.material = LaserMat; // this finds a default line shader
-
+        //Laser.material = LaserMat;
+        Laser.material = new Material(Shader.Find("Sprites/Default")); 
 
         Color laserActualColor = global::LaserColor.getColorFromEnum(laserColor);
         Laser.startColor = laserActualColor;
