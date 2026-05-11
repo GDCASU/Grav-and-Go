@@ -188,22 +188,28 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
 
     private void OutOfBoundsCheck()
     {
-        //get the bounds of teh camera view
+        if (_isDead) return;
+
         Camera mainCamera = Camera.main;
-        if (mainCamera == null) return;
+        if (!mainCamera) return;
 
-        Vector3 cameraPosition = mainCamera.transform.position;
-        Vector3 cameraSize = mainCamera.orthographicSize * new Vector3(1, 1, 0);
-        Vector2 cameraBounds = new Vector2(cameraPosition.x - cameraSize.x, cameraPosition.y - cameraSize.y);
+        // orthographicSize is half-height only; width requires aspect ratio
+        float halfHeight = mainCamera.orthographicSize;
+        float halfWidth  = halfHeight * mainCamera.aspect;
 
-        // convert rects into Rect
-        Rect cameraRect = new Rect(cameraBounds.x, cameraBounds.y, cameraSize.x * 2, cameraSize.y * 2);
+        Vector3 camPos = mainCamera.transform.position;
+        Rect cameraRect = new Rect(
+            camPos.x - halfWidth,
+            camPos.y - halfHeight,
+            halfWidth  * 2f,
+            halfHeight * 2f
+        );
 
-        //check if each bound of the player collider is outside the camera view
+        // Kill the player only when fully outside — both bounds corners are out
         if (!cameraRect.Contains(_collider.bounds.min) && !cameraRect.Contains(_collider.bounds.max))
         {
+            Debug.Log("[PlayerMovementController] Player is out of bounds!");
             TakeDamage(int.MaxValue, null);
-            Debug.Log("Player is out of bounds!");
         }
     }
 
