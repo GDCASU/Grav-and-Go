@@ -389,22 +389,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.size
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[1].Key.name
+      value: Sound Test Scene
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[2].Key.name
-      value: CH 1 Level 1 - ID 1-1
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[3].Key.name
-      value: CH 1 Level 2 - ID 1-2
+      value: CH 1 Level 1 - ID 1-1
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[4].Key.name
-      value: CH 1 Level 3 - ID 1-3
+      value: CH 1 Level 2 - ID 1-2
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[5].Key.name
+      value: CH 1 Level 3 - ID 1-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[6].Key.name
       value: CH 1 Level 4 - ID 1-5
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
@@ -417,6 +425,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[5].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[6].Value.isUnlocked
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -22,6 +22,8 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
+    public static MusicPlayer Instance { get; private set; }
+
     // -------------------------------------------------------
     // Inspector
     // -------------------------------------------------------
@@ -56,6 +58,10 @@ public class MusicPlayer : MonoBehaviour
 
     private void Awake()
     {
+        // Singleton
+        if (Instance != null && Instance != this) { Destroy(this); return; }
+        Instance = this;
+
         if (_tracks == null || _tracks.Length == 0)
         {
             Debug.LogWarning("[MusicPlayer] No tracks assigned — player will not start.");
@@ -106,6 +112,44 @@ public class MusicPlayer : MonoBehaviour
             _playbackRoutine = null;
         }
         ReleaseCurrentInstance(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+
+    /// <summary>
+    /// Silences the music player for a scene that manages its own audio
+    /// (e.g. the sound showcase scene). Stops playback but remembers the
+    /// current playlist position so it can resume from the next track.
+    /// </summary>
+    public void SilenceForScene()
+    {
+        if (_playbackRoutine != null)
+        {
+            StopCoroutine(_playbackRoutine);
+            _playbackRoutine = null;
+        }
+        ReleaseCurrentInstance(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Log("Silenced for scene.");
+    }
+
+    /// <summary>
+    /// Resumes playback after returning from a scene that silenced the player.
+    /// Picks up from the next track in the shuffled playlist.
+    /// </summary>
+    public void ResumeForScene()
+    {
+        if (_tracks == null || _tracks.Length == 0) return;
+        if (_playbackRoutine != null) return; // already playing
+
+        // Advance past the track that was interrupted
+        _playlistCursor++;
+        if (_playlistCursor >= _shuffledIndices.Count)
+        {
+            Shuffle(_shuffledIndices);
+            _playlistCursor = 0;
+        }
+
+        _playbackRoutine = StartCoroutine(PlaylistRoutine());
+        Log("Resumed after scene.");
     }
 
     /// <summary> Skip the current track and move to the next one. </summary>

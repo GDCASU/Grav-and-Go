@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CompletedLevels/Main Menu.unity
     guid: 84b29488081ab0f4f970f86e9efe9106
   - enabled: 1
+    path: Assets/Scenes/CompletedLevels/Sound Test Scene.unity
+    guid: 4572da2c666f09b42b8c101e9fd3e899
+  - enabled: 1
     path: Assets/Scenes/CompletedLevels/Level Select.unity
     guid: 04b313110a587a745a024eba85aea243
   - enabled: 1
