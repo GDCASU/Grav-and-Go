@@ -2,16 +2,24 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    [SerializeField] public float speed;
+    public float speed;
 
     private void Update()
     {
         transform.Translate(Vector3.up*Time.deltaTime*speed);
     }
 
-    public void end()
+    public void End()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage(1);
+            End();
+        }
     }
 
 }
