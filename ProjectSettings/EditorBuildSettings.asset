@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CompletedLevels/Sound Test Scene.unity
     guid: 4572da2c666f09b42b8c101e9fd3e899
   - enabled: 1
+    path: Assets/Scenes/CompletedLevels/Art Showcase Scene/Art Showcase Scene.unity
+    guid: f688c4ee7e1309d4198ecd6c0d5665ff
+  - enabled: 1
     path: Assets/Scenes/CompletedLevels/Level Select.unity
     guid: 04b313110a587a745a024eba85aea243
   - enabled: 1
