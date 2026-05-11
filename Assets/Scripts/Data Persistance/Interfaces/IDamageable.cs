@@ -16,4 +16,6 @@ using UnityEngine;
 public interface IDamageable
 {
     public void TakeDamage(int damage, Rigidbody2D source = null);
+
+    public void TakeDamage(int damage) => TakeDamage(damage, null);
 }

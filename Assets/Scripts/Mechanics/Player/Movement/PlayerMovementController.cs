@@ -37,7 +37,7 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     [Header("References")]
     [SerializeField] private PlayerAnimator _playerAnimator;
     private Rigidbody2D _rb;
-    private CapsuleCollider2D _collider;
+    public CapsuleCollider2D _collider;
 
     [Header("Audio")]
     [SerializeField] private SimpleAudioEmitter _walkSound;
@@ -108,6 +108,8 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     {
         // Dont do anything if paused
         if (Time.timeScale > 0) _time += Time.deltaTime;
+
+        OutOfBoundsCheck();
     }
 
     private void FixedUpdate()
@@ -183,6 +185,27 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     #endregion
 
     #region Collisions
+
+    private void OutOfBoundsCheck()
+    {
+        //get the bounds of teh camera view
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null) return;
+
+        Vector3 cameraPosition = mainCamera.transform.position;
+        Vector3 cameraSize = mainCamera.orthographicSize * new Vector3(1, 1, 0);
+        Vector2 cameraBounds = new Vector2(cameraPosition.x - cameraSize.x, cameraPosition.y - cameraSize.y);
+
+        // convert rects into Rect
+        Rect cameraRect = new Rect(cameraBounds.x, cameraBounds.y, cameraSize.x * 2, cameraSize.y * 2);
+
+        //check if each bound of the player collider is outside the camera view
+        if (!cameraRect.Contains(_collider.bounds.min) && !cameraRect.Contains(_collider.bounds.max))
+        {
+            TakeDamage(int.MaxValue, null);
+            Debug.Log("Player is out of bounds!");
+        }
+    }
 
     /// <summary>CapsuleCasts for ground & ceiling each physics step.</summary>
     private void CheckCollisions()
