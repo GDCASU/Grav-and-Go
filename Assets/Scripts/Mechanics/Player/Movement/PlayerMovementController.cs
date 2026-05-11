@@ -42,6 +42,7 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
     [Header("Audio")]
     [SerializeField] private SimpleAudioEmitter _walkSound;
     [SerializeField] private SimpleAudioEmitter _jumpSound;
+    [SerializeField] private SimpleAudioEmitter _deathSound;
 
     [Header("Capsule Casts")]
     [SerializeField, Tooltip("Offset for the ground check capsule cast, in local space.")]
@@ -387,6 +388,9 @@ public class PlayerMovementController : MonoBehaviour, IDamageable
         velocity = Vector2.zero;
         _rb.linearVelocity = Vector2.zero;
         _rb.bodyType = RigidbodyType2D.Kinematic;
+        
+        // play sound
+        _deathSound.PlaySound();
 
         // Trigger death animation
         if (_playerAnimator != null)

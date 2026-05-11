@@ -4551,6 +4551,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 898088244953947763, guid: 9dba9c44e49dfba4d86dfef03962b2f6, type: 3}
   m_PrefabInstance: {fileID: 571276310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &598017941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598017942}
+  - component: {fileID: 598017943}
+  m_Layer: 6
+  m_Name: Death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &598017942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598017941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1347790184}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598017943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598017941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    eventReference:
+      Guid:
+        Data1: 2083770135
+        Data2: 1251010128
+        Data3: -1242147668
+        Data4: -1649842610
+      Path: event:/SFX/Player/Events/Player Death
+    eventPlayTrigger: 0
+    eventStopTrigger: 2
+    playConditions: 0
+    playCooldown: 0
+  doDebugLog: 0
 --- !u!1001 &698325160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5988,9 +6045,17 @@ PrefabInstance:
       objectReference: {fileID: 698325161}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6299346398174948054, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 598017942}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+--- !u!4 &1347790184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6299346398174948054, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
+  m_PrefabInstance: {fileID: 1347790183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1347790185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1544650614272011795, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
