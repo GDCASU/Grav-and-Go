@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{a007ee8e-d365-4f23-9232-82c7094d8938}">
 		<property name="assetPath">
-			<value>Dialogue/Chapter 2/Professor Photon/Myles Voice Lines 9-Audio.wav</value>
+			<value>Dialogue/Chapter 2/Professor Photon/Professor Photon - Line 1.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

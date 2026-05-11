@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{d0f36dc4-ef4a-40cc-a839-085b98bd6eaa}">
 		<property name="assetPath">
-			<value>Dialogue/Chapter 1/Princess Potassia/march 27th VGDC voice  acting PP 2 (1).wav</value>
+			<value>Dialogue/Chapter 1/Princess Potassia/Princess Potassia - Line 2.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

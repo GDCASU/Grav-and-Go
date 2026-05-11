@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{d4b3f201-2105-413b-9a79-625fdc01fb41}">
 		<property name="assetPath">
-			<value>Dialogue/Chapter 1/Construction Monkeys/march 27th VGDC voice  acting monkey worker 1(1).wav</value>
+			<value>Dialogue/Chapter 1/Construction Monkeys/Construction Monkeys - Line 1.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

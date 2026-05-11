@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1dbe1160-711f-43af-bd5c-0618270558c5}">
 		<property name="assetPath">
-			<value>Dialogue/Chapter 1/Big Monkey Boss/march 27th VGDC voice  acting 70 big boss 4(6).wav</value>
+			<value>Dialogue/Chapter 1/Big Monkey Boss/Big Monkey Boss - Line 4.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
