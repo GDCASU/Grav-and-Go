@@ -257,7 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelToLoad:
     name: Level Select
-  _type: 1
+  _type: 0
+  timer: {fileID: 0}
   _lockedVisuals: {fileID: 762570180915576088}
 --- !u!61 &2200424625564212165
 BoxCollider2D:

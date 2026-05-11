@@ -108,6 +108,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Retry"",
+                    ""type"": ""Button"",
+                    ""id"": ""ea78c2be-f155-405b-a196-73cc99eef49f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -187,6 +196,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""01d2dd90-6920-44c2-8a00-79552a604bbb"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Retry"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -413,30 +433,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         {
             ""name"": ""Level"",
             ""id"": ""39f01bb3-8985-40d3-b336-5697aec9b295"",
-            ""actions"": [
-                {
-                    ""name"": ""Retry"",
-                    ""type"": ""Button"",
-                    ""id"": ""b00db671-2836-4ff6-af44-d60879a590ea"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""46a99acb-4a81-4bb1-8c56-db88712b0c55"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Retry"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
+            ""actions"": [],
+            ""bindings"": []
         },
         {
             ""name"": ""UI"",
@@ -493,6 +491,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
         m_Movement_Jump = m_Movement.FindAction("Jump", throwIfNotFound: true);
         m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
+        m_Movement_Retry = m_Movement.FindAction("Retry", throwIfNotFound: true);
         // Interactions
         m_Interactions = asset.FindActionMap("Interactions", throwIfNotFound: true);
         m_Interactions_Interact = m_Interactions.FindAction("Interact", throwIfNotFound: true);
@@ -507,7 +506,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_GravityGun_Toggle = m_GravityGun.FindAction("Toggle", throwIfNotFound: true);
         // Level
         m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
-        m_Level_Retry = m_Level.FindAction("Retry", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Pause = m_UI.FindAction("Pause", throwIfNotFound: true);
@@ -598,6 +596,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IMovementActions> m_MovementActionsCallbackInterfaces = new List<IMovementActions>();
     private readonly InputAction m_Movement_Jump;
     private readonly InputAction m_Movement_Move;
+    private readonly InputAction m_Movement_Retry;
     /// <summary>
     /// Provides access to input actions defined in input action map "Movement".
     /// </summary>
@@ -617,6 +616,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Movement/Move".
         /// </summary>
         public InputAction @Move => m_Wrapper.m_Movement_Move;
+        /// <summary>
+        /// Provides access to the underlying input action "Movement/Retry".
+        /// </summary>
+        public InputAction @Retry => m_Wrapper.m_Movement_Retry;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -649,6 +652,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+            @Retry.started += instance.OnRetry;
+            @Retry.performed += instance.OnRetry;
+            @Retry.canceled += instance.OnRetry;
         }
 
         /// <summary>
@@ -666,6 +672,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+            @Retry.started -= instance.OnRetry;
+            @Retry.performed -= instance.OnRetry;
+            @Retry.canceled -= instance.OnRetry;
         }
 
         /// <summary>
@@ -961,7 +970,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     // Level
     private readonly InputActionMap m_Level;
     private List<ILevelActions> m_LevelActionsCallbackInterfaces = new List<ILevelActions>();
-    private readonly InputAction m_Level_Retry;
     /// <summary>
     /// Provides access to input actions defined in input action map "Level".
     /// </summary>
@@ -973,10 +981,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
         public LevelActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "Level/Retry".
-        /// </summary>
-        public InputAction @Retry => m_Wrapper.m_Level_Retry;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1003,9 +1007,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_LevelActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_LevelActionsCallbackInterfaces.Add(instance);
-            @Retry.started += instance.OnRetry;
-            @Retry.performed += instance.OnRetry;
-            @Retry.canceled += instance.OnRetry;
         }
 
         /// <summary>
@@ -1017,9 +1018,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="LevelActions" />
         private void UnregisterCallbacks(ILevelActions instance)
         {
-            @Retry.started -= instance.OnRetry;
-            @Retry.performed -= instance.OnRetry;
-            @Retry.canceled -= instance.OnRetry;
         }
 
         /// <summary>
@@ -1181,6 +1179,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Retry" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRetry(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Interactions" which allows adding and removing callbacks.
@@ -1261,13 +1266,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     /// <seealso cref="LevelActions.RemoveCallbacks(ILevelActions)" />
     public interface ILevelActions
     {
-        /// <summary>
-        /// Method invoked when associated input action "Retry" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRetry(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

@@ -17,12 +17,14 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private SpriteRenderer  _sprite;
     [SerializeField] private SpriteRenderer  _gravGunSprite;
     [SerializeField] private Rigidbody2D     _rb;
+    [SerializeField] private GameObject      _lineRenderers;
 
     [Header("Particles")]
     [SerializeField] private ParticleSystem _jumpParticles;
     [SerializeField] private ParticleSystem _launchParticles;
     [SerializeField] private ParticleSystem _moveParticles;
     [SerializeField] private ParticleSystem _landParticles;
+    [SerializeField] private ParticleSystem _deathParticles;
 
     
     
@@ -138,7 +140,15 @@ public class PlayerAnimator : MonoBehaviour
 
     public void OnDeath()
     {
-        _anim.SetTrigger("Death");
+        _sprite.enabled = false;
+        _lineRenderers.SetActive(false);
+        _gravGunSprite.enabled = false;
+        _deathParticles.Play();
+        _jumpParticles.gameObject.SetActive(false);
+        _launchParticles.gameObject.SetActive(false);
+        _moveParticles.gameObject.SetActive(false);
+        _landParticles.gameObject.SetActive(false);
+        
     }
 
     #endregion

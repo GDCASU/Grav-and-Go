@@ -99,7 +99,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadCurrentLevel()
     {
-        LoadLevelViaLevelName(currentLevelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadLevelSelect()
