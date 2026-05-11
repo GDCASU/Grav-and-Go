@@ -76,12 +76,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3751748375662883088}
   - {fileID: 3236902104560966441}
   - {fileID: 7728886121335147815}
   - {fileID: 8005870193231989092}
   - {fileID: 7097606414089033697}
   - {fileID: 1341857385309990525}
+  - {fileID: 6983101666929047980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8253814690705758613
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94abb74c7e84fcf41ba49366cedc1a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3350722358984841745
+--- !u!1 &8092493469948994633
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,22 +104,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3751748375662883088}
-  - component: {fileID: 1643012777045875894}
+  - component: {fileID: 6983101666929047980}
+  - component: {fileID: 5552206631696669511}
   m_Layer: 0
-  m_Name: Input Manager
+  m_Name: Music Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3751748375662883088
+--- !u!4 &6983101666929047980
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3350722358984841745}
+  m_GameObject: {fileID: 8092493469948994633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -128,50 +128,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2995322240427699229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1643012777045875894
+--- !u!114 &5552206631696669511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3350722358984841745}
+  m_GameObject: {fileID: 8092493469948994633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Script: {fileID: 11500000, guid: e501a22927286a949b19a886d1cc5f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NotificationBehavior: 1
-  m_MaxPlayerCount: -1
-  m_AllowJoining: 1
-  m_JoinBehavior: 0
-  m_PlayerJoinedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_PlayerLeftEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_JoinAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: ce06c2f6-a048-4d5c-9d6d-30fce8ad04b3
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 0}
-  m_SplitScreen: 0
-  m_MaintainAspectRatioInSplitScreen: 0
-  m_FixedNumberOfSplitScreens: -1
-  m_SplitScreenRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  _tracks:
+  - Guid:
+      Data1: 1395298726
+      Data2: 1183293142
+      Data3: 1171501698
+      Data4: 573515834
+    Path: event:/Music/CH1/Vladimir Masel - Gravity Congas
+  - Guid:
+      Data1: 983130085
+      Data2: 1086301540
+      Data3: 205129368
+      Data4: 1570658372
+    Path: event:/Music/CH2/Joash Benjamin Esmas - Chapter 2 Music
+  - Guid:
+      Data1: 1577834616
+      Data2: 1280289848
+      Data3: 709617563
+      Data4: 1556942065
+    Path: event:/Music/CH2/Vladimir Masel - Laser World
+  - Guid:
+      Data1: 291174467
+      Data2: 1333927759
+      Data3: 473625765
+      Data4: 969742350
+    Path: event:/Music/Extras/Ilker Aguilar - Spatakatat
+  - Guid:
+      Data1: -1175003124
+      Data2: 1133368433
+      Data3: 664771005
+      Data4: 1248452336
+    Path: event:/Music/Extras/Jameson Perreault-Perez - Beyond The Sky
+  - Guid:
+      Data1: -1386025426
+      Data2: 1189385863
+      Data3: 1763356338
+      Data4: -930314436
+    Path: event:/Music/Extras/Vladimir Masel - Angry Pumpkin (World 4)
+  _trackGapSeconds: 1
+  _playOnAwake: 1
+  _doDebugLog: 0
 --- !u!1 &8189321104251077825
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,15 +389,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[2].Key.name
-      value: Chapter 1 Level 1
+      value: CH 1 Level 1 - ID 1-1
       objectReference: {fileID: 0}
     - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
       propertyPath: _levelProgressDatabase._serializedList.Array.data[3].Key.name
-      value: Chapter 1 Level 2
+      value: CH 1 Level 2 - ID 1-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[4].Key.name
+      value: CH 1 Level 3 - ID 1-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[5].Key.name
+      value: CH 1 Level 4 - ID 1-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[3].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[4].Value.isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314198143861491440, guid: e5d049b292903f345ab9d22ae206ada3, type: 3}
+      propertyPath: _levelProgressDatabase._serializedList.Array.data[5].Value.isUnlocked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

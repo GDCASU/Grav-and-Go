@@ -165,12 +165,6 @@ public class SoundManager : MonoBehaviour
         _soundGroupDictionary.Add(SoundGroups.Master, _masterGroup);
     }
 
-    // Debugging
-    private void Update()
-    {
-        
-    }
-
     // Loop for inspector sliders, can be removed once UI can manage this
     private void LateUpdate()
     {
@@ -193,7 +187,7 @@ public class SoundManager : MonoBehaviour
         // TWO VITAL CHECKS
 
         // Check if the volume value has been changed from outside the script
-        // Update the sliders to the new value
+        // Update the sliders to reflect the new value
         if (!Mathf.Approximately(_previousMasterVolume, currMasterVolume))
         {
             _masterSlider = currMasterVolume;
@@ -202,22 +196,22 @@ public class SoundManager : MonoBehaviour
         {
             _musicSlider = currMusicVolume;
         }
-        if (Mathf.Approximately(_previousSFXVolume, currSFXVolume))
+        if (!Mathf.Approximately(_previousSFXVolume, currSFXVolume))  // BUG FIX: was missing !
         {
             _sfxSlider = currSFXVolume;
         }
 
         // Check if the volume sliders in this script have been changed in the inspector
-        // If so, update the values of the volumes
-        if (Mathf.Approximately(_masterSlider, currMasterVolume))
+        // If the slider no longer matches the VCA, the user dragged it — apply the change
+        if (!Mathf.Approximately(_masterSlider, currMasterVolume))  // BUG FIX: was missing !
         {
             SetVolume(SoundControllers.Master, _masterSlider, 1);
         }
-        if (Mathf.Approximately(_musicSlider, currMusicVolume))
+        if (!Mathf.Approximately(_musicSlider, currMusicVolume))    // BUG FIX: was missing !
         {
             SetVolume(SoundControllers.Music, _musicSlider, 1);
         }
-        if (Mathf.Approximately(_sfxSlider, currSFXVolume))
+        if (!Mathf.Approximately(_sfxSlider, currSFXVolume))        // BUG FIX: was missing !
         {
             SetVolume(SoundControllers.SFX, _sfxSlider, 1);
         }

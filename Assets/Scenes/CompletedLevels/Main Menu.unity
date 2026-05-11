@@ -4333,63 +4333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doDebugLog: 0
---- !u!1 &946406871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 946406873}
-  - component: {fileID: 946406872}
-  m_Layer: 0
-  m_Name: Background Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &946406872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946406871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 427007a98b420eb48bb282e2e39d02ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settings:
-    eventReference:
-      Guid:
-        Data1: -964626890
-        Data2: 1207928547
-        Data3: -171988320
-        Data4: 1283777481
-      Path: event:/Music/Main Menu Music
-    eventPlayTrigger: 1
-    eventStopTrigger: 2
-    playConditions: 0
-    playCooldown: 0
-  doDebugLog: 0
---- !u!4 &946406873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946406871}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 584, y: 322, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017298654
 GameObject:
   m_ObjectHideFlags: 0
@@ -8958,4 +8901,3 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 383904215535217067}
   - {fileID: 362910527}
-  - {fileID: 946406873}
